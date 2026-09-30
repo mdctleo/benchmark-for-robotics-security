@@ -18,9 +18,9 @@ src/
   attacks/robopair/README.md                   how the RoboPAIR attack files were produced (external tool)
   defenses/roboguard/semantics_from_img_unstructured.py
                                                build the scene graphs RoboGuard needs
-  defenses/roboguard/main_roboguard.py         run RoboGuard on every attack and benign goal
   defenses/roboguard/RoboGuard/                external RoboGuard + SPINE checkout (gitignored)
   main_attack_defense.py                       run a target model under no defense / Google prompt
+  main_roboguard.py                            run RoboGuard on every attack and benign goal
   resolve_unknowns.py                          judge-label responses the keyword parser cannot
   analysis_attack_defense.py                   score: ASR, SR, UR, SU-HM and the LaTeX table
   main.py, analysis.py                         plain (no attack) malicious-vs-benign baseline
@@ -77,7 +77,7 @@ from existing files.
 RoboGuard, which does not depend on the target model, so one run serves all:
 
 ```
-uv run python src/defenses/roboguard/main_roboguard.py
+uv run python src/main_roboguard.py
 ```
 
 Requires the RoboGuard checkout at `src/defenses/roboguard/RoboGuard/` and

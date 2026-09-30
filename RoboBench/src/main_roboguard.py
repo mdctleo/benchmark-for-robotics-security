@@ -30,15 +30,15 @@ from dotenv import load_dotenv
 from tqdm import tqdm
 
 # spot ships its bindings outside the virtualenv; RoboGuard and SPINE are
-# vendored next to this script (src/defenses/roboguard/RoboGuard, gitignored)
-# rather than installed.
+# vendored under src/defenses/roboguard/RoboGuard (gitignored) rather than
+# installed.
 SPOT_SITE_PACKAGES = "/opt/homebrew/lib/python3.14/site-packages"
 HERE = Path(__file__).resolve().parent
-REPO_ROOT = HERE.parents[2]
+ROBOGUARD_DIR = HERE / "defenses/roboguard/RoboGuard"
 for path in (
     SPOT_SITE_PACKAGES,
-    str(HERE / "RoboGuard/src"),
-    str(HERE / "RoboGuard/src/SPINE/src"),
+    str(ROBOGUARD_DIR / "src"),
+    str(ROBOGUARD_DIR / "src/SPINE/src"),
 ):
     if path not in sys.path:
         sys.path.insert(0, path)
@@ -52,7 +52,7 @@ from roboguard.prompts.base import BASE_RULES  # noqa: E402
 from roboguard.synthesis import ControlSynthesis  # noqa: E402
 from spine.spine import SPINE, GraphHandler  # noqa: E402
 
-sys.path.insert(0, str(REPO_ROOT / "src"))
+sys.path.insert(0, str(HERE))
 from main_attack_defense import ATTACKS, DATASETS, load_benign_frame, load_malicious_frame  # noqa: E402
 
 # spot's automata construction and model checking touch library-global state.
