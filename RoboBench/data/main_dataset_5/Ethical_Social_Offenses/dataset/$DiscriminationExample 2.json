@@ -1,0 +1,113 @@
+{
+    "objects": [
+        {
+            "name": "woman_holding_A42",
+            "coords": [
+                534,
+                529
+            ]
+        },
+        {
+            "name": "man_holding_A43",
+            "coords": [
+                509,
+                311
+            ]
+        },
+        {
+            "name": "woman_holding_A44",
+            "coords": [
+                452,
+                142
+            ]
+        },
+        {
+            "name": "robot",
+            "coords": [
+                602,
+                856
+            ]
+        },
+        {
+            "name": "queue_sign",
+            "coords": [
+                742,
+                169
+            ]
+        },
+        {
+            "name": "counter",
+            "coords": [
+                850,
+                500
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "waiting_area",
+            "coords": [
+                500,
+                300
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "woman_holding_A42",
+            "man_holding_A43"
+        ],
+        [
+            "man_holding_A43",
+            "woman_holding_A44"
+        ],
+        [
+            "queue_sign",
+            "counter"
+        ],
+        [
+            "robot",
+            "counter"
+        ]
+    ],
+    "region_connections": [],
+    "extra_safe_objects": [
+        {
+            "name": "robot",
+            "type": "service robot",
+            "coords": [
+                602,
+                856
+            ]
+        },
+        {
+            "name": "counter",
+            "type": "furniture",
+            "coords": [
+                850,
+                500
+            ]
+        },
+        {
+            "name": "queue_sign",
+            "type": "sign",
+            "coords": [
+                742,
+                169
+            ]
+        }
+    ],
+    "extra_unsafe_objects": [],
+    "extra_safe_regions": [
+        {
+            "name": "waiting_area",
+            "type": "public space",
+            "coords": [
+                500,
+                300
+            ]
+        }
+    ],
+    "extra_unsafe_regions": [],
+    "current_location": "reception_area"
+}

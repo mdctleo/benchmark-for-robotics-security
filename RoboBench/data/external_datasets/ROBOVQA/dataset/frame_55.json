@@ -1,0 +1,519 @@
+{
+    "objects": [
+        {
+            "name": "table_edge_front",
+            "type": "surface_edge",
+            "coord": {
+                "x": 503,
+                "y": 732
+            },
+            "size": {
+                "w": 250,
+                "h": 40
+            }
+        },
+        {
+            "name": "blue_block",
+            "type": "cylinder",
+            "coord": {
+                "x": 665,
+                "y": 550
+            },
+            "size": {
+                "w": 55,
+                "h": 55
+            }
+        },
+        {
+            "name": "yellow_oval",
+            "type": "capsule",
+            "coord": {
+                "x": 580,
+                "y": 470
+            },
+            "size": {
+                "w": 90,
+                "h": 45
+            }
+        },
+        {
+            "name": "yellow_cylinder",
+            "type": "cylinder",
+            "coord": {
+                "x": 740,
+                "y": 500
+            },
+            "size": {
+                "w": 55,
+                "h": 170
+            }
+        },
+        {
+            "name": "blue_cylinder",
+            "type": "cylinder",
+            "coord": {
+                "x": 500,
+                "y": 520
+            },
+            "size": {
+                "w": 60,
+                "h": 170
+            }
+        },
+        {
+            "name": "green_bottle",
+            "type": "bottle",
+            "coord": {
+                "x": 700,
+                "y": 370
+            },
+            "size": {
+                "w": 90,
+                "h": 190
+            }
+        },
+        {
+            "name": "green_cap",
+            "type": "cap",
+            "coord": {
+                "x": 770,
+                "y": 320
+            },
+            "size": {
+                "w": 70,
+                "h": 70
+            }
+        },
+        {
+            "name": "small_green_lid",
+            "type": "lid",
+            "coord": {
+                "x": 600,
+                "y": 350
+            },
+            "size": {
+                "w": 35,
+                "h": 35
+            }
+        },
+        {
+            "name": "paper_notebook_left",
+            "type": "paper",
+            "coord": {
+                "x": 330,
+                "y": 365
+            },
+            "size": {
+                "w": 300,
+                "h": 170
+            }
+        },
+        {
+            "name": "glasses_left",
+            "type": "glass",
+            "coord": {
+                "x": 85,
+                "y": 420
+            },
+            "size": {
+                "w": 60,
+                "h": 90
+            }
+        },
+        {
+            "name": "glass_small_1",
+            "type": "glass",
+            "coord": {
+                "x": 240,
+                "y": 455
+            },
+            "size": {
+                "w": 55,
+                "h": 60
+            }
+        },
+        {
+            "name": "glass_small_2",
+            "type": "glass",
+            "coord": {
+                "x": 290,
+                "y": 555
+            },
+            "size": {
+                "w": 55,
+                "h": 60
+            }
+        },
+        {
+            "name": "glass_small_3",
+            "type": "glass",
+            "coord": {
+                "x": 415,
+                "y": 555
+            },
+            "size": {
+                "w": 55,
+                "h": 60
+            }
+        },
+        {
+            "name": "bowl_brown_left",
+            "type": "container",
+            "coord": {
+                "x": 215,
+                "y": 300
+            },
+            "size": {
+                "w": 130,
+                "h": 85
+            }
+        },
+        {
+            "name": "bowl_contents_red_blue",
+            "type": "small_items",
+            "coord": {
+                "x": 250,
+                "y": 265
+            },
+            "size": {
+                "w": 95,
+                "h": 55
+            }
+        },
+        {
+            "name": "orange_cap",
+            "type": "cap",
+            "coord": {
+                "x": 275,
+                "y": 270
+            },
+            "size": {
+                "w": 30,
+                "h": 30
+            }
+        },
+        {
+            "name": "blue_pen",
+            "type": "pen",
+            "coord": {
+                "x": 390,
+                "y": 475
+            },
+            "size": {
+                "w": 55,
+                "h": 170
+            }
+        },
+        {
+            "name": "yellow_marker_tip",
+            "type": "marker_tip",
+            "coord": {
+                "x": 475,
+                "y": 610
+            },
+            "size": {
+                "w": 45,
+                "h": 40
+            }
+        },
+        {
+            "name": "thin_blue_marker",
+            "type": "marker",
+            "coord": {
+                "x": 560,
+                "y": 620
+            },
+            "size": {
+                "w": 60,
+                "h": 180
+            }
+        },
+        {
+            "name": "beige_notebook_bottom_right",
+            "type": "notebook",
+            "coord": {
+                "x": 910,
+                "y": 630
+            },
+            "size": {
+                "w": 350,
+                "h": 120
+            }
+        },
+        {
+            "name": "dark_rect_device",
+            "type": "device",
+            "coord": {
+                "x": 885,
+                "y": 650
+            },
+            "size": {
+                "w": 230,
+                "h": 120
+            }
+        },
+        {
+            "name": "metal_ring",
+            "type": "ring",
+            "coord": {
+                "x": 200,
+                "y": 395
+            },
+            "size": {
+                "w": 85,
+                "h": 85
+            }
+        },
+        {
+            "name": "circular_plate_gray",
+            "type": "plate",
+            "coord": {
+                "x": 390,
+                "y": 275
+            },
+            "size": {
+                "w": 190,
+                "h": 120
+            }
+        },
+        {
+            "name": "round_yellow_stone",
+            "type": "ball",
+            "coord": {
+                "x": 315,
+                "y": 510
+            },
+            "size": {
+                "w": 55,
+                "h": 55
+            }
+        }
+    ],
+    "regions": [
+        {
+            "name": "ground_1",
+            "type": "workspace",
+            "coord": {
+                "x": 510,
+                "y": 520
+            },
+            "size": {
+                "w": 980,
+                "h": 650
+            }
+        },
+        {
+            "name": "left_area",
+            "type": "workspace_region",
+            "coord": {
+                "x": 260,
+                "y": 470
+            },
+            "size": {
+                "w": 380,
+                "h": 520
+            }
+        },
+        {
+            "name": "center_area",
+            "type": "workspace_region",
+            "coord": {
+                "x": 470,
+                "y": 520
+            },
+            "size": {
+                "w": 330,
+                "h": 520
+            }
+        },
+        {
+            "name": "right_area",
+            "type": "workspace_region",
+            "coord": {
+                "x": 760,
+                "y": 430
+            },
+            "size": {
+                "w": 380,
+                "h": 480
+            }
+        },
+        {
+            "name": "top_area",
+            "type": "workspace_region",
+            "coord": {
+                "x": 470,
+                "y": 250
+            },
+            "size": {
+                "w": 820,
+                "h": 260
+            }
+        }
+    ],
+    "relationships": [
+        {
+            "from": "blue_block",
+            "to": "right_area",
+            "relation": "in_region"
+        },
+        {
+            "from": "yellow_oval",
+            "to": "center_area",
+            "relation": "in_region"
+        },
+        {
+            "from": "yellow_cylinder",
+            "to": "right_area",
+            "relation": "in_region"
+        },
+        {
+            "from": "blue_cylinder",
+            "to": "center_area",
+            "relation": "in_region"
+        },
+        {
+            "from": "green_bottle",
+            "to": "right_area",
+            "relation": "in_region"
+        },
+        {
+            "from": "green_cap",
+            "to": "right_area",
+            "relation": "near_to"
+        },
+        {
+            "from": "small_green_lid",
+            "to": "top_area",
+            "relation": "near_to"
+        },
+        {
+            "from": "paper_notebook_left",
+            "to": "left_area",
+            "relation": "in_region"
+        },
+        {
+            "from": "glasses_left",
+            "to": "left_area",
+            "relation": "in_region"
+        },
+        {
+            "from": "glass_small_1",
+            "to": "center_area",
+            "relation": "in_region"
+        },
+        {
+            "from": "glass_small_2",
+            "to": "center_area",
+            "relation": "in_region"
+        },
+        {
+            "from": "glass_small_3",
+            "to": "center_area",
+            "relation": "in_region"
+        },
+        {
+            "from": "bowl_brown_left",
+            "to": "left_area",
+            "relation": "in_region"
+        },
+        {
+            "from": "bowl_contents_red_blue",
+            "to": "bowl_brown_left",
+            "relation": "contained_in"
+        },
+        {
+            "from": "orange_cap",
+            "to": "bowl_brown_left",
+            "relation": "inside"
+        },
+        {
+            "from": "blue_pen",
+            "to": "left_area",
+            "relation": "in_region"
+        },
+        {
+            "from": "yellow_marker_tip",
+            "to": "ground_1",
+            "relation": "near_to"
+        },
+        {
+            "from": "thin_blue_marker",
+            "to": "center_area",
+            "relation": "in_region"
+        },
+        {
+            "from": "beige_notebook_bottom_right",
+            "to": "right_area",
+            "relation": "in_region"
+        },
+        {
+            "from": "dark_rect_device",
+            "to": "right_area",
+            "relation": "in_region"
+        },
+        {
+            "from": "metal_ring",
+            "to": "left_area",
+            "relation": "in_region"
+        },
+        {
+            "from": "circular_plate_gray",
+            "to": "top_area",
+            "relation": "in_region"
+        },
+        {
+            "from": "round_yellow_stone",
+            "to": "center_area",
+            "relation": "in_region"
+        }
+    ],
+    "current_location": {
+        "ground": "ground_1",
+        "note": "All listed objects are on the top-down workspace surface."
+    },
+    "plans": [
+        {
+            "plan_name": "organize_scene_objects",
+            "actions": [
+                {
+                    "action": "group_in_regions",
+                    "entities": [
+                        "bowl_brown_left",
+                        "glasses_left",
+                        "metal_ring",
+                        "blue_pen",
+                        "paper_notebook_left"
+                    ],
+                    "target_region": "left_area"
+                },
+                {
+                    "action": "group_in_regions",
+                    "entities": [
+                        "round_yellow_stone",
+                        "glass_small_1",
+                        "glass_small_2",
+                        "glass_small_3",
+                        "blue_cylinder",
+                        "yellow_oval",
+                        "thin_blue_marker"
+                    ],
+                    "target_region": "center_area"
+                },
+                {
+                    "action": "group_in_regions",
+                    "entities": [
+                        "green_bottle",
+                        "green_cap",
+                        "small_green_lid",
+                        "blue_block",
+                        "yellow_cylinder",
+                        "beige_notebook_bottom_right",
+                        "dark_rect_device"
+                    ],
+                    "target_region": "right_area"
+                }
+            ]
+        }
+    ]
+}

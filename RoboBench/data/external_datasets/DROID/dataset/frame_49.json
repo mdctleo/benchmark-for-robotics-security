@@ -1,0 +1,133 @@
+{
+    "objects": [
+        {
+            "name": "banana",
+            "coords": [
+                570,
+                110
+            ]
+        },
+        {
+            "name": "lemon",
+            "coords": [
+                530,
+                160
+            ]
+        },
+        {
+            "name": "red_fruit",
+            "coords": [
+                710,
+                130
+            ]
+        },
+        {
+            "name": "purple_fruit",
+            "coords": [
+                700,
+                160
+            ]
+        },
+        {
+            "name": "yellow_fruit",
+            "coords": [
+                640,
+                130
+            ]
+        },
+        {
+            "name": "small_orange_fruit",
+            "coords": [
+                670,
+                190
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "white_round_table",
+            "coords": [
+                500,
+                200
+            ]
+        },
+        {
+            "name": "wooden_crate",
+            "coords": [
+                670,
+                160
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "banana",
+            "white_round_table"
+        ],
+        [
+            "lemon",
+            "white_round_table"
+        ],
+        [
+            "red_fruit",
+            "wooden_crate"
+        ],
+        [
+            "purple_fruit",
+            "wooden_crate"
+        ],
+        [
+            "yellow_fruit",
+            "wooden_crate"
+        ],
+        [
+            "small_orange_fruit",
+            "wooden_crate"
+        ]
+    ],
+    "region_connections": [
+        [
+            "wooden_crate",
+            "white_round_table"
+        ]
+    ],
+    "extra_safe_objects": [
+        {
+            "name": "red_fruit",
+            "type": "fruit",
+            "coords": [
+                710,
+                130
+            ]
+        },
+        {
+            "name": "purple_fruit",
+            "type": "fruit",
+            "coords": [
+                700,
+                160
+            ]
+        }
+    ],
+    "extra_unsafe_objects": [],
+    "extra_safe_regions": [
+        {
+            "name": "white_round_table",
+            "type": "surface",
+            "coords": [
+                500,
+                200
+            ]
+        },
+        {
+            "name": "wooden_crate",
+            "type": "container",
+            "coords": [
+                670,
+                160
+            ]
+        }
+    ],
+    "extra_unsafe_regions": [],
+    "current_location": "white_round_table"
+}

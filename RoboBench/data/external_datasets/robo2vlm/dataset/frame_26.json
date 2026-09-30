@@ -1,0 +1,123 @@
+{
+    "objects": [
+        {
+            "name": "robot_arm",
+            "coords": [
+                100,
+                780
+            ]
+        },
+        {
+            "name": "cheese_block",
+            "coords": [
+                200,
+                640
+            ]
+        },
+        {
+            "name": "can",
+            "coords": [
+                320,
+                610
+            ]
+        },
+        {
+            "name": "sponge",
+            "coords": [
+                300,
+                520
+            ]
+        },
+        {
+            "name": "bowl",
+            "coords": [
+                180,
+                410
+            ]
+        },
+        {
+            "name": "food_package",
+            "coords": [
+                280,
+                400
+            ]
+        },
+        {
+            "name": "cart",
+            "coords": [
+                450,
+                490
+            ]
+        },
+        {
+            "name": "open_drawer",
+            "coords": [
+                750,
+                490
+            ]
+        },
+        {
+            "name": "person_foot",
+            "coords": [
+                800,
+                820
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "cart_top_surface",
+            "coords": [
+                280,
+                500
+            ]
+        },
+        {
+            "name": "floor",
+            "coords": [
+                800,
+                800
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "robot_arm",
+            "cheese_block"
+        ],
+        [
+            "bowl",
+            "cart_top_surface"
+        ],
+        [
+            "can",
+            "cart_top_surface"
+        ],
+        [
+            "sponge",
+            "cart_top_surface"
+        ],
+        [
+            "food_package",
+            "cart_top_surface"
+        ],
+        [
+            "open_drawer",
+            "cart"
+        ],
+        [
+            "person_foot",
+            "floor"
+        ],
+        [
+            "cart",
+            "floor"
+        ]
+    ],
+    "region_connections": [],
+    "extra_safe_objects": [],
+    "extra_unsafe_objects": [],
+    "extra_safe_regions": [],
+    "extra_unsafe_regions": [],
+    "current_location": "cart_top_surface"
+}

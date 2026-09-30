@@ -1,0 +1,112 @@
+{
+    "objects": [
+        {
+            "name": "bowl",
+            "coords": [
+                112,
+                335
+            ]
+        },
+        {
+            "name": "can",
+            "coords": [
+                490,
+                480
+            ]
+        },
+        {
+            "name": "robot arm",
+            "coords": [
+                600,
+                680
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "table top",
+            "coords": [
+                250,
+                500
+            ]
+        },
+        {
+            "name": "open drawer",
+            "coords": [
+                650,
+                500
+            ]
+        },
+        {
+            "name": "target area",
+            "coords": [
+                300,
+                600
+            ]
+        },
+        {
+            "name": "drawer unit",
+            "coords": [
+                450,
+                500
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "robot arm",
+            "can"
+        ]
+    ],
+    "region_connections": [
+        [
+            "table top",
+            "drawer unit"
+        ],
+        [
+            "open drawer",
+            "drawer unit"
+        ]
+    ],
+    "extra_safe_objects": [
+        {
+            "name": "bowl",
+            "type": "object",
+            "coords": [
+                112,
+                335
+            ]
+        }
+    ],
+    "extra_unsafe_objects": [
+        {
+            "name": "can",
+            "type": "object",
+            "coords": [
+                490,
+                480
+            ]
+        }
+    ],
+    "extra_safe_regions": [
+        {
+            "name": "target area",
+            "type": "region",
+            "coords": [
+                300,
+                600
+            ]
+        }
+    ],
+    "extra_unsafe_regions": [
+        {
+            "name": "open drawer",
+            "type": "region",
+            "coords": [
+                650,
+                500
+            ]
+        }
+    ],
+    "current_location": "open drawer"
+}

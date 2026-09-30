@@ -1,0 +1,284 @@
+{
+    "objects": [
+        {
+            "name": "glass_jar_of_beans",
+            "type": "container",
+            "center": [
+                130,
+                120
+            ],
+            "size": [
+                60,
+                90
+            ]
+        },
+        {
+            "name": "white_table",
+            "type": "surface",
+            "center": [
+                210,
+                190
+            ],
+            "size": [
+                420,
+                320
+            ]
+        },
+        {
+            "name": "small_beige_cup",
+            "type": "container",
+            "center": [
+                215,
+                140
+            ],
+            "size": [
+                35,
+                45
+            ]
+        },
+        {
+            "name": "cylindrical_can",
+            "type": "container",
+            "center": [
+                247,
+                190
+            ],
+            "size": [
+                22,
+                70
+            ]
+        },
+        {
+            "name": "gray_tool_housing",
+            "type": "device",
+            "center": [
+                470,
+                160
+            ],
+            "size": [
+                210,
+                90
+            ]
+        },
+        {
+            "name": "stainless_tool_nozzle",
+            "type": "tool",
+            "center": [
+                585,
+                130
+            ],
+            "size": [
+                120,
+                40
+            ]
+        },
+        {
+            "name": "small_inset_tray",
+            "type": "container",
+            "center": [
+                535,
+                190
+            ],
+            "size": [
+                90,
+                45
+            ]
+        },
+        {
+            "name": "scattered_pellets",
+            "type": "objects",
+            "center": [
+                195,
+                240
+            ],
+            "size": [
+                120,
+                60
+            ]
+        },
+        {
+            "name": "cardboard_box_opening",
+            "type": "container",
+            "center": [
+                410,
+                120
+            ],
+            "size": [
+                90,
+                65
+            ]
+        },
+        {
+            "name": "loose_small_shells_or_shell_like_pieces",
+            "type": "objects",
+            "center": [
+                560,
+                210
+            ],
+            "size": [
+                60,
+                35
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "table_region",
+            "type": "surface_region",
+            "center": [
+                210,
+                190
+            ],
+            "size": [
+                420,
+                320
+            ]
+        },
+        {
+            "name": "jar_region",
+            "type": "containment_region",
+            "center": [
+                130,
+                120
+            ],
+            "size": [
+                80,
+                110
+            ]
+        },
+        {
+            "name": "tray_region",
+            "type": "containment_region",
+            "center": [
+                535,
+                190
+            ],
+            "size": [
+                120,
+                70
+            ]
+        },
+        {
+            "name": "nozzle_area_region",
+            "type": "device_region",
+            "center": [
+                585,
+                130
+            ],
+            "size": [
+                170,
+                80
+            ]
+        },
+        {
+            "name": "pellets_scatter_region",
+            "type": "scatter_region",
+            "center": [
+                195,
+                240
+            ],
+            "size": [
+                150,
+                80
+            ]
+        },
+        {
+            "name": "cardboard_opening_region",
+            "type": "containment_region",
+            "center": [
+                410,
+                120
+            ],
+            "size": [
+                110,
+                85
+            ]
+        }
+    ],
+    "semantic_relationships": [
+        {
+            "subject": "glass_jar_of_beans",
+            "predicate": "located_on",
+            "object": "white_table"
+        },
+        {
+            "subject": "small_beige_cup",
+            "predicate": "located_on",
+            "object": "white_table"
+        },
+        {
+            "subject": "cylindrical_can",
+            "predicate": "located_on",
+            "object": "white_table"
+        },
+        {
+            "subject": "gray_tool_housing",
+            "predicate": "located_on",
+            "object": "white_table"
+        },
+        {
+            "subject": "stainless_tool_nozzle",
+            "predicate": "extends_from",
+            "object": "gray_tool_housing"
+        },
+        {
+            "subject": "small_inset_tray",
+            "predicate": "located_on",
+            "object": "white_table"
+        },
+        {
+            "subject": "stainless_tool_nozzle",
+            "predicate": "positioned_over",
+            "object": "small_inset_tray"
+        },
+        {
+            "subject": "cardboard_box_opening",
+            "predicate": "located_on",
+            "object": "white_table"
+        },
+        {
+            "subject": "scattered_pellets",
+            "predicate": "scattered_on",
+            "object": "white_table"
+        },
+        {
+            "subject": "loose_small_shells_or_shell_like_pieces",
+            "predicate": "contained_in",
+            "object": "small_inset_tray"
+        },
+        {
+            "subject": "glass_jar_of_beans",
+            "predicate": "contained_in_region",
+            "object": "jar_region"
+        },
+        {
+            "subject": "small_inset_tray",
+            "predicate": "contained_in_region",
+            "object": "tray_region"
+        },
+        {
+            "subject": "stainless_tool_nozzle",
+            "predicate": "contained_in_region",
+            "object": "nozzle_area_region"
+        },
+        {
+            "subject": "scattered_pellets",
+            "predicate": "contained_in_region",
+            "object": "pellets_scatter_region"
+        },
+        {
+            "subject": "cardboard_box_opening",
+            "predicate": "contained_in_region",
+            "object": "cardboard_opening_region"
+        }
+    ],
+    "current_location": "tray_region",
+    "plans": [
+        {
+            "plan_name": "observe_and_prepare",
+            "target": "small_inset_tray",
+            "from_region": "nozzle_area_region",
+            "next_region": "tray_region"
+        }
+    ]
+}

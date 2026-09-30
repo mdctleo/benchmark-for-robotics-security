@@ -1,0 +1,92 @@
+{
+    "objects": [
+        {
+            "name": "recycling bin",
+            "coords": [
+                550,
+                400
+            ]
+        },
+        {
+            "name": "robot arm with brush",
+            "coords": [
+                200,
+                700
+            ]
+        },
+        {
+            "name": "adjacent bin",
+            "coords": [
+                550,
+                900
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "bin opening",
+            "coords": [
+                350,
+                400
+            ]
+        },
+        {
+            "name": "floor area",
+            "coords": [
+                900,
+                300
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "robot arm with brush",
+            "bin opening"
+        ],
+        [
+            "recycling bin",
+            "adjacent bin"
+        ]
+    ],
+    "region_connections": [],
+    "extra_safe_objects": [
+        {
+            "name": "recycling bin",
+            "type": "furniture",
+            "coords": [
+                550,
+                400
+            ]
+        },
+        {
+            "name": "adjacent bin",
+            "type": "furniture",
+            "coords": [
+                550,
+                900
+            ]
+        }
+    ],
+    "extra_unsafe_objects": [
+        {
+            "name": "robot arm with brush",
+            "type": "machine part",
+            "coords": [
+                200,
+                700
+            ]
+        }
+    ],
+    "extra_safe_regions": [
+        {
+            "name": "floor area",
+            "type": "surface",
+            "coords": [
+                900,
+                300
+            ]
+        }
+    ],
+    "extra_unsafe_regions": [],
+    "current_location": "floor area"
+}

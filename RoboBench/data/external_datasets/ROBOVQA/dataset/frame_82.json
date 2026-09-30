@@ -1,0 +1,592 @@
+{
+    "objects": [
+        {
+            "name": "table_1",
+            "type": "furniture",
+            "coordinates": {
+                "top_left": {
+                    "x": 40,
+                    "y": 120
+                },
+                "top_right": {
+                    "x": 760,
+                    "y": 120
+                },
+                "bottom_right": {
+                    "x": 760,
+                    "y": 340
+                },
+                "bottom_left": {
+                    "x": 40,
+                    "y": 340
+                }
+            }
+        },
+        {
+            "name": "glass_case_1",
+            "type": "display_case",
+            "coordinates": {
+                "top_left": {
+                    "x": 250,
+                    "y": 125
+                },
+                "top_right": {
+                    "x": 640,
+                    "y": 125
+                },
+                "bottom_right": {
+                    "x": 640,
+                    "y": 235
+                },
+                "bottom_left": {
+                    "x": 250,
+                    "y": 235
+                }
+            }
+        },
+        {
+            "name": "pump_instrument_1",
+            "type": "equipment",
+            "coordinates": {
+                "top_left": {
+                    "x": 520,
+                    "y": 0
+                },
+                "top_right": {
+                    "x": 820,
+                    "y": 0
+                },
+                "bottom_right": {
+                    "x": 820,
+                    "y": 175
+                },
+                "bottom_left": {
+                    "x": 520,
+                    "y": 175
+                }
+            }
+        },
+        {
+            "name": "sandbags_or_beads_container_1",
+            "type": "container",
+            "coordinates": {
+                "top_left": {
+                    "x": 640,
+                    "y": 40
+                },
+                "top_right": {
+                    "x": 860,
+                    "y": 40
+                },
+                "bottom_right": {
+                    "x": 860,
+                    "y": 150
+                },
+                "bottom_left": {
+                    "x": 640,
+                    "y": 150
+                }
+            }
+        },
+        {
+            "name": "book_or_paper_stack_1",
+            "type": "paper",
+            "coordinates": {
+                "top_left": {
+                    "x": 90,
+                    "y": 45
+                },
+                "top_right": {
+                    "x": 250,
+                    "y": 45
+                },
+                "bottom_right": {
+                    "x": 250,
+                    "y": 120
+                },
+                "bottom_left": {
+                    "x": 90,
+                    "y": 120
+                }
+            }
+        },
+        {
+            "name": "small_notes_left_1",
+            "type": "paper",
+            "coordinates": {
+                "top_left": {
+                    "x": 60,
+                    "y": 215
+                },
+                "top_right": {
+                    "x": 190,
+                    "y": 215
+                },
+                "bottom_right": {
+                    "x": 190,
+                    "y": 295
+                },
+                "bottom_left": {
+                    "x": 60,
+                    "y": 295
+                }
+            }
+        },
+        {
+            "name": "small_notes_left_2",
+            "type": "paper",
+            "coordinates": {
+                "top_left": {
+                    "x": 130,
+                    "y": 245
+                },
+                "top_right": {
+                    "x": 230,
+                    "y": 245
+                },
+                "bottom_right": {
+                    "x": 230,
+                    "y": 300
+                },
+                "bottom_left": {
+                    "x": 130,
+                    "y": 300
+                }
+            }
+        },
+        {
+            "name": "small_notes_left_3",
+            "type": "paper",
+            "coordinates": {
+                "top_left": {
+                    "x": 170,
+                    "y": 275
+                },
+                "top_right": {
+                    "x": 310,
+                    "y": 275
+                },
+                "bottom_right": {
+                    "x": 310,
+                    "y": 320
+                },
+                "bottom_left": {
+                    "x": 170,
+                    "y": 320
+                }
+            }
+        },
+        {
+            "name": "small_note_left_4",
+            "type": "paper",
+            "coordinates": {
+                "top_left": {
+                    "x": 220,
+                    "y": 240
+                },
+                "top_right": {
+                    "x": 330,
+                    "y": 240
+                },
+                "bottom_right": {
+                    "x": 330,
+                    "y": 280
+                },
+                "bottom_left": {
+                    "x": 220,
+                    "y": 280
+                }
+            }
+        },
+        {
+            "name": "small_card_center_1",
+            "type": "paper",
+            "coordinates": {
+                "top_left": {
+                    "x": 385,
+                    "y": 235
+                },
+                "top_right": {
+                    "x": 470,
+                    "y": 235
+                },
+                "bottom_right": {
+                    "x": 470,
+                    "y": 290
+                },
+                "bottom_left": {
+                    "x": 385,
+                    "y": 290
+                }
+            }
+        },
+        {
+            "name": "small_card_center_2",
+            "type": "paper",
+            "coordinates": {
+                "top_left": {
+                    "x": 410,
+                    "y": 255
+                },
+                "top_right": {
+                    "x": 520,
+                    "y": 255
+                },
+                "bottom_right": {
+                    "x": 520,
+                    "y": 305
+                },
+                "bottom_left": {
+                    "x": 410,
+                    "y": 305
+                }
+            }
+        },
+        {
+            "name": "small_card_center_3",
+            "type": "paper",
+            "coordinates": {
+                "top_left": {
+                    "x": 520,
+                    "y": 235
+                },
+                "top_right": {
+                    "x": 590,
+                    "y": 235
+                },
+                "bottom_right": {
+                    "x": 590,
+                    "y": 300
+                },
+                "bottom_left": {
+                    "x": 520,
+                    "y": 300
+                }
+            }
+        },
+        {
+            "name": "display_items_1",
+            "type": "assorted_items",
+            "coordinates": {
+                "top_left": {
+                    "x": 295,
+                    "y": 145
+                },
+                "top_right": {
+                    "x": 500,
+                    "y": 145
+                },
+                "bottom_right": {
+                    "x": 500,
+                    "y": 225
+                },
+                "bottom_left": {
+                    "x": 295,
+                    "y": 225
+                }
+            }
+        },
+        {
+            "name": "display_items_2",
+            "type": "assorted_items",
+            "coordinates": {
+                "top_left": {
+                    "x": 510,
+                    "y": 145
+                },
+                "top_right": {
+                    "x": 610,
+                    "y": 145
+                },
+                "bottom_right": {
+                    "x": 610,
+                    "y": 225
+                },
+                "bottom_left": {
+                    "x": 510,
+                    "y": 225
+                }
+            }
+        }
+    ],
+    "regions": [
+        {
+            "name": "desk_surface_1",
+            "type": "surface",
+            "coordinates": {
+                "top_left": {
+                    "x": 0,
+                    "y": 110
+                },
+                "top_right": {
+                    "x": 900,
+                    "y": 110
+                },
+                "bottom_right": {
+                    "x": 900,
+                    "y": 360
+                },
+                "bottom_left": {
+                    "x": 0,
+                    "y": 360
+                }
+            }
+        },
+        {
+            "name": "left_side_area_1",
+            "type": "area",
+            "coordinates": {
+                "top_left": {
+                    "x": 0,
+                    "y": 110
+                },
+                "top_right": {
+                    "x": 280,
+                    "y": 110
+                },
+                "bottom_right": {
+                    "x": 280,
+                    "y": 360
+                },
+                "bottom_left": {
+                    "x": 0,
+                    "y": 360
+                }
+            }
+        },
+        {
+            "name": "center_area_1",
+            "type": "area",
+            "coordinates": {
+                "top_left": {
+                    "x": 280,
+                    "y": 110
+                },
+                "top_right": {
+                    "x": 600,
+                    "y": 110
+                },
+                "bottom_right": {
+                    "x": 600,
+                    "y": 360
+                },
+                "bottom_left": {
+                    "x": 280,
+                    "y": 360
+                }
+            }
+        },
+        {
+            "name": "right_side_area_1",
+            "type": "area",
+            "coordinates": {
+                "top_left": {
+                    "x": 600,
+                    "y": 110
+                },
+                "top_right": {
+                    "x": 900,
+                    "y": 110
+                },
+                "bottom_right": {
+                    "x": 900,
+                    "y": 360
+                },
+                "bottom_left": {
+                    "x": 600,
+                    "y": 360
+                }
+            }
+        },
+        {
+            "name": "glass_case_interior_1",
+            "type": "interior",
+            "coordinates": {
+                "top_left": {
+                    "x": 265,
+                    "y": 130
+                },
+                "top_right": {
+                    "x": 625,
+                    "y": 130
+                },
+                "bottom_right": {
+                    "x": 625,
+                    "y": 225
+                },
+                "bottom_left": {
+                    "x": 265,
+                    "y": 225
+                }
+            }
+        },
+        {
+            "name": "lower_drawer_front_area_1",
+            "type": "area",
+            "coordinates": {
+                "top_left": {
+                    "x": 0,
+                    "y": 330
+                },
+                "top_right": {
+                    "x": 900,
+                    "y": 330
+                },
+                "bottom_right": {
+                    "x": 900,
+                    "y": 440
+                },
+                "bottom_left": {
+                    "x": 0,
+                    "y": 440
+                }
+            }
+        }
+    ],
+    "semantic_relationships": [
+        {
+            "subject": "glass_case_1",
+            "relation": "located_on",
+            "object": "desk_surface_1"
+        },
+        {
+            "subject": "pump_instrument_1",
+            "relation": "located_on",
+            "object": "desk_surface_1"
+        },
+        {
+            "subject": "sandbags_or_beads_container_1",
+            "relation": "located_on",
+            "object": "desk_surface_1"
+        },
+        {
+            "subject": "book_or_paper_stack_1",
+            "relation": "located_on",
+            "object": "desk_surface_1"
+        },
+        {
+            "subject": "small_notes_left_1",
+            "relation": "located_on",
+            "object": "desk_surface_1"
+        },
+        {
+            "subject": "small_notes_left_2",
+            "relation": "located_on",
+            "object": "desk_surface_1"
+        },
+        {
+            "subject": "small_notes_left_3",
+            "relation": "located_on",
+            "object": "desk_surface_1"
+        },
+        {
+            "subject": "small_note_left_4",
+            "relation": "located_on",
+            "object": "desk_surface_1"
+        },
+        {
+            "subject": "small_card_center_1",
+            "relation": "located_on",
+            "object": "desk_surface_1"
+        },
+        {
+            "subject": "small_card_center_2",
+            "relation": "located_on",
+            "object": "desk_surface_1"
+        },
+        {
+            "subject": "small_card_center_3",
+            "relation": "located_on",
+            "object": "desk_surface_1"
+        },
+        {
+            "subject": "display_items_1",
+            "relation": "inside",
+            "object": "glass_case_interior_1"
+        },
+        {
+            "subject": "display_items_2",
+            "relation": "inside",
+            "object": "glass_case_interior_1"
+        },
+        {
+            "subject": "glass_case_interior_1",
+            "relation": "part_of",
+            "object": "glass_case_1"
+        },
+        {
+            "subject": "book_or_paper_stack_1",
+            "relation": "in_region",
+            "object": "left_side_area_1"
+        },
+        {
+            "subject": "small_notes_left_1",
+            "relation": "in_region",
+            "object": "left_side_area_1"
+        },
+        {
+            "subject": "small_notes_left_2",
+            "relation": "in_region",
+            "object": "left_side_area_1"
+        },
+        {
+            "subject": "small_notes_left_3",
+            "relation": "in_region",
+            "object": "left_side_area_1"
+        },
+        {
+            "subject": "small_note_left_4",
+            "relation": "in_region",
+            "object": "left_side_area_1"
+        },
+        {
+            "subject": "small_card_center_1",
+            "relation": "in_region",
+            "object": "center_area_1"
+        },
+        {
+            "subject": "small_card_center_2",
+            "relation": "in_region",
+            "object": "center_area_1"
+        },
+        {
+            "subject": "small_card_center_3",
+            "relation": "in_region",
+            "object": "center_area_1"
+        },
+        {
+            "subject": "pump_instrument_1",
+            "relation": "in_region",
+            "object": "right_side_area_1"
+        },
+        {
+            "subject": "sandbags_or_beads_container_1",
+            "relation": "in_region",
+            "object": "right_side_area_1"
+        }
+    ],
+    "current_location": "desk_surface_1",
+    "plans": [
+        {
+            "name": "organize_papers",
+            "target_region": "desk_surface_1",
+            "related_entities": [
+                "small_notes_left_1",
+                "small_notes_left_2",
+                "small_notes_left_3",
+                "small_note_left_4",
+                "small_card_center_1",
+                "small_card_center_2",
+                "small_card_center_3"
+            ]
+        },
+        {
+            "name": "review_display_items",
+            "target_region": "glass_case_interior_1",
+            "related_entities": [
+                "display_items_1",
+                "display_items_2"
+            ]
+        }
+    ]
+}

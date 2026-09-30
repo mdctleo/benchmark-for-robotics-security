@@ -1,0 +1,416 @@
+{
+    "objects": [
+        {
+            "name": "wheelbarrow_handle",
+            "type": "tool/fixture",
+            "bounding_box": {
+                "x": 0.08,
+                "y": 0.08,
+                "w": 0.18,
+                "h": 0.18
+            }
+        },
+        {
+            "name": "printer_device",
+            "type": "device",
+            "bounding_box": {
+                "x": 0.34,
+                "y": 0.34,
+                "w": 0.22,
+                "h": 0.22
+            }
+        },
+        {
+            "name": "microscope_stand",
+            "type": "instrument_component",
+            "bounding_box": {
+                "x": 0.58,
+                "y": 0.16,
+                "w": 0.16,
+                "h": 0.18
+            }
+        },
+        {
+            "name": "microscope_head",
+            "type": "instrument",
+            "bounding_box": {
+                "x": 0.62,
+                "y": 0.02,
+                "w": 0.22,
+                "h": 0.22
+            }
+        },
+        {
+            "name": "robot_arm_base",
+            "type": "robot_component",
+            "bounding_box": {
+                "x": 0.78,
+                "y": 0.0,
+                "w": 0.22,
+                "h": 0.34
+            }
+        },
+        {
+            "name": "robot_arm_forearm",
+            "type": "robot_component",
+            "bounding_box": {
+                "x": 0.78,
+                "y": 0.1,
+                "w": 0.2,
+                "h": 0.3
+            }
+        },
+        {
+            "name": "brown_cube_1",
+            "type": "object",
+            "bounding_box": {
+                "x": 0.4,
+                "y": 0.58,
+                "w": 0.14,
+                "h": 0.12
+            }
+        },
+        {
+            "name": "brown_cube_2",
+            "type": "object",
+            "bounding_box": {
+                "x": 0.44,
+                "y": 0.38,
+                "w": 0.12,
+                "h": 0.1
+            }
+        },
+        {
+            "name": "brown_cube_3",
+            "type": "object",
+            "bounding_box": {
+                "x": 0.56,
+                "y": 0.72,
+                "w": 0.1,
+                "h": 0.09
+            }
+        },
+        {
+            "name": "brown_cube_4",
+            "type": "object",
+            "bounding_box": {
+                "x": 0.19,
+                "y": 0.55,
+                "w": 0.08,
+                "h": 0.1
+            }
+        },
+        {
+            "name": "small_coil",
+            "type": "object",
+            "bounding_box": {
+                "x": 0.5,
+                "y": 0.72,
+                "w": 0.12,
+                "h": 0.1
+            }
+        },
+        {
+            "name": "cylindrical_connector",
+            "type": "object",
+            "bounding_box": {
+                "x": 0.46,
+                "y": 0.62,
+                "w": 0.08,
+                "h": 0.12
+            }
+        },
+        {
+            "name": "foil_or_tape_piece",
+            "type": "material",
+            "bounding_box": {
+                "x": 0.31,
+                "y": 0.46,
+                "w": 0.16,
+                "h": 0.08
+            }
+        },
+        {
+            "name": "paper_bag",
+            "type": "container",
+            "bounding_box": {
+                "x": 0.7,
+                "y": 0.64,
+                "w": 0.2,
+                "h": 0.18
+            }
+        },
+        {
+            "name": "white_package",
+            "type": "package",
+            "bounding_box": {
+                "x": 0.76,
+                "y": 0.46,
+                "w": 0.18,
+                "h": 0.16
+            }
+        },
+        {
+            "name": "black_rounded_base",
+            "type": "device_component",
+            "bounding_box": {
+                "x": 0.0,
+                "y": 0.0,
+                "w": 0.2,
+                "h": 0.2
+            }
+        },
+        {
+            "name": "spray_nozzle_or_collar",
+            "type": "tool/fixture",
+            "bounding_box": {
+                "x": 0.6,
+                "y": 0.25,
+                "w": 0.18,
+                "h": 0.18
+            }
+        }
+    ],
+    "regions": [
+        {
+            "name": "workspace_mat",
+            "type": "surface",
+            "polygon": [
+                [
+                    0.1,
+                    0.2
+                ],
+                [
+                    0.95,
+                    0.15
+                ],
+                [
+                    0.9,
+                    0.92
+                ],
+                [
+                    0.1,
+                    0.9
+                ]
+            ]
+        },
+        {
+            "name": "left_tool_zone",
+            "type": "zone",
+            "polygon": [
+                [
+                    0.0,
+                    0.0
+                ],
+                [
+                    0.25,
+                    0.0
+                ],
+                [
+                    0.25,
+                    0.25
+                ],
+                [
+                    0.0,
+                    0.25
+                ]
+            ]
+        },
+        {
+            "name": "robot_area",
+            "type": "zone",
+            "polygon": [
+                [
+                    0.7,
+                    0.0
+                ],
+                [
+                    1.0,
+                    0.0
+                ],
+                [
+                    1.0,
+                    0.55
+                ],
+                [
+                    0.7,
+                    0.55
+                ]
+            ]
+        },
+        {
+            "name": "device_inspection_area",
+            "type": "zone",
+            "polygon": [
+                [
+                    0.3,
+                    0.25
+                ],
+                [
+                    0.75,
+                    0.25
+                ],
+                [
+                    0.75,
+                    0.7
+                ],
+                [
+                    0.3,
+                    0.7
+                ]
+            ]
+        },
+        {
+            "name": "right_storage_area",
+            "type": "zone",
+            "polygon": [
+                [
+                    0.65,
+                    0.55
+                ],
+                [
+                    1.0,
+                    0.55
+                ],
+                [
+                    1.0,
+                    1.0
+                ],
+                [
+                    0.65,
+                    1.0
+                ]
+            ]
+        },
+        {
+            "name": "current_location",
+            "type": "location_marker",
+            "polygon": [
+                [
+                    0.36,
+                    0.4
+                ],
+                [
+                    0.6,
+                    0.4
+                ],
+                [
+                    0.6,
+                    0.66
+                ],
+                [
+                    0.36,
+                    0.66
+                ]
+            ]
+        }
+    ],
+    "semantic_relationships": [
+        {
+            "subject": "printer_device",
+            "relation": "sits_on",
+            "object": "workspace_mat"
+        },
+        {
+            "subject": "microscope_stand",
+            "relation": "mounted_over",
+            "object": "device_inspection_area"
+        },
+        {
+            "subject": "microscope_head",
+            "relation": "located_in",
+            "object": "robot_area"
+        },
+        {
+            "subject": "robot_arm_base",
+            "relation": "located_in",
+            "object": "robot_area"
+        },
+        {
+            "subject": "robot_arm_forearm",
+            "relation": "located_in",
+            "object": "robot_area"
+        },
+        {
+            "subject": "brown_cube_1",
+            "relation": "on",
+            "object": "workspace_mat"
+        },
+        {
+            "subject": "brown_cube_2",
+            "relation": "on",
+            "object": "workspace_mat"
+        },
+        {
+            "subject": "brown_cube_3",
+            "relation": "on",
+            "object": "workspace_mat"
+        },
+        {
+            "subject": "brown_cube_4",
+            "relation": "on",
+            "object": "workspace_mat"
+        },
+        {
+            "subject": "small_coil",
+            "relation": "on",
+            "object": "workspace_mat"
+        },
+        {
+            "subject": "cylindrical_connector",
+            "relation": "on",
+            "object": "workspace_mat"
+        },
+        {
+            "subject": "foil_or_tape_piece",
+            "relation": "on",
+            "object": "workspace_mat"
+        },
+        {
+            "subject": "paper_bag",
+            "relation": "located_in",
+            "object": "right_storage_area"
+        },
+        {
+            "subject": "white_package",
+            "relation": "located_in",
+            "object": "right_storage_area"
+        },
+        {
+            "subject": "black_rounded_base",
+            "relation": "located_in",
+            "object": "left_tool_zone"
+        },
+        {
+            "subject": "spray_nozzle_or_collar",
+            "relation": "located_in",
+            "object": "device_inspection_area"
+        },
+        {
+            "subject": "printer_device",
+            "relation": "near",
+            "object": "current_location"
+        },
+        {
+            "subject": "brown_cube_2",
+            "relation": "inside",
+            "object": "current_location"
+        }
+    ],
+    "plans": [
+        {
+            "plan_name": "inspect_and_handle_items",
+            "current_location": "current_location",
+            "actions": [
+                {
+                    "action": "inspect",
+                    "target": "printer_device"
+                },
+                {
+                    "action": "manipulate",
+                    "target": "brown_cube_2"
+                }
+            ]
+        }
+    ]
+}

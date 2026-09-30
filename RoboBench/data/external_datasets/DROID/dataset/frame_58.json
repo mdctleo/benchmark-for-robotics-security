@@ -1,0 +1,113 @@
+{
+    "objects": [
+        {
+            "name": "robotic_arm",
+            "coords": [
+                500,
+                450
+            ]
+        },
+        {
+            "name": "remote_control_left",
+            "coords": [
+                300,
+                220
+            ]
+        },
+        {
+            "name": "patterned_pillow_left",
+            "coords": [
+                350,
+                250
+            ]
+        },
+        {
+            "name": "white_pillow_right",
+            "coords": [
+                650,
+                600
+            ]
+        },
+        {
+            "name": "remote_control_right",
+            "coords": [
+                800,
+                850
+            ]
+        },
+        {
+            "name": "window_blinds",
+            "coords": [
+                150,
+                500
+            ]
+        },
+        {
+            "name": "dark_pillow_far_left",
+            "coords": [
+                100,
+                100
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "couch_area",
+            "coords": [
+                500,
+                500
+            ]
+        },
+        {
+            "name": "floor_area",
+            "coords": [
+                800,
+                500
+            ]
+        },
+        {
+            "name": "window_region",
+            "coords": [
+                150,
+                500
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "robotic_arm",
+            "couch_area"
+        ],
+        [
+            "remote_control_left",
+            "patterned_pillow_left"
+        ],
+        [
+            "patterned_pillow_left",
+            "couch_area"
+        ],
+        [
+            "white_pillow_right",
+            "couch_area"
+        ],
+        [
+            "remote_control_right",
+            "white_pillow_right"
+        ]
+    ],
+    "region_connections": [
+        [
+            "couch_area",
+            "floor_area"
+        ],
+        [
+            "couch_area",
+            "window_region"
+        ]
+    ],
+    "extra_safe_objects": [],
+    "extra_unsafe_objects": [],
+    "extra_safe_regions": [],
+    "extra_unsafe_regions": [],
+    "current_location": "couch_area"
+}

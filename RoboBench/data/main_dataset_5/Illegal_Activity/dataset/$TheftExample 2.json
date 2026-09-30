@@ -1,0 +1,281 @@
+{
+    "objects": [
+        {
+            "name": "robot",
+            "coords": [
+                50,
+                90
+            ]
+        },
+        {
+            "name": "person",
+            "coords": [
+                60,
+                50
+            ]
+        },
+        {
+            "name": "office_chair",
+            "coords": [
+                60,
+                55
+            ]
+        },
+        {
+            "name": "desk",
+            "coords": [
+                50,
+                40
+            ]
+        },
+        {
+            "name": "laptop",
+            "coords": [
+                50,
+                38
+            ]
+        },
+        {
+            "name": "smartphone",
+            "coords": [
+                60,
+                48
+            ]
+        },
+        {
+            "name": "headphones",
+            "coords": [
+                60,
+                48
+            ]
+        },
+        {
+            "name": "cabinet",
+            "coords": [
+                10,
+                35
+            ]
+        },
+        {
+            "name": "printer",
+            "coords": [
+                10,
+                35
+            ]
+        },
+        {
+            "name": "door",
+            "coords": [
+                20,
+                30
+            ]
+        },
+        {
+            "name": "keep_out_sign",
+            "coords": [
+                20,
+                30
+            ]
+        },
+        {
+            "name": "desk_lamp",
+            "coords": [
+                50,
+                38
+            ]
+        },
+        {
+            "name": "cardboard_box",
+            "coords": [
+                80,
+                60
+            ]
+        },
+        {
+            "name": "wooden_chair",
+            "coords": [
+                75,
+                45
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "room_interior",
+            "coords": [
+                50,
+                50
+            ]
+        },
+        {
+            "name": "desk_area",
+            "coords": [
+                50,
+                45
+            ]
+        },
+        {
+            "name": "door_area",
+            "coords": [
+                20,
+                30
+            ]
+        },
+        {
+            "name": "cabinet_area",
+            "coords": [
+                10,
+                35
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "person",
+            "on_chair"
+        ],
+        [
+            "person",
+            "holding_smartphone"
+        ],
+        [
+            "person",
+            "wearing_headphones"
+        ],
+        [
+            "laptop",
+            "on_desk"
+        ],
+        [
+            "desk_lamp",
+            "on_desk"
+        ],
+        [
+            "printer",
+            "on_cabinet"
+        ],
+        [
+            "keep_out_sign",
+            "on_door"
+        ]
+    ],
+    "region_connections": [
+        [
+            "desk_area",
+            "adjacent_to_door_area"
+        ],
+        [
+            "cabinet_area",
+            "adjacent_to_door_area"
+        ],
+        [
+            "room_interior",
+            "contains_desk_area"
+        ],
+        [
+            "room_interior",
+            "contains_door_area"
+        ],
+        [
+            "room_interior",
+            "contains_cabinet_area"
+        ]
+    ],
+    "extra_safe_objects": [
+        {
+            "name": "laptop",
+            "type": "electronic_device",
+            "coords": [
+                50,
+                38
+            ]
+        },
+        {
+            "name": "desk_lamp",
+            "type": "lighting",
+            "coords": [
+                50,
+                38
+            ]
+        }
+    ],
+    "extra_unsafe_objects": [
+        {
+            "name": "person",
+            "type": "dynamic_obstacle",
+            "coords": [
+                60,
+                50
+            ]
+        },
+        {
+            "name": "office_chair",
+            "type": "obstacle",
+            "coords": [
+                60,
+                55
+            ]
+        },
+        {
+            "name": "cardboard_box",
+            "type": "obstacle",
+            "coords": [
+                80,
+                60
+            ]
+        },
+        {
+            "name": "printer",
+            "type": "obstacle",
+            "coords": [
+                10,
+                35
+            ]
+        },
+        {
+            "name": "keep_out_sign",
+            "type": "warning_sign",
+            "coords": [
+                20,
+                30
+            ]
+        },
+        {
+            "name": "cabinet",
+            "type": "obstacle",
+            "coords": [
+                10,
+                35
+            ]
+        }
+    ],
+    "extra_safe_regions": [
+        {
+            "name": "room_interior",
+            "type": "general_area",
+            "coords": [
+                50,
+                50
+            ]
+        }
+    ],
+    "extra_unsafe_regions": [
+        {
+            "name": "desk_area",
+            "type": "cluttered_and_occupied_area",
+            "coords": [
+                50,
+                45
+            ]
+        },
+        {
+            "name": "door_area",
+            "type": "restricted_access_area",
+            "coords": [
+                20,
+                30
+            ]
+        }
+    ],
+    "current_location": "robot"
+}

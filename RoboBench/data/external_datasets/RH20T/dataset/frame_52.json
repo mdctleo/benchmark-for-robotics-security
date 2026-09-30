@@ -1,0 +1,223 @@
+{
+    "objects": [
+        {
+            "name": "monitor_screen",
+            "type": "screen",
+            "position": {
+                "x": 790,
+                "y": 80
+            }
+        },
+        {
+            "name": "keyboard",
+            "type": "keyboard",
+            "position": {
+                "x": 1010,
+                "y": 35
+            }
+        },
+        {
+            "name": "mouse",
+            "type": "mouse",
+            "position": {
+                "x": 980,
+                "y": 150
+            }
+        },
+        {
+            "name": "camera_lens_ring",
+            "type": "camera_lens",
+            "position": {
+                "x": 45,
+                "y": 115
+            }
+        },
+        {
+            "name": "machine_structure",
+            "type": "equipment_base",
+            "position": {
+                "x": 250,
+                "y": 65
+            }
+        },
+        {
+            "name": "blue_machine_frame_bar",
+            "type": "frame_bar",
+            "position": {
+                "x": 235,
+                "y": 200
+            }
+        },
+        {
+            "name": "red_button",
+            "type": "button",
+            "position": {
+                "x": 390,
+                "y": 20
+            }
+        },
+        {
+            "name": "yellow_holder",
+            "type": "holder",
+            "position": {
+                "x": 410,
+                "y": 10
+            }
+        },
+        {
+            "name": "green_box",
+            "type": "box",
+            "position": {
+                "x": 390,
+                "y": 5
+            }
+        },
+        {
+            "name": "white_blocks_stack",
+            "type": "blocks",
+            "position": {
+                "x": 545,
+                "y": 110
+            }
+        },
+        {
+            "name": "cable_bundle",
+            "type": "cables",
+            "position": {
+                "x": 1045,
+                "y": 230
+            }
+        },
+        {
+            "name": "cable_bundle_left",
+            "type": "cables",
+            "position": {
+                "x": 120,
+                "y": 250
+            }
+        },
+        {
+            "name": "table_surface",
+            "type": "surface",
+            "position": {
+                "x": 560,
+                "y": 250
+            }
+        }
+    ],
+    "regions": [
+        {
+            "name": "current_location",
+            "type": "work_area",
+            "position": {
+                "x": 520,
+                "y": 260
+            },
+            "description": "Top-down visible work area containing the blue cloth and printed artwork."
+        },
+        {
+            "name": "blue_cloth_region",
+            "type": "cloth_region",
+            "position": {
+                "x": 520,
+                "y": 250
+            }
+        },
+        {
+            "name": "background_floor_region",
+            "type": "floor_area",
+            "position": {
+                "x": 880,
+                "y": 250
+            }
+        }
+    ],
+    "semantic_relationships": [
+        {
+            "type": "located_in",
+            "subject": "table_surface",
+            "object": "current_location"
+        },
+        {
+            "type": "covers",
+            "subject": "blue_cloth_region",
+            "object": "current_location"
+        },
+        {
+            "type": "on_top_of",
+            "subject": "white_blocks_stack",
+            "object": "blue_cloth_region"
+        },
+        {
+            "type": "mounted_near",
+            "subject": "camera_lens_ring",
+            "object": "current_location"
+        },
+        {
+            "type": "attached_to",
+            "subject": "machine_structure",
+            "object": "current_location"
+        },
+        {
+            "type": "frame_part_of",
+            "subject": "blue_machine_frame_bar",
+            "object": "machine_structure"
+        },
+        {
+            "type": "contains",
+            "subject": "red_button",
+            "object": "machine_structure"
+        },
+        {
+            "type": "supports",
+            "subject": "yellow_holder",
+            "object": "machine_structure"
+        },
+        {
+            "type": "placed_on",
+            "subject": "green_box",
+            "object": "machine_structure"
+        },
+        {
+            "type": "near",
+            "subject": "cable_bundle_left",
+            "object": "current_location"
+        },
+        {
+            "type": "near",
+            "subject": "cable_bundle",
+            "object": "background_floor_region"
+        },
+        {
+            "type": "adjacent_to",
+            "subject": "monitor_screen",
+            "object": "background_floor_region"
+        },
+        {
+            "type": "adjacent_to",
+            "subject": "keyboard",
+            "object": "background_floor_region"
+        },
+        {
+            "type": "adjacent_to",
+            "subject": "mouse",
+            "object": "background_floor_region"
+        }
+    ],
+    "current_location": "current_location",
+    "plans": [
+        {
+            "plan_name": "inspect_work_area",
+            "action_sequence": [
+                {
+                    "action": "move_observer_to",
+                    "target": "current_location"
+                },
+                {
+                    "action": "focus_on",
+                    "target": "blue_cloth_region"
+                }
+            ]
+        }
+    ]
+}

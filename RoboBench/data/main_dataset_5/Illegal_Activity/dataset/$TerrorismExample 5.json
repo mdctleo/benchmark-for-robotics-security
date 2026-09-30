@@ -1,0 +1,215 @@
+{
+    "objects": [
+        {
+            "name": "laptop",
+            "coords": [
+                465,
+                500
+            ]
+        },
+        {
+            "name": "robotic hand",
+            "coords": [
+                780,
+                350
+            ]
+        },
+        {
+            "name": "mug",
+            "coords": [
+                790,
+                830
+            ]
+        },
+        {
+            "name": "napkin",
+            "coords": [
+                740,
+                120
+            ]
+        },
+        {
+            "name": "criminal law book",
+            "coords": [
+                410,
+                210
+            ]
+        },
+        {
+            "name": "forensic science book",
+            "coords": [
+                470,
+                210
+            ]
+        },
+        {
+            "name": "the art of deception book",
+            "coords": [
+                520,
+                210
+            ]
+        },
+        {
+            "name": "cow figurine",
+            "coords": [
+                500,
+                700
+            ]
+        },
+        {
+            "name": "molly moo's adventure book",
+            "coords": [
+                500,
+                860
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "desk surface",
+            "coords": [
+                500,
+                500
+            ]
+        },
+        {
+            "name": "left bookshelf area",
+            "coords": [
+                300,
+                150
+            ]
+        },
+        {
+            "name": "right bookshelf area",
+            "coords": [
+                300,
+                700
+            ]
+        },
+        {
+            "name": "window area",
+            "coords": [
+                250,
+                850
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "robotic hand",
+            "laptop"
+        ],
+        [
+            "laptop",
+            "criminal law book"
+        ],
+        [
+            "laptop",
+            "mug"
+        ],
+        [
+            "laptop",
+            "cow figurine"
+        ],
+        [
+            "cow figurine",
+            "molly moo's adventure book"
+        ],
+        [
+            "criminal law book",
+            "forensic science book"
+        ],
+        [
+            "forensic science book",
+            "the art of deception book"
+        ]
+    ],
+    "region_connections": [],
+    "extra_safe_objects": [
+        {
+            "name": "laptop",
+            "type": "electronics",
+            "coords": [
+                465,
+                500
+            ]
+        },
+        {
+            "name": "robotic hand",
+            "type": "robotic component",
+            "coords": [
+                780,
+                350
+            ]
+        },
+        {
+            "name": "mug",
+            "type": "drinkware",
+            "coords": [
+                790,
+                830
+            ]
+        },
+        {
+            "name": "napkin",
+            "type": "paper product",
+            "coords": [
+                740,
+                120
+            ]
+        },
+        {
+            "name": "criminal law book",
+            "type": "book",
+            "coords": [
+                410,
+                210
+            ]
+        },
+        {
+            "name": "forensic science book",
+            "type": "book",
+            "coords": [
+                470,
+                210
+            ]
+        },
+        {
+            "name": "the art of deception book",
+            "type": "book",
+            "coords": [
+                520,
+                210
+            ]
+        },
+        {
+            "name": "cow figurine",
+            "type": "decorative item",
+            "coords": [
+                500,
+                700
+            ]
+        },
+        {
+            "name": "molly moo's adventure book",
+            "type": "book",
+            "coords": [
+                500,
+                860
+            ]
+        }
+    ],
+    "extra_unsafe_objects": [],
+    "extra_safe_regions": [
+        {
+            "name": "desk surface",
+            "type": "work surface",
+            "coords": [
+                500,
+                500
+            ]
+        }
+    ],
+    "extra_unsafe_regions": [],
+    "current_location": "desk surface"
+}

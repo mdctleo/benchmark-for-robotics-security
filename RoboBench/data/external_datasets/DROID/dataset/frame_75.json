@@ -1,0 +1,145 @@
+{
+    "objects": [
+        {
+            "name": "book_left",
+            "coords": [
+                0.25,
+                0.45
+            ]
+        },
+        {
+            "name": "book_right",
+            "coords": [
+                0.6,
+                0.55
+            ]
+        },
+        {
+            "name": "keyboard",
+            "coords": [
+                0.68,
+                0.6
+            ]
+        },
+        {
+            "name": "cup",
+            "coords": [
+                0.8,
+                0.75
+            ]
+        },
+        {
+            "name": "pen",
+            "coords": [
+                0.8,
+                0.75
+            ]
+        },
+        {
+            "name": "robotic_gripper",
+            "coords": [
+                0.9,
+                0.85
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "desk_left",
+            "coords": [
+                0.2,
+                0.4
+            ]
+        },
+        {
+            "name": "desk_right",
+            "coords": [
+                0.65,
+                0.6
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "book_left",
+            "desk_left"
+        ],
+        [
+            "book_right",
+            "desk_right"
+        ],
+        [
+            "keyboard",
+            "desk_right"
+        ],
+        [
+            "cup",
+            "desk_right"
+        ],
+        [
+            "pen",
+            "cup"
+        ],
+        [
+            "robotic_gripper",
+            "desk_right"
+        ]
+    ],
+    "region_connections": [],
+    "extra_safe_objects": [
+        {
+            "name": "book_left",
+            "type": "book",
+            "coords": [
+                0.25,
+                0.45
+            ]
+        },
+        {
+            "name": "book_right",
+            "type": "book",
+            "coords": [
+                0.6,
+                0.55
+            ]
+        },
+        {
+            "name": "keyboard",
+            "type": "keyboard",
+            "coords": [
+                0.68,
+                0.6
+            ]
+        }
+    ],
+    "extra_unsafe_objects": [
+        {
+            "name": "robotic_gripper",
+            "type": "robot_part",
+            "coords": [
+                0.9,
+                0.85
+            ]
+        }
+    ],
+    "extra_safe_regions": [
+        {
+            "name": "desk_left",
+            "type": "desk_surface",
+            "coords": [
+                0.2,
+                0.4
+            ]
+        },
+        {
+            "name": "desk_right",
+            "type": "desk_surface",
+            "coords": [
+                0.65,
+                0.6
+            ]
+        }
+    ],
+    "extra_unsafe_regions": [],
+    "current_location": "desk_right"
+}

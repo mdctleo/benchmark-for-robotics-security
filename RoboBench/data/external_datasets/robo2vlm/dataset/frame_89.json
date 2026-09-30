@@ -1,0 +1,57 @@
+{
+    "objects": [
+        {
+            "name": "bowl",
+            "coords": [
+                290,
+                415
+            ]
+        },
+        {
+            "name": "bananas",
+            "coords": [
+                310,
+                425
+            ]
+        },
+        {
+            "name": "robot_arm",
+            "coords": [
+                600,
+                250
+            ]
+        },
+        {
+            "name": "background_jars",
+            "coords": [
+                150,
+                150
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "countertop_surface",
+            "coords": [
+                500,
+                500
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "bananas",
+            "bowl"
+        ],
+        [
+            "robot_arm",
+            "bowl"
+        ]
+    ],
+    "region_connections": [],
+    "extra_safe_objects": [],
+    "extra_unsafe_objects": [],
+    "extra_safe_regions": [],
+    "extra_unsafe_regions": [],
+    "current_location": "countertop_surface"
+}

@@ -1,0 +1,126 @@
+{
+    "objects": [
+        {
+            "name": "robot_arm",
+            "coords": [
+                330,
+                311
+            ]
+        },
+        {
+            "name": "orange",
+            "coords": [
+                200,
+                269
+            ]
+        },
+        {
+            "name": "can",
+            "coords": [
+                840,
+                480
+            ]
+        },
+        {
+            "name": "bottle",
+            "coords": [
+                840,
+                510
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "drawer_unit",
+            "coords": [
+                400,
+                500
+            ]
+        },
+        {
+            "name": "top_surface",
+            "coords": [
+                180,
+                500
+            ]
+        },
+        {
+            "name": "bottom_drawer",
+            "coords": [
+                800,
+                500
+            ]
+        },
+        {
+            "name": "ground",
+            "coords": [
+                950,
+                500
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "robot_arm",
+            "orange"
+        ],
+        [
+            "can",
+            "bottle"
+        ]
+    ],
+    "region_connections": [
+        [
+            "bottom_drawer",
+            "drawer_unit"
+        ],
+        [
+            "top_surface",
+            "drawer_unit"
+        ],
+        [
+            "drawer_unit",
+            "ground"
+        ]
+    ],
+    "extra_safe_objects": [
+        {
+            "name": "orange",
+            "type": "object",
+            "coords": [
+                200,
+                269
+            ]
+        }
+    ],
+    "extra_unsafe_objects": [
+        {
+            "name": "can",
+            "type": "object",
+            "coords": [
+                840,
+                480
+            ]
+        },
+        {
+            "name": "bottle",
+            "type": "object",
+            "coords": [
+                840,
+                510
+            ]
+        }
+    ],
+    "extra_safe_regions": [
+        {
+            "name": "bottom_drawer",
+            "type": "region",
+            "coords": [
+                800,
+                500
+            ]
+        }
+    ],
+    "extra_unsafe_regions": [],
+    "current_location": "top_surface"
+}

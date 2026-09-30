@@ -1,0 +1,196 @@
+{
+    "objects": [
+        {
+            "name": "robotic_arm",
+            "coords": [
+                350,
+                350
+            ]
+        },
+        {
+            "name": "desk",
+            "coords": [
+                400,
+                200
+            ]
+        },
+        {
+            "name": "blue_cloth",
+            "coords": [
+                550,
+                100
+            ]
+        },
+        {
+            "name": "chair",
+            "coords": [
+                700,
+                400
+            ]
+        },
+        {
+            "name": "side_table",
+            "coords": [
+                550,
+                600
+            ]
+        },
+        {
+            "name": "lamp",
+            "coords": [
+                400,
+                600
+            ]
+        },
+        {
+            "name": "window",
+            "coords": [
+                300,
+                700
+            ]
+        },
+        {
+            "name": "blue_towel",
+            "coords": [
+                600,
+                850
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "room",
+            "coords": [
+                500,
+                500
+            ]
+        },
+        {
+            "name": "floor",
+            "coords": [
+                800,
+                500
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "robotic_arm",
+            "desk"
+        ],
+        [
+            "blue_cloth",
+            "desk"
+        ],
+        [
+            "lamp",
+            "side_table"
+        ],
+        [
+            "side_table",
+            "window"
+        ],
+        [
+            "chair",
+            "desk"
+        ],
+        [
+            "blue_towel",
+            "side_table"
+        ]
+    ],
+    "region_connections": [
+        [
+            "room",
+            "floor"
+        ]
+    ],
+    "extra_safe_objects": [
+        {
+            "name": "desk",
+            "type": "furniture",
+            "coords": [
+                400,
+                200
+            ]
+        },
+        {
+            "name": "blue_cloth",
+            "type": "cloth",
+            "coords": [
+                550,
+                100
+            ]
+        },
+        {
+            "name": "chair",
+            "type": "furniture",
+            "coords": [
+                700,
+                400
+            ]
+        },
+        {
+            "name": "side_table",
+            "type": "furniture",
+            "coords": [
+                550,
+                600
+            ]
+        },
+        {
+            "name": "lamp",
+            "type": "light_source",
+            "coords": [
+                400,
+                600
+            ]
+        },
+        {
+            "name": "window",
+            "type": "architectural_feature",
+            "coords": [
+                300,
+                700
+            ]
+        },
+        {
+            "name": "blue_towel",
+            "type": "cloth",
+            "coords": [
+                600,
+                850
+            ]
+        }
+    ],
+    "extra_unsafe_objects": [
+        {
+            "name": "robotic_arm",
+            "type": "machine",
+            "coords": [
+                350,
+                350
+            ]
+        }
+    ],
+    "extra_safe_regions": [
+        {
+            "name": "room",
+            "type": "living_space",
+            "coords": [
+                500,
+                500
+            ]
+        },
+        {
+            "name": "floor",
+            "type": "surface",
+            "coords": [
+                800,
+                500
+            ]
+        }
+    ],
+    "extra_unsafe_regions": [],
+    "current_location": "room"
+}

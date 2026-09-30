@@ -1,0 +1,350 @@
+{
+    "objects": [
+        {
+            "name": "traffic_light_cluster_1",
+            "type": "traffic_light",
+            "bbox_topdown": {
+                "x": 0.665,
+                "y": 0.555
+            }
+        },
+        {
+            "name": "traffic_light_cluster_2",
+            "type": "traffic_light",
+            "bbox_topdown": {
+                "x": 0.635,
+                "y": 0.505
+            }
+        },
+        {
+            "name": "crosswalk_area",
+            "type": "crosswalk",
+            "bbox_topdown": {
+                "x": 0.5,
+                "y": 0.545
+            }
+        },
+        {
+            "name": "lane_1",
+            "type": "road_lane",
+            "bbox_topdown": {
+                "x": 0.525,
+                "y": 0.6
+            }
+        },
+        {
+            "name": "lane_2",
+            "type": "road_lane",
+            "bbox_topdown": {
+                "x": 0.515,
+                "y": 0.66
+            }
+        },
+        {
+            "name": "lane_3",
+            "type": "road_lane",
+            "bbox_topdown": {
+                "x": 0.54,
+                "y": 0.65
+            }
+        },
+        {
+            "name": "road_divider",
+            "type": "road_divider",
+            "bbox_topdown": {
+                "x": 0.56,
+                "y": 0.61
+            }
+        },
+        {
+            "name": "building_1",
+            "type": "building",
+            "bbox_topdown": {
+                "x": 0.83,
+                "y": 0.38
+            }
+        },
+        {
+            "name": "building_2",
+            "type": "building",
+            "bbox_topdown": {
+                "x": 0.17,
+                "y": 0.415
+            }
+        },
+        {
+            "name": "trees_1",
+            "type": "trees",
+            "bbox_topdown": {
+                "x": 0.78,
+                "y": 0.45
+            }
+        },
+        {
+            "name": "trees_2",
+            "type": "trees",
+            "bbox_topdown": {
+                "x": 0.25,
+                "y": 0.47
+            }
+        },
+        {
+            "name": "car_1",
+            "type": "vehicle",
+            "bbox_topdown": {
+                "x": 0.43,
+                "y": 0.6
+            }
+        },
+        {
+            "name": "car_2",
+            "type": "vehicle",
+            "bbox_topdown": {
+                "x": 0.5,
+                "y": 0.535
+            }
+        },
+        {
+            "name": "parked_car_1",
+            "type": "vehicle",
+            "bbox_topdown": {
+                "x": 0.925,
+                "y": 0.565
+            }
+        },
+        {
+            "name": "parked_car_2",
+            "type": "vehicle",
+            "bbox_topdown": {
+                "x": 0.07,
+                "y": 0.57
+            }
+        },
+        {
+            "name": "parking_lot_edge",
+            "type": "curb_or_edge",
+            "bbox_topdown": {
+                "x": 0.98,
+                "y": 0.64
+            }
+        },
+        {
+            "name": "traffic_pole_left",
+            "type": "traffic_pole",
+            "bbox_topdown": {
+                "x": 0.64,
+                "y": 0.53
+            }
+        },
+        {
+            "name": "traffic_pole_right",
+            "type": "traffic_pole",
+            "bbox_topdown": {
+                "x": 0.99,
+                "y": 0.62
+            }
+        }
+    ],
+    "regions": [
+        {
+            "name": "ground_1",
+            "type": "road_intersection_area",
+            "polygon_topdown": [
+                [
+                    0.0,
+                    0.72
+                ],
+                [
+                    1.0,
+                    0.72
+                ],
+                [
+                    0.97,
+                    0.14
+                ],
+                [
+                    0.03,
+                    0.14
+                ]
+            ]
+        },
+        {
+            "name": "intersection_1",
+            "type": "intersection",
+            "polygon_topdown": [
+                [
+                    0.29,
+                    0.66
+                ],
+                [
+                    0.72,
+                    0.66
+                ],
+                [
+                    0.67,
+                    0.46
+                ],
+                [
+                    0.34,
+                    0.46
+                ]
+            ]
+        },
+        {
+            "name": "right_side_shoulder_1",
+            "type": "shoulder",
+            "polygon_topdown": [
+                [
+                    0.7,
+                    0.72
+                ],
+                [
+                    1.0,
+                    0.72
+                ],
+                [
+                    1.0,
+                    0.46
+                ],
+                [
+                    0.7,
+                    0.46
+                ]
+            ]
+        },
+        {
+            "name": "left_side_shoulder_1",
+            "type": "shoulder",
+            "polygon_topdown": [
+                [
+                    0.0,
+                    0.72
+                ],
+                [
+                    0.3,
+                    0.72
+                ],
+                [
+                    0.3,
+                    0.46
+                ],
+                [
+                    0.0,
+                    0.46
+                ]
+            ]
+        },
+        {
+            "name": "center_corridor_1",
+            "type": "approach_corridor",
+            "polygon_topdown": [
+                [
+                    0.42,
+                    0.72
+                ],
+                [
+                    0.6,
+                    0.72
+                ],
+                [
+                    0.61,
+                    0.43
+                ],
+                [
+                    0.41,
+                    0.43
+                ]
+            ]
+        }
+    ],
+    "semantic_relationships": [
+        {
+            "subject": "car_1",
+            "relation": "is_on",
+            "object": "intersection_1"
+        },
+        {
+            "subject": "car_2",
+            "relation": "is_in",
+            "object": "intersection_1"
+        },
+        {
+            "subject": "parked_car_1",
+            "relation": "is_on",
+            "object": "right_side_shoulder_1"
+        },
+        {
+            "subject": "parked_car_2",
+            "relation": "is_on",
+            "object": "left_side_shoulder_1"
+        },
+        {
+            "subject": "traffic_light_cluster_1",
+            "relation": "controls",
+            "object": "center_corridor_1"
+        },
+        {
+            "subject": "traffic_light_cluster_2",
+            "relation": "controls",
+            "object": "center_corridor_1"
+        },
+        {
+            "subject": "crosswalk_area",
+            "relation": "is_within",
+            "object": "intersection_1"
+        },
+        {
+            "subject": "lane_1",
+            "relation": "is_within",
+            "object": "center_corridor_1"
+        },
+        {
+            "subject": "lane_2",
+            "relation": "is_within",
+            "object": "center_corridor_1"
+        },
+        {
+            "subject": "lane_3",
+            "relation": "is_within",
+            "object": "center_corridor_1"
+        },
+        {
+            "subject": "road_divider",
+            "relation": "separates",
+            "object": "lane_2"
+        },
+        {
+            "subject": "trees_1",
+            "relation": "border",
+            "object": "right_side_shoulder_1"
+        },
+        {
+            "subject": "trees_2",
+            "relation": "border",
+            "object": "left_side_shoulder_1"
+        },
+        {
+            "subject": "building_1",
+            "relation": "is_adjacent_to",
+            "object": "right_side_shoulder_1"
+        },
+        {
+            "subject": "building_2",
+            "relation": "is_adjacent_to",
+            "object": "left_side_shoulder_1"
+        },
+        {
+            "subject": "traffic_pole_left",
+            "relation": "supports",
+            "object": "traffic_light_cluster_2"
+        },
+        {
+            "subject": "traffic_pole_right",
+            "relation": "supports",
+            "object": "traffic_light_cluster_1"
+        }
+    ],
+    "current_location": {
+        "name": "center_corridor_1"
+    }
+}

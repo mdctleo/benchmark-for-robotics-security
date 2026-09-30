@@ -1,0 +1,201 @@
+{
+    "objects": [
+        {
+            "name": "cardboard_box",
+            "type": "object",
+            "coordinate": {
+                "x": 440,
+                "y": 250
+            },
+            "description": "Rectangular cardboard box placed on the mat."
+        },
+        {
+            "name": "turtle_duck",
+            "type": "object",
+            "coordinate": {
+                "x": 80,
+                "y": 70
+            },
+            "description": "Circular device/lens-like object on the left side."
+        },
+        {
+            "name": "keyboard_panel",
+            "type": "object",
+            "coordinate": {
+                "x": 320,
+                "y": 30
+            },
+            "description": "Keyboard-like panel near the top center."
+        },
+        {
+            "name": "machine_cylindrical_unit",
+            "type": "object",
+            "coordinate": {
+                "x": 710,
+                "y": 260
+            },
+            "description": "Cylindrical machine component on the right."
+        },
+        {
+            "name": "machine_cylindrical_base",
+            "type": "object",
+            "coordinate": {
+                "x": 820,
+                "y": 260
+            },
+            "description": "Lower cylindrical base of the machine on the right."
+        },
+        {
+            "name": "small_utility_tools",
+            "type": "object",
+            "coordinate": {
+                "x": 370,
+                "y": 115
+            },
+            "description": "Small colored items on the bench (e.g., tape/marker-like tools)."
+        },
+        {
+            "name": "wall_rack_shelf",
+            "type": "object",
+            "coordinate": {
+                "x": 640,
+                "y": 20
+            },
+            "description": "Metal rack/shelf structure in the background."
+        },
+        {
+            "name": "blue_mat",
+            "type": "object",
+            "coordinate": {
+                "x": 470,
+                "y": 265
+            },
+            "description": "Blue work mat on which the box rests."
+        },
+        {
+            "name": "wood_floor_strip",
+            "type": "object",
+            "coordinate": {
+                "x": 45,
+                "y": 270
+            },
+            "description": "Light wooden floor strip visible at left."
+        }
+    ],
+    "regions": [
+        {
+            "name": "work_area_mat",
+            "type": "region",
+            "coordinate": {
+                "x": 470,
+                "y": 265
+            },
+            "description": "Primary blue work surface/mat area."
+        },
+        {
+            "name": "cardboard_box_region",
+            "type": "region",
+            "coordinate": {
+                "x": 440,
+                "y": 250
+            },
+            "description": "Region covering the cardboard box position."
+        },
+        {
+            "name": "left_background_workspace",
+            "type": "region",
+            "coordinate": {
+                "x": 120,
+                "y": 170
+            },
+            "description": "Left-side background workspace area around the circular device."
+        },
+        {
+            "name": "right_machine_area",
+            "type": "region",
+            "coordinate": {
+                "x": 760,
+                "y": 230
+            },
+            "description": "Right-side machine area surrounding the cylindrical unit."
+        },
+        {
+            "name": "top_background_station",
+            "type": "region",
+            "coordinate": {
+                "x": 420,
+                "y": 70
+            },
+            "description": "Upper background station including keyboard and tools."
+        }
+    ],
+    "semantic_relationships": [
+        {
+            "relation": "on",
+            "from": "cardboard_box",
+            "to": "blue_mat"
+        },
+        {
+            "relation": "located_in",
+            "from": "cardboard_box",
+            "to": "cardboard_box_region"
+        },
+        {
+            "relation": "contained_in",
+            "from": "blue_mat",
+            "to": "work_area_mat"
+        },
+        {
+            "relation": "adjacent_to",
+            "from": "machine_cylindrical_unit",
+            "to": "work_area_mat"
+        },
+        {
+            "relation": "adjacent_to",
+            "from": "turtle_duck",
+            "to": "work_area_mat"
+        },
+        {
+            "relation": "located_in",
+            "from": "turtle_duck",
+            "to": "left_background_workspace"
+        },
+        {
+            "relation": "located_in",
+            "from": "machine_cylindrical_unit",
+            "to": "right_machine_area"
+        },
+        {
+            "relation": "located_in",
+            "from": "keyboard_panel",
+            "to": "top_background_station"
+        },
+        {
+            "relation": "located_in",
+            "from": "small_utility_tools",
+            "to": "top_background_station"
+        },
+        {
+            "relation": "background_structure",
+            "from": "wall_rack_shelf",
+            "to": "top_background_station"
+        },
+        {
+            "relation": "ground_supporting_surface",
+            "from": "wood_floor_strip",
+            "to": "left_background_workspace"
+        }
+    ],
+    "current_location": {
+        "name": "cardboard_box",
+        "region": "cardboard_box_region"
+    },
+    "plans": [
+        {
+            "goal": "place_on_region",
+            "target_object": "cardboard_box",
+            "target_region": "work_area_mat",
+            "next_action": "position the cardboard_box within work_area_mat"
+        }
+    ]
+}

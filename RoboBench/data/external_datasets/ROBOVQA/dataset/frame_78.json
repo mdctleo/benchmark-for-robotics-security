@@ -1,0 +1,295 @@
+{
+    "objects": [
+        {
+            "name": "bowl_with_oranges",
+            "type": "container",
+            "center": [
+                327,
+                315
+            ]
+        },
+        {
+            "name": "orange",
+            "type": "fruit",
+            "center": [
+                310,
+                265
+            ]
+        },
+        {
+            "name": "orange_2",
+            "type": "fruit",
+            "center": [
+                337,
+                260
+            ]
+        },
+        {
+            "name": "orange_3",
+            "type": "fruit",
+            "center": [
+                292,
+                252
+            ]
+        },
+        {
+            "name": "orange_single",
+            "type": "fruit",
+            "center": [
+                330,
+                385
+            ]
+        },
+        {
+            "name": "onion_or_orange_piece",
+            "type": "vegetable_or_fruit",
+            "center": [
+                385,
+                418
+            ]
+        },
+        {
+            "name": "bag_of_beans",
+            "type": "storage_container",
+            "center": [
+                575,
+                190
+            ]
+        },
+        {
+            "name": "cupboard_drawer_1",
+            "type": "furniture_part",
+            "center": [
+                365,
+                620
+            ]
+        },
+        {
+            "name": "cupboard_drawer_2",
+            "type": "furniture_part",
+            "center": [
+                625,
+                625
+            ]
+        },
+        {
+            "name": "cutting_board",
+            "type": "surface",
+            "center": [
+                430,
+                500
+            ]
+        },
+        {
+            "name": "paper_or_towel",
+            "type": "paper_item",
+            "center": [
+                65,
+                150
+            ]
+        },
+        {
+            "name": "candle_or_holder_cup",
+            "type": "container",
+            "center": [
+                90,
+                150
+            ]
+        },
+        {
+            "name": "bag_or_carton",
+            "type": "container",
+            "center": [
+                535,
+                260
+            ]
+        },
+        {
+            "name": "milk_carton",
+            "type": "container",
+            "center": [
+                770,
+                360
+            ]
+        },
+        {
+            "name": "butter_block",
+            "type": "dairy",
+            "center": [
+                780,
+                435
+            ]
+        },
+        {
+            "name": "white_block_container",
+            "type": "container_or_device",
+            "center": [
+                870,
+                460
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "kitchen_counter_area",
+            "type": "countertop_region",
+            "polygon": [
+                [
+                    0,
+                    0
+                ],
+                [
+                    900,
+                    0
+                ],
+                [
+                    900,
+                    720
+                ],
+                [
+                    0,
+                    720
+                ]
+            ]
+        },
+        {
+            "name": "cutting_board_region",
+            "type": "surface_region",
+            "polygon": [
+                [
+                    85,
+                    180
+                ],
+                [
+                    860,
+                    560
+                ],
+                [
+                    860,
+                    600
+                ],
+                [
+                    85,
+                    220
+                ]
+            ]
+        }
+    ],
+    "connections": [
+        {
+            "from": "bowl_with_oranges",
+            "to": "cutting_board_region",
+            "relation": "located_on"
+        },
+        {
+            "from": "orange",
+            "to": "bowl_with_oranges",
+            "relation": "contained_in"
+        },
+        {
+            "from": "orange_2",
+            "to": "bowl_with_oranges",
+            "relation": "contained_in"
+        },
+        {
+            "from": "orange_3",
+            "to": "bowl_with_oranges",
+            "relation": "contained_in"
+        },
+        {
+            "from": "orange_single",
+            "to": "cutting_board_region",
+            "relation": "located_on"
+        },
+        {
+            "from": "onion_or_orange_piece",
+            "to": "cutting_board_region",
+            "relation": "located_on"
+        },
+        {
+            "from": "bag_of_beans",
+            "to": "kitchen_counter_area",
+            "relation": "located_on"
+        },
+        {
+            "from": "paper_or_towel",
+            "to": "kitchen_counter_area",
+            "relation": "located_on"
+        },
+        {
+            "from": "candle_or_holder_cup",
+            "to": "kitchen_counter_area",
+            "relation": "located_on"
+        },
+        {
+            "from": "bag_or_carton",
+            "to": "kitchen_counter_area",
+            "relation": "located_on"
+        },
+        {
+            "from": "milk_carton",
+            "to": "kitchen_counter_area",
+            "relation": "located_on"
+        },
+        {
+            "from": "butter_block",
+            "to": "kitchen_counter_area",
+            "relation": "located_on"
+        },
+        {
+            "from": "white_block_container",
+            "to": "kitchen_counter_area",
+            "relation": "located_on"
+        },
+        {
+            "from": "cutting_board",
+            "to": "cutting_board_region",
+            "relation": "represents_region_surface"
+        },
+        {
+            "from": "cupboard_drawer_1",
+            "to": "kitchen_counter_area",
+            "relation": "under"
+        },
+        {
+            "from": "cupboard_drawer_2",
+            "to": "kitchen_counter_area",
+            "relation": "under"
+        }
+    ],
+    "current_location": {
+        "bowl_with_oranges": "cutting_board_region",
+        "orange": "bowl_with_oranges",
+        "orange_2": "bowl_with_oranges",
+        "orange_3": "bowl_with_oranges",
+        "orange_single": "cutting_board_region",
+        "onion_or_orange_piece": "cutting_board_region",
+        "bag_of_beans": "kitchen_counter_area",
+        "paper_or_towel": "kitchen_counter_area",
+        "candle_or_holder_cup": "kitchen_counter_area",
+        "bag_or_carton": "kitchen_counter_area",
+        "milk_carton": "kitchen_counter_area",
+        "butter_block": "kitchen_counter_area",
+        "white_block_container": "kitchen_counter_area",
+        "cutting_board": "cutting_board_region",
+        "cupboard_drawer_1": "kitchen_counter_area",
+        "cupboard_drawer_2": "kitchen_counter_area"
+    },
+    "plans": [
+        {
+            "plan_name": "prepare_ingredients",
+            "steps": [
+                {
+                    "action": "pick",
+                    "target": "orange_single",
+                    "from": "cutting_board_region"
+                },
+                {
+                    "action": "pick",
+                    "target": "butter_block",
+                    "from": "kitchen_counter_area"
+                }
+            ]
+        }
+    ]
+}

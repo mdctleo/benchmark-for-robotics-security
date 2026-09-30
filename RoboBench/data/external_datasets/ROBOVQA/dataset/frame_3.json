@@ -1,0 +1,324 @@
+{
+    "objects": [
+        {
+            "name": "robot_vacuum",
+            "type": "robot",
+            "coordinates": {
+                "x": 830,
+                "y": 250
+            }
+        },
+        {
+            "name": "shopping_cart",
+            "type": "furniture",
+            "coordinates": {
+                "x": 760,
+                "y": 120
+            }
+        },
+        {
+            "name": "wheels_table_base",
+            "type": "furniture",
+            "coordinates": {
+                "x": 870,
+                "y": 80
+            }
+        },
+        {
+            "name": "leafy_plant_shelf_or_stand",
+            "type": "furniture",
+            "coordinates": {
+                "x": 640,
+                "y": 60
+            }
+        },
+        {
+            "name": "cabinet_unit",
+            "type": "furniture",
+            "coordinates": {
+                "x": 50,
+                "y": 70
+            }
+        },
+        {
+            "name": "kitchen_counter_top",
+            "type": "surface",
+            "coordinates": {
+                "x": 480,
+                "y": 310
+            }
+        },
+        {
+            "name": "bowl",
+            "type": "container",
+            "coordinates": {
+                "x": 80,
+                "y": 200
+            }
+        },
+        {
+            "name": "package_fruits_or_cookies",
+            "type": "food_packaging",
+            "coordinates": {
+                "x": 690,
+                "y": 120
+            }
+        },
+        {
+            "name": "box_of_snacks",
+            "type": "food_packaging",
+            "coordinates": {
+                "x": 740,
+                "y": 110
+            }
+        },
+        {
+            "name": "small_packet",
+            "type": "snack_packet",
+            "coordinates": {
+                "x": 460,
+                "y": 250
+            }
+        },
+        {
+            "name": "small_packet_2",
+            "type": "snack_packet",
+            "coordinates": {
+                "x": 590,
+                "y": 320
+            }
+        },
+        {
+            "name": "small_snack_wrappers",
+            "type": "snack_packaging",
+            "coordinates": {
+                "x": 515,
+                "y": 350
+            }
+        },
+        {
+            "name": "circular_label_mat_or_item",
+            "type": "object",
+            "coordinates": {
+                "x": 190,
+                "y": 210
+            }
+        },
+        {
+            "name": "metal_cart_runner_or_rail",
+            "type": "furniture",
+            "coordinates": {
+                "x": 250,
+                "y": 110
+            }
+        }
+    ],
+    "regions": [
+        {
+            "name": "counter_1",
+            "type": "surface_region",
+            "polygon": [
+                {
+                    "x": 0,
+                    "y": 140
+                },
+                {
+                    "x": 1024,
+                    "y": 140
+                },
+                {
+                    "x": 1024,
+                    "y": 460
+                },
+                {
+                    "x": 0,
+                    "y": 460
+                }
+            ]
+        },
+        {
+            "name": "floor_1",
+            "type": "ground_region",
+            "polygon": [
+                {
+                    "x": 0,
+                    "y": 460
+                },
+                {
+                    "x": 1024,
+                    "y": 460
+                },
+                {
+                    "x": 1024,
+                    "y": 768
+                },
+                {
+                    "x": 0,
+                    "y": 768
+                }
+            ]
+        },
+        {
+            "name": "shopping_cart_region_1",
+            "type": "container_region",
+            "polygon": [
+                {
+                    "x": 650,
+                    "y": 60
+                },
+                {
+                    "x": 940,
+                    "y": 60
+                },
+                {
+                    "x": 940,
+                    "y": 240
+                },
+                {
+                    "x": 650,
+                    "y": 240
+                }
+            ]
+        },
+        {
+            "name": "bowl_region_1",
+            "type": "container_region",
+            "polygon": [
+                {
+                    "x": 0,
+                    "y": 160
+                },
+                {
+                    "x": 220,
+                    "y": 160
+                },
+                {
+                    "x": 220,
+                    "y": 300
+                },
+                {
+                    "x": 0,
+                    "y": 300
+                }
+            ]
+        },
+        {
+            "name": "robot_housing_area_1",
+            "type": "interaction_region",
+            "polygon": [
+                {
+                    "x": 650,
+                    "y": 120
+                },
+                {
+                    "x": 930,
+                    "y": 120
+                },
+                {
+                    "x": 930,
+                    "y": 420
+                },
+                {
+                    "x": 650,
+                    "y": 420
+                }
+            ]
+        }
+    ],
+    "semantic_relationships": [
+        {
+            "relation": "located_on",
+            "subject": "robot_vacuum",
+            "object": "counter_1"
+        },
+        {
+            "relation": "adjacent_to",
+            "subject": "robot_vacuum",
+            "object": "small_snack_wrappers"
+        },
+        {
+            "relation": "located_on",
+            "subject": "small_packet",
+            "object": "counter_1"
+        },
+        {
+            "relation": "located_on",
+            "subject": "small_packet_2",
+            "object": "counter_1"
+        },
+        {
+            "relation": "located_on",
+            "subject": "small_snack_wrappers",
+            "object": "counter_1"
+        },
+        {
+            "relation": "sits_near",
+            "subject": "bowl",
+            "object": "counter_1"
+        },
+        {
+            "relation": "contained_in_region",
+            "subject": "bowl",
+            "object": "bowl_region_1"
+        },
+        {
+            "relation": "in_container_region",
+            "subject": "shopping_cart",
+            "object": "shopping_cart_region_1"
+        },
+        {
+            "relation": "contains_item",
+            "subject": "shopping_cart",
+            "object": "package_fruits_or_cookies"
+        },
+        {
+            "relation": "contains_item",
+            "subject": "shopping_cart",
+            "object": "box_of_snacks"
+        },
+        {
+            "relation": "near",
+            "subject": "shopping_cart",
+            "object": "robot_vacuum"
+        },
+        {
+            "relation": "part_of",
+            "subject": "kitchen_counter_top",
+            "object": "counter_1"
+        },
+        {
+            "relation": "part_of",
+            "subject": "metal_cart_runner_or_rail",
+            "object": "counter_1"
+        },
+        {
+            "relation": "near",
+            "subject": "cabinet_unit",
+            "object": "counter_1"
+        },
+        {
+            "relation": "near",
+            "subject": "leafy_plant_shelf_or_stand",
+            "object": "shopping_cart"
+        },
+        {
+            "relation": "within",
+            "subject": "robot_vacuum",
+            "object": "robot_housing_area_1"
+        }
+    ],
+    "current_location": {
+        "name": "small_packet",
+        "region": "counter_1"
+    },
+    "plans": [
+        {
+            "plan_name": "move_small_packet_onto_counter",
+            "target_object": "small_packet",
+            "destination_region": "counter_1",
+            "preconditions": [
+                "small_packet is in counter_1"
+            ]
+        }
+    ]
+}

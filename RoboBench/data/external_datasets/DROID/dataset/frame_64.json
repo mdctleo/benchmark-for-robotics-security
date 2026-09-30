@@ -1,0 +1,125 @@
+{
+    "objects": [
+        {
+            "name": "robot_arm_left",
+            "coords": [
+                350,
+                250
+            ]
+        },
+        {
+            "name": "robot_arm_right",
+            "coords": [
+                280,
+                500
+            ]
+        },
+        {
+            "name": "white_bucket",
+            "coords": [
+                330,
+                550
+            ]
+        },
+        {
+            "name": "white_paper_on_counter",
+            "coords": [
+                380,
+                50
+            ]
+        },
+        {
+            "name": "white_item_in_gripper",
+            "coords": [
+                350,
+                860
+            ]
+        },
+        {
+            "name": "recycling_sign_left",
+            "coords": [
+                700,
+                130
+            ]
+        },
+        {
+            "name": "recycling_sign_middle",
+            "coords": [
+                700,
+                450
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "workstation_left",
+            "coords": [
+                350,
+                200
+            ]
+        },
+        {
+            "name": "workstation_right",
+            "coords": [
+                350,
+                600
+            ]
+        },
+        {
+            "name": "under_counter_storage",
+            "coords": [
+                700,
+                400
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "robot_arm_left",
+            "workstation_left"
+        ],
+        [
+            "white_paper_on_counter",
+            "workstation_left"
+        ],
+        [
+            "robot_arm_right",
+            "workstation_right"
+        ],
+        [
+            "white_bucket",
+            "workstation_right"
+        ],
+        [
+            "white_item_in_gripper",
+            "robot_arm_right"
+        ],
+        [
+            "recycling_sign_left",
+            "under_counter_storage"
+        ],
+        [
+            "recycling_sign_middle",
+            "under_counter_storage"
+        ]
+    ],
+    "region_connections": [
+        [
+            "workstation_left",
+            "workstation_right"
+        ],
+        [
+            "workstation_left",
+            "under_counter_storage"
+        ],
+        [
+            "workstation_right",
+            "under_counter_storage"
+        ]
+    ],
+    "extra_safe_objects": [],
+    "extra_unsafe_objects": [],
+    "extra_safe_regions": [],
+    "extra_unsafe_regions": [],
+    "current_location": "workstation_right"
+}

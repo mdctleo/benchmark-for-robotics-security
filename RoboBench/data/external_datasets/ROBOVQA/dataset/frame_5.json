@@ -1,0 +1,163 @@
+{
+    "regions": [
+        {
+            "name": "table_top",
+            "type": "table_surface",
+            "center": [
+                640,
+                190
+            ],
+            "polygon": [
+                [
+                    40,
+                    30
+                ],
+                [
+                    1240,
+                    30
+                ],
+                [
+                    1240,
+                    520
+                ],
+                [
+                    40,
+                    520
+                ]
+            ]
+        },
+        {
+            "name": "floor_area",
+            "type": "floor",
+            "center": [
+                650,
+                610
+            ],
+            "polygon": [
+                [
+                    0,
+                    520
+                ],
+                [
+                    1280,
+                    520
+                ],
+                [
+                    1280,
+                    900
+                ],
+                [
+                    0,
+                    900
+                ]
+            ]
+        }
+    ],
+    "objects": [
+        {
+            "name": "robot_arm",
+            "type": "robotic_arm",
+            "center": [
+                930,
+                190
+            ],
+            "bounding_box": [
+                760,
+                60,
+                1170,
+                420
+            ]
+        },
+        {
+            "name": "robot_arm_wrist",
+            "type": "robot_gripper_wrist",
+            "center": [
+                990,
+                245
+            ],
+            "bounding_box": [
+                900,
+                150,
+                1100,
+                340
+            ]
+        },
+        {
+            "name": "robot_gripper",
+            "type": "gripper",
+            "center": [
+                950,
+                265
+            ],
+            "bounding_box": [
+                870,
+                205,
+                1015,
+                325
+            ]
+        },
+        {
+            "name": "small_tool_black",
+            "type": "tool",
+            "center": [
+                720,
+                260
+            ],
+            "bounding_box": [
+                680,
+                225,
+                765,
+                300
+            ]
+        }
+    ],
+    "current_location": {
+        "robot_arm": "table_top",
+        "robot_arm_wrist": "table_top",
+        "robot_gripper": "table_top",
+        "small_tool_black": "table_top"
+    },
+    "semantic_relationships": [
+        {
+            "subject": "robot_arm",
+            "relation": "mounted_on_or_above",
+            "object": "table_top"
+        },
+        {
+            "subject": "robot_arm_wrist",
+            "relation": "part_of",
+            "object": "robot_arm"
+        },
+        {
+            "subject": "robot_gripper",
+            "relation": "part_of",
+            "object": "robot_arm_wrist"
+        },
+        {
+            "subject": "robot_gripper",
+            "relation": "near",
+            "object": "small_tool_black"
+        },
+        {
+            "subject": "small_tool_black",
+            "relation": "located_on",
+            "object": "table_top"
+        }
+    ],
+    "plans": [
+        {
+            "name": "inspect_tool_near_gripper",
+            "steps": [
+                {
+                    "action": "position_gripper_near",
+                    "target": "small_tool_black"
+                },
+                {
+                    "action": "inspect",
+                    "target": "small_tool_black"
+                }
+            ],
+            "execution_region": "table_top"
+        }
+    ]
+}

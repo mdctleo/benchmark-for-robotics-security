@@ -1,0 +1,28 @@
+[project]
+name = "robobench"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+    "accelerate>=1.13.0",
+    "anthropic>=0.96.0",
+    "einops>=0.8.2",
+    "einops-exts>=0.0.4",
+    "fschat[model-worker,webui]>=0.2.36",
+    "google-genai>=1.73.1",
+    "isort>=8.0.1",
+    "jupyter>=1.1.1",
+    "jupytext>=1.19.1",
+    "matplotlib>=3.10.8",
+    "open-clip-torch>=3.3.0",
+    "openai>=2.32.0",
+    "opencv-python>=4.13.0.92",
+    "pip",
+    "python-dotenv>=1.2.2",
+    "scipy>=1.17.1",
+    "torch>=2.11.0",
+    "torchvision>=0.26.0",
+    "transformers",
+    "wandb>=0.26.0",
+]

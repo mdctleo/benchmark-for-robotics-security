@@ -1,0 +1,182 @@
+{
+    "objects": [
+        {
+            "name": "motor_coach",
+            "type": "vehicle",
+            "coord": {
+                "x": 290,
+                "y": 210
+            }
+        },
+        {
+            "name": "sedan_blue",
+            "type": "vehicle",
+            "coord": {
+                "x": 430,
+                "y": 240
+            }
+        },
+        {
+            "name": "car_gray_right",
+            "type": "vehicle",
+            "coord": {
+                "x": 615,
+                "y": 265
+            }
+        },
+        {
+            "name": "street_light_right",
+            "type": "street_light",
+            "coord": {
+                "x": 650,
+                "y": 140
+            }
+        },
+        {
+            "name": "stop_sign",
+            "type": "traffic_sign",
+            "coord": {
+                "x": 695,
+                "y": 220
+            }
+        },
+        {
+            "name": "street_sign_pole_left",
+            "type": "street_sign_pole",
+            "coord": {
+                "x": 645,
+                "y": 270
+            }
+        },
+        {
+            "name": "pedestrian",
+            "type": "person",
+            "coord": {
+                "x": 555,
+                "y": 305
+            }
+        }
+    ],
+    "regions": [
+        {
+            "name": "current_location",
+            "type": "road_intersection_area",
+            "coord": {
+                "x": 470,
+                "y": 280
+            }
+        },
+        {
+            "name": "left_buildings_row",
+            "type": "building_strip",
+            "coord": {
+                "x": 220,
+                "y": 170
+            }
+        },
+        {
+            "name": "center_street_space",
+            "type": "open_street_space",
+            "coord": {
+                "x": 420,
+                "y": 300
+            }
+        },
+        {
+            "name": "right_side_buildings_row",
+            "type": "building_strip",
+            "coord": {
+                "x": 715,
+                "y": 180
+            }
+        },
+        {
+            "name": "right_shopfronts",
+            "type": "shopfront_strip",
+            "coord": {
+                "x": 770,
+                "y": 210
+            }
+        },
+        {
+            "name": "crosswalk_markings",
+            "type": "road_markings",
+            "coord": {
+                "x": 470,
+                "y": 395
+            }
+        },
+        {
+            "name": "yellow_turn_lane_markings",
+            "type": "road_markings",
+            "coord": {
+                "x": 460,
+                "y": 245
+            }
+        }
+    ],
+    "connections": [
+        {
+            "from": "motor_coach",
+            "to": "current_location",
+            "relation": "on"
+        },
+        {
+            "from": "sedan_blue",
+            "to": "current_location",
+            "relation": "on"
+        },
+        {
+            "from": "car_gray_right",
+            "to": "current_location",
+            "relation": "near"
+        },
+        {
+            "from": "pedestrian",
+            "to": "current_location",
+            "relation": "walking_on"
+        },
+        {
+            "from": "motor_coach",
+            "to": "left_buildings_row",
+            "relation": "in_front_of"
+        },
+        {
+            "from": "car_gray_right",
+            "to": "right_side_buildings_row",
+            "relation": "in_front_of"
+        },
+        {
+            "from": "stop_sign",
+            "to": "current_location",
+            "relation": "controls"
+        },
+        {
+            "from": "street_light_right",
+            "to": "current_location",
+            "relation": "adjacent_to"
+        },
+        {
+            "from": "motor_coach",
+            "to": "yellow_turn_lane_markings",
+            "relation": "near"
+        },
+        {
+            "from": "pedestrian",
+            "to": "crosswalk_markings",
+            "relation": "near"
+        }
+    ],
+    "current_location": "current_location",
+    "plans": [
+        {
+            "name": "vehicle_navigation_through_intersection",
+            "start": "current_location",
+            "target": "right_side_buildings_row",
+            "constraints": [
+                "yield_to_pedestrian",
+                "follow_stop_sign_when_applicable"
+            ]
+        }
+    ]
+}

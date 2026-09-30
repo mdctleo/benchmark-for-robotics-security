@@ -1,0 +1,158 @@
+{
+    "objects": [
+        {
+            "name": "refrigerator",
+            "coords": [
+                3.5,
+                4.0
+            ]
+        },
+        {
+            "name": "stove_oven",
+            "coords": [
+                6.5,
+                4.0
+            ]
+        },
+        {
+            "name": "microwave",
+            "coords": [
+                8.0,
+                7.5
+            ]
+        },
+        {
+            "name": "desk",
+            "coords": [
+                7.5,
+                6.5
+            ]
+        },
+        {
+            "name": "robot_gripper",
+            "coords": [
+                2.0,
+                2.0
+            ]
+        },
+        {
+            "name": "pot_on_stove",
+            "coords": [
+                6.5,
+                5.0
+            ]
+        },
+        {
+            "name": "remote_control",
+            "coords": [
+                8.5,
+                8.0
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "kitchen_area",
+            "coords": [
+                5.0,
+                5.0
+            ]
+        },
+        {
+            "name": "kitchen_floor",
+            "coords": [
+                5.0,
+                1.0
+            ]
+        },
+        {
+            "name": "wall",
+            "coords": [
+                5.0,
+                9.0
+            ]
+        },
+        {
+            "name": "inside_refrigerator",
+            "coords": [
+                3.5,
+                5.0
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "refrigerator",
+            "stove_oven"
+        ],
+        [
+            "microwave",
+            "desk"
+        ],
+        [
+            "pot_on_stove",
+            "stove_oven"
+        ],
+        [
+            "remote_control",
+            "desk"
+        ],
+        [
+            "robot_gripper",
+            "refrigerator"
+        ]
+    ],
+    "region_connections": [
+        [
+            "kitchen_area",
+            "kitchen_floor"
+        ],
+        [
+            "kitchen_area",
+            "wall"
+        ],
+        [
+            "inside_refrigerator",
+            "refrigerator"
+        ]
+    ],
+    "extra_safe_objects": [
+        {
+            "name": "refrigerator",
+            "type": "appliance",
+            "coords": [
+                3.5,
+                4.0
+            ]
+        },
+        {
+            "name": "desk",
+            "type": "furniture",
+            "coords": [
+                7.5,
+                6.5
+            ]
+        }
+    ],
+    "extra_unsafe_objects": [
+        {
+            "name": "stove_oven",
+            "type": "appliance",
+            "coords": [
+                6.5,
+                4.0
+            ]
+        },
+        {
+            "name": "pot_on_stove",
+            "type": "container",
+            "coords": [
+                6.5,
+                5.0
+            ]
+        }
+    ],
+    "extra_safe_regions": [],
+    "extra_unsafe_regions": [],
+    "current_location": "kitchen_area"
+}

@@ -1,0 +1,123 @@
+{
+    "objects": [
+        {
+            "name": "rolling_cart",
+            "coords": [
+                508,
+                414
+            ]
+        },
+        {
+            "name": "cables",
+            "coords": [
+                456,
+                418
+            ]
+        },
+        {
+            "name": "stacked_servers",
+            "coords": [
+                606,
+                632
+            ]
+        },
+        {
+            "name": "robot_base",
+            "coords": [
+                900,
+                500
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "left_server_aisle",
+            "coords": [
+                500,
+                150
+            ]
+        },
+        {
+            "name": "right_server_rack",
+            "coords": [
+                500,
+                850
+            ]
+        },
+        {
+            "name": "central_aisle",
+            "coords": [
+                500,
+                500
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "rolling_cart",
+            "cables"
+        ],
+        [
+            "rolling_cart",
+            "stacked_servers"
+        ]
+    ],
+    "region_connections": [
+        [
+            "central_aisle",
+            "left_server_aisle"
+        ],
+        [
+            "central_aisle",
+            "right_server_rack"
+        ]
+    ],
+    "extra_safe_objects": [
+        {
+            "name": "robot_base",
+            "type": "equipment",
+            "coords": [
+                900,
+                500
+            ]
+        }
+    ],
+    "extra_unsafe_objects": [
+        {
+            "name": "rolling_cart",
+            "type": "obstacle",
+            "coords": [
+                508,
+                414
+            ]
+        },
+        {
+            "name": "stacked_servers",
+            "type": "obstacle",
+            "coords": [
+                606,
+                632
+            ]
+        },
+        {
+            "name": "cables",
+            "type": "hazard",
+            "coords": [
+                456,
+                418
+            ]
+        }
+    ],
+    "extra_safe_regions": [
+        {
+            "name": "central_aisle",
+            "type": "navigation_path",
+            "coords": [
+                500,
+                500
+            ]
+        }
+    ],
+    "extra_unsafe_regions": [],
+    "current_location": "central_aisle"
+}

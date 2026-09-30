@@ -1,0 +1,467 @@
+{
+    "objects": [
+        {
+            "name": "ego_vehicle",
+            "type": "vehicle",
+            "position": [
+                680,
+                1040
+            ],
+            "attributes": {
+                "view": "forward"
+            }
+        },
+        {
+            "name": "traffic_light_red_1",
+            "type": "traffic_light",
+            "position": [
+                650,
+                430
+            ],
+            "attributes": {
+                "color": "red",
+                "state": "on"
+            }
+        },
+        {
+            "name": "traffic_light_red_2",
+            "type": "traffic_light",
+            "position": [
+                820,
+                420
+            ],
+            "attributes": {
+                "color": "red",
+                "state": "on"
+            }
+        },
+        {
+            "name": "vehicles_1",
+            "type": "vehicle",
+            "position": [
+                680,
+                640
+            ],
+            "attributes": {
+                "lane_relative": "center/near"
+            }
+        },
+        {
+            "name": "vehicles_2",
+            "type": "vehicle",
+            "position": [
+                740,
+                670
+            ],
+            "attributes": {
+                "lane_relative": "center/near"
+            }
+        },
+        {
+            "name": "vehicles_3",
+            "type": "vehicle",
+            "position": [
+                860,
+                620
+            ],
+            "attributes": {
+                "lane_relative": "far"
+            }
+        },
+        {
+            "name": "traffic_light_yellow_signals_1",
+            "type": "traffic_light",
+            "position": [
+                560,
+                470
+            ],
+            "attributes": {
+                "shape_context": "signal_head"
+            }
+        },
+        {
+            "name": "traffic_light_yellow_signals_2",
+            "type": "traffic_light",
+            "position": [
+                520,
+                420
+            ],
+            "attributes": {
+                "shape_context": "signal_head"
+            }
+        },
+        {
+            "name": "road_light_post_left",
+            "type": "road_infrastructure",
+            "position": [
+                350,
+                520
+            ],
+            "attributes": {
+                "side": "left"
+            }
+        },
+        {
+            "name": "road_light_post_right",
+            "type": "road_infrastructure",
+            "position": [
+                1030,
+                520
+            ],
+            "attributes": {
+                "side": "right"
+            }
+        },
+        {
+            "name": "trees_left_row",
+            "type": "vegetation",
+            "position": [
+                250,
+                650
+            ],
+            "attributes": {
+                "side": "left"
+            }
+        },
+        {
+            "name": "trees_right_row",
+            "type": "vegetation",
+            "position": [
+                1120,
+                650
+            ],
+            "attributes": {
+                "side": "right"
+            }
+        },
+        {
+            "name": "crosswalk_1",
+            "type": "road_marking",
+            "position": [
+                680,
+                930
+            ],
+            "attributes": {
+                "kind": "crosswalk",
+                "side": "foreground"
+            }
+        },
+        {
+            "name": "crosswalk_2_far",
+            "type": "road_marking",
+            "position": [
+                690,
+                760
+            ],
+            "attributes": {
+                "kind": "crosswalk",
+                "side": "midground"
+            }
+        },
+        {
+            "name": "lane_markings_center",
+            "type": "road_marking",
+            "position": [
+                690,
+                720
+            ],
+            "attributes": {
+                "kind": "lane_lines"
+            }
+        },
+        {
+            "name": "lane_markings_left",
+            "type": "road_marking",
+            "position": [
+                610,
+                760
+            ],
+            "attributes": {
+                "kind": "lane_lines"
+            }
+        },
+        {
+            "name": "lane_markings_right",
+            "type": "road_marking",
+            "position": [
+                770,
+                760
+            ],
+            "attributes": {
+                "kind": "lane_lines"
+            }
+        },
+        {
+            "name": "buildings_left",
+            "type": "building",
+            "position": [
+                330,
+                640
+            ],
+            "attributes": {
+                "side": "left"
+            }
+        }
+    ],
+    "regions": [
+        {
+            "name": "ground_1",
+            "type": "road_area",
+            "polygon": [
+                [
+                    80,
+                    1100
+                ],
+                [
+                    1260,
+                    1100
+                ],
+                [
+                    1220,
+                    250
+                ],
+                [
+                    60,
+                    250
+                ]
+            ],
+            "attributes": {
+                "description": "Top-down drivable road region including intersection area"
+            }
+        },
+        {
+            "name": "intersection_area",
+            "type": "intersection",
+            "polygon": [
+                [
+                    460,
+                    360
+                ],
+                [
+                    910,
+                    360
+                ],
+                [
+                    980,
+                    820
+                ],
+                [
+                    390,
+                    820
+                ]
+            ],
+            "attributes": {
+                "includes_crosswalks": true
+            }
+        },
+        {
+            "name": "crosswalk_region_front",
+            "type": "crosswalk_region",
+            "polygon": [
+                [
+                    420,
+                    820
+                ],
+                [
+                    940,
+                    820
+                ],
+                [
+                    920,
+                    980
+                ],
+                [
+                    440,
+                    980
+                ]
+            ],
+            "attributes": {
+                "note": "Foreground crosswalk area"
+            }
+        },
+        {
+            "name": "approach_lane_region_center",
+            "type": "lane_region",
+            "polygon": [
+                [
+                    520,
+                    360
+                ],
+                [
+                    860,
+                    360
+                ],
+                [
+                    940,
+                    900
+                ],
+                [
+                    470,
+                    900
+                ]
+            ],
+            "attributes": {
+                "direction": "toward_intersection"
+            }
+        },
+        {
+            "name": "side_area_left",
+            "type": "sidewalk_or_berm",
+            "polygon": [
+                [
+                    60,
+                    280
+                ],
+                [
+                    420,
+                    280
+                ],
+                [
+                    430,
+                    980
+                ],
+                [
+                    60,
+                    980
+                ]
+            ],
+            "attributes": {
+                "side": "left"
+            }
+        },
+        {
+            "name": "side_area_right",
+            "type": "sidewalk_or_berm",
+            "polygon": [
+                [
+                    880,
+                    280
+                ],
+                [
+                    1220,
+                    280
+                ],
+                [
+                    1210,
+                    980
+                ],
+                [
+                    860,
+                    980
+                ]
+            ],
+            "attributes": {
+                "side": "right"
+            }
+        }
+    ],
+    "semantic_relationships": [
+        {
+            "name": "ego_is_on",
+            "from": "ego_vehicle",
+            "to": "ground_1",
+            "relation": "on"
+        },
+        {
+            "name": "vehicles_1_is_in",
+            "from": "vehicles_1",
+            "to": "approach_lane_region_center",
+            "relation": "in"
+        },
+        {
+            "name": "vehicles_2_is_in",
+            "from": "vehicles_2",
+            "to": "approach_lane_region_center",
+            "relation": "in"
+        },
+        {
+            "name": "vehicles_3_is_in",
+            "from": "vehicles_3",
+            "to": "approach_lane_region_center",
+            "relation": "in"
+        },
+        {
+            "name": "crosswalk_1_within",
+            "from": "crosswalk_1",
+            "to": "crosswalk_region_front",
+            "relation": "within"
+        },
+        {
+            "name": "crosswalk_2_far_within",
+            "from": "crosswalk_2_far",
+            "to": "intersection_area",
+            "relation": "within"
+        },
+        {
+            "name": "traffic_lights_affect_intersection",
+            "from": "traffic_light_red_1",
+            "to": "intersection_area",
+            "relation": "controls"
+        },
+        {
+            "name": "traffic_lights_affect_intersection_2",
+            "from": "traffic_light_red_2",
+            "to": "intersection_area",
+            "relation": "controls"
+        },
+        {
+            "name": "traffic_light_signals_near_intersection",
+            "from": "traffic_light_yellow_signals_1",
+            "to": "intersection_area",
+            "relation": "near"
+        },
+        {
+            "name": "traffic_light_signals_near_intersection_2",
+            "from": "traffic_light_yellow_signals_2",
+            "to": "intersection_area",
+            "relation": "near"
+        },
+        {
+            "name": "trees_left_in_side_area",
+            "from": "trees_left_row",
+            "to": "side_area_left",
+            "relation": "in"
+        },
+        {
+            "name": "trees_right_in_side_area",
+            "from": "trees_right_row",
+            "to": "side_area_right",
+            "relation": "in"
+        },
+        {
+            "name": "road_light_post_left_in_side_area",
+            "from": "road_light_post_left",
+            "to": "side_area_left",
+            "relation": "in"
+        },
+        {
+            "name": "road_light_post_right_in_side_area",
+            "from": "road_light_post_right",
+            "to": "side_area_right",
+            "relation": "in"
+        },
+        {
+            "name": "buildings_left_in_side_area",
+            "from": "buildings_left",
+            "to": "side_area_left",
+            "relation": "in"
+        },
+        {
+            "name": "ego_adjacent_crosswalk",
+            "from": "ego_vehicle",
+            "to": "crosswalk_region_front",
+            "relation": "adjacent_to"
+        }
+    ],
+    "current_location": {
+        "region": "approach_lane_region_center",
+        "object": "ego_vehicle"
+    },
+    "plans": [
+        {
+            "plan_name": "proceed_when_signal_allows",
+            "target_region": "intersection_area",
+            "trigger": "traffic_lights_green_not_detected_here"
+        }
+    ]
+}

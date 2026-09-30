@@ -1,0 +1,237 @@
+{
+    "objects": [
+        {
+            "name": "metal_wire_basket_left",
+            "type": "basket",
+            "bounding_box": {
+                "x1": 40,
+                "y1": 45,
+                "x2": 240,
+                "y2": 175
+            },
+            "center": {
+                "x": 140,
+                "y": 110
+            }
+        },
+        {
+            "name": "bread_loaf_bag_left_top",
+            "type": "packaged_food",
+            "bounding_box": {
+                "x1": 210,
+                "y1": 30,
+                "x2": 360,
+                "y2": 95
+            },
+            "center": {
+                "x": 285,
+                "y": 63
+            }
+        },
+        {
+            "name": "bread_loaf_bag_left_bottom",
+            "type": "packaged_food",
+            "bounding_box": {
+                "x1": 250,
+                "y1": 80,
+                "x2": 410,
+                "y2": 140
+            },
+            "center": {
+                "x": 330,
+                "y": 110
+            }
+        },
+        {
+            "name": "bottle_or_jar_pack_right_in_basket",
+            "type": "food_container",
+            "bounding_box": {
+                "x1": 80,
+                "y1": 85,
+                "x2": 195,
+                "y2": 170
+            },
+            "center": {
+                "x": 138,
+                "y": 127
+            }
+        },
+        {
+            "name": "blue_packet_left",
+            "type": "packaged_food",
+            "bounding_box": {
+                "x1": 65,
+                "y1": 65,
+                "x2": 190,
+                "y2": 140
+            },
+            "center": {
+                "x": 128,
+                "y": 103
+            }
+        },
+        {
+            "name": "electronic_device_right",
+            "type": "appliance",
+            "bounding_box": {
+                "x1": 360,
+                "y1": 0,
+                "x2": 640,
+                "y2": 150
+            },
+            "center": {
+                "x": 500,
+                "y": 75
+            }
+        },
+        {
+            "name": "paper_packaging_top_right",
+            "type": "packaged_goods",
+            "bounding_box": {
+                "x1": 365,
+                "y1": 95,
+                "x2": 520,
+                "y2": 155
+            },
+            "center": {
+                "x": 442,
+                "y": 125
+            }
+        }
+    ],
+    "regions": [
+        {
+            "name": "counter_top",
+            "type": "surface",
+            "bounding_box": {
+                "x1": 0,
+                "y1": 0,
+                "x2": 780,
+                "y2": 360
+            },
+            "center": {
+                "x": 390,
+                "y": 180
+            }
+        },
+        {
+            "name": "left_wire_basket_region",
+            "type": "container_region",
+            "bounding_box": {
+                "x1": 40,
+                "y1": 45,
+                "x2": 240,
+                "y2": 175
+            },
+            "center": {
+                "x": 140,
+                "y": 110
+            }
+        },
+        {
+            "name": "right_device_area",
+            "type": "appliance_area",
+            "bounding_box": {
+                "x1": 360,
+                "y1": 0,
+                "x2": 780,
+                "y2": 200
+            },
+            "center": {
+                "x": 570,
+                "y": 100
+            }
+        },
+        {
+            "name": "current_location",
+            "type": "global_scene_location",
+            "bounding_box": {
+                "x1": 0,
+                "y1": 0,
+                "x2": 780,
+                "y2": 360
+            },
+            "center": {
+                "x": 390,
+                "y": 180
+            }
+        }
+    ],
+    "semantic_relationships": [
+        {
+            "relation": "located_on",
+            "source": "metal_wire_basket_left",
+            "target": "counter_top"
+        },
+        {
+            "relation": "contains",
+            "source": "metal_wire_basket_left",
+            "target": "blue_packet_left"
+        },
+        {
+            "relation": "contains",
+            "source": "metal_wire_basket_left",
+            "target": "bottle_or_jar_pack_right_in_basket"
+        },
+        {
+            "relation": "located_on",
+            "source": "bread_loaf_bag_left_top",
+            "target": "left_wire_basket_region"
+        },
+        {
+            "relation": "located_on",
+            "source": "bread_loaf_bag_left_bottom",
+            "target": "left_wire_basket_region"
+        },
+        {
+            "relation": "located_on",
+            "source": "electronic_device_right",
+            "target": "counter_top"
+        },
+        {
+            "relation": "adjacent_to",
+            "source": "paper_packaging_top_right",
+            "target": "electronic_device_right"
+        },
+        {
+            "relation": "located_on",
+            "source": "paper_packaging_top_right",
+            "target": "right_device_area"
+        }
+    ],
+    "current_location": {
+        "ref_region": "current_location",
+        "notes": "All visible items are on the same counter-top scene region."
+    },
+    "plans": [
+        {
+            "plan_name": "organize_items",
+            "steps": [
+                {
+                    "action": "move",
+                    "item": "bread_loaf_bag_left_top",
+                    "from": "left_wire_basket_region",
+                    "to": "left_wire_basket_region"
+                },
+                {
+                    "action": "move",
+                    "item": "bread_loaf_bag_left_bottom",
+                    "from": "left_wire_basket_region",
+                    "to": "left_wire_basket_region"
+                },
+                {
+                    "action": "move",
+                    "item": "blue_packet_left",
+                    "from": "left_wire_basket_region",
+                    "to": "left_wire_basket_region"
+                },
+                {
+                    "action": "move",
+                    "item": "bottle_or_jar_pack_right_in_basket",
+                    "from": "left_wire_basket_region",
+                    "to": "left_wire_basket_region"
+                }
+            ]
+        }
+    ]
+}

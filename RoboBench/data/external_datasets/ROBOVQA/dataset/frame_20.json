@@ -1,0 +1,305 @@
+{
+    "objects": [
+        {
+            "name": "laptop_1",
+            "type": "laptop",
+            "center": [
+                120,
+                210
+            ]
+        },
+        {
+            "name": "chair_cushion_1",
+            "type": "chair",
+            "center": [
+                85,
+                330
+            ]
+        },
+        {
+            "name": "keyboard_1",
+            "type": "keyboard",
+            "center": [
+                135,
+                205
+            ]
+        },
+        {
+            "name": "cable_bundle_1",
+            "type": "cables",
+            "center": [
+                55,
+                240
+            ]
+        },
+        {
+            "name": "drawer_1",
+            "type": "drawer",
+            "center": [
+                250,
+                365
+            ]
+        },
+        {
+            "name": "drawer_2",
+            "type": "drawer",
+            "center": [
+                250,
+                415
+            ]
+        },
+        {
+            "name": "drawer_3",
+            "type": "drawer",
+            "center": [
+                250,
+                465
+            ]
+        },
+        {
+            "name": "tabletop_1",
+            "type": "table",
+            "center": [
+                300,
+                265
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "computer_area_1",
+            "type": "work_area",
+            "polygon": [
+                [
+                    0,
+                    130
+                ],
+                [
+                    240,
+                    130
+                ],
+                [
+                    240,
+                    290
+                ],
+                [
+                    0,
+                    290
+                ]
+            ],
+            "center": [
+                120,
+                210
+            ]
+        },
+        {
+            "name": "table_top_area_1",
+            "type": "surface_area",
+            "polygon": [
+                [
+                    180,
+                    130
+                ],
+                [
+                    560,
+                    410
+                ],
+                [
+                    560,
+                    410
+                ],
+                [
+                    180,
+                    130
+                ]
+            ],
+            "center": [
+                370,
+                270
+            ]
+        },
+        {
+            "name": "bowls_area_left_1",
+            "type": "container_area",
+            "polygon": [
+                [
+                    300,
+                    230
+                ],
+                [
+                    520,
+                    360
+                ],
+                [
+                    520,
+                    360
+                ],
+                [
+                    300,
+                    230
+                ]
+            ],
+            "center": [
+                400,
+                295
+            ]
+        },
+        {
+            "name": "cups_area_1",
+            "type": "container_area",
+            "polygon": [
+                [
+                    370,
+                    220
+                ],
+                [
+                    550,
+                    360
+                ],
+                [
+                    550,
+                    360
+                ],
+                [
+                    370,
+                    220
+                ]
+            ],
+            "center": [
+                460,
+                285
+            ]
+        },
+        {
+            "name": "tray_box_area_1",
+            "type": "container_area",
+            "polygon": [
+                [
+                    450,
+                    205
+                ],
+                [
+                    560,
+                    315
+                ],
+                [
+                    560,
+                    315
+                ],
+                [
+                    450,
+                    205
+                ]
+            ],
+            "center": [
+                505,
+                260
+            ]
+        },
+        {
+            "name": "side_mortar_area_1",
+            "type": "workspace_cluster",
+            "polygon": [
+                [
+                    500,
+                    200
+                ],
+                [
+                    640,
+                    380
+                ],
+                [
+                    640,
+                    380
+                ],
+                [
+                    500,
+                    200
+                ]
+            ],
+            "center": [
+                570,
+                290
+            ]
+        },
+        {
+            "name": "current_location",
+            "type": "agent_location_region",
+            "polygon": [
+                [
+                    20,
+                    250
+                ],
+                [
+                    160,
+                    370
+                ],
+                [
+                    160,
+                    370
+                ],
+                [
+                    20,
+                    250
+                ]
+            ],
+            "center": [
+                90,
+                310
+            ]
+        }
+    ],
+    "semantic_relationships": [
+        {
+            "subject": "laptop_1",
+            "relation": "on",
+            "object": "computer_area_1"
+        },
+        {
+            "subject": "keyboard_1",
+            "relation": "part_of",
+            "object": "laptop_1"
+        },
+        {
+            "subject": "cable_bundle_1",
+            "relation": "near",
+            "object": "laptop_1"
+        },
+        {
+            "subject": "tabletop_1",
+            "relation": "supports",
+            "object": "table_top_area_1"
+        },
+        {
+            "subject": "drawer_1",
+            "relation": "part_of",
+            "object": "tabletop_1"
+        },
+        {
+            "subject": "drawer_2",
+            "relation": "part_of",
+            "object": "tabletop_1"
+        },
+        {
+            "subject": "drawer_3",
+            "relation": "part_of",
+            "object": "tabletop_1"
+        },
+        {
+            "subject": "current_location",
+            "relation": "adjacent_to",
+            "object": "computer_area_1"
+        }
+    ],
+    "current_location": "current_location",
+    "plans": [
+        {
+            "goal": "go_to",
+            "target": "table_top_area_1"
+        },
+        {
+            "goal": "inspect",
+            "target": "bowls_area_left_1"
+        }
+    ]
+}

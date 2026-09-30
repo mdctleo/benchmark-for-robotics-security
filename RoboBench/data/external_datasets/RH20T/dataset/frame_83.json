@@ -1,0 +1,376 @@
+{
+    "objects": [
+        {
+            "name": "control_panel_1",
+            "type": "device",
+            "bbox": [
+                456,
+                288,
+                554,
+                350
+            ],
+            "centroid": [
+                505,
+                319
+            ]
+        },
+        {
+            "name": "relay_box_1",
+            "type": "electronic_box",
+            "bbox": [
+                517,
+                218,
+                617,
+                300
+            ],
+            "centroid": [
+                567,
+                259
+            ]
+        },
+        {
+            "name": "speaker_unit_1",
+            "type": "speaker",
+            "bbox": [
+                20,
+                95,
+                140,
+                260
+            ],
+            "centroid": [
+                80,
+                178
+            ]
+        },
+        {
+            "name": "clamp_arm_1",
+            "type": "tool",
+            "bbox": [
+                215,
+                35,
+                520,
+                115
+            ],
+            "centroid": [
+                368,
+                75
+            ]
+        },
+        {
+            "name": "router_casing_1",
+            "type": "equipment",
+            "bbox": [
+                708,
+                135,
+                914,
+                365
+            ],
+            "centroid": [
+                811,
+                250
+            ]
+        },
+        {
+            "name": "label_card_1",
+            "type": "paper_label",
+            "bbox": [
+                720,
+                350,
+                775,
+                395
+            ],
+            "centroid": [
+                748,
+                373
+            ]
+        },
+        {
+            "name": "label_card_2",
+            "type": "paper_label",
+            "bbox": [
+                700,
+                420,
+                760,
+                480
+            ],
+            "centroid": [
+                730,
+                450
+            ]
+        },
+        {
+            "name": "label_card_3",
+            "type": "paper_label",
+            "bbox": [
+                760,
+                405,
+                820,
+                460
+            ],
+            "centroid": [
+                790,
+                433
+            ]
+        },
+        {
+            "name": "handle_component_1",
+            "type": "tool_part",
+            "bbox": [
+                318,
+                365,
+                410,
+                455
+            ],
+            "centroid": [
+                364,
+                410
+            ]
+        },
+        {
+            "name": "handle_component_2",
+            "type": "tool_part",
+            "bbox": [
+                360,
+                410,
+                470,
+                495
+            ],
+            "centroid": [
+                415,
+                452
+            ]
+        },
+        {
+            "name": "box_corner_1",
+            "type": "furniture",
+            "bbox": [
+                420,
+                270,
+                470,
+                330
+            ],
+            "centroid": [
+                445,
+                300
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "wood_table_1",
+            "type": "table_surface",
+            "polygon": [
+                [
+                    160,
+                    170
+                ],
+                [
+                    500,
+                    70
+                ],
+                [
+                    980,
+                    170
+                ],
+                [
+                    920,
+                    520
+                ],
+                [
+                    520,
+                    520
+                ],
+                [
+                    170,
+                    450
+                ]
+            ],
+            "centroid": [
+                585,
+                340
+            ]
+        },
+        {
+            "name": "wood_table_left_area_1",
+            "type": "table_subregion",
+            "polygon": [
+                [
+                    160,
+                    220
+                ],
+                [
+                    420,
+                    150
+                ],
+                [
+                    560,
+                    210
+                ],
+                [
+                    360,
+                    420
+                ]
+            ],
+            "centroid": [
+                360,
+                285
+            ]
+        },
+        {
+            "name": "wood_table_center_area_1",
+            "type": "table_subregion",
+            "polygon": [
+                [
+                    420,
+                    150
+                ],
+                [
+                    620,
+                    120
+                ],
+                [
+                    820,
+                    220
+                ],
+                [
+                    560,
+                    360
+                ],
+                [
+                    560,
+                    210
+                ]
+            ],
+            "centroid": [
+                620,
+                230
+            ]
+        },
+        {
+            "name": "wood_table_right_area_1",
+            "type": "table_subregion",
+            "polygon": [
+                [
+                    560,
+                    360
+                ],
+                [
+                    820,
+                    220
+                ],
+                [
+                    930,
+                    350
+                ],
+                [
+                    820,
+                    520
+                ],
+                [
+                    600,
+                    480
+                ]
+            ],
+            "centroid": [
+                760,
+                410
+            ]
+        }
+    ],
+    "semantic_relationships": [
+        {
+            "relation": "on",
+            "source": "control_panel_1",
+            "target": "wood_table_1"
+        },
+        {
+            "relation": "on",
+            "source": "relay_box_1",
+            "target": "wood_table_1"
+        },
+        {
+            "relation": "on",
+            "source": "speaker_unit_1",
+            "target": "wood_table_1"
+        },
+        {
+            "relation": "on",
+            "source": "router_casing_1",
+            "target": "wood_table_1"
+        },
+        {
+            "relation": "on",
+            "source": "handle_component_1",
+            "target": "wood_table_1"
+        },
+        {
+            "relation": "on",
+            "source": "handle_component_2",
+            "target": "wood_table_1"
+        },
+        {
+            "relation": "on",
+            "source": "label_card_1",
+            "target": "wood_table_right_area_1"
+        },
+        {
+            "relation": "on",
+            "source": "label_card_2",
+            "target": "wood_table_right_area_1"
+        },
+        {
+            "relation": "on",
+            "source": "label_card_3",
+            "target": "wood_table_right_area_1"
+        },
+        {
+            "relation": "part_of_surface_area",
+            "source": "control_panel_1",
+            "target": "wood_table_left_area_1"
+        },
+        {
+            "relation": "part_of_surface_area",
+            "source": "relay_box_1",
+            "target": "wood_table_center_area_1"
+        },
+        {
+            "relation": "part_of_surface_area",
+            "source": "speaker_unit_1",
+            "target": "wood_table_left_area_1"
+        },
+        {
+            "relation": "part_of_surface_area",
+            "source": "router_casing_1",
+            "target": "wood_table_right_area_1"
+        },
+        {
+            "relation": "near",
+            "source": "handle_component_1",
+            "target": "handle_component_2"
+        }
+    ],
+    "current_location": {
+        "name": "wood_table_1",
+        "coord": [
+            585,
+            340
+        ]
+    },
+    "plans": [
+        {
+            "plan_name": "arrange_components",
+            "steps": [
+                {
+                    "step_type": "move",
+                    "entity": "control_panel_1",
+                    "to_region": "wood_table_center_area_1"
+                },
+                {
+                    "step_type": "move",
+                    "entity": "relay_box_1",
+                    "to_region": "wood_table_right_area_1"
+                }
+            ]
+        }
+    ]
+}

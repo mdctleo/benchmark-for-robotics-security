@@ -1,0 +1,461 @@
+{
+    "objects": [
+        {
+            "name": "gray_drawer_unit",
+            "type": "furniture",
+            "bbox": [
+                0,
+                335,
+                640,
+                200
+            ],
+            "semantic_role": "drawers_under_counter"
+        },
+        {
+            "name": "desk_surface",
+            "type": "surface",
+            "bbox": [
+                0,
+                240,
+                640,
+                140
+            ],
+            "semantic_role": "holds_items"
+        },
+        {
+            "name": "green_bin",
+            "type": "container",
+            "bbox": [
+                60,
+                260,
+                190,
+                140
+            ],
+            "semantic_role": "container_for_snacks"
+        },
+        {
+            "name": "jar_or_stand_left",
+            "type": "cup_or_holder",
+            "bbox": [
+                5,
+                95,
+                85,
+                140
+            ],
+            "semantic_role": "holds_utensils_or_items"
+        },
+        {
+            "name": "pencil_holder_green",
+            "type": "container",
+            "bbox": [
+                15,
+                85,
+                90,
+                160
+            ],
+            "semantic_role": "holds_pens_markers"
+        },
+        {
+            "name": "canister_or_jar_white_sugar",
+            "type": "container",
+            "bbox": [
+                245,
+                10,
+                100,
+                95
+            ],
+            "semantic_role": "contains_ingredients_or_sweets"
+        },
+        {
+            "name": "cup_beverage",
+            "type": "cup",
+            "bbox": [
+                270,
+                55,
+                120,
+                105
+            ],
+            "semantic_role": "cup_on_surface"
+        },
+        {
+            "name": "crisp_bag_pipcorn_chicken",
+            "type": "snack_package",
+            "brand": "Pipcorn",
+            "bbox": [
+                10,
+                240,
+                145,
+                160
+            ],
+            "semantic_role": "snack_package"
+        },
+        {
+            "name": "crisp_bag_pipcorn_taba",
+            "type": "snack_package",
+            "brand": "Pipcorn",
+            "bbox": [
+                120,
+                160,
+                135,
+                90
+            ],
+            "semantic_role": "snack_package"
+        },
+        {
+            "name": "crisp_bag_pipcorn_ta",
+            "type": "snack_package",
+            "brand": "Pipcorn",
+            "bbox": [
+                240,
+                245,
+                150,
+                160
+            ],
+            "semantic_role": "snack_package"
+        },
+        {
+            "name": "crisp_bag_pipcorn_original",
+            "type": "snack_package",
+            "brand": "Pipcorn",
+            "bbox": [
+                240,
+                155,
+                120,
+                120
+            ],
+            "semantic_role": "snack_package"
+        },
+        {
+            "name": "crunchy_chip_bag_brand",
+            "type": "snack_package",
+            "brand": "Pipcorn",
+            "bbox": [
+                360,
+                165,
+                120,
+                150
+            ],
+            "semantic_role": "snack_package"
+        },
+        {
+            "name": "popped_popcorn_bag_terracotta",
+            "type": "snack_package",
+            "brand": "Pipcorn",
+            "bbox": [
+                325,
+                255,
+                120,
+                140
+            ],
+            "semantic_role": "snack_package"
+        },
+        {
+            "name": "popcorn_bags_cluster",
+            "type": "multiple_snack_packages",
+            "bbox": [
+                235,
+                150,
+                380,
+                220
+            ],
+            "semantic_role": "assorted_snack_packages"
+        },
+        {
+            "name": "electronic_appliance_white",
+            "type": "appliance",
+            "bbox": [
+                445,
+                65,
+                200,
+                175
+            ],
+            "semantic_role": "appliance_on_surface"
+        },
+        {
+            "name": "tube_cabinet_door",
+            "type": "part_of_furniture",
+            "bbox": [
+                585,
+                70,
+                55,
+                190
+            ],
+            "semantic_role": "side_part_of_appliance_area"
+        },
+        {
+            "name": "tray_or_cabinet_front",
+            "type": "furniture_part",
+            "bbox": [
+                0,
+                280,
+                640,
+                80
+            ],
+            "semantic_role": "front_edge_of_desk"
+        },
+        {
+            "name": "matching_black_handles",
+            "type": "hardware",
+            "bbox": [
+                0,
+                365,
+                640,
+                100
+            ],
+            "semantic_role": "drawer_handles"
+        },
+        {
+            "name": "white_bowl_of_popcorn_or_snack",
+            "type": "container",
+            "bbox": [
+                210,
+                60,
+                120,
+                120
+            ],
+            "semantic_role": "bowl_of_snack"
+        }
+    ],
+    "regions": [
+        {
+            "name": "desk_top",
+            "type": "area",
+            "polygon": [
+                [
+                    0,
+                    235
+                ],
+                [
+                    640,
+                    235
+                ],
+                [
+                    640,
+                    380
+                ],
+                [
+                    0,
+                    380
+                ]
+            ],
+            "top_down_center": [
+                320,
+                307
+            ]
+        },
+        {
+            "name": "front_drawer_area",
+            "type": "area",
+            "polygon": [
+                [
+                    0,
+                    330
+                ],
+                [
+                    640,
+                    330
+                ],
+                [
+                    640,
+                    520
+                ],
+                [
+                    0,
+                    520
+                ]
+            ],
+            "top_down_center": [
+                320,
+                425
+            ]
+        },
+        {
+            "name": "left_storage_zone",
+            "type": "area",
+            "polygon": [
+                [
+                    0,
+                    220
+                ],
+                [
+                    220,
+                    400
+                ],
+                [
+                    220,
+                    520
+                ],
+                [
+                    0,
+                    520
+                ]
+            ],
+            "top_down_center": [
+                110,
+                435
+            ]
+        },
+        {
+            "name": "right_appliance_zone",
+            "type": "area",
+            "polygon": [
+                [
+                    410,
+                    60
+                ],
+                [
+                    640,
+                    60
+                ],
+                [
+                    640,
+                    260
+                ],
+                [
+                    410,
+                    260
+                ]
+            ],
+            "top_down_center": [
+                525,
+                160
+            ]
+        },
+        {
+            "name": "center_snack_zone",
+            "type": "area",
+            "polygon": [
+                [
+                    170,
+                    150
+                ],
+                [
+                    500,
+                    150
+                ],
+                [
+                    500,
+                    360
+                ],
+                [
+                    170,
+                    360
+                ]
+            ],
+            "top_down_center": [
+                335,
+                255
+            ]
+        }
+    ],
+    "semantic_relationships": [
+        {
+            "relation": "located_on",
+            "from": "crisp_bag_pipcorn_chicken",
+            "to": "desk_top"
+        },
+        {
+            "relation": "located_on",
+            "from": "crisp_bag_pipcorn_taba",
+            "to": "desk_top"
+        },
+        {
+            "relation": "located_on",
+            "from": "crisp_bag_pipcorn_ta",
+            "to": "desk_top"
+        },
+        {
+            "relation": "located_on",
+            "from": "crisp_bag_pipcorn_original",
+            "to": "desk_top"
+        },
+        {
+            "relation": "located_on",
+            "from": "crunchy_chip_bag_brand",
+            "to": "desk_top"
+        },
+        {
+            "relation": "located_on",
+            "from": "popped_popcorn_bag_terracotta",
+            "to": "desk_top"
+        },
+        {
+            "relation": "grouped_in",
+            "from": "popcorn_bags_cluster",
+            "to": "center_snack_zone"
+        },
+        {
+            "relation": "contained_by",
+            "from": "green_bin",
+            "to": "left_storage_zone"
+        },
+        {
+            "relation": "located_in_region",
+            "from": "green_bin",
+            "to": "left_storage_zone"
+        },
+        {
+            "relation": "located_on",
+            "from": "electronic_appliance_white",
+            "to": "desk_top"
+        },
+        {
+            "relation": "located_in_region",
+            "from": "electronic_appliance_white",
+            "to": "right_appliance_zone"
+        },
+        {
+            "relation": "part_of",
+            "from": "tube_cabinet_door",
+            "to": "electronic_appliance_white"
+        },
+        {
+            "relation": "front_of",
+            "from": "matching_black_handles",
+            "to": "front_drawer_area"
+        },
+        {
+            "relation": "covers_front_edge",
+            "from": "tray_or_cabinet_front",
+            "to": "front_drawer_area"
+        },
+        {
+            "relation": "furniture_part_in_region",
+            "from": "gray_drawer_unit",
+            "to": "front_drawer_area"
+        },
+        {
+            "relation": "placed_on_surface",
+            "from": "white_bowl_of_popcorn_or_snack",
+            "to": "desk_top"
+        },
+        {
+            "relation": "placed_on_surface",
+            "from": "cup_beverage",
+            "to": "desk_top"
+        },
+        {
+            "relation": "placed_on_surface",
+            "from": "canister_or_jar_white_sugar",
+            "to": "desk_top"
+        },
+        {
+            "relation": "located_on",
+            "from": "pencil_holder_green",
+            "to": "desk_top"
+        },
+        {
+            "relation": "part_of",
+            "from": "jar_or_stand_left",
+            "to": "pencil_holder_green"
+        }
+    ],
+    "agent_plans": [],
+    "current_location": {
+        "name": "desk_top",
+        "top_down_center": [
+            320,
+            307
+        ]
+    }
+}

@@ -1,0 +1,359 @@
+{
+    "objects": [
+        {
+            "name": "car_Lexus",
+            "type": "vehicle",
+            "coord": [
+                520,
+                570
+            ]
+        },
+        {
+            "name": "car_white_1",
+            "type": "vehicle",
+            "coord": [
+                430,
+                585
+            ]
+        },
+        {
+            "name": "car_black_1",
+            "type": "vehicle",
+            "coord": [
+                610,
+                620
+            ]
+        },
+        {
+            "name": "car_gray_2",
+            "type": "vehicle",
+            "coord": [
+                680,
+                690
+            ]
+        },
+        {
+            "name": "truck_1",
+            "type": "vehicle",
+            "coord": [
+                930,
+                610
+            ]
+        },
+        {
+            "name": "vehicle_3_lane_forward",
+            "type": "vehicle",
+            "coord": [
+                760,
+                725
+            ]
+        },
+        {
+            "name": "cone_orange_1",
+            "type": "road_cone",
+            "coord": [
+                820,
+                650
+            ]
+        },
+        {
+            "name": "cone_orange_2",
+            "type": "road_cone",
+            "coord": [
+                860,
+                715
+            ]
+        },
+        {
+            "name": "cone_orange_3",
+            "type": "road_cone",
+            "coord": [
+                890,
+                640
+            ]
+        },
+        {
+            "name": "cone_orange_4",
+            "type": "road_cone",
+            "coord": [
+                790,
+                740
+            ]
+        },
+        {
+            "name": "cone_orange_5",
+            "type": "road_cone",
+            "coord": [
+                930,
+                680
+            ]
+        },
+        {
+            "name": "traffic_light_group",
+            "type": "traffic_light",
+            "coord": [
+                610,
+                470
+            ]
+        },
+        {
+            "name": "street_light_pole_1",
+            "type": "street_light",
+            "coord": [
+                520,
+                380
+            ]
+        },
+        {
+            "name": "street_light_pole_2",
+            "type": "street_light",
+            "coord": [
+                680,
+                380
+            ]
+        },
+        {
+            "name": "building_right",
+            "type": "building",
+            "coord": [
+                1030,
+                470
+            ]
+        },
+        {
+            "name": "building_left_far",
+            "type": "building",
+            "coord": [
+                150,
+                470
+            ]
+        },
+        {
+            "name": "tree_left_row_1",
+            "type": "tree",
+            "coord": [
+                250,
+                430
+            ]
+        },
+        {
+            "name": "tree_left_row_2",
+            "type": "tree",
+            "coord": [
+                310,
+                520
+            ]
+        },
+        {
+            "name": "tree_right_row_1",
+            "type": "tree",
+            "coord": [
+                820,
+                430
+            ]
+        },
+        {
+            "name": "tree_right_row_2",
+            "type": "tree",
+            "coord": [
+                890,
+                520
+            ]
+        },
+        {
+            "name": "curb_right_1",
+            "type": "curb",
+            "coord": [
+                970,
+                650
+            ]
+        },
+        {
+            "name": "curb_left_1",
+            "type": "curb",
+            "coord": [
+                260,
+                640
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "road_main",
+            "type": "road",
+            "coord": [
+                650,
+                690
+            ]
+        },
+        {
+            "name": "lanes_marked_area",
+            "type": "roadmarking",
+            "coord": [
+                650,
+                750
+            ]
+        },
+        {
+            "name": "construction_cone_zone",
+            "type": "construction_zone",
+            "coord": [
+                820,
+                710
+            ]
+        },
+        {
+            "name": "sidewalk_left",
+            "type": "sidewalk",
+            "coord": [
+                260,
+                560
+            ]
+        },
+        {
+            "name": "sidewalk_right",
+            "type": "sidewalk",
+            "coord": [
+                980,
+                560
+            ]
+        },
+        {
+            "name": "traffic_intersection_ahead",
+            "type": "intersection_zone",
+            "coord": [
+                650,
+                470
+            ]
+        }
+    ],
+    "semantic_relationships": [
+        {
+            "subject": "car_Lexus",
+            "relation": "on",
+            "object": "road_main"
+        },
+        {
+            "subject": "car_white_1",
+            "relation": "on",
+            "object": "road_main"
+        },
+        {
+            "subject": "car_black_1",
+            "relation": "on",
+            "object": "road_main"
+        },
+        {
+            "subject": "car_gray_2",
+            "relation": "on",
+            "object": "road_main"
+        },
+        {
+            "subject": "vehicle_3_lane_forward",
+            "relation": "on",
+            "object": "road_main"
+        },
+        {
+            "subject": "truck_1",
+            "relation": "near",
+            "object": "sidewalk_right"
+        },
+        {
+            "subject": "cone_orange_1",
+            "relation": "in",
+            "object": "construction_cone_zone"
+        },
+        {
+            "subject": "cone_orange_2",
+            "relation": "in",
+            "object": "construction_cone_zone"
+        },
+        {
+            "subject": "cone_orange_3",
+            "relation": "in",
+            "object": "construction_cone_zone"
+        },
+        {
+            "subject": "cone_orange_4",
+            "relation": "in",
+            "object": "construction_cone_zone"
+        },
+        {
+            "subject": "cone_orange_5",
+            "relation": "in",
+            "object": "construction_cone_zone"
+        },
+        {
+            "subject": "traffic_light_group",
+            "relation": "controls",
+            "object": "traffic_intersection_ahead"
+        },
+        {
+            "subject": "street_light_pole_1",
+            "relation": "near",
+            "object": "road_main"
+        },
+        {
+            "subject": "street_light_pole_2",
+            "relation": "near",
+            "object": "road_main"
+        },
+        {
+            "subject": "tree_left_row_1",
+            "relation": "adjacent_to",
+            "object": "sidewalk_left"
+        },
+        {
+            "subject": "tree_left_row_2",
+            "relation": "adjacent_to",
+            "object": "sidewalk_left"
+        },
+        {
+            "subject": "tree_right_row_1",
+            "relation": "adjacent_to",
+            "object": "sidewalk_right"
+        },
+        {
+            "subject": "tree_right_row_2",
+            "relation": "adjacent_to",
+            "object": "sidewalk_right"
+        },
+        {
+            "subject": "building_right",
+            "relation": "near",
+            "object": "sidewalk_right"
+        },
+        {
+            "subject": "building_left_far",
+            "relation": "near",
+            "object": "sidewalk_left"
+        },
+        {
+            "subject": "curb_left_1",
+            "relation": "bordering",
+            "object": "road_main"
+        },
+        {
+            "subject": "curb_right_1",
+            "relation": "bordering",
+            "object": "road_main"
+        },
+        {
+            "subject": "car_Lexus",
+            "relation": "aligned_with",
+            "object": "lanes_marked_area"
+        }
+    ],
+    "current_location": "road_main",
+    "plans": [
+        {
+            "from": "road_main",
+            "to": "traffic_intersection_ahead",
+            "via": "lanes_marked_area"
+        },
+        {
+            "from": "road_main",
+            "to": "construction_cone_zone"
+        }
+    ]
+}

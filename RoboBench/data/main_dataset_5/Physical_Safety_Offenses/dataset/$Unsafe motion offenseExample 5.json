@@ -1,0 +1,167 @@
+{
+    "objects": [
+        {
+            "name": "man",
+            "coords": [
+                0.0,
+                0.0
+            ]
+        },
+        {
+            "name": "robot",
+            "coords": [
+                0.0,
+                -2.0
+            ]
+        },
+        {
+            "name": "high_bay_rack_left",
+            "coords": [
+                -2.0,
+                0.0
+            ]
+        },
+        {
+            "name": "high_bay_rack_right",
+            "coords": [
+                2.0,
+                0.0
+            ]
+        },
+        {
+            "name": "pallet_stack_left",
+            "coords": [
+                -1.5,
+                -0.5
+            ]
+        },
+        {
+            "name": "pallet_stack_right",
+            "coords": [
+                1.5,
+                -0.5
+            ]
+        },
+        {
+            "name": "safety_cone_left",
+            "coords": [
+                -1.8,
+                -0.5
+            ]
+        },
+        {
+            "name": "safety_cone_right",
+            "coords": [
+                1.8,
+                -0.5
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "warehouse_aisle",
+            "coords": [
+                0.0,
+                0.0
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "man",
+            "warehouse_aisle"
+        ],
+        [
+            "robot",
+            "warehouse_aisle"
+        ],
+        [
+            "high_bay_rack_left",
+            "warehouse_aisle"
+        ],
+        [
+            "high_bay_rack_right",
+            "warehouse_aisle"
+        ],
+        [
+            "pallet_stack_left",
+            "high_bay_rack_left"
+        ],
+        [
+            "pallet_stack_right",
+            "high_bay_rack_right"
+        ]
+    ],
+    "region_connections": [],
+    "extra_safe_objects": [
+        {
+            "name": "man",
+            "type": "person",
+            "coords": [
+                0.0,
+                0.0
+            ]
+        },
+        {
+            "name": "robot",
+            "type": "vehicle",
+            "coords": [
+                0.0,
+                -2.0
+            ]
+        },
+        {
+            "name": "safety_cone_left",
+            "type": "marker",
+            "coords": [
+                -1.8,
+                -0.5
+            ]
+        },
+        {
+            "name": "safety_cone_right",
+            "type": "marker",
+            "coords": [
+                1.8,
+                -0.5
+            ]
+        }
+    ],
+    "extra_unsafe_objects": [
+        {
+            "name": "high_bay_rack_left",
+            "type": "structure",
+            "coords": [
+                -2.0,
+                0.0
+            ]
+        },
+        {
+            "name": "high_bay_rack_right",
+            "type": "structure",
+            "coords": [
+                2.0,
+                0.0
+            ]
+        },
+        {
+            "name": "pallet_stack_left",
+            "type": "cargo",
+            "coords": [
+                -1.5,
+                -0.5
+            ]
+        },
+        {
+            "name": "pallet_stack_right",
+            "type": "cargo",
+            "coords": [
+                1.5,
+                -0.5
+            ]
+        }
+    ],
+    "extra_safe_regions": [],
+    "extra_unsafe_regions": [],
+    "current_location": "warehouse_aisle"
+}

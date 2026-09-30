@@ -1,0 +1,556 @@
+{
+    "objects": [
+        {
+            "name": "street_lanes",
+            "type": "road_markings",
+            "coordinates": [
+                [
+                    80,
+                    640
+                ],
+                [
+                    520,
+                    640
+                ],
+                [
+                    1180,
+                    640
+                ],
+                [
+                    650,
+                    640
+                ]
+            ]
+        },
+        {
+            "name": "crosswalk_zebra",
+            "type": "crosswalk",
+            "coordinates": [
+                [
+                    340,
+                    570
+                ],
+                [
+                    760,
+                    570
+                ],
+                [
+                    900,
+                    590
+                ],
+                [
+                    220,
+                    590
+                ]
+            ]
+        },
+        {
+            "name": "right_side_building",
+            "type": "building",
+            "coordinates": [
+                [
+                    1080,
+                    320
+                ],
+                [
+                    1360,
+                    320
+                ],
+                [
+                    1360,
+                    540
+                ],
+                [
+                    1080,
+                    540
+                ]
+            ]
+        },
+        {
+            "name": "right_side_parking_area",
+            "type": "parking_area",
+            "coordinates": [
+                [
+                    980,
+                    360
+                ],
+                [
+                    1360,
+                    360
+                ],
+                [
+                    1360,
+                    600
+                ],
+                [
+                    980,
+                    600
+                ]
+            ]
+        },
+        {
+            "name": "parked_vehicle_left",
+            "type": "vehicle",
+            "coordinates": [
+                [
+                    1180,
+                    420
+                ],
+                [
+                    1260,
+                    420
+                ],
+                [
+                    1260,
+                    480
+                ],
+                [
+                    1180,
+                    480
+                ]
+            ]
+        },
+        {
+            "name": "parked_vehicle_right",
+            "type": "vehicle",
+            "coordinates": [
+                [
+                    1240,
+                    470
+                ],
+                [
+                    1330,
+                    470
+                ],
+                [
+                    1330,
+                    530
+                ],
+                [
+                    1240,
+                    530
+                ]
+            ]
+        },
+        {
+            "name": "traffic_signal_left",
+            "type": "traffic_signal",
+            "coordinates": [
+                [
+                    620,
+                    400
+                ],
+                [
+                    650,
+                    400
+                ],
+                [
+                    650,
+                    520
+                ],
+                [
+                    620,
+                    520
+                ]
+            ]
+        },
+        {
+            "name": "traffic_signal_right",
+            "type": "traffic_signal",
+            "coordinates": [
+                [
+                    840,
+                    410
+                ],
+                [
+                    870,
+                    410
+                ],
+                [
+                    870,
+                    520
+                ],
+                [
+                    840,
+                    520
+                ]
+            ]
+        },
+        {
+            "name": "street_light_left",
+            "type": "street_light",
+            "coordinates": [
+                [
+                    560,
+                    300
+                ],
+                [
+                    585,
+                    300
+                ],
+                [
+                    585,
+                    520
+                ],
+                [
+                    560,
+                    520
+                ]
+            ]
+        },
+        {
+            "name": "street_light_right",
+            "type": "street_light",
+            "coordinates": [
+                [
+                    930,
+                    300
+                ],
+                [
+                    955,
+                    300
+                ],
+                [
+                    955,
+                    520
+                ],
+                [
+                    930,
+                    520
+                ]
+            ]
+        },
+        {
+            "name": "overhead_sign_left",
+            "type": "sign",
+            "coordinates": [
+                [
+                    730,
+                    280
+                ],
+                [
+                    800,
+                    280
+                ],
+                [
+                    800,
+                    330
+                ],
+                [
+                    730,
+                    330
+                ]
+            ]
+        },
+        {
+            "name": "overhead_sign_right",
+            "type": "sign",
+            "coordinates": [
+                [
+                    920,
+                    290
+                ],
+                [
+                    990,
+                    290
+                ],
+                [
+                    990,
+                    340
+                ],
+                [
+                    920,
+                    340
+                ]
+            ]
+        },
+        {
+            "name": "curb_edge_right",
+            "type": "curb",
+            "coordinates": [
+                [
+                    980,
+                    520
+                ],
+                [
+                    1360,
+                    520
+                ],
+                [
+                    1360,
+                    565
+                ],
+                [
+                    980,
+                    565
+                ]
+            ]
+        },
+        {
+            "name": "curb_edge_left",
+            "type": "curb",
+            "coordinates": [
+                [
+                    0,
+                    520
+                ],
+                [
+                    340,
+                    520
+                ],
+                [
+                    340,
+                    565
+                ],
+                [
+                    0,
+                    565
+                ]
+            ]
+        },
+        {
+            "name": "vehicle_camera_host",
+            "type": "ego_vehicle",
+            "coordinates": [
+                [
+                    430,
+                    760
+                ],
+                [
+                    620,
+                    760
+                ],
+                [
+                    650,
+                    820
+                ],
+                [
+                    400,
+                    820
+                ]
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "intersection_area",
+            "type": "intersection",
+            "coordinates": [
+                [
+                    150,
+                    520
+                ],
+                [
+                    380,
+                    520
+                ],
+                [
+                    860,
+                    520
+                ],
+                [
+                    1140,
+                    520
+                ],
+                [
+                    1240,
+                    740
+                ],
+                [
+                    240,
+                    740
+                ]
+            ]
+        },
+        {
+            "name": "lane_center_straight",
+            "type": "lane_region",
+            "coordinates": [
+                [
+                    460,
+                    640
+                ],
+                [
+                    640,
+                    640
+                ],
+                [
+                    720,
+                    920
+                ],
+                [
+                    500,
+                    920
+                ]
+            ]
+        },
+        {
+            "name": "lane_left_branch",
+            "type": "lane_region",
+            "coordinates": [
+                [
+                    300,
+                    620
+                ],
+                [
+                    460,
+                    620
+                ],
+                [
+                    520,
+                    920
+                ],
+                [
+                    340,
+                    920
+                ]
+            ]
+        },
+        {
+            "name": "lane_right_branch",
+            "type": "lane_region",
+            "coordinates": [
+                [
+                    660,
+                    620
+                ],
+                [
+                    880,
+                    620
+                ],
+                [
+                    960,
+                    920
+                ],
+                [
+                    720,
+                    920
+                ]
+            ]
+        },
+        {
+            "name": "crosswalk_region",
+            "type": "walkway_region",
+            "coordinates": [
+                [
+                    240,
+                    560
+                ],
+                [
+                    380,
+                    560
+                ],
+                [
+                    980,
+                    600
+                ],
+                [
+                    840,
+                    600
+                ]
+            ]
+        },
+        {
+            "name": "right_side_front_area",
+            "type": "sidewalk_or_frontage",
+            "coordinates": [
+                [
+                    980,
+                    520
+                ],
+                [
+                    1360,
+                    520
+                ],
+                [
+                    1360,
+                    720
+                ],
+                [
+                    980,
+                    720
+                ]
+            ]
+        }
+    ],
+    "semantic_relationships": [
+        {
+            "from": "crosswalk_region",
+            "relation": "crosses",
+            "to": "intersection_area"
+        },
+        {
+            "from": "lane_center_straight",
+            "relation": "leads_to",
+            "to": "intersection_area"
+        },
+        {
+            "from": "lane_left_branch",
+            "relation": "leads_to",
+            "to": "intersection_area"
+        },
+        {
+            "from": "lane_right_branch",
+            "relation": "leads_to",
+            "to": "intersection_area"
+        },
+        {
+            "from": "parked_vehicle_left",
+            "relation": "located_in",
+            "to": "right_side_parking_area"
+        },
+        {
+            "from": "parked_vehicle_right",
+            "relation": "located_in",
+            "to": "right_side_parking_area"
+        },
+        {
+            "from": "right_side_parking_area",
+            "relation": "adjacent_to",
+            "to": "right_side_front_area"
+        },
+        {
+            "from": "right_side_building",
+            "relation": "located_in",
+            "to": "right_side_front_area"
+        },
+        {
+            "from": "traffic_signal_left",
+            "relation": "controls",
+            "to": "crosswalk_region"
+        },
+        {
+            "from": "traffic_signal_right",
+            "relation": "controls",
+            "to": "crosswalk_region"
+        },
+        {
+            "from": "curb_edge_right",
+            "relation": "bounds",
+            "to": "intersection_area"
+        },
+        {
+            "from": "curb_edge_left",
+            "relation": "bounds",
+            "to": "intersection_area"
+        },
+        {
+            "from": "street_light_left",
+            "relation": "illuminates",
+            "to": "intersection_area"
+        },
+        {
+            "from": "street_light_right",
+            "relation": "illuminates",
+            "to": "intersection_area"
+        }
+    ],
+    "current_location": "lane_center_straight",
+    "plans": [
+        {
+            "name": "proceed_through_intersection",
+            "from": "lane_center_straight",
+            "target": "intersection_area"
+        }
+    ]
+}

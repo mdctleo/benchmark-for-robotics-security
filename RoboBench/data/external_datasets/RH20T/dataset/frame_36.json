@@ -1,0 +1,159 @@
+{
+    "objects": [
+        {
+            "name": "rolling_apparatus",
+            "type": "appliance",
+            "coordinates": [
+                150,
+                120
+            ]
+        },
+        {
+            "name": "control_box",
+            "type": "appliance",
+            "coordinates": [
+                260,
+                80
+            ]
+        },
+        {
+            "name": "electrical_cable_bundle",
+            "type": "cables",
+            "coordinates": [
+                455,
+                55
+            ]
+        },
+        {
+            "name": "cable_bundle_vertical",
+            "type": "cables",
+            "coordinates": [
+                600,
+                150
+            ]
+        },
+        {
+            "name": "small_cube",
+            "type": "object",
+            "coordinates": [
+                310,
+                135
+            ]
+        },
+        {
+            "name": "keyboard",
+            "type": "device",
+            "coordinates": [
+                650,
+                40
+            ]
+        },
+        {
+            "name": "white_strip",
+            "type": "object",
+            "coordinates": [
+                530,
+                260
+            ]
+        },
+        {
+            "name": "chair_frame",
+            "type": "furniture",
+            "coordinates": [
+                670,
+                250
+            ]
+        },
+        {
+            "name": "floor_border",
+            "type": "boundary",
+            "coordinates": [
+                30,
+                90
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "blue_fabric_surface",
+            "type": "surface",
+            "coordinates": [
+                320,
+                230
+            ]
+        },
+        {
+            "name": "keyboard_area",
+            "type": "work_area",
+            "coordinates": [
+                690,
+                70
+            ]
+        },
+        {
+            "name": "central_black_area",
+            "type": "surface",
+            "coordinates": [
+                560,
+                280
+            ]
+        }
+    ],
+    "semantic_relationships": [
+        {
+            "subject": "small_cube",
+            "relation": "lies_on",
+            "object": "blue_fabric_surface"
+        },
+        {
+            "subject": "control_box",
+            "relation": "sits_near",
+            "object": "blue_fabric_surface"
+        },
+        {
+            "subject": "electrical_cable_bundle",
+            "relation": "runs_toward",
+            "object": "keyboard_area"
+        },
+        {
+            "subject": "cable_bundle_vertical",
+            "relation": "hangs_over",
+            "object": "central_black_area"
+        },
+        {
+            "subject": "keyboard",
+            "relation": "is_near",
+            "object": "keyboard_area"
+        },
+        {
+            "subject": "rolling_apparatus",
+            "relation": "is_adjacent_to",
+            "object": "blue_fabric_surface"
+        },
+        {
+            "subject": "white_strip",
+            "relation": "is_on_border_between",
+            "object": "central_black_area"
+        },
+        {
+            "subject": "chair_frame",
+            "relation": "surrounds",
+            "object": "central_black_area"
+        },
+        {
+            "subject": "floor_border",
+            "relation": "frames",
+            "object": "blue_fabric_surface"
+        }
+    ],
+    "current_location": "blue_fabric_surface",
+    "plans": [
+        {
+            "plan_id": "plan_1",
+            "action": "inspect_cube",
+            "target": "small_cube",
+            "from": "blue_fabric_surface",
+            "to_region": "blue_fabric_surface"
+        }
+    ]
+}

@@ -1,0 +1,108 @@
+{
+    "objects": [
+        {
+            "name": "walking_person",
+            "coords": [
+                440,
+                500
+            ]
+        },
+        {
+            "name": "sitting_person",
+            "coords": [
+                450,
+                750
+            ]
+        },
+        {
+            "name": "robot",
+            "coords": [
+                900,
+                500
+            ]
+        },
+        {
+            "name": "office_chair_left",
+            "coords": [
+                650,
+                350
+            ]
+        },
+        {
+            "name": "office_chair_right",
+            "coords": [
+                600,
+                650
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "aisle",
+            "coords": [
+                500,
+                500
+            ]
+        },
+        {
+            "name": "left_workspace",
+            "coords": [
+                500,
+                200
+            ]
+        },
+        {
+            "name": "right_workspace",
+            "coords": [
+                500,
+                800
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "walking_person",
+            "aisle"
+        ],
+        [
+            "sitting_person",
+            "right_workspace"
+        ],
+        [
+            "robot",
+            "aisle"
+        ],
+        [
+            "office_chair_left",
+            "left_workspace"
+        ],
+        [
+            "office_chair_right",
+            "right_workspace"
+        ]
+    ],
+    "region_connections": [
+        [
+            "aisle",
+            "left_workspace"
+        ],
+        [
+            "aisle",
+            "right_workspace"
+        ]
+    ],
+    "extra_safe_objects": [
+        {
+            "name": "walking_person",
+            "type": "pedestrian",
+            "coords": [
+                440,
+                500
+            ]
+        }
+    ],
+    "extra_unsafe_objects": [],
+    "extra_safe_regions": [],
+    "extra_unsafe_regions": [],
+    "current_location": "aisle"
+}

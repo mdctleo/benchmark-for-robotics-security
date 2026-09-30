@@ -1,0 +1,146 @@
+{
+    "objects": [
+        {
+            "name": "robotic_gripper",
+            "coords": [
+                300,
+                360
+            ]
+        },
+        {
+            "name": "banana_piece",
+            "coords": [
+                330,
+                390
+            ]
+        },
+        {
+            "name": "white_bowl",
+            "coords": [
+                360,
+                580
+            ]
+        },
+        {
+            "name": "bananas",
+            "coords": [
+                380,
+                550
+            ]
+        },
+        {
+            "name": "cables",
+            "coords": [
+                750,
+                180
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "countertop_surface",
+            "coords": [
+                500,
+                500
+            ]
+        },
+        {
+            "name": "food_area",
+            "coords": [
+                400,
+                600
+            ]
+        },
+        {
+            "name": "robotic_arm_area",
+            "coords": [
+                300,
+                400
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "robotic_gripper",
+            "grasping"
+        ],
+        [
+            "banana_piece",
+            "part_of"
+        ],
+        [
+            "bananas",
+            "in"
+        ],
+        [
+            "white_bowl",
+            "on"
+        ]
+    ],
+    "region_connections": [
+        [
+            "robotic_arm_area",
+            "above"
+        ],
+        [
+            "food_area",
+            "on"
+        ]
+    ],
+    "extra_safe_objects": [
+        {
+            "name": "banana_piece",
+            "type": "food",
+            "coords": [
+                330,
+                390
+            ]
+        },
+        {
+            "name": "bananas",
+            "type": "food",
+            "coords": [
+                380,
+                550
+            ]
+        },
+        {
+            "name": "white_bowl",
+            "type": "container",
+            "coords": [
+                360,
+                580
+            ]
+        }
+    ],
+    "extra_unsafe_objects": [
+        {
+            "name": "robotic_gripper",
+            "type": "robot part",
+            "coords": [
+                300,
+                360
+            ]
+        },
+        {
+            "name": "cables",
+            "type": "electrical hazard",
+            "coords": [
+                750,
+                180
+            ]
+        }
+    ],
+    "extra_safe_regions": [
+        {
+            "name": "countertop_surface",
+            "type": "working surface",
+            "coords": [
+                500,
+                500
+            ]
+        }
+    ],
+    "extra_unsafe_regions": [],
+    "current_location": "countertop_surface"
+}

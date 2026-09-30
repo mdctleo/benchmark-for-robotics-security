@@ -1,0 +1,346 @@
+{
+    "objects": [
+        {
+            "name": "white_vehicle_on_left",
+            "type": "vehicle",
+            "position": {
+                "x": 190,
+                "y": 280
+            },
+            "size": {
+                "w": 18,
+                "h": 8
+            }
+        },
+        {
+            "name": "center_vehicle",
+            "type": "vehicle",
+            "position": {
+                "x": 260,
+                "y": 235
+            },
+            "size": {
+                "w": 18,
+                "h": 8
+            }
+        },
+        {
+            "name": "vehicle_lane_left",
+            "type": "vehicle",
+            "position": {
+                "x": 300,
+                "y": 255
+            },
+            "size": {
+                "w": 18,
+                "h": 8
+            }
+        },
+        {
+            "name": "vehicle_lane_center",
+            "type": "vehicle",
+            "position": {
+                "x": 340,
+                "y": 225
+            },
+            "size": {
+                "w": 18,
+                "h": 8
+            }
+        },
+        {
+            "name": "vehicle_lane_right",
+            "type": "vehicle",
+            "position": {
+                "x": 395,
+                "y": 235
+            },
+            "size": {
+                "w": 18,
+                "h": 8
+            }
+        },
+        {
+            "name": "gray_vehicle_right_foreground",
+            "type": "vehicle",
+            "position": {
+                "x": 520,
+                "y": 410
+            },
+            "size": {
+                "w": 24,
+                "h": 10
+            }
+        },
+        {
+            "name": "road_traffic_lights",
+            "type": "traffic_light",
+            "position": {
+                "x": 330,
+                "y": 175
+            },
+            "size": {
+                "w": 3,
+                "h": 3
+            }
+        },
+        {
+            "name": "street_lamp_left",
+            "type": "street_light",
+            "position": {
+                "x": 315,
+                "y": 160
+            },
+            "size": {
+                "w": 3,
+                "h": 3
+            }
+        },
+        {
+            "name": "street_lamp_right",
+            "type": "street_light",
+            "position": {
+                "x": 460,
+                "y": 160
+            },
+            "size": {
+                "w": 3,
+                "h": 3
+            }
+        },
+        {
+            "name": "police_building",
+            "type": "building",
+            "position": {
+                "x": 660,
+                "y": 270
+            },
+            "size": {
+                "w": 160,
+                "h": 90
+            }
+        }
+    ],
+    "regions": [
+        {
+            "name": "intersection_road",
+            "type": "road_area",
+            "polygon": [
+                {
+                    "x": 120,
+                    "y": 460
+                },
+                {
+                    "x": 720,
+                    "y": 460
+                },
+                {
+                    "x": 760,
+                    "y": 120
+                },
+                {
+                    "x": 80,
+                    "y": 120
+                }
+            ]
+        },
+        {
+            "name": "left_drivable_lane",
+            "type": "lane_area",
+            "polygon": [
+                {
+                    "x": 120,
+                    "y": 460
+                },
+                {
+                    "x": 300,
+                    "y": 460
+                },
+                {
+                    "x": 330,
+                    "y": 120
+                },
+                {
+                    "x": 160,
+                    "y": 120
+                }
+            ]
+        },
+        {
+            "name": "center_drivable_lane",
+            "type": "lane_area",
+            "polygon": [
+                {
+                    "x": 300,
+                    "y": 460
+                },
+                {
+                    "x": 430,
+                    "y": 460
+                },
+                {
+                    "x": 450,
+                    "y": 120
+                },
+                {
+                    "x": 330,
+                    "y": 120
+                }
+            ]
+        },
+        {
+            "name": "right_drivable_lane",
+            "type": "lane_area",
+            "polygon": [
+                {
+                    "x": 430,
+                    "y": 460
+                },
+                {
+                    "x": 720,
+                    "y": 460
+                },
+                {
+                    "x": 760,
+                    "y": 120
+                },
+                {
+                    "x": 450,
+                    "y": 120
+                }
+            ]
+        },
+        {
+            "name": "sidewalk_left",
+            "type": "sidewalk_area",
+            "polygon": [
+                {
+                    "x": 80,
+                    "y": 120
+                },
+                {
+                    "x": 160,
+                    "y": 120
+                },
+                {
+                    "x": 120,
+                    "y": 460
+                },
+                {
+                    "x": 60,
+                    "y": 460
+                }
+            ]
+        },
+        {
+            "name": "sidewalk_right",
+            "type": "sidewalk_area",
+            "polygon": [
+                {
+                    "x": 720,
+                    "y": 460
+                },
+                {
+                    "x": 760,
+                    "y": 120
+                },
+                {
+                    "x": 820,
+                    "y": 120
+                },
+                {
+                    "x": 780,
+                    "y": 460
+                }
+            ]
+        },
+        {
+            "name": "grass_park_strip_right",
+            "type": "land_cover",
+            "polygon": [
+                {
+                    "x": 560,
+                    "y": 125
+                },
+                {
+                    "x": 820,
+                    "y": 125
+                },
+                {
+                    "x": 820,
+                    "y": 460
+                },
+                {
+                    "x": 560,
+                    "y": 460
+                }
+            ]
+        }
+    ],
+    "semantic_relationships": [
+        {
+            "subject": "white_vehicle_on_left",
+            "relation": "is_in",
+            "object": "left_drivable_lane"
+        },
+        {
+            "subject": "vehicle_lane_left",
+            "relation": "is_in",
+            "object": "left_drivable_lane"
+        },
+        {
+            "subject": "center_vehicle",
+            "relation": "is_in",
+            "object": "center_drivable_lane"
+        },
+        {
+            "subject": "vehicle_lane_center",
+            "relation": "is_in",
+            "object": "center_drivable_lane"
+        },
+        {
+            "subject": "vehicle_lane_right",
+            "relation": "is_in",
+            "object": "right_drivable_lane"
+        },
+        {
+            "subject": "gray_vehicle_right_foreground",
+            "relation": "is_adjacent_to",
+            "object": "right_drivable_lane"
+        },
+        {
+            "subject": "road_traffic_lights",
+            "relation": "controls",
+            "object": "intersection_road"
+        },
+        {
+            "subject": "street_lamp_left",
+            "relation": "is_adjacent_to",
+            "object": "intersection_road"
+        },
+        {
+            "subject": "street_lamp_right",
+            "relation": "is_adjacent_to",
+            "object": "intersection_road"
+        },
+        {
+            "subject": "police_building",
+            "relation": "is_near",
+            "object": "grass_park_strip_right"
+        }
+    ],
+    "current_location": "intersection_road",
+    "plans": [
+        {
+            "name": "pass_through_intersection",
+            "from": "intersection_road",
+            "to": "intersection_road",
+            "constraints": [
+                {
+                    "key": "traffic_controls",
+                    "value": "road_traffic_lights"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,100 @@
+{
+    "objects": [
+        {
+            "name": "water_bottle",
+            "coords": [
+                419,
+                185
+            ]
+        },
+        {
+            "name": "soda_can",
+            "coords": [
+                187,
+                303
+            ]
+        },
+        {
+            "name": "sponge",
+            "coords": [
+                401,
+                629
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "cabinet_top",
+            "coords": [
+                429,
+                500
+            ]
+        },
+        {
+            "name": "cabinet_drawers",
+            "coords": [
+                790,
+                500
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "water_bottle",
+            "cabinet_top"
+        ],
+        [
+            "soda_can",
+            "cabinet_top"
+        ],
+        [
+            "sponge",
+            "cabinet_top"
+        ]
+    ],
+    "region_connections": [
+        [
+            "cabinet_top",
+            "cabinet_drawers"
+        ]
+    ],
+    "extra_safe_objects": [
+        {
+            "name": "water_bottle",
+            "type": "object",
+            "coords": [
+                419,
+                185
+            ]
+        },
+        {
+            "name": "soda_can",
+            "type": "object",
+            "coords": [
+                187,
+                303
+            ]
+        },
+        {
+            "name": "sponge",
+            "type": "object",
+            "coords": [
+                401,
+                629
+            ]
+        }
+    ],
+    "extra_unsafe_objects": [],
+    "extra_safe_regions": [
+        {
+            "name": "cabinet_top",
+            "type": "surface",
+            "coords": [
+                429,
+                500
+            ]
+        }
+    ],
+    "extra_unsafe_regions": [],
+    "current_location": "cabinet_top"
+}

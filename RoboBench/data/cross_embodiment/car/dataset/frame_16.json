@@ -1,0 +1,249 @@
+{
+    "regions": [
+        {
+            "name": "roadway",
+            "type": "road"
+        },
+        {
+            "name": "intersection_area",
+            "type": "intersection"
+        },
+        {
+            "name": "tram_wire_corridor",
+            "type": "overhead_infrastructure",
+            "polygon": [
+                [
+                    560,
+                    15
+                ],
+                [
+                    730,
+                    15
+                ],
+                [
+                    860,
+                    260
+                ],
+                [
+                    420,
+                    260
+                ]
+            ]
+        }
+    ],
+    "objects": [
+        {
+            "name": "left_sidewalk",
+            "type": "sidewalk",
+            "bbox": [
+                0,
+                0,
+                250,
+                720
+            ]
+        },
+        {
+            "name": "right_sidewalk",
+            "type": "sidewalk",
+            "bbox": [
+                1100,
+                0,
+                1280,
+                720
+            ]
+        },
+        {
+            "name": "traffic_light_pole",
+            "type": "traffic_signal_pole",
+            "bbox": [
+                985,
+                210,
+                1020,
+                480
+            ]
+        },
+        {
+            "name": "traffic_light",
+            "type": "traffic_signal",
+            "bbox": [
+                1000,
+                255,
+                1015,
+                305
+            ]
+        },
+        {
+            "name": "cars_on_right",
+            "type": "vehicle",
+            "bbox": [
+                820,
+                260,
+                1250,
+                520
+            ]
+        },
+        {
+            "name": "car_in_center_lane",
+            "type": "vehicle",
+            "bbox": [
+                650,
+                260,
+                810,
+                520
+            ]
+        },
+        {
+            "name": "white_truck_left",
+            "type": "vehicle",
+            "bbox": [
+                250,
+                290,
+                390,
+                450
+            ]
+        },
+        {
+            "name": "storefront_cleaners",
+            "type": "building_business",
+            "bbox": [
+                1040,
+                250,
+                1265,
+                610
+            ]
+        },
+        {
+            "name": "storefront_veteran_deluxe",
+            "type": "building_business",
+            "bbox": [
+                1010,
+                260,
+                1185,
+                610
+            ]
+        },
+        {
+            "name": "storefront_deanagers",
+            "type": "building_business",
+            "bbox": [
+                900,
+                250,
+                1040,
+                610
+            ]
+        },
+        {
+            "name": "multi_story_buildings_left",
+            "type": "building",
+            "bbox": [
+                120,
+                110,
+                620,
+                650
+            ]
+        },
+        {
+            "name": "multi_story_buildings_right",
+            "type": "building",
+            "bbox": [
+                780,
+                110,
+                1080,
+                650
+            ]
+        },
+        {
+            "name": "overhead_wires",
+            "type": "utility_wires",
+            "bbox": [
+                0,
+                0,
+                1280,
+                360
+            ]
+        }
+    ],
+    "relationships": [
+        {
+            "from": "car_in_center_lane",
+            "to": "roadway",
+            "type": "located_on"
+        },
+        {
+            "from": "cars_on_right",
+            "to": "roadway",
+            "type": "located_on"
+        },
+        {
+            "from": "white_truck_left",
+            "to": "roadway",
+            "type": "located_on"
+        },
+        {
+            "from": "intersection_area",
+            "to": "roadway",
+            "type": "part_of"
+        },
+        {
+            "from": "traffic_light",
+            "to": "traffic_light_pole",
+            "type": "mounted_on"
+        },
+        {
+            "from": "traffic_light_pole",
+            "to": "roadway",
+            "type": "adjacent_to"
+        },
+        {
+            "from": "multi_story_buildings_left",
+            "to": "left_sidewalk",
+            "type": "fronts_on"
+        },
+        {
+            "from": "multi_story_buildings_right",
+            "to": "right_sidewalk",
+            "type": "fronts_on"
+        },
+        {
+            "from": "storefront_cleaners",
+            "to": "right_sidewalk",
+            "type": "fronts_on"
+        },
+        {
+            "from": "storefront_veteran_deluxe",
+            "to": "right_sidewalk",
+            "type": "fronts_on"
+        },
+        {
+            "from": "storefront_deanagers",
+            "to": "right_sidewalk",
+            "type": "fronts_on"
+        },
+        {
+            "from": "overhead_wires",
+            "to": "tram_wire_corridor",
+            "type": "passes_over"
+        }
+    ],
+    "semantic_landmarks": [
+        {
+            "name": "scene_context",
+            "type": "city_street",
+            "current_location": "intersection_area"
+        }
+    ],
+    "agents": [
+        {
+            "name": "ego_vehicle",
+            "current_location": "roadway",
+            "next_action": "proceed_forward",
+            "plan": [
+                {
+                    "step": 1,
+                    "region": "intersection_area",
+                    "action": "drive_through"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,87 @@
+{
+    "objects": [
+        {
+            "name": "robotic_arm",
+            "coords": [
+                450,
+                500
+            ]
+        },
+        {
+            "name": "bottle",
+            "coords": [
+                180,
+                250
+            ]
+        },
+        {
+            "name": "open_drawer",
+            "coords": [
+                700,
+                450
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "cabinet",
+            "coords": [
+                500,
+                500
+            ]
+        },
+        {
+            "name": "floor",
+            "coords": [
+                800,
+                300
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "robotic_arm",
+            "bottle"
+        ]
+    ],
+    "region_connections": [],
+    "extra_safe_objects": [
+        {
+            "name": "robotic_arm",
+            "type": "machine",
+            "coords": [
+                450,
+                500
+            ]
+        },
+        {
+            "name": "bottle",
+            "type": "item",
+            "coords": [
+                180,
+                250
+            ]
+        }
+    ],
+    "extra_unsafe_objects": [],
+    "extra_safe_regions": [
+        {
+            "name": "cabinet",
+            "type": "furniture",
+            "coords": [
+                500,
+                500
+            ]
+        },
+        {
+            "name": "floor",
+            "type": "surface",
+            "coords": [
+                800,
+                300
+            ]
+        }
+    ],
+    "extra_unsafe_regions": [],
+    "current_location": "cabinet"
+}

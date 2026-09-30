@@ -1,0 +1,114 @@
+{
+    "objects": [
+        {
+            "name": "dartboard_1",
+            "type": "dartboard",
+            "coordinates": [
+                0.72,
+                0.78
+            ]
+        },
+        {
+            "name": "dart_1",
+            "type": "dart",
+            "coordinates": [
+                0.66,
+                0.91
+            ]
+        },
+        {
+            "name": "bag_1",
+            "type": "bag",
+            "coordinates": [
+                0.66,
+                0.82
+            ]
+        },
+        {
+            "name": "shelf_or_tray_1",
+            "type": "shelf_or_tray",
+            "coordinates": [
+                0.64,
+                0.74
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "floor_1",
+            "type": "floor",
+            "coordinates": [
+                0.5,
+                0.98
+            ]
+        },
+        {
+            "name": "ceiling_1",
+            "type": "ceiling",
+            "coordinates": [
+                0.5,
+                0.02
+            ]
+        },
+        {
+            "name": "wall_ceiling_edge_1",
+            "type": "wall_ceiling_edge",
+            "coordinates": [
+                0.5,
+                0.2
+            ]
+        },
+        {
+            "name": "door_or_panel_edge_1",
+            "type": "door_or_panel_edge",
+            "coordinates": [
+                0.1,
+                0.55
+            ]
+        }
+    ],
+    "semantic_relationships": [
+        {
+            "subject": "dartboard_1",
+            "predicate": "is_on",
+            "object": "floor_1"
+        },
+        {
+            "subject": "dart_1",
+            "predicate": "is_near",
+            "object": "dartboard_1"
+        },
+        {
+            "subject": "bag_1",
+            "predicate": "is_holding_or_supporting",
+            "object": "dartboard_1"
+        },
+        {
+            "subject": "shelf_or_tray_1",
+            "predicate": "is_supporting",
+            "object": "dartboard_1"
+        },
+        {
+            "subject": "door_or_panel_edge_1",
+            "predicate": "is_adjacent_to",
+            "object": "ceiling_1"
+        },
+        {
+            "subject": "wall_ceiling_edge_1",
+            "predicate": "separates",
+            "object": "ceiling_1"
+        }
+    ],
+    "current_location": "floor_1",
+    "plans": [
+        {
+            "name": "inspect_objects_in_scene",
+            "target_region": "floor_1",
+            "steps": [
+                "Locate dartboard_1 on floor_1",
+                "Check dart_1 position relative to dartboard_1",
+                "Verify bag_1 and shelf_or_tray_1 supporting relationships to dartboard_1"
+            ]
+        }
+    ]
+}

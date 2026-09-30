@@ -1,0 +1,104 @@
+{
+    "objects": [
+        {
+            "name": "pedestrian",
+            "coords": [
+                50,
+                50
+            ]
+        },
+        {
+            "name": "robot",
+            "coords": [
+                50,
+                10
+            ]
+        },
+        {
+            "name": "pedestrian_sign",
+            "coords": [
+                80,
+                40
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "sidewalk",
+            "coords": [
+                50,
+                30
+            ]
+        },
+        {
+            "name": "crosswalk",
+            "coords": [
+                50,
+                80
+            ]
+        },
+        {
+            "name": "street",
+            "coords": [
+                50,
+                90
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "robot",
+            "sidewalk"
+        ],
+        [
+            "pedestrian",
+            "sidewalk"
+        ],
+        [
+            "pedestrian_sign",
+            "sidewalk"
+        ]
+    ],
+    "region_connections": [
+        [
+            "sidewalk",
+            "crosswalk"
+        ],
+        [
+            "crosswalk",
+            "street"
+        ]
+    ],
+    "extra_safe_objects": [
+        {
+            "name": "pedestrian_sign",
+            "type": "information_sign",
+            "coords": [
+                80,
+                40
+            ]
+        }
+    ],
+    "extra_unsafe_objects": [
+        {
+            "name": "pedestrian",
+            "type": "person",
+            "coords": [
+                50,
+                50
+            ]
+        }
+    ],
+    "extra_safe_regions": [],
+    "extra_unsafe_regions": [
+        {
+            "name": "crosswalk",
+            "type": "pedestrian_crossing",
+            "coords": [
+                50,
+                80
+            ]
+        }
+    ],
+    "current_location": "sidewalk"
+}

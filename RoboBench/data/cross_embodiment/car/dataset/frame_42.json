@@ -1,0 +1,464 @@
+{
+    "objects": [
+        {
+            "name": "car_red",
+            "type": "vehicle",
+            "bbox_xy": [
+                [
+                    689,
+                    690
+                ],
+                [
+                    718,
+                    690
+                ],
+                [
+                    718,
+                    734
+                ],
+                [
+                    689,
+                    734
+                ]
+            ]
+        },
+        {
+            "name": "car_white_1",
+            "type": "vehicle",
+            "bbox_xy": [
+                [
+                    600,
+                    700
+                ],
+                [
+                    630,
+                    700
+                ],
+                [
+                    630,
+                    740
+                ],
+                [
+                    600,
+                    740
+                ]
+            ]
+        },
+        {
+            "name": "car_white_2",
+            "type": "vehicle",
+            "bbox_xy": [
+                [
+                    520,
+                    720
+                ],
+                [
+                    555,
+                    720
+                ],
+                [
+                    555,
+                    760
+                ],
+                [
+                    520,
+                    760
+                ]
+            ]
+        },
+        {
+            "name": "car_gray",
+            "type": "vehicle",
+            "bbox_xy": [
+                [
+                    445,
+                    745
+                ],
+                [
+                    475,
+                    745
+                ],
+                [
+                    475,
+                    785
+                ],
+                [
+                    445,
+                    785
+                ]
+            ]
+        },
+        {
+            "name": "car_blue",
+            "type": "vehicle",
+            "bbox_xy": [
+                [
+                    350,
+                    770
+                ],
+                [
+                    390,
+                    770
+                ],
+                [
+                    390,
+                    815
+                ],
+                [
+                    350,
+                    815
+                ]
+            ]
+        },
+        {
+            "name": "tree_center",
+            "type": "vegetation",
+            "bbox_xy": [
+                [
+                    825,
+                    355
+                ],
+                [
+                    910,
+                    355
+                ],
+                [
+                    910,
+                    465
+                ],
+                [
+                    825,
+                    465
+                ]
+            ]
+        },
+        {
+            "name": "tree_right",
+            "type": "vegetation",
+            "bbox_xy": [
+                [
+                    940,
+                    410
+                ],
+                [
+                    1020,
+                    410
+                ],
+                [
+                    1020,
+                    520
+                ],
+                [
+                    940,
+                    520
+                ]
+            ]
+        },
+        {
+            "name": "power_pole_left",
+            "type": "infrastructure",
+            "bbox_xy": [
+                [
+                    190,
+                    290
+                ],
+                [
+                    215,
+                    290
+                ],
+                [
+                    215,
+                    420
+                ],
+                [
+                    190,
+                    420
+                ]
+            ]
+        },
+        {
+            "name": "power_pole_mid",
+            "type": "infrastructure",
+            "bbox_xy": [
+                [
+                    320,
+                    300
+                ],
+                [
+                    345,
+                    300
+                ],
+                [
+                    345,
+                    430
+                ],
+                [
+                    320,
+                    430
+                ]
+            ]
+        },
+        {
+            "name": "power_pole_far_left",
+            "type": "infrastructure",
+            "bbox_xy": [
+                [
+                    250,
+                    320
+                ],
+                [
+                    270,
+                    320
+                ],
+                [
+                    270,
+                    470
+                ],
+                [
+                    250,
+                    470
+                ]
+            ]
+        },
+        {
+            "name": "sound_barrier_right",
+            "type": "barrier",
+            "bbox_xy": [
+                [
+                    990,
+                    120
+                ],
+                [
+                    1600,
+                    120
+                ],
+                [
+                    1600,
+                    620
+                ],
+                [
+                    990,
+                    620
+                ]
+            ]
+        },
+        {
+            "name": "windshield_camera",
+            "type": "ego_sensor",
+            "bbox_xy": [
+                [
+                    690,
+                    790
+                ],
+                [
+                    930,
+                    790
+                ],
+                [
+                    930,
+                    930
+                ],
+                [
+                    690,
+                    930
+                ]
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "road_lane",
+            "type": "road",
+            "bbox_xy": [
+                [
+                    0,
+                    260
+                ],
+                [
+                    1600,
+                    260
+                ],
+                [
+                    1600,
+                    1040
+                ],
+                [
+                    0,
+                    1040
+                ]
+            ]
+        },
+        {
+            "name": "road_shoulder_left",
+            "type": "road_boundary",
+            "bbox_xy": [
+                [
+                    0,
+                    260
+                ],
+                [
+                    250,
+                    260
+                ],
+                [
+                    330,
+                    1040
+                ],
+                [
+                    0,
+                    1040
+                ]
+            ]
+        },
+        {
+            "name": "road_shoulder_right",
+            "type": "road_boundary",
+            "bbox_xy": [
+                [
+                    1230,
+                    260
+                ],
+                [
+                    1600,
+                    260
+                ],
+                [
+                    1600,
+                    1040
+                ],
+                [
+                    1130,
+                    1040
+                ]
+            ]
+        },
+        {
+            "name": "sky",
+            "type": "background",
+            "bbox_xy": [
+                [
+                    0,
+                    0
+                ],
+                [
+                    1600,
+                    0
+                ],
+                [
+                    1600,
+                    260
+                ],
+                [
+                    0,
+                    260
+                ]
+            ]
+        },
+        {
+            "name": "right_wall_area",
+            "type": "utility_area",
+            "bbox_xy": [
+                [
+                    1020,
+                    120
+                ],
+                [
+                    1600,
+                    120
+                ],
+                [
+                    1600,
+                    700
+                ],
+                [
+                    1020,
+                    700
+                ]
+            ]
+        }
+    ],
+    "semantic_relationships": [
+        {
+            "subject": "car_red",
+            "relation": "is_on",
+            "object": "road_lane"
+        },
+        {
+            "subject": "car_white_1",
+            "relation": "is_on",
+            "object": "road_lane"
+        },
+        {
+            "subject": "car_white_2",
+            "relation": "is_on",
+            "object": "road_lane"
+        },
+        {
+            "subject": "car_gray",
+            "relation": "is_on",
+            "object": "road_lane"
+        },
+        {
+            "subject": "car_blue",
+            "relation": "is_on",
+            "object": "road_lane"
+        },
+        {
+            "subject": "tree_center",
+            "relation": "is_adjacent_to",
+            "object": "road_lane"
+        },
+        {
+            "subject": "tree_right",
+            "relation": "is_adjacent_to",
+            "object": "road_shoulder_right"
+        },
+        {
+            "subject": "power_pole_left",
+            "relation": "stands_along",
+            "object": "road_shoulder_left"
+        },
+        {
+            "subject": "power_pole_mid",
+            "relation": "stands_along",
+            "object": "road_shoulder_left"
+        },
+        {
+            "subject": "power_pole_far_left",
+            "relation": "stands_along",
+            "object": "road_shoulder_left"
+        },
+        {
+            "subject": "sound_barrier_right",
+            "relation": "borders",
+            "object": "road_shoulder_right"
+        },
+        {
+            "subject": "sound_barrier_right",
+            "relation": "is_within",
+            "object": "right_wall_area"
+        },
+        {
+            "subject": "tree_right",
+            "relation": "is_near",
+            "object": "sound_barrier_right"
+        },
+        {
+            "subject": "windshield_camera",
+            "relation": "observes",
+            "object": "road_lane"
+        }
+    ],
+    "current_location": "road_lane",
+    "plans": [
+        {
+            "name": "follow_lane_ahead",
+            "from": "road_lane",
+            "to": "road_lane",
+            "expected_actions": [
+                "maintain_lane_position",
+                "match_vehicle_ahead_speed"
+            ]
+        }
+    ]
+}

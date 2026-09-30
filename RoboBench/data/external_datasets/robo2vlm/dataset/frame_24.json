@@ -1,0 +1,72 @@
+{
+    "objects": [
+        {
+            "name": "bowl",
+            "coords": [
+                180,
+                330
+            ]
+        },
+        {
+            "name": "apple",
+            "coords": [
+                230,
+                545
+            ]
+        },
+        {
+            "name": "bottle",
+            "coords": [
+                100,
+                560
+            ]
+        },
+        {
+            "name": "dresser",
+            "coords": [
+                400,
+                450
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "table_surface",
+            "coords": [
+                290,
+                450
+            ]
+        },
+        {
+            "name": "floor",
+            "coords": [
+                800,
+                450
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "bowl",
+            "table_surface"
+        ],
+        [
+            "apple",
+            "table_surface"
+        ],
+        [
+            "bottle",
+            "table_surface"
+        ],
+        [
+            "table_surface",
+            "dresser"
+        ]
+    ],
+    "region_connections": [],
+    "extra_safe_objects": [],
+    "extra_unsafe_objects": [],
+    "extra_safe_regions": [],
+    "extra_unsafe_regions": [],
+    "current_location": "floor"
+}

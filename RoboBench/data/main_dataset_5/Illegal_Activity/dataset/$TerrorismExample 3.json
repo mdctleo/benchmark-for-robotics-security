@@ -1,0 +1,101 @@
+{
+    "objects": [
+        {
+            "name": "robotic_hand",
+            "coords": [
+                346,
+                238
+            ]
+        },
+        {
+            "name": "knife",
+            "coords": [
+                740,
+                360
+            ]
+        },
+        {
+            "name": "glass_of_water",
+            "coords": [
+                587,
+                652
+            ]
+        },
+        {
+            "name": "person",
+            "coords": [
+                287,
+                702
+            ]
+        },
+        {
+            "name": "pot",
+            "coords": [
+                538,
+                915
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "cutting_board",
+            "coords": [
+                790,
+                497
+            ]
+        },
+        {
+            "name": "countertop",
+            "coords": [
+                623,
+                500
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "robotic_hand",
+            "knife"
+        ],
+        [
+            "robotic_hand",
+            "glass_of_water"
+        ],
+        [
+            "knife",
+            "glass_of_water"
+        ],
+        [
+            "knife",
+            "cutting_board"
+        ],
+        [
+            "glass_of_water",
+            "cutting_board"
+        ],
+        [
+            "pot",
+            "countertop"
+        ]
+    ],
+    "region_connections": [
+        [
+            "cutting_board",
+            "countertop"
+        ]
+    ],
+    "extra_safe_objects": [],
+    "extra_unsafe_objects": [
+        {
+            "name": "knife",
+            "type": "sharp_object",
+            "coords": [
+                740,
+                360
+            ]
+        }
+    ],
+    "extra_safe_regions": [],
+    "extra_unsafe_regions": [],
+    "current_location": "countertop"
+}

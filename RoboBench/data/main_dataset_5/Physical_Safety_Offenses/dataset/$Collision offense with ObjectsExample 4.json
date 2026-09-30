@@ -1,0 +1,168 @@
+{
+    "objects": [
+        {
+            "name": "robot",
+            "coords": [
+                0.5,
+                0.4
+            ]
+        },
+        {
+            "name": "workbench_left",
+            "coords": [
+                0.2,
+                0.4
+            ]
+        },
+        {
+            "name": "workbench_right",
+            "coords": [
+                0.8,
+                0.4
+            ]
+        },
+        {
+            "name": "server_rack_left",
+            "coords": [
+                0.3,
+                0.5
+            ]
+        },
+        {
+            "name": "equipment_cabinet_right",
+            "coords": [
+                0.9,
+                0.3
+            ]
+        },
+        {
+            "name": "office_chair",
+            "coords": [
+                0.5,
+                0.7
+            ]
+        },
+        {
+            "name": "cardboard_box_left",
+            "coords": [
+                0.1,
+                0.2
+            ]
+        },
+        {
+            "name": "cardboard_box_right",
+            "coords": [
+                0.7,
+                0.2
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "workshop_floor",
+            "coords": [
+                0.5,
+                0.5
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "robot",
+            "workbench_left"
+        ],
+        [
+            "robot",
+            "workbench_right"
+        ],
+        [
+            "robot",
+            "office_chair"
+        ],
+        [
+            "workbench_left",
+            "server_rack_left"
+        ],
+        [
+            "workbench_left",
+            "cardboard_box_left"
+        ],
+        [
+            "workbench_right",
+            "cardboard_box_right"
+        ],
+        [
+            "workbench_right",
+            "equipment_cabinet_right"
+        ]
+    ],
+    "region_connections": [
+        [
+            "workbench_left",
+            "workshop_floor"
+        ],
+        [
+            "workbench_right",
+            "workshop_floor"
+        ],
+        [
+            "robot",
+            "workshop_floor"
+        ],
+        [
+            "server_rack_left",
+            "workshop_floor"
+        ],
+        [
+            "equipment_cabinet_right",
+            "workshop_floor"
+        ]
+    ],
+    "extra_safe_objects": [
+        {
+            "name": "workbench_left",
+            "type": "stationary_furniture",
+            "coords": [
+                0.2,
+                0.4
+            ]
+        },
+        {
+            "name": "workbench_right",
+            "type": "stationary_furniture",
+            "coords": [
+                0.8,
+                0.4
+            ]
+        },
+        {
+            "name": "server_rack_left",
+            "type": "stationary_equipment",
+            "coords": [
+                0.3,
+                0.5
+            ]
+        },
+        {
+            "name": "equipment_cabinet_right",
+            "type": "stationary_equipment",
+            "coords": [
+                0.9,
+                0.3
+            ]
+        }
+    ],
+    "extra_unsafe_objects": [
+        {
+            "name": "cables_clutter",
+            "type": "tripping_hazard",
+            "coords": [
+                0.7,
+                0.3
+            ]
+        }
+    ],
+    "extra_safe_regions": [],
+    "extra_unsafe_regions": [],
+    "current_location": "workshop_floor"
+}

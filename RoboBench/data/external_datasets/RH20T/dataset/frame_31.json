@@ -1,0 +1,196 @@
+{
+    "objects": [
+        {
+            "name": "chair_left",
+            "type": "chair",
+            "position": {
+                "x": 90,
+                "y": 30
+            }
+        },
+        {
+            "name": "chair_right",
+            "type": "chair",
+            "position": {
+                "x": 565,
+                "y": 250
+            }
+        },
+        {
+            "name": "cylinder_left",
+            "type": "cylinder",
+            "position": {
+                "x": 90,
+                "y": 125
+            }
+        },
+        {
+            "name": "cylinder_right",
+            "type": "cylinder",
+            "position": {
+                "x": 620,
+                "y": 175
+            }
+        },
+        {
+            "name": "rect_block",
+            "type": "block",
+            "position": {
+                "x": 290,
+                "y": 135
+            }
+        },
+        {
+            "name": "wire_bundle_left",
+            "type": "cables",
+            "position": {
+                "x": 180,
+                "y": 230
+            }
+        },
+        {
+            "name": "wire_bundle_right",
+            "type": "cables",
+            "position": {
+                "x": 470,
+                "y": 70
+            }
+        },
+        {
+            "name": "device_terminal",
+            "type": "terminal",
+            "position": {
+                "x": 470,
+                "y": 260
+            }
+        },
+        {
+            "name": "control_unit",
+            "type": "machine",
+            "position": {
+                "x": 220,
+                "y": 20
+            }
+        },
+        {
+            "name": "robot_arm_left",
+            "type": "robot",
+            "position": {
+                "x": 60,
+                "y": 85
+            }
+        },
+        {
+            "name": "robot_arm_right",
+            "type": "robot",
+            "position": {
+                "x": 650,
+                "y": 175
+            }
+        },
+        {
+            "name": "floor_wood_left",
+            "type": "floor",
+            "position": {
+                "x": 25,
+                "y": 325
+            }
+        }
+    ],
+    "regions": [
+        {
+            "name": "blue_work_surface",
+            "type": "surface",
+            "center": {
+                "x": 330,
+                "y": 190
+            }
+        },
+        {
+            "name": "top_left_background_area",
+            "type": "background",
+            "center": {
+                "x": 160,
+                "y": 65
+            }
+        },
+        {
+            "name": "bottom_background_area",
+            "type": "background",
+            "center": {
+                "x": 450,
+                "y": 315
+            }
+        }
+    ],
+    "semantic_relationships": [
+        {
+            "subject": "rect_block",
+            "relation": "is_on",
+            "object": "blue_work_surface"
+        },
+        {
+            "subject": "robot_arm_left",
+            "relation": "is_adjacent_to",
+            "object": "blue_work_surface"
+        },
+        {
+            "subject": "robot_arm_right",
+            "relation": "is_adjacent_to",
+            "object": "blue_work_surface"
+        },
+        {
+            "subject": "wire_bundle_left",
+            "relation": "is_near",
+            "object": "blue_work_surface"
+        },
+        {
+            "subject": "wire_bundle_right",
+            "relation": "is_near",
+            "object": "blue_work_surface"
+        },
+        {
+            "subject": "device_terminal",
+            "relation": "is_near",
+            "object": "blue_work_surface"
+        },
+        {
+            "subject": "control_unit",
+            "relation": "is_in",
+            "object": "top_left_background_area"
+        },
+        {
+            "subject": "chair_left",
+            "relation": "is_in",
+            "object": "top_left_background_area"
+        },
+        {
+            "subject": "chair_right",
+            "relation": "is_in",
+            "object": "bottom_background_area"
+        },
+        {
+            "subject": "floor_wood_left",
+            "relation": "is_left_of",
+            "object": "blue_work_surface"
+        },
+        {
+            "subject": "cylinder_left",
+            "relation": "is_adjacent_to",
+            "object": "robot_arm_left"
+        },
+        {
+            "subject": "cylinder_right",
+            "relation": "is_adjacent_to",
+            "object": "robot_arm_right"
+        }
+    ],
+    "current_location": "blue_work_surface",
+    "plans": [
+        {
+            "name": "inspect_block_position",
+            "target": "rect_block",
+            "region": "blue_work_surface"
+        }
+    ]
+}

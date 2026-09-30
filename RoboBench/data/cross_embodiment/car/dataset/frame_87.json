@@ -1,0 +1,219 @@
+{
+    "objects": [
+        {
+            "name": "vehicle_1",
+            "category": "vehicle",
+            "bbox_top_down": {
+                "x": 390,
+                "y": 410
+            },
+            "attributes": {
+                "type": "car",
+                "headlights": "on"
+            }
+        },
+        {
+            "name": "vehicle_2",
+            "category": "vehicle",
+            "bbox_top_down": {
+                "x": 330,
+                "y": 455
+            },
+            "attributes": {
+                "type": "car",
+                "taillights": "on"
+            }
+        },
+        {
+            "name": "vehicle_3",
+            "category": "vehicle",
+            "bbox_top_down": {
+                "x": 470,
+                "y": 520
+            },
+            "attributes": {
+                "type": "car",
+                "taillights": "on"
+            }
+        },
+        {
+            "name": "streetlight_1",
+            "category": "infrastructure",
+            "bbox_top_down": {
+                "x": 520,
+                "y": 170
+            },
+            "attributes": {
+                "mounted": "overhead"
+            }
+        },
+        {
+            "name": "streetlight_2",
+            "category": "infrastructure",
+            "bbox_top_down": {
+                "x": 120,
+                "y": 260
+            },
+            "attributes": {
+                "mounted": "overhead"
+            }
+        }
+    ],
+    "regions": [
+        {
+            "name": "roadway",
+            "category": "road",
+            "polygon_top_down": [
+                {
+                    "x": 40,
+                    "y": 350
+                },
+                {
+                    "x": 600,
+                    "y": 350
+                },
+                {
+                    "x": 620,
+                    "y": 560
+                },
+                {
+                    "x": 20,
+                    "y": 560
+                }
+            ]
+        },
+        {
+            "name": "right_lane",
+            "category": "road_lane",
+            "polygon_top_down": [
+                {
+                    "x": 380,
+                    "y": 375
+                },
+                {
+                    "x": 620,
+                    "y": 375
+                },
+                {
+                    "x": 610,
+                    "y": 560
+                },
+                {
+                    "x": 370,
+                    "y": 560
+                }
+            ]
+        },
+        {
+            "name": "left_lane",
+            "category": "road_lane",
+            "polygon_top_down": [
+                {
+                    "x": 40,
+                    "y": 375
+                },
+                {
+                    "x": 395,
+                    "y": 375
+                },
+                {
+                    "x": 370,
+                    "y": 560
+                },
+                {
+                    "x": 20,
+                    "y": 560
+                }
+            ]
+        },
+        {
+            "name": "tunnel_wall_left",
+            "category": "boundary",
+            "polygon_top_down": [
+                {
+                    "x": 0,
+                    "y": 320
+                },
+                {
+                    "x": 55,
+                    "y": 320
+                },
+                {
+                    "x": 75,
+                    "y": 575
+                },
+                {
+                    "x": 0,
+                    "y": 575
+                }
+            ]
+        },
+        {
+            "name": "tunnel_wall_right",
+            "category": "boundary",
+            "polygon_top_down": [
+                {
+                    "x": 600,
+                    "y": 320
+                },
+                {
+                    "x": 640,
+                    "y": 320
+                },
+                {
+                    "x": 640,
+                    "y": 575
+                },
+                {
+                    "x": 585,
+                    "y": 575
+                }
+            ]
+        }
+    ],
+    "current_location": "roadway",
+    "connections": [
+        {
+            "from": "vehicle_1",
+            "relation": "is_on",
+            "to": "right_lane"
+        },
+        {
+            "from": "vehicle_2",
+            "relation": "is_on",
+            "to": "left_lane"
+        },
+        {
+            "from": "vehicle_3",
+            "relation": "is_on",
+            "to": "roadway"
+        },
+        {
+            "from": "streetlight_1",
+            "relation": "is_near",
+            "to": "roadway"
+        },
+        {
+            "from": "streetlight_2",
+            "relation": "is_near",
+            "to": "roadway"
+        },
+        {
+            "from": "left_lane",
+            "relation": "bounded_by",
+            "to": "tunnel_wall_left"
+        },
+        {
+            "from": "right_lane",
+            "relation": "bounded_by",
+            "to": "tunnel_wall_right"
+        }
+    ],
+    "plans": [
+        {
+            "plan_name": "continue_straight",
+            "target_region": "roadway",
+            "notes": "Maintain lane position through the tunnel."
+        }
+    ]
+}

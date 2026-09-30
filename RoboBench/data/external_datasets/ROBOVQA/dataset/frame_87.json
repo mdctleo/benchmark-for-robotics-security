@@ -1,0 +1,257 @@
+{
+    "regions": [
+        {
+            "name": "table_surface",
+            "type": "surface",
+            "bounding_box": {
+                "x": 0.05,
+                "y": 0.45,
+                "w": 0.9,
+                "h": 0.5
+            }
+        },
+        {
+            "name": "left_tray",
+            "type": "container_tray",
+            "bounding_box": {
+                "x": 0.05,
+                "y": 0.55,
+                "w": 0.36,
+                "h": 0.33
+            }
+        },
+        {
+            "name": "center_counter_area",
+            "type": "area",
+            "bounding_box": {
+                "x": 0.38,
+                "y": 0.52,
+                "w": 0.45,
+                "h": 0.33
+            }
+        },
+        {
+            "name": "right_counter_area",
+            "type": "area",
+            "bounding_box": {
+                "x": 0.64,
+                "y": 0.52,
+                "w": 0.31,
+                "h": 0.33
+            }
+        },
+        {
+            "name": "top_back_area",
+            "type": "area",
+            "bounding_box": {
+                "x": 0.38,
+                "y": 0.18,
+                "w": 0.58,
+                "h": 0.26
+            }
+        }
+    ],
+    "objects": [
+        {
+            "name": "nacho_chip_bag_left",
+            "type": "snack_pack",
+            "position": {
+                "x": 0.12,
+                "y": 0.73
+            }
+        },
+        {
+            "name": "snack_bag_popcorn_center_left",
+            "type": "snack_pack",
+            "position": {
+                "x": 0.24,
+                "y": 0.67
+            }
+        },
+        {
+            "name": "snack_pack_bag_tortilla_left",
+            "type": "snack_pack",
+            "position": {
+                "x": 0.2,
+                "y": 0.78
+            }
+        },
+        {
+            "name": "popcorn_bag_facing_forward",
+            "type": "snack_pack",
+            "position": {
+                "x": 0.3,
+                "y": 0.78
+            }
+        },
+        {
+            "name": "snack_bag_nachos_right",
+            "type": "snack_pack",
+            "position": {
+                "x": 0.79,
+                "y": 0.7
+            }
+        },
+        {
+            "name": "cheese_crackers_box_right",
+            "type": "snack_pack",
+            "position": {
+                "x": 0.84,
+                "y": 0.66
+            }
+        },
+        {
+            "name": "pimienta_bag_top_center",
+            "type": "snack_pack",
+            "position": {
+                "x": 0.52,
+                "y": 0.38
+            }
+        },
+        {
+            "name": "puffed_snack_container",
+            "type": "snack_container",
+            "position": {
+                "x": 0.56,
+                "y": 0.43
+            }
+        },
+        {
+            "name": "cup_filled_items",
+            "type": "cup",
+            "position": {
+                "x": 0.63,
+                "y": 0.43
+            }
+        },
+        {
+            "name": "bowl_of_pretzels_or_snack",
+            "type": "container_bowl",
+            "position": {
+                "x": 0.48,
+                "y": 0.46
+            }
+        },
+        {
+            "name": "transparent_jar_top_left",
+            "type": "container_jar",
+            "position": {
+                "x": 0.22,
+                "y": 0.38
+            }
+        },
+        {
+            "name": "napkin_or_paper_stack_top_right",
+            "type": "paper_item",
+            "position": {
+                "x": 0.88,
+                "y": 0.43
+            }
+        },
+        {
+            "name": "green_tray_base",
+            "type": "tray_base",
+            "position": {
+                "x": 0.23,
+                "y": 0.7
+            }
+        }
+    ],
+    "semantic_relationships": [
+        {
+            "subject": "nacho_chip_bag_left",
+            "relation": "is_inside",
+            "object": "left_tray"
+        },
+        {
+            "subject": "snack_bag_popcorn_center_left",
+            "relation": "is_inside",
+            "object": "left_tray"
+        },
+        {
+            "subject": "snack_pack_bag_tortilla_left",
+            "relation": "is_inside",
+            "object": "left_tray"
+        },
+        {
+            "subject": "popcorn_bag_facing_forward",
+            "relation": "is_inside",
+            "object": "left_tray"
+        },
+        {
+            "subject": "green_tray_base",
+            "relation": "is_on",
+            "object": "table_surface"
+        },
+        {
+            "subject": "snack_bag_nachos_right",
+            "relation": "is_on",
+            "object": "right_counter_area"
+        },
+        {
+            "subject": "cheese_crackers_box_right",
+            "relation": "is_on",
+            "object": "right_counter_area"
+        },
+        {
+            "subject": "pimienta_bag_top_center",
+            "relation": "is_on",
+            "object": "center_counter_area"
+        },
+        {
+            "subject": "puffed_snack_container",
+            "relation": "is_on",
+            "object": "center_counter_area"
+        },
+        {
+            "subject": "cup_filled_items",
+            "relation": "is_on",
+            "object": "center_counter_area"
+        },
+        {
+            "subject": "bowl_of_pretzels_or_snack",
+            "relation": "is_on",
+            "object": "center_counter_area"
+        },
+        {
+            "subject": "transparent_jar_top_left",
+            "relation": "is_on",
+            "object": "top_back_area"
+        },
+        {
+            "subject": "napkin_or_paper_stack_top_right",
+            "relation": "is_on",
+            "object": "top_back_area"
+        },
+        {
+            "subject": "nacho_chip_bag_left",
+            "relation": "is_near",
+            "object": "snack_bag_popcorn_center_left"
+        },
+        {
+            "subject": "snack_bag_popcorn_center_left",
+            "relation": "is_near",
+            "object": "popcorn_bag_facing_forward"
+        },
+        {
+            "subject": "snack_bag_nachos_right",
+            "relation": "is_near",
+            "object": "cheese_crackers_box_right"
+        }
+    ],
+    "current_location": {
+        "nacho_chip_bag_left": "left_tray",
+        "snack_bag_popcorn_center_left": "left_tray",
+        "snack_pack_bag_tortilla_left": "left_tray",
+        "popcorn_bag_facing_forward": "left_tray",
+        "green_tray_base": "left_tray",
+        "snack_bag_nachos_right": "right_counter_area",
+        "cheese_crackers_box_right": "right_counter_area",
+        "pimienta_bag_top_center": "center_counter_area",
+        "puffed_snack_container": "center_counter_area",
+        "cup_filled_items": "center_counter_area",
+        "bowl_of_pretzels_or_snack": "center_counter_area",
+        "transparent_jar_top_left": "top_back_area",
+        "napkin_or_paper_stack_top_right": "top_back_area"
+    }
+}

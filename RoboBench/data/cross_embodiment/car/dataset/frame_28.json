@@ -1,0 +1,296 @@
+{
+    "objects": [
+        {
+            "name": "vehicle_red_car_1",
+            "type": "vehicle",
+            "position": {
+                "x": 0.52,
+                "y": 0.62
+            }
+        },
+        {
+            "name": "vehicle_dark_car_1",
+            "type": "vehicle",
+            "position": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        },
+        {
+            "name": "vehicle_sedan_1",
+            "type": "vehicle",
+            "position": {
+                "x": 0.46,
+                "y": 0.44
+            }
+        },
+        {
+            "name": "vehicle_white_truck_1",
+            "type": "vehicle",
+            "position": {
+                "x": 0.19,
+                "y": 0.62
+            }
+        },
+        {
+            "name": "vehicle_white_car_1",
+            "type": "vehicle",
+            "position": {
+                "x": 0.83,
+                "y": 0.7
+            }
+        },
+        {
+            "name": "traffic_cone_orange_left_1",
+            "type": "traffic_cone",
+            "position": {
+                "x": 0.2,
+                "y": 0.8
+            }
+        },
+        {
+            "name": "traffic_cone_orange_right_1",
+            "type": "traffic_cone",
+            "position": {
+                "x": 0.81,
+                "y": 0.8
+            }
+        },
+        {
+            "name": "poles_utility_1",
+            "type": "utility_pole",
+            "position": {
+                "x": 0.62,
+                "y": 0.67
+            }
+        },
+        {
+            "name": "poles_utility_2",
+            "type": "utility_pole",
+            "position": {
+                "x": 0.72,
+                "y": 0.7
+            }
+        },
+        {
+            "name": "building_left_house_1",
+            "type": "building",
+            "position": {
+                "x": 0.12,
+                "y": 0.6
+            }
+        },
+        {
+            "name": "building_mid_building_1",
+            "type": "building",
+            "position": {
+                "x": 0.48,
+                "y": 0.47
+            }
+        },
+        {
+            "name": "building_far_tower_1",
+            "type": "building",
+            "position": {
+                "x": 0.66,
+                "y": 0.48
+            }
+        },
+        {
+            "name": "building_right_wall_1",
+            "type": "building",
+            "position": {
+                "x": 0.86,
+                "y": 0.55
+            }
+        }
+    ],
+    "regions": [
+        {
+            "name": "ground_road_1",
+            "type": "road",
+            "polygon": [
+                {
+                    "x": 0.47,
+                    "y": 0.88
+                },
+                {
+                    "x": 0.54,
+                    "y": 0.88
+                },
+                {
+                    "x": 0.72,
+                    "y": 0.7
+                },
+                {
+                    "x": 0.3,
+                    "y": 0.7
+                }
+            ]
+        },
+        {
+            "name": "ground_sidewalk_left_1",
+            "type": "sidewalk",
+            "polygon": [
+                {
+                    "x": 0.3,
+                    "y": 0.7
+                },
+                {
+                    "x": 0.45,
+                    "y": 0.7
+                },
+                {
+                    "x": 0.35,
+                    "y": 0.88
+                },
+                {
+                    "x": 0.25,
+                    "y": 0.88
+                }
+            ]
+        },
+        {
+            "name": "ground_sidewalk_right_1",
+            "type": "sidewalk",
+            "polygon": [
+                {
+                    "x": 0.54,
+                    "y": 0.7
+                },
+                {
+                    "x": 0.72,
+                    "y": 0.7
+                },
+                {
+                    "x": 0.68,
+                    "y": 0.88
+                },
+                {
+                    "x": 0.46,
+                    "y": 0.88
+                }
+            ]
+        },
+        {
+            "name": "ground_construction_clearance_1",
+            "type": "roadside_work_zone",
+            "polygon": [
+                {
+                    "x": 0.24,
+                    "y": 0.78
+                },
+                {
+                    "x": 0.32,
+                    "y": 0.78
+                },
+                {
+                    "x": 0.32,
+                    "y": 0.86
+                },
+                {
+                    "x": 0.24,
+                    "y": 0.86
+                }
+            ]
+        },
+        {
+            "name": "ground_construction_clearance_2",
+            "type": "roadside_work_zone",
+            "polygon": [
+                {
+                    "x": 0.68,
+                    "y": 0.78
+                },
+                {
+                    "x": 0.76,
+                    "y": 0.78
+                },
+                {
+                    "x": 0.76,
+                    "y": 0.86
+                },
+                {
+                    "x": 0.68,
+                    "y": 0.86
+                }
+            ]
+        }
+    ],
+    "semantic_relationships": [
+        {
+            "subject": "vehicle_white_truck_1",
+            "relation": "located_on",
+            "object": "ground_road_1"
+        },
+        {
+            "subject": "vehicle_dark_car_1",
+            "relation": "located_on",
+            "object": "ground_road_1"
+        },
+        {
+            "subject": "vehicle_red_car_1",
+            "relation": "located_on",
+            "object": "ground_road_1"
+        },
+        {
+            "subject": "vehicle_sedan_1",
+            "relation": "located_on",
+            "object": "ground_road_1"
+        },
+        {
+            "subject": "vehicle_white_car_1",
+            "relation": "located_on",
+            "object": "ground_road_1"
+        },
+        {
+            "subject": "traffic_cone_orange_left_1",
+            "relation": "placed_near",
+            "object": "ground_construction_clearance_1"
+        },
+        {
+            "subject": "traffic_cone_orange_right_1",
+            "relation": "placed_near",
+            "object": "ground_construction_clearance_2"
+        },
+        {
+            "subject": "building_left_house_1",
+            "relation": "adjacent_to",
+            "object": "ground_sidewalk_left_1"
+        },
+        {
+            "subject": "building_right_wall_1",
+            "relation": "adjacent_to",
+            "object": "ground_sidewalk_right_1"
+        },
+        {
+            "subject": "building_mid_building_1",
+            "relation": "in_view_from",
+            "object": "ground_road_1"
+        },
+        {
+            "subject": "building_far_tower_1",
+            "relation": "in_view_from",
+            "object": "ground_road_1"
+        },
+        {
+            "subject": "poles_utility_1",
+            "relation": "located_near",
+            "object": "ground_road_1"
+        },
+        {
+            "subject": "poles_utility_2",
+            "relation": "located_near",
+            "object": "ground_road_1"
+        }
+    ],
+    "current_location": "ground_road_1",
+    "plans": [
+        {
+            "plan_name": "drive_forward",
+            "start": "ground_road_1",
+            "target": "ground_road_1",
+            "details": "Continue straight along the road corridor."
+        }
+    ]
+}

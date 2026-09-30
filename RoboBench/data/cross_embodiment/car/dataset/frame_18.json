@@ -1,0 +1,358 @@
+{
+    "regions": [
+        {
+            "name": "current_location",
+            "polygon": [
+                [
+                    150,
+                    760
+                ],
+                [
+                    250,
+                    760
+                ],
+                [
+                    500,
+                    880
+                ],
+                [
+                    620,
+                    880
+                ],
+                [
+                    980,
+                    900
+                ],
+                [
+                    1030,
+                    740
+                ],
+                [
+                    930,
+                    650
+                ],
+                [
+                    420,
+                    600
+                ],
+                [
+                    200,
+                    620
+                ]
+            ]
+        }
+    ],
+    "objects": [
+        {
+            "name": "stop_sign",
+            "type": "traffic_sign",
+            "position": [
+                980,
+                430
+            ],
+            "bbox": [
+                940,
+                350,
+                1020,
+                520
+            ]
+        },
+        {
+            "name": "storefront_building_right",
+            "type": "building",
+            "position": [
+                980,
+                610
+            ],
+            "bbox": [
+                820,
+                480,
+                1260,
+                880
+            ]
+        },
+        {
+            "name": "residential_building_left",
+            "type": "building",
+            "position": [
+                230,
+                620
+            ],
+            "bbox": [
+                0,
+                450,
+                420,
+                890
+            ]
+        },
+        {
+            "name": "street_roadway",
+            "type": "roadway",
+            "position": [
+                640,
+                760
+            ],
+            "bbox": [
+                80,
+                600,
+                1200,
+                930
+            ]
+        },
+        {
+            "name": "crosswalk_markings",
+            "type": "road_markings",
+            "position": [
+                640,
+                905
+            ],
+            "bbox": [
+                420,
+                850,
+                880,
+                940
+            ]
+        },
+        {
+            "name": "cars_left_lane",
+            "type": "vehicle_group",
+            "position": [
+                400,
+                800
+            ],
+            "bbox": [
+                120,
+                650,
+                620,
+                930
+            ]
+        },
+        {
+            "name": "cars_right_lane",
+            "type": "vehicle_group",
+            "position": [
+                860,
+                820
+            ],
+            "bbox": [
+                600,
+                650,
+                1120,
+                930
+            ]
+        },
+        {
+            "name": "yellow_van",
+            "type": "vehicle",
+            "position": [
+                820,
+                760
+            ],
+            "bbox": [
+                780,
+                690,
+                910,
+                860
+            ]
+        },
+        {
+            "name": "pedestrian",
+            "type": "person",
+            "position": [
+                360,
+                720
+            ],
+            "bbox": [
+                330,
+                650,
+                390,
+                780
+            ]
+        },
+        {
+            "name": "utility_poles",
+            "type": "infrastructure",
+            "position": [
+                690,
+                520
+            ],
+            "bbox": [
+                430,
+                250,
+                980,
+                820
+            ]
+        },
+        {
+            "name": "overhead_wires",
+            "type": "infrastructure",
+            "position": [
+                690,
+                300
+            ],
+            "bbox": [
+                200,
+                0,
+                1160,
+                520
+            ]
+        },
+        {
+            "name": "sidewalk_left",
+            "type": "sidewalk",
+            "position": [
+                220,
+                820
+            ],
+            "bbox": [
+                0,
+                650,
+                420,
+                940
+            ]
+        },
+        {
+            "name": "sidewalk_right",
+            "type": "sidewalk",
+            "position": [
+                1030,
+                820
+            ],
+            "bbox": [
+                780,
+                650,
+                1300,
+                940
+            ]
+        },
+        {
+            "name": "parking_area_left",
+            "type": "parking",
+            "position": [
+                250,
+                700
+            ],
+            "bbox": [
+                0,
+                600,
+                420,
+                800
+            ]
+        },
+        {
+            "name": "parking_area_right",
+            "type": "parking",
+            "position": [
+                1050,
+                700
+            ],
+            "bbox": [
+                820,
+                600,
+                1300,
+                800
+            ]
+        }
+    ],
+    "connections": [
+        {
+            "from": "stop_sign",
+            "to": "street_roadway",
+            "relation": "controls"
+        },
+        {
+            "from": "stop_sign",
+            "to": "current_location",
+            "relation": "is_near"
+        },
+        {
+            "from": "street_roadway",
+            "to": "crosswalk_markings",
+            "relation": "contains"
+        },
+        {
+            "from": "crosswalk_markings",
+            "to": "street_roadway",
+            "relation": "marks"
+        },
+        {
+            "from": "pedestrian",
+            "to": "sidewalk_left",
+            "relation": "on"
+        },
+        {
+            "from": "cars_left_lane",
+            "to": "street_roadway",
+            "relation": "parked_on"
+        },
+        {
+            "from": "cars_right_lane",
+            "to": "street_roadway",
+            "relation": "parked_on"
+        },
+        {
+            "from": "yellow_van",
+            "to": "street_roadway",
+            "relation": "on"
+        },
+        {
+            "from": "yellow_van",
+            "to": "cars_right_lane",
+            "relation": "among"
+        },
+        {
+            "from": "utility_poles",
+            "to": "overhead_wires",
+            "relation": "support"
+        },
+        {
+            "from": "residential_building_left",
+            "to": "sidewalk_left",
+            "relation": "adjacent_to"
+        },
+        {
+            "from": "storefront_building_right",
+            "to": "sidewalk_right",
+            "relation": "adjacent_to"
+        },
+        {
+            "from": "residential_building_left",
+            "to": "parking_area_left",
+            "relation": "near"
+        },
+        {
+            "from": "storefront_building_right",
+            "to": "parking_area_right",
+            "relation": "near"
+        },
+        {
+            "from": "sidewalk_left",
+            "to": "street_roadway",
+            "relation": "bordering"
+        },
+        {
+            "from": "sidewalk_right",
+            "to": "street_roadway",
+            "relation": "bordering"
+        },
+        {
+            "from": "overhead_wires",
+            "to": "current_location",
+            "relation": "crossing_above"
+        }
+    ],
+    "current_location_context": {
+        "current_location": "current_location",
+        "nearby_regions_and_objects": [
+            "stop_sign",
+            "street_roadway",
+            "crosswalk_markings",
+            "pedestrian",
+            "yellow_van",
+            "cars_left_lane",
+            "cars_right_lane",
+            "utility_poles",
+            "overhead_wires"
+        ]
+    }
+}

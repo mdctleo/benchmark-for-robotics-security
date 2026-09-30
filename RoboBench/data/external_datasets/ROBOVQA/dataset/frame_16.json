@@ -1,0 +1,271 @@
+{
+    "objects": [
+        {
+            "name": "table",
+            "type": "furniture",
+            "bounding_box": {
+                "x1": 60,
+                "y1": 230,
+                "x2": 940,
+                "y2": 520
+            },
+            "center": {
+                "x": 500,
+                "y": 375
+            }
+        },
+        {
+            "name": "plate",
+            "type": "dish",
+            "bounding_box": {
+                "x1": 85,
+                "y1": 270,
+                "x2": 300,
+                "y2": 430
+            },
+            "center": {
+                "x": 192,
+                "y": 350
+            }
+        },
+        {
+            "name": "orange_1",
+            "type": "food",
+            "bounding_box": {
+                "x1": 110,
+                "y1": 295,
+                "x2": 180,
+                "y2": 375
+            },
+            "center": {
+                "x": 145,
+                "y": 335
+            }
+        },
+        {
+            "name": "orange_2",
+            "type": "food",
+            "bounding_box": {
+                "x1": 175,
+                "y1": 300,
+                "x2": 245,
+                "y2": 385
+            },
+            "center": {
+                "x": 210,
+                "y": 342
+            }
+        },
+        {
+            "name": "orange_3",
+            "type": "food",
+            "bounding_box": {
+                "x1": 220,
+                "y1": 300,
+                "x2": 295,
+                "y2": 380
+            },
+            "center": {
+                "x": 258,
+                "y": 340
+            }
+        },
+        {
+            "name": "cylinder_candy",
+            "type": "food",
+            "bounding_box": {
+                "x1": 165,
+                "y1": 285,
+                "x2": 235,
+                "y2": 420
+            },
+            "center": {
+                "x": 200,
+                "y": 350
+            }
+        },
+        {
+            "name": "robot_legs_body",
+            "type": "robot",
+            "bounding_box": {
+                "x1": 640,
+                "y1": 250,
+                "x2": 910,
+                "y2": 455
+            },
+            "center": {
+                "x": 775,
+                "y": 352
+            }
+        },
+        {
+            "name": "small_parts_cluster_1",
+            "type": "small_objects",
+            "bounding_box": {
+                "x1": 520,
+                "y1": 265,
+                "x2": 700,
+                "y2": 360
+            },
+            "center": {
+                "x": 610,
+                "y": 313
+            }
+        },
+        {
+            "name": "bowl_wooden",
+            "type": "container",
+            "bounding_box": {
+                "x1": 580,
+                "y1": 355,
+                "x2": 770,
+                "y2": 535
+            },
+            "center": {
+                "x": 675,
+                "y": 445
+            }
+        }
+    ],
+    "regions": [
+        {
+            "name": "table_surface_left",
+            "type": "surface",
+            "polygon": [
+                [
+                    60,
+                    230
+                ],
+                [
+                    460,
+                    230
+                ],
+                [
+                    460,
+                    520
+                ],
+                [
+                    60,
+                    520
+                ]
+            ],
+            "center": {
+                "x": 260,
+                "y": 375
+            }
+        },
+        {
+            "name": "table_surface_right",
+            "type": "surface",
+            "polygon": [
+                [
+                    460,
+                    230
+                ],
+                [
+                    940,
+                    230
+                ],
+                [
+                    940,
+                    520
+                ],
+                [
+                    460,
+                    520
+                ]
+            ],
+            "center": {
+                "x": 700,
+                "y": 375
+            }
+        }
+    ],
+    "semantic_relationships": [
+        {
+            "subject": "plate",
+            "relation": "on",
+            "object": "table"
+        },
+        {
+            "subject": "orange_1",
+            "relation": "in",
+            "object": "plate"
+        },
+        {
+            "subject": "orange_2",
+            "relation": "in",
+            "object": "plate"
+        },
+        {
+            "subject": "orange_3",
+            "relation": "in",
+            "object": "plate"
+        },
+        {
+            "subject": "cylinder_candy",
+            "relation": "in",
+            "object": "plate"
+        },
+        {
+            "subject": "robot_legs_body",
+            "relation": "on",
+            "object": "table"
+        },
+        {
+            "subject": "small_parts_cluster_1",
+            "relation": "on",
+            "object": "table"
+        },
+        {
+            "subject": "bowl_wooden",
+            "relation": "on",
+            "object": "table"
+        },
+        {
+            "subject": "plate",
+            "relation": "within",
+            "object": "table_surface_left"
+        },
+        {
+            "subject": "robot_legs_body",
+            "relation": "within",
+            "object": "table_surface_right"
+        },
+        {
+            "subject": "small_parts_cluster_1",
+            "relation": "within",
+            "object": "table_surface_right"
+        },
+        {
+            "subject": "bowl_wooden",
+            "relation": "within",
+            "object": "table_surface_right"
+        }
+    ],
+    "current_location": {
+        "name": "robot_legs_body",
+        "region": "table_surface_right",
+        "coord": {
+            "x": 775,
+            "y": 352
+        }
+    },
+    "plans": [
+        {
+            "plan_name": "relocate_robot_and_cluster_to_bowl_area",
+            "steps": [
+                {
+                    "action": "move",
+                    "entity": "robot_legs_body",
+                    "to_region": "table_surface_right"
+                },
+                {
+                    "action": "move",
+                    "entity": "small_parts_cluster_1",
+                    "to_region": "table_surface_right"
+                }
+            ]
+        }
+    ]
+}

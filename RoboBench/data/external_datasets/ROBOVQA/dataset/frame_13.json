@@ -1,0 +1,336 @@
+{
+    "objects": [
+        {
+            "name": "table_desk_1",
+            "type": "furniture",
+            "coordinates": {
+                "x": 60,
+                "y": 65
+            },
+            "details": {
+                "shape": "round"
+            }
+        },
+        {
+            "name": "chair_left_1",
+            "type": "furniture",
+            "coordinates": {
+                "x": 10,
+                "y": 50
+            },
+            "details": {
+                "position": "left side"
+            }
+        },
+        {
+            "name": "chair_right_1",
+            "type": "furniture",
+            "coordinates": {
+                "x": 95,
+                "y": 35
+            },
+            "details": {
+                "position": "upper-right side"
+            }
+        },
+        {
+            "name": "black_board_1",
+            "type": "furniture",
+            "coordinates": {
+                "x": 35,
+                "y": 20
+            },
+            "details": {
+                "position": "on desk"
+            }
+        },
+        {
+            "name": "monitor_left_1",
+            "type": "electronics",
+            "coordinates": {
+                "x": 25,
+                "y": 12
+            },
+            "details": {
+                "position": "behind black board"
+            }
+        },
+        {
+            "name": "monitor_right_1",
+            "type": "electronics",
+            "coordinates": {
+                "x": 75,
+                "y": 15
+            },
+            "details": {
+                "position": "behind desk area"
+            }
+        },
+        {
+            "name": "keyboard_1",
+            "type": "electronics",
+            "coordinates": {
+                "x": 78,
+                "y": 20
+            },
+            "details": {
+                "position": "on desk"
+            }
+        },
+        {
+            "name": "binder_1",
+            "type": "office_supplies",
+            "coordinates": {
+                "x": 60,
+                "y": 55
+            },
+            "details": {
+                "color": "maroon",
+                "position": "on desk near center"
+            }
+        },
+        {
+            "name": "binder_stickers_or_labels_1",
+            "type": "office_supplies",
+            "coordinates": {
+                "x": 60,
+                "y": 56
+            },
+            "details": {
+                "position": "on binder cover"
+            }
+        },
+        {
+            "name": "sweater_or_cloth_piece_1",
+            "type": "personal_item",
+            "coordinates": {
+                "x": 58,
+                "y": 58
+            },
+            "details": {
+                "position": "on binder area"
+            }
+        },
+        {
+            "name": "monitor_stand_1",
+            "type": "electronics",
+            "coordinates": {
+                "x": 60,
+                "y": 12
+            },
+            "details": {
+                "position": "on desk behind"
+            }
+        },
+        {
+            "name": "book_or_notebook_1",
+            "type": "stationery",
+            "coordinates": {
+                "x": 65,
+                "y": 60
+            },
+            "details": {
+                "position": "near the binder/desk"
+            }
+        },
+        {
+            "name": "phone_charger_cable_1",
+            "type": "electronics",
+            "coordinates": {
+                "x": 62,
+                "y": 45
+            },
+            "details": {
+                "position": "coiled on desk (right/back area)"
+            }
+        },
+        {
+            "name": "umbrella_or_post_it_or_pen_holder_1",
+            "type": "office_supplies",
+            "coordinates": {
+                "x": 78,
+                "y": 25
+            },
+            "details": {
+                "position": "right side near desk items"
+            }
+        },
+        {
+            "name": "tall_white_device_1",
+            "type": "device",
+            "coordinates": {
+                "x": 80,
+                "y": 70
+            },
+            "details": {
+                "position": "foreground right (on desk)"
+            }
+        },
+        {
+            "name": "camera_or_sensor_1",
+            "type": "electronics",
+            "coordinates": {
+                "x": 85,
+                "y": 72
+            },
+            "details": {
+                "position": "top part of tall_white_device_1"
+            }
+        },
+        {
+            "name": "notebook_or_paper_1",
+            "type": "stationery",
+            "coordinates": {
+                "x": 75,
+                "y": 55
+            },
+            "details": {
+                "position": "right of binder on desk"
+            }
+        },
+        {
+            "name": "lamp_stand_1",
+            "type": "furniture",
+            "coordinates": {
+                "x": 90,
+                "y": 45
+            },
+            "details": {
+                "position": "on desk/right background"
+            }
+        }
+    ],
+    "regions": [
+        {
+            "name": "ground_1",
+            "type": "floor_region",
+            "coordinates": {
+                "x": 55,
+                "y": 98
+            },
+            "details": {
+                "description": "Floor area under and around the desk/chairs (top-down reference)"
+            }
+        },
+        {
+            "name": "desk_surface_1",
+            "type": "surface_region",
+            "coordinates": {
+                "x": 60,
+                "y": 65
+            },
+            "details": {
+                "description": "Top surface of the round desk"
+            }
+        },
+        {
+            "name": "background_area_1",
+            "type": "workspace_region",
+            "coordinates": {
+                "x": 70,
+                "y": 20
+            },
+            "details": {
+                "description": "Upper/background region behind the desk area"
+            }
+        }
+    ],
+    "semantic_relationships": [
+        {
+            "relation": "on_top_of",
+            "from": "black_board_1",
+            "to": "desk_surface_1"
+        },
+        {
+            "relation": "on_top_of",
+            "from": "binder_1",
+            "to": "desk_surface_1"
+        },
+        {
+            "relation": "part_of",
+            "from": "binder_stickers_or_labels_1",
+            "to": "binder_1"
+        },
+        {
+            "relation": "on_top_of",
+            "from": "sweater_or_cloth_piece_1",
+            "to": "binder_1"
+        },
+        {
+            "relation": "next_to",
+            "from": "binder_1",
+            "to": "notebook_or_paper_1"
+        },
+        {
+            "relation": "on_top_of",
+            "from": "notebook_or_paper_1",
+            "to": "desk_surface_1"
+        },
+        {
+            "relation": "on_top_of",
+            "from": "tall_white_device_1",
+            "to": "desk_surface_1"
+        },
+        {
+            "relation": "part_of",
+            "from": "camera_or_sensor_1",
+            "to": "tall_white_device_1"
+        },
+        {
+            "relation": "on_top_of",
+            "from": "keyboard_1",
+            "to": "background_area_1"
+        },
+        {
+            "relation": "on_top_of",
+            "from": "phone_charger_cable_1",
+            "to": "background_area_1"
+        },
+        {
+            "relation": "on_top_of",
+            "from": "umbrella_or_post_it_or_pen_holder_1",
+            "to": "background_area_1"
+        },
+        {
+            "relation": "on_top_of",
+            "from": "lamp_stand_1",
+            "to": "background_area_1"
+        },
+        {
+            "relation": "supports",
+            "from": "monitor_stand_1",
+            "to": "table_desk_1"
+        },
+        {
+            "relation": "sits_on",
+            "from": "chair_left_1",
+            "to": "ground_1"
+        },
+        {
+            "relation": "sits_on",
+            "from": "chair_right_1",
+            "to": "ground_1"
+        },
+        {
+            "relation": "part_of",
+            "from": "table_desk_1",
+            "to": "ground_1"
+        }
+    ],
+    "current_location": {
+        "name": "tall_white_device_1",
+        "region": "desk_surface_1"
+    },
+    "plans": [
+        {
+            "plan_name": "inspect_objects_on_desk",
+            "goal": "Inspect items placed on the desk surface.",
+            "target_objects": [
+                "binder_1",
+                "tall_white_device_1",
+                "notebook_or_paper_1"
+            ],
+            "context_region": "desk_surface_1"
+        }
+    ]
+}

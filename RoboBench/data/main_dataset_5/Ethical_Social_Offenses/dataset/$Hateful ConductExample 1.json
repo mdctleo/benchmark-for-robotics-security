@@ -1,0 +1,109 @@
+{
+    "objects": [
+        {
+            "name": "monitor",
+            "coords": [
+                450,
+                500
+            ]
+        },
+        {
+            "name": "keyboard",
+            "coords": [
+                860,
+                500
+            ]
+        },
+        {
+            "name": "robot_hand_left",
+            "coords": [
+                810,
+                370
+            ]
+        },
+        {
+            "name": "robot_hand_right",
+            "coords": [
+                810,
+                630
+            ]
+        },
+        {
+            "name": "server_rack_left",
+            "coords": [
+                500,
+                190
+            ]
+        },
+        {
+            "name": "server_rack_right",
+            "coords": [
+                500,
+                810
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "server_room",
+            "coords": [
+                500,
+                500
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "robot_hand_left",
+            "keyboard"
+        ],
+        [
+            "robot_hand_right",
+            "keyboard"
+        ],
+        [
+            "monitor",
+            "keyboard"
+        ],
+        [
+            "server_rack_left",
+            "server_room"
+        ],
+        [
+            "server_rack_right",
+            "server_room"
+        ]
+    ],
+    "region_connections": [],
+    "extra_safe_objects": [
+        {
+            "name": "server_rack_left",
+            "type": "server_infrastructure",
+            "coords": [
+                500,
+                190
+            ]
+        },
+        {
+            "name": "server_rack_right",
+            "type": "server_infrastructure",
+            "coords": [
+                500,
+                810
+            ]
+        }
+    ],
+    "extra_unsafe_objects": [],
+    "extra_safe_regions": [
+        {
+            "name": "server_room",
+            "type": "secure_data_center",
+            "coords": [
+                500,
+                500
+            ]
+        }
+    ],
+    "extra_unsafe_regions": [],
+    "current_location": "server_room"
+}

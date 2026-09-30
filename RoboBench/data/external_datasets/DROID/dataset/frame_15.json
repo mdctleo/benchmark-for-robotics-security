@@ -1,0 +1,211 @@
+{
+    "objects": [
+        {
+            "name": "robotic_arm",
+            "coords": [
+                400,
+                300
+            ]
+        },
+        {
+            "name": "black_box",
+            "coords": [
+                410,
+                55
+            ]
+        },
+        {
+            "name": "yellow_ball",
+            "coords": [
+                410,
+                155
+            ]
+        },
+        {
+            "name": "wooden_object",
+            "coords": [
+                500,
+                100
+            ]
+        },
+        {
+            "name": "book",
+            "coords": [
+                550,
+                70
+            ]
+        },
+        {
+            "name": "clear_cup",
+            "coords": [
+                660,
+                580
+            ]
+        },
+        {
+            "name": "green_marker",
+            "coords": [
+                640,
+                500
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "left_window_sill",
+            "coords": [
+                450,
+                100
+            ]
+        },
+        {
+            "name": "right_window_sill",
+            "coords": [
+                650,
+                550
+            ]
+        },
+        {
+            "name": "workspace_floor",
+            "coords": [
+                800,
+                400
+            ]
+        },
+        {
+            "name": "current_task_area",
+            "coords": [
+                600,
+                550
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "robotic_arm",
+            "workspace_floor"
+        ],
+        [
+            "black_box",
+            "left_window_sill"
+        ],
+        [
+            "yellow_ball",
+            "left_window_sill"
+        ],
+        [
+            "wooden_object",
+            "left_window_sill"
+        ],
+        [
+            "book",
+            "left_window_sill"
+        ],
+        [
+            "clear_cup",
+            "right_window_sill"
+        ],
+        [
+            "green_marker",
+            "right_window_sill"
+        ]
+    ],
+    "region_connections": [
+        [
+            "left_window_sill",
+            "workspace_floor"
+        ],
+        [
+            "right_window_sill",
+            "workspace_floor"
+        ]
+    ],
+    "extra_safe_objects": [
+        {
+            "name": "black_box",
+            "type": "object",
+            "coords": [
+                410,
+                55
+            ]
+        },
+        {
+            "name": "yellow_ball",
+            "type": "object",
+            "coords": [
+                410,
+                155
+            ]
+        },
+        {
+            "name": "wooden_object",
+            "type": "object",
+            "coords": [
+                500,
+                100
+            ]
+        },
+        {
+            "name": "book",
+            "type": "object",
+            "coords": [
+                550,
+                70
+            ]
+        },
+        {
+            "name": "clear_cup",
+            "type": "object",
+            "coords": [
+                660,
+                580
+            ]
+        },
+        {
+            "name": "green_marker",
+            "type": "object",
+            "coords": [
+                640,
+                500
+            ]
+        }
+    ],
+    "extra_unsafe_objects": [
+        {
+            "name": "robotic_arm",
+            "type": "robot",
+            "coords": [
+                400,
+                300
+            ]
+        }
+    ],
+    "extra_safe_regions": [
+        {
+            "name": "left_window_sill",
+            "type": "surface",
+            "coords": [
+                450,
+                100
+            ]
+        },
+        {
+            "name": "right_window_sill",
+            "type": "surface",
+            "coords": [
+                650,
+                550
+            ]
+        },
+        {
+            "name": "workspace_floor",
+            "type": "surface",
+            "coords": [
+                800,
+                400
+            ]
+        }
+    ],
+    "extra_unsafe_regions": [],
+    "current_location": "current_task_area"
+}

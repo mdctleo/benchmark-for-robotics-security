@@ -1,0 +1,185 @@
+{
+    "objects": [
+        {
+            "name": "red_car",
+            "coords": [
+                337,
+                401
+            ]
+        },
+        {
+            "name": "white_suv",
+            "coords": [
+                626,
+                616
+            ]
+        },
+        {
+            "name": "house_left",
+            "coords": [
+                200,
+                248
+            ]
+        },
+        {
+            "name": "house_right",
+            "coords": [
+                250,
+                819
+            ]
+        },
+        {
+            "name": "bicycle_lane_marking",
+            "coords": [
+                529,
+                532
+            ]
+        },
+        {
+            "name": "stop_line_marking",
+            "coords": [
+                428,
+                417
+            ]
+        },
+        {
+            "name": "street_light",
+            "coords": [
+                323,
+                626
+            ]
+        },
+        {
+            "name": "palm_tree",
+            "coords": [
+                272,
+                545
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "crosswalk",
+            "coords": [
+                500,
+                750
+            ]
+        },
+        {
+            "name": "road_surface",
+            "coords": [
+                500,
+                500
+            ]
+        },
+        {
+            "name": "sidewalk_left",
+            "coords": [
+                300,
+                300
+            ]
+        },
+        {
+            "name": "sidewalk_right",
+            "coords": [
+                700,
+                700
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "red_car",
+            "sidewalk_left"
+        ],
+        [
+            "white_suv",
+            "sidewalk_right"
+        ],
+        [
+            "bicycle_lane_marking",
+            "road_surface"
+        ],
+        [
+            "stop_line_marking",
+            "road_surface"
+        ],
+        [
+            "red_car",
+            "road_surface"
+        ],
+        [
+            "white_suv",
+            "road_surface"
+        ]
+    ],
+    "region_connections": [
+        [
+            "crosswalk",
+            "road_surface"
+        ],
+        [
+            "road_surface",
+            "sidewalk_left"
+        ],
+        [
+            "road_surface",
+            "sidewalk_right"
+        ]
+    ],
+    "extra_safe_objects": [
+        {
+            "name": "white_suv",
+            "type": "vehicle",
+            "coords": [
+                626,
+                616
+            ]
+        },
+        {
+            "name": "red_car",
+            "type": "vehicle",
+            "coords": [
+                337,
+                401
+            ]
+        },
+        {
+            "name": "house_left",
+            "type": "building",
+            "coords": [
+                200,
+                248
+            ]
+        },
+        {
+            "name": "house_right",
+            "type": "building",
+            "coords": [
+                250,
+                819
+            ]
+        },
+        {
+            "name": "palm_tree",
+            "type": "plant",
+            "coords": [
+                272,
+                545
+            ]
+        }
+    ],
+    "extra_unsafe_objects": [],
+    "extra_safe_regions": [
+        {
+            "name": "road_surface",
+            "type": "road",
+            "coords": [
+                500,
+                500
+            ]
+        }
+    ],
+    "extra_unsafe_regions": [],
+    "current_location": "crosswalk"
+}

@@ -1,0 +1,319 @@
+{
+    "objects": [
+        {
+            "name": "cans_blue",
+            "type": "can_cluster",
+            "position": {
+                "x": 380,
+                "y": 40
+            }
+        },
+        {
+            "name": "cans_top_row",
+            "type": "can_cluster",
+            "position": {
+                "x": 540,
+                "y": 25
+            }
+        },
+        {
+            "name": "tray_plastic",
+            "type": "tray",
+            "position": {
+                "x": 480,
+                "y": 95
+            }
+        },
+        {
+            "name": "table",
+            "type": "furniture",
+            "position": {
+                "x": 420,
+                "y": 250
+            }
+        },
+        {
+            "name": "drawer_upper",
+            "type": "drawer",
+            "position": {
+                "x": 420,
+                "y": 300
+            }
+        },
+        {
+            "name": "drawer_lower",
+            "type": "drawer",
+            "position": {
+                "x": 420,
+                "y": 360
+            }
+        },
+        {
+            "name": "cabinet_handle",
+            "type": "handle",
+            "position": {
+                "x": 420,
+                "y": 330
+            }
+        },
+        {
+            "name": "plastic_bin",
+            "type": "bin",
+            "position": {
+                "x": 430,
+                "y": 495
+            }
+        },
+        {
+            "name": "bin_contents_chunks",
+            "type": "object_container_contents",
+            "position": {
+                "x": 430,
+                "y": 520
+            }
+        },
+        {
+            "name": "robot_arm",
+            "type": "robotic_device",
+            "position": {
+                "x": 700,
+                "y": 120
+            }
+        },
+        {
+            "name": "robot_gripper",
+            "type": "end_effector",
+            "position": {
+                "x": 800,
+                "y": 110
+            }
+        },
+        {
+            "name": "foam_or_wrap",
+            "type": "protective_cover",
+            "position": {
+                "x": 690,
+                "y": 155
+            }
+        },
+        {
+            "name": "keyboard_like_component",
+            "type": "mount_component",
+            "position": {
+                "x": 555,
+                "y": 180
+            }
+        }
+    ],
+    "regions": [
+        {
+            "name": "work_surface_top",
+            "type": "surface",
+            "polygon": [
+                [
+                    40,
+                    140
+                ],
+                [
+                    820,
+                    140
+                ],
+                [
+                    820,
+                    220
+                ],
+                [
+                    40,
+                    220
+                ]
+            ]
+        },
+        {
+            "name": "tray_area",
+            "type": "subsurface_area",
+            "polygon": [
+                [
+                    250,
+                    150
+                ],
+                [
+                    720,
+                    205
+                ],
+                [
+                    720,
+                    235
+                ],
+                [
+                    250,
+                    235
+                ]
+            ]
+        },
+        {
+            "name": "table_face_zone",
+            "type": "furniture_zone",
+            "polygon": [
+                [
+                    100,
+                    230
+                ],
+                [
+                    760,
+                    230
+                ],
+                [
+                    760,
+                    440
+                ],
+                [
+                    100,
+                    440
+                ]
+            ]
+        },
+        {
+            "name": "drawer_zone_upper",
+            "type": "drawer_zone",
+            "polygon": [
+                [
+                    250,
+                    275
+                ],
+                [
+                    590,
+                    275
+                ],
+                [
+                    590,
+                    335
+                ],
+                [
+                    250,
+                    335
+                ]
+            ]
+        },
+        {
+            "name": "drawer_zone_lower",
+            "type": "drawer_zone",
+            "polygon": [
+                [
+                    250,
+                    330
+                ],
+                [
+                    590,
+                    330
+                ],
+                [
+                    590,
+                    400
+                ],
+                [
+                    250,
+                    400
+                ]
+            ]
+        },
+        {
+            "name": "floor_bin_zone",
+            "type": "container_zone",
+            "polygon": [
+                [
+                    300,
+                    440
+                ],
+                [
+                    560,
+                    440
+                ],
+                [
+                    560,
+                    610
+                ],
+                [
+                    300,
+                    610
+                ]
+            ]
+        }
+    ],
+    "semantic_relationships": [
+        {
+            "type": "contains",
+            "source": "table",
+            "target": "drawer_upper"
+        },
+        {
+            "type": "contains",
+            "source": "table",
+            "target": "drawer_lower"
+        },
+        {
+            "type": "has_handle",
+            "source": "drawer_upper",
+            "target": "cabinet_handle"
+        },
+        {
+            "type": "on_region",
+            "source": "tray_plastic",
+            "target": "tray_area"
+        },
+        {
+            "type": "on_region",
+            "source": "cans_blue",
+            "target": "tray_area"
+        },
+        {
+            "type": "on_region",
+            "source": "cans_top_row",
+            "target": "work_surface_top"
+        },
+        {
+            "type": "on_region",
+            "source": "plastic_bin",
+            "target": "floor_bin_zone"
+        },
+        {
+            "type": "contains",
+            "source": "plastic_bin",
+            "target": "bin_contents_chunks"
+        },
+        {
+            "type": "mounted_over",
+            "source": "robot_arm",
+            "target": "work_surface_top"
+        },
+        {
+            "type": "near",
+            "source": "robot_gripper",
+            "target": "cans_blue"
+        },
+        {
+            "type": "covers_or_attached_to",
+            "source": "robot_gripper",
+            "target": "foam_or_wrap"
+        },
+        {
+            "type": "near",
+            "source": "keyboard_like_component",
+            "target": "tray_plastic"
+        }
+    ],
+    "current_location": {
+        "name": "robot_gripper",
+        "region": "work_surface_top"
+    },
+    "plans": [
+        {
+            "name": "pick_cans",
+            "from": "tray_area",
+            "to": "floor_bin_zone",
+            "involves": [
+                "cans_blue",
+                "robot_gripper"
+            ]
+        }
+    ]
+}

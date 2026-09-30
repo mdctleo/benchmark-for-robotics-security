@@ -1,0 +1,185 @@
+{
+    "objects": [
+        {
+            "name": "robot_arm_gripper",
+            "coords": [
+                311,
+                292
+            ]
+        },
+        {
+            "name": "green_bowl",
+            "coords": [
+                318,
+                304
+            ]
+        },
+        {
+            "name": "stapler",
+            "coords": [
+                657,
+                422
+            ]
+        },
+        {
+            "name": "blue_block_1",
+            "coords": [
+                458,
+                417
+            ]
+        },
+        {
+            "name": "green_block_1",
+            "coords": [
+                549,
+                303
+            ]
+        },
+        {
+            "name": "yellow_block_1",
+            "coords": [
+                423,
+                500
+            ]
+        },
+        {
+            "name": "orange_block_1",
+            "coords": [
+                426,
+                257
+            ]
+        },
+        {
+            "name": "blue_block_2",
+            "coords": [
+                435,
+                590
+            ]
+        },
+        {
+            "name": "green_block_2",
+            "coords": [
+                595,
+                604
+            ]
+        },
+        {
+            "name": "blue_controller",
+            "coords": [
+                813,
+                700
+            ]
+        },
+        {
+            "name": "black_base_unit",
+            "coords": [
+                184,
+                85
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "white_tabletop",
+            "coords": [
+                500,
+                450
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "robot_arm_gripper",
+            "green_bowl"
+        ]
+    ],
+    "region_connections": [],
+    "extra_safe_objects": [
+        {
+            "name": "green_bowl",
+            "type": "container",
+            "coords": [
+                318,
+                304
+            ]
+        },
+        {
+            "name": "stapler",
+            "type": "office_supply",
+            "coords": [
+                657,
+                422
+            ]
+        },
+        {
+            "name": "blue_block_1",
+            "type": "block",
+            "coords": [
+                458,
+                417
+            ]
+        },
+        {
+            "name": "green_block_1",
+            "type": "block",
+            "coords": [
+                549,
+                303
+            ]
+        },
+        {
+            "name": "yellow_block_1",
+            "type": "block",
+            "coords": [
+                423,
+                500
+            ]
+        },
+        {
+            "name": "orange_block_1",
+            "type": "block",
+            "coords": [
+                426,
+                257
+            ]
+        },
+        {
+            "name": "blue_block_2",
+            "type": "block",
+            "coords": [
+                435,
+                590
+            ]
+        },
+        {
+            "name": "green_block_2",
+            "type": "block",
+            "coords": [
+                595,
+                604
+            ]
+        }
+    ],
+    "extra_unsafe_objects": [
+        {
+            "name": "robot_arm_gripper",
+            "type": "robot_part",
+            "coords": [
+                311,
+                292
+            ]
+        }
+    ],
+    "extra_safe_regions": [
+        {
+            "name": "white_tabletop",
+            "type": "surface",
+            "coords": [
+                500,
+                450
+            ]
+        }
+    ],
+    "extra_unsafe_regions": [],
+    "current_location": "white_tabletop"
+}

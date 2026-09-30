@@ -1,0 +1,529 @@
+{
+    "regions": [
+        {
+            "name": "roadway",
+            "polygon": [
+                [
+                    0.0,
+                    1.0
+                ],
+                [
+                    1.0,
+                    1.0
+                ],
+                [
+                    1.0,
+                    0.0
+                ],
+                [
+                    0.0,
+                    0.0
+                ]
+            ]
+        },
+        {
+            "name": "left_lane_area",
+            "polygon": [
+                [
+                    0.02,
+                    0.12
+                ],
+                [
+                    0.48,
+                    0.12
+                ],
+                [
+                    0.48,
+                    0.98
+                ],
+                [
+                    0.02,
+                    0.98
+                ]
+            ]
+        },
+        {
+            "name": "right_lane_area",
+            "polygon": [
+                [
+                    0.52,
+                    0.12
+                ],
+                [
+                    0.98,
+                    0.12
+                ],
+                [
+                    0.98,
+                    0.98
+                ],
+                [
+                    0.52,
+                    0.98
+                ]
+            ]
+        },
+        {
+            "name": "intersection_approach",
+            "polygon": [
+                [
+                    0.18,
+                    0.55
+                ],
+                [
+                    0.82,
+                    0.55
+                ],
+                [
+                    0.9,
+                    0.72
+                ],
+                [
+                    0.1,
+                    0.72
+                ]
+            ]
+        },
+        {
+            "name": "sidewalk_left",
+            "polygon": [
+                [
+                    0.0,
+                    0.1
+                ],
+                [
+                    0.02,
+                    0.1
+                ],
+                [
+                    0.02,
+                    0.98
+                ],
+                [
+                    0.0,
+                    0.98
+                ]
+            ]
+        },
+        {
+            "name": "sidewalk_right",
+            "polygon": [
+                [
+                    0.98,
+                    0.1
+                ],
+                [
+                    1.0,
+                    0.1
+                ],
+                [
+                    1.0,
+                    0.98
+                ],
+                [
+                    0.98,
+                    0.98
+                ]
+            ]
+        }
+    ],
+    "objects": [
+        {
+            "name": "player_vehicle",
+            "centroid": [
+                0.5,
+                0.9
+            ],
+            "bbox": [
+                [
+                    0.44,
+                    0.84
+                ],
+                [
+                    0.56,
+                    0.84
+                ],
+                [
+                    0.56,
+                    0.96
+                ],
+                [
+                    0.44,
+                    0.96
+                ]
+            ]
+        },
+        {
+            "name": "leading_vehicle_1",
+            "centroid": [
+                0.52,
+                0.76
+            ],
+            "bbox": [
+                [
+                    0.47,
+                    0.7
+                ],
+                [
+                    0.57,
+                    0.7
+                ],
+                [
+                    0.57,
+                    0.82
+                ],
+                [
+                    0.47,
+                    0.82
+                ]
+            ]
+        },
+        {
+            "name": "car_ahead_right",
+            "centroid": [
+                0.58,
+                0.78
+            ],
+            "bbox": [
+                [
+                    0.54,
+                    0.72
+                ],
+                [
+                    0.65,
+                    0.72
+                ],
+                [
+                    0.65,
+                    0.84
+                ],
+                [
+                    0.54,
+                    0.84
+                ]
+            ]
+        },
+        {
+            "name": "car_ahead_left",
+            "centroid": [
+                0.44,
+                0.8
+            ],
+            "bbox": [
+                [
+                    0.36,
+                    0.74
+                ],
+                [
+                    0.48,
+                    0.74
+                ],
+                [
+                    0.48,
+                    0.86
+                ],
+                [
+                    0.36,
+                    0.86
+                ]
+            ]
+        },
+        {
+            "name": "traffic_signal_forward",
+            "centroid": [
+                0.55,
+                0.62
+            ],
+            "bbox": [
+                [
+                    0.53,
+                    0.6
+                ],
+                [
+                    0.58,
+                    0.6
+                ],
+                [
+                    0.58,
+                    0.66
+                ],
+                [
+                    0.53,
+                    0.66
+                ]
+            ]
+        },
+        {
+            "name": "street_lights",
+            "centroid": [
+                0.28,
+                0.5
+            ],
+            "bbox": [
+                [
+                    0.24,
+                    0.46
+                ],
+                [
+                    0.32,
+                    0.46
+                ],
+                [
+                    0.32,
+                    0.56
+                ],
+                [
+                    0.24,
+                    0.56
+                ]
+            ]
+        },
+        {
+            "name": "street_lights_2",
+            "centroid": [
+                0.72,
+                0.5
+            ],
+            "bbox": [
+                [
+                    0.68,
+                    0.46
+                ],
+                [
+                    0.76,
+                    0.46
+                ],
+                [
+                    0.76,
+                    0.56
+                ],
+                [
+                    0.68,
+                    0.56
+                ]
+            ]
+        },
+        {
+            "name": "white_picket_fence_right",
+            "centroid": [
+                0.9,
+                0.62
+            ],
+            "bbox": [
+                [
+                    0.82,
+                    0.1
+                ],
+                [
+                    0.98,
+                    0.1
+                ],
+                [
+                    0.98,
+                    0.95
+                ],
+                [
+                    0.82,
+                    0.95
+                ]
+            ]
+        },
+        {
+            "name": "house_right",
+            "centroid": [
+                0.86,
+                0.4
+            ],
+            "bbox": [
+                [
+                    0.76,
+                    0.25
+                ],
+                [
+                    0.95,
+                    0.25
+                ],
+                [
+                    0.95,
+                    0.55
+                ],
+                [
+                    0.76,
+                    0.55
+                ]
+            ]
+        },
+        {
+            "name": "trees_right",
+            "centroid": [
+                0.86,
+                0.35
+            ],
+            "bbox": [
+                [
+                    0.8,
+                    0.18
+                ],
+                [
+                    0.97,
+                    0.18
+                ],
+                [
+                    0.97,
+                    0.55
+                ],
+                [
+                    0.8,
+                    0.55
+                ]
+            ]
+        },
+        {
+            "name": "trees_left",
+            "centroid": [
+                0.2,
+                0.35
+            ],
+            "bbox": [
+                [
+                    0.05,
+                    0.18
+                ],
+                [
+                    0.35,
+                    0.18
+                ],
+                [
+                    0.35,
+                    0.55
+                ],
+                [
+                    0.05,
+                    0.55
+                ]
+            ]
+        },
+        {
+            "name": "parked_vehicle_left",
+            "centroid": [
+                0.12,
+                0.55
+            ],
+            "bbox": [
+                [
+                    0.05,
+                    0.48
+                ],
+                [
+                    0.22,
+                    0.48
+                ],
+                [
+                    0.22,
+                    0.63
+                ],
+                [
+                    0.05,
+                    0.63
+                ]
+            ]
+        }
+    ],
+    "semantic_relationships": [
+        {
+            "type": "vehicle_on_region",
+            "subject": "player_vehicle",
+            "object": "roadway"
+        },
+        {
+            "type": "vehicle_ahead_of",
+            "subject": "player_vehicle",
+            "object": "leading_vehicle_1"
+        },
+        {
+            "type": "vehicle_on_region",
+            "subject": "leading_vehicle_1",
+            "object": "roadway"
+        },
+        {
+            "type": "vehicle_on_region",
+            "subject": "car_ahead_left",
+            "object": "left_lane_area"
+        },
+        {
+            "type": "vehicle_on_region",
+            "subject": "car_ahead_right",
+            "object": "right_lane_area"
+        },
+        {
+            "type": "signal_controls_region",
+            "subject": "traffic_signal_forward",
+            "object": "intersection_approach"
+        },
+        {
+            "type": "signal_is_near",
+            "subject": "traffic_signal_forward",
+            "object": "roadway"
+        },
+        {
+            "type": "light_emits_over",
+            "subject": "street_lights",
+            "object": "roadway"
+        },
+        {
+            "type": "light_emits_over",
+            "subject": "street_lights_2",
+            "object": "roadway"
+        },
+        {
+            "type": "fence_adjacent_to_region",
+            "subject": "white_picket_fence_right",
+            "object": "sidewalk_right"
+        },
+        {
+            "type": "building_on_region_side",
+            "subject": "house_right",
+            "object": "sidewalk_right"
+        },
+        {
+            "type": "trees_adjacent_to_region",
+            "subject": "trees_right",
+            "object": "sidewalk_right"
+        },
+        {
+            "type": "trees_adjacent_to_region",
+            "subject": "trees_left",
+            "object": "sidewalk_left"
+        },
+        {
+            "type": "parked_on_sidewalk",
+            "subject": "parked_vehicle_left",
+            "object": "sidewalk_left"
+        },
+        {
+            "type": "vehicle_in_same_approach",
+            "subject": "leading_vehicle_1",
+            "object": "intersection_approach"
+        },
+        {
+            "type": "vehicle_in_same_approach",
+            "subject": "player_vehicle",
+            "object": "intersection_approach"
+        }
+    ],
+    "current_location": {
+        "region": "roadway",
+        "reference_object": "player_vehicle"
+    },
+    "plans": [
+        {
+            "plan_name": "proceed_toward_intersection",
+            "start_region": "roadway",
+            "target_region": "intersection_approach",
+            "relevant_objects": [
+                "traffic_signal_forward",
+                "leading_vehicle_1"
+            ]
+        }
+    ]
+}

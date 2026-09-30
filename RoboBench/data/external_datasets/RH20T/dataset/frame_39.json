@@ -1,0 +1,240 @@
+{
+    "regions": [
+        {
+            "name": "blue_tarp",
+            "type": "surface",
+            "bounding_box": {
+                "x": 80,
+                "y": 60,
+                "w": 880,
+                "h": 560
+            },
+            "description": "Large blue tarp covering most of the table/work area."
+        },
+        {
+            "name": "black_mat",
+            "type": "surface",
+            "bounding_box": {
+                "x": 760,
+                "y": 290,
+                "w": 380,
+                "h": 330
+            },
+            "description": "Dark area on the right side of the tarp where another surface/mat is visible."
+        },
+        {
+            "name": "wood_floor",
+            "type": "surface",
+            "bounding_box": {
+                "x": 0,
+                "y": 0,
+                "w": 230,
+                "h": 590
+            },
+            "description": "Wooden floor area on the left side."
+        },
+        {
+            "name": "workbench_area",
+            "type": "area",
+            "bounding_box": {
+                "x": 0,
+                "y": 0,
+                "w": 1160,
+                "h": 640
+            },
+            "description": "Overall top-down workspace area containing all visible objects."
+        },
+        {
+            "name": "right_wall_area",
+            "type": "area",
+            "bounding_box": {
+                "x": 1120,
+                "y": 120,
+                "w": 80,
+                "h": 520
+            },
+            "description": "Right-side boundary area where a fixture extends into view."
+        }
+    ],
+    "objects": [
+        {
+            "name": "webcam_mount",
+            "type": "mount",
+            "center": {
+                "x": 120,
+                "y": 120
+            },
+            "description": "Camera/webcam mount-like component at the upper left."
+        },
+        {
+            "name": "tool_base_left",
+            "type": "device_base",
+            "center": {
+                "x": 70,
+                "y": 250
+            },
+            "description": "Dark circular base/component at the far left."
+        },
+        {
+            "name": "tarp_edge_left",
+            "type": "edge",
+            "center": {
+                "x": 120,
+                "y": 320
+            },
+            "description": "Left edge region where the tarp meets the frame."
+        },
+        {
+            "name": "red_button",
+            "type": "button",
+            "center": {
+                "x": 350,
+                "y": 95
+            },
+            "description": "Small red push-button on a controller near the top."
+        },
+        {
+            "name": "color_block",
+            "type": "control_block",
+            "center": {
+                "x": 310,
+                "y": 115
+            },
+            "description": "Small multi-color (green/yellow) block near the controller."
+        },
+        {
+            "name": "controller_black",
+            "type": "controller",
+            "center": {
+                "x": 520,
+                "y": 70
+            },
+            "description": "Black controller-like module near the top center."
+        },
+        {
+            "name": "wiring_bundle_top",
+            "type": "cables",
+            "center": {
+                "x": 720,
+                "y": 80
+            },
+            "description": "Cable bundle entering from the top/right."
+        },
+        {
+            "name": "small_cylindrical_part",
+            "type": "part",
+            "center": {
+                "x": 540,
+                "y": 180
+            },
+            "description": "Small cylindrical/rectangular part resting near the center-top of the tarp."
+        },
+        {
+            "name": "white_outlet_strip",
+            "type": "power_strip",
+            "center": {
+                "x": 880,
+                "y": 365
+            },
+            "description": "White multi-outlet/power strip on the right of the tarp."
+        },
+        {
+            "name": "pen_like_tool",
+            "type": "tool",
+            "center": {
+                "x": 800,
+                "y": 540
+            },
+            "description": "Small pen/rod-like tool on the tarp."
+        },
+        {
+            "name": "right_fixture",
+            "type": "fixture",
+            "center": {
+                "x": 1125,
+                "y": 410
+            },
+            "description": "Large gray fixture extending from the right side into view."
+        },
+        {
+            "name": "left_rail",
+            "type": "rail",
+            "center": {
+                "x": 170,
+                "y": 240
+            },
+            "description": "Metal rail/support along the left side."
+        }
+    ],
+    "semantic_relationships": [
+        {
+            "subject": "webcam_mount",
+            "relation": "located_on",
+            "object": "workbench_area"
+        },
+        {
+            "subject": "tool_base_left",
+            "relation": "located_on",
+            "object": "workbench_area"
+        },
+        {
+            "subject": "left_rail",
+            "relation": "bounds",
+            "object": "wood_floor"
+        },
+        {
+            "subject": "controller_black",
+            "relation": "placed_near",
+            "object": "blue_tarp"
+        },
+        {
+            "subject": "red_button",
+            "relation": "part_of",
+            "object": "controller_black"
+        },
+        {
+            "subject": "color_block",
+            "relation": "part_of",
+            "object": "controller_black"
+        },
+        {
+            "subject": "wiring_bundle_top",
+            "relation": "connected_to",
+            "object": "controller_black"
+        },
+        {
+            "subject": "small_cylindrical_part",
+            "relation": "on_top_of",
+            "object": "blue_tarp"
+        },
+        {
+            "subject": "white_outlet_strip",
+            "relation": "on_top_of",
+            "object": "blue_tarp"
+        },
+        {
+            "subject": "pen_like_tool",
+            "relation": "on_top_of",
+            "object": "black_mat"
+        },
+        {
+            "subject": "right_fixture",
+            "relation": "adjacent_to",
+            "object": "right_wall_area"
+        },
+        {
+            "subject": "blue_tarp",
+            "relation": "covers",
+            "object": "workbench_area"
+        }
+    ],
+    "current_location": "blue_tarp",
+    "plans": [
+        {
+            "name": "place_small_part",
+            "target": "small_cylindrical_part",
+            "region": "blue_tarp",
+            "status": "unknown"
+        }
+    ]
+}

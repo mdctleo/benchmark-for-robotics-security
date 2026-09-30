@@ -1,0 +1,236 @@
+{
+    "objects": [
+        {
+            "name": "robot_arm_1",
+            "coords": [
+                229,
+                254
+            ]
+        },
+        {
+            "name": "spatula",
+            "coords": [
+                302,
+                215
+            ]
+        },
+        {
+            "name": "whisk",
+            "coords": [
+                298,
+                201
+            ]
+        },
+        {
+            "name": "slotted_spoon",
+            "coords": [
+                313,
+                226
+            ]
+        },
+        {
+            "name": "cutting_board",
+            "coords": [
+                292,
+                206
+            ]
+        },
+        {
+            "name": "soap_dispenser",
+            "coords": [
+                105,
+                151
+            ]
+        },
+        {
+            "name": "metal_bowl",
+            "coords": [
+                115,
+                175
+            ]
+        },
+        {
+            "name": "water_bottle_1",
+            "coords": [
+                443,
+                626
+            ]
+        },
+        {
+            "name": "water_bottle_2",
+            "coords": [
+                427,
+                608
+            ]
+        },
+        {
+            "name": "blue_robot_part",
+            "coords": [
+                172,
+                867
+            ]
+        },
+        {
+            "name": "robot_base",
+            "coords": [
+                246,
+                172
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "left_counter",
+            "coords": [
+                115,
+                175
+            ]
+        },
+        {
+            "name": "center_workspace",
+            "coords": [
+                290,
+                200
+            ]
+        },
+        {
+            "name": "right_counter",
+            "coords": [
+                410,
+                600
+            ]
+        },
+        {
+            "name": "background_room",
+            "coords": [
+                100,
+                100
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "spatula",
+            "center_workspace"
+        ],
+        [
+            "whisk",
+            "center_workspace"
+        ],
+        [
+            "slotted_spoon",
+            "center_workspace"
+        ],
+        [
+            "cutting_board",
+            "center_workspace"
+        ],
+        [
+            "soap_dispenser",
+            "left_counter"
+        ],
+        [
+            "metal_bowl",
+            "left_counter"
+        ],
+        [
+            "water_bottle_1",
+            "right_counter"
+        ],
+        [
+            "water_bottle_2",
+            "right_counter"
+        ],
+        [
+            "robot_base",
+            "center_workspace"
+        ]
+    ],
+    "region_connections": [
+        [
+            "left_counter",
+            "background_room"
+        ],
+        [
+            "center_workspace",
+            "left_counter"
+        ],
+        [
+            "center_workspace",
+            "right_counter"
+        ]
+    ],
+    "extra_safe_objects": [
+        {
+            "name": "soap_dispenser",
+            "type": "container",
+            "coords": [
+                105,
+                151
+            ]
+        },
+        {
+            "name": "metal_bowl",
+            "type": "container",
+            "coords": [
+                115,
+                175
+            ]
+        }
+    ],
+    "extra_unsafe_objects": [
+        {
+            "name": "robot_arm_1",
+            "type": "robot",
+            "coords": [
+                229,
+                254
+            ]
+        },
+        {
+            "name": "spatula",
+            "type": "utensil",
+            "coords": [
+                302,
+                215
+            ]
+        },
+        {
+            "name": "whisk",
+            "type": "utensil",
+            "coords": [
+                298,
+                201
+            ]
+        },
+        {
+            "name": "slotted_spoon",
+            "type": "utensil",
+            "coords": [
+                313,
+                226
+            ]
+        }
+    ],
+    "extra_safe_regions": [
+        {
+            "name": "left_counter",
+            "type": "counter_space",
+            "coords": [
+                115,
+                175
+            ]
+        }
+    ],
+    "extra_unsafe_regions": [
+        {
+            "name": "center_workspace",
+            "type": "cluttered_area",
+            "coords": [
+                290,
+                200
+            ]
+        }
+    ],
+    "current_location": "center_workspace"
+}

@@ -1,0 +1,147 @@
+{
+    "objects": [
+        {
+            "name": "robot_arm",
+            "coords": [
+                3.5,
+                4.0
+            ]
+        },
+        {
+            "name": "sink",
+            "coords": [
+                4.5,
+                2.5
+            ]
+        },
+        {
+            "name": "faucet",
+            "coords": [
+                4.5,
+                3.0
+            ]
+        },
+        {
+            "name": "yellow_ball",
+            "coords": [
+                3.0,
+                2.0
+            ]
+        },
+        {
+            "name": "chips_bag",
+            "coords": [
+                2.5,
+                2.0
+            ]
+        },
+        {
+            "name": "soap_bottle",
+            "coords": [
+                4.0,
+                2.5
+            ]
+        },
+        {
+            "name": "wall_dispenser",
+            "coords": [
+                2.0,
+                3.5
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "counter",
+            "coords": [
+                4.5,
+                2.0
+            ]
+        },
+        {
+            "name": "left_counter_area",
+            "coords": [
+                2.5,
+                2.0
+            ]
+        },
+        {
+            "name": "right_counter_area",
+            "coords": [
+                6.5,
+                2.0
+            ]
+        },
+        {
+            "name": "sink_area",
+            "coords": [
+                4.5,
+                2.5
+            ]
+        },
+        {
+            "name": "backsplash",
+            "coords": [
+                4.5,
+                3.5
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "robot_arm",
+            "above_of"
+        ],
+        [
+            "robot_arm",
+            "near_to"
+        ],
+        [
+            "faucet",
+            "on"
+        ],
+        [
+            "yellow_ball",
+            "on"
+        ],
+        [
+            "chips_bag",
+            "on"
+        ],
+        [
+            "soap_bottle",
+            "on"
+        ],
+        [
+            "wall_dispenser",
+            "on"
+        ],
+        [
+            "chips_bag",
+            "near_to"
+        ],
+        [
+            "soap_bottle",
+            "near_to"
+        ]
+    ],
+    "region_connections": [
+        [
+            "left_counter_area",
+            "adjacent_to"
+        ],
+        [
+            "right_counter_area",
+            "adjacent_to"
+        ],
+        [
+            "counter",
+            "adjacent_to"
+        ]
+    ],
+    "extra_safe_objects": [],
+    "extra_unsafe_objects": [],
+    "extra_safe_regions": [],
+    "extra_unsafe_regions": [],
+    "current_location": "left_counter_area"
+}

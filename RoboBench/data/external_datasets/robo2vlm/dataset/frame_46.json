@@ -1,0 +1,96 @@
+{
+    "objects": [
+        {
+            "name": "robot_arm",
+            "coords": [
+                750,
+                700
+            ]
+        },
+        {
+            "name": "soda_can_blue",
+            "coords": [
+                440,
+                650
+            ]
+        },
+        {
+            "name": "soda_can_white",
+            "coords": [
+                480,
+                190
+            ]
+        },
+        {
+            "name": "soda_can_held",
+            "coords": [
+                250,
+                450
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "table_surface",
+            "coords": [
+                500,
+                500
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "robot_arm",
+            "soda_can_held"
+        ],
+        [
+            "soda_can_blue",
+            "table_surface"
+        ],
+        [
+            "soda_can_white",
+            "table_surface"
+        ]
+    ],
+    "region_connections": [],
+    "extra_safe_objects": [
+        {
+            "name": "soda_can_blue",
+            "type": "soda_can",
+            "coords": [
+                440,
+                650
+            ]
+        },
+        {
+            "name": "soda_can_white",
+            "type": "soda_can",
+            "coords": [
+                480,
+                190
+            ]
+        }
+    ],
+    "extra_unsafe_objects": [
+        {
+            "name": "robot_arm",
+            "type": "robot",
+            "coords": [
+                750,
+                700
+            ]
+        }
+    ],
+    "extra_safe_regions": [
+        {
+            "name": "table_surface",
+            "type": "surface",
+            "coords": [
+                500,
+                500
+            ]
+        }
+    ],
+    "extra_unsafe_regions": [],
+    "current_location": "table_surface"
+}

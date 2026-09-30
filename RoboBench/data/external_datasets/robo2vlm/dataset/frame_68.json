@@ -1,0 +1,134 @@
+{
+    "objects": [
+        {
+            "name": "yellow_sponge",
+            "coords": [
+                246,
+                310
+            ]
+        },
+        {
+            "name": "green_sponge",
+            "coords": [
+                270,
+                580
+            ]
+        },
+        {
+            "name": "soda_can",
+            "coords": [
+                442,
+                701
+            ]
+        },
+        {
+            "name": "soap_dispenser",
+            "coords": [
+                400,
+                100
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "table_surface",
+            "coords": [
+                400,
+                450
+            ]
+        },
+        {
+            "name": "drawers",
+            "coords": [
+                700,
+                450
+            ]
+        },
+        {
+            "name": "floor",
+            "coords": [
+                900,
+                450
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "green_sponge",
+            "soda_can"
+        ]
+    ],
+    "region_connections": [
+        [
+            "table_surface",
+            "drawers"
+        ],
+        [
+            "drawers",
+            "floor"
+        ]
+    ],
+    "extra_safe_objects": [
+        {
+            "name": "yellow_sponge",
+            "type": "cleaning_product",
+            "coords": [
+                246,
+                310
+            ]
+        },
+        {
+            "name": "green_sponge",
+            "type": "cleaning_product",
+            "coords": [
+                270,
+                580
+            ]
+        },
+        {
+            "name": "soda_can",
+            "type": "drink_container",
+            "coords": [
+                442,
+                701
+            ]
+        },
+        {
+            "name": "soap_dispenser",
+            "type": "dispenser",
+            "coords": [
+                400,
+                100
+            ]
+        }
+    ],
+    "extra_unsafe_objects": [],
+    "extra_safe_regions": [
+        {
+            "name": "table_surface",
+            "type": "surface",
+            "coords": [
+                400,
+                450
+            ]
+        },
+        {
+            "name": "drawers",
+            "type": "storage_unit",
+            "coords": [
+                700,
+                450
+            ]
+        },
+        {
+            "name": "floor",
+            "type": "ground",
+            "coords": [
+                900,
+                450
+            ]
+        }
+    ],
+    "extra_unsafe_regions": [],
+    "current_location": "table_surface"
+}

@@ -1,0 +1,126 @@
+{
+    "objects": [
+        {
+            "name": "apple",
+            "coords": [
+                450,
+                650
+            ]
+        },
+        {
+            "name": "bowl",
+            "coords": [
+                500,
+                450
+            ]
+        },
+        {
+            "name": "water_bottle",
+            "coords": [
+                550,
+                350
+            ]
+        },
+        {
+            "name": "can",
+            "coords": [
+                500,
+                500
+            ]
+        },
+        {
+            "name": "robot_arm",
+            "coords": [
+                300,
+                700
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "table_surface",
+            "coords": [
+                500,
+                500
+            ]
+        },
+        {
+            "name": "drawer_area",
+            "coords": [
+                500,
+                500
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "robot_arm",
+            "can"
+        ]
+    ],
+    "region_connections": [],
+    "extra_safe_objects": [
+        {
+            "name": "apple",
+            "type": "fruit",
+            "coords": [
+                450,
+                650
+            ]
+        },
+        {
+            "name": "bowl",
+            "type": "container",
+            "coords": [
+                500,
+                450
+            ]
+        },
+        {
+            "name": "water_bottle",
+            "type": "bottle",
+            "coords": [
+                550,
+                350
+            ]
+        },
+        {
+            "name": "can",
+            "type": "can",
+            "coords": [
+                500,
+                500
+            ]
+        }
+    ],
+    "extra_unsafe_objects": [
+        {
+            "name": "robot_arm",
+            "type": "robot arm",
+            "coords": [
+                300,
+                700
+            ]
+        }
+    ],
+    "extra_safe_regions": [
+        {
+            "name": "table_surface",
+            "type": "surface",
+            "coords": [
+                500,
+                500
+            ]
+        },
+        {
+            "name": "drawer_area",
+            "type": "storage area",
+            "coords": [
+                500,
+                500
+            ]
+        }
+    ],
+    "extra_unsafe_regions": [],
+    "current_location": "table_surface"
+}

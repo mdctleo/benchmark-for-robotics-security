@@ -1,0 +1,430 @@
+{
+    "objects": [
+        {
+            "name": "blue_curtain",
+            "type": "fabric",
+            "bounding_box": [
+                [
+                    210,
+                    35
+                ],
+                [
+                    1010,
+                    35
+                ],
+                [
+                    1010,
+                    545
+                ],
+                [
+                    210,
+                    545
+                ]
+            ]
+        },
+        {
+            "name": "roller_stand_left",
+            "type": "metal_frame",
+            "bounding_box": [
+                [
+                    40,
+                    70
+                ],
+                [
+                    220,
+                    90
+                ],
+                [
+                    220,
+                    530
+                ],
+                [
+                    40,
+                    510
+                ]
+            ]
+        },
+        {
+            "name": "roller_stand_right",
+            "type": "metal_frame",
+            "bounding_box": [
+                [
+                    980,
+                    60
+                ],
+                [
+                    1080,
+                    80
+                ],
+                [
+                    1080,
+                    520
+                ],
+                [
+                    980,
+                    500
+                ]
+            ]
+        },
+        {
+            "name": "rolling_wheel_motor_casing_left",
+            "type": "device",
+            "bounding_box": [
+                [
+                    0,
+                    90
+                ],
+                [
+                    135,
+                    140
+                ],
+                [
+                    135,
+                    450
+                ],
+                [
+                    0,
+                    400
+                ]
+            ]
+        },
+        {
+            "name": "outlet_power_strip_right",
+            "type": "power_strip",
+            "bounding_box": [
+                [
+                    830,
+                    420
+                ],
+                [
+                    1030,
+                    440
+                ],
+                [
+                    1030,
+                    560
+                ],
+                [
+                    830,
+                    540
+                ]
+            ]
+        },
+        {
+            "name": "small_cable_bundle",
+            "type": "cables",
+            "bounding_box": [
+                [
+                    650,
+                    0
+                ],
+                [
+                    980,
+                    140
+                ],
+                [
+                    980,
+                    260
+                ],
+                [
+                    650,
+                    120
+                ]
+            ]
+        },
+        {
+            "name": "control_box_on_blue",
+            "type": "box_device",
+            "bounding_box": [
+                [
+                    510,
+                    120
+                ],
+                [
+                    640,
+                    150
+                ],
+                [
+                    610,
+                    260
+                ],
+                [
+                    480,
+                    230
+                ]
+            ]
+        },
+        {
+            "name": "wandering_path_line",
+            "type": "marker_line",
+            "bounding_box": [
+                [
+                    760,
+                    540
+                ],
+                [
+                    1010,
+                    540
+                ],
+                [
+                    1010,
+                    620
+                ],
+                [
+                    760,
+                    620
+                ]
+            ]
+        },
+        {
+            "name": "base_surface_bottom_left",
+            "type": "platform_edge",
+            "bounding_box": [
+                [
+                    0,
+                    540
+                ],
+                [
+                    210,
+                    540
+                ],
+                [
+                    210,
+                    740
+                ],
+                [
+                    0,
+                    740
+                ]
+            ]
+        },
+        {
+            "name": "large_device_top_right",
+            "type": "equipment_case",
+            "bounding_box": [
+                [
+                    1040,
+                    160
+                ],
+                [
+                    1280,
+                    220
+                ],
+                [
+                    1230,
+                    610
+                ],
+                [
+                    990,
+                    550
+                ]
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "blue_area_main",
+            "type": "workspace_region",
+            "polygon": [
+                [
+                    210,
+                    35
+                ],
+                [
+                    1010,
+                    35
+                ],
+                [
+                    1010,
+                    545
+                ],
+                [
+                    210,
+                    545
+                ]
+            ],
+            "centroid": [
+                610,
+                290
+            ]
+        },
+        {
+            "name": "right_outlet_zone",
+            "type": "interaction_zone",
+            "polygon": [
+                [
+                    760,
+                    420
+                ],
+                [
+                    1030,
+                    420
+                ],
+                [
+                    1030,
+                    590
+                ],
+                [
+                    760,
+                    590
+                ]
+            ],
+            "centroid": [
+                895,
+                505
+            ]
+        },
+        {
+            "name": "top_cables_zone",
+            "type": "cable_zone",
+            "polygon": [
+                [
+                    600,
+                    0
+                ],
+                [
+                    980,
+                    0
+                ],
+                [
+                    980,
+                    260
+                ],
+                [
+                    600,
+                    260
+                ]
+            ],
+            "centroid": [
+                790,
+                130
+            ]
+        },
+        {
+            "name": "left_roller_zone",
+            "type": "support_zone",
+            "polygon": [
+                [
+                    0,
+                    60
+                ],
+                [
+                    250,
+                    60
+                ],
+                [
+                    250,
+                    540
+                ],
+                [
+                    0,
+                    540
+                ]
+            ],
+            "centroid": [
+                125,
+                300
+            ]
+        },
+        {
+            "name": "right_equipment_zone",
+            "type": "equipment_zone",
+            "polygon": [
+                [
+                    990,
+                    120
+                ],
+                [
+                    1280,
+                    160
+                ],
+                [
+                    1230,
+                    610
+                ],
+                [
+                    990,
+                    550
+                ]
+            ],
+            "centroid": [
+                1110,
+                360
+            ]
+        }
+    ],
+    "semantic_relationships": [
+        {
+            "from": "control_box_on_blue",
+            "to": "blue_area_main",
+            "relation": "located_in"
+        },
+        {
+            "from": "blue_curtain",
+            "to": "blue_area_main",
+            "relation": "covers_region"
+        },
+        {
+            "from": "outlet_power_strip_right",
+            "to": "right_outlet_zone",
+            "relation": "located_in"
+        },
+        {
+            "from": "small_cable_bundle",
+            "to": "top_cables_zone",
+            "relation": "runs_over"
+        },
+        {
+            "from": "roller_stand_left",
+            "to": "left_roller_zone",
+            "relation": "supports_border_of"
+        },
+        {
+            "from": "rolling_wheel_motor_casing_left",
+            "to": "left_roller_zone",
+            "relation": "occupies"
+        },
+        {
+            "from": "large_device_top_right",
+            "to": "right_equipment_zone",
+            "relation": "occupies"
+        },
+        {
+            "from": "wandering_path_line",
+            "to": "right_outlet_zone",
+            "relation": "marks_path_within"
+        }
+    ],
+    "current_location": {
+        "region": "blue_area_main",
+        "object_focus": "control_box_on_blue",
+        "approx_xy": [
+            610,
+            200
+        ]
+    },
+    "plans": [
+        {
+            "plan_name": "inspect_devices",
+            "steps": [
+                {
+                    "action": "move_to",
+                    "target_region": "blue_area_main"
+                },
+                {
+                    "action": "move_to",
+                    "target_region": "right_outlet_zone"
+                }
+            ]
+        },
+        {
+            "plan_name": "check_cables",
+            "steps": [
+                {
+                    "action": "move_to",
+                    "target_region": "top_cables_zone"
+                }
+            ]
+        }
+    ]
+}

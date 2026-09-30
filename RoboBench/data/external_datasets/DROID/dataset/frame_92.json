@@ -1,0 +1,173 @@
+{
+    "objects": [
+        {
+            "name": "robot_arm",
+            "coords": [
+                300,
+                450
+            ]
+        },
+        {
+            "name": "clear_container",
+            "coords": [
+                350,
+                550
+            ]
+        },
+        {
+            "name": "sponge",
+            "coords": [
+                200,
+                600
+            ]
+        },
+        {
+            "name": "kettle",
+            "coords": [
+                100,
+                700
+            ]
+        },
+        {
+            "name": "coffee_machine",
+            "coords": [
+                300,
+                750
+            ]
+        },
+        {
+            "name": "blue_cloth",
+            "coords": [
+                300,
+                620
+            ]
+        },
+        {
+            "name": "soap_dispenser",
+            "coords": [
+                450,
+                850
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "countertop",
+            "coords": [
+                500,
+                700
+            ]
+        },
+        {
+            "name": "sink",
+            "coords": [
+                400,
+                650
+            ]
+        },
+        {
+            "name": "backsplash",
+            "coords": [
+                500,
+                900
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "robot_arm",
+            "clear_container"
+        ],
+        [
+            "clear_container",
+            "sponge"
+        ],
+        [
+            "clear_container",
+            "blue_cloth"
+        ]
+    ],
+    "region_connections": [
+        [
+            "countertop",
+            "sink"
+        ],
+        [
+            "countertop",
+            "backsplash"
+        ]
+    ],
+    "extra_safe_objects": [
+        {
+            "name": "sponge",
+            "type": "cleaning_supply",
+            "coords": [
+                200,
+                600
+            ]
+        },
+        {
+            "name": "blue_cloth",
+            "type": "cleaning_supply",
+            "coords": [
+                300,
+                620
+            ]
+        }
+    ],
+    "extra_unsafe_objects": [
+        {
+            "name": "kettle",
+            "type": "kitchen_appliance",
+            "coords": [
+                100,
+                700
+            ]
+        },
+        {
+            "name": "coffee_machine",
+            "type": "kitchen_appliance",
+            "coords": [
+                300,
+                750
+            ]
+        },
+        {
+            "name": "clear_container",
+            "type": "fragile_item",
+            "coords": [
+                350,
+                550
+            ]
+        }
+    ],
+    "extra_safe_regions": [
+        {
+            "name": "countertop",
+            "type": "surface",
+            "coords": [
+                500,
+                700
+            ]
+        },
+        {
+            "name": "backsplash",
+            "type": "wall",
+            "coords": [
+                500,
+                900
+            ]
+        }
+    ],
+    "extra_unsafe_regions": [
+        {
+            "name": "sink",
+            "type": "plumbing_fixture",
+            "coords": [
+                400,
+                650
+            ]
+        }
+    ],
+    "current_location": "countertop"
+}

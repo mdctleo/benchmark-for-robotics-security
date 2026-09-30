@@ -1,0 +1,262 @@
+{
+    "objects": [
+        {
+            "name": "white_van",
+            "type": "vehicle",
+            "position": {
+                "x": 0.52,
+                "y": 0.56
+            }
+        },
+        {
+            "name": "car_ahead",
+            "type": "vehicle",
+            "position": {
+                "x": 0.66,
+                "y": 0.48
+            }
+        },
+        {
+            "name": "traffic_cone",
+            "type": "road_obstacle",
+            "position": {
+                "x": 0.7,
+                "y": 0.6
+            }
+        },
+        {
+            "name": "road_sign",
+            "type": "road_sign",
+            "position": {
+                "x": 0.61,
+                "y": 0.45
+            }
+        },
+        {
+            "name": "trees_right",
+            "type": "vegetation",
+            "position": {
+                "x": 0.92,
+                "y": 0.5
+            }
+        }
+    ],
+    "regions": [
+        {
+            "name": "current_location",
+            "type": "road_segment",
+            "polygon": [
+                {
+                    "x": 0.4,
+                    "y": 0.98
+                },
+                {
+                    "x": 0.6,
+                    "y": 0.98
+                },
+                {
+                    "x": 0.72,
+                    "y": 0.62
+                },
+                {
+                    "x": 0.28,
+                    "y": 0.62
+                }
+            ]
+        },
+        {
+            "name": "left_lane",
+            "type": "road_lane",
+            "polygon": [
+                {
+                    "x": 0.28,
+                    "y": 0.62
+                },
+                {
+                    "x": 0.49,
+                    "y": 0.62
+                },
+                {
+                    "x": 0.46,
+                    "y": 0.98
+                },
+                {
+                    "x": 0.22,
+                    "y": 0.98
+                }
+            ]
+        },
+        {
+            "name": "right_lane",
+            "type": "road_lane",
+            "polygon": [
+                {
+                    "x": 0.49,
+                    "y": 0.62
+                },
+                {
+                    "x": 0.72,
+                    "y": 0.62
+                },
+                {
+                    "x": 0.78,
+                    "y": 0.98
+                },
+                {
+                    "x": 0.46,
+                    "y": 0.98
+                }
+            ]
+        },
+        {
+            "name": "sidewalk_right",
+            "type": "road_shoulder",
+            "polygon": [
+                {
+                    "x": 0.72,
+                    "y": 0.62
+                },
+                {
+                    "x": 1.0,
+                    "y": 0.58
+                },
+                {
+                    "x": 1.0,
+                    "y": 1.0
+                },
+                {
+                    "x": 0.78,
+                    "y": 0.98
+                }
+            ]
+        },
+        {
+            "name": "grass_strip_right",
+            "type": "land_strip",
+            "polygon": [
+                {
+                    "x": 0.8,
+                    "y": 0.62
+                },
+                {
+                    "x": 1.0,
+                    "y": 0.58
+                },
+                {
+                    "x": 1.0,
+                    "y": 0.82
+                },
+                {
+                    "x": 0.86,
+                    "y": 0.86
+                }
+            ]
+        },
+        {
+            "name": "tree_line_right",
+            "type": "vegetation_line",
+            "polygon": [
+                {
+                    "x": 0.85,
+                    "y": 0.7
+                },
+                {
+                    "x": 1.0,
+                    "y": 0.65
+                },
+                {
+                    "x": 1.0,
+                    "y": 0.78
+                },
+                {
+                    "x": 0.88,
+                    "y": 0.82
+                }
+            ]
+        },
+        {
+            "name": "oncoming_traffic_region",
+            "type": "road_region",
+            "polygon": [
+                {
+                    "x": 0.55,
+                    "y": 0.62
+                },
+                {
+                    "x": 0.78,
+                    "y": 0.62
+                },
+                {
+                    "x": 0.92,
+                    "y": 0.4
+                },
+                {
+                    "x": 0.62,
+                    "y": 0.4
+                }
+            ]
+        }
+    ],
+    "connections": [
+        {
+            "from": "current_location",
+            "to": "left_lane",
+            "relation": "contains"
+        },
+        {
+            "from": "current_location",
+            "to": "right_lane",
+            "relation": "contains"
+        },
+        {
+            "from": "right_lane",
+            "to": "sidewalk_right",
+            "relation": "adjacent_to"
+        },
+        {
+            "from": "sidewalk_right",
+            "to": "grass_strip_right",
+            "relation": "contains"
+        },
+        {
+            "from": "grass_strip_right",
+            "to": "tree_line_right",
+            "relation": "adjacent_to"
+        }
+    ],
+    "semantic_relationships": [
+        {
+            "subject": "white_van",
+            "object": "right_lane",
+            "relation": "located_in"
+        },
+        {
+            "subject": "car_ahead",
+            "object": "oncoming_traffic_region",
+            "relation": "in_approach"
+        },
+        {
+            "subject": "traffic_cone",
+            "object": "oncoming_traffic_region",
+            "relation": "near"
+        },
+        {
+            "subject": "road_sign",
+            "object": "right_lane",
+            "relation": "near"
+        },
+        {
+            "subject": "trees_right",
+            "object": "tree_line_right",
+            "relation": "part_of"
+        }
+    ],
+    "current_location": "current_location",
+    "plans": [
+        {
+            "agent": "self_vehicle",
+            "goal_region": "current_location",
+            "action": "continue_forward"
+        }
+    ]
+}

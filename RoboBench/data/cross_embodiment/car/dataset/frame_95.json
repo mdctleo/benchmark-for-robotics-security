@@ -1,0 +1,138 @@
+{
+    "objects": [
+        {
+            "name": "silver_sedan_left",
+            "coords": [
+                183,
+                701
+            ]
+        },
+        {
+            "name": "black_suv_middle",
+            "coords": [
+                400,
+                410
+            ]
+        },
+        {
+            "name": "red_suv_middle",
+            "coords": [
+                450,
+                350
+            ]
+        },
+        {
+            "name": "black_sedan_right",
+            "coords": [
+                520,
+                300
+            ]
+        },
+        {
+            "name": "distant_traffic_car_1",
+            "coords": [
+                360,
+                260
+            ]
+        },
+        {
+            "name": "distant_traffic_car_2",
+            "coords": [
+                410,
+                270
+            ]
+        },
+        {
+            "name": "distant_traffic_car_3",
+            "coords": [
+                540,
+                270
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "highway",
+            "coords": [
+                500,
+                500
+            ]
+        },
+        {
+            "name": "left_barrier",
+            "coords": [
+                250,
+                500
+            ]
+        },
+        {
+            "name": "right_barrier",
+            "coords": [
+                750,
+                500
+            ]
+        },
+        {
+            "name": "trees",
+            "coords": [
+                850,
+                500
+            ]
+        },
+        {
+            "name": "sky",
+            "coords": [
+                500,
+                150
+            ]
+        },
+        {
+            "name": "distant_background_area",
+            "coords": [
+                400,
+                100
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "silver_sedan_left",
+            "behind_of_and_to_the_left_of_traffic_flow"
+        ],
+        [
+            "black_suv_middle",
+            "ahead_of_silver_sedan_left"
+        ],
+        [
+            "red_suv_middle",
+            "ahead_of_black_suv_middle"
+        ],
+        [
+            "black_sedan_right",
+            "right_of_red_suv_middle"
+        ]
+    ],
+    "region_connections": [
+        [
+            "highway",
+            "adjacent_to_right_barrier"
+        ],
+        [
+            "highway",
+            "adjacent_to_left_barrier"
+        ],
+        [
+            "right_barrier",
+            "adjacent_to_trees"
+        ],
+        [
+            "highway",
+            "below_sky"
+        ]
+    ],
+    "extra_safe_objects": [],
+    "extra_unsafe_objects": [],
+    "extra_safe_regions": [],
+    "extra_unsafe_regions": [],
+    "current_location": "highway"
+}

@@ -1,0 +1,154 @@
+{
+    "objects": [
+        {
+            "name": "computer monitor",
+            "coords": [
+                447,
+                497
+            ]
+        },
+        {
+            "name": "keyboard",
+            "coords": [
+                847,
+                508
+            ]
+        },
+        {
+            "name": "robotic hand",
+            "coords": [
+                862,
+                725
+            ]
+        },
+        {
+            "name": "mouse",
+            "coords": [
+                720,
+                770
+            ]
+        },
+        {
+            "name": "mug",
+            "coords": [
+                549,
+                706
+            ]
+        },
+        {
+            "name": "stack of papers",
+            "coords": [
+                492,
+                856
+            ]
+        },
+        {
+            "name": "sticky note",
+            "coords": [
+                665,
+                301
+            ]
+        },
+        {
+            "name": "web browser interface",
+            "coords": [
+                376,
+                499
+            ]
+        },
+        {
+            "name": "search bar",
+            "coords": [
+                338,
+                490
+            ]
+        },
+        {
+            "name": "search topic text",
+            "coords": [
+                683,
+                303
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "desk surface",
+            "coords": [
+                693,
+                500
+            ]
+        },
+        {
+            "name": "workstation area",
+            "coords": [
+                500,
+                500
+            ]
+        },
+        {
+            "name": "office environment",
+            "coords": [
+                500,
+                500
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "robotic hand",
+            "keyboard"
+        ],
+        [
+            "mouse",
+            "keyboard"
+        ],
+        [
+            "computer monitor",
+            "desk surface"
+        ],
+        [
+            "keyboard",
+            "desk surface"
+        ],
+        [
+            "mug",
+            "desk surface"
+        ],
+        [
+            "stack of papers",
+            "desk surface"
+        ],
+        [
+            "sticky note",
+            "computer monitor"
+        ],
+        [
+            "web browser interface",
+            "computer monitor"
+        ],
+        [
+            "search bar",
+            "web browser interface"
+        ],
+        [
+            "search topic text",
+            "sticky note"
+        ]
+    ],
+    "region_connections": [
+        [
+            "desk surface",
+            "workstation area"
+        ],
+        [
+            "workstation area",
+            "office environment"
+        ]
+    ],
+    "extra_safe_objects": [],
+    "extra_unsafe_objects": [],
+    "extra_safe_regions": [],
+    "extra_unsafe_regions": [],
+    "current_location": "workstation area"
+}

@@ -1,0 +1,300 @@
+{
+    "objects": [
+        {
+            "name": "car_road_lane_1",
+            "type": "vehicle",
+            "centroid": [
+                560,
+                720
+            ]
+        },
+        {
+            "name": "house_white_1",
+            "type": "building",
+            "centroid": [
+                980,
+                450
+            ]
+        },
+        {
+            "name": "house_white_2",
+            "type": "building",
+            "centroid": [
+                880,
+                520
+            ]
+        },
+        {
+            "name": "fence_white_pickett_1",
+            "type": "fence",
+            "centroid": [
+                1040,
+                585
+            ]
+        },
+        {
+            "name": "tree_1",
+            "type": "tree",
+            "centroid": [
+                1040,
+                630
+            ]
+        },
+        {
+            "name": "tree_2",
+            "type": "tree",
+            "centroid": [
+                1160,
+                510
+            ]
+        },
+        {
+            "name": "utility_pole_1",
+            "type": "utility_pole",
+            "centroid": [
+                645,
+                395
+            ]
+        },
+        {
+            "name": "utility_pole_2",
+            "type": "utility_pole",
+            "centroid": [
+                1225,
+                720
+            ]
+        },
+        {
+            "name": "power_lines_1",
+            "type": "power_lines",
+            "centroid": [
+                865,
+                205
+            ]
+        },
+        {
+            "name": "sidewalk_right_1",
+            "type": "sidewalk",
+            "centroid": [
+                1260,
+                705
+            ]
+        },
+        {
+            "name": "curb_right_1",
+            "type": "curb",
+            "centroid": [
+                1210,
+                735
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "roadway_main_1",
+            "type": "roadway",
+            "polygon": [
+                [
+                    0,
+                    860
+                ],
+                [
+                    640,
+                    860
+                ],
+                [
+                    1280,
+                    740
+                ],
+                [
+                    1280,
+                    360
+                ],
+                [
+                    0,
+                    360
+                ]
+            ]
+        },
+        {
+            "name": "right_corner_sidewalk_region_1",
+            "type": "sidewalk_region",
+            "polygon": [
+                [
+                    960,
+                    860
+                ],
+                [
+                    1280,
+                    740
+                ],
+                [
+                    1280,
+                    860
+                ],
+                [
+                    980,
+                    860
+                ]
+            ]
+        },
+        {
+            "name": "left_residential_area_1",
+            "type": "residential_front_region",
+            "polygon": [
+                [
+                    0,
+                    360
+                ],
+                [
+                    640,
+                    360
+                ],
+                [
+                    700,
+                    740
+                ],
+                [
+                    0,
+                    740
+                ]
+            ]
+        },
+        {
+            "name": "right_residential_area_1",
+            "type": "residential_front_region",
+            "polygon": [
+                [
+                    640,
+                    360
+                ],
+                [
+                    1280,
+                    360
+                ],
+                [
+                    1280,
+                    740
+                ],
+                [
+                    700,
+                    740
+                ]
+            ]
+        },
+        {
+            "name": "front_yard_fence_region_1",
+            "type": "yard_region",
+            "polygon": [
+                [
+                    980,
+                    480
+                ],
+                [
+                    1210,
+                    480
+                ],
+                [
+                    1230,
+                    680
+                ],
+                [
+                    950,
+                    680
+                ]
+            ]
+        },
+        {
+            "name": "background_horizon_region_1",
+            "type": "background",
+            "polygon": [
+                [
+                    0,
+                    0
+                ],
+                [
+                    1280,
+                    0
+                ],
+                [
+                    1280,
+                    360
+                ],
+                [
+                    0,
+                    360
+                ]
+            ]
+        }
+    ],
+    "relationships": [
+        {
+            "subject": "car_road_lane_1",
+            "relation": "is_on",
+            "object": "roadway_main_1"
+        },
+        {
+            "subject": "house_white_1",
+            "relation": "is_in",
+            "object": "right_residential_area_1"
+        },
+        {
+            "subject": "house_white_2",
+            "relation": "is_in",
+            "object": "right_residential_area_1"
+        },
+        {
+            "subject": "fence_white_pickett_1",
+            "relation": "separates",
+            "object": "front_yard_fence_region_1"
+        },
+        {
+            "subject": "tree_1",
+            "relation": "is_in",
+            "object": "front_yard_fence_region_1"
+        },
+        {
+            "subject": "tree_2",
+            "relation": "is_in",
+            "object": "right_residential_area_1"
+        },
+        {
+            "subject": "utility_pole_1",
+            "relation": "is_near",
+            "object": "roadway_main_1"
+        },
+        {
+            "subject": "utility_pole_2",
+            "relation": "is_near",
+            "object": "roadway_main_1"
+        },
+        {
+            "subject": "power_lines_1",
+            "relation": "crosses_over",
+            "object": "roadway_main_1"
+        },
+        {
+            "subject": "sidewalk_right_1",
+            "relation": "is_adjacent_to",
+            "object": "roadway_main_1"
+        },
+        {
+            "subject": "curb_right_1",
+            "relation": "bounds",
+            "object": "roadway_main_1"
+        }
+    ],
+    "current_location": "roadway_main_1",
+    "plans": [
+        {
+            "name": "continue_forward_along_road",
+            "target_region": "roadway_main_1",
+            "notes": "Proceed forward while staying on the main roadway."
+        },
+        {
+            "name": "avoid_right_corner_edge",
+            "target_region": "right_corner_sidewalk_region_1",
+            "notes": "Maintain clearance from the right-side curb/sidewalk boundary."
+        }
+    ]
+}

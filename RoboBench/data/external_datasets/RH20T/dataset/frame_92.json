@@ -1,0 +1,239 @@
+{
+    "objects": [
+        {
+            "name": "object_gift_box_pink",
+            "type": "gift_box",
+            "bbox_xywh": [
+                285,
+                170,
+                105,
+                95
+            ],
+            "center": [
+                337,
+                217
+            ],
+            "description": "Pink rectangular gift box with a ribbon on top."
+        },
+        {
+            "name": "object_gift_box_yellow",
+            "type": "gift_box",
+            "bbox_xywh": [
+                430,
+                240,
+                85,
+                65
+            ],
+            "center": [
+                472,
+                272
+            ],
+            "description": "Smaller light-colored gift box near the lower right area."
+        },
+        {
+            "name": "object_phone_red",
+            "type": "smartphone",
+            "bbox_xywh": [
+                320,
+                250,
+                135,
+                70
+            ],
+            "center": [
+                387,
+                285
+            ],
+            "description": "Red smartphone-like device with a display."
+        },
+        {
+            "name": "object_paper_cup_crumpled",
+            "type": "paper_or_cloth",
+            "bbox_xywh": [
+                430,
+                320,
+                80,
+                55
+            ],
+            "center": [
+                470,
+                348
+            ],
+            "description": "Crumpled paper/cloth piece near the lower right."
+        },
+        {
+            "name": "object_recliner_control_unit",
+            "type": "control_unit",
+            "bbox_xywh": [
+                235,
+                10,
+                160,
+                95
+            ],
+            "center": [
+                315,
+                58
+            ],
+            "description": "Control unit/tablet-like device on the workstation area."
+        },
+        {
+            "name": "object_ribbon_cross_section",
+            "type": "ribbon",
+            "bbox_xywh": [
+                302,
+                175,
+                72,
+                70
+            ],
+            "center": [
+                338,
+                210
+            ],
+            "description": "Cross-shaped ribbon detail on the pink gift box."
+        },
+        {
+            "name": "object_monitor_base_or_dock_left",
+            "type": "device_base",
+            "bbox_xywh": [
+                10,
+                10,
+                95,
+                140
+            ],
+            "center": [
+                58,
+                80
+            ],
+            "description": "Dark rounded device/dock area on the left."
+        },
+        {
+            "name": "object_monitor_arm_right",
+            "type": "arm_or_pole",
+            "bbox_xywh": [
+                560,
+                40,
+                130,
+                260
+            ],
+            "center": [
+                625,
+                170
+            ],
+            "description": "Large gray vertical arm/pole on the right."
+        }
+    ],
+    "regions": [
+        {
+            "name": "ground_mat",
+            "type": "surface",
+            "bbox_xywh": [
+                70,
+                95,
+                600,
+                420
+            ],
+            "center": [
+                370,
+                305
+            ],
+            "description": "Printed colorful mat covering the tabletop/work area."
+        },
+        {
+            "name": "floor_wood_left",
+            "type": "surface",
+            "bbox_xywh": [
+                0,
+                0,
+                160,
+                520
+            ],
+            "center": [
+                80,
+                260
+            ],
+            "description": "Wooden floor area visible on the left."
+        },
+        {
+            "name": "workspace_platform_top",
+            "type": "surface",
+            "bbox_xywh": [
+                180,
+                0,
+                560,
+                140
+            ],
+            "center": [
+                460,
+                70
+            ],
+            "description": "Upper platform/work area where devices and cables are present."
+        }
+    ],
+    "semantic_relationships": [
+        {
+            "subject": "object_gift_box_pink",
+            "relation": "on",
+            "object": "ground_mat"
+        },
+        {
+            "subject": "object_gift_box_yellow",
+            "relation": "on",
+            "object": "ground_mat"
+        },
+        {
+            "subject": "object_phone_red",
+            "relation": "on",
+            "object": "ground_mat"
+        },
+        {
+            "subject": "object_paper_cup_crumpled",
+            "relation": "on",
+            "object": "ground_mat"
+        },
+        {
+            "subject": "object_ribbon_cross_section",
+            "relation": "on_top_of",
+            "object": "object_gift_box_pink"
+        },
+        {
+            "subject": "object_recliner_control_unit",
+            "relation": "on",
+            "object": "workspace_platform_top"
+        },
+        {
+            "subject": "object_monitor_base_or_dock_left",
+            "relation": "near",
+            "object": "workspace_platform_top"
+        },
+        {
+            "subject": "object_monitor_arm_right",
+            "relation": "near",
+            "object": "ground_mat"
+        },
+        {
+            "subject": "object_phone_red",
+            "relation": "near",
+            "object": "object_gift_box_pink"
+        },
+        {
+            "subject": "object_gift_box_yellow",
+            "relation": "near",
+            "object": "object_paper_cup_crumpled"
+        }
+    ],
+    "current_location": {
+        "name": "ground_mat",
+        "note": "The main activity/objects lie on the colorful mat."
+    },
+    "plans": [
+        {
+            "name": "plan_sort_items",
+            "targets": [
+                "object_gift_box_pink",
+                "object_phone_red",
+                "object_gift_box_yellow",
+                "object_paper_cup_crumpled"
+            ],
+            "reference_region": "ground_mat"
+        }
+    ]
+}

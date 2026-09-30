@@ -1,0 +1,199 @@
+{
+    "objects": [
+        {
+            "name": "robot_arm",
+            "type": "robot",
+            "center": [
+                650,
+                180
+            ]
+        },
+        {
+            "name": "end_effector_gripper",
+            "type": "tool",
+            "center": [
+                650,
+                220
+            ]
+        },
+        {
+            "name": "worktable",
+            "type": "platform",
+            "center": [
+                620,
+                330
+            ]
+        },
+        {
+            "name": "circular_housing_left",
+            "type": "machine_component",
+            "center": [
+                120,
+                140
+            ]
+        },
+        {
+            "name": "circular_housing_right",
+            "type": "machine_component",
+            "center": [
+                920,
+                120
+            ]
+        },
+        {
+            "name": "blue_circular_pad",
+            "type": "pad",
+            "center": [
+                890,
+                160
+            ]
+        },
+        {
+            "name": "pipe_or_duct_right",
+            "type": "duct",
+            "center": [
+                1080,
+                250
+            ]
+        },
+        {
+            "name": "light_red_control_button",
+            "type": "control",
+            "center": [
+                250,
+                155
+            ]
+        },
+        {
+            "name": "orange_switch",
+            "type": "control",
+            "center": [
+                290,
+                185
+            ]
+        },
+        {
+            "name": "metal_frame_lower_left",
+            "type": "structure",
+            "center": [
+                150,
+                270
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "glass_panel_work_area",
+            "type": "work_area",
+            "center": [
+                620,
+                330
+            ],
+            "bounding_box": [
+                190,
+                210,
+                1050,
+                640
+            ]
+        },
+        {
+            "name": "transparent_glass_sheet_on_table",
+            "type": "surface",
+            "center": [
+                620,
+                380
+            ],
+            "bounding_box": [
+                240,
+                240,
+                1000,
+                650
+            ]
+        },
+        {
+            "name": "mesh_pad_on_glass",
+            "type": "object_region",
+            "center": [
+                630,
+                360
+            ],
+            "bounding_box": [
+                560,
+                320,
+                720,
+                410
+            ]
+        }
+    ],
+    "relationships": [
+        {
+            "from": "robot_arm",
+            "to": "end_effector_gripper",
+            "relation": "has_tool"
+        },
+        {
+            "from": "end_effector_gripper",
+            "to": "mesh_pad_on_glass",
+            "relation": "positioned_near"
+        },
+        {
+            "from": "mesh_pad_on_glass",
+            "to": "transparent_glass_sheet_on_table",
+            "relation": "located_on"
+        },
+        {
+            "from": "transparent_glass_sheet_on_table",
+            "to": "glass_panel_work_area",
+            "relation": "occupies_area_within"
+        },
+        {
+            "from": "worktable",
+            "to": "glass_panel_work_area",
+            "relation": "supports"
+        },
+        {
+            "from": "pipe_or_duct_right",
+            "to": "worktable",
+            "relation": "adjacent_to"
+        },
+        {
+            "from": "circular_housing_left",
+            "to": "worktable",
+            "relation": "adjacent_to"
+        },
+        {
+            "from": "circular_housing_right",
+            "to": "worktable",
+            "relation": "adjacent_to"
+        },
+        {
+            "from": "blue_circular_pad",
+            "to": "robot_arm",
+            "relation": "mounted_near"
+        },
+        {
+            "from": "light_red_control_button",
+            "to": "metal_frame_lower_left",
+            "relation": "on_support_structure"
+        },
+        {
+            "from": "orange_switch",
+            "to": "metal_frame_lower_left",
+            "relation": "on_support_structure"
+        }
+    ],
+    "current_location": {
+        "region": "glass_panel_work_area",
+        "note": "Top-down reference: the robot operation area is centered over the glass panel work area."
+    },
+    "plans": [
+        {
+            "plan_name": "place_mesh_pad",
+            "start_region": "glass_panel_work_area",
+            "target_region": "mesh_pad_on_glass",
+            "involves": [
+                "end_effector_gripper"
+            ]
+        }
+    ]
+}

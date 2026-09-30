@@ -1,0 +1,189 @@
+{
+    "objects": [
+        {
+            "name": "black_device_1",
+            "type": "device",
+            "bbox": [
+                330,
+                240,
+                510,
+                410
+            ],
+            "center": [
+                420,
+                325
+            ]
+        },
+        {
+            "name": "black_device_2",
+            "type": "phone_like_device",
+            "bbox": [
+                440,
+                160,
+                610,
+                290
+            ],
+            "center": [
+                525,
+                225
+            ]
+        },
+        {
+            "name": "yellow_black_tool",
+            "type": "tool",
+            "bbox": [
+                390,
+                410,
+                510,
+                540
+            ],
+            "center": [
+                450,
+                475
+            ]
+        },
+        {
+            "name": "small_white_marker_1",
+            "type": "marker",
+            "bbox": [
+                620,
+                200,
+                690,
+                260
+            ],
+            "center": [
+                655,
+                230
+            ]
+        },
+        {
+            "name": "small_white_marker_2",
+            "type": "marker",
+            "bbox": [
+                655,
+                370,
+                720,
+                430
+            ],
+            "center": [
+                687,
+                400
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "table_top_1",
+            "type": "surface",
+            "polygon": [
+                [
+                    0,
+                    0
+                ],
+                [
+                    800,
+                    0
+                ],
+                [
+                    800,
+                    600
+                ],
+                [
+                    0,
+                    600
+                ]
+            ],
+            "center": [
+                400,
+                300
+            ]
+        },
+        {
+            "name": "current_location",
+            "type": "workspace_area",
+            "polygon": [
+                [
+                    300,
+                    200
+                ],
+                [
+                    650,
+                    200
+                ],
+                [
+                    650,
+                    520
+                ],
+                [
+                    300,
+                    520
+                ]
+            ],
+            "center": [
+                475,
+                360
+            ]
+        }
+    ],
+    "semantic_relationships": [
+        {
+            "relation": "on_top_of",
+            "from": "black_device_1",
+            "to": "table_top_1"
+        },
+        {
+            "relation": "on_top_of",
+            "from": "black_device_2",
+            "to": "table_top_1"
+        },
+        {
+            "relation": "on_top_of",
+            "from": "yellow_black_tool",
+            "to": "table_top_1"
+        },
+        {
+            "relation": "on_top_of",
+            "from": "small_white_marker_1",
+            "to": "table_top_1"
+        },
+        {
+            "relation": "on_top_of",
+            "from": "small_white_marker_2",
+            "to": "table_top_1"
+        },
+        {
+            "relation": "within",
+            "from": "black_device_1",
+            "to": "current_location"
+        },
+        {
+            "relation": "within",
+            "from": "black_device_2",
+            "to": "current_location"
+        },
+        {
+            "relation": "within",
+            "from": "yellow_black_tool",
+            "to": "current_location"
+        },
+        {
+            "relation": "adjacent_to",
+            "from": "black_device_1",
+            "to": "black_device_2"
+        },
+        {
+            "relation": "near",
+            "from": "small_white_marker_1",
+            "to": "black_device_2"
+        },
+        {
+            "relation": "near",
+            "from": "small_white_marker_2",
+            "to": "yellow_black_tool"
+        }
+    ],
+    "current_location": {
+        "name": "current_location"
+    },
+    "plans": []
+}

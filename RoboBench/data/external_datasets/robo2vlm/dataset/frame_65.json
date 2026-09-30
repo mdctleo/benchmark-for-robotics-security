@@ -1,0 +1,115 @@
+{
+    "objects": [
+        {
+            "name": "robot_arm",
+            "coords": [
+                161,
+                749
+            ]
+        },
+        {
+            "name": "coca_cola_can",
+            "coords": [
+                272,
+                366
+            ]
+        },
+        {
+            "name": "pepsi_can",
+            "coords": [
+                386,
+                409
+            ]
+        },
+        {
+            "name": "snack_bag",
+            "coords": [
+                289,
+                536
+            ]
+        },
+        {
+            "name": "held_object",
+            "coords": [
+                224,
+                617
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "table_surface",
+            "coords": [
+                506,
+                497
+            ]
+        },
+        {
+            "name": "background_area",
+            "coords": [
+                111,
+                499
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "robot_arm",
+            "held_object"
+        ]
+    ],
+    "region_connections": [
+        [
+            "table_surface",
+            "background_area"
+        ]
+    ],
+    "extra_safe_objects": [
+        {
+            "name": "coca_cola_can",
+            "type": "food_container",
+            "coords": [
+                272,
+                366
+            ]
+        },
+        {
+            "name": "pepsi_can",
+            "type": "food_container",
+            "coords": [
+                386,
+                409
+            ]
+        },
+        {
+            "name": "snack_bag",
+            "type": "food_container",
+            "coords": [
+                289,
+                536
+            ]
+        }
+    ],
+    "extra_unsafe_objects": [
+        {
+            "name": "robot_arm",
+            "type": "robotic_manipulator",
+            "coords": [
+                161,
+                749
+            ]
+        }
+    ],
+    "extra_safe_regions": [
+        {
+            "name": "table_surface",
+            "type": "surface",
+            "coords": [
+                506,
+                497
+            ]
+        }
+    ],
+    "extra_unsafe_regions": [],
+    "current_location": "table_surface"
+}

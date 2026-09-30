@@ -1,0 +1,241 @@
+{
+    "objects": [
+        {
+            "name": "counter",
+            "type": "furniture",
+            "bbox": {
+                "x": 160,
+                "y": 250,
+                "w": 780,
+                "h": 420
+            }
+        },
+        {
+            "name": "kitchen_item_basket_green",
+            "type": "container",
+            "bbox": {
+                "x": 220,
+                "y": 290,
+                "w": 360,
+                "h": 170
+            }
+        },
+        {
+            "name": "tortilla_chips_bag_nacho",
+            "type": "food_package",
+            "bbox": {
+                "x": 640,
+                "y": 300,
+                "w": 170,
+                "h": 150
+            }
+        },
+        {
+            "name": "chips_bag_pircor",
+            "type": "food_package",
+            "bbox": {
+                "x": 810,
+                "y": 340,
+                "w": 190,
+                "h": 230
+            }
+        },
+        {
+            "name": "chips_bag_additional_left",
+            "type": "food_package",
+            "bbox": {
+                "x": 420,
+                "y": 250,
+                "w": 210,
+                "h": 150
+            }
+        },
+        {
+            "name": "crackers_box",
+            "type": "food_package",
+            "bbox": {
+                "x": 470,
+                "y": 430,
+                "w": 170,
+                "h": 110
+            }
+        },
+        {
+            "name": "small_box_center_left",
+            "type": "container",
+            "bbox": {
+                "x": 300,
+                "y": 420,
+                "w": 150,
+                "h": 140
+            }
+        },
+        {
+            "name": "cans_or_jars_left",
+            "type": "food_items",
+            "bbox": {
+                "x": 310,
+                "y": 450,
+                "w": 120,
+                "h": 110
+            }
+        },
+        {
+            "name": "white_appliance",
+            "type": "appliance",
+            "bbox": {
+                "x": 640,
+                "y": 220,
+                "w": 240,
+                "h": 260
+            }
+        },
+        {
+            "name": "bag_or_package_top_center",
+            "type": "food_package",
+            "bbox": {
+                "x": 440,
+                "y": 200,
+                "w": 190,
+                "h": 120
+            }
+        },
+        {
+            "name": "paper_towel_roll_or_tall_item_top_left",
+            "type": "household_item",
+            "bbox": {
+                "x": 0,
+                "y": 240,
+                "w": 140,
+                "h": 240
+            }
+        },
+        {
+            "name": "green_plate_or_container_top_left",
+            "type": "plate_or_tray",
+            "bbox": {
+                "x": 70,
+                "y": 300,
+                "w": 160,
+                "h": 150
+            }
+        },
+        {
+            "name": "yellow_textured_bag_corner_right",
+            "type": "food_package",
+            "bbox": {
+                "x": 760,
+                "y": 260,
+                "w": 210,
+                "h": 120
+            }
+        }
+    ],
+    "regions": [
+        {
+            "name": "counter_surface",
+            "type": "surface",
+            "coord": {
+                "x": 550,
+                "y": 450
+            },
+            "contains": [
+                "kitchen_item_basket_green",
+                "tortilla_chips_bag_nacho",
+                "chips_bag_pircor",
+                "chips_bag_additional_left",
+                "crackers_box",
+                "small_box_center_left",
+                "cans_or_jars_left",
+                "white_appliance",
+                "bag_or_package_top_center",
+                "yellow_textured_bag_corner_right"
+            ],
+            "on_top_of": [
+                "counter"
+            ]
+        },
+        {
+            "name": "kitchen_item_basket_green_region",
+            "type": "container_region",
+            "coord": {
+                "x": 400,
+                "y": 360
+            },
+            "contains": [
+                "crackers_box",
+                "chips_bag_additional_left"
+            ],
+            "on_top_of": [
+                "counter"
+            ]
+        }
+    ],
+    "semantic_relationships": [
+        {
+            "subject": "kitchen_item_basket_green",
+            "predicate": "located_on",
+            "object": "counter"
+        },
+        {
+            "subject": "tortilla_chips_bag_nacho",
+            "predicate": "located_on",
+            "object": "counter"
+        },
+        {
+            "subject": "chips_bag_pircor",
+            "predicate": "located_on",
+            "object": "counter"
+        },
+        {
+            "subject": "white_appliance",
+            "predicate": "located_on",
+            "object": "counter"
+        },
+        {
+            "subject": "small_box_center_left",
+            "predicate": "located_on",
+            "object": "counter"
+        },
+        {
+            "subject": "cans_or_jars_left",
+            "predicate": "located_in_or_on",
+            "object": "small_box_center_left"
+        },
+        {
+            "subject": "bag_or_package_top_center",
+            "predicate": "located_on",
+            "object": "counter"
+        },
+        {
+            "subject": "crackers_box",
+            "predicate": "located_in_or_on",
+            "object": "kitchen_item_basket_green"
+        },
+        {
+            "subject": "chips_bag_additional_left",
+            "predicate": "located_in_or_on",
+            "object": "kitchen_item_basket_green"
+        },
+        {
+            "subject": "yellow_textured_bag_corner_right",
+            "predicate": "located_on",
+            "object": "counter"
+        }
+    ],
+    "state": [
+        {
+            "name": "scene_overview",
+            "current_location": "counter_surface",
+            "plans": [
+                {
+                    "plan_name": "organize_items_by_container",
+                    "targets": [
+                        "kitchen_item_basket_green",
+                        "small_box_center_left"
+                    ]
+                }
+            ]
+        }
+    ]
+}

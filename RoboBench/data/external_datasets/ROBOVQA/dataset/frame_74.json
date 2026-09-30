@@ -1,0 +1,152 @@
+{
+    "objects": [
+        {
+            "name": "table",
+            "type": "furniture",
+            "bbox": {
+                "top_left": [
+                    0,
+                    0
+                ],
+                "bottom_right": [
+                    0,
+                    0
+                ]
+            }
+        },
+        {
+            "name": "white_pipe",
+            "type": "object",
+            "bbox": {
+                "top_left": [
+                    0,
+                    0
+                ],
+                "bottom_right": [
+                    0,
+                    0
+                ]
+            }
+        },
+        {
+            "name": "box_brown",
+            "type": "container",
+            "bbox": {
+                "top_left": [
+                    0,
+                    0
+                ],
+                "bottom_right": [
+                    0,
+                    0
+                ]
+            }
+        },
+        {
+            "name": "box_sharp_corner",
+            "type": "container",
+            "bbox": {
+                "top_left": [
+                    0,
+                    0
+                ],
+                "bottom_right": [
+                    0,
+                    0
+                ]
+            }
+        },
+        {
+            "name": "cardboard_interior",
+            "type": "material",
+            "bbox": {
+                "top_left": [
+                    0,
+                    0
+                ],
+                "bottom_right": [
+                    0,
+                    0
+                ]
+            }
+        }
+    ],
+    "regions": [
+        {
+            "name": "floor_area",
+            "type": "floor",
+            "polygon": [
+                [
+                    0,
+                    0
+                ],
+                [
+                    640,
+                    0
+                ],
+                [
+                    640,
+                    480
+                ],
+                [
+                    0,
+                    480
+                ]
+            ]
+        },
+        {
+            "name": "table_top_area",
+            "type": "surface",
+            "polygon": [
+                [
+                    90,
+                    60
+                ],
+                [
+                    520,
+                    60
+                ],
+                [
+                    520,
+                    230
+                ],
+                [
+                    90,
+                    230
+                ]
+            ]
+        }
+    ],
+    "semantic_relationships": [
+        {
+            "type": "supports",
+            "source": "white_pipe",
+            "target": "table_top_area"
+        },
+        {
+            "type": "located_on",
+            "source": "box_brown",
+            "target": "table_top_area"
+        },
+        {
+            "type": "located_under",
+            "source": "box_brown",
+            "target": "table"
+        },
+        {
+            "type": "adjacent_to",
+            "source": "box_sharp_corner",
+            "target": "box_brown"
+        },
+        {
+            "type": "located_in",
+            "source": "cardboard_interior",
+            "target": "box_sharp_corner"
+        }
+    ],
+    "current_location": {
+        "object": "white_pipe",
+        "region": "table_top_area"
+    },
+    "plans": []
+}

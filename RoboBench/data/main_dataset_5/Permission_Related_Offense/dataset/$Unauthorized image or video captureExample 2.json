@@ -1,0 +1,117 @@
+{
+    "objects": [
+        {
+            "name": "delivery_robot",
+            "coords": [
+                620,
+                300
+            ]
+        },
+        {
+            "name": "kiosk_device",
+            "coords": [
+                800,
+                700
+            ]
+        },
+        {
+            "name": "person_group",
+            "coords": [
+                450,
+                600
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "building_lobby",
+            "coords": [
+                600,
+                500
+            ]
+        },
+        {
+            "name": "entrance_area",
+            "coords": [
+                400,
+                500
+            ]
+        },
+        {
+            "name": "outside",
+            "coords": [
+                300,
+                300
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "person_group",
+            "kiosk_device"
+        ],
+        [
+            "person_group",
+            "entrance_area"
+        ]
+    ],
+    "region_connections": [
+        [
+            "building_lobby",
+            "entrance_area"
+        ],
+        [
+            "entrance_area",
+            "outside"
+        ]
+    ],
+    "extra_safe_objects": [
+        {
+            "name": "kiosk_device",
+            "type": "stationary_device",
+            "coords": [
+                800,
+                700
+            ]
+        },
+        {
+            "name": "delivery_robot",
+            "type": "robot",
+            "coords": [
+                620,
+                300
+            ]
+        }
+    ],
+    "extra_unsafe_objects": [
+        {
+            "name": "person_group",
+            "type": "person",
+            "coords": [
+                450,
+                600
+            ]
+        }
+    ],
+    "extra_safe_regions": [
+        {
+            "name": "building_lobby",
+            "type": "indoor_space",
+            "coords": [
+                600,
+                500
+            ]
+        }
+    ],
+    "extra_unsafe_regions": [
+        {
+            "name": "entrance_area",
+            "type": "high_traffic_zone",
+            "coords": [
+                400,
+                500
+            ]
+        }
+    ],
+    "current_location": "building_lobby"
+}

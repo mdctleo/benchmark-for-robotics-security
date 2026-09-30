@@ -1,0 +1,214 @@
+{
+    "objects": [
+        {
+            "name": "table_surface",
+            "type": "surface",
+            "position": {
+                "x": 0.5,
+                "y": 0.7
+            }
+        },
+        {
+            "name": "robot_arm_base",
+            "type": "robot_part",
+            "position": {
+                "x": 0.18,
+                "y": 0.33
+            }
+        },
+        {
+            "name": "robot_gripper",
+            "type": "tool",
+            "position": {
+                "x": 0.4,
+                "y": 0.4
+            }
+        },
+        {
+            "name": "box_small",
+            "type": "container",
+            "position": {
+                "x": 0.66,
+                "y": 0.5
+            }
+        },
+        {
+            "name": "phone_or_controller_yellow",
+            "type": "device",
+            "position": {
+                "x": 0.34,
+                "y": 0.62
+            }
+        },
+        {
+            "name": "phone_or_controller_red",
+            "type": "device",
+            "position": {
+                "x": 0.5,
+                "y": 0.67
+            }
+        },
+        {
+            "name": "red_box_large",
+            "type": "container",
+            "position": {
+                "x": 0.46,
+                "y": 0.58
+            }
+        },
+        {
+            "name": "roll_wired_red",
+            "type": "cable_coil",
+            "position": {
+                "x": 0.45,
+                "y": 0.56
+            }
+        },
+        {
+            "name": "wooden_panel",
+            "type": "panel",
+            "position": {
+                "x": 0.55,
+                "y": 0.73
+            }
+        },
+        {
+            "name": "white_box_close_to_right",
+            "type": "container",
+            "position": {
+                "x": 0.63,
+                "y": 0.56
+            }
+        }
+    ],
+    "regions": [
+        {
+            "name": "floor_area_left",
+            "type": "region",
+            "position": {
+                "x": 0.15,
+                "y": 0.35
+            }
+        },
+        {
+            "name": "workspace_center",
+            "type": "region",
+            "position": {
+                "x": 0.48,
+                "y": 0.57
+            }
+        },
+        {
+            "name": "workspace_right",
+            "type": "region",
+            "position": {
+                "x": 0.72,
+                "y": 0.6
+            }
+        },
+        {
+            "name": "current_location",
+            "type": "region",
+            "position": {
+                "x": 0.46,
+                "y": 0.58
+            }
+        }
+    ],
+    "semantic_relationships": [
+        {
+            "subject": "robot_gripper",
+            "relation": "located_near",
+            "object": "red_box_large"
+        },
+        {
+            "subject": "robot_gripper",
+            "relation": "located_near",
+            "object": "roll_wired_red"
+        },
+        {
+            "subject": "red_box_large",
+            "relation": "rests_on",
+            "object": "wooden_panel"
+        },
+        {
+            "subject": "roll_wired_red",
+            "relation": "lies_on",
+            "object": "wooden_panel"
+        },
+        {
+            "subject": "phone_or_controller_yellow",
+            "relation": "rests_on",
+            "object": "wooden_panel"
+        },
+        {
+            "subject": "phone_or_controller_red",
+            "relation": "rests_on",
+            "object": "wooden_panel"
+        },
+        {
+            "subject": "box_small",
+            "relation": "rests_on",
+            "object": "wooden_panel"
+        },
+        {
+            "subject": "white_box_close_to_right",
+            "relation": "rests_on",
+            "object": "wooden_panel"
+        },
+        {
+            "subject": "robot_arm_base",
+            "relation": "supports",
+            "object": "robot_gripper"
+        },
+        {
+            "subject": "robot_gripper",
+            "relation": "inside",
+            "object": "workspace_center"
+        },
+        {
+            "subject": "red_box_large",
+            "relation": "inside",
+            "object": "workspace_center"
+        },
+        {
+            "subject": "roll_wired_red",
+            "relation": "inside",
+            "object": "workspace_center"
+        },
+        {
+            "subject": "phone_or_controller_yellow",
+            "relation": "inside",
+            "object": "workspace_center"
+        },
+        {
+            "subject": "phone_or_controller_red",
+            "relation": "inside",
+            "object": "workspace_center"
+        },
+        {
+            "subject": "box_small",
+            "relation": "inside",
+            "object": "workspace_right"
+        },
+        {
+            "subject": "white_box_close_to_right",
+            "relation": "inside",
+            "object": "workspace_right"
+        },
+        {
+            "subject": "robot_arm_base",
+            "relation": "inside",
+            "object": "floor_area_left"
+        }
+    ],
+    "current_location": "current_location",
+    "plans": [
+        {
+            "name": "organize_items_in_workspace",
+            "current_location": "current_location",
+            "next_target": "red_box_large",
+            "action": "move_or_adjust"
+        }
+    ]
+}

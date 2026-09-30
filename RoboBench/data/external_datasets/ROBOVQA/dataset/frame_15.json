@@ -1,0 +1,147 @@
+{
+    "objects": [
+        {
+            "name": "hotel_room_counter",
+            "type": "counter_top",
+            "coordinates": {
+                "x": 520,
+                "y": 980
+            }
+        },
+        {
+            "name": "tray_in_snacks_area",
+            "type": "snack_tray",
+            "coordinates": {
+                "x": 120,
+                "y": 940
+            }
+        },
+        {
+            "name": "snack_bag_1",
+            "type": "packaged_snack",
+            "coordinates": {
+                "x": 150,
+                "y": 1030
+            }
+        },
+        {
+            "name": "snack_bag_2",
+            "type": "packaged_snack",
+            "coordinates": {
+                "x": 200,
+                "y": 1040
+            }
+        },
+        {
+            "name": "snack_bag_3",
+            "type": "packaged_snack",
+            "coordinates": {
+                "x": 250,
+                "y": 1010
+            }
+        },
+        {
+            "name": "snack_bag_4",
+            "type": "packaged_snack",
+            "coordinates": {
+                "x": 90,
+                "y": 1080
+            }
+        }
+    ],
+    "regions": [
+        {
+            "name": "current_location",
+            "type": "indoor_area",
+            "coordinates": {
+                "x": 460,
+                "y": 980
+            }
+        },
+        {
+            "name": "left_snacks_region",
+            "type": "counter_area",
+            "coordinates": {
+                "x": 210,
+                "y": 1010
+            }
+        },
+        {
+            "name": "central_conduit_region",
+            "type": "machine_area",
+            "coordinates": {
+                "x": 470,
+                "y": 980
+            }
+        },
+        {
+            "name": "floor_door_mat_region",
+            "type": "mat_region",
+            "coordinates": {
+                "x": 520,
+                "y": 1030
+            }
+        }
+    ],
+    "semantic_relationships": [
+        {
+            "relation": "located_in",
+            "from": "tray_in_snacks_area",
+            "to": "left_snacks_region"
+        },
+        {
+            "relation": "located_in",
+            "from": "snack_bag_1",
+            "to": "left_snacks_region"
+        },
+        {
+            "relation": "located_in",
+            "from": "snack_bag_2",
+            "to": "left_snacks_region"
+        },
+        {
+            "relation": "located_in",
+            "from": "snack_bag_3",
+            "to": "left_snacks_region"
+        },
+        {
+            "relation": "located_in",
+            "from": "snack_bag_4",
+            "to": "left_snacks_region"
+        },
+        {
+            "relation": "supported_by",
+            "from": "hotel_room_counter",
+            "to": "current_location"
+        },
+        {
+            "relation": "occupies_region",
+            "from": "hotel_room_counter",
+            "to": "current_location"
+        },
+        {
+            "relation": "contains",
+            "from": "left_snacks_region",
+            "to": "current_location"
+        },
+        {
+            "relation": "contains",
+            "from": "central_conduit_region",
+            "to": "current_location"
+        },
+        {
+            "relation": "contains",
+            "from": "floor_door_mat_region",
+            "to": "current_location"
+        },
+        {
+            "relation": "adjacent_to",
+            "from": "left_snacks_region",
+            "to": "floor_door_mat_region"
+        }
+    ],
+    "agent_state": {
+        "current_location": "current_location"
+    },
+    "plans": []
+}

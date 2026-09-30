@@ -1,0 +1,154 @@
+{
+    "objects": [
+        {
+            "name": "robot_arm",
+            "coords": [
+                650,
+                750
+            ]
+        },
+        {
+            "name": "blue_can",
+            "coords": [
+                600,
+                560
+            ]
+        },
+        {
+            "name": "white_bowl",
+            "coords": [
+                100,
+                350
+            ]
+        },
+        {
+            "name": "green_bag",
+            "coords": [
+                180,
+                570
+            ]
+        },
+        {
+            "name": "cardboard_box",
+            "coords": [
+                500,
+                200
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "drawer_unit_top",
+            "coords": [
+                200,
+                450
+            ]
+        },
+        {
+            "name": "drawer_open",
+            "coords": [
+                650,
+                450
+            ]
+        },
+        {
+            "name": "drawer_unit",
+            "coords": [
+                450,
+                450
+            ]
+        },
+        {
+            "name": "floor",
+            "coords": [
+                800,
+                500
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "robot_arm",
+            "blue_can"
+        ],
+        [
+            "white_bowl",
+            "drawer_unit_top"
+        ],
+        [
+            "green_bag",
+            "drawer_unit_top"
+        ],
+        [
+            "blue_can",
+            "drawer_open"
+        ],
+        [
+            "cardboard_box",
+            "floor"
+        ]
+    ],
+    "region_connections": [
+        [
+            "drawer_unit_top",
+            "drawer_unit"
+        ],
+        [
+            "drawer_open",
+            "drawer_unit"
+        ],
+        [
+            "floor",
+            "drawer_unit"
+        ]
+    ],
+    "extra_safe_objects": [
+        {
+            "name": "white_bowl",
+            "type": "kitchen_item",
+            "coords": [
+                100,
+                350
+            ]
+        },
+        {
+            "name": "green_bag",
+            "type": "snack_package",
+            "coords": [
+                180,
+                570
+            ]
+        }
+    ],
+    "extra_unsafe_objects": [
+        {
+            "name": "blue_can",
+            "type": "manipulated_item",
+            "coords": [
+                600,
+                560
+            ]
+        }
+    ],
+    "extra_safe_regions": [
+        {
+            "name": "drawer_unit_top",
+            "type": "surface",
+            "coords": [
+                200,
+                450
+            ]
+        }
+    ],
+    "extra_unsafe_regions": [
+        {
+            "name": "drawer_open",
+            "type": "manipulation_zone",
+            "coords": [
+                650,
+                450
+            ]
+        }
+    ],
+    "current_location": "drawer_open"
+}

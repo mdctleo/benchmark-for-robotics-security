@@ -1,0 +1,212 @@
+{
+    "objects": [
+        {
+            "name": "beige_bowl",
+            "type": "bowl",
+            "color": "white/beige",
+            "centroid": [
+                270,
+                235
+            ]
+        },
+        {
+            "name": "orange_ball_1",
+            "type": "ball",
+            "color": "orange",
+            "centroid": [
+                230,
+                310
+            ]
+        },
+        {
+            "name": "orange_ball_2",
+            "type": "ball",
+            "color": "orange",
+            "centroid": [
+                265,
+                330
+            ]
+        },
+        {
+            "name": "orange_ball_3",
+            "type": "ball",
+            "color": "orange",
+            "centroid": [
+                220,
+                355
+            ]
+        },
+        {
+            "name": "orange_ball_4",
+            "type": "ball",
+            "color": "orange",
+            "centroid": [
+                300,
+                375
+            ]
+        },
+        {
+            "name": "blue_cup",
+            "type": "cup",
+            "color": "blue",
+            "centroid": [
+                505,
+                355
+            ]
+        },
+        {
+            "name": "orange_cup",
+            "type": "cup",
+            "color": "orange",
+            "centroid": [
+                605,
+                385
+            ]
+        },
+        {
+            "name": "green_cup",
+            "type": "cup",
+            "color": "green",
+            "centroid": [
+                650,
+                395
+            ]
+        },
+        {
+            "name": "red_cup",
+            "type": "cup",
+            "color": "red",
+            "centroid": [
+                735,
+                455
+            ]
+        },
+        {
+            "name": "white_gun_like_device",
+            "type": "device",
+            "color": "white",
+            "centroid": [
+                430,
+                215
+            ]
+        },
+        {
+            "name": "yellow_strap_belt",
+            "type": "strap",
+            "color": "yellow",
+            "centroid": [
+                410,
+                240
+            ]
+        },
+        {
+            "name": "background_platform",
+            "type": "surface",
+            "color": "grey",
+            "centroid": [
+                470,
+                515
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "grey_table_surface",
+            "type": "tabletop",
+            "centroid": [
+                500,
+                430
+            ]
+        }
+    ],
+    "semantic_relationships": [
+        {
+            "from": "orange_ball_1",
+            "to": "grey_table_surface",
+            "relation": "on"
+        },
+        {
+            "from": "orange_ball_2",
+            "to": "grey_table_surface",
+            "relation": "on"
+        },
+        {
+            "from": "orange_ball_3",
+            "to": "grey_table_surface",
+            "relation": "on"
+        },
+        {
+            "from": "orange_ball_4",
+            "to": "grey_table_surface",
+            "relation": "on"
+        },
+        {
+            "from": "beige_bowl",
+            "to": "grey_table_surface",
+            "relation": "on"
+        },
+        {
+            "from": "blue_cup",
+            "to": "grey_table_surface",
+            "relation": "on"
+        },
+        {
+            "from": "orange_cup",
+            "to": "grey_table_surface",
+            "relation": "on"
+        },
+        {
+            "from": "green_cup",
+            "to": "grey_table_surface",
+            "relation": "on"
+        },
+        {
+            "from": "red_cup",
+            "to": "grey_table_surface",
+            "relation": "on"
+        },
+        {
+            "from": "white_gun_like_device",
+            "to": "grey_table_surface",
+            "relation": "near"
+        },
+        {
+            "from": "yellow_strap_belt",
+            "to": "white_gun_like_device",
+            "relation": "attached_to"
+        },
+        {
+            "from": "beige_bowl",
+            "to": "orange_ball_2",
+            "relation": "contains_or_supports_near"
+        }
+    ],
+    "spatial_plans": [
+        {
+            "plan_name": "sort_or_move_balls_to_cups",
+            "current_location": "grey_table_surface",
+            "steps": [
+                {
+                    "action": "move",
+                    "target": "orange_ball_1",
+                    "destination": "blue_cup"
+                },
+                {
+                    "action": "move",
+                    "target": "orange_ball_2",
+                    "destination": "orange_cup"
+                },
+                {
+                    "action": "move",
+                    "target": "orange_ball_3",
+                    "destination": "green_cup"
+                },
+                {
+                    "action": "move",
+                    "target": "orange_ball_4",
+                    "destination": "red_cup"
+                }
+            ]
+        }
+    ]
+}

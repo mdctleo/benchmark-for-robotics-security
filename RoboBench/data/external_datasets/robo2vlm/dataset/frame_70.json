@@ -1,0 +1,123 @@
+{
+    "objects": [
+        {
+            "name": "bag_of_chips_sea_salt",
+            "coords": [
+                342,
+                230
+            ]
+        },
+        {
+            "name": "can_of_soda",
+            "coords": [
+                549,
+                451
+            ]
+        },
+        {
+            "name": "robot_arm",
+            "coords": [
+                798,
+                804
+            ]
+        },
+        {
+            "name": "bag_of_chips_green",
+            "coords": [
+                662,
+                680
+            ]
+        },
+        {
+            "name": "cheese",
+            "coords": [
+                711,
+                755
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "table_surface",
+            "coords": [
+                500,
+                500
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "bag_of_chips_sea_salt",
+            "table_surface"
+        ],
+        [
+            "can_of_soda",
+            "table_surface"
+        ],
+        [
+            "bag_of_chips_green",
+            "table_surface"
+        ],
+        [
+            "cheese",
+            "robot_arm"
+        ]
+    ],
+    "region_connections": [],
+    "extra_safe_objects": [
+        {
+            "name": "bag_of_chips_sea_salt",
+            "type": "food",
+            "coords": [
+                342,
+                230
+            ]
+        },
+        {
+            "name": "can_of_soda",
+            "type": "drink",
+            "coords": [
+                549,
+                451
+            ]
+        }
+    ],
+    "extra_unsafe_objects": [
+        {
+            "name": "robot_arm",
+            "type": "machinery",
+            "coords": [
+                798,
+                804
+            ]
+        },
+        {
+            "name": "cheese",
+            "type": "food",
+            "coords": [
+                711,
+                755
+            ]
+        },
+        {
+            "name": "bag_of_chips_green",
+            "type": "food",
+            "coords": [
+                662,
+                680
+            ]
+        }
+    ],
+    "extra_safe_regions": [
+        {
+            "name": "table_surface",
+            "type": "surface",
+            "coords": [
+                500,
+                500
+            ]
+        }
+    ],
+    "extra_unsafe_regions": [],
+    "current_location": "table_surface"
+}

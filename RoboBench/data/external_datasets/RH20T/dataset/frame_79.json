@@ -1,0 +1,360 @@
+{
+    "objects": [
+        {
+            "name": "robot_gripper",
+            "type": "gripper",
+            "bbox": {
+                "x1": 434,
+                "y1": 92,
+                "x2": 550,
+                "y2": 244
+            },
+            "center": {
+                "x": 492,
+                "y": 168
+            },
+            "attributes": []
+        },
+        {
+            "name": "base_platform",
+            "type": "robot_base",
+            "bbox": {
+                "x1": 356,
+                "y1": 56,
+                "x2": 617,
+                "y2": 284
+            },
+            "center": {
+                "x": 486,
+                "y": 170
+            },
+            "attributes": []
+        },
+        {
+            "name": "control_keyboard",
+            "type": "control_device",
+            "bbox": {
+                "x1": 384,
+                "y1": 212,
+                "x2": 590,
+                "y2": 357
+            },
+            "center": {
+                "x": 487,
+                "y": 285
+            },
+            "attributes": []
+        },
+        {
+            "name": "red_control_box",
+            "type": "control_box",
+            "bbox": {
+                "x1": 360,
+                "y1": 190,
+                "x2": 480,
+                "y2": 300
+            },
+            "center": {
+                "x": 420,
+                "y": 245
+            },
+            "attributes": []
+        },
+        {
+            "name": "yellow_box",
+            "type": "box",
+            "bbox": {
+                "x1": 235,
+                "y1": 245,
+                "x2": 305,
+                "y2": 325
+            },
+            "center": {
+                "x": 270,
+                "y": 285
+            },
+            "attributes": []
+        },
+        {
+            "name": "white_block_1",
+            "type": "block",
+            "bbox": {
+                "x1": 420,
+                "y1": 376,
+                "x2": 468,
+                "y2": 424
+            },
+            "center": {
+                "x": 444,
+                "y": 400
+            },
+            "attributes": []
+        },
+        {
+            "name": "white_block_2",
+            "type": "block",
+            "bbox": {
+                "x1": 462,
+                "y1": 332,
+                "x2": 505,
+                "y2": 374
+            },
+            "center": {
+                "x": 484,
+                "y": 353
+            },
+            "attributes": []
+        },
+        {
+            "name": "white_block_3",
+            "type": "block",
+            "bbox": {
+                "x1": 514,
+                "y1": 258,
+                "x2": 556,
+                "y2": 310
+            },
+            "center": {
+                "x": 535,
+                "y": 284
+            },
+            "attributes": []
+        },
+        {
+            "name": "small_white_block",
+            "type": "small_block",
+            "bbox": {
+                "x1": 395,
+                "y1": 460,
+                "x2": 437,
+                "y2": 505
+            },
+            "center": {
+                "x": 416,
+                "y": 482
+            },
+            "attributes": []
+        },
+        {
+            "name": "green_tube_item",
+            "type": "tube",
+            "bbox": {
+                "x1": 135,
+                "y1": 390,
+                "x2": 210,
+                "y2": 455
+            },
+            "center": {
+                "x": 172,
+                "y": 423
+            },
+            "attributes": []
+        },
+        {
+            "name": "round_container",
+            "type": "container",
+            "bbox": {
+                "x1": 22,
+                "y1": 45,
+                "x2": 136,
+                "y2": 163
+            },
+            "center": {
+                "x": 79,
+                "y": 104
+            },
+            "attributes": []
+        },
+        {
+            "name": "blue_cup",
+            "type": "cup",
+            "bbox": {
+                "x1": 492,
+                "y1": 10,
+                "x2": 610,
+                "y2": 108
+            },
+            "center": {
+                "x": 551,
+                "y": 59
+            },
+            "attributes": []
+        },
+        {
+            "name": "cylindrical_motor_right",
+            "type": "cylinder",
+            "bbox": {
+                "x1": 635,
+                "y1": 0,
+                "x2": 768,
+                "y2": 180
+            },
+            "center": {
+                "x": 701,
+                "y": 90
+            },
+            "attributes": []
+        },
+        {
+            "name": "cylindrical_motor_left",
+            "type": "cylinder",
+            "bbox": {
+                "x1": 0,
+                "y1": 0,
+                "x2": 215,
+                "y2": 170
+            },
+            "center": {
+                "x": 108,
+                "y": 85
+            },
+            "attributes": []
+        }
+    ],
+    "regions": [
+        {
+            "name": "workbench_top",
+            "type": "table_surface",
+            "polygon": [
+                {
+                    "x": 40,
+                    "y": 120
+                },
+                {
+                    "x": 700,
+                    "y": 105
+                },
+                {
+                    "x": 760,
+                    "y": 390
+                },
+                {
+                    "x": 55,
+                    "y": 480
+                }
+            ],
+            "center": {
+                "x": 455,
+                "y": 300
+            }
+        },
+        {
+            "name": "current_location",
+            "type": "placing_zone",
+            "polygon": [
+                {
+                    "x": 410,
+                    "y": 250
+                },
+                {
+                    "x": 585,
+                    "y": 240
+                },
+                {
+                    "x": 610,
+                    "y": 360
+                },
+                {
+                    "x": 405,
+                    "y": 370
+                }
+            ],
+            "center": {
+                "x": 503,
+                "y": 305
+            }
+        }
+    ],
+    "relations": [
+        {
+            "from": "control_keyboard",
+            "to": "workbench_top",
+            "relation": "on"
+        },
+        {
+            "from": "red_control_box",
+            "to": "workbench_top",
+            "relation": "on"
+        },
+        {
+            "from": "yellow_box",
+            "to": "workbench_top",
+            "relation": "on"
+        },
+        {
+            "from": "white_block_1",
+            "to": "workbench_top",
+            "relation": "on"
+        },
+        {
+            "from": "white_block_2",
+            "to": "workbench_top",
+            "relation": "on"
+        },
+        {
+            "from": "white_block_3",
+            "to": "workbench_top",
+            "relation": "on"
+        },
+        {
+            "from": "small_white_block",
+            "to": "workbench_top",
+            "relation": "on"
+        },
+        {
+            "from": "green_tube_item",
+            "to": "workbench_top",
+            "relation": "on"
+        },
+        {
+            "from": "round_container",
+            "to": "workbench_top",
+            "relation": "on"
+        },
+        {
+            "from": "blue_cup",
+            "to": "workbench_top",
+            "relation": "near"
+        },
+        {
+            "from": "cylindrical_motor_right",
+            "to": "workbench_top",
+            "relation": "adjacent_to"
+        },
+        {
+            "from": "cylindrical_motor_left",
+            "to": "workbench_top",
+            "relation": "adjacent_to"
+        },
+        {
+            "from": "robot_gripper",
+            "to": "control_keyboard",
+            "relation": "above"
+        },
+        {
+            "from": "robot_gripper",
+            "to": "red_control_box",
+            "relation": "near"
+        },
+        {
+            "from": "robot_gripper",
+            "to": "current_location",
+            "relation": "overlaps"
+        },
+        {
+            "from": "control_keyboard",
+            "to": "current_location",
+            "relation": "within"
+        }
+    ],
+    "state": {
+        "current_location": "current_location",
+        "plans": [
+            {
+                "plan_name": "place_near_zone",
+                "target": "control_keyboard",
+                "destination": "current_location"
+            }
+        ]
+    }
+}

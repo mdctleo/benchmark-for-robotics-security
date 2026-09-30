@@ -1,0 +1,228 @@
+{
+    "objects": [
+        {
+            "name": "keyboard_1",
+            "coords": [
+                22,
+                28
+            ]
+        },
+        {
+            "name": "camera_sensor",
+            "coords": [
+                18,
+                17
+            ]
+        },
+        {
+            "name": "oven_dishwasher",
+            "coords": [
+                25,
+                41
+            ]
+        },
+        {
+            "name": "wooden_cabinet",
+            "coords": [
+                28,
+                32
+            ]
+        },
+        {
+            "name": "keyboard_2",
+            "coords": [
+                48,
+                62
+            ]
+        },
+        {
+            "name": "black_case",
+            "coords": [
+                38,
+                52
+            ]
+        },
+        {
+            "name": "black_strip_floor",
+            "coords": [
+                33,
+                72
+            ]
+        },
+        {
+            "name": "clamps_breadboard",
+            "coords": [
+                62,
+                80
+            ]
+        },
+        {
+            "name": "small_object_floor",
+            "coords": [
+                67,
+                72
+            ]
+        },
+        {
+            "name": "cables_floor",
+            "coords": [
+                58,
+                68
+            ]
+        },
+        {
+            "name": "chair_leg",
+            "coords": [
+                88,
+                82
+            ]
+        },
+        {
+            "name": "small_black_objects_table",
+            "coords": [
+                42,
+                42
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "counter_surface",
+            "coords": [
+                22,
+                22
+            ]
+        },
+        {
+            "name": "tabletop_surface",
+            "coords": [
+                50,
+                50
+            ]
+        },
+        {
+            "name": "floor_area",
+            "coords": [
+                50,
+                75
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "keyboard_1",
+            "counter_surface"
+        ],
+        [
+            "camera_sensor",
+            "counter_surface"
+        ],
+        [
+            "oven_dishwasher",
+            "counter_surface"
+        ],
+        [
+            "wooden_cabinet",
+            "counter_surface"
+        ],
+        [
+            "keyboard_2",
+            "tabletop_surface"
+        ],
+        [
+            "black_case",
+            "tabletop_surface"
+        ],
+        [
+            "small_black_objects_table",
+            "tabletop_surface"
+        ],
+        [
+            "black_strip_floor",
+            "floor_area"
+        ],
+        [
+            "clamps_breadboard",
+            "floor_area"
+        ],
+        [
+            "small_object_floor",
+            "floor_area"
+        ],
+        [
+            "cables_floor",
+            "floor_area"
+        ],
+        [
+            "chair_leg",
+            "floor_area"
+        ]
+    ],
+    "region_connections": [
+        [
+            "floor_area",
+            "counter_surface"
+        ],
+        [
+            "floor_area",
+            "tabletop_surface"
+        ]
+    ],
+    "extra_safe_objects": [
+        {
+            "name": "keyboard_2",
+            "type": "electronics",
+            "coords": [
+                48,
+                62
+            ]
+        },
+        {
+            "name": "black_strip_floor",
+            "type": "obstacle",
+            "coords": [
+                33,
+                72
+            ]
+        }
+    ],
+    "extra_unsafe_objects": [
+        {
+            "name": "oven_dishwasher",
+            "type": "appliance",
+            "coords": [
+                25,
+                41
+            ]
+        },
+        {
+            "name": "cables_floor",
+            "type": "trip_hazard",
+            "coords": [
+                58,
+                68
+            ]
+        }
+    ],
+    "extra_safe_regions": [
+        {
+            "name": "floor_area",
+            "type": "ground",
+            "coords": [
+                50,
+                75
+            ]
+        }
+    ],
+    "extra_unsafe_regions": [
+        {
+            "name": "tabletop_surface",
+            "type": "high_surface",
+            "coords": [
+                50,
+                50
+            ]
+        }
+    ],
+    "current_location": "floor_area"
+}

@@ -1,0 +1,232 @@
+{
+    "objects": [
+        {
+            "name": "Camera_Lens",
+            "type": "object",
+            "center": [
+                74,
+                32
+            ]
+        },
+        {
+            "name": "Monitor_Display",
+            "type": "object",
+            "center": [
+                63,
+                19
+            ]
+        },
+        {
+            "name": "Electronic_Device",
+            "type": "object",
+            "center": [
+                49,
+                55
+            ]
+        },
+        {
+            "name": "Tablet_Accessory",
+            "type": "object",
+            "center": [
+                58,
+                55
+            ]
+        },
+        {
+            "name": "Black_Cylinder",
+            "type": "object",
+            "center": [
+                18,
+                34
+            ]
+        },
+        {
+            "name": "Light_Gray_Carrier",
+            "type": "object",
+            "center": [
+                92,
+                39
+            ]
+        },
+        {
+            "name": "White_Base",
+            "type": "object",
+            "center": [
+                76,
+                13
+            ]
+        },
+        {
+            "name": "Red_Button",
+            "type": "object",
+            "center": [
+                73,
+                13
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "Tarp_Cover",
+            "type": "region",
+            "polygon": [
+                [
+                    12,
+                    38
+                ],
+                [
+                    44,
+                    80
+                ],
+                [
+                    99,
+                    62
+                ],
+                [
+                    79,
+                    20
+                ],
+                [
+                    18,
+                    18
+                ]
+            ]
+        },
+        {
+            "name": "Floor_Wood_Left",
+            "type": "region",
+            "polygon": [
+                [
+                    0,
+                    55
+                ],
+                [
+                    12,
+                    78
+                ],
+                [
+                    30,
+                    92
+                ],
+                [
+                    0,
+                    92
+                ]
+            ]
+        },
+        {
+            "name": "Floor_Wood_Right",
+            "type": "region",
+            "polygon": [
+                [
+                    95,
+                    86
+                ],
+                [
+                    120,
+                    86
+                ],
+                [
+                    120,
+                    48
+                ],
+                [
+                    95,
+                    58
+                ]
+            ]
+        },
+        {
+            "name": "Floor_Grid_Top",
+            "type": "region",
+            "polygon": [
+                [
+                    0,
+                    0
+                ],
+                [
+                    120,
+                    0
+                ],
+                [
+                    120,
+                    30
+                ],
+                [
+                    0,
+                    30
+                ]
+            ]
+        }
+    ],
+    "semantic_relationships": [
+        {
+            "from": "Electronic_Device",
+            "relation": "is_on",
+            "to": "Tarp_Cover"
+        },
+        {
+            "from": "Tablet_Accessory",
+            "relation": "is_on",
+            "to": "Tarp_Cover"
+        },
+        {
+            "from": "Red_Button",
+            "relation": "is_on",
+            "to": "Floor_Grid_Top"
+        },
+        {
+            "from": "Light_Gray_Carrier",
+            "relation": "covers_area_over",
+            "to": "Tarp_Cover"
+        },
+        {
+            "from": "White_Base",
+            "relation": "is_on",
+            "to": "Floor_Grid_Top"
+        },
+        {
+            "from": "Black_Cylinder",
+            "relation": "is_near",
+            "to": "Tarp_Cover"
+        },
+        {
+            "from": "Camera_Lens",
+            "relation": "is_near",
+            "to": "Floor_Grid_Top"
+        },
+        {
+            "from": "Monitor_Display",
+            "relation": "is_near",
+            "to": "Floor_Grid_Top"
+        }
+    ],
+    "current_location": {
+        "agent_name": "Robot",
+        "region": "Tarp_Cover",
+        "center": [
+            55,
+            60
+        ]
+    },
+    "plans": [
+        {
+            "plan_name": "Inspect_Electronics",
+            "steps": [
+                {
+                    "action": "move_to_region",
+                    "target_region": "Tarp_Cover"
+                },
+                {
+                    "action": "inspect_object",
+                    "target_object": "Electronic_Device"
+                },
+                {
+                    "action": "inspect_object",
+                    "target_object": "Tablet_Accessory"
+                }
+            ]
+        }
+    ],
+    "notes": "All references (objects/regions) are limited to the declared names in objects and regions lists. Coordinates are top-down approximate centers/polygons."
+}

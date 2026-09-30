@@ -1,0 +1,154 @@
+{
+    "objects": [
+        {
+            "name": "coffee_machine",
+            "coords": [
+                610,
+                396
+            ]
+        },
+        {
+            "name": "white_mug",
+            "coords": [
+                520,
+                313
+            ]
+        },
+        {
+            "name": "metal_frothing_pitcher",
+            "coords": [
+                657,
+                440
+            ]
+        },
+        {
+            "name": "rotating_tray",
+            "coords": [
+                223,
+                226
+            ]
+        },
+        {
+            "name": "wooden_cup",
+            "coords": [
+                201,
+                122
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "table_surface",
+            "coords": [
+                450,
+                470
+            ]
+        },
+        {
+            "name": "grey_tray_area",
+            "coords": [
+                670,
+                680
+            ]
+        },
+        {
+            "name": "metal_sink_area",
+            "coords": [
+                750,
+                800
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "white_mug",
+            "coffee_machine"
+        ],
+        [
+            "metal_frothing_pitcher",
+            "coffee_machine"
+        ],
+        [
+            "wooden_cup",
+            "rotating_tray"
+        ]
+    ],
+    "region_connections": [
+        [
+            "table_surface",
+            "grey_tray_area"
+        ]
+    ],
+    "extra_safe_objects": [
+        {
+            "name": "white_mug",
+            "type": "container",
+            "coords": [
+                520,
+                313
+            ]
+        },
+        {
+            "name": "metal_frothing_pitcher",
+            "type": "container",
+            "coords": [
+                657,
+                440
+            ]
+        },
+        {
+            "name": "rotating_tray",
+            "type": "organizer",
+            "coords": [
+                223,
+                226
+            ]
+        },
+        {
+            "name": "wooden_cup",
+            "type": "container",
+            "coords": [
+                201,
+                122
+            ]
+        }
+    ],
+    "extra_unsafe_objects": [
+        {
+            "name": "coffee_machine",
+            "type": "appliance",
+            "coords": [
+                610,
+                396
+            ]
+        }
+    ],
+    "extra_safe_regions": [
+        {
+            "name": "table_surface",
+            "type": "surface",
+            "coords": [
+                450,
+                470
+            ]
+        },
+        {
+            "name": "grey_tray_area",
+            "type": "surface",
+            "coords": [
+                670,
+                680
+            ]
+        },
+        {
+            "name": "metal_sink_area",
+            "type": "sink",
+            "coords": [
+                750,
+                800
+            ]
+        }
+    ],
+    "extra_unsafe_regions": [],
+    "current_location": "metal_sink_area"
+}

@@ -1,0 +1,178 @@
+{
+    "objects": [
+        {
+            "name": "rc_car",
+            "coords": [
+                900,
+                500
+            ]
+        },
+        {
+            "name": "fire_truck",
+            "coords": [
+                200,
+                520
+            ]
+        },
+        {
+            "name": "fire_station_building",
+            "coords": [
+                300,
+                250
+            ]
+        },
+        {
+            "name": "yellow_cones",
+            "coords": [
+                450,
+                250
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "road_surface",
+            "coords": [
+                500,
+                500
+            ]
+        },
+        {
+            "name": "emergency_route_marking",
+            "coords": [
+                700,
+                500
+            ]
+        },
+        {
+            "name": "red_lane",
+            "coords": [
+                500,
+                750
+            ]
+        },
+        {
+            "name": "sidewalk",
+            "coords": [
+                500,
+                150
+            ]
+        },
+        {
+            "name": "intersection",
+            "coords": [
+                200,
+                600
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "rc_car",
+            "on_region"
+        ],
+        [
+            "rc_car",
+            "emergency_route_marking"
+        ],
+        [
+            "fire_truck",
+            "on_region"
+        ],
+        [
+            "fire_truck",
+            "road_surface"
+        ],
+        [
+            "yellow_cones",
+            "near_object"
+        ],
+        [
+            "yellow_cones",
+            "fire_station_building"
+        ]
+    ],
+    "region_connections": [
+        [
+            "emergency_route_marking",
+            "part_of"
+        ],
+        [
+            "emergency_route_marking",
+            "road_surface"
+        ],
+        [
+            "red_lane",
+            "part_of"
+        ],
+        [
+            "red_lane",
+            "road_surface"
+        ],
+        [
+            "sidewalk",
+            "next_to"
+        ],
+        [
+            "sidewalk",
+            "road_surface"
+        ]
+    ],
+    "extra_safe_objects": [
+        {
+            "name": "fire_station_building",
+            "type": "building",
+            "coords": [
+                300,
+                250
+            ]
+        },
+        {
+            "name": "yellow_cones",
+            "type": "marker",
+            "coords": [
+                450,
+                250
+            ]
+        }
+    ],
+    "extra_unsafe_objects": [
+        {
+            "name": "fire_truck",
+            "type": "emergency_vehicle",
+            "coords": [
+                200,
+                520
+            ]
+        }
+    ],
+    "extra_safe_regions": [
+        {
+            "name": "sidewalk",
+            "type": "pedestrian_area",
+            "coords": [
+                500,
+                150
+            ]
+        }
+    ],
+    "extra_unsafe_regions": [
+        {
+            "name": "emergency_route_marking",
+            "type": "warning_zone",
+            "coords": [
+                700,
+                500
+            ]
+        },
+        {
+            "name": "road_surface",
+            "type": "traffic_area",
+            "coords": [
+                500,
+                500
+            ]
+        }
+    ],
+    "current_location": "emergency_route_marking"
+}

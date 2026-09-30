@@ -1,0 +1,408 @@
+{
+    "objects": [
+        {
+            "name": "road",
+            "type": "infrastructure",
+            "coordinates": [
+                [
+                    520,
+                    520
+                ],
+                [
+                    860,
+                    520
+                ],
+                [
+                    1100,
+                    980
+                ],
+                [
+                    260,
+                    980
+                ]
+            ]
+        },
+        {
+            "name": "lane_markings",
+            "type": "road_markings",
+            "coordinates": [
+                [
+                    585,
+                    640
+                ],
+                [
+                    850,
+                    640
+                ],
+                [
+                    900,
+                    920
+                ],
+                [
+                    540,
+                    920
+                ]
+            ]
+        },
+        {
+            "name": "fence_left",
+            "type": "fence",
+            "coordinates": [
+                [
+                    0,
+                    420
+                ],
+                [
+                    260,
+                    420
+                ],
+                [
+                    360,
+                    980
+                ],
+                [
+                    60,
+                    980
+                ]
+            ]
+        },
+        {
+            "name": "building_left",
+            "type": "building",
+            "coordinates": [
+                [
+                    250,
+                    340
+                ],
+                [
+                    520,
+                    340
+                ],
+                [
+                    640,
+                    980
+                ],
+                [
+                    290,
+                    980
+                ]
+            ]
+        },
+        {
+            "name": "building_right",
+            "type": "building",
+            "coordinates": [
+                [
+                    980,
+                    300
+                ],
+                [
+                    1280,
+                    300
+                ],
+                [
+                    1530,
+                    980
+                ],
+                [
+                    1040,
+                    980
+                ]
+            ]
+        },
+        {
+            "name": "gas_station_canopy_right",
+            "type": "structure",
+            "coordinates": [
+                [
+                    1050,
+                    340
+                ],
+                [
+                    1540,
+                    340
+                ],
+                [
+                    1490,
+                    470
+                ],
+                [
+                    1040,
+                    470
+                ]
+            ]
+        },
+        {
+            "name": "gas_station_pumps",
+            "type": "infrastructure",
+            "coordinates": [
+                [
+                    1100,
+                    480
+                ],
+                [
+                    1240,
+                    480
+                ],
+                [
+                    1270,
+                    650
+                ],
+                [
+                    1080,
+                    650
+                ]
+            ]
+        },
+        {
+            "name": "vehicle_red",
+            "type": "vehicle",
+            "coordinates": [
+                [
+                    760,
+                    700
+                ],
+                [
+                    830,
+                    700
+                ],
+                [
+                    850,
+                    780
+                ],
+                [
+                    770,
+                    780
+                ]
+            ]
+        },
+        {
+            "name": "vehicle_white",
+            "type": "vehicle",
+            "coordinates": [
+                [
+                    1080,
+                    760
+                ],
+                [
+                    1140,
+                    760
+                ],
+                [
+                    1160,
+                    830
+                ],
+                [
+                    1090,
+                    830
+                ]
+            ]
+        },
+        {
+            "name": "traffic_lights",
+            "type": "traffic_control",
+            "coordinates": [
+                [
+                    660,
+                    430
+                ],
+                [
+                    690,
+                    430
+                ],
+                [
+                    700,
+                    560
+                ],
+                [
+                    650,
+                    560
+                ]
+            ]
+        },
+        {
+            "name": "street_lamps",
+            "type": "lighting",
+            "coordinates": [
+                [
+                    220,
+                    320
+                ],
+                [
+                    320,
+                    320
+                ],
+                [
+                    360,
+                    700
+                ],
+                [
+                    240,
+                    700
+                ]
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "ground_1",
+            "type": "road_segment",
+            "coordinates": [
+                [
+                    0,
+                    520
+                ],
+                [
+                    1600,
+                    520
+                ],
+                [
+                    1600,
+                    1080
+                ],
+                [
+                    0,
+                    1080
+                ]
+            ]
+        },
+        {
+            "name": "right_side_premises_1",
+            "type": "premises",
+            "coordinates": [
+                [
+                    900,
+                    450
+                ],
+                [
+                    1600,
+                    450
+                ],
+                [
+                    1600,
+                    1080
+                ],
+                [
+                    900,
+                    1080
+                ]
+            ]
+        },
+        {
+            "name": "left_side_facility_1",
+            "type": "premises",
+            "coordinates": [
+                [
+                    0,
+                    420
+                ],
+                [
+                    520,
+                    420
+                ],
+                [
+                    520,
+                    1080
+                ],
+                [
+                    0,
+                    1080
+                ]
+            ]
+        },
+        {
+            "name": "gas_station_area_1",
+            "type": "facility_area",
+            "coordinates": [
+                [
+                    980,
+                    380
+                ],
+                [
+                    1600,
+                    380
+                ],
+                [
+                    1600,
+                    820
+                ],
+                [
+                    980,
+                    820
+                ]
+            ]
+        }
+    ],
+    "relationships": [
+        {
+            "subject": "building_left",
+            "relation": "adjacent_to",
+            "object": "fence_left"
+        },
+        {
+            "subject": "road",
+            "relation": "is_on",
+            "object": "ground_1"
+        },
+        {
+            "subject": "lane_markings",
+            "relation": "on",
+            "object": "road"
+        },
+        {
+            "subject": "vehicle_red",
+            "relation": "on",
+            "object": "road"
+        },
+        {
+            "subject": "vehicle_white",
+            "relation": "near",
+            "object": "gas_station_area_1"
+        },
+        {
+            "subject": "gas_station_canopy_right",
+            "relation": "located_in",
+            "object": "gas_station_area_1"
+        },
+        {
+            "subject": "gas_station_pumps",
+            "relation": "under",
+            "object": "gas_station_canopy_right"
+        },
+        {
+            "subject": "gas_station_area_1",
+            "relation": "located_in",
+            "object": "right_side_premises_1"
+        },
+        {
+            "subject": "building_right",
+            "relation": "adjacent_to",
+            "object": "gas_station_canopy_right"
+        },
+        {
+            "subject": "street_lamps",
+            "relation": "along",
+            "object": "road"
+        },
+        {
+            "subject": "traffic_lights",
+            "relation": "at",
+            "object": "ground_1"
+        }
+    ],
+    "current_location": "ground_1",
+    "plans": [
+        {
+            "name": "pass_through",
+            "from": "ground_1",
+            "to": "ground_1",
+            "details": "Continue driving forward along the road segment."
+        },
+        {
+            "name": "approach_right_area",
+            "from": "ground_1",
+            "to": "right_side_premises_1",
+            "details": "Steer toward the right-side premises area near the gas station."
+        }
+    ]
+}

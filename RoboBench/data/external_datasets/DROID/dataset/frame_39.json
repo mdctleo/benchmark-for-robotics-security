@@ -1,0 +1,192 @@
+{
+    "objects": [
+        {
+            "name": "robot_arm",
+            "coords": [
+                222,
+                471
+            ]
+        },
+        {
+            "name": "blue_bowl",
+            "coords": [
+                508,
+                410
+            ]
+        },
+        {
+            "name": "wooden_spoon",
+            "coords": [
+                477,
+                429
+            ]
+        },
+        {
+            "name": "stack_of_paper_cups",
+            "coords": [
+                443,
+                510
+            ]
+        },
+        {
+            "name": "white_cup_holder",
+            "coords": [
+                522,
+                532
+            ]
+        },
+        {
+            "name": "white_mug",
+            "coords": [
+                657,
+                528
+            ]
+        },
+        {
+            "name": "small_plate",
+            "coords": [
+                567,
+                493
+            ]
+        },
+        {
+            "name": "blue_object",
+            "coords": [
+                567,
+                493
+            ]
+        },
+        {
+            "name": "checkerboard_pattern",
+            "coords": [
+                622,
+                103
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "kitchen_countertop",
+            "coords": [
+                500,
+                450
+            ]
+        },
+        {
+            "name": "robot_work_area",
+            "coords": [
+                500,
+                450
+            ]
+        },
+        {
+            "name": "backsplash_wall",
+            "coords": [
+                300,
+                450
+            ]
+        },
+        {
+            "name": "left_counter_space",
+            "coords": [
+                650,
+                200
+            ]
+        },
+        {
+            "name": "right_counter_space",
+            "coords": [
+                550,
+                600
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "robot_arm",
+            "blue_bowl"
+        ],
+        [
+            "robot_arm",
+            "wooden_spoon"
+        ],
+        [
+            "wooden_spoon",
+            "blue_bowl"
+        ],
+        [
+            "stack_of_paper_cups",
+            "white_cup_holder"
+        ],
+        [
+            "small_plate",
+            "blue_object"
+        ]
+    ],
+    "region_connections": [
+        [
+            "robot_work_area",
+            "kitchen_countertop"
+        ],
+        [
+            "left_counter_space",
+            "kitchen_countertop"
+        ],
+        [
+            "right_counter_space",
+            "kitchen_countertop"
+        ],
+        [
+            "kitchen_countertop",
+            "backsplash_wall"
+        ]
+    ],
+    "extra_safe_objects": [
+        {
+            "name": "wooden_spoon",
+            "type": "kitchen_utensil",
+            "coords": [
+                477,
+                429
+            ]
+        },
+        {
+            "name": "blue_bowl",
+            "type": "kitchenware",
+            "coords": [
+                508,
+                410
+            ]
+        },
+        {
+            "name": "white_mug",
+            "type": "kitchenware",
+            "coords": [
+                657,
+                528
+            ]
+        }
+    ],
+    "extra_unsafe_objects": [
+        {
+            "name": "robot_arm",
+            "type": "robot",
+            "coords": [
+                222,
+                471
+            ]
+        }
+    ],
+    "extra_safe_regions": [
+        {
+            "name": "kitchen_countertop",
+            "type": "surface",
+            "coords": [
+                500,
+                450
+            ]
+        }
+    ],
+    "extra_unsafe_regions": [],
+    "current_location": "robot_work_area"
+}

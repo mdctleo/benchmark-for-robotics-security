@@ -1,0 +1,102 @@
+{
+    "objects": [
+        {
+            "name": "bottle",
+            "coords": [
+                214,
+                219
+            ]
+        },
+        {
+            "name": "can",
+            "coords": [
+                201,
+                374
+            ]
+        },
+        {
+            "name": "wrapper",
+            "coords": [
+                299,
+                344
+            ]
+        },
+        {
+            "name": "bowl",
+            "coords": [
+                238,
+                552
+            ]
+        },
+        {
+            "name": "robot_arm",
+            "coords": [
+                792,
+                770
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "cabinet_top_surface",
+            "coords": [
+                252,
+                497
+            ]
+        },
+        {
+            "name": "middle_drawer",
+            "coords": [
+                484,
+                498
+            ]
+        },
+        {
+            "name": "bottom_drawer_space",
+            "coords": [
+                718,
+                498
+            ]
+        },
+        {
+            "name": "floor_area",
+            "coords": [
+                800,
+                400
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "bottle",
+            "can"
+        ],
+        [
+            "can",
+            "wrapper"
+        ],
+        [
+            "can",
+            "bowl"
+        ]
+    ],
+    "region_connections": [
+        [
+            "cabinet_top_surface",
+            "middle_drawer"
+        ],
+        [
+            "middle_drawer",
+            "bottom_drawer_space"
+        ],
+        [
+            "bottom_drawer_space",
+            "floor_area"
+        ]
+    ],
+    "extra_safe_objects": [],
+    "extra_unsafe_objects": [],
+    "extra_safe_regions": [],
+    "extra_unsafe_regions": [],
+    "current_location": "bottom_drawer_space"
+}

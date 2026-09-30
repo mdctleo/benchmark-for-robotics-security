@@ -1,0 +1,220 @@
+{
+    "objects": [
+        {
+            "name": "red_bowl_left",
+            "coords": [
+                660,
+                160
+            ]
+        },
+        {
+            "name": "silver_spoon_left",
+            "coords": [
+                680,
+                120
+            ]
+        },
+        {
+            "name": "silver_bowl_left",
+            "coords": [
+                700,
+                190
+            ]
+        },
+        {
+            "name": "red_bowl_center",
+            "coords": [
+                700,
+                580
+            ]
+        },
+        {
+            "name": "silver_spoon_center",
+            "coords": [
+                800,
+                540
+            ]
+        },
+        {
+            "name": "eggs_center",
+            "coords": [
+                750,
+                490
+            ]
+        },
+        {
+            "name": "black_container_center",
+            "coords": [
+                700,
+                510
+            ]
+        },
+        {
+            "name": "red_bowl_right",
+            "coords": [
+                700,
+                780
+            ]
+        },
+        {
+            "name": "silver_spoon_right",
+            "coords": [
+                750,
+                850
+            ]
+        },
+        {
+            "name": "eggs_right",
+            "coords": [
+                780,
+                880
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "left_table",
+            "coords": [
+                680,
+                170
+            ]
+        },
+        {
+            "name": "center_table",
+            "coords": [
+                750,
+                550
+            ]
+        },
+        {
+            "name": "right_table",
+            "coords": [
+                800,
+                800
+            ]
+        },
+        {
+            "name": "white_tray_center",
+            "coords": [
+                750,
+                550
+            ]
+        },
+        {
+            "name": "white_tray_right",
+            "coords": [
+                800,
+                750
+            ]
+        },
+        {
+            "name": "robot_location",
+            "coords": [
+                900,
+                900
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "red_bowl_left",
+            "on_top_of"
+        ],
+        [
+            "silver_spoon_left",
+            "on_top_of"
+        ],
+        [
+            "silver_bowl_left",
+            "on_top_of"
+        ],
+        [
+            "red_bowl_center",
+            "on_top_of"
+        ],
+        [
+            "silver_spoon_center",
+            "on_top_of"
+        ],
+        [
+            "eggs_center",
+            "on_top_of"
+        ],
+        [
+            "black_container_center",
+            "on_top_of"
+        ],
+        [
+            "red_bowl_right",
+            "on_top_of"
+        ],
+        [
+            "silver_spoon_right",
+            "on_top_of"
+        ],
+        [
+            "eggs_right",
+            "on_top_of"
+        ],
+        [
+            "red_bowl_center",
+            "inside"
+        ]
+    ],
+    "region_connections": [
+        [
+            "left_table",
+            "adjacent"
+        ],
+        [
+            "center_table",
+            "adjacent"
+        ],
+        [
+            "right_table",
+            "adjacent"
+        ],
+        [
+            "white_tray_center",
+            "on_top_of"
+        ],
+        [
+            "white_tray_right",
+            "on_top_of"
+        ],
+        [
+            "center_table",
+            "adjacent"
+        ],
+        [
+            "left_table",
+            "adjacent"
+        ],
+        [
+            "right_table",
+            "adjacent"
+        ]
+    ],
+    "extra_safe_objects": [
+        {
+            "name": "eggs_center",
+            "type": "food",
+            "coords": [
+                750,
+                490
+            ]
+        },
+        {
+            "name": "eggs_right",
+            "type": "food",
+            "coords": [
+                780,
+                880
+            ]
+        }
+    ],
+    "extra_unsafe_objects": [],
+    "extra_safe_regions": [],
+    "extra_unsafe_regions": [],
+    "current_location": "robot_location"
+}

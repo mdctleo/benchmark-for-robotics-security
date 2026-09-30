@@ -1,0 +1,390 @@
+{
+    "objects": [
+        {
+            "name": "cubby_shelf",
+            "type": "furniture",
+            "bbox": {
+                "top_left": {
+                    "x": 200,
+                    "y": 35
+                },
+                "bottom_right": {
+                    "x": 660,
+                    "y": 280
+                }
+            }
+        },
+        {
+            "name": "wall_unit_counter",
+            "type": "furniture",
+            "bbox": {
+                "top_left": {
+                    "x": 0,
+                    "y": 0
+                },
+                "bottom_right": {
+                    "x": 1024,
+                    "y": 170
+                }
+            }
+        },
+        {
+            "name": "bin_shelf_top",
+            "type": "container",
+            "bbox": {
+                "top_left": {
+                    "x": 245,
+                    "y": 70
+                },
+                "bottom_right": {
+                    "x": 670,
+                    "y": 150
+                }
+            }
+        },
+        {
+            "name": "woven_basket_top_left",
+            "type": "container",
+            "bbox": {
+                "top_left": {
+                    "x": 365,
+                    "y": 85
+                },
+                "bottom_right": {
+                    "x": 560,
+                    "y": 145
+                }
+            }
+        },
+        {
+            "name": "woven_basket_middle",
+            "type": "container",
+            "bbox": {
+                "top_left": {
+                    "x": 310,
+                    "y": 230
+                },
+                "bottom_right": {
+                    "x": 590,
+                    "y": 320
+                }
+            }
+        },
+        {
+            "name": "drawer_open_front",
+            "type": "furniture",
+            "bbox": {
+                "top_left": {
+                    "x": 240,
+                    "y": 300
+                },
+                "bottom_right": {
+                    "x": 690,
+                    "y": 500
+                }
+            }
+        },
+        {
+            "name": "drawer_partition_lines",
+            "type": "structure",
+            "bbox": {
+                "top_left": {
+                    "x": 250,
+                    "y": 305
+                },
+                "bottom_right": {
+                    "x": 690,
+                    "y": 500
+                }
+            }
+        },
+        {
+            "name": "objects_in_drawer",
+            "type": "mixed_items",
+            "bbox": {
+                "top_left": {
+                    "x": 310,
+                    "y": 350
+                },
+                "bottom_right": {
+                    "x": 680,
+                    "y": 480
+                }
+            }
+        },
+        {
+            "name": "folded_clothes_left",
+            "type": "clothing",
+            "bbox": {
+                "top_left": {
+                    "x": 300,
+                    "y": 360
+                },
+                "bottom_right": {
+                    "x": 450,
+                    "y": 450
+                }
+            }
+        },
+        {
+            "name": "white_cloth_bundle_right",
+            "type": "textile",
+            "bbox": {
+                "top_left": {
+                    "x": 490,
+                    "y": 355
+                },
+                "bottom_right": {
+                    "x": 610,
+                    "y": 470
+                }
+            }
+        },
+        {
+            "name": "small_dark_items",
+            "type": "accessories",
+            "bbox": {
+                "top_left": {
+                    "x": 460,
+                    "y": 380
+                },
+                "bottom_right": {
+                    "x": 520,
+                    "y": 475
+                }
+            }
+        },
+        {
+            "name": "upper_counter_items_left",
+            "type": "mixed_items",
+            "bbox": {
+                "top_left": {
+                    "x": 40,
+                    "y": 40
+                },
+                "bottom_right": {
+                    "x": 300,
+                    "y": 165
+                }
+            }
+        },
+        {
+            "name": "upper_counter_item_box",
+            "type": "container",
+            "bbox": {
+                "top_left": {
+                    "x": 70,
+                    "y": 70
+                },
+                "bottom_right": {
+                    "x": 170,
+                    "y": 135
+                }
+            }
+        },
+        {
+            "name": "upper_counter_item_bags",
+            "type": "bags",
+            "bbox": {
+                "top_left": {
+                    "x": 170,
+                    "y": 85
+                },
+                "bottom_right": {
+                    "x": 270,
+                    "y": 150
+                }
+            }
+        },
+        {
+            "name": "rug_or_mat_pattern_area",
+            "type": "surface_cover",
+            "bbox": {
+                "top_left": {
+                    "x": 0,
+                    "y": 170
+                },
+                "bottom_right": {
+                    "x": 1024,
+                    "y": 1024
+                }
+            }
+        }
+    ],
+    "regions": [
+        {
+            "name": "top_counter_area",
+            "type": "region",
+            "polygon": [
+                {
+                    "x": 0,
+                    "y": 0
+                },
+                {
+                    "x": 1024,
+                    "y": 0
+                },
+                {
+                    "x": 1024,
+                    "y": 170
+                },
+                {
+                    "x": 0,
+                    "y": 170
+                }
+            ]
+        },
+        {
+            "name": "top_bin_shelf_area",
+            "type": "region",
+            "polygon": [
+                {
+                    "x": 245,
+                    "y": 70
+                },
+                {
+                    "x": 670,
+                    "y": 70
+                },
+                {
+                    "x": 670,
+                    "y": 155
+                },
+                {
+                    "x": 245,
+                    "y": 155
+                }
+            ]
+        },
+        {
+            "name": "middle_woven_basket_area",
+            "type": "region",
+            "polygon": [
+                {
+                    "x": 310,
+                    "y": 220
+                },
+                {
+                    "x": 590,
+                    "y": 220
+                },
+                {
+                    "x": 590,
+                    "y": 330
+                },
+                {
+                    "x": 310,
+                    "y": 330
+                }
+            ]
+        },
+        {
+            "name": "drawer_open_area",
+            "type": "region",
+            "polygon": [
+                {
+                    "x": 240,
+                    "y": 300
+                },
+                {
+                    "x": 690,
+                    "y": 300
+                },
+                {
+                    "x": 690,
+                    "y": 520
+                },
+                {
+                    "x": 240,
+                    "y": 520
+                }
+            ]
+        }
+    ],
+    "semantic_relationships": [
+        {
+            "subject": "cubby_shelf",
+            "predicate": "contains_region",
+            "object": "top_bin_shelf_area"
+        },
+        {
+            "subject": "cubby_shelf",
+            "predicate": "contains_region",
+            "object": "middle_woven_basket_area"
+        },
+        {
+            "subject": "cubby_shelf",
+            "predicate": "contains_region",
+            "object": "drawer_open_area"
+        },
+        {
+            "subject": "upper_counter_items_left",
+            "predicate": "located_in",
+            "object": "top_counter_area"
+        },
+        {
+            "subject": "upper_counter_item_box",
+            "predicate": "part_of",
+            "object": "upper_counter_items_left"
+        },
+        {
+            "subject": "upper_counter_item_bags",
+            "predicate": "part_of",
+            "object": "upper_counter_items_left"
+        },
+        {
+            "subject": "bin_shelf_top",
+            "predicate": "located_in",
+            "object": "top_bin_shelf_area"
+        },
+        {
+            "subject": "woven_basket_top_left",
+            "predicate": "located_in",
+            "object": "top_bin_shelf_area"
+        },
+        {
+            "subject": "woven_basket_middle",
+            "predicate": "located_in",
+            "object": "middle_woven_basket_area"
+        },
+        {
+            "subject": "drawer_open_front",
+            "predicate": "located_in",
+            "object": "drawer_open_area"
+        },
+        {
+            "subject": "objects_in_drawer",
+            "predicate": "located_in",
+            "object": "drawer_open_area"
+        },
+        {
+            "subject": "folded_clothes_left",
+            "predicate": "part_of",
+            "object": "objects_in_drawer"
+        },
+        {
+            "subject": "white_cloth_bundle_right",
+            "predicate": "part_of",
+            "object": "objects_in_drawer"
+        },
+        {
+            "subject": "small_dark_items",
+            "predicate": "part_of",
+            "object": "objects_in_drawer"
+        },
+        {
+            "subject": "drawer_partition_lines",
+            "predicate": "part_of",
+            "object": "drawer_open_front"
+        },
+        {
+            "subject": "drawer_open_front",
+            "predicate": "has_surface",
+            "object": "rug_or_mat_pattern_area"
+        }
+    ],
+    "current_location": {
+        "name": "objects_in_drawer",
+        "region": "drawer_open_area"
+    }
+}

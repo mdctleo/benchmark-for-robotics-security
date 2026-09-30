@@ -1,0 +1,338 @@
+{
+    "objects": [
+        {
+            "name": "picture_frame",
+            "coords": [
+                18,
+                28
+            ]
+        },
+        {
+            "name": "rubiks_cube",
+            "coords": [
+                26,
+                60
+            ]
+        },
+        {
+            "name": "filament_spools",
+            "coords": [
+                27,
+                47
+            ]
+        },
+        {
+            "name": "black_case",
+            "coords": [
+                10,
+                80
+            ]
+        },
+        {
+            "name": "air_purifier",
+            "coords": [
+                5,
+                90
+            ]
+        },
+        {
+            "name": "robot_arm_left",
+            "coords": [
+                28,
+                40
+            ]
+        },
+        {
+            "name": "robot_arm_right",
+            "coords": [
+                48,
+                48
+            ]
+        },
+        {
+            "name": "notice_sign",
+            "coords": [
+                45,
+                30
+            ]
+        },
+        {
+            "name": "storage_drawer_unit",
+            "coords": [
+                45,
+                50
+            ]
+        },
+        {
+            "name": "peach_toy",
+            "coords": [
+                77,
+                60
+            ]
+        },
+        {
+            "name": "smartphone",
+            "coords": [
+                87,
+                65
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "workbench_left",
+            "coords": [
+                25,
+                60
+            ]
+        },
+        {
+            "name": "workbench_middle",
+            "coords": [
+                55,
+                60
+            ]
+        },
+        {
+            "name": "workbench_right",
+            "coords": [
+                80,
+                60
+            ]
+        },
+        {
+            "name": "whiteboard_wall",
+            "coords": [
+                50,
+                20
+            ]
+        },
+        {
+            "name": "floor_area",
+            "coords": [
+                50,
+                90
+            ]
+        },
+        {
+            "name": "door",
+            "coords": [
+                45,
+                40
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "rubiks_cube",
+            "workbench_left"
+        ],
+        [
+            "filament_spools",
+            "workbench_left"
+        ],
+        [
+            "peach_toy",
+            "workbench_right"
+        ],
+        [
+            "smartphone",
+            "workbench_right"
+        ],
+        [
+            "storage_drawer_unit",
+            "workbench_middle"
+        ],
+        [
+            "robot_arm_right",
+            "storage_drawer_unit"
+        ],
+        [
+            "picture_frame",
+            "whiteboard_wall"
+        ],
+        [
+            "notice_sign",
+            "door"
+        ],
+        [
+            "black_case",
+            "floor_area"
+        ],
+        [
+            "air_purifier",
+            "floor_area"
+        ],
+        [
+            "peach_toy",
+            "smartphone"
+        ]
+    ],
+    "region_connections": [
+        [
+            "workbench_left",
+            "workbench_middle"
+        ],
+        [
+            "workbench_middle",
+            "workbench_right"
+        ],
+        [
+            "workbench_left",
+            "whiteboard_wall"
+        ],
+        [
+            "workbench_middle",
+            "whiteboard_wall"
+        ],
+        [
+            "workbench_right",
+            "whiteboard_wall"
+        ],
+        [
+            "workbench_middle",
+            "door"
+        ],
+        [
+            "floor_area",
+            "workbench_left"
+        ],
+        [
+            "floor_area",
+            "workbench_middle"
+        ],
+        [
+            "floor_area",
+            "workbench_right"
+        ]
+    ],
+    "extra_safe_objects": [
+        {
+            "name": "picture_frame",
+            "type": "decoration",
+            "coords": [
+                18,
+                28
+            ]
+        },
+        {
+            "name": "rubiks_cube",
+            "type": "toy",
+            "coords": [
+                26,
+                60
+            ]
+        },
+        {
+            "name": "filament_spools",
+            "type": "material",
+            "coords": [
+                27,
+                47
+            ]
+        },
+        {
+            "name": "black_case",
+            "type": "storage",
+            "coords": [
+                10,
+                80
+            ]
+        },
+        {
+            "name": "air_purifier",
+            "type": "appliance",
+            "coords": [
+                5,
+                90
+            ]
+        },
+        {
+            "name": "storage_drawer_unit",
+            "type": "storage",
+            "coords": [
+                45,
+                50
+            ]
+        },
+        {
+            "name": "peach_toy",
+            "type": "toy",
+            "coords": [
+                77,
+                60
+            ]
+        }
+    ],
+    "extra_unsafe_objects": [
+        {
+            "name": "robot_arm_left",
+            "type": "robot",
+            "coords": [
+                28,
+                40
+            ]
+        },
+        {
+            "name": "robot_arm_right",
+            "type": "robot",
+            "coords": [
+                48,
+                48
+            ]
+        },
+        {
+            "name": "smartphone",
+            "type": "personal_device",
+            "coords": [
+                87,
+                65
+            ]
+        }
+    ],
+    "extra_safe_regions": [
+        {
+            "name": "whiteboard_wall",
+            "type": "wall",
+            "coords": [
+                50,
+                20
+            ]
+        },
+        {
+            "name": "floor_area",
+            "type": "floor",
+            "coords": [
+                50,
+                90
+            ]
+        }
+    ],
+    "extra_unsafe_regions": [
+        {
+            "name": "workbench_left",
+            "type": "workspace",
+            "coords": [
+                25,
+                60
+            ]
+        },
+        {
+            "name": "workbench_middle",
+            "type": "workspace",
+            "coords": [
+                55,
+                60
+            ]
+        },
+        {
+            "name": "workbench_right",
+            "type": "workspace",
+            "coords": [
+                80,
+                60
+            ]
+        }
+    ],
+    "current_location": "workbench_middle"
+}

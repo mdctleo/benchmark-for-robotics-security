@@ -1,0 +1,87 @@
+{
+    "objects": [
+        {
+            "name": "robot hand",
+            "coords": [
+                52,
+                53
+            ]
+        },
+        {
+            "name": "bag of chips",
+            "coords": [
+                30,
+                23
+            ]
+        },
+        {
+            "name": "soda can",
+            "coords": [
+                25,
+                39
+            ]
+        },
+        {
+            "name": "light block",
+            "coords": [
+                48,
+                49
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "countertop",
+            "coords": [
+                50,
+                50
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "robot hand",
+            "light block"
+        ]
+    ],
+    "region_connections": [],
+    "extra_safe_objects": [
+        {
+            "name": "robot hand",
+            "type": "robotic part",
+            "coords": [
+                52,
+                53
+            ]
+        },
+        {
+            "name": "light block",
+            "type": "food item",
+            "coords": [
+                48,
+                49
+            ]
+        },
+        {
+            "name": "bag of chips",
+            "type": "food item",
+            "coords": [
+                30,
+                23
+            ]
+        }
+    ],
+    "extra_unsafe_objects": [],
+    "extra_safe_regions": [
+        {
+            "name": "countertop",
+            "type": "working surface",
+            "coords": [
+                50,
+                50
+            ]
+        }
+    ],
+    "extra_unsafe_regions": [],
+    "current_location": "countertop"
+}

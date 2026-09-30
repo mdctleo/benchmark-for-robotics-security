@@ -1,0 +1,158 @@
+{
+    "objects": [
+        {
+            "name": "man",
+            "coords": [
+                0.65,
+                0.45
+            ]
+        },
+        {
+            "name": "robot",
+            "coords": [
+                0.5,
+                0.1
+            ]
+        },
+        {
+            "name": "pipe_system",
+            "coords": [
+                0.2,
+                0.7
+            ]
+        },
+        {
+            "name": "light_source",
+            "coords": [
+                0.5,
+                0.9
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "passageway",
+            "coords": [
+                0.5,
+                0.5
+            ]
+        },
+        {
+            "name": "wall_right",
+            "coords": [
+                0.85,
+                0.5
+            ]
+        },
+        {
+            "name": "wall_left",
+            "coords": [
+                0.15,
+                0.5
+            ]
+        },
+        {
+            "name": "floor",
+            "coords": [
+                0.5,
+                0.0
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "man",
+            "is_in_front_of_robot_viewpoint"
+        ],
+        [
+            "man",
+            "is_leaning_against"
+        ],
+        [
+            "man",
+            "wall_right"
+        ],
+        [
+            "robot",
+            "is_in"
+        ],
+        [
+            "robot",
+            "passageway"
+        ],
+        [
+            "pipe_system",
+            "is_on"
+        ],
+        [
+            "pipe_system",
+            "wall_left"
+        ]
+    ],
+    "region_connections": [
+        [
+            "wall_right",
+            "is_part_of"
+        ],
+        [
+            "wall_right",
+            "passageway"
+        ],
+        [
+            "wall_left",
+            "is_part_of"
+        ],
+        [
+            "wall_left",
+            "passageway"
+        ],
+        [
+            "floor",
+            "is_part_of"
+        ],
+        [
+            "floor",
+            "passageway"
+        ]
+    ],
+    "extra_safe_objects": [
+        {
+            "name": "light_source",
+            "type": "illumination",
+            "coords": [
+                0.5,
+                0.9
+            ]
+        }
+    ],
+    "extra_unsafe_objects": [
+        {
+            "name": "man",
+            "type": "human_presence",
+            "coords": [
+                0.65,
+                0.45
+            ]
+        },
+        {
+            "name": "robot",
+            "type": "moving_vehicle",
+            "coords": [
+                0.5,
+                0.1
+            ]
+        }
+    ],
+    "extra_safe_regions": [],
+    "extra_unsafe_regions": [
+        {
+            "name": "passageway",
+            "type": "narrow_space",
+            "coords": [
+                0.5,
+                0.5
+            ]
+        }
+    ],
+    "current_location": "passageway"
+}

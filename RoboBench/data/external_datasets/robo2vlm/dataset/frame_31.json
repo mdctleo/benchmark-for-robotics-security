@@ -1,0 +1,95 @@
+{
+    "objects": [
+        {
+            "name": "white_bowl",
+            "coords": [
+                142,
+                335
+            ]
+        },
+        {
+            "name": "orange",
+            "coords": [
+                175,
+                577
+            ]
+        },
+        {
+            "name": "cardboard_box",
+            "coords": [
+                562,
+                196
+            ]
+        },
+        {
+            "name": "robot_arm",
+            "coords": [
+                300,
+                891
+            ]
+        },
+        {
+            "name": "office_chair_1",
+            "coords": [
+                732,
+                946
+            ]
+        },
+        {
+            "name": "office_chair_2",
+            "coords": [
+                301,
+                764
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "cabinet",
+            "coords": [
+                424,
+                477
+            ]
+        },
+        {
+            "name": "floor",
+            "coords": [
+                746,
+                497
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "white_bowl",
+            "cabinet"
+        ],
+        [
+            "orange",
+            "cabinet"
+        ],
+        [
+            "cardboard_box",
+            "floor"
+        ],
+        [
+            "office_chair_1",
+            "floor"
+        ],
+        [
+            "office_chair_2",
+            "floor"
+        ]
+    ],
+    "region_connections": [
+        [
+            "cabinet",
+            "floor"
+        ]
+    ],
+    "extra_safe_objects": [],
+    "extra_unsafe_objects": [],
+    "extra_safe_regions": [],
+    "extra_unsafe_regions": [],
+    "current_location": "floor"
+}

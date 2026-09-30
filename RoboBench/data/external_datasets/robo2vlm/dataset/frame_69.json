@@ -1,0 +1,50 @@
+{
+    "objects": [
+        {
+            "name": "robotic_arm",
+            "coords": [
+                500,
+                500
+            ]
+        },
+        {
+            "name": "sponge",
+            "coords": [
+                300,
+                280
+            ]
+        },
+        {
+            "name": "green_package",
+            "coords": [
+                330,
+                290
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "table_surface",
+            "coords": [
+                600,
+                500
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "robotic_arm",
+            "sponge"
+        ],
+        [
+            "robotic_arm",
+            "green_package"
+        ]
+    ],
+    "region_connections": [],
+    "extra_safe_objects": [],
+    "extra_unsafe_objects": [],
+    "extra_safe_regions": [],
+    "extra_unsafe_regions": [],
+    "current_location": "table_surface"
+}

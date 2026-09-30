@@ -1,0 +1,113 @@
+{
+    "objects": [
+        {
+            "name": "black_pickup_truck",
+            "coords": [
+                720,
+                715
+            ]
+        },
+        {
+            "name": "white_suv",
+            "coords": [
+                650,
+                650
+            ]
+        },
+        {
+            "name": "house_on_right",
+            "coords": [
+                800,
+                780
+            ]
+        },
+        {
+            "name": "utility_pole",
+            "coords": [
+                220,
+                200
+            ]
+        },
+        {
+            "name": "house_on_left",
+            "coords": [
+                380,
+                100
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "street_road",
+            "coords": [
+                500,
+                500
+            ]
+        },
+        {
+            "name": "right_sidewalk_area",
+            "coords": [
+                700,
+                700
+            ]
+        },
+        {
+            "name": "left_sidewalk_area",
+            "coords": [
+                300,
+                300
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "black_pickup_truck",
+            "white_suv"
+        ],
+        [
+            "utility_pole",
+            "house_on_left"
+        ]
+    ],
+    "region_connections": [
+        [
+            "street_road",
+            "right_sidewalk_area"
+        ],
+        [
+            "street_road",
+            "left_sidewalk_area"
+        ]
+    ],
+    "extra_safe_objects": [
+        {
+            "name": "black_pickup_truck",
+            "type": "vehicle",
+            "coords": [
+                720,
+                715
+            ]
+        },
+        {
+            "name": "white_suv",
+            "type": "vehicle",
+            "coords": [
+                650,
+                650
+            ]
+        }
+    ],
+    "extra_unsafe_objects": [],
+    "extra_safe_regions": [
+        {
+            "name": "street_road",
+            "type": "driving_path",
+            "coords": [
+                500,
+                500
+            ]
+        }
+    ],
+    "extra_unsafe_regions": [],
+    "current_location": "street_road"
+}

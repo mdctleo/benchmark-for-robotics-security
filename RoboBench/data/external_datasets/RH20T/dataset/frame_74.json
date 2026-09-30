@@ -1,0 +1,174 @@
+{
+    "objects": [
+        {
+            "name": "robot_arm_base",
+            "type": "robot_base",
+            "coordinate": {
+                "x": 90,
+                "y": 45
+            }
+        },
+        {
+            "name": "microscope_or_sensor_mount",
+            "type": "instrument_mount",
+            "coordinate": {
+                "x": 150,
+                "y": 75
+            }
+        },
+        {
+            "name": "gripper_tool",
+            "type": "end_effector",
+            "coordinate": {
+                "x": 170,
+                "y": 95
+            }
+        },
+        {
+            "name": "cube_red",
+            "type": "cube",
+            "coordinate": {
+                "x": 165,
+                "y": 110
+            }
+        },
+        {
+            "name": "cube_grey",
+            "type": "cube",
+            "coordinate": {
+                "x": 145,
+                "y": 125
+            }
+        },
+        {
+            "name": "wooden_cabinet_edge",
+            "type": "structure_edge",
+            "coordinate": {
+                "x": 50,
+                "y": 150
+            }
+        },
+        {
+            "name": "cables_bundle",
+            "type": "cables",
+            "coordinate": {
+                "x": 210,
+                "y": 115
+            }
+        },
+        {
+            "name": "left_knob_control",
+            "type": "control",
+            "coordinate": {
+                "x": 40,
+                "y": 30
+            }
+        },
+        {
+            "name": "curved_rail_arm_section_right",
+            "type": "robot_structure",
+            "coordinate": {
+                "x": 280,
+                "y": 120
+            }
+        }
+    ],
+    "regions": [
+        {
+            "name": "fabric_work_surface",
+            "type": "workspace_surface",
+            "coordinate": {
+                "x": 160,
+                "y": 120
+            }
+        },
+        {
+            "name": "industrial_bed_slots",
+            "type": "machine_platform",
+            "coordinate": {
+                "x": 180,
+                "y": 140
+            }
+        },
+        {
+            "name": "left_side_background",
+            "type": "background_area",
+            "coordinate": {
+                "x": 60,
+                "y": 80
+            }
+        },
+        {
+            "name": "right_side_background",
+            "type": "background_area",
+            "coordinate": {
+                "x": 260,
+                "y": 90
+            }
+        }
+    ],
+    "semantic_relationships": [
+        {
+            "subject": "gripper_tool",
+            "relation": "is_over",
+            "object": "fabric_work_surface"
+        },
+        {
+            "subject": "microscope_or_sensor_mount",
+            "relation": "supports",
+            "object": "gripper_tool"
+        },
+        {
+            "subject": "robot_arm_base",
+            "relation": "anchors",
+            "object": "microscope_or_sensor_mount"
+        },
+        {
+            "subject": "cube_red",
+            "relation": "sits_on",
+            "object": "fabric_work_surface"
+        },
+        {
+            "subject": "cube_grey",
+            "relation": "sits_on",
+            "object": "fabric_work_surface"
+        },
+        {
+            "subject": "cube_red",
+            "relation": "is_left_of",
+            "object": "cube_grey"
+        },
+        {
+            "subject": "cables_bundle",
+            "relation": "runs_across",
+            "object": "fabric_work_surface"
+        },
+        {
+            "subject": "left_knob_control",
+            "relation": "is_adjacent_to",
+            "object": "industrial_bed_slots"
+        },
+        {
+            "subject": "curved_rail_arm_section_right",
+            "relation": "is_adjacent_to",
+            "object": "right_side_background"
+        },
+        {
+            "subject": "industrial_bed_slots",
+            "relation": "contains_area_of",
+            "object": "fabric_work_surface"
+        }
+    ],
+    "current_location": {
+        "name": "gripper_tool",
+        "region": "fabric_work_surface"
+    },
+    "plans": [
+        {
+            "plan_id": "plan_1",
+            "goal_object": "cube_grey",
+            "target_region": "fabric_work_surface",
+            "action": "approach_and_position"
+        }
+    ]
+}

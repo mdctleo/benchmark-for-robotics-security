@@ -1,0 +1,379 @@
+{
+    "objects": [
+        {
+            "name": "coffee_station_console",
+            "type": "furniture",
+            "bounding_box": {
+                "x1": 0.58,
+                "y1": 0.3,
+                "x2": 0.98,
+                "y2": 0.95
+            }
+        },
+        {
+            "name": "laptop",
+            "type": "device",
+            "bounding_box": {
+                "x1": 0.06,
+                "y1": 0.06,
+                "x2": 0.36,
+                "y2": 0.32
+            }
+        },
+        {
+            "name": "coffee_machine",
+            "type": "appliance",
+            "bounding_box": {
+                "x1": 0.36,
+                "y1": 0.0,
+                "x2": 0.62,
+                "y2": 0.22
+            }
+        },
+        {
+            "name": "countertop",
+            "type": "surface",
+            "bounding_box": {
+                "x1": 0.0,
+                "y1": 0.1,
+                "x2": 0.98,
+                "y2": 0.72
+            }
+        },
+        {
+            "name": "mug",
+            "type": "cup",
+            "bounding_box": {
+                "x1": 0.87,
+                "y1": 0.56,
+                "x2": 0.98,
+                "y2": 0.95
+            }
+        },
+        {
+            "name": "trash_bin",
+            "type": "container",
+            "bounding_box": {
+                "x1": 0.8,
+                "y1": 0.0,
+                "x2": 1.0,
+                "y2": 0.18
+            }
+        },
+        {
+            "name": "coffee_bean_can",
+            "type": "container",
+            "bounding_box": {
+                "x1": 0.63,
+                "y1": 0.18,
+                "x2": 0.72,
+                "y2": 0.38
+            }
+        },
+        {
+            "name": "mouse_or_controller",
+            "type": "device",
+            "bounding_box": {
+                "x1": 0.35,
+                "y1": 0.2,
+                "x2": 0.46,
+                "y2": 0.32
+            }
+        },
+        {
+            "name": "cups_tray",
+            "type": "container",
+            "bounding_box": {
+                "x1": 0.62,
+                "y1": 0.38,
+                "x2": 0.98,
+                "y2": 0.92
+            }
+        },
+        {
+            "name": "cup_1",
+            "type": "cup",
+            "bounding_box": {
+                "x1": 0.66,
+                "y1": 0.5,
+                "x2": 0.73,
+                "y2": 0.76
+            }
+        },
+        {
+            "name": "cup_2",
+            "type": "cup",
+            "bounding_box": {
+                "x1": 0.71,
+                "y1": 0.5,
+                "x2": 0.78,
+                "y2": 0.76
+            }
+        },
+        {
+            "name": "cup_3",
+            "type": "cup",
+            "bounding_box": {
+                "x1": 0.76,
+                "y1": 0.5,
+                "x2": 0.83,
+                "y2": 0.76
+            }
+        },
+        {
+            "name": "cup_4",
+            "type": "cup",
+            "bounding_box": {
+                "x1": 0.81,
+                "y1": 0.5,
+                "x2": 0.88,
+                "y2": 0.76
+            }
+        },
+        {
+            "name": "cup_5",
+            "type": "cup",
+            "bounding_box": {
+                "x1": 0.86,
+                "y1": 0.5,
+                "x2": 0.93,
+                "y2": 0.76
+            }
+        },
+        {
+            "name": "cup_6",
+            "type": "cup",
+            "bounding_box": {
+                "x1": 0.9,
+                "y1": 0.5,
+                "x2": 0.98,
+                "y2": 0.76
+            }
+        },
+        {
+            "name": "stirrer_or_spoon_container",
+            "type": "container",
+            "bounding_box": {
+                "x1": 0.62,
+                "y1": 0.38,
+                "x2": 0.98,
+                "y2": 0.7
+            }
+        },
+        {
+            "name": "napkin_stack",
+            "type": "paper_item",
+            "bounding_box": {
+                "x1": 0.63,
+                "y1": 0.67,
+                "x2": 0.74,
+                "y2": 0.83
+            }
+        },
+        {
+            "name": "sugar_sachet",
+            "type": "food_packaging",
+            "bounding_box": {
+                "x1": 0.69,
+                "y1": 0.66,
+                "x2": 0.85,
+                "y2": 0.8
+            }
+        },
+        {
+            "name": "creamers_or_sachets",
+            "type": "food_packaging",
+            "bounding_box": {
+                "x1": 0.77,
+                "y1": 0.64,
+                "x2": 0.92,
+                "y2": 0.82
+            }
+        },
+        {
+            "name": "manual_dispenser",
+            "type": "utensil",
+            "bounding_box": {
+                "x1": 0.7,
+                "y1": 0.72,
+                "x2": 0.98,
+                "y2": 0.97
+            }
+        },
+        {
+            "name": "floor",
+            "type": "ground",
+            "bounding_box": {
+                "x1": 0.0,
+                "y1": 0.2,
+                "x2": 1.0,
+                "y2": 1.0
+            }
+        }
+    ],
+    "regions": [
+        {
+            "name": "current_location",
+            "type": "room_area",
+            "centroid": {
+                "x": 0.74,
+                "y": 0.63
+            }
+        },
+        {
+            "name": "coffee_station_counter_area",
+            "type": "area",
+            "centroid": {
+                "x": 0.55,
+                "y": 0.45
+            }
+        },
+        {
+            "name": "cups_tray_area",
+            "type": "area",
+            "centroid": {
+                "x": 0.82,
+                "y": 0.72
+            }
+        },
+        {
+            "name": "laptop_work_area",
+            "type": "area",
+            "centroid": {
+                "x": 0.2,
+                "y": 0.17
+            }
+        }
+    ],
+    "semantic_relationships": [
+        {
+            "relation": "located_in",
+            "source": "laptop",
+            "target": "laptop_work_area"
+        },
+        {
+            "relation": "located_on",
+            "source": "laptop",
+            "target": "countertop"
+        },
+        {
+            "relation": "located_near",
+            "source": "laptop",
+            "target": "coffee_machine"
+        },
+        {
+            "relation": "located_on",
+            "source": "coffee_machine",
+            "target": "countertop"
+        },
+        {
+            "relation": "located_in",
+            "source": "coffee_machine",
+            "target": "coffee_station_counter_area"
+        },
+        {
+            "relation": "located_on",
+            "source": "coffee_bean_can",
+            "target": "countertop"
+        },
+        {
+            "relation": "located_near",
+            "source": "coffee_bean_can",
+            "target": "coffee_machine"
+        },
+        {
+            "relation": "located_on",
+            "source": "mouse_or_controller",
+            "target": "countertop"
+        },
+        {
+            "relation": "located_near",
+            "source": "mouse_or_controller",
+            "target": "laptop"
+        },
+        {
+            "relation": "located_on",
+            "source": "cups_tray",
+            "target": "coffee_station_console"
+        },
+        {
+            "relation": "contains",
+            "source": "cups_tray",
+            "target": "cup_1"
+        },
+        {
+            "relation": "contains",
+            "source": "cups_tray",
+            "target": "cup_2"
+        },
+        {
+            "relation": "contains",
+            "source": "cups_tray",
+            "target": "cup_3"
+        },
+        {
+            "relation": "contains",
+            "source": "cups_tray",
+            "target": "cup_4"
+        },
+        {
+            "relation": "contains",
+            "source": "cups_tray",
+            "target": "cup_5"
+        },
+        {
+            "relation": "contains",
+            "source": "cups_tray",
+            "target": "cup_6"
+        },
+        {
+            "relation": "contains",
+            "source": "cups_tray",
+            "target": "stirrer_or_spoon_container"
+        },
+        {
+            "relation": "contains",
+            "source": "stirrer_or_spoon_container",
+            "target": "napkin_stack"
+        },
+        {
+            "relation": "contains",
+            "source": "stirrer_or_spoon_container",
+            "target": "sugar_sachet"
+        },
+        {
+            "relation": "contains",
+            "source": "stirrer_or_spoon_container",
+            "target": "creamers_or_sachets"
+        },
+        {
+            "relation": "part_of",
+            "source": "manual_dispenser",
+            "target": "coffee_station_console"
+        },
+        {
+            "relation": "located_in",
+            "source": "manual_dispenser",
+            "target": "cups_tray_area"
+        },
+        {
+            "relation": "located_near",
+            "source": "mug",
+            "target": "coffee_station_console"
+        },
+        {
+            "relation": "located_on",
+            "source": "mug",
+            "target": "countertop"
+        },
+        {
+            "relation": "located_on",
+            "source": "coffee_station_console",
+            "target": "floor"
+        }
+    ],
+    "current_location": {
+        "name": "current_location",
+        "summary": "Coffee/serving counter area with a cup tray and small condiment items."
+    }
+}

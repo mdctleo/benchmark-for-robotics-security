@@ -1,0 +1,66 @@
+{
+    "objects": [
+        {
+            "name": "robot_arm",
+            "coords": [
+                611,
+                560
+            ]
+        },
+        {
+            "name": "bowl",
+            "coords": [
+                263,
+                226
+            ]
+        },
+        {
+            "name": "bananas",
+            "coords": [
+                263,
+                226
+            ]
+        },
+        {
+            "name": "banana_piece",
+            "coords": [
+                258,
+                258
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "countertop",
+            "coords": [
+                500,
+                500
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "robot_arm",
+            "holds_part_of_farthest_banana_in_bowl"
+        ],
+        [
+            "bananas",
+            "in_bowl"
+        ]
+    ],
+    "region_connections": [
+        [
+            "bowl",
+            "on_countertop"
+        ],
+        [
+            "robot_arm",
+            "over_countertop"
+        ]
+    ],
+    "extra_safe_objects": [],
+    "extra_unsafe_objects": [],
+    "extra_safe_regions": [],
+    "extra_unsafe_regions": [],
+    "current_location": "countertop"
+}

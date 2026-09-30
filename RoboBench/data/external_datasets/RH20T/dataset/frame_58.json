@@ -1,0 +1,331 @@
+{
+    "objects": [
+        {
+            "name": "window_rail",
+            "type": "rail",
+            "bbox": [
+                10,
+                0,
+                230,
+                480
+            ],
+            "coord": [
+                55,
+                20
+            ]
+        },
+        {
+            "name": "blue_print_table",
+            "type": "work_surface",
+            "bbox": [
+                60,
+                40,
+                650,
+                430
+            ],
+            "coord": [
+                370,
+                235
+            ]
+        },
+        {
+            "name": "large_black_machine_tube_left",
+            "type": "machine_component",
+            "bbox": [
+                0,
+                40,
+                85,
+                220
+            ],
+            "coord": [
+                45,
+                130
+            ]
+        },
+        {
+            "name": "yellow_green_emergency_button",
+            "type": "control",
+            "bbox": [
+                285,
+                0,
+                340,
+                70
+            ],
+            "coord": [
+                312,
+                35
+            ]
+        },
+        {
+            "name": "red_push_button",
+            "type": "control",
+            "bbox": [
+                490,
+                0,
+                535,
+                70
+            ],
+            "coord": [
+                512,
+                35
+            ]
+        },
+        {
+            "name": "blue_metal_frame_post",
+            "type": "frame",
+            "bbox": [
+                40,
+                20,
+                95,
+                95
+            ],
+            "coord": [
+                67,
+                58
+            ]
+        },
+        {
+            "name": "laser_head",
+            "type": "actuator_head",
+            "bbox": [
+                250,
+                0,
+                385,
+                125
+            ],
+            "coord": [
+                318,
+                62
+            ]
+        },
+        {
+            "name": "blue_cable_bundle",
+            "type": "cable",
+            "bbox": [
+                320,
+                40,
+                470,
+                165
+            ],
+            "coord": [
+                395,
+                105
+            ]
+        },
+        {
+            "name": "printer_sheets_catcher",
+            "type": "device_edge",
+            "bbox": [
+                580,
+                40,
+                720,
+                250
+            ],
+            "coord": [
+                645,
+                145
+            ]
+        },
+        {
+            "name": "side_control_panel",
+            "type": "equipment",
+            "bbox": [
+                650,
+                140,
+                720,
+                480
+            ],
+            "coord": [
+                690,
+                310
+            ]
+        },
+        {
+            "name": "mounting_bracket_right",
+            "type": "mount",
+            "bbox": [
+                520,
+                60,
+                610,
+                210
+            ],
+            "coord": [
+                565,
+                135
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "floor_wood_area",
+            "type": "floor",
+            "segmentation": "wooden floor visible on left edge",
+            "polygon": [
+                [
+                    0,
+                    330
+                ],
+                [
+                    120,
+                    330
+                ],
+                [
+                    120,
+                    480
+                ],
+                [
+                    0,
+                    480
+                ]
+            ],
+            "coord": [
+                60,
+                405
+            ]
+        },
+        {
+            "name": "blue_printing_area",
+            "type": "work_area",
+            "segmentation": "blue cloth/work surface where image is printed",
+            "polygon": [
+                [
+                    60,
+                    40
+                ],
+                [
+                    650,
+                    40
+                ],
+                [
+                    650,
+                    430
+                ],
+                [
+                    60,
+                    430
+                ]
+            ],
+            "coord": [
+                360,
+                235
+            ]
+        },
+        {
+            "name": "machine_top_zone",
+            "type": "machine_area",
+            "segmentation": "top area containing the laser head and controls",
+            "polygon": [
+                [
+                    150,
+                    0
+                ],
+                [
+                    720,
+                    0
+                ],
+                [
+                    720,
+                    160
+                ],
+                [
+                    150,
+                    160
+                ]
+            ],
+            "coord": [
+                435,
+                80
+            ]
+        }
+    ],
+    "semantic_relationships": [
+        {
+            "relation": "located_on",
+            "from": "laser_head",
+            "to": "machine_top_zone"
+        },
+        {
+            "relation": "controls_mounted_on",
+            "from": "yellow_green_emergency_button",
+            "to": "machine_top_zone"
+        },
+        {
+            "relation": "controls_mounted_on",
+            "from": "red_push_button",
+            "to": "machine_top_zone"
+        },
+        {
+            "relation": "mounted_by",
+            "from": "mounting_bracket_right",
+            "to": "machine_top_zone"
+        },
+        {
+            "relation": "connected_to",
+            "from": "blue_cable_bundle",
+            "to": "laser_head"
+        },
+        {
+            "relation": "supports",
+            "from": "blue_print_table",
+            "to": "blue_printing_area"
+        },
+        {
+            "relation": "prints_on",
+            "from": "laser_head",
+            "to": "blue_printing_area"
+        },
+        {
+            "relation": "device_edge_near",
+            "from": "printer_sheets_catcher",
+            "to": "blue_printing_area"
+        },
+        {
+            "relation": "adjacent_to",
+            "from": "side_control_panel",
+            "to": "machine_top_zone"
+        },
+        {
+            "relation": "frame_post_near",
+            "from": "blue_metal_frame_post",
+            "to": "blue_printing_area"
+        },
+        {
+            "relation": "overlooks",
+            "from": "large_black_machine_tube_left",
+            "to": "blue_printing_area"
+        },
+        {
+            "relation": "boundary_of",
+            "from": "window_rail",
+            "to": "machine_top_zone"
+        },
+        {
+            "relation": "occupies",
+            "from": "floor_wood_area",
+            "to": "floor_wood_area"
+        },
+        {
+            "relation": "work_surface_adjacent_to_floor",
+            "from": "blue_print_table",
+            "to": "floor_wood_area"
+        }
+    ],
+    "current_location": {
+        "name": "blue_printing_area",
+        "coord": [
+            360,
+            235
+        ]
+    },
+    "plans": [
+        {
+            "plan_name": "print_active_area",
+            "target_region": "blue_printing_area",
+            "coord": [
+                360,
+                235
+            ],
+            "status": "in_progress"
+        }
+    ]
+}

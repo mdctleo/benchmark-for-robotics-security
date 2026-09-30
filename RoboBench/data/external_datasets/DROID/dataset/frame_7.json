@@ -1,0 +1,128 @@
+{
+    "objects": [
+        {
+            "name": "robot_arm",
+            "coords": [
+                478,
+                412
+            ]
+        },
+        {
+            "name": "gripper",
+            "coords": [
+                554,
+                467
+            ]
+        },
+        {
+            "name": "wall_outlet_robot_location",
+            "coords": [
+                504,
+                503
+            ]
+        },
+        {
+            "name": "dimmer_switch",
+            "coords": [
+                160,
+                154
+            ]
+        },
+        {
+            "name": "wall_outlet_left",
+            "coords": [
+                164,
+                186
+            ]
+        },
+        {
+            "name": "wooden_cabinet",
+            "coords": [
+                624,
+                406
+            ]
+        },
+        {
+            "name": "office_chair",
+            "coords": [
+                680,
+                319
+            ]
+        },
+        {
+            "name": "desk_monitor",
+            "coords": [
+                586,
+                353
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "wall",
+            "coords": [
+                487,
+                288
+            ]
+        },
+        {
+            "name": "floor_area",
+            "coords": [
+                792,
+                283
+            ]
+        },
+        {
+            "name": "room",
+            "coords": [
+                500,
+                500
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "gripper",
+            "robot_arm"
+        ],
+        [
+            "gripper",
+            "wall_outlet_robot_location"
+        ],
+        [
+            "robot_arm",
+            "wall"
+        ],
+        [
+            "dimmer_switch",
+            "wall"
+        ],
+        [
+            "wall_outlet_left",
+            "wall"
+        ],
+        [
+            "wooden_cabinet",
+            "floor_area"
+        ],
+        [
+            "office_chair",
+            "floor_area"
+        ],
+        [
+            "desk_monitor",
+            "floor_area"
+        ]
+    ],
+    "region_connections": [
+        [
+            "wall",
+            "floor_area"
+        ]
+    ],
+    "extra_safe_objects": [],
+    "extra_unsafe_objects": [],
+    "extra_safe_regions": [],
+    "extra_unsafe_regions": [],
+    "current_location": "room"
+}

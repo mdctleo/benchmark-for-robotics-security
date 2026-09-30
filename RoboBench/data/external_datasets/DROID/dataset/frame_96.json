@@ -1,0 +1,173 @@
+{
+    "objects": [
+        {
+            "name": "robot_arm_left",
+            "coords": [
+                30,
+                55
+            ]
+        },
+        {
+            "name": "robot_base",
+            "coords": [
+                50,
+                50
+            ]
+        },
+        {
+            "name": "robot_arm_right",
+            "coords": [
+                65,
+                50
+            ]
+        },
+        {
+            "name": "left_monitor",
+            "coords": [
+                20,
+                40
+            ]
+        },
+        {
+            "name": "right_monitor",
+            "coords": [
+                70,
+                40
+            ]
+        },
+        {
+            "name": "desk_lamp",
+            "coords": [
+                75,
+                35
+            ]
+        },
+        {
+            "name": "red_bin_left",
+            "coords": [
+                15,
+                30
+            ]
+        },
+        {
+            "name": "red_block_right",
+            "coords": [
+                90,
+                45
+            ]
+        },
+        {
+            "name": "black_bag_left",
+            "coords": [
+                10,
+                25
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "left_desk",
+            "coords": [
+                25,
+                30
+            ]
+        },
+        {
+            "name": "right_desk",
+            "coords": [
+                75,
+                30
+            ]
+        },
+        {
+            "name": "robot_area",
+            "coords": [
+                50,
+                40
+            ]
+        },
+        {
+            "name": "background_shelf",
+            "coords": [
+                50,
+                70
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "robot_arm_left",
+            "robot_base"
+        ],
+        [
+            "robot_arm_right",
+            "robot_base"
+        ]
+    ],
+    "region_connections": [
+        [
+            "left_desk",
+            "robot_area"
+        ],
+        [
+            "right_desk",
+            "robot_area"
+        ],
+        [
+            "background_shelf",
+            "left_desk"
+        ],
+        [
+            "background_shelf",
+            "right_desk"
+        ]
+    ],
+    "extra_safe_objects": [
+        {
+            "name": "desk_lamp",
+            "type": "equipment",
+            "coords": [
+                75,
+                35
+            ]
+        },
+        {
+            "name": "red_bin_left",
+            "type": "storage",
+            "coords": [
+                15,
+                30
+            ]
+        }
+    ],
+    "extra_unsafe_objects": [
+        {
+            "name": "robot_arm_left",
+            "type": "robot_part",
+            "coords": [
+                30,
+                55
+            ]
+        },
+        {
+            "name": "robot_arm_right",
+            "type": "robot_part",
+            "coords": [
+                65,
+                50
+            ]
+        }
+    ],
+    "extra_safe_regions": [
+        {
+            "name": "background_shelf",
+            "type": "storage_area",
+            "coords": [
+                50,
+                70
+            ]
+        }
+    ],
+    "extra_unsafe_regions": [],
+    "current_location": "robot_area"
+}

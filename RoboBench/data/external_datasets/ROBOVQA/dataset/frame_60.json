@@ -1,0 +1,143 @@
+{
+    "objects": [
+        {
+            "name": "robot_vacuum",
+            "type": "robot",
+            "coordinates": [
+                640,
+                380
+            ]
+        },
+        {
+            "name": "tower_mount",
+            "type": "equipment",
+            "coordinates": [
+                735,
+                325
+            ]
+        },
+        {
+            "name": "control_box",
+            "type": "electrical_box",
+            "coordinates": [
+                690,
+                370
+            ]
+        },
+        {
+            "name": "cable_bundle",
+            "type": "cable",
+            "coordinates": [
+                585,
+                385
+            ]
+        },
+        {
+            "name": "wrapped_device",
+            "type": "packaged_item",
+            "coordinates": [
+                560,
+                300
+            ]
+        },
+        {
+            "name": "white_label_pack",
+            "type": "paper_label",
+            "coordinates": [
+                495,
+                430
+            ]
+        },
+        {
+            "name": "black_bag",
+            "type": "bag",
+            "coordinates": [
+                530,
+                430
+            ]
+        },
+        {
+            "name": "door_or_wall_opening",
+            "type": "opening",
+            "coordinates": [
+                820,
+                230
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "floor_area",
+            "type": "floor",
+            "coordinates": [
+                600,
+                430
+            ]
+        },
+        {
+            "name": "sofa_edge_region",
+            "type": "furniture_surface",
+            "coordinates": [
+                910,
+                320
+            ]
+        },
+        {
+            "name": "threshold_edge_region",
+            "type": "boundary",
+            "coordinates": [
+                930,
+                235
+            ]
+        }
+    ],
+    "semantic_relationships": [
+        {
+            "subject": "robot_vacuum",
+            "relation": "on",
+            "object": "floor_area"
+        },
+        {
+            "subject": "tower_mount",
+            "relation": "attached_to",
+            "object": "robot_vacuum"
+        },
+        {
+            "subject": "control_box",
+            "relation": "connected_to",
+            "object": "cable_bundle"
+        },
+        {
+            "subject": "wrapped_device",
+            "relation": "contained_in",
+            "object": "black_bag"
+        },
+        {
+            "subject": "cable_bundle",
+            "relation": "lies_on",
+            "object": "floor_area"
+        },
+        {
+            "subject": "white_label_pack",
+            "relation": "placed_on",
+            "object": "floor_area"
+        },
+        {
+            "subject": "black_bag",
+            "relation": "rests_on",
+            "object": "floor_area"
+        },
+        {
+            "subject": "door_or_wall_opening",
+            "relation": "adjacent_to",
+            "object": "threshold_edge_region"
+        },
+        {
+            "subject": "robot_vacuum",
+            "relation": "near",
+            "object": "sofa_edge_region"
+        }
+    ],
+    "current_location": "floor_area",
+    "plans": []
+}

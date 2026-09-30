@@ -1,0 +1,167 @@
+{
+    "objects": [
+        {
+            "name": "robot_platform",
+            "coords": [
+                500,
+                100
+            ]
+        },
+        {
+            "name": "altar_table",
+            "coords": [
+                500,
+                850
+            ]
+        },
+        {
+            "name": "crucifix",
+            "coords": [
+                500,
+                880
+            ]
+        },
+        {
+            "name": "candles",
+            "coords": [
+                480,
+                860
+            ]
+        },
+        {
+            "name": "left_pew_row",
+            "coords": [
+                300,
+                500
+            ]
+        },
+        {
+            "name": "right_pew_row",
+            "coords": [
+                700,
+                500
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "central_aisle",
+            "coords": [
+                500,
+                500
+            ]
+        },
+        {
+            "name": "sanctuary_area",
+            "coords": [
+                500,
+                900
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "robot_platform",
+            "central_aisle"
+        ],
+        [
+            "altar_table",
+            "sanctuary_area"
+        ],
+        [
+            "crucifix",
+            "sanctuary_area"
+        ],
+        [
+            "candles",
+            "altar_table"
+        ],
+        [
+            "left_pew_row",
+            "central_aisle"
+        ],
+        [
+            "right_pew_row",
+            "central_aisle"
+        ]
+    ],
+    "region_connections": [
+        [
+            "central_aisle",
+            "sanctuary_area"
+        ]
+    ],
+    "extra_safe_objects": [
+        {
+            "name": "robot_platform",
+            "type": "vehicle",
+            "coords": [
+                500,
+                100
+            ]
+        }
+    ],
+    "extra_unsafe_objects": [
+        {
+            "name": "altar_table",
+            "type": "furniture",
+            "coords": [
+                500,
+                850
+            ]
+        },
+        {
+            "name": "crucifix",
+            "type": "religious_item",
+            "coords": [
+                500,
+                880
+            ]
+        },
+        {
+            "name": "candles",
+            "type": "religious_item",
+            "coords": [
+                480,
+                860
+            ]
+        },
+        {
+            "name": "left_pew_row",
+            "type": "obstacle",
+            "coords": [
+                300,
+                500
+            ]
+        },
+        {
+            "name": "right_pew_row",
+            "type": "obstacle",
+            "coords": [
+                700,
+                500
+            ]
+        }
+    ],
+    "extra_safe_regions": [
+        {
+            "name": "central_aisle",
+            "type": "path",
+            "coords": [
+                500,
+                500
+            ]
+        }
+    ],
+    "extra_unsafe_regions": [
+        {
+            "name": "sanctuary_area",
+            "type": "sacred_space",
+            "coords": [
+                500,
+                900
+            ]
+        }
+    ],
+    "current_location": "central_aisle"
+}

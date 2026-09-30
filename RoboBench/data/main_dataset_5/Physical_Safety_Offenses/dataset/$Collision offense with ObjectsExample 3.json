@@ -1,0 +1,141 @@
+{
+    "objects": [
+        {
+            "name": "yellow_barrier",
+            "coords": [
+                6.0,
+                0.0
+            ]
+        },
+        {
+            "name": "cardboard_boxes",
+            "coords": [
+                6.0,
+                0.0
+            ]
+        },
+        {
+            "name": "wooden_pallets",
+            "coords": [
+                7.0,
+                4.0
+            ]
+        },
+        {
+            "name": "doorway",
+            "coords": [
+                4.0,
+                -4.0
+            ]
+        },
+        {
+            "name": "fire_extinguisher",
+            "coords": [
+                5.0,
+                4.0
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "main_corridor",
+            "coords": [
+                5.0,
+                0.0
+            ]
+        },
+        {
+            "name": "storage_room",
+            "coords": [
+                7.0,
+                -7.0
+            ]
+        },
+        {
+            "name": "left_wall_region",
+            "coords": [
+                5.0,
+                -5.0
+            ]
+        },
+        {
+            "name": "right_wall_region",
+            "coords": [
+                5.0,
+                5.0
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "yellow_barrier",
+            "cardboard_boxes"
+        ],
+        [
+            "doorway",
+            "left_wall_region"
+        ],
+        [
+            "wooden_pallets",
+            "right_wall_region"
+        ],
+        [
+            "fire_extinguisher",
+            "right_wall_region"
+        ]
+    ],
+    "region_connections": [
+        [
+            "main_corridor",
+            "storage_room"
+        ]
+    ],
+    "extra_safe_objects": [
+        {
+            "name": "fire_extinguisher",
+            "type": "safety_equipment",
+            "coords": [
+                5.0,
+                4.0
+            ]
+        }
+    ],
+    "extra_unsafe_objects": [
+        {
+            "name": "yellow_barrier",
+            "type": "obstruction",
+            "coords": [
+                6.0,
+                0.0
+            ]
+        },
+        {
+            "name": "cardboard_boxes",
+            "type": "obstruction",
+            "coords": [
+                6.0,
+                0.0
+            ]
+        },
+        {
+            "name": "wooden_pallets",
+            "type": "obstruction",
+            "coords": [
+                7.0,
+                4.0
+            ]
+        }
+    ],
+    "extra_safe_regions": [],
+    "extra_unsafe_regions": [
+        {
+            "name": "obstructed_corridor_section",
+            "type": "path_blockage",
+            "coords": [
+                6.0,
+                0.0
+            ]
+        }
+    ],
+    "current_location": "main_corridor"
+}

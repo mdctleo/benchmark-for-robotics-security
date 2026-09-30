@@ -1,0 +1,100 @@
+{
+    "objects": [
+        {
+            "name": "robot_in_front",
+            "coords": [
+                0.0,
+                15.0
+            ]
+        },
+        {
+            "name": "left_shelving_unit",
+            "coords": [
+                -5.0,
+                10.0
+            ]
+        },
+        {
+            "name": "right_shelving_unit",
+            "coords": [
+                5.0,
+                10.0
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "aisle",
+            "coords": [
+                0.0,
+                10.0
+            ]
+        },
+        {
+            "name": "current_robot",
+            "coords": [
+                0.0,
+                0.0
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "robot_in_front",
+            "aisle"
+        ],
+        [
+            "left_shelving_unit",
+            "aisle"
+        ],
+        [
+            "right_shelving_unit",
+            "aisle"
+        ],
+        [
+            "current_robot",
+            "aisle"
+        ]
+    ],
+    "region_connections": [],
+    "extra_safe_objects": [
+        {
+            "name": "left_shelving_unit",
+            "type": "storage_shelf",
+            "coords": [
+                -5.0,
+                10.0
+            ]
+        },
+        {
+            "name": "right_shelving_unit",
+            "type": "storage_shelf",
+            "coords": [
+                5.0,
+                10.0
+            ]
+        }
+    ],
+    "extra_unsafe_objects": [
+        {
+            "name": "robot_in_front",
+            "type": "mobile_robot",
+            "coords": [
+                0.0,
+                15.0
+            ]
+        }
+    ],
+    "extra_safe_regions": [
+        {
+            "name": "aisle",
+            "type": "pathway",
+            "coords": [
+                0.0,
+                10.0
+            ]
+        }
+    ],
+    "extra_unsafe_regions": [],
+    "current_location": "current_robot"
+}

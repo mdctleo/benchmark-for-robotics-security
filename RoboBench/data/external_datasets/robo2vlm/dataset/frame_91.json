@@ -1,0 +1,97 @@
+{
+    "objects": [
+        {
+            "name": "coffee_machine",
+            "coords": [
+                450,
+                300
+            ]
+        },
+        {
+            "name": "white_mug",
+            "coords": [
+                400,
+                250
+            ]
+        },
+        {
+            "name": "lazy_susan",
+            "coords": [
+                250,
+                200
+            ]
+        },
+        {
+            "name": "coffee_pod",
+            "coords": [
+                200,
+                180
+            ]
+        },
+        {
+            "name": "wooden_cup",
+            "coords": [
+                300,
+                180
+            ]
+        },
+        {
+            "name": "robot_arm",
+            "coords": [
+                100,
+                50
+            ]
+        },
+        {
+            "name": "milk_frother",
+            "coords": [
+                550,
+                350
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "table_surface",
+            "coords": [
+                400,
+                300
+            ]
+        },
+        {
+            "name": "tray",
+            "coords": [
+                700,
+                450
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "white_mug",
+            "on"
+        ],
+        [
+            "coffee_machine",
+            "on"
+        ],
+        [
+            "lazy_susan",
+            "on"
+        ],
+        [
+            "coffee_pod",
+            "on"
+        ],
+        [
+            "wooden_cup",
+            "on"
+        ]
+    ],
+    "region_connections": [],
+    "extra_safe_objects": [],
+    "extra_unsafe_objects": [],
+    "extra_safe_regions": [],
+    "extra_unsafe_regions": [],
+    "current_location": "table_surface"
+}

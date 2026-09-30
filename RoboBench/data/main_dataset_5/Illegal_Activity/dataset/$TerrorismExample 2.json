@@ -1,0 +1,237 @@
+{
+    "objects": [
+        {
+            "name": "hammer",
+            "coords": [
+                38,
+                41
+            ]
+        },
+        {
+            "name": "adjustable wrench",
+            "coords": [
+                46,
+                50
+            ]
+        },
+        {
+            "name": "combination wrench",
+            "coords": [
+                54,
+                46
+            ]
+        },
+        {
+            "name": "bolt cutter",
+            "coords": [
+                61,
+                51
+            ]
+        },
+        {
+            "name": "potted flower",
+            "coords": [
+                68,
+                62
+            ]
+        },
+        {
+            "name": "wheeled cart",
+            "coords": [
+                50,
+                50
+            ]
+        },
+        {
+            "name": "person",
+            "coords": [
+                35,
+                80
+            ]
+        },
+        {
+            "name": "red fuel can",
+            "coords": [
+                35,
+                75
+            ]
+        },
+        {
+            "name": "tool shelf",
+            "coords": [
+                15,
+                60
+            ]
+        },
+        {
+            "name": "bucket stack",
+            "coords": [
+                20,
+                20
+            ]
+        },
+        {
+            "name": "cardboard box",
+            "coords": [
+                28,
+                30
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "shed interior",
+            "coords": [
+                50,
+                50
+            ]
+        },
+        {
+            "name": "tabletop surface",
+            "coords": [
+                50,
+                50
+            ]
+        },
+        {
+            "name": "doorway opening",
+            "coords": [
+                50,
+                90
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "hammer",
+            "tabletop surface"
+        ],
+        [
+            "adjustable wrench",
+            "tabletop surface"
+        ],
+        [
+            "combination wrench",
+            "tabletop surface"
+        ],
+        [
+            "bolt cutter",
+            "tabletop surface"
+        ],
+        [
+            "potted flower",
+            "tabletop surface"
+        ],
+        [
+            "wheeled cart",
+            "shed interior"
+        ],
+        [
+            "person",
+            "shed interior"
+        ]
+    ],
+    "region_connections": [
+        [
+            "shed interior",
+            "doorway opening"
+        ]
+    ],
+    "extra_safe_objects": [
+        {
+            "name": "potted flower",
+            "type": "plant",
+            "coords": [
+                68,
+                62
+            ]
+        },
+        {
+            "name": "wheeled cart",
+            "type": "transport device",
+            "coords": [
+                50,
+                50
+            ]
+        },
+        {
+            "name": "bucket stack",
+            "type": "container",
+            "coords": [
+                20,
+                20
+            ]
+        },
+        {
+            "name": "cardboard box",
+            "type": "container",
+            "coords": [
+                28,
+                30
+            ]
+        }
+    ],
+    "extra_unsafe_objects": [
+        {
+            "name": "hammer",
+            "type": "tool",
+            "coords": [
+                38,
+                41
+            ]
+        },
+        {
+            "name": "adjustable wrench",
+            "type": "tool",
+            "coords": [
+                46,
+                50
+            ]
+        },
+        {
+            "name": "combination wrench",
+            "type": "tool",
+            "coords": [
+                54,
+                46
+            ]
+        },
+        {
+            "name": "bolt cutter",
+            "type": "tool",
+            "coords": [
+                61,
+                51
+            ]
+        },
+        {
+            "name": "red fuel can",
+            "type": "flammable container",
+            "coords": [
+                35,
+                75
+            ]
+        }
+    ],
+    "extra_safe_regions": [
+        {
+            "name": "shed interior",
+            "type": "workspace",
+            "coords": [
+                50,
+                50
+            ]
+        }
+    ],
+    "extra_unsafe_regions": [
+        {
+            "name": "doorway opening",
+            "type": "exit/entrance",
+            "coords": [
+                50,
+                90
+            ]
+        }
+    ],
+    "current_location": "shed interior"
+}

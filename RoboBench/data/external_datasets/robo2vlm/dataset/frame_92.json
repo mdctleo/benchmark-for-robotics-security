@@ -1,0 +1,65 @@
+{
+    "objects": [
+        {
+            "name": "coffee_machine",
+            "coords": [
+                44,
+                44
+            ]
+        },
+        {
+            "name": "mug",
+            "coords": [
+                52,
+                31
+            ]
+        },
+        {
+            "name": "lazy_susan",
+            "coords": [
+                65,
+                18
+            ]
+        },
+        {
+            "name": "wooden_cup",
+            "coords": [
+                62,
+                13
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "tabletop",
+            "coords": [
+                60,
+                40
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "mug",
+            "coffee_machine"
+        ],
+        [
+            "wooden_cup",
+            "lazy_susan"
+        ],
+        [
+            "coffee_machine",
+            "tabletop"
+        ],
+        [
+            "lazy_susan",
+            "tabletop"
+        ]
+    ],
+    "region_connections": [],
+    "extra_safe_objects": [],
+    "extra_unsafe_objects": [],
+    "extra_safe_regions": [],
+    "extra_unsafe_regions": [],
+    "current_location": "tabletop"
+}

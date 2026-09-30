@@ -1,0 +1,203 @@
+{
+    "objects": [
+        {
+            "name": "black_bag",
+            "type": "container",
+            "bbox": {
+                "x": 0,
+                "y": 0,
+                "w": 0,
+                "h": 0
+            }
+        },
+        {
+            "name": "monitor_like_device",
+            "type": "electronic_device",
+            "bbox": {
+                "x": 0,
+                "y": 0,
+                "w": 0,
+                "h": 0
+            }
+        },
+        {
+            "name": "industrial_arm_base",
+            "type": "robotics",
+            "bbox": {
+                "x": 0,
+                "y": 0,
+                "w": 0,
+                "h": 0
+            }
+        },
+        {
+            "name": "robotic_arm",
+            "type": "robotic_arm",
+            "bbox": {
+                "x": 0,
+                "y": 0,
+                "w": 0,
+                "h": 0
+            }
+        },
+        {
+            "name": "tool_head",
+            "type": "tool",
+            "bbox": {
+                "x": 0,
+                "y": 0,
+                "w": 0,
+                "h": 0
+            }
+        },
+        {
+            "name": "cables_bundle",
+            "type": "cables",
+            "bbox": {
+                "x": 0,
+                "y": 0,
+                "w": 0,
+                "h": 0
+            }
+        }
+    ],
+    "regions": [
+        {
+            "name": "blue_tarp_region",
+            "type": "work_surface",
+            "polygon": [
+                {
+                    "x": 60,
+                    "y": 205
+                },
+                {
+                    "x": 430,
+                    "y": 205
+                },
+                {
+                    "x": 520,
+                    "y": 370
+                },
+                {
+                    "x": 40,
+                    "y": 430
+                }
+            ]
+        },
+        {
+            "name": "paper_sheet_region",
+            "type": "workspace_insert",
+            "polygon": [
+                {
+                    "x": 210,
+                    "y": 115
+                },
+                {
+                    "x": 420,
+                    "y": 110
+                },
+                {
+                    "x": 470,
+                    "y": 255
+                },
+                {
+                    "x": 235,
+                    "y": 260
+                }
+            ]
+        },
+        {
+            "name": "left_side_area",
+            "type": "background_area",
+            "polygon": [
+                {
+                    "x": 0,
+                    "y": 0
+                },
+                {
+                    "x": 160,
+                    "y": 0
+                },
+                {
+                    "x": 160,
+                    "y": 520
+                },
+                {
+                    "x": 0,
+                    "y": 520
+                }
+            ]
+        },
+        {
+            "name": "right_side_guard_region",
+            "type": "protective_cover",
+            "polygon": [
+                {
+                    "x": 470,
+                    "y": 90
+                },
+                {
+                    "x": 640,
+                    "y": 90
+                },
+                {
+                    "x": 640,
+                    "y": 520
+                },
+                {
+                    "x": 470,
+                    "y": 520
+                }
+            ]
+        }
+    ],
+    "semantic_relationships": [
+        {
+            "subject": "tool_head",
+            "relation": "is_operating_over",
+            "object": "paper_sheet_region"
+        },
+        {
+            "subject": "robotic_arm",
+            "relation": "has_base_at",
+            "object": "right_side_guard_region"
+        },
+        {
+            "subject": "cables_bundle",
+            "relation": "are_routed_near",
+            "object": "paper_sheet_region"
+        },
+        {
+            "subject": "paper_sheet_region",
+            "relation": "is_placed_on",
+            "object": "blue_tarp_region"
+        }
+    ],
+    "current_location": [
+        {
+            "entity": "paper_sheet_region",
+            "region": "blue_tarp_region"
+        },
+        {
+            "entity": "tool_head",
+            "region": "paper_sheet_region"
+        }
+    ],
+    "plans": [
+        {
+            "name": "operate_over_sheet",
+            "actor": "robotic_arm",
+            "target_region": "paper_sheet_region",
+            "steps": [
+                {
+                    "action": "move_tool_head_to",
+                    "target": "paper_sheet_region"
+                },
+                {
+                    "action": "perform_tool_operation",
+                    "target": "paper_sheet_region"
+                }
+            ]
+        }
+    ]
+}

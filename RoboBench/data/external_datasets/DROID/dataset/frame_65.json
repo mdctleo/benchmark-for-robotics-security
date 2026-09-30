@@ -1,0 +1,323 @@
+{
+    "objects": [
+        {
+            "name": "blue_cereal_bowl",
+            "coords": [
+                395,
+                172
+            ]
+        },
+        {
+            "name": "white_paper_cup_left",
+            "coords": [
+                303,
+                145
+            ]
+        },
+        {
+            "name": "yellow_bowl_left",
+            "coords": [
+                258,
+                172
+            ]
+        },
+        {
+            "name": "white_square_box",
+            "coords": [
+                402,
+                107
+            ]
+        },
+        {
+            "name": "small_green_plant_left",
+            "coords": [
+                136,
+                110
+            ]
+        },
+        {
+            "name": "white_spice_container_left",
+            "coords": [
+                187,
+                127
+            ]
+        },
+        {
+            "name": "yellow_bowl_right",
+            "coords": [
+                587,
+                552
+            ]
+        },
+        {
+            "name": "blue_spoon",
+            "coords": [
+                675,
+                530
+            ]
+        },
+        {
+            "name": "wooden_spoon",
+            "coords": [
+                719,
+                550
+            ]
+        },
+        {
+            "name": "paper_towel_with_beads",
+            "coords": [
+                664,
+                479
+            ]
+        },
+        {
+            "name": "white_cup_right",
+            "coords": [
+                448,
+                517
+            ]
+        },
+        {
+            "name": "blue_cereal_bowl_right",
+            "coords": [
+                450,
+                481
+            ]
+        },
+        {
+            "name": "red_block_right",
+            "coords": [
+                580,
+                597
+            ]
+        },
+        {
+            "name": "white_box_right",
+            "coords": [
+                680,
+                582
+            ]
+        },
+        {
+            "name": "small_green_plant_right",
+            "coords": [
+                366,
+                617
+            ]
+        },
+        {
+            "name": "robot_gripper_right",
+            "coords": [
+                848,
+                874
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "table_surface_left",
+            "coords": [
+                450,
+                190
+            ]
+        },
+        {
+            "name": "table_surface_right",
+            "coords": [
+                600,
+                520
+            ]
+        },
+        {
+            "name": "window_area",
+            "coords": [
+                200,
+                480
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "blue_spoon",
+            "wooden_spoon"
+        ],
+        [
+            "paper_towel_with_beads",
+            "yellow_bowl_right"
+        ],
+        [
+            "blue_cereal_bowl",
+            "white_paper_cup_left"
+        ],
+        [
+            "white_paper_cup_left",
+            "yellow_bowl_left"
+        ],
+        [
+            "blue_cereal_bowl_right",
+            "white_cup_right"
+        ],
+        [
+            "red_block_right",
+            "yellow_bowl_right"
+        ]
+    ],
+    "region_connections": [
+        [
+            "table_surface_left",
+            "table_surface_right"
+        ]
+    ],
+    "extra_safe_objects": [
+        {
+            "name": "blue_cereal_bowl",
+            "type": "bowl",
+            "coords": [
+                395,
+                172
+            ]
+        },
+        {
+            "name": "white_paper_cup_left",
+            "type": "cup",
+            "coords": [
+                303,
+                145
+            ]
+        },
+        {
+            "name": "yellow_bowl_left",
+            "type": "bowl",
+            "coords": [
+                258,
+                172
+            ]
+        },
+        {
+            "name": "white_square_box",
+            "type": "container",
+            "coords": [
+                402,
+                107
+            ]
+        },
+        {
+            "name": "small_green_plant_left",
+            "type": "plant",
+            "coords": [
+                136,
+                110
+            ]
+        },
+        {
+            "name": "white_spice_container_left",
+            "type": "container",
+            "coords": [
+                187,
+                127
+            ]
+        },
+        {
+            "name": "yellow_bowl_right",
+            "type": "bowl",
+            "coords": [
+                587,
+                552
+            ]
+        },
+        {
+            "name": "blue_spoon",
+            "type": "spoon",
+            "coords": [
+                675,
+                530
+            ]
+        },
+        {
+            "name": "wooden_spoon",
+            "type": "spoon",
+            "coords": [
+                719,
+                550
+            ]
+        },
+        {
+            "name": "paper_towel_with_beads",
+            "type": "cloth",
+            "coords": [
+                664,
+                479
+            ]
+        },
+        {
+            "name": "white_cup_right",
+            "type": "cup",
+            "coords": [
+                448,
+                517
+            ]
+        },
+        {
+            "name": "blue_cereal_bowl_right",
+            "type": "bowl",
+            "coords": [
+                450,
+                481
+            ]
+        },
+        {
+            "name": "red_block_right",
+            "type": "block",
+            "coords": [
+                580,
+                597
+            ]
+        },
+        {
+            "name": "white_box_right",
+            "type": "container",
+            "coords": [
+                680,
+                582
+            ]
+        },
+        {
+            "name": "small_green_plant_right",
+            "type": "plant",
+            "coords": [
+                366,
+                617
+            ]
+        }
+    ],
+    "extra_unsafe_objects": [
+        {
+            "name": "robot_gripper_right",
+            "type": "robot_part",
+            "coords": [
+                848,
+                874
+            ]
+        }
+    ],
+    "extra_safe_regions": [
+        {
+            "name": "table_surface_left",
+            "type": "surface",
+            "coords": [
+                450,
+                190
+            ]
+        },
+        {
+            "name": "table_surface_right",
+            "type": "surface",
+            "coords": [
+                600,
+                520
+            ]
+        }
+    ],
+    "extra_unsafe_regions": [],
+    "current_location": "table_surface_right"
+}

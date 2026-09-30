@@ -1,0 +1,391 @@
+{
+    "objects": [
+        {
+            "name": "vehicle_blue_sedan_1",
+            "type": "vehicle",
+            "coords": {
+                "x": 450,
+                "y": 455
+            }
+        },
+        {
+            "name": "vehicle_dark_car_1",
+            "type": "vehicle",
+            "coords": {
+                "x": 520,
+                "y": 395
+            }
+        },
+        {
+            "name": "vehicle_white_car_1",
+            "type": "vehicle",
+            "coords": {
+                "x": 650,
+                "y": 300
+            }
+        },
+        {
+            "name": "vehicle_gray_car_1",
+            "type": "vehicle",
+            "coords": {
+                "x": 720,
+                "y": 420
+            }
+        },
+        {
+            "name": "person_in_red_jacket_1",
+            "type": "pedestrian",
+            "coords": {
+                "x": 485,
+                "y": 610
+            }
+        },
+        {
+            "name": "child_in_light_clothes_1",
+            "type": "pedestrian",
+            "coords": {
+                "x": 545,
+                "y": 610
+            }
+        },
+        {
+            "name": "tree_left_1",
+            "type": "vegetation",
+            "coords": {
+                "x": 270,
+                "y": 280
+            }
+        },
+        {
+            "name": "tree_center_1",
+            "type": "vegetation",
+            "coords": {
+                "x": 385,
+                "y": 305
+            }
+        },
+        {
+            "name": "tree_right_1",
+            "type": "vegetation",
+            "coords": {
+                "x": 1010,
+                "y": 260
+            }
+        },
+        {
+            "name": "streetlight_left_1",
+            "type": "streetlight",
+            "coords": {
+                "x": 390,
+                "y": 300
+            }
+        },
+        {
+            "name": "streetlight_center_1",
+            "type": "streetlight",
+            "coords": {
+                "x": 590,
+                "y": 290
+            }
+        },
+        {
+            "name": "streetlight_right_1",
+            "type": "streetlight",
+            "coords": {
+                "x": 1180,
+                "y": 285
+            }
+        },
+        {
+            "name": "building_left_1",
+            "type": "building",
+            "coords": {
+                "x": 85,
+                "y": 390
+            }
+        },
+        {
+            "name": "building_mid_1",
+            "type": "building",
+            "coords": {
+                "x": 540,
+                "y": 255
+            }
+        },
+        {
+            "name": "building_right_1",
+            "type": "building",
+            "coords": {
+                "x": 1080,
+                "y": 300
+            }
+        },
+        {
+            "name": "crosswalk_1",
+            "type": "crosswalk",
+            "coords": {
+                "x": 610,
+                "y": 655
+            }
+        },
+        {
+            "name": "traffic_light_left_1",
+            "type": "traffic_light",
+            "coords": {
+                "x": 525,
+                "y": 440
+            }
+        },
+        {
+            "name": "traffic_light_right_1",
+            "type": "traffic_light",
+            "coords": {
+                "x": 705,
+                "y": 440
+            }
+        },
+        {
+            "name": "sign_no_parking_1",
+            "type": "sign",
+            "coords": {
+                "x": 1030,
+                "y": 455
+            }
+        }
+    ],
+    "regions": [
+        {
+            "name": "intersection_1",
+            "type": "intersection",
+            "polygon": [
+                {
+                    "x": 280,
+                    "y": 300
+                },
+                {
+                    "x": 1220,
+                    "y": 300
+                },
+                {
+                    "x": 1220,
+                    "y": 720
+                },
+                {
+                    "x": 280,
+                    "y": 720
+                }
+            ]
+        },
+        {
+            "name": "roadway_1",
+            "type": "roadway",
+            "polygon": [
+                {
+                    "x": 280,
+                    "y": 360
+                },
+                {
+                    "x": 1220,
+                    "y": 360
+                },
+                {
+                    "x": 1220,
+                    "y": 720
+                },
+                {
+                    "x": 280,
+                    "y": 720
+                }
+            ]
+        },
+        {
+            "name": "sidewalk_right_1",
+            "type": "sidewalk",
+            "polygon": [
+                {
+                    "x": 1010,
+                    "y": 360
+                },
+                {
+                    "x": 1220,
+                    "y": 360
+                },
+                {
+                    "x": 1220,
+                    "y": 720
+                },
+                {
+                    "x": 1010,
+                    "y": 720
+                }
+            ]
+        },
+        {
+            "name": "sidewalk_left_1",
+            "type": "sidewalk",
+            "polygon": [
+                {
+                    "x": 280,
+                    "y": 360
+                },
+                {
+                    "x": 470,
+                    "y": 360
+                },
+                {
+                    "x": 470,
+                    "y": 720
+                },
+                {
+                    "x": 280,
+                    "y": 720
+                }
+            ]
+        },
+        {
+            "name": "building_front_area_right_1",
+            "type": "building_front_area",
+            "polygon": [
+                {
+                    "x": 930,
+                    "y": 320
+                },
+                {
+                    "x": 1220,
+                    "y": 320
+                },
+                {
+                    "x": 1220,
+                    "y": 520
+                },
+                {
+                    "x": 930,
+                    "y": 520
+                }
+            ]
+        },
+        {
+            "name": "crosswalk_region_1",
+            "type": "crosswalk_region",
+            "polygon": [
+                {
+                    "x": 470,
+                    "y": 590
+                },
+                {
+                    "x": 770,
+                    "y": 590
+                },
+                {
+                    "x": 820,
+                    "y": 720
+                },
+                {
+                    "x": 420,
+                    "y": 720
+                }
+            ]
+        }
+    ],
+    "current_location": "intersection_1",
+    "semantic_relationships": [
+        {
+            "subject": "vehicle_blue_sedan_1",
+            "relation": "is_on",
+            "object": "roadway_1"
+        },
+        {
+            "subject": "vehicle_dark_car_1",
+            "relation": "is_on",
+            "object": "roadway_1"
+        },
+        {
+            "subject": "vehicle_white_car_1",
+            "relation": "is_on",
+            "object": "roadway_1"
+        },
+        {
+            "subject": "vehicle_gray_car_1",
+            "relation": "is_on",
+            "object": "roadway_1"
+        },
+        {
+            "subject": "person_in_red_jacket_1",
+            "relation": "is_near",
+            "object": "crosswalk_region_1"
+        },
+        {
+            "subject": "child_in_light_clothes_1",
+            "relation": "is_near",
+            "object": "crosswalk_region_1"
+        },
+        {
+            "subject": "crosswalk_1",
+            "relation": "located_in",
+            "object": "crosswalk_region_1"
+        },
+        {
+            "subject": "traffic_light_left_1",
+            "relation": "controls",
+            "object": "crosswalk_region_1"
+        },
+        {
+            "subject": "traffic_light_right_1",
+            "relation": "controls",
+            "object": "crosswalk_region_1"
+        },
+        {
+            "subject": "building_left_1",
+            "relation": "faces",
+            "object": "intersection_1"
+        },
+        {
+            "subject": "building_mid_1",
+            "relation": "faces",
+            "object": "intersection_1"
+        },
+        {
+            "subject": "building_right_1",
+            "relation": "faces",
+            "object": "intersection_1"
+        },
+        {
+            "subject": "tree_left_1",
+            "relation": "is_near",
+            "object": "sidewalk_left_1"
+        },
+        {
+            "subject": "tree_right_1",
+            "relation": "is_near",
+            "object": "sidewalk_right_1"
+        },
+        {
+            "subject": "streetlight_left_1",
+            "relation": "is_near",
+            "object": "intersection_1"
+        },
+        {
+            "subject": "streetlight_center_1",
+            "relation": "is_near",
+            "object": "intersection_1"
+        },
+        {
+            "subject": "streetlight_right_1",
+            "relation": "is_near",
+            "object": "intersection_1"
+        },
+        {
+            "subject": "sign_no_parking_1",
+            "relation": "is_on",
+            "object": "building_front_area_right_1"
+        }
+    ],
+    "plans": [
+        {
+            "name": "cross_at_crosswalk",
+            "current_location": "intersection_1",
+            "next_region": "crosswalk_region_1",
+            "actor": "person_in_red_jacket_1"
+        }
+    ]
+}

@@ -1,0 +1,300 @@
+{
+    "objects": [
+        {
+            "name": "blue_tarp",
+            "type": "surface",
+            "bbox": {
+                "x1": 80,
+                "y1": 40,
+                "x2": 1500,
+                "y2": 860
+            }
+        },
+        {
+            "name": "green_button",
+            "type": "button",
+            "bbox": {
+                "x1": 770,
+                "y1": 245,
+                "x2": 860,
+                "y2": 340
+            }
+        },
+        {
+            "name": "red_button",
+            "type": "button",
+            "bbox": {
+                "x1": 580,
+                "y1": 305,
+                "x2": 675,
+                "y2": 400
+            }
+        },
+        {
+            "name": "orange_button",
+            "type": "button",
+            "bbox": {
+                "x1": 490,
+                "y1": 360,
+                "x2": 580,
+                "y2": 450
+            }
+        },
+        {
+            "name": "white_tiled_block",
+            "type": "block",
+            "bbox": {
+                "x1": 1220,
+                "y1": 455,
+                "x2": 1360,
+                "y2": 590
+            }
+        },
+        {
+            "name": "robot_arm_base_left",
+            "type": "robot_component",
+            "bbox": {
+                "x1": 0,
+                "y1": 0,
+                "x2": 240,
+                "y2": 500
+            }
+        },
+        {
+            "name": "robot_arm_left",
+            "type": "robot_component",
+            "bbox": {
+                "x1": 0,
+                "y1": 0,
+                "x2": 260,
+                "y2": 700
+            }
+        },
+        {
+            "name": "robot_arm_right",
+            "type": "robot_component",
+            "bbox": {
+                "x1": 1225,
+                "y1": 0,
+                "x2": 1545,
+                "y2": 520
+            }
+        },
+        {
+            "name": "controller_unit",
+            "type": "device",
+            "bbox": {
+                "x1": 1360,
+                "y1": 420,
+                "x2": 1545,
+                "y2": 900
+            }
+        },
+        {
+            "name": "monitor_or_cover_right",
+            "type": "equipment",
+            "bbox": {
+                "x1": 1420,
+                "y1": 0,
+                "x2": 1630,
+                "y2": 900
+            }
+        },
+        {
+            "name": "robotic_platform",
+            "type": "platform",
+            "bbox": {
+                "x1": 0,
+                "y1": 0,
+                "x2": 1630,
+                "y2": 900
+            }
+        },
+        {
+            "name": "cable_bundle",
+            "type": "cables",
+            "bbox": {
+                "x1": 0,
+                "y1": 0,
+                "x2": 1630,
+                "y2": 650
+            }
+        }
+    ],
+    "regions": [
+        {
+            "name": "workspace_center",
+            "type": "workspace",
+            "polygon": [
+                [
+                    80,
+                    40
+                ],
+                [
+                    1500,
+                    40
+                ],
+                [
+                    1500,
+                    860
+                ],
+                [
+                    80,
+                    860
+                ]
+            ]
+        },
+        {
+            "name": "tarp_center",
+            "type": "surface_area",
+            "polygon": [
+                [
+                    200,
+                    120
+                ],
+                [
+                    1400,
+                    120
+                ],
+                [
+                    1400,
+                    780
+                ],
+                [
+                    200,
+                    780
+                ]
+            ]
+        },
+        {
+            "name": "left_edge_workspace",
+            "type": "boundary_region",
+            "polygon": [
+                [
+                    0,
+                    0
+                ],
+                [
+                    260,
+                    0
+                ],
+                [
+                    260,
+                    900
+                ],
+                [
+                    0,
+                    900
+                ]
+            ]
+        },
+        {
+            "name": "right_edge_workspace",
+            "type": "boundary_region",
+            "polygon": [
+                [
+                    1400,
+                    0
+                ],
+                [
+                    1630,
+                    0
+                ],
+                [
+                    1630,
+                    900
+                ],
+                [
+                    1400,
+                    900
+                ]
+            ]
+        }
+    ],
+    "semantic_relationships": [
+        {
+            "subject": "green_button",
+            "relation": "located_on",
+            "object": "blue_tarp"
+        },
+        {
+            "subject": "red_button",
+            "relation": "located_on",
+            "object": "blue_tarp"
+        },
+        {
+            "subject": "orange_button",
+            "relation": "located_on",
+            "object": "blue_tarp"
+        },
+        {
+            "subject": "white_tiled_block",
+            "relation": "located_on",
+            "object": "blue_tarp"
+        },
+        {
+            "subject": "blue_tarp",
+            "relation": "within",
+            "object": "workspace_center"
+        },
+        {
+            "subject": "green_button",
+            "relation": "within",
+            "object": "tarp_center"
+        },
+        {
+            "subject": "red_button",
+            "relation": "within",
+            "object": "tarp_center"
+        },
+        {
+            "subject": "orange_button",
+            "relation": "within",
+            "object": "tarp_center"
+        },
+        {
+            "subject": "white_tiled_block",
+            "relation": "within",
+            "object": "tarp_center"
+        },
+        {
+            "subject": "robot_arm_left",
+            "relation": "adjacent_to",
+            "object": "left_edge_workspace"
+        },
+        {
+            "subject": "robot_arm_right",
+            "relation": "adjacent_to",
+            "object": "right_edge_workspace"
+        },
+        {
+            "subject": "cable_bundle",
+            "relation": "spans",
+            "object": "workspace_center"
+        }
+    ],
+    "current_location": {
+        "name": "blue_tarp",
+        "region": "tarp_center",
+        "coord": [
+            800,
+            450
+        ]
+    },
+    "plans": [
+        {
+            "plan_name": "inspect_buttons_on_tarp",
+            "targets": [
+                "green_button",
+                "red_button",
+                "orange_button",
+                "white_tiled_block"
+            ],
+            "start_region": "tarp_center"
+        }
+    ],
+    "coord_system": {
+        "origin": "top_left",
+        "units": "pixels"
+    }
+}

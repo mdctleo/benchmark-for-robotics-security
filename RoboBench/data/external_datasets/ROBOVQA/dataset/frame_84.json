@@ -1,0 +1,125 @@
+{
+    "objects": [
+        {
+            "name": "person",
+            "type": "person",
+            "coordinates": {
+                "x": 465,
+                "y": 250
+            }
+        },
+        {
+            "name": "machine",
+            "type": "appliance",
+            "coordinates": {
+                "x": 500,
+                "y": 365
+            }
+        },
+        {
+            "name": "paper_goods_dispenser",
+            "type": "signage",
+            "coordinates": {
+                "x": 160,
+                "y": 110
+            }
+        },
+        {
+            "name": "paper_goods_board",
+            "type": "panel",
+            "coordinates": {
+                "x": 250,
+                "y": 120
+            }
+        },
+        {
+            "name": "plant_based_container_label",
+            "type": "label",
+            "coordinates": {
+                "x": 370,
+                "y": 110
+            }
+        },
+        {
+            "name": "disposable_utensils_label",
+            "type": "label",
+            "coordinates": {
+                "x": 210,
+                "y": 130
+            }
+        }
+    ],
+    "regions": [
+        {
+            "name": "counter_area",
+            "type": "surface",
+            "coordinates": {
+                "x": 520,
+                "y": 430
+            }
+        },
+        {
+            "name": "machine_recess_opening",
+            "type": "opening",
+            "coordinates": {
+                "x": 500,
+                "y": 300
+            }
+        },
+        {
+            "name": "floor_area",
+            "type": "surface",
+            "coordinates": {
+                "x": 620,
+                "y": 620
+            }
+        },
+        {
+            "name": "upper_left_display_area",
+            "type": "display",
+            "coordinates": {
+                "x": 250,
+                "y": 70
+            }
+        }
+    ],
+    "semantic_relationships": [
+        {
+            "relation": "person_is_interacting_with",
+            "source": "person",
+            "target": "machine_recess_opening"
+        },
+        {
+            "relation": "machine_has_opening",
+            "source": "machine",
+            "target": "machine_recess_opening"
+        },
+        {
+            "relation": "machine_is_on",
+            "source": "machine",
+            "target": "counter_area"
+        },
+        {
+            "relation": "labels_are_displayed_on",
+            "source": "paper_goods_board",
+            "target": "upper_left_display_area"
+        },
+        {
+            "relation": "label_is_on_board",
+            "source": "paper_goods_dispenser",
+            "target": "paper_goods_board"
+        },
+        {
+            "relation": "label_is_on_board",
+            "source": "disposable_utensils_label",
+            "target": "paper_goods_board"
+        },
+        {
+            "relation": "label_is_on_board",
+            "source": "plant_based_container_label",
+            "target": "paper_goods_board"
+        }
+    ],
+    "current_location": "machine_recess_opening",
+    "plans": []
+}

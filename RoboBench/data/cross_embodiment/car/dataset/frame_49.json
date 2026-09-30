@@ -1,0 +1,308 @@
+{
+    "objects": [
+        {
+            "name": "vehicle_car",
+            "type": "vehicle",
+            "position": {
+                "x": 0.47,
+                "y": 0.85
+            }
+        },
+        {
+            "name": "vehicle_car_far",
+            "type": "vehicle",
+            "position": {
+                "x": 0.74,
+                "y": 0.64
+            }
+        },
+        {
+            "name": "scooter_person",
+            "type": "person_on_vehicle",
+            "position": {
+                "x": 0.38,
+                "y": 0.67
+            }
+        },
+        {
+            "name": "stop_sign",
+            "type": "traffic_sign",
+            "position": {
+                "x": 0.79,
+                "y": 0.7
+            }
+        },
+        {
+            "name": "street_light_1",
+            "type": "street_light",
+            "position": {
+                "x": 0.47,
+                "y": 0.52
+            }
+        },
+        {
+            "name": "street_light_2",
+            "type": "street_light",
+            "position": {
+                "x": 0.63,
+                "y": 0.54
+            }
+        },
+        {
+            "name": "building_left_1",
+            "type": "building",
+            "position": {
+                "x": 0.18,
+                "y": 0.57
+            }
+        },
+        {
+            "name": "building_left_2",
+            "type": "building",
+            "position": {
+                "x": 0.27,
+                "y": 0.63
+            }
+        },
+        {
+            "name": "building_right_1",
+            "type": "building",
+            "position": {
+                "x": 0.84,
+                "y": 0.6
+            }
+        },
+        {
+            "name": "building_right_2",
+            "type": "building",
+            "position": {
+                "x": 0.87,
+                "y": 0.7
+            }
+        },
+        {
+            "name": "road_sign_post",
+            "type": "infrastructure_post",
+            "position": {
+                "x": 0.8,
+                "y": 0.7
+            }
+        },
+        {
+            "name": "tree_left_1",
+            "type": "tree",
+            "position": {
+                "x": 0.1,
+                "y": 0.66
+            }
+        },
+        {
+            "name": "tree_right_1",
+            "type": "tree",
+            "position": {
+                "x": 0.9,
+                "y": 0.62
+            }
+        }
+    ],
+    "regions": [
+        {
+            "name": "intersection_center",
+            "type": "road_area",
+            "polygon": [
+                {
+                    "x": 0.45,
+                    "y": 0.78
+                },
+                {
+                    "x": 0.7,
+                    "y": 0.78
+                },
+                {
+                    "x": 0.72,
+                    "y": 0.58
+                },
+                {
+                    "x": 0.44,
+                    "y": 0.58
+                }
+            ]
+        },
+        {
+            "name": "road_straight_segment",
+            "type": "road_area",
+            "polygon": [
+                {
+                    "x": 0.38,
+                    "y": 0.95
+                },
+                {
+                    "x": 0.74,
+                    "y": 0.95
+                },
+                {
+                    "x": 0.7,
+                    "y": 0.76
+                },
+                {
+                    "x": 0.42,
+                    "y": 0.76
+                }
+            ]
+        },
+        {
+            "name": "left_sidewalk_left",
+            "type": "sidewalk_area",
+            "polygon": [
+                {
+                    "x": 0.22,
+                    "y": 0.9
+                },
+                {
+                    "x": 0.38,
+                    "y": 0.9
+                },
+                {
+                    "x": 0.34,
+                    "y": 0.62
+                },
+                {
+                    "x": 0.18,
+                    "y": 0.62
+                }
+            ]
+        },
+        {
+            "name": "right_sidewalk_right",
+            "type": "sidewalk_area",
+            "polygon": [
+                {
+                    "x": 0.7,
+                    "y": 0.9
+                },
+                {
+                    "x": 0.88,
+                    "y": 0.9
+                },
+                {
+                    "x": 0.86,
+                    "y": 0.62
+                },
+                {
+                    "x": 0.68,
+                    "y": 0.62
+                }
+            ]
+        },
+        {
+            "name": "crosswalk_like_area",
+            "type": "crossing_area",
+            "polygon": [
+                {
+                    "x": 0.54,
+                    "y": 0.75
+                },
+                {
+                    "x": 0.62,
+                    "y": 0.75
+                },
+                {
+                    "x": 0.61,
+                    "y": 0.67
+                },
+                {
+                    "x": 0.53,
+                    "y": 0.67
+                }
+            ]
+        }
+    ],
+    "semantic_relationships": [
+        {
+            "subject": "scooter_person",
+            "relation": "is_on",
+            "object": "road_straight_segment"
+        },
+        {
+            "subject": "vehicle_car",
+            "relation": "is_on",
+            "object": "road_straight_segment"
+        },
+        {
+            "subject": "vehicle_car_far",
+            "relation": "is_on",
+            "object": "road_straight_segment"
+        },
+        {
+            "subject": "stop_sign",
+            "relation": "controls",
+            "object": "intersection_center"
+        },
+        {
+            "subject": "stop_sign",
+            "relation": "located_near",
+            "object": "right_sidewalk_right"
+        },
+        {
+            "subject": "street_light_1",
+            "relation": "illuminates",
+            "object": "intersection_center"
+        },
+        {
+            "subject": "street_light_2",
+            "relation": "illuminates",
+            "object": "intersection_center"
+        },
+        {
+            "subject": "building_left_1",
+            "relation": "adjacent_to",
+            "object": "left_sidewalk_left"
+        },
+        {
+            "subject": "building_left_2",
+            "relation": "adjacent_to",
+            "object": "left_sidewalk_left"
+        },
+        {
+            "subject": "building_right_1",
+            "relation": "adjacent_to",
+            "object": "right_sidewalk_right"
+        },
+        {
+            "subject": "building_right_2",
+            "relation": "adjacent_to",
+            "object": "right_sidewalk_right"
+        },
+        {
+            "subject": "tree_left_1",
+            "relation": "adjacent_to",
+            "object": "left_sidewalk_left"
+        },
+        {
+            "subject": "tree_right_1",
+            "relation": "adjacent_to",
+            "object": "right_sidewalk_right"
+        },
+        {
+            "subject": "crosswalk_like_area",
+            "relation": "is_part_of",
+            "object": "intersection_center"
+        },
+        {
+            "subject": "road_straight_segment",
+            "relation": "connects_to",
+            "object": "intersection_center"
+        }
+    ],
+    "current_location": {
+        "name": "intersection_center"
+    },
+    "plans": [
+        {
+            "plan_id": "plan_1",
+            "from": "current_location",
+            "to": "intersection_center",
+            "intention": "proceed_through_intersection"
+        }
+    ]
+}

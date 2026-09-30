@@ -1,0 +1,127 @@
+{
+    "objects": [
+        {
+            "name": "monitor",
+            "coords": [
+                100,
+                550
+            ]
+        },
+        {
+            "name": "keyboard_left",
+            "coords": [
+                300,
+                750
+            ]
+        },
+        {
+            "name": "keyboard_right",
+            "coords": [
+                800,
+                750
+            ]
+        },
+        {
+            "name": "mouse",
+            "coords": [
+                850,
+                700
+            ]
+        },
+        {
+            "name": "robot_arm_base",
+            "coords": [
+                500,
+                400
+            ]
+        },
+        {
+            "name": "robot_portal_figure",
+            "coords": [
+                550,
+                500
+            ]
+        },
+        {
+            "name": "beverage_can_yellow",
+            "coords": [
+                400,
+                650
+            ]
+        },
+        {
+            "name": "beverage_can_pink",
+            "coords": [
+                450,
+                650
+            ]
+        },
+        {
+            "name": "desk_lamp",
+            "coords": [
+                350,
+                550
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "desk_surface",
+            "coords": [
+                500,
+                700
+            ]
+        },
+        {
+            "name": "shelves",
+            "coords": [
+                500,
+                150
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "monitor",
+            "desk_surface"
+        ],
+        [
+            "keyboard_left",
+            "desk_surface"
+        ],
+        [
+            "keyboard_right",
+            "desk_surface"
+        ],
+        [
+            "mouse",
+            "desk_surface"
+        ],
+        [
+            "robot_arm_base",
+            "desk_surface"
+        ],
+        [
+            "robot_portal_figure",
+            "robot_arm_base"
+        ],
+        [
+            "beverage_can_yellow",
+            "desk_surface"
+        ],
+        [
+            "beverage_can_pink",
+            "desk_surface"
+        ],
+        [
+            "desk_lamp",
+            "desk_surface"
+        ]
+    ],
+    "region_connections": [],
+    "extra_safe_objects": [],
+    "extra_unsafe_objects": [],
+    "extra_safe_regions": [],
+    "extra_unsafe_regions": [],
+    "current_location": "desk_surface"
+}

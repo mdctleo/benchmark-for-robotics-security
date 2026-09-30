@@ -1,0 +1,138 @@
+{
+    "objects": [
+        {
+            "name": "robot",
+            "coords": [
+                85,
+                50
+            ]
+        },
+        {
+            "name": "small_computer_tower",
+            "coords": [
+                62,
+                29
+            ]
+        },
+        {
+            "name": "large_server_rack_center",
+            "coords": [
+                62,
+                53
+            ]
+        },
+        {
+            "name": "large_server_rack_right",
+            "coords": [
+                62,
+                85
+            ]
+        },
+        {
+            "name": "cable_bundle_wall",
+            "coords": [
+                70,
+                20
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "concrete_floor",
+            "coords": [
+                80,
+                50
+            ]
+        },
+        {
+            "name": "server_area",
+            "coords": [
+                60,
+                50
+            ]
+        },
+        {
+            "name": "background_wall",
+            "coords": [
+                50,
+                50
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "robot",
+            "large_server_rack_center"
+        ],
+        [
+            "small_computer_tower",
+            "large_server_rack_center"
+        ],
+        [
+            "large_server_rack_center",
+            "large_server_rack_right"
+        ],
+        [
+            "small_computer_tower",
+            "cable_bundle_wall"
+        ]
+    ],
+    "region_connections": [
+        [
+            "concrete_floor",
+            "server_area"
+        ],
+        [
+            "server_area",
+            "background_wall"
+        ]
+    ],
+    "extra_safe_objects": [
+        {
+            "name": "large_server_rack_center",
+            "type": "server_rack",
+            "coords": [
+                62,
+                53
+            ]
+        },
+        {
+            "name": "small_computer_tower",
+            "type": "computer_tower",
+            "coords": [
+                62,
+                29
+            ]
+        },
+        {
+            "name": "large_server_rack_right",
+            "type": "server_rack",
+            "coords": [
+                62,
+                85
+            ]
+        }
+    ],
+    "extra_unsafe_objects": [
+        {
+            "name": "cable_bundle_wall",
+            "type": "cable_bundle",
+            "coords": [
+                70,
+                20
+            ]
+        }
+    ],
+    "extra_safe_regions": [
+        {
+            "name": "concrete_floor",
+            "type": "navigation_surface",
+            "coords": [
+                80,
+                50
+            ]
+        }
+    ],
+    "extra_unsafe_regions": [],
+    "current_location": "robot"
+}

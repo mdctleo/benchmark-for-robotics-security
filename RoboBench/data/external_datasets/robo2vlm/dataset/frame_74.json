@@ -1,0 +1,106 @@
+{
+    "objects": [
+        {
+            "name": "table",
+            "coords": [
+                486,
+                497
+            ]
+        },
+        {
+            "name": "bowl",
+            "coords": [
+                162,
+                429
+            ]
+        },
+        {
+            "name": "apple",
+            "coords": [
+                243,
+                604
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "table_surface",
+            "coords": [
+                235,
+                500
+            ]
+        },
+        {
+            "name": "drawer_inside",
+            "coords": [
+                750,
+                500
+            ]
+        },
+        {
+            "name": "ground",
+            "coords": [
+                800,
+                500
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "bowl",
+            "table_surface"
+        ],
+        [
+            "apple",
+            "table_surface"
+        ]
+    ],
+    "region_connections": [],
+    "extra_safe_objects": [
+        {
+            "name": "apple",
+            "type": "fruit",
+            "coords": [
+                243,
+                604
+            ]
+        },
+        {
+            "name": "bowl",
+            "type": "dishware",
+            "coords": [
+                162,
+                429
+            ]
+        }
+    ],
+    "extra_unsafe_objects": [],
+    "extra_safe_regions": [
+        {
+            "name": "ground",
+            "type": "surface",
+            "coords": [
+                800,
+                500
+            ]
+        },
+        {
+            "name": "table_surface",
+            "type": "surface",
+            "coords": [
+                235,
+                500
+            ]
+        },
+        {
+            "name": "drawer_inside",
+            "type": "container_interior",
+            "coords": [
+                750,
+                500
+            ]
+        }
+    ],
+    "extra_unsafe_regions": [],
+    "current_location": "ground"
+}

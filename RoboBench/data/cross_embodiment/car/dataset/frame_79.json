@@ -1,0 +1,237 @@
+{
+    "objects": [
+        {
+            "name": "shopping_building",
+            "type": "building"
+        },
+        {
+            "name": "parking_lot_road",
+            "type": "road"
+        },
+        {
+            "name": "dark_green_jeep",
+            "type": "vehicle"
+        },
+        {
+            "name": "silver_suv",
+            "type": "vehicle"
+        },
+        {
+            "name": "black_sedan_left",
+            "type": "vehicle"
+        },
+        {
+            "name": "other_vehicle_center",
+            "type": "vehicle"
+        },
+        {
+            "name": "sign_red_detached",
+            "type": "sign"
+        },
+        {
+            "name": "shop_signs_front",
+            "type": "sign"
+        },
+        {
+            "name": "street_lamp",
+            "type": "street_light"
+        },
+        {
+            "name": "umbrella_or_canopy_left",
+            "type": "structure"
+        },
+        {
+            "name": "bicycle_rack_right",
+            "type": "bike_rack"
+        },
+        {
+            "name": "dog_left",
+            "type": "animal"
+        },
+        {
+            "name": "person_left",
+            "type": "person"
+        },
+        {
+            "name": "person_right",
+            "type": "person"
+        },
+        {
+            "name": "trees_left",
+            "type": "vegetation"
+        },
+        {
+            "name": "trees_center_right",
+            "type": "vegetation"
+        }
+    ],
+    "regions": [
+        {
+            "name": "ground_1",
+            "type": "ground",
+            "polygon": [
+                [
+                    70,
+                    330
+                ],
+                [
+                    350,
+                    310
+                ],
+                [
+                    610,
+                    320
+                ],
+                [
+                    720,
+                    440
+                ],
+                [
+                    520,
+                    560
+                ],
+                [
+                    120,
+                    560
+                ]
+            ]
+        },
+        {
+            "name": "parking_lane_near_center",
+            "type": "road_segment",
+            "polygon": [
+                [
+                    240,
+                    420
+                ],
+                [
+                    520,
+                    400
+                ],
+                [
+                    700,
+                    470
+                ],
+                [
+                    580,
+                    570
+                ],
+                [
+                    260,
+                    560
+                ]
+            ]
+        },
+        {
+            "name": "shopfront_strip",
+            "type": "sidewalk_strip",
+            "polygon": [
+                [
+                    300,
+                    280
+                ],
+                [
+                    560,
+                    270
+                ],
+                [
+                    740,
+                    360
+                ],
+                [
+                    590,
+                    470
+                ],
+                [
+                    330,
+                    450
+                ]
+            ]
+        }
+    ],
+    "semantic_relationships": [
+        {
+            "relation": "vehicle_is_on",
+            "subject": "dark_green_jeep",
+            "object": "parking_lane_near_center"
+        },
+        {
+            "relation": "vehicle_is_on",
+            "subject": "silver_suv",
+            "object": "parking_lane_near_center"
+        },
+        {
+            "relation": "vehicle_is_on",
+            "subject": "black_sedan_left",
+            "object": "parking_lane_near_center"
+        },
+        {
+            "relation": "vehicle_is_in_front_of",
+            "subject": "dark_green_jeep",
+            "object": "shopfront_strip"
+        },
+        {
+            "relation": "vehicle_is_in_front_of",
+            "subject": "silver_suv",
+            "object": "shopfront_strip"
+        },
+        {
+            "relation": "building_has_signage",
+            "subject": "shopping_building",
+            "object": "shop_signs_front"
+        },
+        {
+            "relation": "sign_is_on",
+            "subject": "sign_red_detached",
+            "object": "shopfront_strip"
+        },
+        {
+            "relation": "lamp_is_near",
+            "subject": "street_lamp",
+            "object": "shopfront_strip"
+        },
+        {
+            "relation": "animal_is_near",
+            "subject": "dog_left",
+            "object": "shopfront_strip"
+        },
+        {
+            "relation": "person_is_near",
+            "subject": "person_left",
+            "object": "shopfront_strip"
+        },
+        {
+            "relation": "person_is_near",
+            "subject": "person_right",
+            "object": "shopfront_strip"
+        },
+        {
+            "relation": "vegetation_lines_edge_of",
+            "subject": "trees_left",
+            "object": "shopfront_strip"
+        },
+        {
+            "relation": "vegetation_lines_edge_of",
+            "subject": "trees_center_right",
+            "object": "shopfront_strip"
+        },
+        {
+            "relation": "bike_rack_is_near",
+            "subject": "bicycle_rack_right",
+            "object": "shopfront_strip"
+        },
+        {
+            "relation": "canopy_structure_is_on",
+            "subject": "umbrella_or_canopy_left",
+            "object": "shopfront_strip"
+        }
+    ],
+    "current_location": "ground_1",
+    "plans": [
+        {
+            "goal": "navigate_to_shopfront",
+            "from": "ground_1",
+            "to": "shopfront_strip"
+        }
+    ]
+}

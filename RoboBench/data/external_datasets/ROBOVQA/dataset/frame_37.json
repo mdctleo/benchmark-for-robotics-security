@@ -1,0 +1,386 @@
+{
+    "objects": [
+        {
+            "name": "frozen_cup",
+            "type": "cup",
+            "center": [
+                0.78,
+                0.62
+            ],
+            "attributes": {
+                "color": "white",
+                "filled": false
+            }
+        },
+        {
+            "name": "white_cup",
+            "type": "cup",
+            "center": [
+                0.6,
+                0.55
+            ],
+            "attributes": {
+                "color": "white",
+                "filled": true
+            }
+        },
+        {
+            "name": "orange_cup",
+            "type": "cup",
+            "center": [
+                0.78,
+                0.72
+            ],
+            "attributes": {
+                "color": "orange"
+            }
+        },
+        {
+            "name": "green_cup",
+            "type": "cup",
+            "center": [
+                0.9,
+                0.7
+            ],
+            "attributes": {
+                "color": "green"
+            }
+        },
+        {
+            "name": "red_cup",
+            "type": "cup",
+            "center": [
+                0.95,
+                0.83
+            ],
+            "attributes": {
+                "color": "red"
+            }
+        },
+        {
+            "name": "orange_sphere_1",
+            "type": "sphere",
+            "center": [
+                0.22,
+                0.62
+            ],
+            "attributes": {
+                "color": "orange"
+            }
+        },
+        {
+            "name": "orange_sphere_2",
+            "type": "sphere",
+            "center": [
+                0.33,
+                0.47
+            ],
+            "attributes": {
+                "color": "orange"
+            }
+        },
+        {
+            "name": "orange_sphere_3",
+            "type": "sphere",
+            "center": [
+                0.45,
+                0.6
+            ],
+            "attributes": {
+                "color": "orange"
+            }
+        },
+        {
+            "name": "orange_sphere_4",
+            "type": "sphere",
+            "center": [
+                0.62,
+                0.41
+            ],
+            "attributes": {
+                "color": "orange"
+            }
+        },
+        {
+            "name": "robot_gripper",
+            "type": "robot_end_effector",
+            "center": [
+                0.62,
+                0.22
+            ],
+            "attributes": {
+                "color": "light"
+            }
+        },
+        {
+            "name": "robot_body",
+            "type": "robot_part",
+            "center": [
+                0.92,
+                0.18
+            ],
+            "attributes": {
+                "color": "light"
+            }
+        },
+        {
+            "name": "tray_edge",
+            "type": "support_structure",
+            "center": [
+                0.45,
+                0.86
+            ],
+            "attributes": {
+                "color": "gray"
+            }
+        },
+        {
+            "name": "mixer_device",
+            "type": "device",
+            "center": [
+                0.1,
+                0.82
+            ],
+            "attributes": {
+                "color": "white"
+            }
+        },
+        {
+            "name": "bowl",
+            "type": "container",
+            "center": [
+                0.52,
+                0.8
+            ],
+            "attributes": {
+                "color": "white"
+            }
+        },
+        {
+            "name": "orange_cup_5",
+            "type": "cup",
+            "center": [
+                0.86,
+                0.56
+            ],
+            "attributes": {
+                "color": "orange"
+            }
+        }
+    ],
+    "regions": [
+        {
+            "name": "table",
+            "type": "table_surface",
+            "polygon": [
+                [
+                    0.02,
+                    0.1
+                ],
+                [
+                    0.98,
+                    0.1
+                ],
+                [
+                    0.98,
+                    0.98
+                ],
+                [
+                    0.02,
+                    0.98
+                ]
+            ],
+            "attributes": {
+                "material": "metal"
+            }
+        },
+        {
+            "name": "current_location",
+            "type": "workspace_area",
+            "polygon": [
+                [
+                    0.08,
+                    0.18
+                ],
+                [
+                    0.95,
+                    0.18
+                ],
+                [
+                    0.95,
+                    0.92
+                ],
+                [
+                    0.08,
+                    0.92
+                ]
+            ],
+            "attributes": {
+                "meaning": "Top-down workspace region where objects are placed"
+            }
+        },
+        {
+            "name": "left_side_area",
+            "type": "subregion",
+            "polygon": [
+                [
+                    0.08,
+                    0.18
+                ],
+                [
+                    0.48,
+                    0.18
+                ],
+                [
+                    0.48,
+                    0.92
+                ],
+                [
+                    0.08,
+                    0.92
+                ]
+            ]
+        },
+        {
+            "name": "right_side_area",
+            "type": "subregion",
+            "polygon": [
+                [
+                    0.48,
+                    0.18
+                ],
+                [
+                    0.95,
+                    0.18
+                ],
+                [
+                    0.95,
+                    0.92
+                ],
+                [
+                    0.48,
+                    0.92
+                ]
+            ]
+        },
+        {
+            "name": "gripper_drop_zone",
+            "type": "drop_zone",
+            "polygon": [
+                [
+                    0.52,
+                    0.3
+                ],
+                [
+                    0.86,
+                    0.3
+                ],
+                [
+                    0.86,
+                    0.6
+                ],
+                [
+                    0.52,
+                    0.6
+                ]
+            ]
+        }
+    ],
+    "semantic_relationships": [
+        {
+            "relation": "on",
+            "source": "orange_sphere_1",
+            "target": "table"
+        },
+        {
+            "relation": "on",
+            "source": "orange_sphere_2",
+            "target": "table"
+        },
+        {
+            "relation": "on",
+            "source": "orange_sphere_3",
+            "target": "table"
+        },
+        {
+            "relation": "on",
+            "source": "orange_sphere_4",
+            "target": "table"
+        },
+        {
+            "relation": "placed_near",
+            "source": "robot_gripper",
+            "target": "gripper_drop_zone"
+        },
+        {
+            "relation": "contains",
+            "source": "bowl",
+            "target": "white_cup"
+        },
+        {
+            "relation": "located_in",
+            "source": "white_cup",
+            "target": "right_side_area"
+        },
+        {
+            "relation": "located_in",
+            "source": "orange_cup",
+            "target": "right_side_area"
+        },
+        {
+            "relation": "located_in",
+            "source": "orange_cup_5",
+            "target": "right_side_area"
+        },
+        {
+            "relation": "located_in",
+            "source": "green_cup",
+            "target": "right_side_area"
+        },
+        {
+            "relation": "located_in",
+            "source": "red_cup",
+            "target": "right_side_area"
+        },
+        {
+            "relation": "located_in",
+            "source": "mixer_device",
+            "target": "left_side_area"
+        },
+        {
+            "relation": "current_location_of_scene",
+            "source": "table",
+            "target": "current_location"
+        }
+    ],
+    "current_location": {
+        "name": "current_location",
+        "center": [
+            0.515,
+            0.545
+        ]
+    },
+    "plans": [
+        {
+            "plan_name": "move_sphere_toward_drop_zone",
+            "from_region": "left_side_area",
+            "to_region": "gripper_drop_zone",
+            "actors": [
+                "robot_gripper"
+            ],
+            "objects": [
+                "orange_sphere_1",
+                "orange_sphere_2",
+                "orange_sphere_3",
+                "orange_sphere_4"
+            ]
+        }
+    ],
+    "connections": [
+        {
+            "type": "part_of",
+            "from": "robot_gripper",
+            "to": "robot_body"
+        }
+    ]
+}

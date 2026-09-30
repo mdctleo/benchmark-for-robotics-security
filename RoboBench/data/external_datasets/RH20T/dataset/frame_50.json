@@ -1,0 +1,337 @@
+{
+    "objects": [
+        {
+            "name": "blue_surface_cloth",
+            "type": "surface",
+            "bounding_box": {
+                "x": 40,
+                "y": 165,
+                "w": 560,
+                "h": 310
+            }
+        },
+        {
+            "name": "printing_machine",
+            "type": "machine",
+            "bounding_box": {
+                "x": 0,
+                "y": 0,
+                "w": 420,
+                "h": 360
+            }
+        },
+        {
+            "name": "robotic_arm",
+            "type": "robot_arm",
+            "bounding_box": {
+                "x": 330,
+                "y": 20,
+                "w": 360,
+                "h": 360
+            }
+        },
+        {
+            "name": "camera_tool_head",
+            "type": "tool_head",
+            "bounding_box": {
+                "x": 720,
+                "y": 40,
+                "w": 130,
+                "h": 140
+            }
+        },
+        {
+            "name": "mount_post",
+            "type": "stand",
+            "bounding_box": {
+                "x": 665,
+                "y": 60,
+                "w": 120,
+                "h": 260
+            }
+        },
+        {
+            "name": "green_control_block",
+            "type": "control_device",
+            "bounding_box": {
+                "x": 340,
+                "y": 25,
+                "w": 65,
+                "h": 55
+            }
+        },
+        {
+            "name": "yellow_tape_block",
+            "type": "marker",
+            "bounding_box": {
+                "x": 320,
+                "y": 20,
+                "w": 55,
+                "h": 55
+            }
+        },
+        {
+            "name": "red_button",
+            "type": "button",
+            "bounding_box": {
+                "x": 405,
+                "y": 15,
+                "w": 40,
+                "h": 40
+            }
+        },
+        {
+            "name": "small_white_tablets",
+            "type": "device",
+            "bounding_box": {
+                "x": 450,
+                "y": 0,
+                "w": 220,
+                "h": 90
+            }
+        },
+        {
+            "name": "cable_bundle",
+            "type": "cables",
+            "bounding_box": {
+                "x": 520,
+                "y": 60,
+                "w": 280,
+                "h": 170
+            }
+        }
+    ],
+    "regions": [
+        {
+            "name": "robot_work_area",
+            "type": "workspace_region",
+            "polygon": [
+                [
+                    20,
+                    40
+                ],
+                [
+                    850,
+                    40
+                ],
+                [
+                    880,
+                    430
+                ],
+                [
+                    20,
+                    430
+                ]
+            ]
+        },
+        {
+            "name": "printed_design_area",
+            "type": "print_region",
+            "polygon": [
+                [
+                    60,
+                    190
+                ],
+                [
+                    590,
+                    190
+                ],
+                [
+                    600,
+                    450
+                ],
+                [
+                    60,
+                    450
+                ]
+            ]
+        },
+        {
+            "name": "machine_top_panel_zone",
+            "type": "machine_zone",
+            "polygon": [
+                [
+                    0,
+                    0
+                ],
+                [
+                    760,
+                    0
+                ],
+                [
+                    760,
+                    170
+                ],
+                [
+                    0,
+                    170
+                ]
+            ]
+        },
+        {
+            "name": "right_tool_presence_zone",
+            "type": "tool_zone",
+            "polygon": [
+                [
+                    640,
+                    0
+                ],
+                [
+                    900,
+                    0
+                ],
+                [
+                    900,
+                    310
+                ],
+                [
+                    640,
+                    310
+                ]
+            ]
+        },
+        {
+            "name": "current_location",
+            "type": "reference_region",
+            "polygon": [
+                [
+                    650,
+                    180
+                ],
+                [
+                    900,
+                    180
+                ],
+                [
+                    900,
+                    420
+                ],
+                [
+                    650,
+                    420
+                ]
+            ]
+        }
+    ],
+    "semantic_relationships": [
+        {
+            "relation": "located_in",
+            "from": "printing_machine",
+            "to": "robot_work_area",
+            "coord": {
+                "x": 120,
+                "y": 170
+            }
+        },
+        {
+            "relation": "located_in",
+            "from": "robotic_arm",
+            "to": "robot_work_area",
+            "coord": {
+                "x": 510,
+                "y": 140
+            }
+        },
+        {
+            "relation": "located_in",
+            "from": "camera_tool_head",
+            "to": "right_tool_presence_zone",
+            "coord": {
+                "x": 785,
+                "y": 110
+            }
+        },
+        {
+            "relation": "mounted_on",
+            "from": "camera_tool_head",
+            "to": "mount_post",
+            "coord": {
+                "x": 725,
+                "y": 120
+            }
+        },
+        {
+            "relation": "covers",
+            "from": "blue_surface_cloth",
+            "to": "robot_work_area",
+            "coord": {
+                "x": 330,
+                "y": 320
+            }
+        },
+        {
+            "relation": "contains",
+            "from": "blue_surface_cloth",
+            "to": "printed_design_area",
+            "coord": {
+                "x": 330,
+                "y": 330
+            }
+        },
+        {
+            "relation": "tool_near",
+            "from": "camera_tool_head",
+            "to": "printed_design_area",
+            "coord": {
+                "x": 720,
+                "y": 320
+            }
+        },
+        {
+            "relation": "controls",
+            "from": "green_control_block",
+            "to": "printing_machine",
+            "coord": {
+                "x": 370,
+                "y": 80
+            }
+        },
+        {
+            "relation": "indicator_on",
+            "from": "red_button",
+            "to": "printing_machine",
+            "coord": {
+                "x": 420,
+                "y": 65
+            }
+        },
+        {
+            "relation": "marker_on",
+            "from": "yellow_tape_block",
+            "to": "machine_top_panel_zone",
+            "coord": {
+                "x": 350,
+                "y": 65
+            }
+        },
+        {
+            "relation": "connected_to",
+            "from": "cable_bundle",
+            "to": "robotic_arm",
+            "coord": {
+                "x": 620,
+                "y": 140
+            }
+        }
+    ],
+    "spatial_frames": {
+        "current_location": {
+            "name": "current_location",
+            "center": {
+                "x": 775,
+                "y": 300
+            }
+        }
+    },
+    "plans": [
+        {
+            "plan_name": "print_or_align_over_design",
+            "current_location": "current_location",
+            "target_region": "printed_design_area",
+            "target_reference_point": {
+                "x": 330,
+                "y": 330
+            }
+        }
+    ]
+}

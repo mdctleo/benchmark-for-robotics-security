@@ -1,0 +1,84 @@
+{
+    "objects": [
+        {
+            "name": "person",
+            "coords": [
+                490,
+                400
+            ]
+        },
+        {
+            "name": "warning_sign",
+            "coords": [
+                130,
+                500
+            ]
+        },
+        {
+            "name": "robot",
+            "coords": [
+                500,
+                900
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "hallway",
+            "coords": [
+                500,
+                500
+            ]
+        },
+        {
+            "name": "narrow_passage",
+            "coords": [
+                500,
+                500
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "person",
+            "narrow_passage"
+        ],
+        [
+            "robot",
+            "narrow_passage"
+        ],
+        [
+            "warning_sign",
+            "hallway"
+        ]
+    ],
+    "region_connections": [
+        [
+            "narrow_passage",
+            "hallway"
+        ]
+    ],
+    "extra_safe_objects": [
+        {
+            "name": "robot",
+            "type": "equipment",
+            "coords": [
+                500,
+                900
+            ]
+        }
+    ],
+    "extra_unsafe_objects": [],
+    "extra_safe_regions": [],
+    "extra_unsafe_regions": [
+        {
+            "name": "narrow_passage",
+            "type": "caution_area",
+            "coords": [
+                500,
+                500
+            ]
+        }
+    ],
+    "current_location": "narrow_passage"
+}

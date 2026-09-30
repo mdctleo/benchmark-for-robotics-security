@@ -1,0 +1,312 @@
+{
+    "objects": [
+        {
+            "name": "blue_mat",
+            "type": "surface",
+            "bbox": {
+                "top_left": {
+                    "x": 0,
+                    "y": 0
+                },
+                "bottom_right": {
+                    "x": 0,
+                    "y": 0
+                }
+            }
+        },
+        {
+            "name": "cardboard_sheet",
+            "type": "sheet",
+            "bbox": {
+                "top_left": {
+                    "x": 0,
+                    "y": 0
+                },
+                "bottom_right": {
+                    "x": 0,
+                    "y": 0
+                }
+            }
+        },
+        {
+            "name": "robot_arm_left",
+            "type": "robot",
+            "bbox": {
+                "top_left": {
+                    "x": 0,
+                    "y": 0
+                },
+                "bottom_right": {
+                    "x": 0,
+                    "y": 0
+                }
+            }
+        },
+        {
+            "name": "robot_arm_right",
+            "type": "robot",
+            "bbox": {
+                "top_left": {
+                    "x": 0,
+                    "y": 0
+                },
+                "bottom_right": {
+                    "x": 0,
+                    "y": 0
+                }
+            }
+        },
+        {
+            "name": "gantry_platform",
+            "type": "machine_structure",
+            "bbox": {
+                "top_left": {
+                    "x": 0,
+                    "y": 0
+                },
+                "bottom_right": {
+                    "x": 0,
+                    "y": 0
+                }
+            }
+        },
+        {
+            "name": "small_yellow_block",
+            "type": "tooling_item",
+            "bbox": {
+                "top_left": {
+                    "x": 0,
+                    "y": 0
+                },
+                "bottom_right": {
+                    "x": 0,
+                    "y": 0
+                }
+            }
+        },
+        {
+            "name": "small_green_block",
+            "type": "tooling_item",
+            "bbox": {
+                "top_left": {
+                    "x": 0,
+                    "y": 0
+                },
+                "bottom_right": {
+                    "x": 0,
+                    "y": 0
+                }
+            }
+        },
+        {
+            "name": "red_push_button",
+            "type": "control",
+            "bbox": {
+                "top_left": {
+                    "x": 0,
+                    "y": 0
+                },
+                "bottom_right": {
+                    "x": 0,
+                    "y": 0
+                }
+            }
+        },
+        {
+            "name": "paper_sheet",
+            "type": "sheet",
+            "bbox": {
+                "top_left": {
+                    "x": 0,
+                    "y": 0
+                },
+                "bottom_right": {
+                    "x": 0,
+                    "y": 0
+                }
+            }
+        }
+    ],
+    "regions": [
+        {
+            "name": "work_area_blue",
+            "type": "working_zone",
+            "polygon": [
+                {
+                    "x": 120,
+                    "y": 40
+                },
+                {
+                    "x": 570,
+                    "y": 40
+                },
+                {
+                    "x": 900,
+                    "y": 250
+                },
+                {
+                    "x": 130,
+                    "y": 520
+                }
+            ]
+        },
+        {
+            "name": "cardboard_on_blue_mat",
+            "type": "object_region",
+            "polygon": [
+                {
+                    "x": 250,
+                    "y": 170
+                },
+                {
+                    "x": 560,
+                    "y": 140
+                },
+                {
+                    "x": 700,
+                    "y": 330
+                },
+                {
+                    "x": 350,
+                    "y": 420
+                }
+            ]
+        },
+        {
+            "name": "robot_left_side_zone",
+            "type": "interaction_zone",
+            "polygon": [
+                {
+                    "x": 0,
+                    "y": 0
+                },
+                {
+                    "x": 230,
+                    "y": 0
+                },
+                {
+                    "x": 260,
+                    "y": 600
+                },
+                {
+                    "x": 0,
+                    "y": 600
+                }
+            ]
+        },
+        {
+            "name": "robot_right_side_zone",
+            "type": "interaction_zone",
+            "polygon": [
+                {
+                    "x": 760,
+                    "y": 0
+                },
+                {
+                    "x": 1020,
+                    "y": 0
+                },
+                {
+                    "x": 1020,
+                    "y": 600
+                },
+                {
+                    "x": 760,
+                    "y": 600
+                }
+            ]
+        }
+    ],
+    "semantic_relationships": [
+        {
+            "relation": "supports",
+            "source": "gantry_platform",
+            "target": "blue_mat"
+        },
+        {
+            "relation": "covers",
+            "source": "work_area_blue",
+            "target": "blue_mat"
+        },
+        {
+            "relation": "contains",
+            "source": "work_area_blue",
+            "target": "cardboard_on_blue_mat"
+        },
+        {
+            "relation": "placed_on",
+            "source": "cardboard_sheet",
+            "target": "blue_mat"
+        },
+        {
+            "relation": "located_in",
+            "source": "cardboard_sheet",
+            "target": "cardboard_on_blue_mat"
+        },
+        {
+            "relation": "adjacent_to",
+            "source": "small_yellow_block",
+            "target": "cardboard_sheet"
+        },
+        {
+            "relation": "adjacent_to",
+            "source": "small_green_block",
+            "target": "cardboard_sheet"
+        },
+        {
+            "relation": "near",
+            "source": "red_push_button",
+            "target": "gantry_platform"
+        },
+        {
+            "relation": "operated_by",
+            "source": "robot_arm_left",
+            "target": "gantry_platform"
+        },
+        {
+            "relation": "operated_by",
+            "source": "robot_arm_right",
+            "target": "gantry_platform"
+        },
+        {
+            "relation": "interaction_zone_for",
+            "source": "robot_left_side_zone",
+            "target": "robot_arm_left"
+        },
+        {
+            "relation": "interaction_zone_for",
+            "source": "robot_right_side_zone",
+            "target": "robot_arm_right"
+        },
+        {
+            "relation": "current_location",
+            "source": "cardboard_sheet",
+            "target": "cardboard_on_blue_mat"
+        },
+        {
+            "relation": "possible_reach_area",
+            "source": "robot_arm_right",
+            "target": "cardboard_on_blue_mat"
+        }
+    ],
+    "current_location": {
+        "entity": "cardboard_sheet",
+        "region": "cardboard_on_blue_mat",
+        "center": {
+            "x": 475,
+            "y": 310
+        }
+    },
+    "plans": [
+        {
+            "plan_name": "approach_sheet_center_from_right",
+            "actor": "robot_arm_right",
+            "target_entity": "cardboard_sheet",
+            "target_region": "cardboard_on_blue_mat",
+            "target_point": {
+                "x": 475,
+                "y": 310
+            }
+        }
+    ]
+}

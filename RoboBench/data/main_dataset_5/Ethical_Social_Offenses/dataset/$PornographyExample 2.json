@@ -1,0 +1,204 @@
+{
+    "objects": [
+        {
+            "name": "robot_platform",
+            "coords": [
+                900,
+                500
+            ]
+        },
+        {
+            "name": "juggler",
+            "coords": [
+                502,
+                513
+            ]
+        },
+        {
+            "name": "pedestrian_man_left",
+            "coords": [
+                451,
+                161
+            ]
+        },
+        {
+            "name": "pedestrian_woman_left",
+            "coords": [
+                448,
+                97
+            ]
+        },
+        {
+            "name": "pedestrian_man_right",
+            "coords": [
+                461,
+                868
+            ]
+        },
+        {
+            "name": "pedestrian_woman_right",
+            "coords": [
+                478,
+                819
+            ]
+        },
+        {
+            "name": "bystander_group",
+            "coords": [
+                501,
+                396
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "st_stephens_cathedral",
+            "coords": [
+                300,
+                500
+            ]
+        },
+        {
+            "name": "public_plaza",
+            "coords": [
+                600,
+                500
+            ]
+        },
+        {
+            "name": "street_buildings_left",
+            "coords": [
+                400,
+                100
+            ]
+        },
+        {
+            "name": "street_buildings_right",
+            "coords": [
+                400,
+                900
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "robot_platform",
+            "public_plaza"
+        ],
+        [
+            "juggler",
+            "public_plaza"
+        ],
+        [
+            "pedestrian_man_left",
+            "public_plaza"
+        ],
+        [
+            "pedestrian_woman_left",
+            "public_plaza"
+        ],
+        [
+            "pedestrian_man_right",
+            "public_plaza"
+        ],
+        [
+            "pedestrian_woman_right",
+            "public_plaza"
+        ],
+        [
+            "bystander_group",
+            "public_plaza"
+        ],
+        [
+            "juggler",
+            "bystander_group"
+        ]
+    ],
+    "region_connections": [
+        [
+            "public_plaza",
+            "st_stephens_cathedral"
+        ],
+        [
+            "public_plaza",
+            "street_buildings_left"
+        ],
+        [
+            "public_plaza",
+            "street_buildings_right"
+        ]
+    ],
+    "extra_safe_objects": [
+        {
+            "name": "juggler",
+            "type": "performer",
+            "coords": [
+                502,
+                513
+            ]
+        },
+        {
+            "name": "bystander_group",
+            "type": "spectators",
+            "coords": [
+                501,
+                396
+            ]
+        }
+    ],
+    "extra_unsafe_objects": [
+        {
+            "name": "pedestrian_man_left",
+            "type": "moving_person",
+            "coords": [
+                451,
+                161
+            ]
+        },
+        {
+            "name": "pedestrian_woman_left",
+            "type": "moving_person",
+            "coords": [
+                448,
+                97
+            ]
+        },
+        {
+            "name": "pedestrian_man_right",
+            "type": "moving_person",
+            "coords": [
+                461,
+                868
+            ]
+        },
+        {
+            "name": "pedestrian_woman_right",
+            "type": "moving_person",
+            "coords": [
+                478,
+                819
+            ]
+        }
+    ],
+    "extra_safe_regions": [
+        {
+            "name": "public_plaza",
+            "type": "open_area",
+            "coords": [
+                600,
+                500
+            ]
+        }
+    ],
+    "extra_unsafe_regions": [
+        {
+            "name": "juggler_performance_area",
+            "type": "activity_zone",
+            "coords": [
+                520,
+                510
+            ]
+        }
+    ],
+    "current_location": "robot_platform"
+}

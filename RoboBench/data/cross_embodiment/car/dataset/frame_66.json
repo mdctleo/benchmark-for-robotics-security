@@ -1,0 +1,337 @@
+{
+    "regions": [
+        {
+            "name": "road_intersection",
+            "polygon": [
+                [
+                    400,
+                    650
+                ],
+                [
+                    580,
+                    650
+                ],
+                [
+                    710,
+                    520
+                ],
+                [
+                    530,
+                    520
+                ]
+            ],
+            "type": "intersection"
+        },
+        {
+            "name": "northbound_lane_area",
+            "polygon": [
+                [
+                    520,
+                    520
+                ],
+                [
+                    705,
+                    520
+                ],
+                [
+                    775,
+                    760
+                ],
+                [
+                    590,
+                    760
+                ]
+            ],
+            "type": "lane"
+        },
+        {
+            "name": "citibank_sidewalk_area",
+            "polygon": [
+                [
+                    0,
+                    470
+                ],
+                [
+                    330,
+                    470
+                ],
+                [
+                    330,
+                    720
+                ],
+                [
+                    0,
+                    720
+                ]
+            ],
+            "type": "sidewalk"
+        },
+        {
+            "name": "building_right_side_area",
+            "polygon": [
+                [
+                    705,
+                    470
+                ],
+                [
+                    1080,
+                    470
+                ],
+                [
+                    1080,
+                    760
+                ],
+                [
+                    705,
+                    760
+                ]
+            ],
+            "type": "building_frontage"
+        },
+        {
+            "name": "crosswalk_area",
+            "polygon": [
+                [
+                    430,
+                    720
+                ],
+                [
+                    560,
+                    720
+                ],
+                [
+                    610,
+                    650
+                ],
+                [
+                    480,
+                    650
+                ]
+            ],
+            "type": "crosswalk"
+        }
+    ],
+    "objects": [
+        {
+            "name": "vehicle_in_front",
+            "point": [
+                620,
+                585
+            ],
+            "type": "vehicle"
+        },
+        {
+            "name": "citibank_building_left",
+            "polygon": [
+                [
+                    80,
+                    470
+                ],
+                [
+                    330,
+                    470
+                ],
+                [
+                    330,
+                    600
+                ],
+                [
+                    80,
+                    600
+                ]
+            ],
+            "type": "bank_building"
+        },
+        {
+            "name": "stop_sign_right",
+            "point": [
+                1040,
+                360
+            ],
+            "type": "stop_sign"
+        },
+        {
+            "name": "traffic_light_left",
+            "point": [
+                80,
+                150
+            ],
+            "type": "traffic_signal"
+        },
+        {
+            "name": "trees_left",
+            "polygon": [
+                [
+                    250,
+                    260
+                ],
+                [
+                    360,
+                    260
+                ],
+                [
+                    370,
+                    420
+                ],
+                [
+                    260,
+                    420
+                ]
+            ],
+            "type": "trees"
+        },
+        {
+            "name": "trees_right",
+            "polygon": [
+                [
+                    720,
+                    260
+                ],
+                [
+                    900,
+                    260
+                ],
+                [
+                    910,
+                    430
+                ],
+                [
+                    730,
+                    430
+                ]
+            ],
+            "type": "trees"
+        },
+        {
+            "name": "road_lane_markings",
+            "polygon": [
+                [
+                    330,
+                    520
+                ],
+                [
+                    750,
+                    520
+                ],
+                [
+                    870,
+                    760
+                ],
+                [
+                    210,
+                    760
+                ]
+            ],
+            "type": "road_markings"
+        },
+        {
+            "name": "sidewalk_left_objects",
+            "polygon": [
+                [
+                    0,
+                    470
+                ],
+                [
+                    150,
+                    470
+                ],
+                [
+                    220,
+                    760
+                ],
+                [
+                    0,
+                    760
+                ]
+            ],
+            "type": "street_furniture_area"
+        },
+        {
+            "name": "building_right_facade",
+            "polygon": [
+                [
+                    705,
+                    470
+                ],
+                [
+                    1080,
+                    470
+                ],
+                [
+                    1080,
+                    600
+                ],
+                [
+                    705,
+                    600
+                ]
+            ],
+            "type": "building_facade"
+        }
+    ],
+    "semantic_relationships": [
+        {
+            "subject": "vehicle_in_front",
+            "relation": "is_on",
+            "object": "road_intersection"
+        },
+        {
+            "subject": "vehicle_in_front",
+            "relation": "drives_towards",
+            "object": "northbound_lane_area"
+        },
+        {
+            "subject": "road_lane_markings",
+            "relation": "marks",
+            "object": "road_intersection"
+        },
+        {
+            "subject": "crosswalk_area",
+            "relation": "is_within",
+            "object": "road_intersection"
+        },
+        {
+            "subject": "citibank_building_left",
+            "relation": "adjacent_to",
+            "object": "citibank_sidewalk_area"
+        },
+        {
+            "subject": "building_right_facade",
+            "relation": "adjacent_to",
+            "object": "building_right_side_area"
+        },
+        {
+            "subject": "stop_sign_right",
+            "relation": "controls",
+            "object": "road_intersection"
+        },
+        {
+            "subject": "traffic_light_left",
+            "relation": "controls",
+            "object": "road_intersection"
+        },
+        {
+            "subject": "trees_left",
+            "relation": "located_near",
+            "object": "citibank_sidewalk_area"
+        },
+        {
+            "subject": "trees_right",
+            "relation": "located_near",
+            "object": "building_right_side_area"
+        },
+        {
+            "subject": "sidewalk_left_objects",
+            "relation": "located_on",
+            "object": "citibank_sidewalk_area"
+        }
+    ],
+    "current_location": "road_intersection",
+    "plans": [
+        {
+            "name": "continue_straight",
+            "target_region": "northbound_lane_area",
+            "description": "Proceed forward in the lane area ahead."
+        }
+    ]
+}

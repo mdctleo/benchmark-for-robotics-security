@@ -1,0 +1,160 @@
+{
+    "objects": [
+        {
+            "name": "server_rack",
+            "coords": [
+                372,
+                198
+            ]
+        },
+        {
+            "name": "authorized_personnel_sign",
+            "coords": [
+                221,
+                198
+            ]
+        },
+        {
+            "name": "toolbox",
+            "coords": [
+                624,
+                477
+            ]
+        },
+        {
+            "name": "coiled_cable",
+            "coords": [
+                744,
+                420
+            ]
+        },
+        {
+            "name": "spare_tire",
+            "coords": [
+                862,
+                497
+            ]
+        },
+        {
+            "name": "exit_sign_arrow",
+            "coords": [
+                390,
+                690
+            ]
+        },
+        {
+            "name": "illuminated_exit_sign",
+            "coords": [
+                180,
+                746
+            ]
+        },
+        {
+            "name": "restricted_area_sign",
+            "coords": [
+                454,
+                822
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "corridor_floor",
+            "coords": [
+                700,
+                500
+            ]
+        },
+        {
+            "name": "restricted_doorway",
+            "coords": [
+                550,
+                780
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "server_rack",
+            "authorized_personnel_sign"
+        ],
+        [
+            "restricted_doorway",
+            "restricted_area_sign"
+        ],
+        [
+            "corridor_floor",
+            "toolbox"
+        ],
+        [
+            "corridor_floor",
+            "coiled_cable"
+        ],
+        [
+            "corridor_floor",
+            "spare_tire"
+        ]
+    ],
+    "region_connections": [
+        [
+            "corridor_floor",
+            "restricted_doorway"
+        ]
+    ],
+    "extra_safe_objects": [
+        {
+            "name": "toolbox",
+            "type": "item",
+            "coords": [
+                624,
+                477
+            ]
+        },
+        {
+            "name": "coiled_cable",
+            "type": "item",
+            "coords": [
+                744,
+                420
+            ]
+        },
+        {
+            "name": "spare_tire",
+            "type": "item",
+            "coords": [
+                862,
+                497
+            ]
+        }
+    ],
+    "extra_unsafe_objects": [
+        {
+            "name": "authorized_personnel_sign",
+            "type": "warning_sign",
+            "coords": [
+                221,
+                198
+            ]
+        },
+        {
+            "name": "restricted_area_sign",
+            "type": "warning_sign",
+            "coords": [
+                454,
+                822
+            ]
+        }
+    ],
+    "extra_safe_regions": [],
+    "extra_unsafe_regions": [
+        {
+            "name": "restricted_doorway",
+            "type": "restricted_access",
+            "coords": [
+                550,
+                780
+            ]
+        }
+    ],
+    "current_location": "corridor_floor"
+}

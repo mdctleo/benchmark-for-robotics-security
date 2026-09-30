@@ -1,0 +1,445 @@
+{
+    "objects": [
+        {
+            "name": "folding_table",
+            "type": "table",
+            "center": [
+                160,
+                130
+            ],
+            "bbox": [
+                40,
+                40,
+                280,
+                220
+            ]
+        },
+        {
+            "name": "blue_banner",
+            "type": "fabric/banner",
+            "center": [
+                170,
+                160
+            ],
+            "bbox": [
+                55,
+                75,
+                300,
+                245
+            ]
+        },
+        {
+            "name": "printed_mountain_art",
+            "type": "printed artwork",
+            "center": [
+                180,
+                170
+            ],
+            "bbox": [
+                90,
+                120,
+                285,
+                235
+            ]
+        },
+        {
+            "name": "blue_light_controller",
+            "type": "electrical device/controller",
+            "center": [
+                120,
+                150
+            ],
+            "bbox": [
+                95,
+                120,
+                145,
+                190
+            ]
+        },
+        {
+            "name": "black_surface_pad",
+            "type": "pad/ground mat",
+            "center": [
+                290,
+                200
+            ],
+            "bbox": [
+                240,
+                140,
+                410,
+                270
+            ]
+        },
+        {
+            "name": "power_strip",
+            "type": "power strip",
+            "center": [
+                330,
+                170
+            ],
+            "bbox": [
+                280,
+                130,
+                390,
+                210
+            ]
+        },
+        {
+            "name": "cables_bundle",
+            "type": "cables",
+            "center": [
+                330,
+                110
+            ],
+            "bbox": [
+                220,
+                0,
+                430,
+                160
+            ]
+        },
+        {
+            "name": "white_rail",
+            "type": "rail",
+            "center": [
+                85,
+                160
+            ],
+            "bbox": [
+                0,
+                80,
+                130,
+                250
+            ]
+        },
+        {
+            "name": "robot_arm",
+            "type": "robot/arm",
+            "center": [
+                70,
+                50
+            ],
+            "bbox": [
+                0,
+                0,
+                160,
+                120
+            ]
+        },
+        {
+            "name": "black_domed_camera",
+            "type": "camera/sensor housing",
+            "center": [
+                80,
+                45
+            ],
+            "bbox": [
+                20,
+                0,
+                150,
+                110
+            ]
+        },
+        {
+            "name": "black_lens_base",
+            "type": "lens/sensor base",
+            "center": [
+                60,
+                80
+            ],
+            "bbox": [
+                0,
+                20,
+                120,
+                140
+            ]
+        },
+        {
+            "name": "power_outlet_wall",
+            "type": "outlet/port on structure",
+            "center": [
+                345,
+                50
+            ],
+            "bbox": [
+                300,
+                0,
+                410,
+                110
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "work_area_on_table",
+            "type": "workspace region",
+            "polygon": [
+                [
+                    40,
+                    60
+                ],
+                [
+                    300,
+                    60
+                ],
+                [
+                    320,
+                    255
+                ],
+                [
+                    60,
+                    255
+                ]
+            ]
+        },
+        {
+            "name": "banner_region",
+            "type": "banner region",
+            "polygon": [
+                [
+                    55,
+                    85
+                ],
+                [
+                    300,
+                    85
+                ],
+                [
+                    305,
+                    240
+                ],
+                [
+                    60,
+                    240
+                ]
+            ]
+        },
+        {
+            "name": "printed_art_region",
+            "type": "printed artwork region",
+            "polygon": [
+                [
+                    90,
+                    125
+                ],
+                [
+                    280,
+                    125
+                ],
+                [
+                    290,
+                    235
+                ],
+                [
+                    110,
+                    235
+                ]
+            ]
+        },
+        {
+            "name": "controller_region",
+            "type": "controller position region",
+            "polygon": [
+                [
+                    95,
+                    120
+                ],
+                [
+                    145,
+                    120
+                ],
+                [
+                    155,
+                    190
+                ],
+                [
+                    85,
+                    190
+                ]
+            ]
+        },
+        {
+            "name": "cables_region",
+            "type": "cables region",
+            "polygon": [
+                [
+                    210,
+                    0
+                ],
+                [
+                    440,
+                    0
+                ],
+                [
+                    440,
+                    160
+                ],
+                [
+                    210,
+                    160
+                ]
+            ]
+        },
+        {
+            "name": "power_strip_region",
+            "type": "power strip region",
+            "polygon": [
+                [
+                    280,
+                    120
+                ],
+                [
+                    410,
+                    120
+                ],
+                [
+                    410,
+                    220
+                ],
+                [
+                    280,
+                    220
+                ]
+            ]
+        },
+        {
+            "name": "black_pad_region",
+            "type": "pad region",
+            "polygon": [
+                [
+                    235,
+                    140
+                ],
+                [
+                    420,
+                    140
+                ],
+                [
+                    420,
+                    285
+                ],
+                [
+                    235,
+                    285
+                ]
+            ]
+        },
+        {
+            "name": "robot_reach_region",
+            "type": "robot reach region",
+            "polygon": [
+                [
+                    0,
+                    0
+                ],
+                [
+                    180,
+                    0
+                ],
+                [
+                    180,
+                    140
+                ],
+                [
+                    0,
+                    140
+                ]
+            ]
+        }
+    ],
+    "semantic_relationships": [
+        {
+            "from": "blue_banner",
+            "to": "banner_region",
+            "relation": "contained_in"
+        },
+        {
+            "from": "printed_mountain_art",
+            "to": "printed_art_region",
+            "relation": "printed_in"
+        },
+        {
+            "from": "blue_light_controller",
+            "to": "controller_region",
+            "relation": "located_in"
+        },
+        {
+            "from": "cables_bundle",
+            "to": "cables_region",
+            "relation": "spans"
+        },
+        {
+            "from": "power_strip",
+            "to": "power_strip_region",
+            "relation": "located_in"
+        },
+        {
+            "from": "black_surface_pad",
+            "to": "black_pad_region",
+            "relation": "covers"
+        },
+        {
+            "from": "robot_arm",
+            "to": "robot_reach_region",
+            "relation": "operating_near"
+        },
+        {
+            "from": "blue_banner",
+            "to": "work_area_on_table",
+            "relation": "within"
+        },
+        {
+            "from": "black_surface_pad",
+            "to": "work_area_on_table",
+            "relation": "adjacent_within"
+        },
+        {
+            "from": "blue_light_controller",
+            "to": "blue_banner",
+            "relation": "near"
+        },
+        {
+            "from": "power_strip",
+            "to": "cables_bundle",
+            "relation": "connected_by"
+        },
+        {
+            "from": "robot_arm",
+            "to": "blue_banner",
+            "relation": "positioned_over"
+        },
+        {
+            "from": "white_rail",
+            "to": "work_area_on_table",
+            "relation": "borders"
+        },
+        {
+            "from": "black_domed_camera",
+            "to": "robot_reach_region",
+            "relation": "associated_with"
+        },
+        {
+            "from": "black_lens_base",
+            "to": "black_domed_camera",
+            "relation": "part_of"
+        },
+        {
+            "from": "power_outlet_wall",
+            "to": "power_strip",
+            "relation": "feeds"
+        }
+    ],
+    "current_location": "work_area_on_table",
+    "plans": [
+        {
+            "goal": "position_robot_over_banner",
+            "target_region": "banner_region",
+            "expected_action": "robot_arm_operates_near_banner"
+        },
+        {
+            "goal": "inspect_printed_art",
+            "target_region": "printed_art_region",
+            "expected_action": "focus_on_printed_mountain_art"
+        }
+    ]
+}

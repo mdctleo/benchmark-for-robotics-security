@@ -1,0 +1,147 @@
+{
+    "objects": [
+        {
+            "name": "current_robot",
+            "coords": [
+                0.5,
+                0.1
+            ]
+        },
+        {
+            "name": "orange_robot",
+            "coords": [
+                0.65,
+                0.7
+            ]
+        },
+        {
+            "name": "pallet_jack",
+            "coords": [
+                0.6,
+                0.65
+            ]
+        },
+        {
+            "name": "shelving_system_left",
+            "coords": [
+                0.2,
+                0.5
+            ]
+        },
+        {
+            "name": "shelving_system_right",
+            "coords": [
+                0.8,
+                0.5
+            ]
+        },
+        {
+            "name": "boxes_left",
+            "coords": [
+                0.2,
+                0.4
+            ]
+        },
+        {
+            "name": "boxes_right",
+            "coords": [
+                0.8,
+                0.4
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "main_aisle",
+            "coords": [
+                0.5,
+                0.5
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "current_robot",
+            "main_aisle"
+        ],
+        [
+            "orange_robot",
+            "main_aisle"
+        ],
+        [
+            "pallet_jack",
+            "orange_robot"
+        ],
+        [
+            "boxes_left",
+            "shelving_system_left"
+        ],
+        [
+            "boxes_right",
+            "shelving_system_right"
+        ],
+        [
+            "shelving_system_left",
+            "main_aisle"
+        ],
+        [
+            "shelving_system_right",
+            "main_aisle"
+        ]
+    ],
+    "region_connections": [],
+    "extra_safe_objects": [],
+    "extra_unsafe_objects": [
+        {
+            "name": "orange_robot",
+            "type": "robot",
+            "coords": [
+                0.65,
+                0.7
+            ]
+        },
+        {
+            "name": "pallet_jack",
+            "type": "equipment",
+            "coords": [
+                0.6,
+                0.65
+            ]
+        },
+        {
+            "name": "shelving_system_left",
+            "type": "static_obstacle",
+            "coords": [
+                0.2,
+                0.5
+            ]
+        },
+        {
+            "name": "shelving_system_right",
+            "type": "static_obstacle",
+            "coords": [
+                0.8,
+                0.5
+            ]
+        },
+        {
+            "name": "boxes_left",
+            "type": "static_obstacle",
+            "coords": [
+                0.2,
+                0.4
+            ]
+        },
+        {
+            "name": "boxes_right",
+            "type": "static_obstacle",
+            "coords": [
+                0.8,
+                0.4
+            ]
+        }
+    ],
+    "extra_safe_regions": [],
+    "extra_unsafe_regions": [],
+    "current_location": "current_robot"
+}

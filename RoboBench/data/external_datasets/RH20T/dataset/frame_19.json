@@ -1,0 +1,182 @@
+{
+    "objects": [
+        {
+            "name": "button_green",
+            "type": "button",
+            "position": {
+                "x": 500,
+                "y": 140
+            }
+        },
+        {
+            "name": "button_red",
+            "type": "button",
+            "position": {
+                "x": 555,
+                "y": 110
+            }
+        },
+        {
+            "name": "button_orange",
+            "type": "button",
+            "position": {
+                "x": 490,
+                "y": 165
+            }
+        },
+        {
+            "name": "button_white",
+            "type": "button",
+            "position": {
+                "x": 460,
+                "y": 110
+            }
+        },
+        {
+            "name": "monitor_controls_unit",
+            "type": "equipment",
+            "position": {
+                "x": 170,
+                "y": 165
+            }
+        },
+        {
+            "name": "stack_light",
+            "type": "tower_light",
+            "position": {
+                "x": 535,
+                "y": 55
+            }
+        },
+        {
+            "name": "right_wall_unit",
+            "type": "equipment",
+            "position": {
+                "x": 900,
+                "y": 240
+            }
+        },
+        {
+            "name": "cable_bundle",
+            "type": "cable",
+            "position": {
+                "x": 930,
+                "y": 115
+            }
+        },
+        {
+            "name": "chair_or_dome",
+            "type": "device",
+            "position": {
+                "x": 1025,
+                "y": 160
+            }
+        }
+    ],
+    "regions": [
+        {
+            "name": "blue_playmat",
+            "type": "floor_region",
+            "position": {
+                "x": 640,
+                "y": 180
+            }
+        },
+        {
+            "name": "current_location",
+            "type": "workspace_zone",
+            "position": {
+                "x": 640,
+                "y": 205
+            }
+        }
+    ],
+    "semantic_relationships": [
+        {
+            "type": "located_on",
+            "subject": "button_green",
+            "object": "blue_playmat"
+        },
+        {
+            "type": "located_on",
+            "subject": "button_red",
+            "object": "blue_playmat"
+        },
+        {
+            "type": "located_on",
+            "subject": "button_orange",
+            "object": "blue_playmat"
+        },
+        {
+            "type": "located_on",
+            "subject": "button_white",
+            "object": "blue_playmat"
+        },
+        {
+            "type": "located_in",
+            "subject": "button_green",
+            "object": "current_location"
+        },
+        {
+            "type": "located_in",
+            "subject": "button_red",
+            "object": "current_location"
+        },
+        {
+            "type": "located_in",
+            "subject": "button_orange",
+            "object": "current_location"
+        },
+        {
+            "type": "located_in",
+            "subject": "button_white",
+            "object": "current_location"
+        },
+        {
+            "type": "adjacent_to",
+            "subject": "monitor_controls_unit",
+            "object": "blue_playmat"
+        },
+        {
+            "type": "adjacent_to",
+            "subject": "right_wall_unit",
+            "object": "blue_playmat"
+        },
+        {
+            "type": "carries",
+            "subject": "cable_bundle",
+            "object": "right_wall_unit"
+        },
+        {
+            "type": "part_of",
+            "subject": "stack_light",
+            "object": "monitor_controls_unit"
+        },
+        {
+            "type": "overlooks",
+            "subject": "chair_or_dome",
+            "object": "current_location"
+        }
+    ],
+    "current_location": "current_location",
+    "plans": [
+        {
+            "plan_id": "plan_1",
+            "steps": [
+                {
+                    "step_id": "step_1",
+                    "action": "inspect_buttons_in_zone",
+                    "target": "current_location"
+                },
+                {
+                    "step_id": "step_2",
+                    "action": "verify_control_units",
+                    "targets": [
+                        "monitor_controls_unit",
+                        "right_wall_unit"
+                    ]
+                }
+            ]
+        }
+    ]
+}

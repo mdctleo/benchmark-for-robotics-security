@@ -1,0 +1,309 @@
+{
+    "objects": [
+        {
+            "name": "blue_cloth",
+            "type": "surface",
+            "bbox": [
+                280,
+                170,
+                1220,
+                900
+            ],
+            "center": [
+                750,
+                535
+            ]
+        },
+        {
+            "name": "printer_or_scanner_head_mount",
+            "type": "machine_part",
+            "bbox": [
+                0,
+                0,
+                520,
+                260
+            ],
+            "center": [
+                260,
+                130
+            ]
+        },
+        {
+            "name": "round_black_component",
+            "type": "machine_part",
+            "bbox": [
+                35,
+                20,
+                165,
+                150
+            ],
+            "center": [
+                100,
+                85
+            ]
+        },
+        {
+            "name": "yellow_actuator_block",
+            "type": "machine_part",
+            "bbox": [
+                430,
+                70,
+                555,
+                190
+            ],
+            "center": [
+                492,
+                130
+            ]
+        },
+        {
+            "name": "red_button",
+            "type": "control",
+            "bbox": [
+                435,
+                55,
+                475,
+                105
+            ],
+            "center": [
+                455,
+                80
+            ]
+        },
+        {
+            "name": "white_control_panel",
+            "type": "machine_part",
+            "bbox": [
+                520,
+                35,
+                640,
+                150
+            ],
+            "center": [
+                580,
+                92
+            ]
+        },
+        {
+            "name": "device_base_or_frame",
+            "type": "machine_part",
+            "bbox": [
+                0,
+                160,
+                320,
+                580
+            ],
+            "center": [
+                160,
+                370
+            ]
+        },
+        {
+            "name": "black_cable_bundle",
+            "type": "cable",
+            "bbox": [
+                250,
+                0,
+                900,
+                560
+            ],
+            "center": [
+                575,
+                280
+            ]
+        },
+        {
+            "name": "table_edge_strip",
+            "type": "structure",
+            "bbox": [
+                0,
+                800,
+                300,
+                1080
+            ],
+            "center": [
+                150,
+                940
+            ]
+        },
+        {
+            "name": "right_side_wall",
+            "type": "structure",
+            "bbox": [
+                1100,
+                0,
+                1380,
+                920
+            ],
+            "center": [
+                1240,
+                460
+            ]
+        },
+        {
+            "name": "white_outlet",
+            "type": "electrical",
+            "bbox": [
+                820,
+                560,
+                920,
+                690
+            ],
+            "center": [
+                870,
+                625
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "printed_cloth_area",
+            "type": "print_region",
+            "polygon": [
+                [
+                    260,
+                    220
+                ],
+                [
+                    1210,
+                    200
+                ],
+                [
+                    1230,
+                    840
+                ],
+                [
+                    240,
+                    860
+                ]
+            ],
+            "center": [
+                750,
+                530
+            ]
+        },
+        {
+            "name": "machine_work_area",
+            "type": "work_area",
+            "polygon": [
+                [
+                    0,
+                    120
+                ],
+                [
+                    1220,
+                    120
+                ],
+                [
+                    1220,
+                    920
+                ],
+                [
+                    0,
+                    920
+                ]
+            ],
+            "center": [
+                610,
+                520
+            ]
+        },
+        {
+            "name": "current_location",
+            "type": "current_location",
+            "polygon": [
+                [
+                    760,
+                    330
+                ],
+                [
+                    1040,
+                    320
+                ],
+                [
+                    1060,
+                    640
+                ],
+                [
+                    740,
+                    650
+                ]
+            ],
+            "center": [
+                900,
+                485
+            ]
+        }
+    ],
+    "semantic_relationships": [
+        {
+            "subject": "printer_or_scanner_head_mount",
+            "relation": "mounted_over",
+            "object": "machine_work_area"
+        },
+        {
+            "subject": "round_black_component",
+            "relation": "attached_to",
+            "object": "printer_or_scanner_head_mount"
+        },
+        {
+            "subject": "yellow_actuator_block",
+            "relation": "mounted_on",
+            "object": "printer_or_scanner_head_mount"
+        },
+        {
+            "subject": "red_button",
+            "relation": "located_on",
+            "object": "yellow_actuator_block"
+        },
+        {
+            "subject": "white_control_panel",
+            "relation": "mounted_on",
+            "object": "printer_or_scanner_head_mount"
+        },
+        {
+            "subject": "black_cable_bundle",
+            "relation": "connects_to",
+            "object": "printer_or_scanner_head_mount"
+        },
+        {
+            "subject": "blue_cloth",
+            "relation": "laid_in",
+            "object": "machine_work_area"
+        },
+        {
+            "subject": "printed_cloth_area",
+            "relation": "is_part_of",
+            "object": "blue_cloth"
+        },
+        {
+            "subject": "white_outlet",
+            "relation": "attached_to",
+            "object": "right_side_wall"
+        },
+        {
+            "subject": "current_location",
+            "relation": "within",
+            "object": "printed_cloth_area"
+        },
+        {
+            "subject": "current_location",
+            "relation": "is_on",
+            "object": "blue_cloth"
+        }
+    ],
+    "current_location": {
+        "name": "current_location"
+    },
+    "plans": [
+        {
+            "name": "hold_position_on_print",
+            "from": "current_location",
+            "to": "printed_cloth_area",
+            "actions": [
+                "maintain_alignment",
+                "perform_print_or_inspection"
+            ]
+        }
+    ]
+}

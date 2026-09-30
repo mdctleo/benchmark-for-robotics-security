@@ -1,0 +1,143 @@
+{
+    "objects": [
+        {
+            "name": "bowl",
+            "coords": [
+                164,
+                409
+            ]
+        },
+        {
+            "name": "sponge",
+            "coords": [
+                270,
+                346
+            ]
+        },
+        {
+            "name": "robot_arm",
+            "coords": [
+                842,
+                752
+            ]
+        },
+        {
+            "name": "top_drawer",
+            "coords": [
+                454,
+                467
+            ]
+        },
+        {
+            "name": "middle_drawer",
+            "coords": [
+                611,
+                465
+            ]
+        },
+        {
+            "name": "bottom_drawer",
+            "coords": [
+                763,
+                462
+            ]
+        },
+        {
+            "name": "vr_headset",
+            "coords": [
+                108,
+                915
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "cabinet_top_surface",
+            "coords": [
+                215,
+                484
+            ]
+        },
+        {
+            "name": "cabinet_unit",
+            "coords": [
+                470,
+                470
+            ]
+        },
+        {
+            "name": "ground",
+            "coords": [
+                800,
+                450
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "bowl",
+            "cabinet_top_surface"
+        ],
+        [
+            "sponge",
+            "cabinet_top_surface"
+        ],
+        [
+            "robot_arm",
+            "bottom_drawer"
+        ]
+    ],
+    "region_connections": [
+        [
+            "cabinet_top_surface",
+            "cabinet_unit"
+        ]
+    ],
+    "extra_safe_objects": [
+        {
+            "name": "bowl",
+            "type": "kitchenware",
+            "coords": [
+                164,
+                409
+            ]
+        },
+        {
+            "name": "sponge",
+            "type": "cleaning_supply",
+            "coords": [
+                270,
+                346
+            ]
+        }
+    ],
+    "extra_unsafe_objects": [
+        {
+            "name": "bottom_drawer",
+            "type": "movable_part",
+            "coords": [
+                763,
+                462
+            ]
+        },
+        {
+            "name": "middle_drawer",
+            "type": "movable_part",
+            "coords": [
+                611,
+                465
+            ]
+        },
+        {
+            "name": "top_drawer",
+            "type": "movable_part",
+            "coords": [
+                454,
+                467
+            ]
+        }
+    ],
+    "extra_safe_regions": [],
+    "extra_unsafe_regions": [],
+    "current_location": "ground"
+}

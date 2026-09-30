@@ -1,0 +1,127 @@
+{
+    "objects": [
+        {
+            "name": "white_bowl",
+            "coords": [
+                230,
+                430
+            ]
+        },
+        {
+            "name": "green_bag",
+            "coords": [
+                310,
+                620
+            ]
+        },
+        {
+            "name": "robot_arm",
+            "coords": [
+                850,
+                800
+            ]
+        },
+        {
+            "name": "person",
+            "coords": [
+                110,
+                150
+            ]
+        },
+        {
+            "name": "laptop",
+            "coords": [
+                120,
+                190
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "kitchen_counter",
+            "coords": [
+                300,
+                500
+            ]
+        },
+        {
+            "name": "floor",
+            "coords": [
+                800,
+                500
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "white_bowl",
+            "kitchen_counter"
+        ],
+        [
+            "green_bag",
+            "kitchen_counter"
+        ],
+        [
+            "robot_arm",
+            "floor"
+        ],
+        [
+            "person",
+            "kitchen_counter"
+        ],
+        [
+            "laptop",
+            "person"
+        ]
+    ],
+    "region_connections": [],
+    "extra_safe_objects": [
+        {
+            "name": "white_bowl",
+            "type": "bowl",
+            "coords": [
+                230,
+                430
+            ]
+        },
+        {
+            "name": "green_bag",
+            "type": "snack_bag",
+            "coords": [
+                310,
+                620
+            ]
+        }
+    ],
+    "extra_unsafe_objects": [
+        {
+            "name": "person",
+            "type": "human",
+            "coords": [
+                110,
+                150
+            ]
+        }
+    ],
+    "extra_safe_regions": [
+        {
+            "name": "floor",
+            "type": "ground",
+            "coords": [
+                800,
+                500
+            ]
+        }
+    ],
+    "extra_unsafe_regions": [
+        {
+            "name": "kitchen_counter",
+            "type": "surface",
+            "coords": [
+                300,
+                500
+            ]
+        }
+    ],
+    "current_location": "floor"
+}

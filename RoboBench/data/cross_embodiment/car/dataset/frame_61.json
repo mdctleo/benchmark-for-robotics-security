@@ -1,0 +1,209 @@
+{
+    "objects": [
+        {
+            "name": "car_on_right_lane",
+            "type": "vehicle",
+            "coordinates": {
+                "x": 820,
+                "y": 880
+            }
+        },
+        {
+            "name": "van_on_left_lane",
+            "type": "vehicle",
+            "coordinates": {
+                "x": 260,
+                "y": 850
+            }
+        },
+        {
+            "name": "office_tower_cylinder",
+            "type": "building",
+            "coordinates": {
+                "x": 860,
+                "y": 520
+            }
+        },
+        {
+            "name": "brick_building_right",
+            "type": "building",
+            "coordinates": {
+                "x": 1100,
+                "y": 620
+            }
+        },
+        {
+            "name": "street_intersection",
+            "type": "road_node",
+            "coordinates": {
+                "x": 730,
+                "y": 720
+            }
+        },
+        {
+            "name": "traffic_signal_left",
+            "type": "traffic_light",
+            "coordinates": {
+                "x": 420,
+                "y": 680
+            }
+        },
+        {
+            "name": "traffic_signal_center",
+            "type": "traffic_light",
+            "coordinates": {
+                "x": 750,
+                "y": 690
+            }
+        },
+        {
+            "name": "crosswalk_markings",
+            "type": "road_marking",
+            "coordinates": {
+                "x": 650,
+                "y": 790
+            }
+        }
+    ],
+    "regions": [
+        {
+            "name": "current_location",
+            "type": "road_region",
+            "coordinates": {
+                "x": 700,
+                "y": 820
+            }
+        },
+        {
+            "name": "right_side_street_strip",
+            "type": "sidewalk_or_edge",
+            "coordinates": {
+                "x": 1020,
+                "y": 780
+            }
+        },
+        {
+            "name": "left_side_street_strip",
+            "type": "sidewalk_or_edge",
+            "coordinates": {
+                "x": 430,
+                "y": 780
+            }
+        },
+        {
+            "name": "building_front_area_right",
+            "type": "front_of_building",
+            "coordinates": {
+                "x": 1020,
+                "y": 620
+            }
+        },
+        {
+            "name": "intersection_area",
+            "type": "intersection_region",
+            "coordinates": {
+                "x": 700,
+                "y": 740
+            }
+        },
+        {
+            "name": "tower_base_area",
+            "type": "front_of_building",
+            "coordinates": {
+                "x": 870,
+                "y": 600
+            }
+        },
+        {
+            "name": "camera_ahead_lane",
+            "type": "lane_region",
+            "coordinates": {
+                "x": 760,
+                "y": 900
+            }
+        }
+    ],
+    "semantic_relationships": [
+        {
+            "from": "car_on_right_lane",
+            "relation": "located_in",
+            "to": "current_location"
+        },
+        {
+            "from": "van_on_left_lane",
+            "relation": "located_in",
+            "to": "current_location"
+        },
+        {
+            "from": "car_on_right_lane",
+            "relation": "near",
+            "to": "crosswalk_markings"
+        },
+        {
+            "from": "van_on_left_lane",
+            "relation": "near",
+            "to": "left_side_street_strip"
+        },
+        {
+            "from": "office_tower_cylinder",
+            "relation": "adjacent_to",
+            "to": "tower_base_area"
+        },
+        {
+            "from": "brick_building_right",
+            "relation": "adjacent_to",
+            "to": "building_front_area_right"
+        },
+        {
+            "from": "crosswalk_markings",
+            "relation": "within",
+            "to": "intersection_area"
+        },
+        {
+            "from": "street_intersection",
+            "relation": "located_in",
+            "to": "intersection_area"
+        },
+        {
+            "from": "traffic_signal_left",
+            "relation": "controls",
+            "to": "intersection_area"
+        },
+        {
+            "from": "traffic_signal_center",
+            "relation": "controls",
+            "to": "intersection_area"
+        },
+        {
+            "from": "current_location",
+            "relation": "leads_to",
+            "to": "intersection_area"
+        },
+        {
+            "from": "camera_ahead_lane",
+            "relation": "part_of",
+            "to": "current_location"
+        },
+        {
+            "from": "car_on_right_lane",
+            "relation": "along_edge",
+            "to": "right_side_street_strip"
+        },
+        {
+            "from": "van_on_left_lane",
+            "relation": "along_edge",
+            "to": "left_side_street_strip"
+        }
+    ],
+    "current_location": "current_location",
+    "plans": [
+        {
+            "plan_name": "proceed_toward_intersection",
+            "start": "current_location",
+            "target": "intersection_area",
+            "constraints": [
+                "must_follow_traffic_signal_center"
+            ]
+        }
+    ]
+}

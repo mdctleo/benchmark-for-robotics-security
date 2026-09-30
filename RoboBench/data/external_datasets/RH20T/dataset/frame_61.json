@@ -1,0 +1,326 @@
+{
+    "objects": [
+        {
+            "name": "robot_base",
+            "type": "robot",
+            "bounding_box": {
+                "x": 560,
+                "y": 280,
+                "w": 180,
+                "h": 160
+            }
+        },
+        {
+            "name": "robot_arm",
+            "type": "robot",
+            "bounding_box": {
+                "x": 520,
+                "y": 40,
+                "w": 220,
+                "h": 180
+            }
+        },
+        {
+            "name": "robot_wrist",
+            "type": "robot",
+            "bounding_box": {
+                "x": 430,
+                "y": 70,
+                "w": 120,
+                "h": 110
+            }
+        },
+        {
+            "name": "robot_gripper",
+            "type": "end_effector",
+            "bounding_box": {
+                "x": 400,
+                "y": 90,
+                "w": 120,
+                "h": 120
+            }
+        },
+        {
+            "name": "blue_table_surface",
+            "type": "surface",
+            "bounding_box": {
+                "x": 230,
+                "y": 170,
+                "w": 430,
+                "h": 340
+            }
+        },
+        {
+            "name": "metal_plate",
+            "type": "tooling",
+            "bounding_box": {
+                "x": 430,
+                "y": 240,
+                "w": 70,
+                "h": 60
+            }
+        },
+        {
+            "name": "bracket_block",
+            "type": "fixture",
+            "bounding_box": {
+                "x": 360,
+                "y": 235,
+                "w": 55,
+                "h": 70
+            }
+        },
+        {
+            "name": "cylindrical_caster",
+            "type": "robot_part",
+            "bounding_box": {
+                "x": 220,
+                "y": 20,
+                "w": 80,
+                "h": 120
+            }
+        },
+        {
+            "name": "camera_mount",
+            "type": "sensor",
+            "bounding_box": {
+                "x": 680,
+                "y": 120,
+                "w": 120,
+                "h": 100
+            }
+        },
+        {
+            "name": "keyboard",
+            "type": "device",
+            "bounding_box": {
+                "x": 120,
+                "y": 0,
+                "w": 160,
+                "h": 70
+            }
+        },
+        {
+            "name": "control_box",
+            "type": "device",
+            "bounding_box": {
+                "x": 880,
+                "y": 60,
+                "w": 120,
+                "h": 140
+            }
+        },
+        {
+            "name": "cables",
+            "type": "cable",
+            "bounding_box": {
+                "x": 470,
+                "y": 80,
+                "w": 230,
+                "h": 200
+            }
+        },
+        {
+            "name": "floor",
+            "type": "environment",
+            "bounding_box": {
+                "x": 0,
+                "y": 0,
+                "w": 1050,
+                "h": 420
+            }
+        },
+        {
+            "name": "wall_or_background",
+            "type": "environment",
+            "bounding_box": {
+                "x": 0,
+                "y": 0,
+                "w": 1050,
+                "h": 120
+            }
+        }
+    ],
+    "regions": [
+        {
+            "name": "workcell_area",
+            "type": "workcell",
+            "polygon": [
+                [
+                    210,
+                    140
+                ],
+                [
+                    1000,
+                    140
+                ],
+                [
+                    1000,
+                    560
+                ],
+                [
+                    210,
+                    560
+                ]
+            ]
+        },
+        {
+            "name": "blue_tarp_region",
+            "type": "surface_region",
+            "polygon": [
+                [
+                    230,
+                    170
+                ],
+                [
+                    660,
+                    170
+                ],
+                [
+                    660,
+                    510
+                ],
+                [
+                    230,
+                    510
+                ]
+            ]
+        },
+        {
+            "name": "robot_reach_region",
+            "type": "interaction_volume",
+            "polygon": [
+                [
+                    280,
+                    60
+                ],
+                [
+                    860,
+                    60
+                ],
+                [
+                    860,
+                    360
+                ],
+                [
+                    280,
+                    360
+                ]
+            ]
+        },
+        {
+            "name": "current_location",
+            "type": "location",
+            "polygon": [
+                [
+                    360,
+                    240
+                ],
+                [
+                    610,
+                    240
+                ],
+                [
+                    610,
+                    430
+                ],
+                [
+                    360,
+                    430
+                ]
+            ]
+        }
+    ],
+    "semantic_relationships": [
+        {
+            "subject": "robot_base",
+            "relation": "is_part_of",
+            "object": "workcell_area"
+        },
+        {
+            "subject": "robot_arm",
+            "relation": "is_part_of",
+            "object": "robot_base"
+        },
+        {
+            "subject": "robot_wrist",
+            "relation": "is_part_of",
+            "object": "robot_arm"
+        },
+        {
+            "subject": "robot_gripper",
+            "relation": "is_attached_to",
+            "object": "robot_wrist"
+        },
+        {
+            "subject": "robot_gripper",
+            "relation": "overlaps",
+            "object": "blue_tarp_region"
+        },
+        {
+            "subject": "blue_table_surface",
+            "relation": "lies_within",
+            "object": "blue_tarp_region"
+        },
+        {
+            "subject": "metal_plate",
+            "relation": "is_on_top_of",
+            "object": "blue_tarp_region"
+        },
+        {
+            "subject": "bracket_block",
+            "relation": "is_on_top_of",
+            "object": "blue_tarp_region"
+        },
+        {
+            "subject": "cables",
+            "relation": "connects_to",
+            "object": "robot_arm"
+        },
+        {
+            "subject": "cylindrical_caster",
+            "relation": "is_near",
+            "object": "workcell_area"
+        },
+        {
+            "subject": "keyboard",
+            "relation": "is_outside",
+            "object": "workcell_area"
+        },
+        {
+            "subject": "control_box",
+            "relation": "is_outside",
+            "object": "workcell_area"
+        },
+        {
+            "subject": "camera_mount",
+            "relation": "mounted_near",
+            "object": "robot_arm"
+        },
+        {
+            "subject": "robot_gripper",
+            "relation": "operates_within",
+            "object": "robot_reach_region"
+        },
+        {
+            "subject": "blue_tarp_region",
+            "relation": "is_within",
+            "object": "workcell_area"
+        },
+        {
+            "subject": "current_location",
+            "relation": "is_within",
+            "object": "workcell_area"
+        }
+    ],
+    "agent_state": {
+        "current_location": "current_location",
+        "plans": [
+            {
+                "plan_name": "pick_task",
+                "target": "metal_plate",
+                "region": "current_location"
+            }
+        ]
+    }
+}

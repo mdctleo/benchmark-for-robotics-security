@@ -1,0 +1,206 @@
+{
+    "objects": [
+        {
+            "name": "desk",
+            "type": "furniture",
+            "coord": [
+                240,
+                210
+            ]
+        },
+        {
+            "name": "printer_paper_stack",
+            "type": "paper",
+            "coord": [
+                120,
+                150
+            ]
+        },
+        {
+            "name": "tape_roll_small",
+            "type": "accessory",
+            "coord": [
+                150,
+                240
+            ]
+        },
+        {
+            "name": "booklets_pack",
+            "type": "paper_product",
+            "coord": [
+                105,
+                285
+            ]
+        },
+        {
+            "name": "tape_roll",
+            "type": "accessory",
+            "coord": [
+                210,
+                250
+            ]
+        },
+        {
+            "name": "adhesive_tape_box",
+            "type": "packaging",
+            "coord": [
+                265,
+                235
+            ]
+        },
+        {
+            "name": "cable_or_wire",
+            "type": "cable",
+            "coord": [
+                410,
+                70
+            ]
+        },
+        {
+            "name": "cylindrical_appliance_body",
+            "type": "appliance",
+            "coord": [
+                360,
+                160
+            ]
+        },
+        {
+            "name": "countertop_shelf_open_area",
+            "type": "opening",
+            "coord": [
+                560,
+                180
+            ]
+        },
+        {
+            "name": "small_wood_block",
+            "type": "support",
+            "coord": [
+                430,
+                360
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "workspace_surface",
+            "type": "surface",
+            "coord": [
+                320,
+                240
+            ]
+        },
+        {
+            "name": "printer_side_area",
+            "type": "area",
+            "coord": [
+                160,
+                240
+            ]
+        },
+        {
+            "name": "appliance_area",
+            "type": "area",
+            "coord": [
+                360,
+                170
+            ]
+        },
+        {
+            "name": "open_storage_area",
+            "type": "area",
+            "coord": [
+                560,
+                180
+            ]
+        }
+    ],
+    "semantic_relationships": [
+        {
+            "subject": "cylindrical_appliance_body",
+            "relation": "located_on",
+            "object": "workspace_surface"
+        },
+        {
+            "subject": "cylindrical_appliance_body",
+            "relation": "part_of",
+            "object": "appliance_area"
+        },
+        {
+            "subject": "desk",
+            "relation": "contains_region",
+            "object": "workspace_surface"
+        },
+        {
+            "subject": "printer_paper_stack",
+            "relation": "located_in",
+            "object": "printer_side_area"
+        },
+        {
+            "subject": "tape_roll_small",
+            "relation": "located_in",
+            "object": "printer_side_area"
+        },
+        {
+            "subject": "booklets_pack",
+            "relation": "located_in",
+            "object": "printer_side_area"
+        },
+        {
+            "subject": "tape_roll",
+            "relation": "located_in",
+            "object": "printer_side_area"
+        },
+        {
+            "subject": "adhesive_tape_box",
+            "relation": "located_in",
+            "object": "printer_side_area"
+        },
+        {
+            "subject": "countertop_shelf_open_area",
+            "relation": "overlaps",
+            "object": "open_storage_area"
+        },
+        {
+            "subject": "cable_or_wire",
+            "relation": "connected_to",
+            "object": "cylindrical_appliance_body"
+        },
+        {
+            "subject": "small_wood_block",
+            "relation": "supporting",
+            "object": "cylindrical_appliance_body"
+        }
+    ],
+    "current_location": {
+        "subject": "cylindrical_appliance_body",
+        "region": "appliance_area"
+    },
+    "plans": [
+        {
+            "name": "organize_printer_accessories",
+            "steps": [
+                {
+                    "action": "place",
+                    "item": "printer_paper_stack",
+                    "destination_region": "printer_side_area"
+                },
+                {
+                    "action": "place",
+                    "item": "booklets_pack",
+                    "destination_region": "printer_side_area"
+                },
+                {
+                    "action": "place",
+                    "item": "adhesive_tape_box",
+                    "destination_region": "printer_side_area"
+                },
+                {
+                    "action": "place",
+                    "item": "tape_roll",
+                    "destination_region": "printer_side_area"
+                }
+            ]
+        }
+    ]
+}

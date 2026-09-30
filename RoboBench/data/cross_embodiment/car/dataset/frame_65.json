@@ -1,0 +1,238 @@
+{
+    "objects": [
+        {
+            "name": "cars_on_left_lane",
+            "type": "vehicle_group",
+            "coordinates": [
+                [
+                    110,
+                    160
+                ],
+                [
+                    140,
+                    160
+                ],
+                [
+                    170,
+                    160
+                ],
+                [
+                    200,
+                    160
+                ]
+            ]
+        },
+        {
+            "name": "cars_on_right_lane",
+            "type": "vehicle_group",
+            "coordinates": [
+                [
+                    310,
+                    210
+                ],
+                [
+                    340,
+                    210
+                ],
+                [
+                    370,
+                    210
+                ],
+                [
+                    400,
+                    210
+                ]
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "roadway",
+            "type": "road",
+            "coordinates": [
+                [
+                    170,
+                    210
+                ],
+                [
+                    445,
+                    210
+                ],
+                [
+                    510,
+                    480
+                ],
+                [
+                    120,
+                    480
+                ]
+            ]
+        },
+        {
+            "name": "parking_lot_area",
+            "type": "parking_area",
+            "coordinates": [
+                [
+                    70,
+                    240
+                ],
+                [
+                    160,
+                    220
+                ],
+                [
+                    200,
+                    360
+                ],
+                [
+                    120,
+                    410
+                ]
+            ]
+        },
+        {
+            "name": "buildings_right",
+            "type": "building_group",
+            "coordinates": [
+                [
+                    410,
+                    250
+                ],
+                [
+                    520,
+                    240
+                ],
+                [
+                    560,
+                    380
+                ],
+                [
+                    430,
+                    400
+                ]
+            ]
+        },
+        {
+            "name": "streetlights",
+            "type": "light_poles_group",
+            "coordinates": [
+                [
+                    360,
+                    210
+                ],
+                [
+                    370,
+                    210
+                ],
+                [
+                    390,
+                    210
+                ],
+                [
+                    400,
+                    210
+                ]
+            ]
+        },
+        {
+            "name": "sidewalk_edges",
+            "type": "curb_sidewalk",
+            "coordinates": [
+                [
+                    130,
+                    220
+                ],
+                [
+                    170,
+                    210
+                ],
+                [
+                    490,
+                    210
+                ],
+                [
+                    540,
+                    230
+                ],
+                [
+                    510,
+                    250
+                ],
+                [
+                    160,
+                    250
+                ]
+            ]
+        },
+        {
+            "name": "flag_signs",
+            "type": "signage_group",
+            "coordinates": [
+                [
+                    300,
+                    300
+                ],
+                [
+                    330,
+                    290
+                ],
+                [
+                    350,
+                    340
+                ],
+                [
+                    310,
+                    350
+                ]
+            ]
+        }
+    ],
+    "semantic_relationships": [
+        {
+            "from": "cars_on_left_lane",
+            "to": "roadway",
+            "relation": "located_on"
+        },
+        {
+            "from": "cars_on_right_lane",
+            "to": "roadway",
+            "relation": "located_on"
+        },
+        {
+            "from": "buildings_right",
+            "to": "roadway",
+            "relation": "adjacent_to"
+        },
+        {
+            "from": "parking_lot_area",
+            "to": "roadway",
+            "relation": "adjacent_to"
+        },
+        {
+            "from": "streetlights",
+            "to": "roadway",
+            "relation": "illuminates"
+        },
+        {
+            "from": "sidewalk_edges",
+            "to": "roadway",
+            "relation": "borders"
+        },
+        {
+            "from": "flag_signs",
+            "to": "roadway",
+            "relation": "near"
+        }
+    ],
+    "current_location": "roadway",
+    "plans": [
+        {
+            "target_region": "buildings_right",
+            "action": "approach"
+        },
+        {
+            "target_region": "parking_lot_area",
+            "action": "turn_towards"
+        }
+    ]
+}

@@ -1,0 +1,173 @@
+{
+    "objects": [
+        {
+            "name": "left_robot_arm",
+            "coords": [
+                180,
+                400
+            ]
+        },
+        {
+            "name": "right_robot_arm",
+            "coords": [
+                680,
+                450
+            ]
+        },
+        {
+            "name": "left_monitor",
+            "coords": [
+                250,
+                300
+            ]
+        },
+        {
+            "name": "right_monitor",
+            "coords": [
+                650,
+                350
+            ]
+        },
+        {
+            "name": "left_box",
+            "coords": [
+                150,
+                600
+            ]
+        },
+        {
+            "name": "right_box",
+            "coords": [
+                650,
+                600
+            ]
+        },
+        {
+            "name": "white_item_in_left_box",
+            "coords": [
+                150,
+                610
+            ]
+        },
+        {
+            "name": "white_towel_on_right_desk",
+            "coords": [
+                750,
+                700
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "left_workspace_area",
+            "coords": [
+                200,
+                650
+            ]
+        },
+        {
+            "name": "right_workspace_area",
+            "coords": [
+                700,
+                650
+            ]
+        },
+        {
+            "name": "floor_area",
+            "coords": [
+                500,
+                900
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "left_robot_arm",
+            "left_workspace_area"
+        ],
+        [
+            "left_monitor",
+            "left_workspace_area"
+        ],
+        [
+            "left_box",
+            "left_workspace_area"
+        ],
+        [
+            "white_item_in_left_box",
+            "left_box"
+        ],
+        [
+            "right_robot_arm",
+            "right_workspace_area"
+        ],
+        [
+            "right_monitor",
+            "right_workspace_area"
+        ],
+        [
+            "right_box",
+            "right_workspace_area"
+        ],
+        [
+            "white_towel_on_right_desk",
+            "right_workspace_area"
+        ]
+    ],
+    "region_connections": [],
+    "extra_safe_objects": [
+        {
+            "name": "white_item_in_left_box",
+            "type": "cloth",
+            "coords": [
+                150,
+                610
+            ]
+        },
+        {
+            "name": "white_towel_on_right_desk",
+            "type": "cloth",
+            "coords": [
+                750,
+                700
+            ]
+        }
+    ],
+    "extra_unsafe_objects": [
+        {
+            "name": "left_robot_arm",
+            "type": "robot",
+            "coords": [
+                180,
+                400
+            ]
+        },
+        {
+            "name": "right_robot_arm",
+            "type": "robot",
+            "coords": [
+                680,
+                450
+            ]
+        },
+        {
+            "name": "left_monitor",
+            "type": "electronic_device",
+            "coords": [
+                250,
+                300
+            ]
+        },
+        {
+            "name": "right_monitor",
+            "type": "electronic_device",
+            "coords": [
+                650,
+                350
+            ]
+        }
+    ],
+    "extra_safe_regions": [],
+    "extra_unsafe_regions": [],
+    "current_location": "left_workspace_area"
+}

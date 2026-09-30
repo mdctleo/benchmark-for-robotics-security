@@ -1,0 +1,148 @@
+{
+    "objects": [
+        {
+            "name": "black_bowl",
+            "coords": [
+                365,
+                103
+            ]
+        },
+        {
+            "name": "black_plate",
+            "coords": [
+                411,
+                104
+            ]
+        },
+        {
+            "name": "placemat",
+            "coords": [
+                433,
+                110
+            ]
+        },
+        {
+            "name": "wooden_coaster",
+            "coords": [
+                277,
+                230
+            ]
+        },
+        {
+            "name": "wooden_handled_knife_1",
+            "coords": [
+                267,
+                72
+            ]
+        },
+        {
+            "name": "wooden_handled_knife_2",
+            "coords": [
+                569,
+                104
+            ]
+        },
+        {
+            "name": "lazy_susan",
+            "coords": [
+                256,
+                432
+            ]
+        },
+        {
+            "name": "green_can",
+            "coords": [
+                151,
+                461
+            ]
+        },
+        {
+            "name": "blue_handled_knife",
+            "coords": [
+                500,
+                930
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "table_surface",
+            "coords": [
+                500,
+                500
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "black_bowl",
+            "on top of"
+        ],
+        [
+            "black_plate",
+            "under"
+        ],
+        [
+            "black_plate",
+            "on top of"
+        ],
+        [
+            "placemat",
+            "under"
+        ],
+        [
+            "placemat",
+            "on"
+        ],
+        [
+            "table_surface",
+            "holds"
+        ],
+        [
+            "wooden_coaster",
+            "on"
+        ],
+        [
+            "table_surface",
+            "holds"
+        ],
+        [
+            "wooden_handled_knife_1",
+            "next to"
+        ],
+        [
+            "placemat",
+            "is next to"
+        ],
+        [
+            "wooden_handled_knife_2",
+            "next to"
+        ],
+        [
+            "placemat",
+            "is next to"
+        ],
+        [
+            "lazy_susan",
+            "on"
+        ],
+        [
+            "table_surface",
+            "holds"
+        ],
+        [
+            "green_can",
+            "on"
+        ],
+        [
+            "lazy_susan",
+            "holds"
+        ]
+    ],
+    "region_connections": [],
+    "extra_safe_objects": [],
+    "extra_unsafe_objects": [],
+    "extra_safe_regions": [],
+    "extra_unsafe_regions": [],
+    "current_location": "table_surface"
+}

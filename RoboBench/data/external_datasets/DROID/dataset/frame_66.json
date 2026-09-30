@@ -1,0 +1,139 @@
+{
+    "objects": [
+        {
+            "name": "main_table",
+            "coords": [
+                500,
+                600
+            ]
+        },
+        {
+            "name": "camera_equipment",
+            "coords": [
+                480,
+                500
+            ]
+        },
+        {
+            "name": "side_table",
+            "coords": [
+                300,
+                100
+            ]
+        },
+        {
+            "name": "drawer_cabinet",
+            "coords": [
+                250,
+                200
+            ]
+        },
+        {
+            "name": "white_fan",
+            "coords": [
+                350,
+                150
+            ]
+        },
+        {
+            "name": "computer_monitors",
+            "coords": [
+                250,
+                650
+            ]
+        },
+        {
+            "name": "workspace_stool",
+            "coords": [
+                350,
+                550
+            ]
+        },
+        {
+            "name": "right_shelving",
+            "coords": [
+                400,
+                800
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "main_work_area",
+            "coords": [
+                500,
+                600
+            ]
+        },
+        {
+            "name": "side_work_area",
+            "coords": [
+                300,
+                150
+            ]
+        },
+        {
+            "name": "background_workstation",
+            "coords": [
+                300,
+                600
+            ]
+        },
+        {
+            "name": "right_storage_section",
+            "coords": [
+                400,
+                800
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "camera_equipment",
+            "main_table"
+        ],
+        [
+            "side_table",
+            "side_work_area"
+        ],
+        [
+            "drawer_cabinet",
+            "side_work_area"
+        ],
+        [
+            "white_fan",
+            "side_work_area"
+        ],
+        [
+            "computer_monitors",
+            "background_workstation"
+        ],
+        [
+            "workspace_stool",
+            "background_workstation"
+        ],
+        [
+            "right_shelving",
+            "right_storage_section"
+        ]
+    ],
+    "region_connections": [
+        [
+            "main_work_area",
+            "side_work_area"
+        ],
+        [
+            "main_work_area",
+            "background_workstation"
+        ],
+        [
+            "main_work_area",
+            "right_storage_section"
+        ]
+    ],
+    "extra_safe_objects": [],
+    "extra_unsafe_objects": [],
+    "extra_safe_regions": [],
+    "extra_unsafe_regions": [],
+    "current_location": "main_work_area"
+}

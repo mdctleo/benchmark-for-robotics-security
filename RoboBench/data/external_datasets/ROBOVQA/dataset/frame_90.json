@@ -1,0 +1,103 @@
+{
+    "objects": [
+        {
+            "name": "cardboard_box",
+            "coords": [
+                498,
+                321
+            ]
+        },
+        {
+            "name": "white_bowl",
+            "coords": [
+                100,
+                331
+            ]
+        },
+        {
+            "name": "fruits_in_bowl",
+            "coords": [
+                100,
+                331
+            ]
+        },
+        {
+            "name": "coffee_packets_in_box",
+            "coords": [
+                330,
+                310
+            ]
+        },
+        {
+            "name": "coffee_packets_on_table",
+            "coords": [
+                448,
+                775
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "table_surface",
+            "coords": [
+                500,
+                500
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "cardboard_box",
+            "table_surface"
+        ],
+        [
+            "white_bowl",
+            "table_surface"
+        ],
+        [
+            "fruits_in_bowl",
+            "white_bowl"
+        ],
+        [
+            "coffee_packets_in_box",
+            "cardboard_box"
+        ],
+        [
+            "coffee_packets_on_table",
+            "table_surface"
+        ]
+    ],
+    "region_connections": [],
+    "extra_safe_objects": [
+        {
+            "name": "fruits_in_bowl",
+            "type": "food",
+            "coords": [
+                100,
+                331
+            ]
+        }
+    ],
+    "extra_unsafe_objects": [
+        {
+            "name": "coffee_packets_on_table",
+            "type": "clutter",
+            "coords": [
+                448,
+                775
+            ]
+        }
+    ],
+    "extra_safe_regions": [
+        {
+            "name": "table_surface",
+            "type": "flat_surface",
+            "coords": [
+                500,
+                500
+            ]
+        }
+    ],
+    "extra_unsafe_regions": [],
+    "current_location": "table_surface"
+}

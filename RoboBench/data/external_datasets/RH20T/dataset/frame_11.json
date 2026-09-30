@@ -1,0 +1,337 @@
+{
+    "regions": [
+        {
+            "name": "printing_bed",
+            "label": "Printing bed (blue fabric surface)",
+            "polygon": [
+                [
+                    70,
+                    70
+                ],
+                [
+                    720,
+                    70
+                ],
+                [
+                    690,
+                    380
+                ],
+                [
+                    40,
+                    380
+                ]
+            ]
+        },
+        {
+            "name": "left_wheel_area",
+            "label": "Left side equipment region",
+            "polygon": [
+                [
+                    0,
+                    60
+                ],
+                [
+                    120,
+                    60
+                ],
+                [
+                    160,
+                    380
+                ],
+                [
+                    0,
+                    380
+                ]
+            ]
+        },
+        {
+            "name": "right_control_area",
+            "label": "Right side control/device area",
+            "polygon": [
+                [
+                    720,
+                    60
+                ],
+                [
+                    910,
+                    60
+                ],
+                [
+                    910,
+                    380
+                ],
+                [
+                    690,
+                    380
+                ]
+            ]
+        },
+        {
+            "name": "center_clear_area",
+            "label": "Central workspace around test patterns",
+            "polygon": [
+                [
+                    200,
+                    120
+                ],
+                [
+                    600,
+                    120
+                ],
+                [
+                    630,
+                    360
+                ],
+                [
+                    170,
+                    360
+                ]
+            ]
+        },
+        {
+            "name": "current_location",
+            "label": "Current location region (notional)",
+            "polygon": [
+                [
+                    300,
+                    200
+                ],
+                [
+                    430,
+                    200
+                ],
+                [
+                    440,
+                    280
+                ],
+                [
+                    290,
+                    280
+                ]
+            ]
+        }
+    ],
+    "objects": [
+        {
+            "name": "blue_fabric_surface",
+            "type": "surface",
+            "center": [
+                390,
+                240
+            ],
+            "belongs_to_region": "printing_bed"
+        },
+        {
+            "name": "red_emergency_stop_button",
+            "type": "button",
+            "center": [
+                355,
+                170
+            ],
+            "belongs_to_region": "printing_bed"
+        },
+        {
+            "name": "green_tube",
+            "type": "marker",
+            "center": [
+                510,
+                145
+            ],
+            "belongs_to_region": "printing_bed"
+        },
+        {
+            "name": "yellow_tube",
+            "type": "marker",
+            "center": [
+                490,
+                175
+            ],
+            "belongs_to_region": "printing_bed"
+        },
+        {
+            "name": "green_marker_button",
+            "type": "button",
+            "center": [
+                530,
+                165
+            ],
+            "belongs_to_region": "printing_bed"
+        },
+        {
+            "name": "small_control_box_left",
+            "type": "control_box",
+            "center": [
+                300,
+                180
+            ],
+            "belongs_to_region": "printing_bed"
+        },
+        {
+            "name": "small_control_box_center",
+            "type": "control_box",
+            "center": [
+                390,
+                210
+            ],
+            "belongs_to_region": "printing_bed"
+        },
+        {
+            "name": "robot_mount_on_y_axis",
+            "type": "robot_component",
+            "center": [
+                580,
+                80
+            ],
+            "belongs_to_region": "printing_bed"
+        },
+        {
+            "name": "robot_end_effector",
+            "type": "tool_head",
+            "center": [
+                600,
+                120
+            ],
+            "belongs_to_region": "printing_bed"
+        },
+        {
+            "name": "black_arm_base",
+            "type": "robot_component",
+            "center": [
+                640,
+                110
+            ],
+            "belongs_to_region": "printing_bed"
+        },
+        {
+            "name": "gray_platform_block_right",
+            "type": "fixture_block",
+            "center": [
+                740,
+                240
+            ],
+            "belongs_to_region": "right_control_area"
+        },
+        {
+            "name": "keyboard_like_panel",
+            "type": "panel",
+            "center": [
+                675,
+                275
+            ],
+            "belongs_to_region": "right_control_area"
+        },
+        {
+            "name": "large_left_wheel_unit",
+            "type": "wheel_unit",
+            "center": [
+                75,
+                220
+            ],
+            "belongs_to_region": "left_wheel_area"
+        },
+        {
+            "name": "blue_pattern_area_left",
+            "type": "printed_mark",
+            "center": [
+                330,
+                270
+            ],
+            "belongs_to_region": "center_clear_area"
+        }
+    ],
+    "semantic_relationships": [
+        {
+            "subject": "robot_end_effector",
+            "relation": "is_part_of",
+            "object": "robot_mount_on_y_axis"
+        },
+        {
+            "subject": "robot_end_effector",
+            "relation": "mounted_on",
+            "object": "black_arm_base"
+        },
+        {
+            "subject": "small_control_box_left",
+            "relation": "is_on",
+            "object": "blue_fabric_surface"
+        },
+        {
+            "subject": "small_control_box_center",
+            "relation": "is_on",
+            "object": "blue_fabric_surface"
+        },
+        {
+            "subject": "red_emergency_stop_button",
+            "relation": "on_top_of",
+            "object": "small_control_box_left"
+        },
+        {
+            "subject": "green_marker_button",
+            "relation": "on_top_of",
+            "object": "small_control_box_center"
+        },
+        {
+            "subject": "yellow_tube",
+            "relation": "adjacent_to",
+            "object": "green_tube"
+        },
+        {
+            "subject": "green_tube",
+            "relation": "is_on",
+            "object": "blue_fabric_surface"
+        },
+        {
+            "subject": "yellow_tube",
+            "relation": "is_on",
+            "object": "blue_fabric_surface"
+        },
+        {
+            "subject": "keyboard_like_panel",
+            "relation": "is_near",
+            "object": "gray_platform_block_right"
+        },
+        {
+            "subject": "large_left_wheel_unit",
+            "relation": "located_in",
+            "object": "left_wheel_area"
+        },
+        {
+            "subject": "robot_end_effector",
+            "relation": "operates_over",
+            "object": "printing_bed"
+        },
+        {
+            "subject": "blue_pattern_area_left",
+            "relation": "appears_on",
+            "object": "blue_fabric_surface"
+        },
+        {
+            "subject": "blue_fabric_surface",
+            "relation": "contains",
+            "object": "blue_pattern_area_left"
+        }
+    ],
+    "current_location": {
+        "region": "current_location",
+        "notes": "Notional location within the central workspace for planning."
+    },
+    "plans": [
+        {
+            "name": "inspect_markers",
+            "steps": [
+                {
+                    "target": "green_marker_button",
+                    "region_context": "current_location"
+                },
+                {
+                    "target": "yellow_tube",
+                    "region_context": "current_location"
+                },
+                {
+                    "target": "red_emergency_stop_button",
+                    "region_context": "current_location"
+                }
+            ]
+        }
+    ]
+}

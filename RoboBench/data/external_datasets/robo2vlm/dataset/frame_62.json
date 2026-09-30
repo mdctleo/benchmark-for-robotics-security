@@ -1,0 +1,95 @@
+{
+    "objects": [
+        {
+            "name": "white_bowl_1",
+            "coords": [
+                260,
+                610
+            ]
+        },
+        {
+            "name": "tool_set_1",
+            "coords": [
+                390,
+                400
+            ]
+        },
+        {
+            "name": "bottle_1",
+            "coords": [
+                700,
+                140
+            ]
+        },
+        {
+            "name": "robot_arm_1",
+            "coords": [
+                800,
+                750
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "drawer_cabinet_1",
+            "coords": [
+                450,
+                450
+            ]
+        },
+        {
+            "name": "top_surface_1",
+            "coords": [
+                300,
+                500
+            ]
+        },
+        {
+            "name": "open_drawer_1",
+            "coords": [
+                800,
+                300
+            ]
+        },
+        {
+            "name": "ground_1",
+            "coords": [
+                800,
+                500
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "white_bowl_1",
+            "top_surface_1"
+        ],
+        [
+            "tool_set_1",
+            "top_surface_1"
+        ],
+        [
+            "bottle_1",
+            "ground_1"
+        ],
+        [
+            "robot_arm_1",
+            "ground_1"
+        ]
+    ],
+    "region_connections": [
+        [
+            "top_surface_1",
+            "drawer_cabinet_1"
+        ],
+        [
+            "open_drawer_1",
+            "drawer_cabinet_1"
+        ]
+    ],
+    "extra_safe_objects": [],
+    "extra_unsafe_objects": [],
+    "extra_safe_regions": [],
+    "extra_unsafe_regions": [],
+    "current_location": "ground_1"
+}

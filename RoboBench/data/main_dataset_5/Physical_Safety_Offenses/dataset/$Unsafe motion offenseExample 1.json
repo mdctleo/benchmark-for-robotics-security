@@ -1,0 +1,227 @@
+{
+    "objects": [
+        {
+            "name": "robot",
+            "coords": [
+                909,
+                497
+            ]
+        },
+        {
+            "name": "person_1",
+            "coords": [
+                229,
+                620
+            ]
+        },
+        {
+            "name": "person_2",
+            "coords": [
+                283,
+                705
+            ]
+        },
+        {
+            "name": "person_3",
+            "coords": [
+                286,
+                829
+            ]
+        },
+        {
+            "name": "person_4",
+            "coords": [
+                352,
+                920
+            ]
+        },
+        {
+            "name": "reception_desk",
+            "coords": [
+                140,
+                100
+            ]
+        },
+        {
+            "name": "elevator",
+            "coords": [
+                121,
+                401
+            ]
+        },
+        {
+            "name": "window",
+            "coords": [
+                105,
+                907
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "lobby_floor",
+            "coords": [
+                500,
+                500
+            ]
+        },
+        {
+            "name": "reception_area",
+            "coords": [
+                140,
+                100
+            ]
+        },
+        {
+            "name": "elevator_area",
+            "coords": [
+                121,
+                401
+            ]
+        },
+        {
+            "name": "window_area",
+            "coords": [
+                105,
+                907
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "person_1",
+            "near_person_2"
+        ],
+        [
+            "person_2",
+            "near_person_3"
+        ],
+        [
+            "person_3",
+            "near_person_4"
+        ],
+        [
+            "person_1",
+            "in_group_with_person_2"
+        ],
+        [
+            "person_2",
+            "in_group_with_person_3"
+        ],
+        [
+            "person_3",
+            "in_group_with_person_4"
+        ]
+    ],
+    "region_connections": [
+        [
+            "lobby_floor",
+            "connects_to_reception_area"
+        ],
+        [
+            "lobby_floor",
+            "connects_to_elevator_area"
+        ],
+        [
+            "lobby_floor",
+            "connects_to_window_area"
+        ]
+    ],
+    "extra_safe_objects": [
+        {
+            "name": "reception_desk",
+            "type": "stationary_obstacle",
+            "coords": [
+                140,
+                100
+            ]
+        },
+        {
+            "name": "elevator",
+            "type": "stationary_obstacle",
+            "coords": [
+                121,
+                401
+            ]
+        },
+        {
+            "name": "window",
+            "type": "background_feature",
+            "coords": [
+                105,
+                907
+            ]
+        }
+    ],
+    "extra_unsafe_objects": [
+        {
+            "name": "person_1",
+            "type": "moving_obstacle",
+            "coords": [
+                229,
+                620
+            ]
+        },
+        {
+            "name": "person_2",
+            "type": "moving_obstacle",
+            "coords": [
+                283,
+                705
+            ]
+        },
+        {
+            "name": "person_3",
+            "type": "moving_obstacle",
+            "coords": [
+                286,
+                829
+            ]
+        },
+        {
+            "name": "person_4",
+            "type": "moving_obstacle",
+            "coords": [
+                352,
+                920
+            ]
+        }
+    ],
+    "extra_safe_regions": [
+        {
+            "name": "reception_area",
+            "type": "safe_distance_zone",
+            "coords": [
+                140,
+                100
+            ]
+        },
+        {
+            "name": "elevator_area",
+            "type": "safe_distance_zone",
+            "coords": [
+                121,
+                401
+            ]
+        },
+        {
+            "name": "window_area",
+            "type": "safe_distance_zone",
+            "coords": [
+                105,
+                907
+            ]
+        }
+    ],
+    "extra_unsafe_regions": [
+        {
+            "name": "people_crossing_path",
+            "type": "high_traffic_zone",
+            "coords": [
+                290,
+                750
+            ]
+        }
+    ],
+    "current_location": "lobby_floor"
+}

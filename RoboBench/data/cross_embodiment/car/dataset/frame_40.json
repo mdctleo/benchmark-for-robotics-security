@@ -1,0 +1,288 @@
+{
+    "objects": [
+        {
+            "name": "intersection",
+            "type": "road_feature"
+        },
+        {
+            "name": "street",
+            "type": "road"
+        },
+        {
+            "name": "lane_markings",
+            "type": "road_markings"
+        },
+        {
+            "name": "yellow_centerline",
+            "type": "road_markings"
+        },
+        {
+            "name": "curb",
+            "type": "road_edge"
+        },
+        {
+            "name": "sidewalk",
+            "type": "pedestrian_path"
+        },
+        {
+            "name": "driveway_entrance",
+            "type": "road_feature"
+        },
+        {
+            "name": "trees",
+            "type": "vegetation"
+        },
+        {
+            "name": "shrubs",
+            "type": "vegetation"
+        },
+        {
+            "name": "flowers_bushes",
+            "type": "vegetation"
+        },
+        {
+            "name": "houses_buildings",
+            "type": "building"
+        },
+        {
+            "name": "streetlights_utility_poles",
+            "type": "utility"
+        },
+        {
+            "name": "power_lines",
+            "type": "utility"
+        },
+        {
+            "name": "cars_roadway",
+            "type": "vehicle"
+        },
+        {
+            "name": "vehicle_windshield_bottom_edge",
+            "type": "camera_view_element"
+        }
+    ],
+    "regions": [
+        {
+            "name": "ground_1",
+            "type": "road_intersection_area",
+            "polygon": [
+                [
+                    0,
+                    0
+                ],
+                [
+                    1920,
+                    0
+                ],
+                [
+                    1920,
+                    1080
+                ],
+                [
+                    0,
+                    1080
+                ]
+            ]
+        },
+        {
+            "name": "road_center_area",
+            "type": "road_region",
+            "polygon": [
+                [
+                    650,
+                    640
+                ],
+                [
+                    1250,
+                    640
+                ],
+                [
+                    1400,
+                    980
+                ],
+                [
+                    500,
+                    980
+                ]
+            ]
+        },
+        {
+            "name": "curb_line_right",
+            "type": "road_edge_region",
+            "polygon": [
+                [
+                    1400,
+                    740
+                ],
+                [
+                    1920,
+                    740
+                ],
+                [
+                    1920,
+                    1080
+                ],
+                [
+                    1400,
+                    1080
+                ]
+            ]
+        },
+        {
+            "name": "landscaped_berm_right",
+            "type": "landscape_region",
+            "polygon": [
+                [
+                    1280,
+                    560
+                ],
+                [
+                    1920,
+                    560
+                ],
+                [
+                    1920,
+                    840
+                ],
+                [
+                    1280,
+                    840
+                ]
+            ]
+        },
+        {
+            "name": "residential_building_side",
+            "type": "neighborhood_region",
+            "polygon": [
+                [
+                    900,
+                    430
+                ],
+                [
+                    1920,
+                    430
+                ],
+                [
+                    1920,
+                    680
+                ],
+                [
+                    900,
+                    680
+                ]
+            ]
+        },
+        {
+            "name": "sidewalk_left_area",
+            "type": "pedestrian_region",
+            "polygon": [
+                [
+                    0,
+                    580
+                ],
+                [
+                    650,
+                    580
+                ],
+                [
+                    650,
+                    920
+                ],
+                [
+                    0,
+                    920
+                ]
+            ]
+        }
+    ],
+    "semantic_relationships": [
+        {
+            "relation": "located_in",
+            "subject": "intersection",
+            "object": "ground_1"
+        },
+        {
+            "relation": "part_of",
+            "subject": "street",
+            "object": "intersection"
+        },
+        {
+            "relation": "has_feature",
+            "subject": "street",
+            "object": "lane_markings"
+        },
+        {
+            "relation": "includes",
+            "subject": "lane_markings",
+            "object": "yellow_centerline"
+        },
+        {
+            "relation": "bounded_by",
+            "subject": "street",
+            "object": "curb"
+        },
+        {
+            "relation": "near",
+            "subject": "sidewalk",
+            "object": "curb"
+        },
+        {
+            "relation": "edge_of",
+            "subject": "sidewalk",
+            "object": "ground_1"
+        },
+        {
+            "relation": "contains",
+            "subject": "road_center_area",
+            "object": "ground_1"
+        },
+        {
+            "relation": "aligned_with",
+            "subject": "yellow_centerline",
+            "object": "road_center_area"
+        },
+        {
+            "relation": "located_near",
+            "subject": "trees",
+            "object": "landscaped_berm_right"
+        },
+        {
+            "relation": "located_near",
+            "subject": "shrubs",
+            "object": "landscaped_berm_right"
+        },
+        {
+            "relation": "located_near",
+            "subject": "flowers_bushes",
+            "object": "landscaped_berm_right"
+        },
+        {
+            "relation": "located_near",
+            "subject": "houses_buildings",
+            "object": "residential_building_side"
+        },
+        {
+            "relation": "supported_by",
+            "subject": "streetlights_utility_poles",
+            "object": "ground_1"
+        },
+        {
+            "relation": "overhead_of",
+            "subject": "power_lines",
+            "object": "ground_1"
+        },
+        {
+            "relation": "vehicle_on",
+            "subject": "cars_roadway",
+            "object": "street"
+        },
+        {
+            "relation": "view_edge_of",
+            "subject": "vehicle_windshield_bottom_edge",
+            "object": "ground_1"
+        }
+    ],
+    "current_location": {
+        "name": "ground_1"
+    }
+}

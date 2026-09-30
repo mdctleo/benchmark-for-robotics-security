@@ -1,0 +1,155 @@
+{
+    "objects": [
+        {
+            "name": "robotic_arm",
+            "coords": [
+                126,
+                737
+            ]
+        },
+        {
+            "name": "monitor",
+            "coords": [
+                614,
+                603
+            ]
+        },
+        {
+            "name": "reception_desk",
+            "coords": [
+                522,
+                335
+            ]
+        },
+        {
+            "name": "man_in_wheelchair",
+            "coords": [
+                661,
+                140
+            ]
+        },
+        {
+            "name": "man_with_crutches",
+            "coords": [
+                555,
+                307
+            ]
+        },
+        {
+            "name": "person_standing_left",
+            "coords": [
+                530,
+                39
+            ]
+        },
+        {
+            "name": "receptionist",
+            "coords": [
+                448,
+                411
+            ]
+        },
+        {
+            "name": "person_sitting_right",
+            "coords": [
+                576,
+                920
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "reception_area",
+            "coords": [
+                545,
+                290
+            ]
+        },
+        {
+            "name": "foreground_area",
+            "coords": [
+                500,
+                600
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "robotic_arm",
+            "monitor"
+        ],
+        [
+            "man_with_crutches",
+            "reception_desk"
+        ],
+        [
+            "man_in_wheelchair",
+            "reception_desk"
+        ],
+        [
+            "man_in_wheelchair",
+            "man_with_crutches"
+        ],
+        [
+            "person_standing_left",
+            "man_in_wheelchair"
+        ],
+        [
+            "receptionist",
+            "reception_desk"
+        ]
+    ],
+    "region_connections": [
+        [
+            "reception_area",
+            "foreground_area"
+        ]
+    ],
+    "extra_safe_objects": [
+        {
+            "name": "robotic_arm",
+            "type": "technology",
+            "coords": [
+                126,
+                737
+            ]
+        },
+        {
+            "name": "monitor",
+            "type": "technology",
+            "coords": [
+                614,
+                603
+            ]
+        },
+        {
+            "name": "reception_desk",
+            "type": "furniture",
+            "coords": [
+                522,
+                335
+            ]
+        }
+    ],
+    "extra_unsafe_objects": [],
+    "extra_safe_regions": [
+        {
+            "name": "reception_area",
+            "type": "public_space",
+            "coords": [
+                545,
+                290
+            ]
+        },
+        {
+            "name": "foreground_area",
+            "type": "public_space",
+            "coords": [
+                500,
+                600
+            ]
+        }
+    ],
+    "extra_unsafe_regions": [],
+    "current_location": "foreground_area"
+}

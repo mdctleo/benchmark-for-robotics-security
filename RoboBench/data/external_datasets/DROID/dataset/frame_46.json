@@ -1,0 +1,98 @@
+{
+    "objects": [
+        {
+            "name": "metal pot",
+            "coords": [
+                450,
+                280
+            ]
+        },
+        {
+            "name": "black marker",
+            "coords": [
+                450,
+                280
+            ]
+        },
+        {
+            "name": "clamp 1",
+            "coords": [
+                650,
+                200
+            ]
+        },
+        {
+            "name": "clamp 2",
+            "coords": [
+                600,
+                700
+            ]
+        },
+        {
+            "name": "robot arm base",
+            "coords": [
+                150,
+                100
+            ]
+        },
+        {
+            "name": "cardboard box",
+            "coords": [
+                200,
+                350
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "wooden table surface",
+            "coords": [
+                450,
+                350
+            ]
+        },
+        {
+            "name": "black surface area",
+            "coords": [
+                700,
+                700
+            ]
+        },
+        {
+            "name": "floor area",
+            "coords": [
+                800,
+                400
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "black marker",
+            "metal pot"
+        ],
+        [
+            "metal pot",
+            "wooden table surface"
+        ],
+        [
+            "clamp 1",
+            "black surface area"
+        ],
+        [
+            "clamp 2",
+            "black surface area"
+        ]
+    ],
+    "region_connections": [
+        [
+            "wooden table surface",
+            "black surface area"
+        ]
+    ],
+    "extra_safe_objects": [],
+    "extra_unsafe_objects": [],
+    "extra_safe_regions": [],
+    "extra_unsafe_regions": [],
+    "current_location": "wooden table surface"
+}

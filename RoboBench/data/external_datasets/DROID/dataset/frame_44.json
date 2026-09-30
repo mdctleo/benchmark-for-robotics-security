@@ -1,0 +1,107 @@
+{
+    "objects": [
+        {
+            "name": "robot_gripper",
+            "coords": [
+                725,
+                616
+            ]
+        },
+        {
+            "name": "spoon",
+            "coords": [
+                794,
+                874
+            ]
+        },
+        {
+            "name": "purple_cup",
+            "coords": [
+                680,
+                203
+            ]
+        },
+        {
+            "name": "blue_scrubber",
+            "coords": [
+                848,
+                150
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "sink_basin",
+            "coords": [
+                750,
+                480
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "robot_gripper",
+            "near"
+        ],
+        [
+            "spoon",
+            "in"
+        ],
+        [
+            "purple_cup",
+            "in"
+        ],
+        [
+            "blue_scrubber",
+            "in"
+        ]
+    ],
+    "region_connections": [
+        [
+            "robot_gripper",
+            "sink_basin"
+        ],
+        [
+            "spoon",
+            "sink_basin"
+        ],
+        [
+            "purple_cup",
+            "sink_basin"
+        ],
+        [
+            "blue_scrubber",
+            "sink_basin"
+        ]
+    ],
+    "extra_safe_objects": [
+        {
+            "name": "spoon",
+            "type": "kitchen_utensil",
+            "coords": [
+                794,
+                874
+            ]
+        },
+        {
+            "name": "purple_cup",
+            "type": "cup",
+            "coords": [
+                680,
+                203
+            ]
+        },
+        {
+            "name": "blue_scrubber",
+            "type": "scrubber",
+            "coords": [
+                848,
+                150
+            ]
+        }
+    ],
+    "extra_unsafe_objects": [],
+    "extra_safe_regions": [],
+    "extra_unsafe_regions": [],
+    "current_location": "sink_basin"
+}

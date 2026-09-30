@@ -1,0 +1,109 @@
+{
+    "objects": [
+        {
+            "name": "robot",
+            "coords": [
+                50,
+                10
+            ]
+        },
+        {
+            "name": "pedestrian_group",
+            "coords": [
+                45,
+                40
+            ]
+        },
+        {
+            "name": "yield_to_pedestrians_sign",
+            "coords": [
+                80,
+                50
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "crosswalk",
+            "coords": [
+                50,
+                40
+            ]
+        },
+        {
+            "name": "paved_path",
+            "coords": [
+                50,
+                40
+            ]
+        },
+        {
+            "name": "sidewalk",
+            "coords": [
+                80,
+                50
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "pedestrian_group",
+            "crosswalk"
+        ],
+        [
+            "yield_to_pedestrians_sign",
+            "sidewalk"
+        ]
+    ],
+    "region_connections": [
+        [
+            "crosswalk",
+            "paved_path"
+        ],
+        [
+            "sidewalk",
+            "paved_path"
+        ]
+    ],
+    "extra_safe_objects": [
+        {
+            "name": "yield_to_pedestrians_sign",
+            "type": "sign",
+            "coords": [
+                80,
+                50
+            ]
+        }
+    ],
+    "extra_unsafe_objects": [
+        {
+            "name": "pedestrian_group",
+            "type": "obstacle",
+            "coords": [
+                45,
+                40
+            ]
+        }
+    ],
+    "extra_safe_regions": [
+        {
+            "name": "sidewalk",
+            "type": "path",
+            "coords": [
+                80,
+                50
+            ]
+        }
+    ],
+    "extra_unsafe_regions": [
+        {
+            "name": "crosswalk",
+            "type": "crossing_zone",
+            "coords": [
+                50,
+                40
+            ]
+        }
+    ],
+    "current_location": "robot"
+}

@@ -1,0 +1,99 @@
+{
+    "objects": [
+        {
+            "name": "robot_arm_left",
+            "coords": [
+                30.0,
+                40.0
+            ]
+        },
+        {
+            "name": "robot_arm_right",
+            "coords": [
+                60.0,
+                40.0
+            ]
+        },
+        {
+            "name": "tissue_box",
+            "coords": [
+                10.0,
+                60.0
+            ]
+        },
+        {
+            "name": "remote_control",
+            "coords": [
+                80.0,
+                70.0
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "surface_left",
+            "coords": [
+                30.0,
+                70.0
+            ]
+        },
+        {
+            "name": "surface_right",
+            "coords": [
+                70.0,
+                70.0
+            ]
+        },
+        {
+            "name": "robot_base_area",
+            "coords": [
+                50.0,
+                80.0
+            ]
+        },
+        {
+            "name": "wall_background",
+            "coords": [
+                50.0,
+                20.0
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "robot_arm_left",
+            "tissue_box"
+        ],
+        [
+            "robot_arm_right",
+            "remote_control"
+        ]
+    ],
+    "region_connections": [
+        [
+            "surface_left",
+            "robot_base_area"
+        ],
+        [
+            "surface_right",
+            "robot_base_area"
+        ],
+        [
+            "surface_left",
+            "surface_right"
+        ],
+        [
+            "surface_left",
+            "wall_background"
+        ],
+        [
+            "surface_right",
+            "wall_background"
+        ]
+    ],
+    "extra_safe_objects": [],
+    "extra_unsafe_objects": [],
+    "extra_safe_regions": [],
+    "extra_unsafe_regions": [],
+    "current_location": "robot_base_area"
+}

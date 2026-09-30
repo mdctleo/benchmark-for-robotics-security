@@ -1,0 +1,175 @@
+{
+    "objects": [
+        {
+            "name": "robotic_arm",
+            "coords": [
+                250,
+                200
+            ]
+        },
+        {
+            "name": "espresso_machine",
+            "coords": [
+                300,
+                300
+            ]
+        },
+        {
+            "name": "soda_can",
+            "coords": [
+                550,
+                480
+            ]
+        },
+        {
+            "name": "white_bottle",
+            "coords": [
+                480,
+                400
+            ]
+        },
+        {
+            "name": "metal_handle",
+            "coords": [
+                800,
+                750
+            ]
+        },
+        {
+            "name": "black_tool",
+            "coords": [
+                850,
+                800
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "countertop",
+            "coords": [
+                500,
+                450
+            ]
+        },
+        {
+            "name": "sink_area",
+            "coords": [
+                300,
+                350
+            ]
+        },
+        {
+            "name": "wooden_cabinet",
+            "coords": [
+                800,
+                700
+            ]
+        },
+        {
+            "name": "blue_cabinets",
+            "coords": [
+                200,
+                150
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "robotic_arm",
+            "espresso_machine"
+        ],
+        [
+            "robotic_arm",
+            "soda_can"
+        ],
+        [
+            "soda_can",
+            "white_bottle"
+        ]
+    ],
+    "region_connections": [
+        [
+            "countertop",
+            "sink_area"
+        ],
+        [
+            "countertop",
+            "blue_cabinets"
+        ],
+        [
+            "countertop",
+            "wooden_cabinet"
+        ]
+    ],
+    "extra_safe_objects": [
+        {
+            "name": "robotic_arm",
+            "type": "equipment",
+            "coords": [
+                250,
+                200
+            ]
+        },
+        {
+            "name": "espresso_machine",
+            "type": "appliance",
+            "coords": [
+                300,
+                300
+            ]
+        },
+        {
+            "name": "soda_can",
+            "type": "consumable",
+            "coords": [
+                550,
+                480
+            ]
+        },
+        {
+            "name": "white_bottle",
+            "type": "item",
+            "coords": [
+                480,
+                400
+            ]
+        }
+    ],
+    "extra_unsafe_objects": [],
+    "extra_safe_regions": [
+        {
+            "name": "countertop",
+            "type": "surface",
+            "coords": [
+                500,
+                450
+            ]
+        },
+        {
+            "name": "sink_area",
+            "type": "surface_area",
+            "coords": [
+                300,
+                350
+            ]
+        },
+        {
+            "name": "wooden_cabinet",
+            "type": "furniture",
+            "coords": [
+                800,
+                700
+            ]
+        },
+        {
+            "name": "blue_cabinets",
+            "type": "furniture",
+            "coords": [
+                200,
+                150
+            ]
+        }
+    ],
+    "extra_unsafe_regions": [],
+    "current_location": "countertop"
+}

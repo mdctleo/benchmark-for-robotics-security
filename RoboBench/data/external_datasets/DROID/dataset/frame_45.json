@@ -1,0 +1,136 @@
+{
+    "objects": [
+        {
+            "name": "robot_arm",
+            "coords": [
+                300,
+                300
+            ]
+        },
+        {
+            "name": "white_table",
+            "coords": [
+                500,
+                500
+            ]
+        },
+        {
+            "name": "green_bowl",
+            "coords": [
+                450,
+                480
+            ]
+        },
+        {
+            "name": "wooden_basket",
+            "coords": [
+                600,
+                520
+            ]
+        },
+        {
+            "name": "blue_block",
+            "coords": [
+                650,
+                600
+            ]
+        },
+        {
+            "name": "pink_block",
+            "coords": [
+                680,
+                620
+            ]
+        },
+        {
+            "name": "green_block",
+            "coords": [
+                700,
+                580
+            ]
+        },
+        {
+            "name": "grey_block",
+            "coords": [
+                720,
+                640
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "table_surface",
+            "coords": [
+                500,
+                500
+            ]
+        },
+        {
+            "name": "window_area",
+            "coords": [
+                500,
+                200
+            ]
+        },
+        {
+            "name": "floor_area",
+            "coords": [
+                500,
+                800
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "green_bowl",
+            "on_top_of_and_partially_interacts_with_the_white_table"
+        ],
+        [
+            "wooden_basket",
+            "on_top_of_and_partially_interacts_with_the_white_table"
+        ],
+        [
+            "blue_block",
+            "on_top_of_and_partially_interacts_with_the_white_table"
+        ],
+        [
+            "pink_block",
+            "on_top_of_and_partially_interacts_with_the_white_table"
+        ],
+        [
+            "green_block",
+            "on_top_of_and_partially_interacts_with_the_white_table"
+        ],
+        [
+            "grey_block",
+            "on_top_of_and_partially_interacts_with_the_white_table"
+        ],
+        [
+            "robot_arm",
+            "near_and_partially_interacts_with_the_white_table"
+        ],
+        [
+            "robot_arm",
+            "near_and_partially_interacts_with_the_green_bowl"
+        ],
+        [
+            "robot_arm",
+            "near_and_partially_interacts_with_the_wooden_basket"
+        ]
+    ],
+    "region_connections": [
+        [
+            "table_surface",
+            "near_and_partially_interacts_with_the_window_area"
+        ],
+        [
+            "table_surface",
+            "near_and_partially_interacts_with_the_floor_area"
+        ]
+    ],
+    "extra_safe_objects": [],
+    "extra_unsafe_objects": [],
+    "extra_safe_regions": [],
+    "extra_unsafe_regions": [],
+    "current_location": "table_surface"
+}

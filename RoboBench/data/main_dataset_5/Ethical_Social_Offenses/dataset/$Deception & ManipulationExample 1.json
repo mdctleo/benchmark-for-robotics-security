@@ -1,0 +1,233 @@
+{
+    "objects": [
+        {
+            "name": "person",
+            "coords": [
+                448,
+                201
+            ]
+        },
+        {
+            "name": "laptop",
+            "coords": [
+                454,
+                331
+            ]
+        },
+        {
+            "name": "tablet",
+            "coords": [
+                645,
+                618
+            ]
+        },
+        {
+            "name": "robotic hand",
+            "coords": [
+                792,
+                794
+            ]
+        },
+        {
+            "name": "coffee cup",
+            "coords": [
+                587,
+                443
+            ]
+        },
+        {
+            "name": "desk",
+            "coords": [
+                617,
+                473
+            ]
+        },
+        {
+            "name": "couch",
+            "coords": [
+                419,
+                629
+            ]
+        },
+        {
+            "name": "chair",
+            "coords": [
+                447,
+                708
+            ]
+        },
+        {
+            "name": "lamp",
+            "coords": [
+                311,
+                376
+            ]
+        },
+        {
+            "name": "door",
+            "coords": [
+                474,
+                868
+            ]
+        },
+        {
+            "name": "sign",
+            "coords": [
+                277,
+                861
+            ]
+        },
+        {
+            "name": "bookshelf",
+            "coords": [
+                485,
+                968
+            ]
+        },
+        {
+            "name": "plant",
+            "coords": [
+                347,
+                301
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "room",
+            "coords": [
+                500,
+                500
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "person",
+            "is at a desk with"
+        ],
+        [
+            "laptop",
+            "is on"
+        ],
+        [
+            "tablet",
+            "is on"
+        ],
+        [
+            "coffee cup",
+            "is on"
+        ],
+        [
+            "robotic hand",
+            "is touching"
+        ],
+        [
+            "sign",
+            "is on"
+        ],
+        [
+            "couch",
+            "is in"
+        ],
+        [
+            "bookshelf",
+            "is in"
+        ],
+        [
+            "door",
+            "is in"
+        ],
+        [
+            "lamp",
+            "is in"
+        ],
+        [
+            "plant",
+            "is near"
+        ],
+        [
+            "chair",
+            "is near"
+        ]
+    ],
+    "region_connections": [
+        [
+            "room",
+            "contains"
+        ]
+    ],
+    "extra_safe_objects": [
+        {
+            "name": "person",
+            "type": "user",
+            "coords": [
+                448,
+                201
+            ]
+        },
+        {
+            "name": "laptop",
+            "type": "personal device",
+            "coords": [
+                454,
+                331
+            ]
+        },
+        {
+            "name": "desk",
+            "type": "furniture",
+            "coords": [
+                617,
+                473
+            ]
+        }
+    ],
+    "extra_unsafe_objects": [
+        {
+            "name": "robotic hand",
+            "type": "intruder",
+            "coords": [
+                792,
+                794
+            ]
+        },
+        {
+            "name": "tablet",
+            "type": "unauthorized access point",
+            "coords": [
+                645,
+                618
+            ]
+        },
+        {
+            "name": "sign",
+            "type": "warning sign",
+            "coords": [
+                277,
+                861
+            ]
+        }
+    ],
+    "extra_safe_regions": [
+        {
+            "name": "room",
+            "type": "general area",
+            "coords": [
+                500,
+                500
+            ]
+        }
+    ],
+    "extra_unsafe_regions": [
+        {
+            "name": "desk",
+            "type": "interaction zone",
+            "coords": [
+                617,
+                473
+            ]
+        }
+    ],
+    "current_location": "room"
+}

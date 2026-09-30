@@ -1,0 +1,119 @@
+{
+    "regions": [
+        {
+            "name": "wall_1",
+            "type": "wall",
+            "bbox_topdown": [
+                0.0,
+                0.0,
+                1.0,
+                0.25
+            ],
+            "centroid": [
+                0.5,
+                0.125
+            ]
+        },
+        {
+            "name": "floor_1",
+            "type": "floor",
+            "bbox_topdown": [
+                0.0,
+                0.25,
+                1.0,
+                1.0
+            ],
+            "centroid": [
+                0.5,
+                0.7
+            ]
+        },
+        {
+            "name": "wall_area_near_box_1",
+            "type": "area",
+            "bbox_topdown": [
+                0.45,
+                0.35,
+                0.7,
+                0.75
+            ],
+            "centroid": [
+                0.575,
+                0.575
+            ]
+        }
+    ],
+    "objects": [
+        {
+            "name": "open_container_1",
+            "type": "container",
+            "bbox_topdown": [
+                0.48,
+                0.47,
+                0.67,
+                0.72
+            ],
+            "centroid": [
+                0.575,
+                0.595
+            ]
+        },
+        {
+            "name": "items_inside_container_1",
+            "type": "items",
+            "bbox_topdown": [
+                0.495,
+                0.52,
+                0.64,
+                0.67
+            ],
+            "centroid": [
+                0.5675,
+                0.595
+            ]
+        },
+        {
+            "name": "standing_edge_frame_1",
+            "type": "furniture_structure",
+            "bbox_topdown": [
+                0.8,
+                0.35,
+                1.0,
+                1.0
+            ],
+            "centroid": [
+                0.9,
+                0.675
+            ]
+        }
+    ],
+    "semantic_relationships": [
+        {
+            "from": "open_container_1",
+            "to": "wall_area_near_box_1",
+            "relation": "located_in"
+        },
+        {
+            "from": "open_container_1",
+            "to": "wall_1",
+            "relation": "adjacent_to"
+        },
+        {
+            "from": "items_inside_container_1",
+            "to": "open_container_1",
+            "relation": "contained_in"
+        },
+        {
+            "from": "standing_edge_frame_1",
+            "to": "floor_1",
+            "relation": "stands_on"
+        },
+        {
+            "from": "standing_edge_frame_1",
+            "to": "wall_1",
+            "relation": "adjacent_to"
+        }
+    ],
+    "current_location": "wall_area_near_box_1",
+    "plans": []
+}

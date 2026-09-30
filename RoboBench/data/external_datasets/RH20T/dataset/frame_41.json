@@ -1,0 +1,246 @@
+{
+    "objects": [
+        {
+            "name": "blue_table_cloth",
+            "type": "surface_cover",
+            "coordinates": {
+                "top_down": [
+                    240,
+                    360
+                ]
+            }
+        },
+        {
+            "name": "black_drum_lid",
+            "type": "container_lid",
+            "coordinates": {
+                "top_down": [
+                    95,
+                    170
+                ]
+            }
+        },
+        {
+            "name": "cylindrical_black_object",
+            "type": "cylinder",
+            "coordinates": {
+                "top_down": [
+                    95,
+                    230
+                ]
+            }
+        },
+        {
+            "name": "monitor_lcd_screen",
+            "type": "screen",
+            "coordinates": {
+                "top_down": [
+                    460,
+                    210
+                ]
+            }
+        },
+        {
+            "name": "white_power_strip",
+            "type": "power_strip",
+            "coordinates": {
+                "top_down": [
+                    430,
+                    310
+                ]
+            }
+        },
+        {
+            "name": "small_electronics_block",
+            "type": "electrical_component",
+            "coordinates": {
+                "top_down": [
+                    370,
+                    120
+                ]
+            }
+        },
+        {
+            "name": "red_push_button",
+            "type": "button",
+            "coordinates": {
+                "top_down": [
+                    370,
+                    105
+                ]
+            }
+        },
+        {
+            "name": "green_yellow_switch",
+            "type": "switch",
+            "coordinates": {
+                "top_down": [
+                    345,
+                    120
+                ]
+            }
+        },
+        {
+            "name": "cube_block",
+            "type": "block",
+            "coordinates": {
+                "top_down": [
+                    310,
+                    230
+                ]
+            }
+        },
+        {
+            "name": "cable_bundle",
+            "type": "cables",
+            "coordinates": {
+                "top_down": [
+                    520,
+                    110
+                ]
+            }
+        },
+        {
+            "name": "tool_or_probe",
+            "type": "tool",
+            "coordinates": {
+                "top_down": [
+                    500,
+                    355
+                ]
+            }
+        },
+        {
+            "name": "keyboard",
+            "type": "input_device",
+            "coordinates": {
+                "top_down": [
+                    440,
+                    40
+                ]
+            }
+        },
+        {
+            "name": "metal_frame_left",
+            "type": "frame",
+            "coordinates": {
+                "top_down": [
+                    40,
+                    230
+                ]
+            }
+        }
+    ],
+    "regions": [
+        {
+            "name": "blue_printed_area",
+            "type": "printed_surface",
+            "coordinates": {
+                "top_down": [
+                    250,
+                    300
+                ]
+            }
+        },
+        {
+            "name": "wood_floor_area",
+            "type": "floor",
+            "coordinates": {
+                "top_down": [
+                    60,
+                    320
+                ]
+            }
+        },
+        {
+            "name": "machine_base_area",
+            "type": "machine_region",
+            "coordinates": {
+                "top_down": [
+                    150,
+                    450
+                ]
+            }
+        },
+        {
+            "name": "right_monitor_base_region",
+            "type": "machine_region",
+            "coordinates": {
+                "top_down": [
+                    480,
+                    300
+                ]
+            }
+        }
+    ],
+    "semantic_relationships": [
+        {
+            "subject": "cube_block",
+            "relation": "is_on",
+            "object": "blue_printed_area"
+        },
+        {
+            "subject": "blue_table_cloth",
+            "relation": "covers",
+            "object": "blue_printed_area"
+        },
+        {
+            "subject": "red_push_button",
+            "relation": "part_of",
+            "object": "small_electronics_block"
+        },
+        {
+            "subject": "green_yellow_switch",
+            "relation": "part_of",
+            "object": "small_electronics_block"
+        },
+        {
+            "subject": "cable_bundle",
+            "relation": "connected_to",
+            "object": "monitor_lcd_screen"
+        },
+        {
+            "subject": "white_power_strip",
+            "relation": "lies_near",
+            "object": "right_monitor_base_region"
+        },
+        {
+            "subject": "tool_or_probe",
+            "relation": "lies_near",
+            "object": "blue_printed_area"
+        },
+        {
+            "subject": "black_drum_lid",
+            "relation": "is_on",
+            "object": "machine_base_area"
+        },
+        {
+            "subject": "cylindrical_black_object",
+            "relation": "is_on",
+            "object": "machine_base_area"
+        },
+        {
+            "subject": "metal_frame_left",
+            "relation": "supports",
+            "object": "machine_base_area"
+        },
+        {
+            "subject": "keyboard",
+            "relation": "lies_on",
+            "object": "machine_base_area"
+        }
+    ],
+    "current_location": {
+        "name": "blue_printed_area",
+        "contents": [
+            "cube_block"
+        ]
+    },
+    "plans": [
+        {
+            "name": "move_cube_block_toward_center",
+            "current_target": "cube_block",
+            "destination_region": "blue_printed_area"
+        }
+    ]
+}

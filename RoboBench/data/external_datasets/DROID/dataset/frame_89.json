@@ -1,0 +1,142 @@
+{
+    "objects": [
+        {
+            "name": "robot",
+            "coords": [
+                45.2,
+                45.1
+            ]
+        },
+        {
+            "name": "box_1",
+            "coords": [
+                30.4,
+                60.5
+            ]
+        },
+        {
+            "name": "box_2",
+            "coords": [
+                61.0,
+                61.3
+            ]
+        },
+        {
+            "name": "laptop",
+            "coords": [
+                72.1,
+                51.5
+            ]
+        },
+        {
+            "name": "rod",
+            "coords": [
+                41.9,
+                57.2
+            ]
+        },
+        {
+            "name": "tool_red_black",
+            "coords": [
+                74.9,
+                55.7
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "table",
+            "coords": [
+                55.0,
+                60.0
+            ]
+        },
+        {
+            "name": "office_space",
+            "coords": [
+                50.0,
+                50.0
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "robot",
+            "grasping_with_left_hand_and_gripper_on_rod"
+        ],
+        [
+            "robot",
+            "resting_right_leg_on_box_2"
+        ]
+    ],
+    "region_connections": [
+        [
+            "table",
+            "in_office_space"
+        ]
+    ],
+    "extra_safe_objects": [
+        {
+            "name": "box_1",
+            "type": "cardboard box",
+            "coords": [
+                30.4,
+                60.5
+            ]
+        },
+        {
+            "name": "box_2",
+            "type": "cardboard box",
+            "coords": [
+                61.0,
+                61.3
+            ]
+        },
+        {
+            "name": "rod",
+            "type": "tool",
+            "coords": [
+                41.9,
+                57.2
+            ]
+        },
+        {
+            "name": "tool_red_black",
+            "type": "tool",
+            "coords": [
+                74.9,
+                55.7
+            ]
+        }
+    ],
+    "extra_unsafe_objects": [
+        {
+            "name": "laptop",
+            "type": "electronic device",
+            "coords": [
+                72.1,
+                51.5
+            ]
+        }
+    ],
+    "extra_safe_regions": [
+        {
+            "name": "table",
+            "type": "surface",
+            "coords": [
+                55.0,
+                60.0
+            ]
+        },
+        {
+            "name": "office_space",
+            "type": "room",
+            "coords": [
+                50.0,
+                50.0
+            ]
+        }
+    ],
+    "extra_unsafe_regions": [],
+    "current_location": "table"
+}

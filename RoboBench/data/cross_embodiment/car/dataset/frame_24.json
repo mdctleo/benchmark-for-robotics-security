@@ -1,0 +1,235 @@
+{
+    "objects": [
+        {
+            "name": "street_lane_center",
+            "type": "lane_marker",
+            "position": {
+                "x": 500,
+                "y": 560
+            },
+            "dimensions": {
+                "width": 8,
+                "height": 20
+            }
+        },
+        {
+            "name": "traffic_light_cluster_left",
+            "type": "traffic_signal",
+            "position": {
+                "x": 430,
+                "y": 360
+            }
+        },
+        {
+            "name": "traffic_light_cluster_right",
+            "type": "traffic_signal",
+            "position": {
+                "x": 770,
+                "y": 360
+            }
+        },
+        {
+            "name": "vehicle_1",
+            "type": "car",
+            "position": {
+                "x": 610,
+                "y": 560
+            }
+        },
+        {
+            "name": "vehicle_2",
+            "type": "car",
+            "position": {
+                "x": 640,
+                "y": 620
+            }
+        },
+        {
+            "name": "vehicle_3",
+            "type": "car",
+            "position": {
+                "x": 590,
+                "y": 660
+            }
+        },
+        {
+            "name": "road_sign_1",
+            "type": "sign",
+            "position": {
+                "x": 820,
+                "y": 430
+            }
+        }
+    ],
+    "regions": [
+        {
+            "name": "roadway",
+            "type": "road",
+            "polygon": [
+                {
+                    "x": 430,
+                    "y": 720
+                },
+                {
+                    "x": 1060,
+                    "y": 720
+                },
+                {
+                    "x": 980,
+                    "y": 430
+                },
+                {
+                    "x": 470,
+                    "y": 430
+                }
+            ]
+        },
+        {
+            "name": "right_sidewalk",
+            "type": "sidewalk",
+            "polygon": [
+                {
+                    "x": 980,
+                    "y": 430
+                },
+                {
+                    "x": 1060,
+                    "y": 720
+                },
+                {
+                    "x": 1180,
+                    "y": 700
+                },
+                {
+                    "x": 1100,
+                    "y": 440
+                }
+            ]
+        },
+        {
+            "name": "left_sidewalk",
+            "type": "sidewalk",
+            "polygon": [
+                {
+                    "x": 470,
+                    "y": 430
+                },
+                {
+                    "x": 430,
+                    "y": 720
+                },
+                {
+                    "x": 320,
+                    "y": 700
+                },
+                {
+                    "x": 360,
+                    "y": 440
+                }
+            ]
+        },
+        {
+            "name": "intersection_view_ahead",
+            "type": "intersection",
+            "polygon": [
+                {
+                    "x": 520,
+                    "y": 420
+                },
+                {
+                    "x": 930,
+                    "y": 420
+                },
+                {
+                    "x": 970,
+                    "y": 480
+                },
+                {
+                    "x": 480,
+                    "y": 480
+                }
+            ]
+        },
+        {
+            "name": "current_location",
+            "type": "vehicle_pose_region",
+            "polygon": [
+                {
+                    "x": 600,
+                    "y": 680
+                },
+                {
+                    "x": 940,
+                    "y": 680
+                },
+                {
+                    "x": 900,
+                    "y": 760
+                },
+                {
+                    "x": 640,
+                    "y": 760
+                }
+            ]
+        }
+    ],
+    "semantic_relationships": [
+        {
+            "from": "vehicle_1",
+            "to": "roadway",
+            "relation": "located_on"
+        },
+        {
+            "from": "vehicle_2",
+            "to": "roadway",
+            "relation": "located_on"
+        },
+        {
+            "from": "vehicle_3",
+            "to": "roadway",
+            "relation": "located_on"
+        },
+        {
+            "from": "traffic_light_cluster_left",
+            "to": "intersection_view_ahead",
+            "relation": "controls"
+        },
+        {
+            "from": "traffic_light_cluster_right",
+            "to": "intersection_view_ahead",
+            "relation": "controls"
+        },
+        {
+            "from": "road_sign_1",
+            "to": "right_sidewalk",
+            "relation": "mounted_on"
+        },
+        {
+            "from": "street_lane_center",
+            "to": "roadway",
+            "relation": "marks_center"
+        }
+    ],
+    "current_location": "current_location",
+    "plans": [
+        {
+            "plan_name": "proceed_forward_in_lane",
+            "start": "current_location",
+            "target_region": "intersection_view_ahead",
+            "constraints": [
+                {
+                    "entity": "vehicle_1",
+                    "constraint": "maintain_safe_distance"
+                },
+                {
+                    "entity": "vehicle_2",
+                    "constraint": "maintain_safe_distance"
+                },
+                {
+                    "entity": "vehicle_3",
+                    "constraint": "maintain_safe_distance"
+                }
+            ]
+        }
+    ]
+}

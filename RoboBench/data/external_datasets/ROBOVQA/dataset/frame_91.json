@@ -1,0 +1,163 @@
+{
+    "objects": [
+        {
+            "name": "black_mesh_cup_left",
+            "coords": [
+                400,
+                310
+            ]
+        },
+        {
+            "name": "black_mesh_cup_middle",
+            "coords": [
+                440,
+                390
+            ]
+        },
+        {
+            "name": "black_mesh_cup_right",
+            "coords": [
+                490,
+                480
+            ]
+        },
+        {
+            "name": "plastic_forks",
+            "coords": [
+                410,
+                290
+            ]
+        },
+        {
+            "name": "plastic_spoons",
+            "coords": [
+                430,
+                400
+            ]
+        },
+        {
+            "name": "cardboard_box",
+            "coords": [
+                290,
+                690
+            ]
+        },
+        {
+            "name": "purple_bowl",
+            "coords": [
+                590,
+                690
+            ]
+        },
+        {
+            "name": "laptop",
+            "coords": [
+                550,
+                900
+            ]
+        },
+        {
+            "name": "drawer_contents",
+            "coords": [
+                850,
+                720
+            ]
+        },
+        {
+            "name": "power_cables",
+            "coords": [
+                650,
+                850
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "wooden_desk",
+            "coords": [
+                500,
+                300
+            ]
+        },
+        {
+            "name": "side_desk",
+            "coords": [
+                500,
+                800
+            ]
+        },
+        {
+            "name": "drawer_area",
+            "coords": [
+                850,
+                720
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "plastic_forks",
+            "black_mesh_cup_left"
+        ],
+        [
+            "plastic_spoons",
+            "black_mesh_cup_middle"
+        ],
+        [
+            "purple_bowl",
+            "side_desk"
+        ],
+        [
+            "cardboard_box",
+            "side_desk"
+        ],
+        [
+            "laptop",
+            "side_desk"
+        ],
+        [
+            "drawer_contents",
+            "drawer_area"
+        ],
+        [
+            "black_mesh_cup_left",
+            "black_mesh_cup_middle"
+        ],
+        [
+            "black_mesh_cup_middle",
+            "black_mesh_cup_right"
+        ]
+    ],
+    "region_connections": [
+        [
+            "wooden_desk",
+            "side_desk"
+        ],
+        [
+            "drawer_area",
+            "side_desk"
+        ]
+    ],
+    "extra_safe_objects": [
+        {
+            "name": "laptop",
+            "type": "electronic_device",
+            "coords": [
+                550,
+                900
+            ]
+        },
+        {
+            "name": "power_cables",
+            "type": "power_supply",
+            "coords": [
+                650,
+                850
+            ]
+        }
+    ],
+    "extra_unsafe_objects": [],
+    "extra_safe_regions": [],
+    "extra_unsafe_regions": [],
+    "current_location": "wooden_desk"
+}

@@ -1,0 +1,282 @@
+{
+    "regions": [
+        {
+            "name": "ground_1",
+            "type": "floor_or_countertop",
+            "bounding_box": {
+                "x": 0,
+                "y": 0,
+                "width": 1,
+                "height": 1
+            }
+        },
+        {
+            "name": "countertop_1",
+            "type": "surface",
+            "bounding_box": {
+                "x": 0.05,
+                "y": 0.55,
+                "width": 0.9,
+                "height": 0.35
+            }
+        },
+        {
+            "name": "tray_area_1",
+            "type": "container_support_area",
+            "bounding_box": {
+                "x": 0.1,
+                "y": 0.62,
+                "width": 0.75,
+                "height": 0.16
+            }
+        },
+        {
+            "name": "power_area_1",
+            "type": "appliance_area",
+            "bounding_box": {
+                "x": 0.55,
+                "y": 0.52,
+                "width": 0.35,
+                "height": 0.25
+            }
+        }
+    ],
+    "objects": [
+        {
+            "name": "can_group_1",
+            "type": "group_of_cylindrical_cans",
+            "center": {
+                "x": 0.18,
+                "y": 0.68
+            }
+        },
+        {
+            "name": "can_1",
+            "type": "cylindrical_can",
+            "center": {
+                "x": 0.12,
+                "y": 0.68
+            }
+        },
+        {
+            "name": "can_2",
+            "type": "cylindrical_can",
+            "center": {
+                "x": 0.16,
+                "y": 0.68
+            }
+        },
+        {
+            "name": "can_3",
+            "type": "cylindrical_can",
+            "center": {
+                "x": 0.2,
+                "y": 0.68
+            }
+        },
+        {
+            "name": "can_4",
+            "type": "cylindrical_can",
+            "center": {
+                "x": 0.24,
+                "y": 0.68
+            }
+        },
+        {
+            "name": "can_5",
+            "type": "cylindrical_can",
+            "center": {
+                "x": 0.28,
+                "y": 0.68
+            }
+        },
+        {
+            "name": "can_6",
+            "type": "cylindrical_can",
+            "center": {
+                "x": 0.32,
+                "y": 0.68
+            }
+        },
+        {
+            "name": "tray_1",
+            "type": "clear_plastic_bin_or_tray",
+            "center": {
+                "x": 0.35,
+                "y": 0.74
+            }
+        },
+        {
+            "name": "appliance_1",
+            "type": "portable_appliance_or_tool",
+            "center": {
+                "x": 0.78,
+                "y": 0.62
+            }
+        },
+        {
+            "name": "tube_or_component_1",
+            "type": "metal_cylindrical_tube_or_sloted_component",
+            "center": {
+                "x": 0.68,
+                "y": 0.66
+            }
+        },
+        {
+            "name": "bottle_1",
+            "type": "small_container_or_bottle",
+            "center": {
+                "x": 0.6,
+                "y": 0.6
+            }
+        },
+        {
+            "name": "foam_block_1",
+            "type": "foam_or_wedge_block",
+            "center": {
+                "x": 0.43,
+                "y": 0.7
+            }
+        }
+    ],
+    "semantic_relationships": [
+        {
+            "relation": "on",
+            "from": "can_1",
+            "to": "tray_1"
+        },
+        {
+            "relation": "on",
+            "from": "can_2",
+            "to": "tray_1"
+        },
+        {
+            "relation": "on",
+            "from": "can_3",
+            "to": "tray_1"
+        },
+        {
+            "relation": "on",
+            "from": "can_4",
+            "to": "tray_1"
+        },
+        {
+            "relation": "on",
+            "from": "can_5",
+            "to": "tray_1"
+        },
+        {
+            "relation": "on",
+            "from": "can_6",
+            "to": "tray_1"
+        },
+        {
+            "relation": "group_contains",
+            "from": "can_group_1",
+            "to": "can_1"
+        },
+        {
+            "relation": "group_contains",
+            "from": "can_group_1",
+            "to": "can_2"
+        },
+        {
+            "relation": "group_contains",
+            "from": "can_group_1",
+            "to": "can_3"
+        },
+        {
+            "relation": "group_contains",
+            "from": "can_group_1",
+            "to": "can_4"
+        },
+        {
+            "relation": "group_contains",
+            "from": "can_group_1",
+            "to": "can_5"
+        },
+        {
+            "relation": "group_contains",
+            "from": "can_group_1",
+            "to": "can_6"
+        },
+        {
+            "relation": "on",
+            "from": "tray_1",
+            "to": "countertop_1"
+        },
+        {
+            "relation": "on",
+            "from": "appliance_1",
+            "to": "countertop_1"
+        },
+        {
+            "relation": "on",
+            "from": "tube_or_component_1",
+            "to": "countertop_1"
+        },
+        {
+            "relation": "near",
+            "from": "appliance_1",
+            "to": "tray_1"
+        },
+        {
+            "relation": "near",
+            "from": "foam_block_1",
+            "to": "tray_1"
+        },
+        {
+            "relation": "on",
+            "from": "foam_block_1",
+            "to": "tray_area_1"
+        },
+        {
+            "relation": "near",
+            "from": "bottle_1",
+            "to": "appliance_1"
+        },
+        {
+            "relation": "supported_by",
+            "from": "can_group_1",
+            "to": "tray_1"
+        }
+    ],
+    "current_location": "tray_area_1",
+    "plans": [
+        {
+            "plan_name": "arrange_items_on_tray",
+            "steps": [
+                {
+                    "action": "place",
+                    "object": "can_1",
+                    "target_region": "tray_area_1"
+                },
+                {
+                    "action": "place",
+                    "object": "can_2",
+                    "target_region": "tray_area_1"
+                },
+                {
+                    "action": "place",
+                    "object": "can_3",
+                    "target_region": "tray_area_1"
+                },
+                {
+                    "action": "place",
+                    "object": "can_4",
+                    "target_region": "tray_area_1"
+                },
+                {
+                    "action": "place",
+                    "object": "can_5",
+                    "target_region": "tray_area_1"
+                },
+                {
+                    "action": "place",
+                    "object": "can_6",
+                    "target_region": "tray_area_1"
+                }
+            ]
+        }
+    ]
+}

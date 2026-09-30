@@ -1,0 +1,220 @@
+{
+    "objects": [
+        {
+            "name": "computer",
+            "type": "electronics",
+            "bbox": {
+                "x": 620,
+                "y": 80,
+                "w": 520,
+                "h": 380
+            }
+        },
+        {
+            "name": "mouse_and_keyboard_area",
+            "type": "workstation",
+            "bbox": {
+                "x": 700,
+                "y": 250,
+                "w": 380,
+                "h": 250
+            }
+        },
+        {
+            "name": "control_panel_with_buttons",
+            "type": "control_panel",
+            "bbox": {
+                "x": 240,
+                "y": 40,
+                "w": 310,
+                "h": 140
+            }
+        },
+        {
+            "name": "floor_area_left_of_tarp",
+            "type": "floor",
+            "bbox": {
+                "x": 0,
+                "y": 360,
+                "w": 260,
+                "h": 340
+            }
+        },
+        {
+            "name": "object_on_tarp",
+            "type": "small_object",
+            "bbox": {
+                "x": 400,
+                "y": 150,
+                "w": 60,
+                "h": 30
+            }
+        },
+        {
+            "name": "edge_rails_left",
+            "type": "frame",
+            "bbox": {
+                "x": 0,
+                "y": 0,
+                "w": 120,
+                "h": 720
+            }
+        },
+        {
+            "name": "edge_rails_right",
+            "type": "frame",
+            "bbox": {
+                "x": 980,
+                "y": 0,
+                "w": 120,
+                "h": 720
+            }
+        }
+    ],
+    "regions": [
+        {
+            "name": "blue_tarp",
+            "polygon": [
+                [
+                    120,
+                    60
+                ],
+                [
+                    980,
+                    60
+                ],
+                [
+                    980,
+                    700
+                ],
+                [
+                    120,
+                    700
+                ]
+            ],
+            "semantic_type": "surface"
+        },
+        {
+            "name": "computer_workspace_area",
+            "polygon": [
+                [
+                    520,
+                    0
+                ],
+                [
+                    1140,
+                    0
+                ],
+                [
+                    1140,
+                    720
+                ],
+                [
+                    520,
+                    720
+                ]
+            ],
+            "semantic_type": "workspace"
+        },
+        {
+            "name": "current_location",
+            "polygon": [
+                [
+                    740,
+                    360
+                ],
+                [
+                    1040,
+                    360
+                ],
+                [
+                    1040,
+                    660
+                ],
+                [
+                    740,
+                    660
+                ]
+            ],
+            "semantic_type": "agent_location"
+        },
+        {
+            "name": "mounting_area_left",
+            "polygon": [
+                [
+                    0,
+                    0
+                ],
+                [
+                    520,
+                    0
+                ],
+                [
+                    520,
+                    220
+                ],
+                [
+                    0,
+                    220
+                ]
+            ],
+            "semantic_type": "equipment_area"
+        }
+    ],
+    "semantic_relationships": [
+        {
+            "subject": "object_on_tarp",
+            "relation": "is_on",
+            "object": "blue_tarp"
+        },
+        {
+            "subject": "control_panel_with_buttons",
+            "relation": "is_near",
+            "object": "mounting_area_left"
+        },
+        {
+            "subject": "mouse_and_keyboard_area",
+            "relation": "is_within",
+            "object": "computer_workspace_area"
+        },
+        {
+            "subject": "computer",
+            "relation": "is_within",
+            "object": "computer_workspace_area"
+        },
+        {
+            "subject": "edge_rails_left",
+            "relation": "borders",
+            "object": "blue_tarp"
+        },
+        {
+            "subject": "edge_rails_right",
+            "relation": "borders",
+            "object": "blue_tarp"
+        },
+        {
+            "subject": "floor_area_left_of_tarp",
+            "relation": "is_adjacent_to",
+            "object": "blue_tarp"
+        }
+    ],
+    "current_location": "current_location",
+    "plans": [
+        {
+            "plan_name": "inspect_tarp_area",
+            "target_region": "blue_tarp",
+            "coordinate": [
+                840,
+                420
+            ]
+        },
+        {
+            "plan_name": "approach_workspace",
+            "target_region": "computer_workspace_area",
+            "coordinate": [
+                820,
+                260
+            ]
+        }
+    ]
+}

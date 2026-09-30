@@ -1,0 +1,193 @@
+{
+    "objects": [
+        {
+            "name": "robot_arm",
+            "type": "robot",
+            "bbox_topdown": {
+                "x": 0.58,
+                "y": 0.0,
+                "w": 0.42,
+                "h": 0.45
+            }
+        },
+        {
+            "name": "paper_sheet",
+            "type": "paper",
+            "bbox_topdown": {
+                "x": 0.55,
+                "y": 0.48,
+                "w": 0.42,
+                "h": 0.35
+            }
+        },
+        {
+            "name": "pen_1",
+            "type": "pen",
+            "bbox_topdown": {
+                "x": 0.18,
+                "y": 0.56,
+                "w": 0.08,
+                "h": 0.12
+            }
+        },
+        {
+            "name": "marker_2",
+            "type": "marker",
+            "bbox_topdown": {
+                "x": 0.36,
+                "y": 0.0,
+                "w": 0.07,
+                "h": 0.15
+            }
+        },
+        {
+            "name": "small_tool_or_blade",
+            "type": "tool",
+            "bbox_topdown": {
+                "x": 0.5,
+                "y": 0.3,
+                "w": 0.1,
+                "h": 0.1
+            }
+        },
+        {
+            "name": "cylindrical_device",
+            "type": "cylindrical_device",
+            "bbox_topdown": {
+                "x": 0.52,
+                "y": 0.1,
+                "w": 0.33,
+                "h": 0.25
+            }
+        }
+    ],
+    "regions": [
+        {
+            "name": "table_surface",
+            "type": "surface",
+            "polygon_topdown": [
+                {
+                    "x": 0.0,
+                    "y": 0.25
+                },
+                {
+                    "x": 1.0,
+                    "y": 0.25
+                },
+                {
+                    "x": 1.0,
+                    "y": 1.0
+                },
+                {
+                    "x": 0.0,
+                    "y": 1.0
+                }
+            ]
+        },
+        {
+            "name": "paper_area_right",
+            "type": "paper_region",
+            "polygon_topdown": [
+                {
+                    "x": 0.55,
+                    "y": 0.48
+                },
+                {
+                    "x": 0.97,
+                    "y": 0.48
+                },
+                {
+                    "x": 0.97,
+                    "y": 0.83
+                },
+                {
+                    "x": 0.55,
+                    "y": 0.83
+                }
+            ]
+        },
+        {
+            "name": "open_space_left",
+            "type": "free_space",
+            "polygon_topdown": [
+                {
+                    "x": 0.0,
+                    "y": 0.45
+                },
+                {
+                    "x": 0.52,
+                    "y": 0.45
+                },
+                {
+                    "x": 0.52,
+                    "y": 1.0
+                },
+                {
+                    "x": 0.0,
+                    "y": 1.0
+                }
+            ]
+        }
+    ],
+    "semantic_relationships": [
+        {
+            "subject": "robot_arm",
+            "relation": "is_over",
+            "object": "table_surface"
+        },
+        {
+            "subject": "pen_1",
+            "relation": "is_on",
+            "object": "table_surface"
+        },
+        {
+            "subject": "marker_2",
+            "relation": "is_on",
+            "object": "table_surface"
+        },
+        {
+            "subject": "small_tool_or_blade",
+            "relation": "is_attached_to",
+            "object": "robot_arm"
+        },
+        {
+            "subject": "cylindrical_device",
+            "relation": "is_part_of",
+            "object": "robot_arm"
+        },
+        {
+            "subject": "paper_sheet",
+            "relation": "is_on",
+            "object": "table_surface"
+        },
+        {
+            "subject": "paper_sheet",
+            "relation": "lies_in",
+            "object": "paper_area_right"
+        },
+        {
+            "subject": "pen_1",
+            "relation": "lies_in",
+            "object": "open_space_left"
+        }
+    ],
+    "current_location": {
+        "entity": "small_tool_or_blade",
+        "region": "table_surface"
+    },
+    "plans": [
+        {
+            "plan_name": "write_note_on_paper",
+            "steps": [
+                {
+                    "action": "move_to",
+                    "target_entity": "paper_sheet"
+                },
+                {
+                    "action": "write_on",
+                    "target_entity": "paper_sheet"
+                }
+            ]
+        }
+    ]
+}

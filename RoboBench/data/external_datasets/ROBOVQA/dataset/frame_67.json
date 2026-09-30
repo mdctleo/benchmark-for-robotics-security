@@ -1,0 +1,208 @@
+{
+    "regions": [
+        {
+            "name": "table_surface",
+            "type": "surface",
+            "bbox": {
+                "x": 0,
+                "y": 0,
+                "width": 1024,
+                "height": 640
+            },
+            "center": {
+                "x": 512,
+                "y": 320
+            }
+        }
+    ],
+    "objects": [
+        {
+            "name": "plate_with_oranges",
+            "type": "plate",
+            "current_location": "table_surface",
+            "position": {
+                "x": 260,
+                "y": 230
+            }
+        },
+        {
+            "name": "orange_1",
+            "type": "fruit",
+            "current_location": "table_surface",
+            "position": {
+                "x": 245,
+                "y": 215
+            }
+        },
+        {
+            "name": "orange_2",
+            "type": "fruit",
+            "current_location": "table_surface",
+            "position": {
+                "x": 295,
+                "y": 255
+            }
+        },
+        {
+            "name": "remote_car_group",
+            "type": "toys_group",
+            "current_location": "table_surface",
+            "position": {
+                "x": 650,
+                "y": 325
+            }
+        },
+        {
+            "name": "small_remote_car_1",
+            "type": "toy_vehicle",
+            "current_location": "table_surface",
+            "position": {
+                "x": 600,
+                "y": 300
+            }
+        },
+        {
+            "name": "small_remote_car_2",
+            "type": "toy_vehicle",
+            "current_location": "table_surface",
+            "position": {
+                "x": 675,
+                "y": 270
+            }
+        },
+        {
+            "name": "small_remote_car_3",
+            "type": "toy_vehicle",
+            "current_location": "table_surface",
+            "position": {
+                "x": 705,
+                "y": 330
+            }
+        },
+        {
+            "name": "small_remote_car_4",
+            "type": "toy_vehicle",
+            "current_location": "table_surface",
+            "position": {
+                "x": 640,
+                "y": 380
+            }
+        },
+        {
+            "name": "small_remote_car_5",
+            "type": "toy_vehicle",
+            "current_location": "table_surface",
+            "position": {
+                "x": 725,
+                "y": 410
+            }
+        },
+        {
+            "name": "hair_dryer",
+            "type": "appliance",
+            "current_location": "table_surface",
+            "position": {
+                "x": 905,
+                "y": 265
+            }
+        },
+        {
+            "name": "sprayer_nozzle",
+            "type": "attachment",
+            "current_location": "table_surface",
+            "position": {
+                "x": 860,
+                "y": 235
+            }
+        },
+        {
+            "name": "bowl_of_caramel_or_custard",
+            "type": "container",
+            "current_location": "table_surface",
+            "position": {
+                "x": 980,
+                "y": 415
+            }
+        }
+    ],
+    "semantic_relationships": [
+        {
+            "subject": "plate_with_oranges",
+            "relation": "contains",
+            "object": "orange_1"
+        },
+        {
+            "subject": "plate_with_oranges",
+            "relation": "contains",
+            "object": "orange_2"
+        },
+        {
+            "subject": "small_remote_car_group",
+            "relation": "includes",
+            "object": "small_remote_car_1"
+        },
+        {
+            "subject": "small_remote_car_group",
+            "relation": "includes",
+            "object": "small_remote_car_2"
+        },
+        {
+            "subject": "small_remote_car_group",
+            "relation": "includes",
+            "object": "small_remote_car_3"
+        },
+        {
+            "subject": "small_remote_car_group",
+            "relation": "includes",
+            "object": "small_remote_car_4"
+        },
+        {
+            "subject": "small_remote_car_group",
+            "relation": "includes",
+            "object": "small_remote_car_5"
+        },
+        {
+            "subject": "hair_dryer",
+            "relation": "has_part",
+            "object": "sprayer_nozzle"
+        },
+        {
+            "subject": "plate_with_oranges",
+            "relation": "is_on",
+            "object": "table_surface"
+        },
+        {
+            "subject": "remote_car_group",
+            "relation": "is_on",
+            "object": "table_surface"
+        },
+        {
+            "subject": "hair_dryer",
+            "relation": "is_on",
+            "object": "table_surface"
+        },
+        {
+            "subject": "bowl_of_caramel_or_custard",
+            "relation": "is_on",
+            "object": "table_surface"
+        }
+    ],
+    "current_location": {
+        "table_surface": {
+            "contained_objects": [
+                "plate_with_oranges",
+                "orange_1",
+                "orange_2",
+                "remote_car_group",
+                "small_remote_car_1",
+                "small_remote_car_2",
+                "small_remote_car_3",
+                "small_remote_car_4",
+                "small_remote_car_5",
+                "hair_dryer",
+                "sprayer_nozzle",
+                "bowl_of_caramel_or_custard"
+            ]
+        }
+    }
+}

@@ -1,0 +1,185 @@
+{
+    "objects": [
+        {
+            "name": "box_kr",
+            "type": "box",
+            "position": {
+                "x": 0.18,
+                "y": 0.62
+            }
+        },
+        {
+            "name": "cables_bundle",
+            "type": "electrical_items",
+            "position": {
+                "x": 0.195,
+                "y": 0.585
+            }
+        },
+        {
+            "name": "tools_coiled_component",
+            "type": "coiled_component",
+            "position": {
+                "x": 0.205,
+                "y": 0.565
+            }
+        },
+        {
+            "name": "white_round_item",
+            "type": "personal_item",
+            "position": {
+                "x": 0.315,
+                "y": 0.78
+            }
+        },
+        {
+            "name": "small_white_tool_1",
+            "type": "tool",
+            "position": {
+                "x": 0.265,
+                "y": 0.745
+            }
+        },
+        {
+            "name": "small_white_tool_2",
+            "type": "tool",
+            "position": {
+                "x": 0.24,
+                "y": 0.725
+            }
+        },
+        {
+            "name": "ladder_step_stool",
+            "type": "ladder",
+            "position": {
+                "x": 0.82,
+                "y": 0.75
+            }
+        }
+    ],
+    "regions": [
+        {
+            "name": "floor_area",
+            "shape": "rectangle",
+            "top_down_bounds": {
+                "x_min": 0.0,
+                "x_max": 1.0,
+                "y_min": 0.0,
+                "y_max": 1.0
+            }
+        },
+        {
+            "name": "area_near_box",
+            "shape": "rectangle",
+            "top_down_bounds": {
+                "x_min": 0.08,
+                "x_max": 0.34,
+                "y_min": 0.45,
+                "y_max": 0.75
+            }
+        },
+        {
+            "name": "area_center_front",
+            "shape": "rectangle",
+            "top_down_bounds": {
+                "x_min": 0.18,
+                "x_max": 0.44,
+                "y_min": 0.6,
+                "y_max": 0.96
+            }
+        },
+        {
+            "name": "area_near_ladder",
+            "shape": "rectangle",
+            "top_down_bounds": {
+                "x_min": 0.62,
+                "x_max": 1.0,
+                "y_min": 0.55,
+                "y_max": 0.98
+            }
+        },
+        {
+            "name": "current_location",
+            "shape": "rectangle",
+            "top_down_bounds": {
+                "x_min": 0.22,
+                "x_max": 0.4,
+                "y_min": 0.68,
+                "y_max": 0.94
+            }
+        }
+    ],
+    "semantic_relationships": [
+        {
+            "from": "box_kr",
+            "relation": "on",
+            "to": "floor_area"
+        },
+        {
+            "from": "cables_bundle",
+            "relation": "inside",
+            "to": "box_kr"
+        },
+        {
+            "from": "tools_coiled_component",
+            "relation": "inside",
+            "to": "box_kr"
+        },
+        {
+            "from": "white_round_item",
+            "relation": "on",
+            "to": "floor_area"
+        },
+        {
+            "from": "small_white_tool_1",
+            "relation": "on",
+            "to": "floor_area"
+        },
+        {
+            "from": "small_white_tool_2",
+            "relation": "on",
+            "to": "floor_area"
+        },
+        {
+            "from": "ladder_step_stool",
+            "relation": "on",
+            "to": "floor_area"
+        },
+        {
+            "from": "box_kr",
+            "relation": "in_region",
+            "to": "area_near_box"
+        },
+        {
+            "from": "cables_bundle",
+            "relation": "in_region",
+            "to": "area_near_box"
+        },
+        {
+            "from": "tools_coiled_component",
+            "relation": "in_region",
+            "to": "area_near_box"
+        },
+        {
+            "from": "white_round_item",
+            "relation": "in_region",
+            "to": "current_location"
+        },
+        {
+            "from": "small_white_tool_1",
+            "relation": "in_region",
+            "to": "current_location"
+        },
+        {
+            "from": "small_white_tool_2",
+            "relation": "in_region",
+            "to": "current_location"
+        },
+        {
+            "from": "ladder_step_stool",
+            "relation": "in_region",
+            "to": "area_near_ladder"
+        }
+    ],
+    "current_location": "current_location"
+}

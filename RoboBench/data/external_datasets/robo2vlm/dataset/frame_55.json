@@ -1,0 +1,204 @@
+{
+    "objects": [
+        {
+            "name": "robot_hand",
+            "coords": [
+                403,
+                679
+            ]
+        },
+        {
+            "name": "orange",
+            "coords": [
+                471,
+                587
+            ]
+        },
+        {
+            "name": "white_bowl",
+            "coords": [
+                158,
+                259
+            ]
+        },
+        {
+            "name": "beverage_can",
+            "coords": [
+                172,
+                477
+            ]
+        },
+        {
+            "name": "small_bottle",
+            "coords": [
+                363,
+                75
+            ]
+        },
+        {
+            "name": "top_drawer_handle",
+            "coords": [
+                382,
+                458
+            ]
+        },
+        {
+            "name": "middle_drawer_handle",
+            "coords": [
+                554,
+                462
+            ]
+        },
+        {
+            "name": "bottom_drawer_handle",
+            "coords": [
+                723,
+                462
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "cabinet_top_surface",
+            "coords": [
+                190,
+                440
+            ]
+        },
+        {
+            "name": "top_drawer_area",
+            "coords": [
+                380,
+                450
+            ]
+        },
+        {
+            "name": "middle_drawer_area",
+            "coords": [
+                550,
+                450
+            ]
+        },
+        {
+            "name": "open_bottom_drawer",
+            "coords": [
+                800,
+                450
+            ]
+        },
+        {
+            "name": "floor_area",
+            "coords": [
+                880,
+                500
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "robot_hand",
+            "orange"
+        ]
+    ],
+    "region_connections": [
+        [
+            "cabinet_top_surface",
+            "top_drawer_area"
+        ],
+        [
+            "top_drawer_area",
+            "middle_drawer_area"
+        ],
+        [
+            "middle_drawer_area",
+            "open_bottom_drawer"
+        ]
+    ],
+    "extra_safe_objects": [
+        {
+            "name": "robot_hand",
+            "type": "articulated_object",
+            "coords": [
+                403,
+                679
+            ]
+        },
+        {
+            "name": "orange",
+            "type": "fruit",
+            "coords": [
+                471,
+                587
+            ]
+        },
+        {
+            "name": "white_bowl",
+            "type": "dishware",
+            "coords": [
+                158,
+                259
+            ]
+        },
+        {
+            "name": "beverage_can",
+            "type": "container",
+            "coords": [
+                172,
+                477
+            ]
+        },
+        {
+            "name": "small_bottle",
+            "type": "container",
+            "coords": [
+                363,
+                75
+            ]
+        }
+    ],
+    "extra_unsafe_objects": [],
+    "extra_safe_regions": [
+        {
+            "name": "cabinet_top_surface",
+            "type": "surface",
+            "coords": [
+                190,
+                440
+            ]
+        },
+        {
+            "name": "top_drawer_area",
+            "type": "furniture_part",
+            "coords": [
+                380,
+                450
+            ]
+        },
+        {
+            "name": "middle_drawer_area",
+            "type": "furniture_part",
+            "coords": [
+                550,
+                450
+            ]
+        },
+        {
+            "name": "open_bottom_drawer",
+            "type": "furniture_part",
+            "coords": [
+                800,
+                450
+            ]
+        },
+        {
+            "name": "floor_area",
+            "type": "surface",
+            "coords": [
+                880,
+                500
+            ]
+        }
+    ],
+    "extra_unsafe_regions": [],
+    "current_location": "middle_drawer_area"
+}

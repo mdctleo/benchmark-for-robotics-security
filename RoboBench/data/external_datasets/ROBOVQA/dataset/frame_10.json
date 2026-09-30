@@ -1,0 +1,175 @@
+{
+    "objects": [
+        {
+            "name": "robot_arm",
+            "type": "robotic_arm",
+            "coordinates": {
+                "x": 360,
+                "y": 140
+            }
+        },
+        {
+            "name": "charger_cable",
+            "type": "cable",
+            "coordinates": {
+                "x": 300,
+                "y": 190
+            }
+        },
+        {
+            "name": "usb_power_brick",
+            "type": "power_adapter",
+            "coordinates": {
+                "x": 315,
+                "y": 270
+            }
+        },
+        {
+            "name": "remote_or_device_base",
+            "type": "device",
+            "coordinates": {
+                "x": 230,
+                "y": 305
+            }
+        },
+        {
+            "name": "booklet_or_manual",
+            "type": "paper_document",
+            "coordinates": {
+                "x": 325,
+                "y": 320
+            }
+        },
+        {
+            "name": "small_cardboard_pack",
+            "type": "packaging",
+            "coordinates": {
+                "x": 365,
+                "y": 330
+            }
+        }
+    ],
+    "regions": [
+        {
+            "name": "table_surface",
+            "type": "surface",
+            "coordinates": {
+                "x": 300,
+                "y": 250
+            }
+        },
+        {
+            "name": "wall_background",
+            "type": "background",
+            "coordinates": {
+                "x": 520,
+                "y": 110
+            }
+        },
+        {
+            "name": "box_or_container_area",
+            "type": "container_area",
+            "coordinates": {
+                "x": 140,
+                "y": 280
+            }
+        },
+        {
+            "name": "floor_out_of_view",
+            "type": "area",
+            "coordinates": {
+                "x": 50,
+                "y": 430
+            }
+        },
+        {
+            "name": "inside_camera_view",
+            "type": "scene",
+            "coordinates": {
+                "x": 285,
+                "y": 240
+            }
+        }
+    ],
+    "semantic_relationships": [
+        {
+            "subject": "robot_arm",
+            "relation": "is_above",
+            "object": "table_surface"
+        },
+        {
+            "subject": "charger_cable",
+            "relation": "is_on",
+            "object": "table_surface"
+        },
+        {
+            "subject": "usb_power_brick",
+            "relation": "is_on",
+            "object": "table_surface"
+        },
+        {
+            "subject": "remote_or_device_base",
+            "relation": "is_on",
+            "object": "table_surface"
+        },
+        {
+            "subject": "booklet_or_manual",
+            "relation": "is_on",
+            "object": "table_surface"
+        },
+        {
+            "subject": "small_cardboard_pack",
+            "relation": "is_on",
+            "object": "table_surface"
+        },
+        {
+            "subject": "robot_arm",
+            "relation": "is_near",
+            "object": "usb_power_brick"
+        },
+        {
+            "subject": "charger_cable",
+            "relation": "connects_to",
+            "object": "usb_power_brick"
+        },
+        {
+            "subject": "booklet_or_manual",
+            "relation": "is_near",
+            "object": "small_cardboard_pack"
+        }
+    ],
+    "current_location": "table_surface",
+    "plans": [
+        {
+            "plan_name": "organize_items_on_table",
+            "goal_region": "table_surface",
+            "actions": [
+                {
+                    "action": "place",
+                    "entity": "charger_cable",
+                    "target_region": "table_surface"
+                },
+                {
+                    "action": "place",
+                    "entity": "usb_power_brick",
+                    "target_region": "table_surface"
+                },
+                {
+                    "action": "place",
+                    "entity": "remote_or_device_base",
+                    "target_region": "table_surface"
+                },
+                {
+                    "action": "place",
+                    "entity": "booklet_or_manual",
+                    "target_region": "table_surface"
+                },
+                {
+                    "action": "place",
+                    "entity": "small_cardboard_pack",
+                    "target_region": "table_surface"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,292 @@
+{
+    "objects": [
+        {
+            "name": "table",
+            "type": "furniture",
+            "bbox": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "center": [
+                0,
+                0
+            ]
+        },
+        {
+            "name": "mug_or_cup",
+            "type": "container",
+            "bbox": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "center": [
+                0,
+                0
+            ]
+        },
+        {
+            "name": "basket_with_paper_packets",
+            "type": "container",
+            "bbox": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "center": [
+                0,
+                0
+            ]
+        },
+        {
+            "name": "napkin_or_wrapped_item",
+            "type": "food_item",
+            "bbox": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "center": [
+                0,
+                0
+            ]
+        },
+        {
+            "name": "tray_of_apples",
+            "type": "dishware",
+            "bbox": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "center": [
+                0,
+                0
+            ]
+        },
+        {
+            "name": "knife_set_holder",
+            "type": "utensil_holder",
+            "bbox": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "center": [
+                0,
+                0
+            ]
+        },
+        {
+            "name": "small_bowl_with_items",
+            "type": "dishware",
+            "bbox": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "center": [
+                0,
+                0
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "table_region",
+            "type": "surface",
+            "polygon": [
+                [
+                    0,
+                    0
+                ],
+                [
+                    1000,
+                    0
+                ],
+                [
+                    1000,
+                    600
+                ],
+                [
+                    0,
+                    600
+                ]
+            ],
+            "center": [
+                500,
+                300
+            ]
+        },
+        {
+            "name": "left_area",
+            "type": "area",
+            "polygon": [
+                [
+                    0,
+                    0
+                ],
+                [
+                    350,
+                    600
+                ],
+                [
+                    350,
+                    600
+                ],
+                [
+                    0,
+                    600
+                ]
+            ],
+            "center": [
+                175,
+                300
+            ]
+        },
+        {
+            "name": "center_area",
+            "type": "area",
+            "polygon": [
+                [
+                    350,
+                    0
+                ],
+                [
+                    650,
+                    600
+                ],
+                [
+                    650,
+                    600
+                ],
+                [
+                    350,
+                    600
+                ]
+            ],
+            "center": [
+                500,
+                300
+            ]
+        },
+        {
+            "name": "right_area",
+            "type": "area",
+            "polygon": [
+                [
+                    650,
+                    0
+                ],
+                [
+                    1000,
+                    600
+                ],
+                [
+                    1000,
+                    600
+                ],
+                [
+                    650,
+                    600
+                ]
+            ],
+            "center": [
+                825,
+                300
+            ]
+        },
+        {
+            "name": "current_location",
+            "type": "scene_location",
+            "polygon": [
+                [
+                    0,
+                    0
+                ],
+                [
+                    1000,
+                    0
+                ],
+                [
+                    1000,
+                    600
+                ],
+                [
+                    0,
+                    600
+                ]
+            ],
+            "center": [
+                500,
+                300
+            ]
+        }
+    ],
+    "semantic_relationships": [
+        {
+            "subject": "table_region",
+            "predicate": "contains",
+            "object": "basket_with_paper_packets"
+        },
+        {
+            "subject": "table_region",
+            "predicate": "contains",
+            "object": "tray_of_apples"
+        },
+        {
+            "subject": "table_region",
+            "predicate": "contains",
+            "object": "small_bowl_with_items"
+        },
+        {
+            "subject": "table_region",
+            "predicate": "contains",
+            "object": "napkin_or_wrapped_item"
+        },
+        {
+            "subject": "table_region",
+            "predicate": "contains",
+            "object": "knife_set_holder"
+        },
+        {
+            "subject": "left_area",
+            "predicate": "includes",
+            "object": "basket_with_paper_packets"
+        },
+        {
+            "subject": "center_area",
+            "predicate": "includes",
+            "object": "tray_of_apples"
+        },
+        {
+            "subject": "center_area",
+            "predicate": "includes",
+            "object": "small_bowl_with_items"
+        },
+        {
+            "subject": "center_area",
+            "predicate": "includes",
+            "object": "napkin_or_wrapped_item"
+        },
+        {
+            "subject": "right_area",
+            "predicate": "includes",
+            "object": "knife_set_holder"
+        },
+        {
+            "subject": "current_location",
+            "predicate": "is_reference_for",
+            "object": "table_region"
+        }
+    ],
+    "plans": []
+}

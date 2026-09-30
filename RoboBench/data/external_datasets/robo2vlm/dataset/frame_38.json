@@ -1,0 +1,136 @@
+{
+    "objects": [
+        {
+            "name": "bowl",
+            "coords": [
+                372,
+                221
+            ]
+        },
+        {
+            "name": "sponge",
+            "coords": [
+                448,
+                275
+            ]
+        },
+        {
+            "name": "teapot",
+            "coords": [
+                631,
+                224
+            ]
+        },
+        {
+            "name": "robot_arm",
+            "coords": [
+                629,
+                786
+            ]
+        },
+        {
+            "name": "cabinet",
+            "coords": [
+                499,
+                497
+            ]
+        },
+        {
+            "name": "drawer",
+            "coords": [
+                494,
+                715
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "cabinet_top_surface",
+            "coords": [
+                500,
+                250
+            ]
+        },
+        {
+            "name": "counter_surface",
+            "coords": [
+                700,
+                250
+            ]
+        },
+        {
+            "name": "floor",
+            "coords": [
+                500,
+                900
+            ]
+        },
+        {
+            "name": "cabinet_region",
+            "coords": [
+                500,
+                500
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "bowl",
+            "cabinet_top_surface"
+        ],
+        [
+            "sponge",
+            "cabinet_top_surface"
+        ],
+        [
+            "teapot",
+            "counter_surface"
+        ],
+        [
+            "drawer",
+            "cabinet"
+        ],
+        [
+            "robot_arm",
+            "drawer"
+        ]
+    ],
+    "region_connections": [
+        [
+            "cabinet_top_surface",
+            "counter_surface"
+        ]
+    ],
+    "extra_safe_objects": [
+        {
+            "name": "cabinet",
+            "type": "furniture",
+            "coords": [
+                499,
+                497
+            ]
+        }
+    ],
+    "extra_unsafe_objects": [
+        {
+            "name": "robot_arm",
+            "type": "manipulator",
+            "coords": [
+                629,
+                786
+            ]
+        }
+    ],
+    "extra_safe_regions": [
+        {
+            "name": "floor",
+            "type": "surface",
+            "coords": [
+                500,
+                900
+            ]
+        }
+    ],
+    "extra_unsafe_regions": [],
+    "current_location": "cabinet_region"
+}

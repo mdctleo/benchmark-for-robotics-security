@@ -1,0 +1,270 @@
+{
+    "objects": [
+        {
+            "name": "standing_mop_bucket",
+            "type": "container",
+            "description": "A bucket-like container for cleaning supplies near the floor.",
+            "center_topdown": {
+                "x": 640,
+                "y": 760
+            },
+            "bounding_box": {
+                "x_min": 565,
+                "y_min": 685,
+                "x_max": 715,
+                "y_max": 835
+            }
+        },
+        {
+            "name": "plastic_bin_left",
+            "type": "container",
+            "description": "A clear plastic bin on the floor with a partially visible dark interior.",
+            "center_topdown": {
+                "x": 305,
+                "y": 735
+            },
+            "bounding_box": {
+                "x_min": 210,
+                "y_min": 650,
+                "x_max": 400,
+                "y_max": 835
+            }
+        },
+        {
+            "name": "plastic_bin_right",
+            "type": "container",
+            "description": "A clear plastic bin containing items; located nearer to the right side.",
+            "center_topdown": {
+                "x": 690,
+                "y": 650
+            },
+            "bounding_box": {
+                "x_min": 605,
+                "y_min": 565,
+                "x_max": 775,
+                "y_max": 720
+            }
+        },
+        {
+            "name": "small_tool_light_yellow_handheld",
+            "type": "tool",
+            "description": "A small yellow-and-white handheld tool/fixture resting on the floor area; looks like a device with vents.",
+            "center_topdown": {
+                "x": 835,
+                "y": 660
+            },
+            "bounding_box": {
+                "x_min": 770,
+                "y_min": 585,
+                "x_max": 910,
+                "y_max": 735
+            }
+        },
+        {
+            "name": "power_cable_black",
+            "type": "cable",
+            "description": "A black cable connecting/leading from the handheld tool across the floor.",
+            "center_topdown": {
+                "x": 720,
+                "y": 725
+            },
+            "bounding_box": {
+                "x_min": 610,
+                "y_min": 650,
+                "x_max": 830,
+                "y_max": 810
+            }
+        },
+        {
+            "name": "wall_panel_beige",
+            "type": "wall_surface",
+            "description": "Beige wall panel above the carpet line.",
+            "center_topdown": {
+                "x": 520,
+                "y": 250
+            },
+            "bounding_box": {
+                "x_min": 0,
+                "y_min": 0,
+                "x_max": 1020,
+                "y_max": 420
+            }
+        },
+        {
+            "name": "carpeted_floor_dark",
+            "type": "floor_surface",
+            "description": "Dark carpeted floor where objects are placed.",
+            "center_topdown": {
+                "x": 520,
+                "y": 870
+            },
+            "bounding_box": {
+                "x_min": 0,
+                "y_min": 420,
+                "x_max": 1020,
+                "y_max": 1020
+            }
+        },
+        {
+            "name": "window_opening_bright",
+            "type": "opening",
+            "description": "Bright window/open area at the top background suggesting daylight outside.",
+            "center_topdown": {
+                "x": 520,
+                "y": 90
+            },
+            "bounding_box": {
+                "x_min": 140,
+                "y_min": 0,
+                "x_max": 900,
+                "y_max": 180
+            }
+        }
+    ],
+    "regions": [
+        {
+            "name": "current_location",
+            "type": "indoor_floor_area",
+            "description": "The immediate indoor floor area where the containers and the handheld tool are located.",
+            "center_topdown": {
+                "x": 520,
+                "y": 780
+            },
+            "bounding_box": {
+                "x_min": 60,
+                "y_min": 420,
+                "x_max": 980,
+                "y_max": 1020
+            }
+        },
+        {
+            "name": "right_side_floor_area",
+            "type": "subregion",
+            "description": "Right side portion of the floor area containing the right plastic bin and handheld tool.",
+            "center_topdown": {
+                "x": 780,
+                "y": 720
+            },
+            "bounding_box": {
+                "x_min": 560,
+                "y_min": 480,
+                "x_max": 980,
+                "y_max": 1020
+            }
+        },
+        {
+            "name": "left_side_floor_area",
+            "type": "subregion",
+            "description": "Left side portion of the floor area containing the left plastic bin.",
+            "center_topdown": {
+                "x": 270,
+                "y": 760
+            },
+            "bounding_box": {
+                "x_min": 60,
+                "y_min": 480,
+                "x_max": 520,
+                "y_max": 1020
+            }
+        },
+        {
+            "name": "background_wall_zone",
+            "type": "background_region",
+            "description": "Upper background zone including beige wall panel and bright window opening.",
+            "center_topdown": {
+                "x": 520,
+                "y": 200
+            },
+            "bounding_box": {
+                "x_min": 0,
+                "y_min": 0,
+                "x_max": 1020,
+                "y_max": 420
+            }
+        }
+    ],
+    "semantic_relationships": [
+        {
+            "subject": "plastic_bin_left",
+            "relation": "located_in",
+            "object": "left_side_floor_area"
+        },
+        {
+            "subject": "plastic_bin_right",
+            "relation": "located_in",
+            "object": "right_side_floor_area"
+        },
+        {
+            "subject": "small_tool_light_yellow_handheld",
+            "relation": "located_in",
+            "object": "right_side_floor_area"
+        },
+        {
+            "subject": "power_cable_black",
+            "relation": "connected_to",
+            "object": "small_tool_light_yellow_handheld"
+        },
+        {
+            "subject": "plastic_bin_left",
+            "relation": "on_surface",
+            "object": "carpeted_floor_dark"
+        },
+        {
+            "subject": "plastic_bin_right",
+            "relation": "on_surface",
+            "object": "carpeted_floor_dark"
+        },
+        {
+            "subject": "standing_mop_bucket",
+            "relation": "on_surface",
+            "object": "carpeted_floor_dark"
+        },
+        {
+            "subject": "small_tool_light_yellow_handheld",
+            "relation": "on_surface",
+            "object": "carpeted_floor_dark"
+        },
+        {
+            "subject": "carpeted_floor_dark",
+            "relation": "supports",
+            "object": "current_location"
+        },
+        {
+            "subject": "wall_panel_beige",
+            "relation": "behind",
+            "object": "current_location"
+        },
+        {
+            "subject": "window_opening_bright",
+            "relation": "in_background_of",
+            "object": "background_wall_zone"
+        },
+        {
+            "subject": "current_location",
+            "relation": "contains",
+            "object": "plastic_bin_left"
+        },
+        {
+            "subject": "current_location",
+            "relation": "contains",
+            "object": "plastic_bin_right"
+        },
+        {
+            "subject": "current_location",
+            "relation": "contains",
+            "object": "small_tool_light_yellow_handheld"
+        },
+        {
+            "subject": "current_location",
+            "relation": "contains",
+            "object": "power_cable_black"
+        },
+        {
+            "subject": "current_location",
+            "relation": "contains",
+            "object": "standing_mop_bucket"
+        }
+    ],
+    "plans": [],
+    "current_location": "current_location"
+}

@@ -1,0 +1,129 @@
+{
+    "objects": [
+        {
+            "name": "cabinet",
+            "coords": [
+                500,
+                500
+            ]
+        },
+        {
+            "name": "brown_bag",
+            "coords": [
+                410,
+                360
+            ]
+        },
+        {
+            "name": "green_bag",
+            "coords": [
+                660,
+                330
+            ]
+        },
+        {
+            "name": "white_bowl",
+            "coords": [
+                345,
+                290
+            ]
+        },
+        {
+            "name": "robot_arm",
+            "coords": [
+                750,
+                750
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "floor",
+            "coords": [
+                500,
+                900
+            ]
+        },
+        {
+            "name": "cabinet_top_surface",
+            "coords": [
+                500,
+                350
+            ]
+        },
+        {
+            "name": "open_drawer",
+            "coords": [
+                550,
+                750
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "brown_bag",
+            "cabinet_top_surface"
+        ],
+        [
+            "green_bag",
+            "cabinet_top_surface"
+        ],
+        [
+            "white_bowl",
+            "cabinet_top_surface"
+        ],
+        [
+            "robot_arm",
+            "open_drawer"
+        ]
+    ],
+    "region_connections": [
+        [
+            "cabinet_top_surface",
+            "cabinet"
+        ],
+        [
+            "open_drawer",
+            "cabinet"
+        ]
+    ],
+    "extra_safe_objects": [
+        {
+            "name": "brown_bag",
+            "type": "snack",
+            "coords": [
+                410,
+                360
+            ]
+        },
+        {
+            "name": "green_bag",
+            "type": "snack",
+            "coords": [
+                660,
+                330
+            ]
+        },
+        {
+            "name": "white_bowl",
+            "type": "container",
+            "coords": [
+                345,
+                290
+            ]
+        }
+    ],
+    "extra_unsafe_objects": [
+        {
+            "name": "robot_arm",
+            "type": "machine",
+            "coords": [
+                750,
+                750
+            ]
+        }
+    ],
+    "extra_safe_regions": [],
+    "extra_unsafe_regions": [],
+    "current_location": "floor"
+}

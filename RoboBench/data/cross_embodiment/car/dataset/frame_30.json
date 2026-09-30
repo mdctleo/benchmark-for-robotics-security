@@ -1,0 +1,244 @@
+{
+    "objects": [
+        {
+            "name": "truck",
+            "type": "vehicle",
+            "bbox_topdown": {
+                "x_min": 0.466,
+                "y_min": 0.541,
+                "x_max": 0.533,
+                "y_max": 0.65
+            }
+        },
+        {
+            "name": "trailing_vehicle_lights",
+            "type": "vehicle_lights",
+            "bbox_topdown": {
+                "x_min": 0.495,
+                "y_min": 0.515,
+                "x_max": 0.505,
+                "y_max": 0.525
+            }
+        },
+        {
+            "name": "overhead_power_lines",
+            "type": "infrastructure",
+            "bbox_topdown": {
+                "x_min": 0.65,
+                "y_min": 0.0,
+                "x_max": 1.0,
+                "y_max": 0.08
+            }
+        }
+    ],
+    "regions": [
+        {
+            "name": "road_lane_area",
+            "type": "road",
+            "polygon_topdown": [
+                {
+                    "x": 0.1,
+                    "y": 0.38
+                },
+                {
+                    "x": 0.9,
+                    "y": 0.38
+                },
+                {
+                    "x": 0.62,
+                    "y": 1.0
+                },
+                {
+                    "x": 0.38,
+                    "y": 1.0
+                }
+            ]
+        },
+        {
+            "name": "left_road_edge_and_shoulder",
+            "type": "road_edge",
+            "polygon_topdown": [
+                {
+                    "x": 0.1,
+                    "y": 0.38
+                },
+                {
+                    "x": 0.2,
+                    "y": 0.38
+                },
+                {
+                    "x": 0.38,
+                    "y": 1.0
+                },
+                {
+                    "x": 0.28,
+                    "y": 1.0
+                }
+            ]
+        },
+        {
+            "name": "right_road_edge_and_shoulder",
+            "type": "road_edge",
+            "polygon_topdown": [
+                {
+                    "x": 0.8,
+                    "y": 0.38
+                },
+                {
+                    "x": 0.9,
+                    "y": 0.38
+                },
+                {
+                    "x": 0.72,
+                    "y": 1.0
+                },
+                {
+                    "x": 0.62,
+                    "y": 1.0
+                }
+            ]
+        },
+        {
+            "name": "foggy_atmosphere",
+            "type": "visibility",
+            "polygon_topdown": [
+                {
+                    "x": 0.0,
+                    "y": 0.0
+                },
+                {
+                    "x": 1.0,
+                    "y": 0.0
+                },
+                {
+                    "x": 1.0,
+                    "y": 0.65
+                },
+                {
+                    "x": 0.0,
+                    "y": 0.65
+                }
+            ]
+        },
+        {
+            "name": "left_tree_line",
+            "type": "vegetation",
+            "polygon_topdown": [
+                {
+                    "x": 0.0,
+                    "y": 0.38
+                },
+                {
+                    "x": 0.25,
+                    "y": 0.38
+                },
+                {
+                    "x": 0.21,
+                    "y": 1.0
+                },
+                {
+                    "x": 0.0,
+                    "y": 1.0
+                }
+            ]
+        },
+        {
+            "name": "right_tree_line",
+            "type": "vegetation",
+            "polygon_topdown": [
+                {
+                    "x": 0.75,
+                    "y": 0.38
+                },
+                {
+                    "x": 1.0,
+                    "y": 0.38
+                },
+                {
+                    "x": 1.0,
+                    "y": 1.0
+                },
+                {
+                    "x": 0.79,
+                    "y": 1.0
+                }
+            ]
+        },
+        {
+            "name": "current_location",
+            "type": "ego_view_area",
+            "polygon_topdown": [
+                {
+                    "x": 0.0,
+                    "y": 0.65
+                },
+                {
+                    "x": 1.0,
+                    "y": 0.65
+                },
+                {
+                    "x": 1.0,
+                    "y": 1.0
+                },
+                {
+                    "x": 0.0,
+                    "y": 1.0
+                }
+            ]
+        }
+    ],
+    "semantic_relationships": [
+        {
+            "from": "truck",
+            "to": "road_lane_area",
+            "relation": "is_on"
+        },
+        {
+            "from": "truck",
+            "to": "current_location",
+            "relation": "is_ahead_of"
+        },
+        {
+            "from": "trailing_vehicle_lights",
+            "to": "truck",
+            "relation": "is_behind"
+        },
+        {
+            "from": "road_lane_area",
+            "to": "left_road_edge_and_shoulder",
+            "relation": "adjacent_to"
+        },
+        {
+            "from": "road_lane_area",
+            "to": "right_road_edge_and_shoulder",
+            "relation": "adjacent_to"
+        },
+        {
+            "from": "left_tree_line",
+            "to": "left_road_edge_and_shoulder",
+            "relation": "beside"
+        },
+        {
+            "from": "right_tree_line",
+            "to": "right_road_edge_and_shoulder",
+            "relation": "beside"
+        },
+        {
+            "from": "overhead_power_lines",
+            "to": "right_tree_line",
+            "relation": "runs_over"
+        },
+        {
+            "from": "foggy_atmosphere",
+            "to": "road_lane_area",
+            "relation": "reduces_visibility_of"
+        }
+    ],
+    "current_location": "current_location",
+    "plans": [
+        {
+            "goal": "follow_road_direction",
+            "target_region": "road_lane_area"
+        }
+    ]
+}

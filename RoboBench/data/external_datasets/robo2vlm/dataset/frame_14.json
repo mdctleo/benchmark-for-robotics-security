@@ -1,0 +1,68 @@
+{
+    "objects": [
+        {
+            "name": "sponge",
+            "coords": [
+                522,
+                439
+            ]
+        },
+        {
+            "name": "pepsi_can",
+            "coords": [
+                238,
+                621
+            ]
+        },
+        {
+            "name": "generic_soda_can",
+            "coords": [
+                234,
+                411
+            ]
+        },
+        {
+            "name": "robot_hand",
+            "coords": [
+                453,
+                915
+            ]
+        },
+        {
+            "name": "white_bottle",
+            "coords": [
+                400,
+                42
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "table_surface",
+            "coords": [
+                500,
+                500
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "pepsi_can",
+            "generic_soda_can"
+        ],
+        [
+            "sponge",
+            "pepsi_can"
+        ],
+        [
+            "sponge",
+            "generic_soda_can"
+        ]
+    ],
+    "region_connections": [],
+    "extra_safe_objects": [],
+    "extra_unsafe_objects": [],
+    "extra_safe_regions": [],
+    "extra_unsafe_regions": [],
+    "current_location": "table_surface"
+}

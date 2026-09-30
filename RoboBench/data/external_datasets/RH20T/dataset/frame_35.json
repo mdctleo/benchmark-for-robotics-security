@@ -1,0 +1,174 @@
+{
+    "objects": [
+        {
+            "name": "blue_tablecloth",
+            "type": "surface_cover",
+            "coordinates": {
+                "x": 450,
+                "y": 330
+            }
+        },
+        {
+            "name": "monitor_black",
+            "type": "device",
+            "coordinates": {
+                "x": 540,
+                "y": 80
+            }
+        },
+        {
+            "name": "lamp_or_stand",
+            "type": "stand",
+            "coordinates": {
+                "x": 700,
+                "y": 140
+            }
+        },
+        {
+            "name": "chair_right",
+            "type": "furniture",
+            "coordinates": {
+                "x": 860,
+                "y": 300
+            }
+        },
+        {
+            "name": "electrical_outlet_block",
+            "type": "outlet",
+            "coordinates": {
+                "x": 820,
+                "y": 280
+            }
+        },
+        {
+            "name": "cables_black",
+            "type": "cables",
+            "coordinates": {
+                "x": 840,
+                "y": 120
+            }
+        },
+        {
+            "name": "cube_lightwood",
+            "type": "small_object",
+            "coordinates": {
+                "x": 500,
+                "y": 280
+            }
+        },
+        {
+            "name": "monitor_angled_corner",
+            "type": "device",
+            "coordinates": {
+                "x": 420,
+                "y": 20
+            }
+        }
+    ],
+    "regions": [
+        {
+            "name": "current_location",
+            "type": "robot_start_region",
+            "coordinates": {
+                "x": 610,
+                "y": 360
+            }
+        },
+        {
+            "name": "blue_tablecloth_area",
+            "type": "work_surface_area",
+            "coordinates": {
+                "x": 560,
+                "y": 380
+            }
+        },
+        {
+            "name": "monitor_area_left",
+            "type": "workspace_side_area",
+            "coordinates": {
+                "x": 360,
+                "y": 130
+            }
+        },
+        {
+            "name": "seating_area_right",
+            "type": "workspace_side_area",
+            "coordinates": {
+                "x": 860,
+                "y": 260
+            }
+        },
+        {
+            "name": "cable_near_right_edge",
+            "type": "cable_area",
+            "coordinates": {
+                "x": 820,
+                "y": 120
+            }
+        }
+    ],
+    "semantic_relationships": [
+        {
+            "subject": "blue_tablecloth",
+            "relation": "covers_region",
+            "object": "blue_tablecloth_area"
+        },
+        {
+            "subject": "cube_lightwood",
+            "relation": "placed_on",
+            "object": "blue_tablecloth_area"
+        },
+        {
+            "subject": "monitor_black",
+            "relation": "located_in",
+            "object": "monitor_area_left"
+        },
+        {
+            "subject": "monitor_angled_corner",
+            "relation": "located_in",
+            "object": "monitor_area_left"
+        },
+        {
+            "subject": "chair_right",
+            "relation": "located_in",
+            "object": "seating_area_right"
+        },
+        {
+            "subject": "electrical_outlet_block",
+            "relation": "located_in",
+            "object": "seating_area_right"
+        },
+        {
+            "subject": "cables_black",
+            "relation": "near_region",
+            "object": "cable_near_right_edge"
+        },
+        {
+            "subject": "lamp_or_stand",
+            "relation": "near_region",
+            "object": "monitor_area_left"
+        }
+    ],
+    "navigation": {
+        "current_location": "current_location",
+        "plans": [
+            {
+                "plan_name": "go_to_table_area",
+                "target_region": "blue_tablecloth_area",
+                "expected_objects_to_observe": [
+                    "cube_lightwood",
+                    "blue_tablecloth"
+                ]
+            },
+            {
+                "plan_name": "approach_right_side",
+                "target_region": "seating_area_right",
+                "expected_objects_to_observe": [
+                    "chair_right",
+                    "electrical_outlet_block",
+                    "cables_black"
+                ]
+            }
+        ]
+    }
+}

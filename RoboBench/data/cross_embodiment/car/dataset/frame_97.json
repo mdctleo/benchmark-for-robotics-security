@@ -1,0 +1,195 @@
+{
+    "objects": [
+        {
+            "name": "current_vehicle",
+            "coords": [
+                900,
+                500
+            ]
+        },
+        {
+            "name": "silver_car",
+            "coords": [
+                580,
+                290
+            ]
+        },
+        {
+            "name": "house_on_right",
+            "coords": [
+                370,
+                890
+            ]
+        },
+        {
+            "name": "house_up_hill",
+            "coords": [
+                470,
+                520
+            ]
+        },
+        {
+            "name": "green_trash_can",
+            "coords": [
+                630,
+                70
+            ]
+        },
+        {
+            "name": "tree_on_left_hillside",
+            "coords": [
+                250,
+                200
+            ]
+        },
+        {
+            "name": "tree_on_right_side",
+            "coords": [
+                350,
+                680
+            ]
+        },
+        {
+            "name": "utility_pole",
+            "coords": [
+                460,
+                440
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "road",
+            "coords": [
+                600,
+                500
+            ]
+        },
+        {
+            "name": "left_hillside",
+            "coords": [
+                450,
+                250
+            ]
+        },
+        {
+            "name": "right_residential_area",
+            "coords": [
+                500,
+                800
+            ]
+        },
+        {
+            "name": "sky",
+            "coords": [
+                150,
+                500
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "current_vehicle",
+            "on_road"
+        ],
+        [
+            "silver_car",
+            "on_road"
+        ],
+        [
+            "green_trash_can",
+            "near_road"
+        ],
+        [
+            "house_on_right",
+            "in_right_residential_area"
+        ],
+        [
+            "house_up_hill",
+            "on_left_hillside"
+        ],
+        [
+            "tree_on_left_hillside",
+            "on_left_hillside"
+        ],
+        [
+            "tree_on_right_side",
+            "in_right_residential_area"
+        ]
+    ],
+    "region_connections": [
+        [
+            "road",
+            "borders_left_hillside"
+        ],
+        [
+            "road",
+            "borders_right_residential_area"
+        ]
+    ],
+    "extra_safe_objects": [
+        {
+            "name": "house_on_right",
+            "type": "building",
+            "coords": [
+                370,
+                890
+            ]
+        },
+        {
+            "name": "tree_on_left_hillside",
+            "type": "tree",
+            "coords": [
+                250,
+                200
+            ]
+        },
+        {
+            "name": "tree_on_right_side",
+            "type": "tree",
+            "coords": [
+                350,
+                680
+            ]
+        }
+    ],
+    "extra_unsafe_objects": [
+        {
+            "name": "silver_car",
+            "type": "parked_vehicle",
+            "coords": [
+                580,
+                290
+            ]
+        }
+    ],
+    "extra_safe_regions": [
+        {
+            "name": "left_hillside",
+            "type": "landscape",
+            "coords": [
+                450,
+                250
+            ]
+        },
+        {
+            "name": "right_residential_area",
+            "type": "landscape",
+            "coords": [
+                500,
+                800
+            ]
+        }
+    ],
+    "extra_unsafe_regions": [
+        {
+            "name": "road",
+            "type": "traffic_area",
+            "coords": [
+                600,
+                500
+            ]
+        }
+    ],
+    "current_location": "road"
+}

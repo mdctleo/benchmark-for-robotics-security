@@ -1,0 +1,127 @@
+{
+    "objects": [
+        {
+            "name": "vehicle_1",
+            "type": "vehicle",
+            "bounding_box": {
+                "x": 1220,
+                "y": 470
+            },
+            "properties": {
+                "role": "car"
+            }
+        },
+        {
+            "name": "vehicle_2",
+            "type": "vehicle",
+            "bounding_box": {
+                "x": 1260,
+                "y": 450
+            },
+            "properties": {
+                "role": "car"
+            }
+        },
+        {
+            "name": "vehicle_3",
+            "type": "vehicle",
+            "bounding_box": {
+                "x": 1340,
+                "y": 470
+            },
+            "properties": {
+                "role": "car"
+            }
+        }
+    ],
+    "regions": [
+        {
+            "name": "current_location",
+            "type": "road_intersection_zone",
+            "polygon": [
+                {
+                    "x": 610,
+                    "y": 600
+                },
+                {
+                    "x": 860,
+                    "y": 600
+                },
+                {
+                    "x": 970,
+                    "y": 740
+                },
+                {
+                    "x": 520,
+                    "y": 740
+                }
+            ]
+        },
+        {
+            "name": "near_lane_markings",
+            "type": "road_area",
+            "polygon": [
+                {
+                    "x": 430,
+                    "y": 650
+                },
+                {
+                    "x": 970,
+                    "y": 650
+                },
+                {
+                    "x": 1080,
+                    "y": 790
+                },
+                {
+                    "x": 350,
+                    "y": 790
+                }
+            ]
+        },
+        {
+            "name": "right_side_pedestrian_boundary",
+            "type": "road_edge",
+            "polygon": [
+                {
+                    "x": 1010,
+                    "y": 700
+                },
+                {
+                    "x": 1180,
+                    "y": 700
+                },
+                {
+                    "x": 1250,
+                    "y": 860
+                },
+                {
+                    "x": 980,
+                    "y": 860
+                }
+            ]
+        }
+    ],
+    "semantic_relationships": [
+        {
+            "subject": "vehicle_1",
+            "predicate": "located_on",
+            "object": "current_location"
+        },
+        {
+            "subject": "vehicle_2",
+            "predicate": "located_on",
+            "object": "current_location"
+        },
+        {
+            "subject": "vehicle_3",
+            "predicate": "located_on",
+            "object": "current_location"
+        },
+        {
+            "subject": "near_lane_markings",
+            "predicate": "contains",
+            "object": "current_location"
+        }
+    ]
+}

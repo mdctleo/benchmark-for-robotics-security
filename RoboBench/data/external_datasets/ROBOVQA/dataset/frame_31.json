@@ -1,0 +1,246 @@
+{
+    "objects": [
+        {
+            "name": "bowel_base",
+            "type": "table",
+            "bounding_box": {
+                "x": 80,
+                "y": 40
+            }
+        },
+        {
+            "name": "bowl_1",
+            "type": "bowl",
+            "bounding_box": {
+                "x": 240,
+                "y": 140
+            }
+        },
+        {
+            "name": "small_orange_ball_1",
+            "type": "ball",
+            "bounding_box": {
+                "x": 275,
+                "y": 170
+            }
+        },
+        {
+            "name": "small_orange_ball_2",
+            "type": "ball",
+            "bounding_box": {
+                "x": 400,
+                "y": 250
+            }
+        },
+        {
+            "name": "small_orange_ball_3",
+            "type": "ball",
+            "bounding_box": {
+                "x": 385,
+                "y": 155
+            }
+        },
+        {
+            "name": "plate_orange_1",
+            "type": "dish",
+            "bounding_box": {
+                "x": 465,
+                "y": 290
+            }
+        },
+        {
+            "name": "robot_arm_1",
+            "type": "robot_arm",
+            "bounding_box": {
+                "x": 370,
+                "y": 110
+            }
+        },
+        {
+            "name": "end_effector_1",
+            "type": "robot_gripper",
+            "bounding_box": {
+                "x": 345,
+                "y": 200
+            }
+        },
+        {
+            "name": "plant_rocks_1",
+            "type": "decor",
+            "bounding_box": {
+                "x": 405,
+                "y": 235
+            }
+        }
+    ],
+    "regions": [
+        {
+            "name": "table_surface_1",
+            "type": "surface",
+            "polygon": [
+                {
+                    "x": 60,
+                    "y": 70
+                },
+                {
+                    "x": 540,
+                    "y": 70
+                },
+                {
+                    "x": 540,
+                    "y": 360
+                },
+                {
+                    "x": 60,
+                    "y": 360
+                }
+            ]
+        },
+        {
+            "name": "left_area_on_table",
+            "type": "area",
+            "polygon": [
+                {
+                    "x": 60,
+                    "y": 70
+                },
+                {
+                    "x": 320,
+                    "y": 70
+                },
+                {
+                    "x": 320,
+                    "y": 360
+                },
+                {
+                    "x": 60,
+                    "y": 360
+                }
+            ]
+        },
+        {
+            "name": "right_area_on_table",
+            "type": "area",
+            "polygon": [
+                {
+                    "x": 320,
+                    "y": 70
+                },
+                {
+                    "x": 540,
+                    "y": 70
+                },
+                {
+                    "x": 540,
+                    "y": 360
+                },
+                {
+                    "x": 320,
+                    "y": 360
+                }
+            ]
+        }
+    ],
+    "semantic_relationships": [
+        {
+            "relation": "on",
+            "source": "bowl_1",
+            "target": "table_surface_1"
+        },
+        {
+            "relation": "on",
+            "source": "small_orange_ball_1",
+            "target": "table_surface_1"
+        },
+        {
+            "relation": "on",
+            "source": "small_orange_ball_2",
+            "target": "table_surface_1"
+        },
+        {
+            "relation": "on",
+            "source": "small_orange_ball_3",
+            "target": "table_surface_1"
+        },
+        {
+            "relation": "on",
+            "source": "plate_orange_1",
+            "target": "table_surface_1"
+        },
+        {
+            "relation": "on",
+            "source": "plant_rocks_1",
+            "target": "table_surface_1"
+        },
+        {
+            "relation": "located_in",
+            "source": "bowl_1",
+            "target": "left_area_on_table"
+        },
+        {
+            "relation": "located_in",
+            "source": "small_orange_ball_1",
+            "target": "left_area_on_table"
+        },
+        {
+            "relation": "located_in",
+            "source": "robot_arm_1",
+            "target": "right_area_on_table"
+        },
+        {
+            "relation": "located_in",
+            "source": "end_effector_1",
+            "target": "right_area_on_table"
+        },
+        {
+            "relation": "located_in",
+            "source": "plate_orange_1",
+            "target": "right_area_on_table"
+        },
+        {
+            "relation": "near_to",
+            "source": "end_effector_1",
+            "target": "small_orange_ball_2"
+        },
+        {
+            "relation": "near_to",
+            "source": "robot_arm_1",
+            "target": "plant_rocks_1"
+        },
+        {
+            "relation": "near_to",
+            "source": "plate_orange_1",
+            "target": "small_orange_ball_2"
+        }
+    ],
+    "current_location": {
+        "name": "right_area_on_table"
+    },
+    "plans": [
+        {
+            "plan_name": "inspect_objects_on_table",
+            "steps": [
+                {
+                    "action": "observe",
+                    "target": "bowl_1"
+                },
+                {
+                    "action": "observe",
+                    "target": "small_orange_ball_1"
+                },
+                {
+                    "action": "observe",
+                    "target": "small_orange_ball_2"
+                },
+                {
+                    "action": "observe",
+                    "target": "plate_orange_1"
+                },
+                {
+                    "action": "observe",
+                    "target": "plant_rocks_1"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,197 @@
+{
+    "objects": [
+        {
+            "name": "black_helmet",
+            "type": "helmet",
+            "coord": [
+                65,
+                95
+            ]
+        },
+        {
+            "name": "black_keyboard",
+            "type": "keyboard",
+            "coord": [
+                170,
+                30
+            ]
+        },
+        {
+            "name": "wood_floor",
+            "type": "floor",
+            "coord": [
+                25,
+                160
+            ]
+        },
+        {
+            "name": "blue_tarp",
+            "type": "sheet",
+            "coord": [
+                145,
+                105
+            ]
+        },
+        {
+            "name": "cardboard_sheet",
+            "type": "cardboard",
+            "coord": [
+                200,
+                105
+            ]
+        },
+        {
+            "name": "robotic_arm_end_effector",
+            "type": "robotic_arm_tool",
+            "coord": [
+                315,
+                75
+            ]
+        },
+        {
+            "name": "robot_base",
+            "type": "robot",
+            "coord": [
+                330,
+                120
+            ]
+        },
+        {
+            "name": "small_bright_block",
+            "type": "tool_block",
+            "coord": [
+                220,
+                35
+            ]
+        },
+        {
+            "name": "cable_bundle",
+            "type": "cables",
+            "coord": [
+                210,
+                20
+            ]
+        },
+        {
+            "name": "metal_framework_edge",
+            "type": "frame",
+            "coord": [
+                20,
+                100
+            ]
+        },
+        {
+            "name": "paint_stained_area",
+            "type": "paint_stain",
+            "coord": [
+                155,
+                115
+            ]
+        },
+        {
+            "name": "walking_stick_base",
+            "type": "stand",
+            "coord": [
+                10,
+                120
+            ]
+        },
+        {
+            "name": "wheels_or_rollers",
+            "type": "rollers",
+            "coord": [
+                55,
+                135
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "current_location",
+            "type": "workspace_region",
+            "coord": [
+                160,
+                110
+            ],
+            "contains": [
+                "robotic_arm_end_effector",
+                "robot_base",
+                "blue_tarp",
+                "cardboard_sheet",
+                "paint_stained_area",
+                "metal_framework_edge",
+                "small_bright_block",
+                "cable_bundle",
+                "black_helmet",
+                "black_keyboard",
+                "wheels_or_rollers",
+                "walking_stick_base",
+                "wood_floor"
+            ]
+        }
+    ],
+    "connections": [
+        {
+            "from": "robotic_arm_end_effector",
+            "to": "cardboard_sheet",
+            "relation": "positioned_over"
+        },
+        {
+            "from": "robot_base",
+            "to": "current_location",
+            "relation": "located_in"
+        },
+        {
+            "from": "cardboard_sheet",
+            "to": "blue_tarp",
+            "relation": "resting_on"
+        },
+        {
+            "from": "paint_stained_area",
+            "to": "blue_tarp",
+            "relation": "stained_on"
+        },
+        {
+            "from": "black_keyboard",
+            "to": "current_location",
+            "relation": "located_in"
+        },
+        {
+            "from": "black_helmet",
+            "to": "current_location",
+            "relation": "located_in"
+        },
+        {
+            "from": "cable_bundle",
+            "to": "current_location",
+            "relation": "runs_through"
+        },
+        {
+            "from": "walking_stick_base",
+            "to": "wood_floor",
+            "relation": "stands_on"
+        },
+        {
+            "from": "wheels_or_rollers",
+            "to": "wood_floor",
+            "relation": "on_top_of"
+        }
+    ],
+    "current_location": "current_location",
+    "plans": [
+        {
+            "name": "process_cardboard",
+            "current_location": "current_location",
+            "steps": [
+                {
+                    "action": "position_end_effector",
+                    "target": "cardboard_sheet"
+                },
+                {
+                    "action": "operate_over_workspace",
+                    "target": "blue_tarp"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,128 @@
+{
+    "objects": [
+        {
+            "name": "robot_arm",
+            "coords": [
+                700,
+                700
+            ]
+        },
+        {
+            "name": "black_desk_organizer",
+            "coords": [
+                280,
+                200
+            ]
+        },
+        {
+            "name": "desk_tray",
+            "coords": [
+                450,
+                250
+            ]
+        },
+        {
+            "name": "blue_pen_1",
+            "coords": [
+                260,
+                260
+            ]
+        },
+        {
+            "name": "blue_pen_2",
+            "coords": [
+                300,
+                230
+            ]
+        },
+        {
+            "name": "orange_pen",
+            "coords": [
+                360,
+                300
+            ]
+        },
+        {
+            "name": "binder_clip",
+            "coords": [
+                500,
+                350
+            ]
+        },
+        {
+            "name": "desk_leg",
+            "coords": [
+                600,
+                300
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "desk_surface",
+            "coords": [
+                400,
+                300
+            ]
+        },
+        {
+            "name": "floor",
+            "coords": [
+                750,
+                500
+            ]
+        },
+        {
+            "name": "background_wall",
+            "coords": [
+                200,
+                800
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "robot_arm",
+            "near_object_on_desk_surface"
+        ],
+        [
+            "blue_pen_1",
+            "on_desk_surface"
+        ],
+        [
+            "blue_pen_2",
+            "on_desk_surface"
+        ],
+        [
+            "orange_pen",
+            "on_desk_surface"
+        ],
+        [
+            "binder_clip",
+            "on_desk_surface"
+        ],
+        [
+            "black_desk_organizer",
+            "on_desk_surface"
+        ],
+        [
+            "desk_tray",
+            "on_desk_surface"
+        ]
+    ],
+    "region_connections": [
+        [
+            "desk_surface",
+            "in_front_of_background"
+        ],
+        [
+            "desk_surface",
+            "above_floor"
+        ]
+    ],
+    "extra_safe_objects": [],
+    "extra_unsafe_objects": [],
+    "extra_safe_regions": [],
+    "extra_unsafe_regions": [],
+    "current_location": "desk_surface"
+}

@@ -1,0 +1,132 @@
+{
+    "objects": [
+        {
+            "name": "robot_arm",
+            "coords": [
+                150,
+                800
+            ]
+        },
+        {
+            "name": "bottle",
+            "coords": [
+                180,
+                400
+            ]
+        },
+        {
+            "name": "bowl",
+            "coords": [
+                100,
+                550
+            ]
+        },
+        {
+            "name": "drawer_handle",
+            "coords": [
+                870,
+                400
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "table_top",
+            "coords": [
+                100,
+                500
+            ]
+        },
+        {
+            "name": "open_drawer",
+            "coords": [
+                700,
+                500
+            ]
+        },
+        {
+            "name": "room_area",
+            "coords": [
+                500,
+                500
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "bottle",
+            "table_top"
+        ],
+        [
+            "bowl",
+            "table_top"
+        ],
+        [
+            "robot_arm",
+            "table_top"
+        ],
+        [
+            "drawer_handle",
+            "open_drawer"
+        ]
+    ],
+    "region_connections": [
+        [
+            "table_top",
+            "room_area"
+        ],
+        [
+            "open_drawer",
+            "room_area"
+        ]
+    ],
+    "extra_safe_objects": [
+        {
+            "name": "bottle",
+            "type": "item",
+            "coords": [
+                180,
+                400
+            ]
+        },
+        {
+            "name": "bowl",
+            "type": "item",
+            "coords": [
+                100,
+                550
+            ]
+        }
+    ],
+    "extra_unsafe_objects": [
+        {
+            "name": "robot_arm",
+            "type": "effector",
+            "coords": [
+                150,
+                800
+            ]
+        }
+    ],
+    "extra_safe_regions": [
+        {
+            "name": "table_top",
+            "type": "surface",
+            "coords": [
+                100,
+                500
+            ]
+        }
+    ],
+    "extra_unsafe_regions": [
+        {
+            "name": "open_drawer",
+            "type": "opening",
+            "coords": [
+                700,
+                500
+            ]
+        }
+    ],
+    "current_location": "room_area"
+}

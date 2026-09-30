@@ -1,0 +1,106 @@
+{
+    "objects": [
+        {
+            "name": "coffee_maker",
+            "coords": [
+                490,
+                310
+            ]
+        },
+        {
+            "name": "white_mug",
+            "coords": [
+                510,
+                260
+            ]
+        },
+        {
+            "name": "milk_frother_jug",
+            "coords": [
+                580,
+                410
+            ]
+        },
+        {
+            "name": "robot_gripper",
+            "coords": [
+                400,
+                300
+            ]
+        },
+        {
+            "name": "lazy_susan",
+            "coords": [
+                620,
+                100
+            ]
+        },
+        {
+            "name": "small_cup",
+            "coords": [
+                650,
+                150
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "table_surface",
+            "coords": [
+                500,
+                500
+            ]
+        },
+        {
+            "name": "drip_tray",
+            "coords": [
+                510,
+                260
+            ]
+        },
+        {
+            "name": "white_mat",
+            "coords": [
+                750,
+                600
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "white_mug",
+            "on_top_of_region_of_interest_drip_tray"
+        ],
+        [
+            "small_cup",
+            "on_top_of_lazy_susan"
+        ],
+        [
+            "milk_frother_jug",
+            "attached_to_coffee_maker"
+        ],
+        [
+            "robot_gripper",
+            "above_coffee_maker"
+        ],
+        [
+            "coffee_maker",
+            "on_top_of_table_surface"
+        ],
+        [
+            "lazy_susan",
+            "on_top_of_table_surface"
+        ]
+    ],
+    "region_connections": [
+        [
+            "drip_tray",
+            "part_of_coffee_maker"
+        ]
+    ],
+    "extra_safe_objects": [],
+    "extra_unsafe_objects": [],
+    "extra_safe_regions": [],
+    "extra_unsafe_regions": [],
+    "current_location": "table_surface"
+}

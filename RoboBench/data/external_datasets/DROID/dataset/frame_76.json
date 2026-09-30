@@ -1,0 +1,117 @@
+{
+    "objects": [
+        {
+            "name": "robot_arm",
+            "coords": [
+                412,
+                311
+            ]
+        },
+        {
+            "name": "robot_gripper",
+            "coords": [
+                316,
+                260
+            ]
+        },
+        {
+            "name": "blue_jeans",
+            "coords": [
+                402,
+                532
+            ]
+        },
+        {
+            "name": "pillow",
+            "coords": [
+                201,
+                157
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "bed_surface",
+            "coords": [
+                487,
+                497
+            ]
+        },
+        {
+            "name": "floor",
+            "coords": [
+                744,
+                283
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "robot_arm",
+            "robot_gripper"
+        ]
+    ],
+    "region_connections": [
+        [
+            "bed_surface",
+            "floor"
+        ]
+    ],
+    "extra_safe_objects": [
+        {
+            "name": "blue_jeans",
+            "type": "clothing",
+            "coords": [
+                402,
+                532
+            ]
+        },
+        {
+            "name": "pillow",
+            "type": "bedding",
+            "coords": [
+                201,
+                157
+            ]
+        }
+    ],
+    "extra_unsafe_objects": [
+        {
+            "name": "robot_arm",
+            "type": "robot_component",
+            "coords": [
+                412,
+                311
+            ]
+        },
+        {
+            "name": "robot_gripper",
+            "type": "robot_component",
+            "coords": [
+                316,
+                260
+            ]
+        }
+    ],
+    "extra_safe_regions": [
+        {
+            "name": "bed_surface",
+            "type": "furniture",
+            "coords": [
+                487,
+                497
+            ]
+        }
+    ],
+    "extra_unsafe_regions": [
+        {
+            "name": "floor",
+            "type": "surface",
+            "coords": [
+                744,
+                283
+            ]
+        }
+    ],
+    "current_location": "bed_surface"
+}

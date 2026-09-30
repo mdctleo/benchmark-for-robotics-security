@@ -1,0 +1,182 @@
+{
+    "objects": [
+        {
+            "name": "paper_towel_roll",
+            "coords": [
+                166,
+                116
+            ]
+        },
+        {
+            "name": "white_cup",
+            "coords": [
+                200,
+                301
+            ]
+        },
+        {
+            "name": "yellow_object",
+            "coords": [
+                208,
+                360
+            ]
+        },
+        {
+            "name": "small_white_bowl",
+            "coords": [
+                357,
+                290
+            ]
+        },
+        {
+            "name": "robot_arm",
+            "coords": [
+                330,
+                510
+            ]
+        },
+        {
+            "name": "glass_flask",
+            "coords": [
+                447,
+                417
+            ]
+        },
+        {
+            "name": "glass_beaker",
+            "coords": [
+                447,
+                460
+            ]
+        },
+        {
+            "name": "black_tumbler",
+            "coords": [
+                617,
+                563
+            ]
+        },
+        {
+            "name": "coffee_grounds_container",
+            "coords": [
+                860,
+                868
+            ]
+        },
+        {
+            "name": "spatula",
+            "coords": [
+                860,
+                868
+            ]
+        },
+        {
+            "name": "large_wooden_crate",
+            "coords": [
+                700,
+                580
+            ]
+        },
+        {
+            "name": "small_wooden_crate",
+            "coords": [
+                375,
+                345
+            ]
+        },
+        {
+            "name": "red_object",
+            "coords": [
+                386,
+                396
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "left_counter",
+            "coords": [
+                250,
+                250
+            ]
+        },
+        {
+            "name": "middle_counter",
+            "coords": [
+                450,
+                450
+            ]
+        },
+        {
+            "name": "right_counter",
+            "coords": [
+                800,
+                700
+            ]
+        },
+        {
+            "name": "kitchen_sink",
+            "coords": [
+                450,
+                450
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "spatula",
+            "coffee_grounds_container"
+        ],
+        [
+            "robot_arm",
+            "black_tumbler"
+        ],
+        [
+            "robot_arm",
+            "coffee_grounds_container"
+        ],
+        [
+            "large_wooden_crate",
+            "right_counter"
+        ],
+        [
+            "black_tumbler",
+            "right_counter"
+        ],
+        [
+            "paper_towel_roll",
+            "left_counter"
+        ],
+        [
+            "white_cup",
+            "left_counter"
+        ],
+        [
+            "small_white_bowl",
+            "left_counter"
+        ],
+        [
+            "small_wooden_crate",
+            "left_counter"
+        ]
+    ],
+    "region_connections": [
+        [
+            "left_counter",
+            "middle_counter"
+        ],
+        [
+            "middle_counter",
+            "right_counter"
+        ],
+        [
+            "middle_counter",
+            "kitchen_sink"
+        ]
+    ],
+    "extra_safe_objects": [],
+    "extra_unsafe_objects": [],
+    "extra_safe_regions": [],
+    "extra_unsafe_regions": [],
+    "current_location": "right_counter"
+}

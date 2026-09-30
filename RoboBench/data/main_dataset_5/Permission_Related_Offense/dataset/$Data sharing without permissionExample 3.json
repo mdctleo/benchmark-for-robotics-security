@@ -1,0 +1,106 @@
+{
+    "objects": [
+        {
+            "name": "laptop",
+            "coords": [
+                580,
+                500
+            ]
+        },
+        {
+            "name": "robot arm",
+            "coords": [
+                750,
+                200
+            ]
+        },
+        {
+            "name": "server rack left",
+            "coords": [
+                500,
+                150
+            ]
+        },
+        {
+            "name": "server rack right",
+            "coords": [
+                500,
+                800
+            ]
+        },
+        {
+            "name": "door",
+            "coords": [
+                400,
+                300
+            ]
+        },
+        {
+            "name": "restricted sign",
+            "coords": [
+                350,
+                290
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "server room",
+            "coords": [
+                500,
+                500
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "robot arm",
+            "laptop"
+        ],
+        [
+            "restricted sign",
+            "door"
+        ]
+    ],
+    "region_connections": [
+        [
+            "door",
+            "server room"
+        ],
+        [
+            "laptop",
+            "server room"
+        ],
+        [
+            "server rack left",
+            "server room"
+        ],
+        [
+            "server rack right",
+            "server room"
+        ]
+    ],
+    "extra_safe_objects": [],
+    "extra_unsafe_objects": [
+        {
+            "name": "robot arm",
+            "type": "unauthorized access tool",
+            "coords": [
+                750,
+                200
+            ]
+        }
+    ],
+    "extra_safe_regions": [],
+    "extra_unsafe_regions": [
+        {
+            "name": "server room",
+            "type": "restricted area",
+            "coords": [
+                500,
+                500
+            ]
+        }
+    ],
+    "current_location": "server room"
+}

@@ -1,0 +1,285 @@
+{
+    "objects": [
+        {
+            "name": "vehicle_1",
+            "type": "car",
+            "bbox_top_down": {
+                "x": 420,
+                "y": 720,
+                "w": 70,
+                "h": 45
+            }
+        },
+        {
+            "name": "vehicle_2",
+            "type": "car",
+            "bbox_top_down": {
+                "x": 520,
+                "y": 730,
+                "w": 95,
+                "h": 55
+            }
+        },
+        {
+            "name": "vehicle_3",
+            "type": "car",
+            "bbox_top_down": {
+                "x": 735,
+                "y": 760,
+                "w": 70,
+                "h": 45
+            }
+        },
+        {
+            "name": "vehicle_4",
+            "type": "car",
+            "bbox_top_down": {
+                "x": 880,
+                "y": 775,
+                "w": 60,
+                "h": 40
+            }
+        },
+        {
+            "name": "vehicle_5",
+            "type": "car",
+            "bbox_top_down": {
+                "x": 585,
+                "y": 810,
+                "w": 60,
+                "h": 40
+            }
+        },
+        {
+            "name": "vehicle_6",
+            "type": "truck",
+            "bbox_top_down": {
+                "x": 980,
+                "y": 820,
+                "w": 90,
+                "h": 60
+            }
+        },
+        {
+            "name": "vehicle_7",
+            "type": "car",
+            "bbox_top_down": {
+                "x": 1150,
+                "y": 860,
+                "w": 60,
+                "h": 40
+            }
+        },
+        {
+            "name": "vehicle_8",
+            "type": "car",
+            "bbox_top_down": {
+                "x": 200,
+                "y": 760,
+                "w": 90,
+                "h": 55
+            }
+        }
+    ],
+    "regions": [
+        {
+            "name": "road_1",
+            "shape": "polygon",
+            "points": [
+                {
+                    "x": 120,
+                    "y": 610
+                },
+                {
+                    "x": 640,
+                    "y": 610
+                },
+                {
+                    "x": 1380,
+                    "y": 980
+                },
+                {
+                    "x": 680,
+                    "y": 980
+                }
+            ]
+        },
+        {
+            "name": "shoulder_right_1",
+            "shape": "polygon",
+            "points": [
+                {
+                    "x": 640,
+                    "y": 610
+                },
+                {
+                    "x": 1380,
+                    "y": 980
+                },
+                {
+                    "x": 1380,
+                    "y": 1140
+                },
+                {
+                    "x": 640,
+                    "y": 760
+                }
+            ]
+        },
+        {
+            "name": "embankment_wall_right_1",
+            "shape": "polygon",
+            "points": [
+                {
+                    "x": 980,
+                    "y": 820
+                },
+                {
+                    "x": 1380,
+                    "y": 980
+                },
+                {
+                    "x": 1380,
+                    "y": 1060
+                },
+                {
+                    "x": 980,
+                    "y": 900
+                }
+            ]
+        },
+        {
+            "name": "trees_bushes_left_1",
+            "shape": "polygon",
+            "points": [
+                {
+                    "x": 0,
+                    "y": 560
+                },
+                {
+                    "x": 260,
+                    "y": 650
+                },
+                {
+                    "x": 520,
+                    "y": 980
+                },
+                {
+                    "x": 0,
+                    "y": 980
+                }
+            ]
+        },
+        {
+            "name": "trees_bushes_right_1",
+            "shape": "polygon",
+            "points": [
+                {
+                    "x": 800,
+                    "y": 600
+                },
+                {
+                    "x": 1536,
+                    "y": 720
+                },
+                {
+                    "x": 1536,
+                    "y": 980
+                },
+                {
+                    "x": 980,
+                    "y": 820
+                }
+            ]
+        },
+        {
+            "name": "current_location",
+            "shape": "polygon",
+            "points": [
+                {
+                    "x": 0,
+                    "y": 900
+                },
+                {
+                    "x": 520,
+                    "y": 900
+                },
+                {
+                    "x": 720,
+                    "y": 1080
+                },
+                {
+                    "x": 0,
+                    "y": 1080
+                }
+            ]
+        }
+    ],
+    "semantic_relationships": [
+        {
+            "subject": "vehicle_1",
+            "relation": "on",
+            "object": "road_1"
+        },
+        {
+            "subject": "vehicle_2",
+            "relation": "on",
+            "object": "road_1"
+        },
+        {
+            "subject": "vehicle_3",
+            "relation": "on",
+            "object": "road_1"
+        },
+        {
+            "subject": "vehicle_4",
+            "relation": "on",
+            "object": "road_1"
+        },
+        {
+            "subject": "vehicle_5",
+            "relation": "on",
+            "object": "road_1"
+        },
+        {
+            "subject": "vehicle_6",
+            "relation": "on",
+            "object": "road_1"
+        },
+        {
+            "subject": "vehicle_7",
+            "relation": "on",
+            "object": "road_1"
+        },
+        {
+            "subject": "vehicle_8",
+            "relation": "on",
+            "object": "road_1"
+        },
+        {
+            "subject": "road_1",
+            "relation": "adjacent_to",
+            "object": "shoulder_right_1"
+        },
+        {
+            "subject": "shoulder_right_1",
+            "relation": "adjacent_to",
+            "object": "embankment_wall_right_1"
+        },
+        {
+            "subject": "road_1",
+            "relation": "bordered_by",
+            "object": "trees_bushes_left_1"
+        },
+        {
+            "subject": "road_1",
+            "relation": "bordered_by",
+            "object": "trees_bushes_right_1"
+        },
+        {
+            "subject": "current_location",
+            "relation": "contains",
+            "object": "road_1"
+        }
+    ]
+}

@@ -1,0 +1,324 @@
+{
+    "regions": [
+        {
+            "name": "desk_surface_1",
+            "type": "furniture_surface",
+            "polygon": [
+                [
+                    80,
+                    55
+                ],
+                [
+                    420,
+                    55
+                ],
+                [
+                    520,
+                    260
+                ],
+                [
+                    65,
+                    285
+                ]
+            ]
+        },
+        {
+            "name": "drawer_area_1",
+            "type": "furniture_structure",
+            "polygon": [
+                [
+                    110,
+                    285
+                ],
+                [
+                    470,
+                    285
+                ],
+                [
+                    500,
+                    420
+                ],
+                [
+                    80,
+                    420
+                ]
+            ]
+        },
+        {
+            "name": "monitor_area_1",
+            "type": "device_area",
+            "polygon": [
+                [
+                    0,
+                    70
+                ],
+                [
+                    80,
+                    70
+                ],
+                [
+                    120,
+                    300
+                ],
+                [
+                    0,
+                    340
+                ]
+            ]
+        },
+        {
+            "name": "floor_area_1",
+            "type": "ground",
+            "polygon": [
+                [
+                    0,
+                    420
+                ],
+                [
+                    520,
+                    420
+                ],
+                [
+                    640,
+                    640
+                ],
+                [
+                    0,
+                    640
+                ]
+            ]
+        },
+        {
+            "name": "current_location",
+            "type": "target_region",
+            "polygon": [
+                [
+                    170,
+                    130
+                ],
+                [
+                    430,
+                    120
+                ],
+                [
+                    465,
+                    220
+                ],
+                [
+                    185,
+                    240
+                ]
+            ]
+        }
+    ],
+    "objects": [
+        {
+            "name": "desk_1",
+            "type": "furniture_desk",
+            "position": [
+                300,
+                210
+            ]
+        },
+        {
+            "name": "monitor_1",
+            "type": "monitor",
+            "position": [
+                55,
+                200
+            ]
+        },
+        {
+            "name": "keyboard_1",
+            "type": "keyboard",
+            "position": [
+                115,
+                240
+            ]
+        },
+        {
+            "name": "remote_keyboard_device_1",
+            "type": "computer_accessory",
+            "position": [
+                35,
+                300
+            ]
+        },
+        {
+            "name": "cylinders_tray_1",
+            "type": "tray",
+            "position": [
+                380,
+                170
+            ]
+        },
+        {
+            "name": "cylinder_can_1",
+            "type": "cylinder",
+            "position": [
+                405,
+                150
+            ]
+        },
+        {
+            "name": "cylinder_can_2",
+            "type": "cylinder",
+            "position": [
+                435,
+                195
+            ]
+        },
+        {
+            "name": "cylinder_can_3",
+            "type": "cylinder",
+            "position": [
+                465,
+                165
+            ]
+        },
+        {
+            "name": "handheld_device_1",
+            "type": "handheld_device",
+            "position": [
+                150,
+                200
+            ]
+        },
+        {
+            "name": "cord_1",
+            "type": "cable",
+            "position": [
+                130,
+                190
+            ]
+        },
+        {
+            "name": "boxy_cable_terminal_1",
+            "type": "electronics_accessory",
+            "position": [
+                105,
+                215
+            ]
+        },
+        {
+            "name": "robotic_arm_or_handle_1",
+            "type": "robotic_component",
+            "position": [
+                560,
+                220
+            ]
+        },
+        {
+            "name": "robot_body_curve_1",
+            "type": "robotic_body",
+            "position": [
+                635,
+                300
+            ]
+        },
+        {
+            "name": "paper_or_panel_edge_1",
+            "type": "paper_or_panel",
+            "position": [
+                95,
+                85
+            ]
+        },
+        {
+            "name": "drawer_handle_1",
+            "type": "handle",
+            "position": [
+                260,
+                340
+            ]
+        }
+    ],
+    "semantic_relationships": [
+        {
+            "subject": "monitor_1",
+            "relation": "sits_on",
+            "object": "desk_1"
+        },
+        {
+            "subject": "keyboard_1",
+            "relation": "sits_on",
+            "object": "desk_1"
+        },
+        {
+            "subject": "remote_keyboard_device_1",
+            "relation": "sits_on",
+            "object": "desk_1"
+        },
+        {
+            "subject": "cylinders_tray_1",
+            "relation": "sits_on",
+            "object": "desk_1"
+        },
+        {
+            "subject": "cylinder_can_1",
+            "relation": "contained_in",
+            "object": "cylinders_tray_1"
+        },
+        {
+            "subject": "cylinder_can_2",
+            "relation": "contained_in",
+            "object": "cylinders_tray_1"
+        },
+        {
+            "subject": "cylinder_can_3",
+            "relation": "contained_in",
+            "object": "cylinders_tray_1"
+        },
+        {
+            "subject": "handheld_device_1",
+            "relation": "is_near",
+            "object": "keyboard_1"
+        },
+        {
+            "subject": "cord_1",
+            "relation": "connects_between",
+            "object": "boxy_cable_terminal_1"
+        },
+        {
+            "subject": "boxy_cable_terminal_1",
+            "relation": "is_near",
+            "object": "keyboard_1"
+        },
+        {
+            "subject": "robotic_arm_or_handle_1",
+            "relation": "is_near",
+            "object": "cylinders_tray_1"
+        },
+        {
+            "subject": "robot_body_curve_1",
+            "relation": "occupies_space_near",
+            "object": "robotic_arm_or_handle_1"
+        },
+        {
+            "subject": "drawer_handle_1",
+            "relation": "belongs_to",
+            "object": "desk_1"
+        }
+    ],
+    "current_location": {
+        "region": "current_location",
+        "contains": [
+            "cylinders_tray_1",
+            "cylinder_can_1",
+            "cylinder_can_2",
+            "cylinder_can_3",
+            "robotic_arm_or_handle_1"
+        ]
+    },
+    "plans": [
+        {
+            "name": "position_related",
+            "current_region": "current_location",
+            "target_objects": [
+                "cylinder_can_1",
+                "cylinder_can_2",
+                "cylinder_can_3"
+            ]
+        }
+    ]
+}

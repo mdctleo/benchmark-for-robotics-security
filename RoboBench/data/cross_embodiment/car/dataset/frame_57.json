@@ -1,0 +1,463 @@
+{
+    "objects": [
+        {
+            "name": "white_suv",
+            "type": "vehicle",
+            "bbox_top_down": [
+                [
+                    520,
+                    560
+                ],
+                [
+                    660,
+                    560
+                ],
+                [
+                    670,
+                    700
+                ],
+                [
+                    510,
+                    700
+                ]
+            ]
+        },
+        {
+            "name": "silver_sedan_left",
+            "type": "vehicle",
+            "bbox_top_down": [
+                [
+                    0,
+                    610
+                ],
+                [
+                    220,
+                    610
+                ],
+                [
+                    240,
+                    740
+                ],
+                [
+                    20,
+                    740
+                ]
+            ]
+        },
+        {
+            "name": "white_van_ahead",
+            "type": "vehicle",
+            "bbox_top_down": [
+                [
+                    340,
+                    430
+                ],
+                [
+                    460,
+                    430
+                ],
+                [
+                    470,
+                    540
+                ],
+                [
+                    330,
+                    540
+                ]
+            ]
+        },
+        {
+            "name": "building_right",
+            "type": "building",
+            "bbox_top_down": [
+                [
+                    760,
+                    150
+                ],
+                [
+                    1100,
+                    150
+                ],
+                [
+                    1100,
+                    560
+                ],
+                [
+                    760,
+                    560
+                ]
+            ]
+        },
+        {
+            "name": "building_left_low",
+            "type": "building",
+            "bbox_top_down": [
+                [
+                    180,
+                    170
+                ],
+                [
+                    470,
+                    170
+                ],
+                [
+                    510,
+                    460
+                ],
+                [
+                    210,
+                    460
+                ]
+            ]
+        },
+        {
+            "name": "driveway_left",
+            "type": "road_edge",
+            "bbox_top_down": [
+                [
+                    120,
+                    460
+                ],
+                [
+                    520,
+                    460
+                ],
+                [
+                    520,
+                    620
+                ],
+                [
+                    120,
+                    620
+                ]
+            ]
+        },
+        {
+            "name": "street_lamp_row",
+            "type": "infrastructure",
+            "bbox_top_down": [
+                [
+                    730,
+                    240
+                ],
+                [
+                    940,
+                    240
+                ],
+                [
+                    960,
+                    420
+                ],
+                [
+                    750,
+                    420
+                ]
+            ]
+        },
+        {
+            "name": "utility_pole_left",
+            "type": "utility",
+            "bbox_top_down": [
+                [
+                    90,
+                    120
+                ],
+                [
+                    140,
+                    120
+                ],
+                [
+                    160,
+                    420
+                ],
+                [
+                    110,
+                    420
+                ]
+            ]
+        },
+        {
+            "name": "hedge_right",
+            "type": "vegetation",
+            "bbox_top_down": [
+                [
+                    660,
+                    520
+                ],
+                [
+                    1100,
+                    520
+                ],
+                [
+                    1100,
+                    650
+                ],
+                [
+                    660,
+                    650
+                ]
+            ]
+        },
+        {
+            "name": "bushes_corner",
+            "type": "vegetation",
+            "bbox_top_down": [
+                [
+                    430,
+                    500
+                ],
+                [
+                    720,
+                    500
+                ],
+                [
+                    720,
+                    620
+                ],
+                [
+                    430,
+                    620
+                ]
+            ]
+        },
+        {
+            "name": "trees_middle_left",
+            "type": "vegetation",
+            "bbox_top_down": [
+                [
+                    250,
+                    140
+                ],
+                [
+                    440,
+                    140
+                ],
+                [
+                    470,
+                    380
+                ],
+                [
+                    280,
+                    380
+                ]
+            ]
+        },
+        {
+            "name": "trees_right",
+            "type": "vegetation",
+            "bbox_top_down": [
+                [
+                    820,
+                    180
+                ],
+                [
+                    1110,
+                    180
+                ],
+                [
+                    1110,
+                    520
+                ],
+                [
+                    820,
+                    520
+                ]
+            ]
+        },
+        {
+            "name": "traffic_sign_no_parking",
+            "type": "sign",
+            "bbox_top_down": [
+                [
+                    780,
+                    470
+                ],
+                [
+                    820,
+                    470
+                ],
+                [
+                    840,
+                    540
+                ],
+                [
+                    800,
+                    540
+                ]
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "ground_1",
+            "type": "ground",
+            "polygon_top_down": [
+                [
+                    0,
+                    0
+                ],
+                [
+                    1100,
+                    0
+                ],
+                [
+                    1100,
+                    750
+                ],
+                [
+                    0,
+                    750
+                ]
+            ]
+        },
+        {
+            "name": "roadway_center",
+            "type": "road",
+            "polygon_top_down": [
+                [
+                    250,
+                    420
+                ],
+                [
+                    740,
+                    420
+                ],
+                [
+                    770,
+                    740
+                ],
+                [
+                    220,
+                    740
+                ]
+            ]
+        },
+        {
+            "name": "sidewalk_right",
+            "type": "sidewalk",
+            "polygon_top_down": [
+                [
+                    720,
+                    500
+                ],
+                [
+                    1100,
+                    500
+                ],
+                [
+                    1100,
+                    750
+                ],
+                [
+                    720,
+                    750
+                ]
+            ]
+        },
+        {
+            "name": "sidewalk_left",
+            "type": "sidewalk",
+            "polygon_top_down": [
+                [
+                    0,
+                    500
+                ],
+                [
+                    260,
+                    500
+                ],
+                [
+                    320,
+                    750
+                ],
+                [
+                    0,
+                    750
+                ]
+            ]
+        }
+    ],
+    "semantic_relationships": [
+        {
+            "from": "white_suv",
+            "to": "roadway_center",
+            "relation": "is_on"
+        },
+        {
+            "from": "white_van_ahead",
+            "to": "roadway_center",
+            "relation": "is_on"
+        },
+        {
+            "from": "silver_sedan_left",
+            "to": "sidewalk_left",
+            "relation": "is_near"
+        },
+        {
+            "from": "white_suv",
+            "to": "white_van_ahead",
+            "relation": "is_behind"
+        },
+        {
+            "from": "white_suv",
+            "to": "traffic_sign_no_parking",
+            "relation": "faces_while_driving_past"
+        },
+        {
+            "from": "traffic_sign_no_parking",
+            "to": "sidewalk_right",
+            "relation": "is_near"
+        },
+        {
+            "from": "trees_right",
+            "to": "sidewalk_right",
+            "relation": "lines"
+        },
+        {
+            "from": "hedge_right",
+            "to": "sidewalk_right",
+            "relation": "separates_from_roadway"
+        },
+        {
+            "from": "building_right",
+            "to": "sidewalk_right",
+            "relation": "adjacent_to"
+        },
+        {
+            "from": "building_left_low",
+            "to": "driveway_left",
+            "relation": "adjacent_to"
+        },
+        {
+            "from": "trees_middle_left",
+            "to": "ground_1",
+            "relation": "is_within"
+        },
+        {
+            "from": "utility_pole_left",
+            "to": "roadway_center",
+            "relation": "is_near"
+        },
+        {
+            "from": "street_lamp_row",
+            "to": "sidewalk_right",
+            "relation": "supports"
+        }
+    ],
+    "current_location": {
+        "region": "roadway_center",
+        "entities_nearby": [
+            "white_suv",
+            "white_van_ahead",
+            "traffic_sign_no_parking"
+        ]
+    },
+    "plans": [
+        {
+            "name": "continue_down_road",
+            "current_region": "roadway_center",
+            "target_region": "roadway_center",
+            "follow": "roadway_center"
+        }
+    ]
+}

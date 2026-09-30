@@ -1,0 +1,263 @@
+{
+    "objects": [
+        {
+            "name": "robot_base",
+            "type": "robot",
+            "position": {
+                "x": 92,
+                "y": 60
+            }
+        },
+        {
+            "name": "robot_arm",
+            "type": "robot_part",
+            "position": {
+                "x": 315,
+                "y": 42
+            }
+        },
+        {
+            "name": "blue_tablecloth",
+            "type": "surface",
+            "position": {
+                "x": 210,
+                "y": 175
+            }
+        },
+        {
+            "name": "white_led_panel",
+            "type": "device",
+            "position": {
+                "x": 317,
+                "y": 226
+            }
+        },
+        {
+            "name": "black_table_frame",
+            "type": "frame",
+            "position": {
+                "x": 340,
+                "y": 175
+            }
+        },
+        {
+            "name": "control_cabinet",
+            "type": "equipment",
+            "position": {
+                "x": 410,
+                "y": 90
+            }
+        },
+        {
+            "name": "control_button_red_1",
+            "type": "button",
+            "position": {
+                "x": 128,
+                "y": 64
+            }
+        },
+        {
+            "name": "control_button_red_2",
+            "type": "button",
+            "position": {
+                "x": 165,
+                "y": 70
+            }
+        },
+        {
+            "name": "green_box",
+            "type": "box",
+            "position": {
+                "x": 218,
+                "y": 122
+            }
+        },
+        {
+            "name": "orange_box",
+            "type": "box",
+            "position": {
+                "x": 165,
+                "y": 110
+            }
+        }
+    ],
+    "regions": [
+        {
+            "name": "current_location",
+            "type": "area",
+            "polygon": [
+                {
+                    "x": 95,
+                    "y": 55
+                },
+                {
+                    "x": 410,
+                    "y": 55
+                },
+                {
+                    "x": 440,
+                    "y": 290
+                },
+                {
+                    "x": 70,
+                    "y": 290
+                }
+            ]
+        },
+        {
+            "name": "blue_central_area",
+            "type": "area",
+            "polygon": [
+                {
+                    "x": 90,
+                    "y": 85
+                },
+                {
+                    "x": 435,
+                    "y": 85
+                },
+                {
+                    "x": 440,
+                    "y": 260
+                },
+                {
+                    "x": 85,
+                    "y": 260
+                }
+            ]
+        },
+        {
+            "name": "left_side_area",
+            "type": "area",
+            "polygon": [
+                {
+                    "x": 95,
+                    "y": 85
+                },
+                {
+                    "x": 220,
+                    "y": 85
+                },
+                {
+                    "x": 225,
+                    "y": 265
+                },
+                {
+                    "x": 90,
+                    "y": 265
+                }
+            ]
+        },
+        {
+            "name": "right_side_area",
+            "type": "area",
+            "polygon": [
+                {
+                    "x": 220,
+                    "y": 85
+                },
+                {
+                    "x": 440,
+                    "y": 85
+                },
+                {
+                    "x": 445,
+                    "y": 265
+                },
+                {
+                    "x": 225,
+                    "y": 265
+                }
+            ]
+        }
+    ],
+    "semantic_relationships": [
+        {
+            "relation": "located_in",
+            "subject": "robot_base",
+            "object": "current_location"
+        },
+        {
+            "relation": "mounted_over",
+            "subject": "robot_arm",
+            "object": "current_location"
+        },
+        {
+            "relation": "surface",
+            "subject": "blue_tablecloth",
+            "object": "current_location"
+        },
+        {
+            "relation": "device_on",
+            "subject": "white_led_panel",
+            "object": "current_location"
+        },
+        {
+            "relation": "enclosed_by",
+            "subject": "blue_tablecloth",
+            "object": "current_location"
+        },
+        {
+            "relation": "left_of",
+            "subject": "robot_base",
+            "object": "white_led_panel"
+        },
+        {
+            "relation": "left_of",
+            "subject": "orange_box",
+            "object": "green_box"
+        },
+        {
+            "relation": "located_in",
+            "subject": "orange_box",
+            "object": "blue_central_area"
+        },
+        {
+            "relation": "located_in",
+            "subject": "green_box",
+            "object": "blue_central_area"
+        },
+        {
+            "relation": "located_in",
+            "subject": "control_button_red_1",
+            "object": "current_location"
+        },
+        {
+            "relation": "located_in",
+            "subject": "control_button_red_2",
+            "object": "current_location"
+        },
+        {
+            "relation": "over",
+            "subject": "orange_box",
+            "object": "blue_tablecloth"
+        },
+        {
+            "relation": "over",
+            "subject": "green_box",
+            "object": "blue_tablecloth"
+        },
+        {
+            "relation": "near",
+            "subject": "orange_box",
+            "object": "control_button_red_1"
+        },
+        {
+            "relation": "near",
+            "subject": "green_box",
+            "object": "robot_arm"
+        },
+        {
+            "relation": "located_in",
+            "subject": "orange_box",
+            "object": "left_side_area"
+        },
+        {
+            "relation": "located_in",
+            "subject": "green_box",
+            "object": "right_side_area"
+        }
+    ],
+    "current_location": "current_location",
+    "plans": []
+}

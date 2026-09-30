@@ -1,0 +1,280 @@
+{
+    "objects": [
+        {
+            "name": "vehicle_front_left",
+            "type": "vehicle",
+            "coord": {
+                "x": 0.72,
+                "y": 0.73
+            }
+        },
+        {
+            "name": "vehicle_front_right",
+            "type": "vehicle",
+            "coord": {
+                "x": 0.89,
+                "y": 0.77
+            }
+        },
+        {
+            "name": "vehicle_ahead_center",
+            "type": "vehicle",
+            "coord": {
+                "x": 0.56,
+                "y": 0.63
+            }
+        },
+        {
+            "name": "vehicle_left_far",
+            "type": "vehicle",
+            "coord": {
+                "x": 0.33,
+                "y": 0.46
+            }
+        },
+        {
+            "name": "vehicle_right_far",
+            "type": "vehicle",
+            "coord": {
+                "x": 0.83,
+                "y": 0.45
+            }
+        },
+        {
+            "name": "road_marking_centerline",
+            "type": "road_marking",
+            "coord": {
+                "x": 0.5,
+                "y": 0.55
+            }
+        },
+        {
+            "name": "traffic_light_left",
+            "type": "traffic_light",
+            "coord": {
+                "x": 0.47,
+                "y": 0.48
+            }
+        },
+        {
+            "name": "traffic_light_right",
+            "type": "traffic_light",
+            "coord": {
+                "x": 0.55,
+                "y": 0.48
+            }
+        }
+    ],
+    "regions": [
+        {
+            "name": "road_main",
+            "type": "road",
+            "polygon": [
+                {
+                    "x": 0.18,
+                    "y": 0.8
+                },
+                {
+                    "x": 0.82,
+                    "y": 0.8
+                },
+                {
+                    "x": 0.68,
+                    "y": 0.98
+                },
+                {
+                    "x": 0.32,
+                    "y": 0.98
+                }
+            ]
+        },
+        {
+            "name": "sidewalk_left",
+            "type": "sidewalk",
+            "polygon": [
+                {
+                    "x": 0.0,
+                    "y": 0.8
+                },
+                {
+                    "x": 0.18,
+                    "y": 0.8
+                },
+                {
+                    "x": 0.22,
+                    "y": 0.98
+                },
+                {
+                    "x": 0.0,
+                    "y": 0.98
+                }
+            ]
+        },
+        {
+            "name": "sidewalk_right",
+            "type": "sidewalk",
+            "polygon": [
+                {
+                    "x": 0.82,
+                    "y": 0.8
+                },
+                {
+                    "x": 1.0,
+                    "y": 0.8
+                },
+                {
+                    "x": 1.0,
+                    "y": 0.98
+                },
+                {
+                    "x": 0.78,
+                    "y": 0.98
+                }
+            ]
+        },
+        {
+            "name": "trees_left",
+            "type": "vegetation",
+            "polygon": [
+                {
+                    "x": 0.0,
+                    "y": 0.62
+                },
+                {
+                    "x": 0.18,
+                    "y": 0.62
+                },
+                {
+                    "x": 0.22,
+                    "y": 0.8
+                },
+                {
+                    "x": 0.0,
+                    "y": 0.8
+                }
+            ]
+        },
+        {
+            "name": "trees_right",
+            "type": "vegetation",
+            "polygon": [
+                {
+                    "x": 0.82,
+                    "y": 0.62
+                },
+                {
+                    "x": 1.0,
+                    "y": 0.62
+                },
+                {
+                    "x": 1.0,
+                    "y": 0.8
+                },
+                {
+                    "x": 0.78,
+                    "y": 0.8
+                }
+            ]
+        },
+        {
+            "name": "lane_center",
+            "type": "lane",
+            "polygon": [
+                {
+                    "x": 0.42,
+                    "y": 0.84
+                },
+                {
+                    "x": 0.58,
+                    "y": 0.84
+                },
+                {
+                    "x": 0.55,
+                    "y": 0.98
+                },
+                {
+                    "x": 0.45,
+                    "y": 0.98
+                }
+            ]
+        },
+        {
+            "name": "current_location",
+            "type": "self",
+            "coord": {
+                "x": 0.5,
+                "y": 0.92
+            }
+        }
+    ],
+    "semantic_relationships": [
+        {
+            "subject": "vehicle_ahead_center",
+            "relation": "is_on",
+            "object": "road_main"
+        },
+        {
+            "subject": "vehicle_front_left",
+            "relation": "is_on",
+            "object": "road_main"
+        },
+        {
+            "subject": "vehicle_front_right",
+            "relation": "is_on",
+            "object": "road_main"
+        },
+        {
+            "subject": "vehicle_left_far",
+            "relation": "is_on",
+            "object": "road_main"
+        },
+        {
+            "subject": "vehicle_right_far",
+            "relation": "is_on",
+            "object": "road_main"
+        },
+        {
+            "subject": "road_marking_centerline",
+            "relation": "lies_within",
+            "object": "lane_center"
+        },
+        {
+            "subject": "traffic_light_left",
+            "relation": "controls",
+            "object": "lane_center"
+        },
+        {
+            "subject": "traffic_light_right",
+            "relation": "controls",
+            "object": "lane_center"
+        },
+        {
+            "subject": "trees_left",
+            "relation": "adjacent_to",
+            "object": "sidewalk_left"
+        },
+        {
+            "subject": "trees_right",
+            "relation": "adjacent_to",
+            "object": "sidewalk_right"
+        },
+        {
+            "subject": "current_location",
+            "relation": "is_in",
+            "object": "lane_center"
+        },
+        {
+            "subject": "current_location",
+            "relation": "near",
+            "object": "road_main"
+        }
+    ],
+    "current_location": "current_location",
+    "plans": [
+        {
+            "name": "continue_forward_in_lane",
+            "target_region": "lane_center",
+            "depends_on": []
+        }
+    ]
+}

@@ -1,0 +1,250 @@
+{
+    "objects": [
+        {
+            "name": "white_sports_car",
+            "coords": [
+                49.5,
+                55.0
+            ]
+        },
+        {
+            "name": "silver_suv",
+            "coords": [
+                55.0,
+                75.0
+            ]
+        },
+        {
+            "name": "silver_sedan_1",
+            "coords": [
+                58.0,
+                80.0
+            ]
+        },
+        {
+            "name": "silver_sedan_2",
+            "coords": [
+                59.0,
+                85.0
+            ]
+        },
+        {
+            "name": "office_suites_sign",
+            "coords": [
+                45.0,
+                37.0
+            ]
+        },
+        {
+            "name": "street_light_pole_right",
+            "coords": [
+                57.0,
+                70.0
+            ]
+        },
+        {
+            "name": "street_light_pole_left",
+            "coords": [
+                45.0,
+                40.0
+            ]
+        },
+        {
+            "name": "green_bike_lane_marking_1",
+            "coords": [
+                61.0,
+                70.0
+            ]
+        },
+        {
+            "name": "green_bike_lane_marking_2",
+            "coords": [
+                60.0,
+                65.0
+            ]
+        },
+        {
+            "name": "oncoming_white_car",
+            "coords": [
+                48.0,
+                42.0
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "driving_lane",
+            "coords": [
+                50.0,
+                50.0
+            ]
+        },
+        {
+            "name": "oncoming_lane",
+            "coords": [
+                45.0,
+                45.0
+            ]
+        },
+        {
+            "name": "right_side_parking_area",
+            "coords": [
+                60.0,
+                80.0
+            ]
+        },
+        {
+            "name": "sidewalk_right",
+            "coords": [
+                60.0,
+                75.0
+            ]
+        },
+        {
+            "name": "building_complex_right",
+            "coords": [
+                65.0,
+                85.0
+            ]
+        },
+        {
+            "name": "trees_right_side",
+            "coords": [
+                55.0,
+                80.0
+            ]
+        },
+        {
+            "name": "building_complex_left",
+            "coords": [
+                45.0,
+                20.0
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "white_sports_car",
+            "oncoming_white_car"
+        ],
+        [
+            "silver_suv",
+            "silver_sedan_1"
+        ],
+        [
+            "silver_sedan_1",
+            "silver_sedan_2"
+        ]
+    ],
+    "region_connections": [
+        [
+            "driving_lane",
+            "oncoming_lane"
+        ],
+        [
+            "driving_lane",
+            "sidewalk_right"
+        ],
+        [
+            "sidewalk_right",
+            "right_side_parking_area"
+        ]
+    ],
+    "extra_safe_objects": [
+        {
+            "name": "silver_suv",
+            "type": "vehicle",
+            "coords": [
+                55.0,
+                75.0
+            ]
+        },
+        {
+            "name": "silver_sedan_1",
+            "type": "vehicle",
+            "coords": [
+                58.0,
+                80.0
+            ]
+        },
+        {
+            "name": "silver_sedan_2",
+            "type": "vehicle",
+            "coords": [
+                59.0,
+                85.0
+            ]
+        },
+        {
+            "name": "office_suites_sign",
+            "type": "sign",
+            "coords": [
+                45.0,
+                37.0
+            ]
+        },
+        {
+            "name": "street_light_pole_right",
+            "type": "pole",
+            "coords": [
+                57.0,
+                70.0
+            ]
+        }
+    ],
+    "extra_unsafe_objects": [
+        {
+            "name": "white_sports_car",
+            "type": "vehicle",
+            "coords": [
+                49.5,
+                55.0
+            ]
+        },
+        {
+            "name": "oncoming_white_car",
+            "type": "vehicle",
+            "coords": [
+                48.0,
+                42.0
+            ]
+        }
+    ],
+    "extra_safe_regions": [
+        {
+            "name": "sidewalk_right",
+            "type": "sidewalk",
+            "coords": [
+                60.0,
+                75.0
+            ]
+        },
+        {
+            "name": "building_complex_right",
+            "type": "building",
+            "coords": [
+                65.0,
+                85.0
+            ]
+        },
+        {
+            "name": "trees_right_side",
+            "type": "vegetation",
+            "coords": [
+                55.0,
+                80.0
+            ]
+        }
+    ],
+    "extra_unsafe_regions": [
+        {
+            "name": "oncoming_lane",
+            "type": "road",
+            "coords": [
+                45.0,
+                45.0
+            ]
+        }
+    ],
+    "current_location": "driving_lane"
+}

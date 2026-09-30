@@ -1,0 +1,101 @@
+{
+    "objects": [
+        {
+            "name": "spatula",
+            "coords": [
+                174,
+                123
+            ]
+        },
+        {
+            "name": "plate",
+            "coords": [
+                207,
+                211
+            ]
+        },
+        {
+            "name": "pot",
+            "coords": [
+                333,
+                354
+            ]
+        },
+        {
+            "name": "frying_pan",
+            "coords": [
+                430,
+                408
+            ]
+        },
+        {
+            "name": "burner_top_left",
+            "coords": [
+                279,
+                329
+            ]
+        },
+        {
+            "name": "burner_top_right",
+            "coords": [
+                281,
+                423
+            ]
+        },
+        {
+            "name": "burner_bottom_left",
+            "coords": [
+                358,
+                330
+            ]
+        },
+        {
+            "name": "burner_bottom_right",
+            "coords": [
+                358,
+                421
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "black_counter",
+            "coords": [
+                350,
+                150
+            ]
+        },
+        {
+            "name": "stove_top",
+            "coords": [
+                390,
+                390
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "spatula",
+            "plate"
+        ],
+        [
+            "pot",
+            "stove_top"
+        ],
+        [
+            "frying_pan",
+            "stove_top"
+        ]
+    ],
+    "region_connections": [
+        [
+            "black_counter",
+            "stove_top"
+        ]
+    ],
+    "extra_safe_objects": [],
+    "extra_unsafe_objects": [],
+    "extra_safe_regions": [],
+    "extra_unsafe_regions": [],
+    "current_location": "black_counter"
+}

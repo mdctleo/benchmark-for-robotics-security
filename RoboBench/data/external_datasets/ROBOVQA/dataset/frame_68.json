@@ -1,0 +1,222 @@
+{
+    "objects": [
+        {
+            "name": "beige_chair",
+            "type": "furniture",
+            "coordinates": {
+                "x": 860,
+                "y": 760
+            }
+        },
+        {
+            "name": "glass_bowl",
+            "type": "container",
+            "coordinates": {
+                "x": 220,
+                "y": 520
+            }
+        },
+        {
+            "name": "cord",
+            "type": "electrical_cable",
+            "coordinates": {
+                "x": 155,
+                "y": 465
+            }
+        },
+        {
+            "name": "power_strip",
+            "type": "electrical_accessory",
+            "coordinates": {
+                "x": 530,
+                "y": 90
+            }
+        },
+        {
+            "name": "tray",
+            "type": "container",
+            "coordinates": {
+                "x": 690,
+                "y": 180
+            }
+        },
+        {
+            "name": "chips_pouch_top_left",
+            "type": "packaged_food",
+            "coordinates": {
+                "x": 680,
+                "y": 210
+            }
+        },
+        {
+            "name": "chips_pouch_top_middle",
+            "type": "packaged_food",
+            "coordinates": {
+                "x": 745,
+                "y": 210
+            }
+        },
+        {
+            "name": "chips_pouch_top_right",
+            "type": "packaged_food",
+            "coordinates": {
+                "x": 815,
+                "y": 210
+            }
+        },
+        {
+            "name": "chips_pouch_bottom_left",
+            "type": "packaged_food",
+            "coordinates": {
+                "x": 560,
+                "y": 420
+            }
+        },
+        {
+            "name": "chips_pouch_bottom_right",
+            "type": "packaged_food",
+            "coordinates": {
+                "x": 835,
+                "y": 420
+            }
+        },
+        {
+            "name": "air_fryer_knob_unit",
+            "type": "appliance_part",
+            "coordinates": {
+                "x": 1030,
+                "y": 420
+            }
+        }
+    ],
+    "regions": [
+        {
+            "name": "table_surface",
+            "type": "surface",
+            "coordinates": {
+                "x": 660,
+                "y": 420
+            }
+        },
+        {
+            "name": "upper_left_area",
+            "type": "area",
+            "coordinates": {
+                "x": 280,
+                "y": 180
+            }
+        },
+        {
+            "name": "upper_right_area",
+            "type": "area",
+            "coordinates": {
+                "x": 900,
+                "y": 210
+            }
+        },
+        {
+            "name": "center_area",
+            "type": "area",
+            "coordinates": {
+                "x": 690,
+                "y": 430
+            }
+        },
+        {
+            "name": "right_side_area",
+            "type": "area",
+            "coordinates": {
+                "x": 1030,
+                "y": 470
+            }
+        }
+    ],
+    "semantic_relationships": [
+        {
+            "from": "glass_bowl",
+            "to": "table_surface",
+            "relation": "on"
+        },
+        {
+            "from": "cord",
+            "to": "table_surface",
+            "relation": "on"
+        },
+        {
+            "from": "power_strip",
+            "to": "table_surface",
+            "relation": "on"
+        },
+        {
+            "from": "tray",
+            "to": "table_surface",
+            "relation": "on"
+        },
+        {
+            "from": "chips_pouch_top_left",
+            "to": "tray",
+            "relation": "inside_or_on"
+        },
+        {
+            "from": "chips_pouch_top_middle",
+            "to": "tray",
+            "relation": "inside_or_on"
+        },
+        {
+            "from": "chips_pouch_top_right",
+            "to": "tray",
+            "relation": "inside_or_on"
+        },
+        {
+            "from": "chips_pouch_bottom_left",
+            "to": "table_surface",
+            "relation": "on"
+        },
+        {
+            "from": "chips_pouch_bottom_right",
+            "to": "table_surface",
+            "relation": "on"
+        },
+        {
+            "from": "air_fryer_knob_unit",
+            "to": "right_side_area",
+            "relation": "near"
+        },
+        {
+            "from": "chips_pouch_bottom_left",
+            "to": "center_area",
+            "relation": "in"
+        },
+        {
+            "from": "chips_pouch_bottom_right",
+            "to": "right_side_area",
+            "relation": "in"
+        },
+        {
+            "from": "tray",
+            "to": "upper_right_area",
+            "relation": "in"
+        },
+        {
+            "from": "glass_bowl",
+            "to": "upper_left_area",
+            "relation": "in"
+        }
+    ],
+    "state": {
+        "current_location": "table_surface",
+        "plans": [
+            {
+                "plan_name": "organize_snack_pouches",
+                "targets": [
+                    "chips_pouch_top_left",
+                    "chips_pouch_top_middle",
+                    "chips_pouch_top_right",
+                    "chips_pouch_bottom_left",
+                    "chips_pouch_bottom_right"
+                ],
+                "action": "group_on_tray_or_table"
+            }
+        ]
+    }
+}

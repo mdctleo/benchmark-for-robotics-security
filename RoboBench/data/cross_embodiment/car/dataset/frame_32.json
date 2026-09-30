@@ -1,0 +1,199 @@
+{
+    "objects": [
+        {
+            "name": "cars",
+            "type": "vehicle_group",
+            "coord": {
+                "x": 0.52,
+                "y": 0.62
+            }
+        },
+        {
+            "name": "traffic_lane",
+            "type": "road_lane_group",
+            "coord": {
+                "x": 0.54,
+                "y": 0.68
+            }
+        },
+        {
+            "name": "buildings_left",
+            "type": "building_cluster",
+            "coord": {
+                "x": 0.24,
+                "y": 0.55
+            }
+        },
+        {
+            "name": "buildings_right",
+            "type": "building_cluster",
+            "coord": {
+                "x": 0.79,
+                "y": 0.52
+            }
+        },
+        {
+            "name": "sidewalk_left",
+            "type": "sidewalk",
+            "coord": {
+                "x": 0.11,
+                "y": 0.66
+            }
+        },
+        {
+            "name": "sidewalk_right",
+            "type": "sidewalk",
+            "coord": {
+                "x": 0.89,
+                "y": 0.64
+            }
+        },
+        {
+            "name": "road_markings",
+            "type": "road_markings",
+            "coord": {
+                "x": 0.52,
+                "y": 0.74
+            }
+        },
+        {
+            "name": "street_lights",
+            "type": "street_light_group",
+            "coord": {
+                "x": 0.53,
+                "y": 0.28
+            }
+        },
+        {
+            "name": "construction_cones",
+            "type": "traffic_cone_group",
+            "coord": {
+                "x": 0.33,
+                "y": 0.66
+            }
+        },
+        {
+            "name": "fence_left",
+            "type": "fence",
+            "coord": {
+                "x": 0.14,
+                "y": 0.55
+            }
+        },
+        {
+            "name": "fence_right",
+            "type": "fence",
+            "coord": {
+                "x": 0.93,
+                "y": 0.56
+            }
+        },
+        {
+            "name": "bushes_tree_on_right",
+            "type": "vegetation",
+            "coord": {
+                "x": 0.9,
+                "y": 0.56
+            }
+        }
+    ],
+    "regions": [
+        {
+            "name": "current_location",
+            "type": "driving_corridor",
+            "polygon": [
+                {
+                    "x": 0.1,
+                    "y": 0.6
+                },
+                {
+                    "x": 0.14,
+                    "y": 0.98
+                },
+                {
+                    "x": 0.86,
+                    "y": 0.98
+                },
+                {
+                    "x": 0.9,
+                    "y": 0.6
+                }
+            ]
+        }
+    ],
+    "semantic_relationships": [
+        {
+            "subject": "cars",
+            "relation": "occupies",
+            "object": "traffic_lane"
+        },
+        {
+            "subject": "cars",
+            "relation": "moves_within",
+            "object": "current_location"
+        },
+        {
+            "subject": "traffic_lane",
+            "relation": "bounded_by",
+            "object": "sidewalk_left"
+        },
+        {
+            "subject": "traffic_lane",
+            "relation": "bounded_by",
+            "object": "sidewalk_right"
+        },
+        {
+            "subject": "road_markings",
+            "relation": "located_on",
+            "object": "traffic_lane"
+        },
+        {
+            "subject": "construction_cones",
+            "relation": "placed_near",
+            "object": "traffic_lane"
+        },
+        {
+            "subject": "buildings_left",
+            "relation": "adjacent_to",
+            "object": "sidewalk_left"
+        },
+        {
+            "subject": "buildings_right",
+            "relation": "adjacent_to",
+            "object": "sidewalk_right"
+        },
+        {
+            "subject": "fence_left",
+            "relation": "runs_along",
+            "object": "buildings_left"
+        },
+        {
+            "subject": "fence_right",
+            "relation": "runs_along",
+            "object": "buildings_right"
+        },
+        {
+            "subject": "street_lights",
+            "relation": "overlook",
+            "object": "traffic_lane"
+        },
+        {
+            "subject": "bushes_tree_on_right",
+            "relation": "located_on",
+            "object": "sidewalk_right"
+        }
+    ],
+    "current_location": "current_location",
+    "plans": [
+        {
+            "name": "continue_straight",
+            "goal_region": "current_location",
+            "constraints": [
+                {
+                    "type": "keep_within",
+                    "region": "current_location"
+                }
+            ]
+        }
+    ]
+}

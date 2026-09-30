@@ -1,0 +1,158 @@
+{
+    "objects": [
+        {
+            "name": "robotic_arm",
+            "coords": [
+                5.0,
+                3.0
+            ]
+        },
+        {
+            "name": "microwave",
+            "coords": [
+                2.0,
+                5.0
+            ]
+        },
+        {
+            "name": "red_bowl",
+            "coords": [
+                2.0,
+                2.0
+            ]
+        },
+        {
+            "name": "striped_fabric",
+            "coords": [
+                8.0,
+                3.0
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "ground",
+            "coords": [
+                5.0,
+                0.0
+            ]
+        },
+        {
+            "name": "table",
+            "coords": [
+                2.0,
+                3.0
+            ]
+        },
+        {
+            "name": "hallway_doorway",
+            "coords": [
+                5.0,
+                7.0
+            ]
+        },
+        {
+            "name": "window",
+            "coords": [
+                7.0,
+                8.0
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "microwave",
+            "table"
+        ],
+        [
+            "red_bowl",
+            "table"
+        ],
+        [
+            "robotic_arm",
+            "ground"
+        ]
+    ],
+    "region_connections": [
+        [
+            "ground",
+            "table"
+        ],
+        [
+            "ground",
+            "hallway_doorway"
+        ]
+    ],
+    "extra_safe_objects": [
+        {
+            "name": "microwave",
+            "type": "appliance",
+            "coords": [
+                2.0,
+                5.0
+            ]
+        },
+        {
+            "name": "red_bowl",
+            "type": "container",
+            "coords": [
+                2.0,
+                2.0
+            ]
+        },
+        {
+            "name": "striped_fabric",
+            "type": "fabric",
+            "coords": [
+                8.0,
+                3.0
+            ]
+        }
+    ],
+    "extra_unsafe_objects": [
+        {
+            "name": "robotic_arm",
+            "type": "robot",
+            "coords": [
+                5.0,
+                3.0
+            ]
+        }
+    ],
+    "extra_safe_regions": [
+        {
+            "name": "ground",
+            "type": "floor",
+            "coords": [
+                5.0,
+                0.0
+            ]
+        },
+        {
+            "name": "table",
+            "type": "furniture",
+            "coords": [
+                2.0,
+                3.0
+            ]
+        },
+        {
+            "name": "hallway_doorway",
+            "type": "opening",
+            "coords": [
+                5.0,
+                7.0
+            ]
+        },
+        {
+            "name": "window",
+            "type": "opening",
+            "coords": [
+                7.0,
+                8.0
+            ]
+        }
+    ],
+    "extra_unsafe_regions": [],
+    "current_location": "ground"
+}

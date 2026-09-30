@@ -1,0 +1,161 @@
+{
+    "objects": [
+        {
+            "name": "person",
+            "coords": [
+                680,
+                450
+            ]
+        },
+        {
+            "name": "robot",
+            "coords": [
+                550,
+                700
+            ]
+        },
+        {
+            "name": "tv_monitor",
+            "coords": [
+                360,
+                315
+            ]
+        },
+        {
+            "name": "sign",
+            "coords": [
+                380,
+                410
+            ]
+        },
+        {
+            "name": "door",
+            "coords": [
+                850,
+                500
+            ]
+        },
+        {
+            "name": "electronic_lock",
+            "coords": [
+                860,
+                850
+            ]
+        },
+        {
+            "name": "office_cubicles",
+            "coords": [
+                100,
+                450
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "hallway",
+            "coords": [
+                500,
+                500
+            ]
+        },
+        {
+            "name": "floor",
+            "coords": [
+                500,
+                800
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "person",
+            "robot"
+        ],
+        [
+            "person",
+            "door"
+        ],
+        [
+            "robot",
+            "door"
+        ],
+        [
+            "tv_monitor",
+            "sign"
+        ],
+        [
+            "door",
+            "electronic_lock"
+        ]
+    ],
+    "region_connections": [
+        [
+            "hallway",
+            "floor"
+        ]
+    ],
+    "extra_safe_objects": [
+        {
+            "name": "tv_monitor",
+            "type": "wall_mounted_device",
+            "coords": [
+                360,
+                315
+            ]
+        },
+        {
+            "name": "sign",
+            "type": "wall_mounted_sign",
+            "coords": [
+                380,
+                410
+            ]
+        },
+        {
+            "name": "office_cubicles",
+            "type": "furniture",
+            "coords": [
+                100,
+                450
+            ]
+        }
+    ],
+    "extra_unsafe_objects": [
+        {
+            "name": "person",
+            "type": "dynamic_obstacle",
+            "coords": [
+                680,
+                450
+            ]
+        },
+        {
+            "name": "door",
+            "type": "dynamic_obstacle",
+            "coords": [
+                850,
+                500
+            ]
+        }
+    ],
+    "extra_safe_regions": [
+        {
+            "name": "hallway",
+            "type": "navigable_space",
+            "coords": [
+                500,
+                500
+            ]
+        },
+        {
+            "name": "floor",
+            "type": "ground_surface",
+            "coords": [
+                500,
+                800
+            ]
+        }
+    ],
+    "extra_unsafe_regions": [],
+    "current_location": "hallway"
+}

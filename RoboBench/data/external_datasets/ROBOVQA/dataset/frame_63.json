@@ -1,0 +1,286 @@
+{
+    "objects": [
+        {
+            "name": "table",
+            "type": "furniture",
+            "coordinates": [
+                {
+                    "x": 0.52,
+                    "y": 0.68
+                }
+            ]
+        },
+        {
+            "name": "cups",
+            "type": "container",
+            "coordinates": [
+                {
+                    "x": 0.09,
+                    "y": 0.68
+                }
+            ]
+        },
+        {
+            "name": "tray_bags",
+            "type": "container",
+            "coordinates": [
+                {
+                    "x": 0.37,
+                    "y": 0.33
+                }
+            ]
+        },
+        {
+            "name": "orange_fruits",
+            "type": "food",
+            "coordinates": [
+                {
+                    "x": 0.56,
+                    "y": 0.3
+                }
+            ]
+        },
+        {
+            "name": "robot_device",
+            "type": "robot",
+            "coordinates": [
+                {
+                    "x": 0.62,
+                    "y": 0.46
+                }
+            ]
+        },
+        {
+            "name": "smartphone",
+            "type": "electronics",
+            "coordinates": [
+                {
+                    "x": 0.77,
+                    "y": 0.58
+                }
+            ]
+        },
+        {
+            "name": "paper_bag_open",
+            "type": "container",
+            "coordinates": [
+                {
+                    "x": 0.53,
+                    "y": 0.53
+                }
+            ]
+        },
+        {
+            "name": "plastic_bowl_white",
+            "type": "container",
+            "coordinates": [
+                {
+                    "x": 0.48,
+                    "y": 0.55
+                }
+            ]
+        },
+        {
+            "name": "package_item_yellow",
+            "type": "product",
+            "coordinates": [
+                {
+                    "x": 0.46,
+                    "y": 0.55
+                }
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "table_top_region",
+            "type": "surface",
+            "coordinates": [
+                {
+                    "x": 0.5,
+                    "y": 0.7
+                }
+            ]
+        },
+        {
+            "name": "left_side_region",
+            "type": "area",
+            "coordinates": [
+                {
+                    "x": 0.2,
+                    "y": 0.62
+                }
+            ]
+        },
+        {
+            "name": "center_region",
+            "type": "area",
+            "coordinates": [
+                {
+                    "x": 0.5,
+                    "y": 0.55
+                }
+            ]
+        },
+        {
+            "name": "right_side_region",
+            "type": "area",
+            "coordinates": [
+                {
+                    "x": 0.8,
+                    "y": 0.58
+                }
+            ]
+        },
+        {
+            "name": "back_region",
+            "type": "area",
+            "coordinates": [
+                {
+                    "x": 0.48,
+                    "y": 0.28
+                }
+            ]
+        },
+        {
+            "name": "front_region",
+            "type": "area",
+            "coordinates": [
+                {
+                    "x": 0.52,
+                    "y": 0.86
+                }
+            ]
+        },
+        {
+            "name": "robot_area_region",
+            "type": "area",
+            "coordinates": [
+                {
+                    "x": 0.64,
+                    "y": 0.5
+                }
+            ]
+        }
+    ],
+    "semantic_relationships": [
+        {
+            "subject": "table",
+            "relation": "contains",
+            "object": "table_top_region"
+        },
+        {
+            "subject": "cups",
+            "relation": "is_on",
+            "object": "table_top_region"
+        },
+        {
+            "subject": "tray_bags",
+            "relation": "is_on",
+            "object": "table_top_region"
+        },
+        {
+            "subject": "orange_fruits",
+            "relation": "is_on",
+            "object": "table_top_region"
+        },
+        {
+            "subject": "robot_device",
+            "relation": "is_on",
+            "object": "table_top_region"
+        },
+        {
+            "subject": "smartphone",
+            "relation": "is_on",
+            "object": "table_top_region"
+        },
+        {
+            "subject": "paper_bag_open",
+            "relation": "is_on",
+            "object": "table_top_region"
+        },
+        {
+            "subject": "plastic_bowl_white",
+            "relation": "is_on",
+            "object": "table_top_region"
+        },
+        {
+            "subject": "package_item_yellow",
+            "relation": "is_near",
+            "object": "plastic_bowl_white"
+        },
+        {
+            "subject": "robot_device",
+            "relation": "near",
+            "object": "paper_bag_open"
+        },
+        {
+            "subject": "robot_device",
+            "relation": "near",
+            "object": "plastic_bowl_white"
+        },
+        {
+            "subject": "smartphone",
+            "relation": "is_near",
+            "object": "robot_device"
+        },
+        {
+            "subject": "cups",
+            "relation": "located_in",
+            "object": "left_side_region"
+        },
+        {
+            "subject": "tray_bags",
+            "relation": "located_in",
+            "object": "back_region"
+        },
+        {
+            "subject": "orange_fruits",
+            "relation": "located_in",
+            "object": "back_region"
+        },
+        {
+            "subject": "paper_bag_open",
+            "relation": "located_in",
+            "object": "center_region"
+        },
+        {
+            "subject": "plastic_bowl_white",
+            "relation": "located_in",
+            "object": "center_region"
+        },
+        {
+            "subject": "package_item_yellow",
+            "relation": "located_in",
+            "object": "center_region"
+        },
+        {
+            "subject": "robot_device",
+            "relation": "located_in",
+            "object": "robot_area_region"
+        },
+        {
+            "subject": "smartphone",
+            "relation": "located_in",
+            "object": "right_side_region"
+        }
+    ],
+    "current_location": {
+        "object": "robot_device",
+        "region": "robot_area_region"
+    },
+    "plans": [
+        {
+            "name": "approach_objects_near_robot",
+            "current_location": {
+                "object": "robot_device",
+                "region": "robot_area_region"
+            },
+            "targets": [
+                "paper_bag_open",
+                "plastic_bowl_white",
+                "smartphone"
+            ]
+        }
+    ]
+}

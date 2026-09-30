@@ -1,0 +1,199 @@
+{
+    "objects": [
+        {
+            "name": "cabinet_unit_1",
+            "type": "cabinet",
+            "center_topdown": [
+                120,
+                170
+            ]
+        },
+        {
+            "name": "cabinet_unit_2",
+            "type": "cabinet",
+            "center_topdown": [
+                310,
+                170
+            ]
+        },
+        {
+            "name": "papers_stack_1",
+            "type": "paper_stack",
+            "center_topdown": [
+                335,
+                270
+            ]
+        },
+        {
+            "name": "paper_sheets_1",
+            "type": "paper_sheets",
+            "center_topdown": [
+                365,
+                270
+            ]
+        },
+        {
+            "name": "white_device_1",
+            "type": "device",
+            "center_topdown": [
+                450,
+                250
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "floor_1",
+            "type": "floor",
+            "polygon_topdown": [
+                [
+                    0,
+                    0
+                ],
+                [
+                    700,
+                    0
+                ],
+                [
+                    700,
+                    500
+                ],
+                [
+                    0,
+                    500
+                ]
+            ]
+        },
+        {
+            "name": "front_area_left",
+            "type": "surface_region",
+            "polygon_topdown": [
+                [
+                    20,
+                    120
+                ],
+                [
+                    330,
+                    380
+                ]
+            ]
+        },
+        {
+            "name": "front_area_right",
+            "type": "surface_region",
+            "polygon_topdown": [
+                [
+                    250,
+                    120
+                ],
+                [
+                    680,
+                    380
+                ]
+            ]
+        },
+        {
+            "name": "cabinet_area_left",
+            "type": "enclosure_region",
+            "polygon_topdown": [
+                [
+                    40,
+                    70
+                ],
+                [
+                    280,
+                    330
+                ]
+            ]
+        },
+        {
+            "name": "cabinet_area_right",
+            "type": "enclosure_region",
+            "polygon_topdown": [
+                [
+                    240,
+                    70
+                ],
+                [
+                    520,
+                    330
+                ]
+            ]
+        }
+    ],
+    "current_location": {
+        "entity": "papers_stack_1",
+        "region": "front_area_right"
+    },
+    "semantic_relationships": [
+        {
+            "source": "cabinet_unit_1",
+            "target": "cabinet_unit_2",
+            "relation": "adjacent_to"
+        },
+        {
+            "source": "cabinet_unit_1",
+            "target": "front_area_left",
+            "relation": "occupies_region_of"
+        },
+        {
+            "source": "cabinet_unit_2",
+            "target": "front_area_right",
+            "relation": "occupies_region_of"
+        },
+        {
+            "source": "papers_stack_1",
+            "target": "cabinet_unit_2",
+            "relation": "in_front_of"
+        },
+        {
+            "source": "paper_sheets_1",
+            "target": "papers_stack_1",
+            "relation": "on_top_of"
+        },
+        {
+            "source": "white_device_1",
+            "target": "paper_sheets_1",
+            "relation": "contacts"
+        },
+        {
+            "source": "white_device_1",
+            "target": "cabinet_unit_2",
+            "relation": "adjacent_to"
+        },
+        {
+            "source": "cabinet_unit_1",
+            "target": "floor_1",
+            "relation": "supported_by"
+        },
+        {
+            "source": "cabinet_unit_2",
+            "target": "floor_1",
+            "relation": "supported_by"
+        },
+        {
+            "source": "papers_stack_1",
+            "target": "floor_1",
+            "relation": "on"
+        }
+    ],
+    "plans": [
+        {
+            "name": "inspect_cabinet_right",
+            "steps": [
+                {
+                    "action": "move_to_region",
+                    "parameters": {
+                        "region": "cabinet_area_right"
+                    }
+                },
+                {
+                    "action": "inspect_entity",
+                    "parameters": {
+                        "entity": "cabinet_unit_2"
+                    }
+                }
+            ]
+        }
+    ]
+}

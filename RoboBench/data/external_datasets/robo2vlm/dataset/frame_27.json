@@ -1,0 +1,126 @@
+{
+    "objects": [
+        {
+            "name": "robot_arm",
+            "coords": [
+                162,
+                290
+            ]
+        },
+        {
+            "name": "water_bottle",
+            "coords": [
+                431,
+                297
+            ]
+        },
+        {
+            "name": "white_bowl",
+            "coords": [
+                300,
+                213
+            ]
+        },
+        {
+            "name": "apple",
+            "coords": [
+                358,
+                417
+            ]
+        },
+        {
+            "name": "small_can",
+            "coords": [
+                425,
+                360
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "table_surface",
+            "coords": [
+                430,
+                310
+            ]
+        },
+        {
+            "name": "robot_base",
+            "coords": [
+                650,
+                460
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "robot_arm",
+            "small_can"
+        ],
+        [
+            "apple",
+            "table_surface"
+        ],
+        [
+            "water_bottle",
+            "table_surface"
+        ],
+        [
+            "white_bowl",
+            "table_surface"
+        ],
+        [
+            "small_can",
+            "table_surface"
+        ]
+    ],
+    "region_connections": [],
+    "extra_safe_objects": [
+        {
+            "name": "water_bottle",
+            "type": "bottle",
+            "coords": [
+                431,
+                297
+            ]
+        },
+        {
+            "name": "white_bowl",
+            "type": "bowl",
+            "coords": [
+                300,
+                213
+            ]
+        },
+        {
+            "name": "apple",
+            "type": "fruit",
+            "coords": [
+                358,
+                417
+            ]
+        }
+    ],
+    "extra_unsafe_objects": [
+        {
+            "name": "small_can",
+            "type": "can",
+            "coords": [
+                425,
+                360
+            ]
+        }
+    ],
+    "extra_safe_regions": [
+        {
+            "name": "table_surface",
+            "type": "surface",
+            "coords": [
+                430,
+                310
+            ]
+        }
+    ],
+    "extra_unsafe_regions": [],
+    "current_location": "table_surface"
+}

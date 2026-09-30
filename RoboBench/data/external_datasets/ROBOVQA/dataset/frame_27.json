@@ -1,0 +1,315 @@
+{
+    "regions": [
+        {
+            "name": "table_surface_1",
+            "type": "table_surface",
+            "coordinates": [
+                150,
+                200,
+                550,
+                650
+            ]
+        },
+        {
+            "name": "floor_region_1",
+            "type": "floor",
+            "coordinates": [
+                0,
+                650,
+                850,
+                960
+            ]
+        }
+    ],
+    "objects": [
+        {
+            "name": "table_1",
+            "type": "table",
+            "coordinates": [
+                120,
+                630,
+                620,
+                780
+            ]
+        },
+        {
+            "name": "drawer_opening_1",
+            "type": "open_storage_area",
+            "coordinates": [
+                90,
+                260,
+                420,
+                600
+            ]
+        },
+        {
+            "name": "white_bench_1",
+            "type": "furniture_panel",
+            "coordinates": [
+                0,
+                200,
+                850,
+                650
+            ]
+        },
+        {
+            "name": "box_container_1",
+            "type": "container",
+            "coordinates": [
+                280,
+                260,
+                470,
+                410
+            ]
+        },
+        {
+            "name": "bagged_item_1",
+            "type": "packaged_item",
+            "coordinates": [
+                320,
+                300,
+                390,
+                360
+            ]
+        },
+        {
+            "name": "bagged_item_2",
+            "type": "packaged_item",
+            "coordinates": [
+                360,
+                410,
+                430,
+                470
+            ]
+        },
+        {
+            "name": "box_container_2",
+            "type": "container",
+            "coordinates": [
+                410,
+                230,
+                650,
+                420
+            ]
+        },
+        {
+            "name": "snack_pack_1",
+            "type": "packaged_item",
+            "coordinates": [
+                610,
+                315,
+                690,
+                380
+            ]
+        },
+        {
+            "name": "snack_pack_2",
+            "type": "packaged_item",
+            "coordinates": [
+                540,
+                410,
+                620,
+                470
+            ]
+        },
+        {
+            "name": "black_crinkly_item_1",
+            "type": "packaged_item",
+            "coordinates": [
+                300,
+                430,
+                365,
+                520
+            ]
+        },
+        {
+            "name": "crinkly_item_2",
+            "type": "packaged_item",
+            "coordinates": [
+                430,
+                410,
+                510,
+                520
+            ]
+        },
+        {
+            "name": "box_open_left_1",
+            "type": "open_storage_area",
+            "coordinates": [
+                80,
+                240,
+                470,
+                560
+            ]
+        },
+        {
+            "name": "seated_fan_or_speaker_1",
+            "type": "appliance_or_fixture",
+            "coordinates": [
+                80,
+                430,
+                170,
+                640
+            ]
+        },
+        {
+            "name": "right_device_1",
+            "type": "appliance_or_electronics",
+            "coordinates": [
+                690,
+                230,
+                850,
+                520
+            ]
+        },
+        {
+            "name": "cable_1",
+            "type": "cable",
+            "coordinates": [
+                720,
+                480,
+                840,
+                640
+            ]
+        },
+        {
+            "name": "background_paper_or_pack_1",
+            "type": "paper_or_packaging",
+            "coordinates": [
+                520,
+                210,
+                740,
+                310
+            ]
+        }
+    ],
+    "relationships": [
+        {
+            "from": "drawer_opening_1",
+            "to": "table_surface_1",
+            "relation": "contains_on"
+        },
+        {
+            "from": "box_container_1",
+            "to": "drawer_opening_1",
+            "relation": "contains"
+        },
+        {
+            "from": "bagged_item_1",
+            "to": "box_container_1",
+            "relation": "inside"
+        },
+        {
+            "from": "bagged_item_2",
+            "to": "drawer_opening_1",
+            "relation": "on_or_inside"
+        },
+        {
+            "from": "box_container_2",
+            "to": "table_surface_1",
+            "relation": "sits_on"
+        },
+        {
+            "from": "snack_pack_1",
+            "to": "box_container_2",
+            "relation": "next_to"
+        },
+        {
+            "from": "snack_pack_2",
+            "to": "table_surface_1",
+            "relation": "on"
+        },
+        {
+            "from": "black_crinkly_item_1",
+            "to": "box_open_left_1",
+            "relation": "inside_or_near"
+        },
+        {
+            "from": "crinkly_item_2",
+            "to": "drawer_opening_1",
+            "relation": "inside_or_near"
+        },
+        {
+            "from": "seated_fan_or_speaker_1",
+            "to": "table_surface_1",
+            "relation": "on_side_of"
+        },
+        {
+            "from": "right_device_1",
+            "to": "table_surface_1",
+            "relation": "resting_on"
+        },
+        {
+            "from": "cable_1",
+            "to": "right_device_1",
+            "relation": "connected_to"
+        }
+    ],
+    "current_location": [
+        {
+            "object": "table_1",
+            "region": "table_surface_1"
+        },
+        {
+            "object": "drawer_opening_1",
+            "region": "table_surface_1"
+        },
+        {
+            "object": "white_bench_1",
+            "region": "table_surface_1"
+        },
+        {
+            "object": "box_container_1",
+            "region": "table_surface_1"
+        },
+        {
+            "object": "bagged_item_1",
+            "region": "table_surface_1"
+        },
+        {
+            "object": "bagged_item_2",
+            "region": "table_surface_1"
+        },
+        {
+            "object": "box_container_2",
+            "region": "table_surface_1"
+        },
+        {
+            "object": "snack_pack_1",
+            "region": "table_surface_1"
+        },
+        {
+            "object": "snack_pack_2",
+            "region": "table_surface_1"
+        },
+        {
+            "object": "black_crinkly_item_1",
+            "region": "table_surface_1"
+        },
+        {
+            "object": "crinkly_item_2",
+            "region": "table_surface_1"
+        },
+        {
+            "object": "box_open_left_1",
+            "region": "table_surface_1"
+        },
+        {
+            "object": "seated_fan_or_speaker_1",
+            "region": "table_surface_1"
+        },
+        {
+            "object": "right_device_1",
+            "region": "table_surface_1"
+        },
+        {
+            "object": "cable_1",
+            "region": "table_surface_1"
+        },
+        {
+            "object": "background_paper_or_pack_1",
+            "region": "table_surface_1"
+        }
+    ],
+    "plans": []
+}

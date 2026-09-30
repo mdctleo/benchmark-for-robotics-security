@@ -1,0 +1,169 @@
+{
+    "objects": [
+        {
+            "name": "robotic_arm",
+            "coords": [
+                350,
+                300
+            ]
+        },
+        {
+            "name": "gripper_left",
+            "coords": [
+                180,
+                200
+            ]
+        },
+        {
+            "name": "faucet_left",
+            "coords": [
+                200,
+                280
+            ]
+        },
+        {
+            "name": "gripper_right_closeup",
+            "coords": [
+                850,
+                850
+            ]
+        },
+        {
+            "name": "faucet_right",
+            "coords": [
+                700,
+                800
+            ]
+        },
+        {
+            "name": "blue_trash_bin",
+            "coords": [
+                550,
+                500
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "countertop",
+            "coords": [
+                500,
+                500
+            ]
+        },
+        {
+            "name": "sink_left",
+            "coords": [
+                220,
+                150
+            ]
+        },
+        {
+            "name": "sink_right",
+            "coords": [
+                650,
+                700
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "gripper_left",
+            "faucet_left"
+        ],
+        [
+            "gripper_right_closeup",
+            "faucet_right"
+        ]
+    ],
+    "region_connections": [
+        [
+            "sink_left",
+            "countertop"
+        ],
+        [
+            "sink_right",
+            "countertop"
+        ]
+    ],
+    "extra_safe_objects": [
+        {
+            "name": "faucet_left",
+            "type": "fixed_fixture",
+            "coords": [
+                200,
+                280
+            ]
+        },
+        {
+            "name": "faucet_right",
+            "type": "fixed_fixture",
+            "coords": [
+                700,
+                800
+            ]
+        },
+        {
+            "name": "blue_trash_bin",
+            "type": "container",
+            "coords": [
+                550,
+                500
+            ]
+        }
+    ],
+    "extra_unsafe_objects": [
+        {
+            "name": "robotic_arm",
+            "type": "robot",
+            "coords": [
+                350,
+                300
+            ]
+        },
+        {
+            "name": "gripper_left",
+            "type": "end_effector",
+            "coords": [
+                180,
+                200
+            ]
+        },
+        {
+            "name": "gripper_right_closeup",
+            "type": "end_effector",
+            "coords": [
+                850,
+                850
+            ]
+        }
+    ],
+    "extra_safe_regions": [
+        {
+            "name": "countertop",
+            "type": "surface",
+            "coords": [
+                500,
+                500
+            ]
+        },
+        {
+            "name": "sink_left",
+            "type": "basin",
+            "coords": [
+                220,
+                150
+            ]
+        },
+        {
+            "name": "sink_right",
+            "type": "basin",
+            "coords": [
+                650,
+                700
+            ]
+        }
+    ],
+    "extra_unsafe_regions": [],
+    "current_location": "countertop"
+}

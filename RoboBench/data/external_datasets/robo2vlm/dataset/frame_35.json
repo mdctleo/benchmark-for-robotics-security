@@ -1,0 +1,224 @@
+{
+    "objects": [
+        {
+            "name": "water_bottle",
+            "coords": [
+                30,
+                75
+            ]
+        },
+        {
+            "name": "aluminum_can",
+            "coords": [
+                45,
+                75
+            ]
+        },
+        {
+            "name": "white_bowl",
+            "coords": [
+                60,
+                70
+            ]
+        },
+        {
+            "name": "green_bag",
+            "coords": [
+                40,
+                65
+            ]
+        },
+        {
+            "name": "robot_arm",
+            "coords": [
+                80,
+                25
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "drawer_cabinet",
+            "coords": [
+                50,
+                40
+            ]
+        },
+        {
+            "name": "cabinet_top_surface",
+            "coords": [
+                50,
+                70
+            ]
+        },
+        {
+            "name": "drawer_1",
+            "coords": [
+                50,
+                55
+            ]
+        },
+        {
+            "name": "drawer_2",
+            "coords": [
+                50,
+                40
+            ]
+        },
+        {
+            "name": "drawer_3",
+            "coords": [
+                50,
+                25
+            ]
+        },
+        {
+            "name": "floor",
+            "coords": [
+                50,
+                10
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "water_bottle",
+            "on_top_of"
+        ],
+        [
+            "aluminum_can",
+            "on_top_of"
+        ],
+        [
+            "white_bowl",
+            "on_top_of"
+        ],
+        [
+            "green_bag",
+            "on_top_of"
+        ],
+        [
+            "water_bottle",
+            "cabinet_top_surface"
+        ],
+        [
+            "aluminum_can",
+            "cabinet_top_surface"
+        ],
+        [
+            "white_bowl",
+            "cabinet_top_surface"
+        ],
+        [
+            "green_bag",
+            "cabinet_top_surface"
+        ],
+        [
+            "robot_arm",
+            "interacting_with"
+        ],
+        [
+            "robot_arm",
+            "drawer_3"
+        ]
+    ],
+    "region_connections": [
+        [
+            "cabinet_top_surface",
+            "part_of"
+        ],
+        [
+            "cabinet_top_surface",
+            "drawer_cabinet"
+        ],
+        [
+            "drawer_1",
+            "part_of"
+        ],
+        [
+            "drawer_1",
+            "drawer_cabinet"
+        ],
+        [
+            "drawer_2",
+            "part_of"
+        ],
+        [
+            "drawer_2",
+            "drawer_cabinet"
+        ],
+        [
+            "drawer_3",
+            "part_of"
+        ],
+        [
+            "drawer_3",
+            "drawer_cabinet"
+        ]
+    ],
+    "extra_safe_objects": [
+        {
+            "name": "water_bottle",
+            "type": "container",
+            "coords": [
+                30,
+                75
+            ]
+        },
+        {
+            "name": "white_bowl",
+            "type": "container",
+            "coords": [
+                60,
+                70
+            ]
+        }
+    ],
+    "extra_unsafe_objects": [
+        {
+            "name": "robot_arm",
+            "type": "manipulator",
+            "coords": [
+                80,
+                25
+            ]
+        },
+        {
+            "name": "aluminum_can",
+            "type": "container",
+            "coords": [
+                45,
+                75
+            ]
+        }
+    ],
+    "extra_safe_regions": [
+        {
+            "name": "cabinet_top_surface",
+            "type": "surface",
+            "coords": [
+                50,
+                70
+            ]
+        },
+        {
+            "name": "floor",
+            "type": "surface",
+            "coords": [
+                50,
+                10
+            ]
+        }
+    ],
+    "extra_unsafe_regions": [
+        {
+            "name": "drawer_3",
+            "type": "drawer",
+            "coords": [
+                50,
+                25
+            ]
+        }
+    ],
+    "current_location": "drawer_cabinet"
+}

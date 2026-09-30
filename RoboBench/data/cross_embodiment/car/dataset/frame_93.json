@@ -1,0 +1,232 @@
+{
+    "objects": [
+        {
+            "name": "white suv",
+            "coords": [
+                560,
+                210
+            ]
+        },
+        {
+            "name": "dark car behind white suv",
+            "coords": [
+                500,
+                150
+            ]
+        },
+        {
+            "name": "black sports car right",
+            "coords": [
+                600,
+                900
+            ]
+        },
+        {
+            "name": "traffic light left",
+            "coords": [
+                350,
+                400
+            ]
+        },
+        {
+            "name": "traffic light right",
+            "coords": [
+                350,
+                850
+            ]
+        },
+        {
+            "name": "street sign",
+            "coords": [
+                300,
+                270
+            ]
+        },
+        {
+            "name": "oncoming car 1",
+            "coords": [
+                510,
+                630
+            ]
+        },
+        {
+            "name": "oncoming car 2",
+            "coords": [
+                520,
+                680
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "intersection",
+            "coords": [
+                500,
+                400
+            ]
+        },
+        {
+            "name": "street in front",
+            "coords": [
+                700,
+                500
+            ]
+        },
+        {
+            "name": "buildings left",
+            "coords": [
+                300,
+                200
+            ]
+        },
+        {
+            "name": "crosswalk",
+            "coords": [
+                500,
+                300
+            ]
+        },
+        {
+            "name": "sidewalk left",
+            "coords": [
+                500,
+                100
+            ]
+        },
+        {
+            "name": "waterfront right area",
+            "coords": [
+                500,
+                950
+            ]
+        },
+        {
+            "name": "oncoming traffic lane",
+            "coords": [
+                450,
+                600
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "white suv",
+            "is near"
+        ],
+        [
+            "white suv",
+            "is in front of"
+        ],
+        [
+            "dark car behind white suv",
+            "is near"
+        ],
+        [
+            "black sports car right",
+            "is near"
+        ],
+        [
+            "traffic light left",
+            "is near"
+        ],
+        [
+            "traffic light right",
+            "is near"
+        ],
+        [
+            "white suv",
+            "is next to"
+        ]
+    ],
+    "region_connections": [
+        [
+            "street in front",
+            "leads to"
+        ],
+        [
+            "crosswalk",
+            "is part of"
+        ],
+        [
+            "buildings left",
+            "is next to"
+        ],
+        [
+            "sidewalk left",
+            "is next to"
+        ],
+        [
+            "oncoming traffic lane",
+            "is opposite"
+        ],
+        [
+            "waterfront right area",
+            "is next to"
+        ]
+    ],
+    "extra_safe_objects": [
+        {
+            "name": "traffic light left",
+            "type": "green light",
+            "coords": [
+                350,
+                400
+            ]
+        },
+        {
+            "name": "traffic light right",
+            "type": "green light",
+            "coords": [
+                350,
+                850
+            ]
+        }
+    ],
+    "extra_unsafe_objects": [
+        {
+            "name": "black sports car right",
+            "type": "vehicle",
+            "coords": [
+                600,
+                900
+            ]
+        },
+        {
+            "name": "white suv",
+            "type": "vehicle",
+            "coords": [
+                560,
+                210
+            ]
+        }
+    ],
+    "extra_safe_regions": [
+        {
+            "name": "sidewalk left",
+            "type": "pedestrian area",
+            "coords": [
+                500,
+                100
+            ]
+        },
+        {
+            "name": "buildings left",
+            "type": "structure",
+            "coords": [
+                300,
+                200
+            ]
+        }
+    ],
+    "extra_unsafe_regions": [
+        {
+            "name": "intersection",
+            "type": "cross traffic area",
+            "coords": [
+                500,
+                400
+            ]
+        }
+    ],
+    "current_location": "street in front"
+}

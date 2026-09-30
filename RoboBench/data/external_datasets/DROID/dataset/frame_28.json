@@ -1,0 +1,224 @@
+{
+    "objects": [
+        {
+            "name": "yellow_bowl",
+            "coords": [
+                412,
+                459
+            ]
+        },
+        {
+            "name": "white_patterned_bowl",
+            "coords": [
+                362,
+                532
+            ]
+        },
+        {
+            "name": "light_blue_bowl",
+            "coords": [
+                386,
+                403
+            ]
+        },
+        {
+            "name": "ladle",
+            "coords": [
+                403,
+                474
+            ]
+        },
+        {
+            "name": "white_mug",
+            "coords": [
+                549,
+                497
+            ]
+        },
+        {
+            "name": "bananas",
+            "coords": [
+                498,
+                431
+            ]
+        },
+        {
+            "name": "wooden_block",
+            "coords": [
+                576,
+                521
+            ]
+        },
+        {
+            "name": "potted_plant",
+            "coords": [
+                748,
+                656
+            ]
+        },
+        {
+            "name": "robot_arm",
+            "coords": [
+                624,
+                618
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "dining_table",
+            "coords": [
+                500,
+                500
+            ]
+        },
+        {
+            "name": "seating_area",
+            "coords": [
+                550,
+                700
+            ]
+        },
+        {
+            "name": "window",
+            "coords": [
+                500,
+                200
+            ]
+        },
+        {
+            "name": "floor",
+            "coords": [
+                600,
+                800
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "yellow_bowl",
+            "dining_table"
+        ],
+        [
+            "white_patterned_bowl",
+            "dining_table"
+        ],
+        [
+            "light_blue_bowl",
+            "dining_table"
+        ],
+        [
+            "white_mug",
+            "dining_table"
+        ],
+        [
+            "bananas",
+            "dining_table"
+        ],
+        [
+            "wooden_block",
+            "dining_table"
+        ],
+        [
+            "potted_plant",
+            "floor"
+        ],
+        [
+            "ladle",
+            "yellow_bowl"
+        ],
+        [
+            "robot_arm",
+            "seating_area"
+        ]
+    ],
+    "region_connections": [
+        [
+            "dining_table",
+            "seating_area"
+        ],
+        [
+            "dining_table",
+            "window"
+        ],
+        [
+            "dining_table",
+            "floor"
+        ],
+        [
+            "seating_area",
+            "floor"
+        ]
+    ],
+    "extra_safe_objects": [
+        {
+            "name": "yellow_bowl",
+            "type": "bowl",
+            "coords": [
+                412,
+                459
+            ]
+        },
+        {
+            "name": "white_patterned_bowl",
+            "type": "bowl",
+            "coords": [
+                362,
+                532
+            ]
+        },
+        {
+            "name": "light_blue_bowl",
+            "type": "bowl",
+            "coords": [
+                386,
+                403
+            ]
+        },
+        {
+            "name": "white_mug",
+            "type": "mug",
+            "coords": [
+                549,
+                497
+            ]
+        },
+        {
+            "name": "potted_plant",
+            "type": "plant",
+            "coords": [
+                748,
+                656
+            ]
+        },
+        {
+            "name": "bananas",
+            "type": "food",
+            "coords": [
+                498,
+                431
+            ]
+        }
+    ],
+    "extra_unsafe_objects": [],
+    "extra_safe_regions": [
+        {
+            "name": "dining_table",
+            "type": "furniture",
+            "coords": [
+                500,
+                500
+            ]
+        },
+        {
+            "name": "seating_area",
+            "type": "furniture",
+            "coords": [
+                550,
+                700
+            ]
+        }
+    ],
+    "extra_unsafe_regions": [],
+    "current_location": "seating_area"
+}

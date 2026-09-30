@@ -1,0 +1,159 @@
+{
+    "objects": [
+        {
+            "name": "robot_arm",
+            "coords": [
+                450,
+                300
+            ]
+        },
+        {
+            "name": "stove",
+            "coords": [
+                420,
+                550
+            ]
+        },
+        {
+            "name": "pot_on_stove",
+            "coords": [
+                420,
+                510
+            ]
+        },
+        {
+            "name": "wooden_utensil_in_pot",
+            "coords": [
+                450,
+                470
+            ]
+        },
+        {
+            "name": "glass_lid",
+            "coords": [
+                700,
+                580
+            ]
+        },
+        {
+            "name": "small_jar_blue_cap",
+            "coords": [
+                650,
+                590
+            ]
+        },
+        {
+            "name": "white_bag",
+            "coords": [
+                550,
+                620
+            ]
+        },
+        {
+            "name": "oil_bottle_1",
+            "coords": [
+                400,
+                640
+            ]
+        },
+        {
+            "name": "oil_bottle_2",
+            "coords": [
+                400,
+                620
+            ]
+        },
+        {
+            "name": "pot_right",
+            "coords": [
+                550,
+                710
+            ]
+        },
+        {
+            "name": "wooden_utensil_in_pot_right",
+            "coords": [
+                580,
+                700
+            ]
+        },
+        {
+            "name": "standing_spatula",
+            "coords": [
+                500,
+                830
+            ]
+        },
+        {
+            "name": "can_blue_label",
+            "coords": [
+                600,
+                880
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "kitchen_counter",
+            "coords": [
+                650,
+                600
+            ]
+        },
+        {
+            "name": "robot_area",
+            "coords": [
+                500,
+                300
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "pot_on_stove",
+            "stove"
+        ],
+        [
+            "wooden_utensil_in_pot",
+            "pot_on_stove"
+        ],
+        [
+            "glass_lid",
+            "kitchen_counter"
+        ],
+        [
+            "small_jar_blue_cap",
+            "kitchen_counter"
+        ],
+        [
+            "white_bag",
+            "kitchen_counter"
+        ],
+        [
+            "oil_bottle_1",
+            "kitchen_counter"
+        ],
+        [
+            "oil_bottle_2",
+            "kitchen_counter"
+        ],
+        [
+            "standing_spatula",
+            "kitchen_counter"
+        ],
+        [
+            "can_blue_label",
+            "kitchen_counter"
+        ],
+        [
+            "wooden_utensil_in_pot_right",
+            "pot_right"
+        ]
+    ],
+    "region_connections": [],
+    "extra_safe_objects": [],
+    "extra_unsafe_objects": [],
+    "extra_safe_regions": [],
+    "extra_unsafe_regions": [],
+    "current_location": "kitchen_counter"
+}

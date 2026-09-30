@@ -1,0 +1,405 @@
+{
+    "objects": [
+        {
+            "name": "car_on_right_lane",
+            "type": "vehicle"
+        },
+        {
+            "name": "cars_in_distance",
+            "type": "vehicles"
+        },
+        {
+            "name": "stop_sign",
+            "type": "traffic_sign"
+        },
+        {
+            "name": "all_way_sign",
+            "type": "traffic_sign"
+        },
+        {
+            "name": "traffic_sign_post",
+            "type": "sign_post"
+        },
+        {
+            "name": "traffic_signal_support",
+            "type": "pole"
+        },
+        {
+            "name": "traffic_lights",
+            "type": "traffic_signal"
+        }
+    ],
+    "regions": [
+        {
+            "name": "roadway",
+            "type": "road"
+        },
+        {
+            "name": "crosswalk_zone",
+            "type": "crosswalk"
+        },
+        {
+            "name": "right_vehicle_lane",
+            "type": "lane"
+        },
+        {
+            "name": "left_vehicle_lane",
+            "type": "lane"
+        },
+        {
+            "name": "sidewalk_right",
+            "type": "sidewalk"
+        },
+        {
+            "name": "sidewalk_left",
+            "type": "sidewalk"
+        },
+        {
+            "name": "building_facade_right",
+            "type": "building"
+        },
+        {
+            "name": "building_facade_left",
+            "type": "building"
+        },
+        {
+            "name": "trees_left_row",
+            "type": "trees"
+        },
+        {
+            "name": "trees_right_row",
+            "type": "trees"
+        },
+        {
+            "name": "intersection_area",
+            "type": "intersection"
+        }
+    ],
+    "semantic_relationships": [
+        {
+            "subject": "stop_sign",
+            "relation": "located_at",
+            "object": "intersection_area"
+        },
+        {
+            "subject": "all_way_sign",
+            "relation": "located_near",
+            "object": "stop_sign"
+        },
+        {
+            "subject": "traffic_sign_post",
+            "relation": "supports",
+            "object": "stop_sign"
+        },
+        {
+            "subject": "traffic_signal_support",
+            "relation": "supports",
+            "object": "traffic_lights"
+        },
+        {
+            "subject": "roadway",
+            "relation": "contains",
+            "object": "crosswalk_zone"
+        },
+        {
+            "subject": "roadway",
+            "relation": "has_lane",
+            "object": "left_vehicle_lane"
+        },
+        {
+            "subject": "roadway",
+            "relation": "has_lane",
+            "object": "right_vehicle_lane"
+        },
+        {
+            "subject": "crosswalk_zone",
+            "relation": "connects",
+            "object": "sidewalk_left"
+        },
+        {
+            "subject": "crosswalk_zone",
+            "relation": "connects",
+            "object": "sidewalk_right"
+        },
+        {
+            "subject": "car_on_right_lane",
+            "relation": "on",
+            "object": "right_vehicle_lane"
+        },
+        {
+            "subject": "cars_in_distance",
+            "relation": "in",
+            "object": "left_vehicle_lane"
+        },
+        {
+            "subject": "building_facade_right",
+            "relation": "bordering",
+            "object": "sidewalk_right"
+        },
+        {
+            "subject": "building_facade_left",
+            "relation": "bordering",
+            "object": "sidewalk_left"
+        },
+        {
+            "subject": "trees_left_row",
+            "relation": "adjacent_to",
+            "object": "sidewalk_left"
+        },
+        {
+            "subject": "trees_right_row",
+            "relation": "adjacent_to",
+            "object": "sidewalk_right"
+        },
+        {
+            "subject": "intersection_area",
+            "relation": "includes",
+            "object": "crosswalk_zone"
+        }
+    ],
+    "coordinates_top_down": [
+        {
+            "name": "roadway",
+            "polygon": [
+                [
+                    0.05,
+                    0.55
+                ],
+                [
+                    0.95,
+                    0.55
+                ],
+                [
+                    0.95,
+                    0.95
+                ],
+                [
+                    0.05,
+                    0.95
+                ]
+            ]
+        },
+        {
+            "name": "intersection_area",
+            "polygon": [
+                [
+                    0.3,
+                    0.6
+                ],
+                [
+                    0.7,
+                    0.6
+                ],
+                [
+                    0.73,
+                    0.72
+                ],
+                [
+                    0.27,
+                    0.72
+                ]
+            ]
+        },
+        {
+            "name": "crosswalk_zone",
+            "polygon": [
+                [
+                    0.39,
+                    0.63
+                ],
+                [
+                    0.61,
+                    0.63
+                ],
+                [
+                    0.62,
+                    0.7
+                ],
+                [
+                    0.38,
+                    0.7
+                ]
+            ]
+        },
+        {
+            "name": "left_vehicle_lane",
+            "polygon": [
+                [
+                    0.05,
+                    0.6
+                ],
+                [
+                    0.45,
+                    0.6
+                ],
+                [
+                    0.45,
+                    0.95
+                ],
+                [
+                    0.05,
+                    0.95
+                ]
+            ]
+        },
+        {
+            "name": "right_vehicle_lane",
+            "polygon": [
+                [
+                    0.55,
+                    0.6
+                ],
+                [
+                    0.95,
+                    0.6
+                ],
+                [
+                    0.95,
+                    0.95
+                ],
+                [
+                    0.55,
+                    0.95
+                ]
+            ]
+        },
+        {
+            "name": "sidewalk_left",
+            "polygon": [
+                [
+                    0.0,
+                    0.55
+                ],
+                [
+                    0.05,
+                    0.55
+                ],
+                [
+                    0.05,
+                    0.95
+                ],
+                [
+                    0.0,
+                    0.95
+                ]
+            ]
+        },
+        {
+            "name": "sidewalk_right",
+            "polygon": [
+                [
+                    0.95,
+                    0.55
+                ],
+                [
+                    1.0,
+                    0.55
+                ],
+                [
+                    1.0,
+                    0.95
+                ],
+                [
+                    0.95,
+                    0.95
+                ]
+            ]
+        },
+        {
+            "name": "building_facade_right",
+            "polygon": [
+                [
+                    0.8,
+                    0.2
+                ],
+                [
+                    1.0,
+                    0.2
+                ],
+                [
+                    1.0,
+                    0.55
+                ],
+                [
+                    0.8,
+                    0.55
+                ]
+            ]
+        },
+        {
+            "name": "building_facade_left",
+            "polygon": [
+                [
+                    0.0,
+                    0.2
+                ],
+                [
+                    0.2,
+                    0.2
+                ],
+                [
+                    0.2,
+                    0.55
+                ],
+                [
+                    0.0,
+                    0.55
+                ]
+            ]
+        },
+        {
+            "name": "trees_left_row",
+            "polygon": [
+                [
+                    0.03,
+                    0.25
+                ],
+                [
+                    0.17,
+                    0.25
+                ],
+                [
+                    0.17,
+                    0.55
+                ],
+                [
+                    0.03,
+                    0.55
+                ]
+            ]
+        },
+        {
+            "name": "trees_right_row",
+            "polygon": [
+                [
+                    0.83,
+                    0.25
+                ],
+                [
+                    0.97,
+                    0.25
+                ],
+                [
+                    0.97,
+                    0.55
+                ],
+                [
+                    0.83,
+                    0.55
+                ]
+            ]
+        }
+    ],
+    "current_location": "intersection_area",
+    "plans": [
+        {
+            "plan_id": "proceed_straight",
+            "start_region": "intersection_area",
+            "target_region": "roadway",
+            "precondition_entities": [
+                "stop_sign",
+                "traffic_lights"
+            ]
+        }
+    ]
+}

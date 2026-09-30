@@ -1,0 +1,139 @@
+{
+    "objects": [
+        {
+            "name": "silver_car",
+            "coords": [
+                600,
+                100
+            ]
+        },
+        {
+            "name": "white_suv",
+            "coords": [
+                500,
+                600
+            ]
+        },
+        {
+            "name": "pedestrian",
+            "coords": [
+                500,
+                970
+            ]
+        },
+        {
+            "name": "school_crossing_sign",
+            "coords": [
+                420,
+                780
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "crosswalk",
+            "coords": [
+                700,
+                500
+            ]
+        },
+        {
+            "name": "road",
+            "coords": [
+                500,
+                500
+            ]
+        },
+        {
+            "name": "sidewalk_right",
+            "coords": [
+                600,
+                800
+            ]
+        },
+        {
+            "name": "sidewalk_left",
+            "coords": [
+                600,
+                200
+            ]
+        },
+        {
+            "name": "trees",
+            "coords": [
+                300,
+                500
+            ]
+        },
+        {
+            "name": "building_right",
+            "coords": [
+                450,
+                850
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "silver_car",
+            "road"
+        ],
+        [
+            "silver_car",
+            "crosswalk"
+        ],
+        [
+            "pedestrian",
+            "sidewalk_right"
+        ],
+        [
+            "school_crossing_sign",
+            "sidewalk_right"
+        ],
+        [
+            "white_suv",
+            "road"
+        ]
+    ],
+    "region_connections": [
+        [
+            "crosswalk",
+            "road"
+        ],
+        [
+            "road",
+            "sidewalk_right"
+        ],
+        [
+            "road",
+            "sidewalk_left"
+        ],
+        [
+            "sidewalk_right",
+            "building_right"
+        ]
+    ],
+    "extra_safe_objects": [],
+    "extra_unsafe_objects": [
+        {
+            "name": "silver_car",
+            "type": "vehicle",
+            "coords": [
+                600,
+                100
+            ]
+        }
+    ],
+    "extra_safe_regions": [],
+    "extra_unsafe_regions": [
+        {
+            "name": "crosswalk",
+            "type": "traffic_area",
+            "coords": [
+                700,
+                500
+            ]
+        }
+    ],
+    "current_location": "crosswalk"
+}

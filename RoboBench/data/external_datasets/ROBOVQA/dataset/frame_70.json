@@ -1,0 +1,636 @@
+{
+    "objects": [
+        {
+            "name": "table_top",
+            "type": "surface",
+            "bbox": [
+                0.08,
+                0.02,
+                0.92,
+                0.42
+            ],
+            "centroid": [
+                0.5,
+                0.22
+            ]
+        },
+        {
+            "name": "glass_jar_beads",
+            "type": "container",
+            "bbox": [
+                0.7,
+                0.1,
+                0.94,
+                0.35
+            ],
+            "centroid": [
+                0.83,
+                0.22
+            ]
+        },
+        {
+            "name": "glass_jar_beads_contents",
+            "type": "container_contents",
+            "bbox": [
+                0.74,
+                0.14,
+                0.91,
+                0.3
+            ],
+            "centroid": [
+                0.83,
+                0.22
+            ]
+        },
+        {
+            "name": "glass_jar_lid",
+            "type": "container_lid",
+            "bbox": [
+                0.86,
+                0.05,
+                0.94,
+                0.14
+            ],
+            "centroid": [
+                0.9,
+                0.1
+            ]
+        },
+        {
+            "name": "coffee_cups_pink",
+            "type": "cup",
+            "bbox": [
+                0.44,
+                0.12,
+                0.56,
+                0.27
+            ],
+            "centroid": [
+                0.5,
+                0.19
+            ]
+        },
+        {
+            "name": "cup_ceramic_blue_1",
+            "type": "cup",
+            "bbox": [
+                0.52,
+                0.05,
+                0.63,
+                0.2
+            ],
+            "centroid": [
+                0.58,
+                0.13
+            ]
+        },
+        {
+            "name": "cup_ceramic_green",
+            "type": "cup",
+            "bbox": [
+                0.34,
+                0.06,
+                0.47,
+                0.18
+            ],
+            "centroid": [
+                0.4,
+                0.12
+            ]
+        },
+        {
+            "name": "cup_ceramic_blue_2",
+            "type": "cup",
+            "bbox": [
+                0.3,
+                0.0,
+                0.36,
+                0.14
+            ],
+            "centroid": [
+                0.33,
+                0.07
+            ]
+        },
+        {
+            "name": "cup_orange_small",
+            "type": "cup",
+            "bbox": [
+                0.48,
+                0.14,
+                0.58,
+                0.26
+            ],
+            "centroid": [
+                0.53,
+                0.2
+            ]
+        },
+        {
+            "name": "cup_light_orange_tall",
+            "type": "cup",
+            "bbox": [
+                0.34,
+                0.14,
+                0.46,
+                0.31
+            ],
+            "centroid": [
+                0.4,
+                0.23
+            ]
+        },
+        {
+            "name": "cups_on_left_background",
+            "type": "cup_set",
+            "bbox": [
+                0.0,
+                0.22,
+                0.38,
+                0.45
+            ],
+            "centroid": [
+                0.2,
+                0.34
+            ]
+        },
+        {
+            "name": "cup_set_top_left_back",
+            "type": "cup_set",
+            "bbox": [
+                0.02,
+                0.02,
+                0.3,
+                0.22
+            ],
+            "centroid": [
+                0.16,
+                0.12
+            ]
+        },
+        {
+            "name": "glass_cylindrical_grabbers",
+            "type": "container_set",
+            "bbox": [
+                0.0,
+                0.0,
+                0.22,
+                0.25
+            ],
+            "centroid": [
+                0.12,
+                0.12
+            ]
+        },
+        {
+            "name": "tray_or_platform_wood_edge",
+            "type": "surface",
+            "bbox": [
+                0.04,
+                0.16,
+                0.3,
+                0.3
+            ],
+            "centroid": [
+                0.17,
+                0.23
+            ]
+        },
+        {
+            "name": "cardboard_piece",
+            "type": "paper_or_cardboard",
+            "bbox": [
+                0.06,
+                0.24,
+                0.18,
+                0.34
+            ],
+            "centroid": [
+                0.12,
+                0.29
+            ]
+        },
+        {
+            "name": "cut_brown_paper_bag",
+            "type": "paper_bag",
+            "bbox": [
+                0.15,
+                0.18,
+                0.28,
+                0.4
+            ],
+            "centroid": [
+                0.22,
+                0.29
+            ]
+        },
+        {
+            "name": "tall_black_vertical_leg",
+            "type": "furniture_support",
+            "bbox": [
+                0.45,
+                0.18,
+                0.52,
+                0.55
+            ],
+            "centroid": [
+                0.49,
+                0.36
+            ]
+        },
+        {
+            "name": "robot_vacuum",
+            "type": "robot_cleaner",
+            "bbox": [
+                0.27,
+                0.2,
+                0.63,
+                0.58
+            ],
+            "centroid": [
+                0.45,
+                0.4
+            ]
+        },
+        {
+            "name": "robot_hose_nozzle",
+            "type": "robot_attachment",
+            "bbox": [
+                0.33,
+                0.26,
+                0.54,
+                0.55
+            ],
+            "centroid": [
+                0.44,
+                0.41
+            ]
+        },
+        {
+            "name": "robot_brush_head",
+            "type": "robot_attachment",
+            "bbox": [
+                0.34,
+                0.52,
+                0.56,
+                0.66
+            ],
+            "centroid": [
+                0.45,
+                0.59
+            ]
+        },
+        {
+            "name": "towel_folded",
+            "type": "cloth",
+            "bbox": [
+                0.78,
+                0.05,
+                0.95,
+                0.18
+            ],
+            "centroid": [
+                0.86,
+                0.11
+            ]
+        },
+        {
+            "name": "wall_background_left",
+            "type": "background",
+            "bbox": [
+                0.0,
+                0.0,
+                0.2,
+                0.55
+            ],
+            "centroid": [
+                0.1,
+                0.28
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "region_table_top",
+            "type": "area",
+            "polygon": [
+                [
+                    0.05,
+                    0.02
+                ],
+                [
+                    0.95,
+                    0.02
+                ],
+                [
+                    0.92,
+                    0.42
+                ],
+                [
+                    0.08,
+                    0.42
+                ]
+            ],
+            "center": [
+                0.5,
+                0.22
+            ]
+        },
+        {
+            "name": "region_bottom_left_cup_area",
+            "type": "area",
+            "polygon": [
+                [
+                    0.0,
+                    0.26
+                ],
+                [
+                    0.42,
+                    0.26
+                ],
+                [
+                    0.4,
+                    0.49
+                ],
+                [
+                    0.0,
+                    0.49
+                ]
+            ],
+            "center": [
+                0.2,
+                0.36
+            ]
+        },
+        {
+            "name": "region_under_table_front",
+            "type": "area",
+            "polygon": [
+                [
+                    0.2,
+                    0.2
+                ],
+                [
+                    0.7,
+                    0.2
+                ],
+                [
+                    0.72,
+                    0.7
+                ],
+                [
+                    0.18,
+                    0.7
+                ]
+            ],
+            "center": [
+                0.46,
+                0.46
+            ]
+        },
+        {
+            "name": "region_left_background_cylinders",
+            "type": "area",
+            "polygon": [
+                [
+                    0.0,
+                    0.0
+                ],
+                [
+                    0.25,
+                    0.0
+                ],
+                [
+                    0.28,
+                    0.3
+                ],
+                [
+                    0.0,
+                    0.3
+                ]
+            ],
+            "center": [
+                0.12,
+                0.15
+            ]
+        },
+        {
+            "name": "region_right_top_storage",
+            "type": "area",
+            "polygon": [
+                [
+                    0.55,
+                    0.04
+                ],
+                [
+                    0.98,
+                    0.04
+                ],
+                [
+                    0.98,
+                    0.33
+                ],
+                [
+                    0.55,
+                    0.33
+                ]
+            ],
+            "center": [
+                0.78,
+                0.18
+            ]
+        },
+        {
+            "name": "region_robot_working_zone",
+            "type": "area",
+            "polygon": [
+                [
+                    0.22,
+                    0.28
+                ],
+                [
+                    0.62,
+                    0.28
+                ],
+                [
+                    0.64,
+                    0.66
+                ],
+                [
+                    0.2,
+                    0.66
+                ]
+            ],
+            "center": [
+                0.43,
+                0.47
+            ]
+        },
+        {
+            "name": "region_cardboard_and_paper_area",
+            "type": "area",
+            "polygon": [
+                [
+                    0.04,
+                    0.22
+                ],
+                [
+                    0.3,
+                    0.22
+                ],
+                [
+                    0.35,
+                    0.52
+                ],
+                [
+                    0.02,
+                    0.52
+                ]
+            ],
+            "center": [
+                0.17,
+                0.37
+            ]
+        }
+    ],
+    "semantic_relationships": [
+        {
+            "subject": "coffee_cups_pink",
+            "relation": "on",
+            "object": "table_top",
+            "confidence": 0.86
+        },
+        {
+            "subject": "cup_ceramic_blue_1",
+            "relation": "on",
+            "object": "table_top",
+            "confidence": 0.85
+        },
+        {
+            "subject": "cup_ceramic_green",
+            "relation": "on",
+            "object": "table_top",
+            "confidence": 0.84
+        },
+        {
+            "subject": "cup_ceramic_blue_2",
+            "relation": "on",
+            "object": "table_top",
+            "confidence": 0.8
+        },
+        {
+            "subject": "cup_orange_small",
+            "relation": "on",
+            "object": "table_top",
+            "confidence": 0.78
+        },
+        {
+            "subject": "cup_light_orange_tall",
+            "relation": "on",
+            "object": "table_top",
+            "confidence": 0.83
+        },
+        {
+            "subject": "cups_on_left_background",
+            "relation": "in",
+            "object": "region_bottom_left_cup_area",
+            "confidence": 0.82
+        },
+        {
+            "subject": "cup_set_top_left_back",
+            "relation": "in",
+            "object": "region_table_top",
+            "confidence": 0.76
+        },
+        {
+            "subject": "glass_cylindrical_grabbers",
+            "relation": "in",
+            "object": "region_left_background_cylinders",
+            "confidence": 0.79
+        },
+        {
+            "subject": "glass_jar_beads",
+            "relation": "on",
+            "object": "table_top",
+            "confidence": 0.87
+        },
+        {
+            "subject": "glass_jar_beads_contents",
+            "relation": "inside",
+            "object": "glass_jar_beads",
+            "confidence": 0.9
+        },
+        {
+            "subject": "glass_jar_lid",
+            "relation": "covers",
+            "object": "glass_jar_beads",
+            "confidence": 0.74
+        },
+        {
+            "subject": "towel_folded",
+            "relation": "on",
+            "object": "table_top",
+            "confidence": 0.72
+        },
+        {
+            "subject": "tray_or_platform_wood_edge",
+            "relation": "on",
+            "object": "table_top",
+            "confidence": 0.55
+        },
+        {
+            "subject": "cardboard_piece",
+            "relation": "on",
+            "object": "region_cardboard_and_paper_area",
+            "confidence": 0.7
+        },
+        {
+            "subject": "cut_brown_paper_bag",
+            "relation": "on",
+            "object": "region_cardboard_and_paper_area",
+            "confidence": 0.69
+        },
+        {
+            "subject": "tall_black_vertical_leg",
+            "relation": "supports",
+            "object": "table_top",
+            "confidence": 0.66
+        },
+        {
+            "subject": "robot_vacuum",
+            "relation": "in",
+            "object": "region_robot_working_zone",
+            "confidence": 0.88
+        },
+        {
+            "subject": "robot_hose_nozzle",
+            "relation": "part_of",
+            "object": "robot_vacuum",
+            "confidence": 0.86
+        },
+        {
+            "subject": "robot_brush_head",
+            "relation": "part_of",
+            "object": "robot_vacuum",
+            "confidence": 0.84
+        }
+    ],
+    "current_location": {
+        "robot_vacuum": "region_robot_working_zone"
+    },
+    "plans": [
+        {
+            "name": "clean_left_bottom_cup_area",
+            "steps": [
+                {
+                    "action": "move_to",
+                    "target_region": "region_bottom_left_cup_area"
+                },
+                {
+                    "action": "clean",
+                    "target_region": "region_bottom_left_cup_area"
+                }
+            ]
+        }
+    ]
+}

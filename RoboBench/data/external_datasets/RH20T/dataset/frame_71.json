@@ -1,0 +1,185 @@
+{
+    "regions": [
+        {
+            "name": "wood_table",
+            "type": "surface",
+            "polygon": [
+                [
+                    0.1,
+                    0.1
+                ],
+                [
+                    0.9,
+                    0.08
+                ],
+                [
+                    0.93,
+                    0.88
+                ],
+                [
+                    0.08,
+                    0.92
+                ]
+            ],
+            "center": [
+                0.5,
+                0.5
+            ]
+        },
+        {
+            "name": "left_edge_area",
+            "type": "free_space",
+            "center": [
+                0.18,
+                0.5
+            ],
+            "bounding_box": [
+                0.0,
+                0.12,
+                0.25,
+                0.88
+            ]
+        },
+        {
+            "name": "right_edge_area",
+            "type": "free_space",
+            "center": [
+                0.82,
+                0.5
+            ],
+            "bounding_box": [
+                0.75,
+                0.12,
+                1.0,
+                0.88
+            ]
+        }
+    ],
+    "objects": [
+        {
+            "name": "cardboard_pack",
+            "type": "package",
+            "position": [
+                0.38,
+                0.62
+            ],
+            "size": [
+                0.12,
+                0.1
+            ]
+        },
+        {
+            "name": "box",
+            "type": "container",
+            "position": [
+                0.52,
+                0.62
+            ],
+            "size": [
+                0.1,
+                0.1
+            ]
+        },
+        {
+            "name": "spray_bottle",
+            "type": "bottle",
+            "position": [
+                0.56,
+                0.4
+            ],
+            "size": [
+                0.08,
+                0.14
+            ]
+        },
+        {
+            "name": "yellow_cube",
+            "type": "block",
+            "position": [
+                0.55,
+                0.55
+            ],
+            "size": [
+                0.05,
+                0.05
+            ]
+        },
+        {
+            "name": "green_cube",
+            "type": "block",
+            "position": [
+                0.56,
+                0.57
+            ],
+            "size": [
+                0.06,
+                0.06
+            ]
+        }
+    ],
+    "current_location": {
+        "robot_base": {
+            "region": "wood_table",
+            "center": [
+                0.5,
+                0.5
+            ]
+        }
+    },
+    "connections": [
+        {
+            "from": "spray_bottle",
+            "to": "wood_table",
+            "relationship": "on"
+        },
+        {
+            "from": "yellow_cube",
+            "to": "wood_table",
+            "relationship": "on"
+        },
+        {
+            "from": "green_cube",
+            "to": "wood_table",
+            "relationship": "on"
+        },
+        {
+            "from": "cardboard_pack",
+            "to": "wood_table",
+            "relationship": "on"
+        },
+        {
+            "from": "box",
+            "to": "wood_table",
+            "relationship": "on"
+        }
+    ],
+    "plans": [
+        {
+            "name": "arrangement_under_inspection",
+            "actions": [
+                {
+                    "action": "inspect",
+                    "target": "spray_bottle",
+                    "place_in_region": "wood_table"
+                },
+                {
+                    "action": "inspect",
+                    "target": "cardboard_pack",
+                    "place_in_region": "wood_table"
+                },
+                {
+                    "action": "inspect",
+                    "target": "box",
+                    "place_in_region": "wood_table"
+                }
+            ]
+        }
+    ],
+    "semantic_hints": {
+        "all_objects_on": "wood_table",
+        "free_space_regions": [
+            "left_edge_area",
+            "right_edge_area"
+        ]
+    }
+}

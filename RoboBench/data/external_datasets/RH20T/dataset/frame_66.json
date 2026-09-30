@@ -1,0 +1,192 @@
+{
+    "objects": [
+        {
+            "name": "robot_arm",
+            "type": "robotic_arm",
+            "bounding_box_topdown": {
+                "x": 760,
+                "y": 90,
+                "w": 220,
+                "h": 260
+            }
+        },
+        {
+            "name": "blue_gloves",
+            "type": "tooling_or_item",
+            "bounding_box_topdown": {
+                "x": 590,
+                "y": 210,
+                "w": 240,
+                "h": 220
+            }
+        },
+        {
+            "name": "cardboard_box",
+            "type": "container",
+            "bounding_box_topdown": {
+                "x": 430,
+                "y": 110,
+                "w": 150,
+                "h": 110
+            }
+        },
+        {
+            "name": "monitor_stand",
+            "type": "support_structure",
+            "bounding_box_topdown": {
+                "x": 0,
+                "y": 0,
+                "w": 130,
+                "h": 140
+            }
+        },
+        {
+            "name": "keyboard",
+            "type": "input_device",
+            "bounding_box_topdown": {
+                "x": 90,
+                "y": 0,
+                "w": 190,
+                "h": 110
+            }
+        },
+        {
+            "name": "workstation_frame",
+            "type": "frame",
+            "bounding_box_topdown": {
+                "x": 0,
+                "y": 120,
+                "w": 1000,
+                "h": 20
+            }
+        }
+    ],
+    "regions": [
+        {
+            "name": "blue_work_mat",
+            "type": "work_surface",
+            "polygon_topdown": [
+                [
+                    220,
+                    170
+                ],
+                [
+                    930,
+                    160
+                ],
+                [
+                    960,
+                    520
+                ],
+                [
+                    250,
+                    540
+                ]
+            ]
+        },
+        {
+            "name": "cardboard_sheet_region",
+            "type": "object_surface",
+            "polygon_topdown": [
+                [
+                    340,
+                    210
+                ],
+                [
+                    650,
+                    220
+                ],
+                [
+                    660,
+                    370
+                ],
+                [
+                    345,
+                    365
+                ]
+            ]
+        },
+        {
+            "name": "thin_stray_stick_region",
+            "type": "small_item_area",
+            "polygon_topdown": [
+                [
+                    690,
+                    460
+                ],
+                [
+                    790,
+                    460
+                ],
+                [
+                    790,
+                    480
+                ],
+                [
+                    690,
+                    480
+                ]
+            ]
+        }
+    ],
+    "semantic_relationships": [
+        {
+            "relation": "robot_arm_is_over",
+            "from": "robot_arm",
+            "to": "cardboard_sheet_region"
+        },
+        {
+            "relation": "blue_gloves_is_adjacent_to",
+            "from": "blue_gloves",
+            "to": "cardboard_sheet_region"
+        },
+        {
+            "relation": "cardboard_sheet_is_on",
+            "from": "cardboard_sheet_region",
+            "to": "blue_work_mat"
+        },
+        {
+            "relation": "blue_gloves_is_on_or_over",
+            "from": "blue_gloves",
+            "to": "blue_work_mat"
+        },
+        {
+            "relation": "cardboard_box_is_on_or_near",
+            "from": "cardboard_box",
+            "to": "blue_work_mat"
+        },
+        {
+            "relation": "thin_stray_stick_is_on",
+            "from": "thin_stray_stick_region",
+            "to": "blue_work_mat"
+        }
+    ],
+    "current_location": {
+        "blue_gloves": "cardboard_sheet_region",
+        "robot_arm": "blue_work_mat"
+    },
+    "plans": [
+        {
+            "name": "place_sheet_or_align",
+            "target_region": "cardboard_sheet_region",
+            "constraints": [
+                {
+                    "type": "must_be_on_surface",
+                    "object": "blue_gloves",
+                    "region": "cardboard_sheet_region"
+                }
+            ]
+        },
+        {
+            "name": "avoid_small_debris",
+            "target_region": "blue_work_mat",
+            "constraints": [
+                {
+                    "type": "should_not_overlap_region",
+                    "object": "robot_arm",
+                    "region": "thin_stray_stick_region"
+                }
+            ]
+        }
+    ]
+}

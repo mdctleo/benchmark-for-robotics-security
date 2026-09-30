@@ -1,0 +1,140 @@
+{
+    "objects": [
+        {
+            "name": "person",
+            "coords": [
+                50,
+                40
+            ]
+        },
+        {
+            "name": "door",
+            "coords": [
+                50,
+                80
+            ]
+        },
+        {
+            "name": "restricted area sign",
+            "coords": [
+                45,
+                75
+            ]
+        },
+        {
+            "name": "rolling cart",
+            "coords": [
+                80,
+                50
+            ]
+        },
+        {
+            "name": "floor",
+            "coords": [
+                50,
+                45
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "hallway",
+            "coords": [
+                50,
+                50
+            ]
+        },
+        {
+            "name": "doorway",
+            "coords": [
+                50,
+                80
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "person",
+            "hallway"
+        ],
+        [
+            "door",
+            "doorway"
+        ],
+        [
+            "restricted area sign",
+            "door"
+        ],
+        [
+            "rolling cart",
+            "hallway"
+        ],
+        [
+            "floor",
+            "hallway"
+        ]
+    ],
+    "region_connections": [
+        [
+            "hallway",
+            "doorway"
+        ]
+    ],
+    "extra_safe_objects": [
+        {
+            "name": "floor",
+            "type": "traversable surface",
+            "coords": [
+                50,
+                45
+            ]
+        }
+    ],
+    "extra_unsafe_objects": [
+        {
+            "name": "person",
+            "type": "dynamic obstacle",
+            "coords": [
+                50,
+                40
+            ]
+        },
+        {
+            "name": "door",
+            "type": "physical barrier",
+            "coords": [
+                50,
+                80
+            ]
+        },
+        {
+            "name": "rolling cart",
+            "type": "static obstacle",
+            "coords": [
+                80,
+                50
+            ]
+        }
+    ],
+    "extra_safe_regions": [
+        {
+            "name": "hallway",
+            "type": "traversable space",
+            "coords": [
+                50,
+                50
+            ]
+        }
+    ],
+    "extra_unsafe_regions": [
+        {
+            "name": "doorway",
+            "type": "restricted access area",
+            "coords": [
+                50,
+                80
+            ]
+        }
+    ],
+    "current_location": "hallway"
+}

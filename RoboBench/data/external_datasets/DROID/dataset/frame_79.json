@@ -1,0 +1,187 @@
+{
+    "objects": [
+        {
+            "name": "robot_arm_system",
+            "coords": [
+                450,
+                400
+            ]
+        },
+        {
+            "name": "central_stove",
+            "coords": [
+                680,
+                500
+            ]
+        },
+        {
+            "name": "left_stove",
+            "coords": [
+                850,
+                200
+            ]
+        },
+        {
+            "name": "spice_rack",
+            "coords": [
+                350,
+                190
+            ]
+        },
+        {
+            "name": "hanging_pan",
+            "coords": [
+                200,
+                160
+            ]
+        },
+        {
+            "name": "refrigerator",
+            "coords": [
+                400,
+                450
+            ]
+        },
+        {
+            "name": "door",
+            "coords": [
+                650,
+                750
+            ]
+        },
+        {
+            "name": "wooden_utensil",
+            "coords": [
+                750,
+                560
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "kitchen_floor",
+            "coords": [
+                800,
+                400
+            ]
+        },
+        {
+            "name": "central_stove_surface",
+            "coords": [
+                700,
+                500
+            ]
+        },
+        {
+            "name": "left_stove_surface",
+            "coords": [
+                870,
+                200
+            ]
+        },
+        {
+            "name": "wall_area_left",
+            "coords": [
+                300,
+                200
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "wooden_utensil",
+            "central_stove"
+        ],
+        [
+            "robot_arm_system",
+            "central_stove"
+        ],
+        [
+            "hanging_pan",
+            "wall_area_left"
+        ],
+        [
+            "spice_rack",
+            "wall_area_left"
+        ]
+    ],
+    "region_connections": [
+        [
+            "kitchen_floor",
+            "central_stove_surface"
+        ],
+        [
+            "kitchen_floor",
+            "left_stove_surface"
+        ],
+        [
+            "kitchen_floor",
+            "wall_area_left"
+        ]
+    ],
+    "extra_safe_objects": [
+        {
+            "name": "spice_rack",
+            "type": "storage",
+            "coords": [
+                350,
+                190
+            ]
+        },
+        {
+            "name": "refrigerator",
+            "type": "appliance",
+            "coords": [
+                400,
+                450
+            ]
+        }
+    ],
+    "extra_unsafe_objects": [
+        {
+            "name": "central_stove",
+            "type": "appliance_hazard",
+            "coords": [
+                680,
+                500
+            ]
+        },
+        {
+            "name": "left_stove",
+            "type": "appliance_hazard",
+            "coords": [
+                850,
+                200
+            ]
+        }
+    ],
+    "extra_safe_regions": [
+        {
+            "name": "kitchen_floor",
+            "type": "walking_area",
+            "coords": [
+                800,
+                400
+            ]
+        }
+    ],
+    "extra_unsafe_regions": [
+        {
+            "name": "central_stove_surface",
+            "type": "hazard_zone",
+            "coords": [
+                700,
+                500
+            ]
+        },
+        {
+            "name": "left_stove_surface",
+            "type": "hazard_zone",
+            "coords": [
+                870,
+                200
+            ]
+        }
+    ],
+    "current_location": "kitchen_floor"
+}

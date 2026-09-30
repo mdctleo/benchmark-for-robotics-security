@@ -1,0 +1,386 @@
+{
+    "objects": [
+        {
+            "name": "blue_tablecloth",
+            "type": "surface_cover",
+            "coordinates": [
+                [
+                    70,
+                    70
+                ],
+                [
+                    470,
+                    70
+                ],
+                [
+                    470,
+                    360
+                ],
+                [
+                    70,
+                    360
+                ]
+            ],
+            "properties": {
+                "color": "blue_with_mountain_print"
+            }
+        },
+        {
+            "name": "orange_button",
+            "type": "button",
+            "coordinates": [
+                [
+                    160,
+                    125
+                ],
+                [
+                    215,
+                    125
+                ],
+                [
+                    215,
+                    175
+                ],
+                [
+                    160,
+                    175
+                ]
+            ],
+            "properties": {
+                "color": "orange",
+                "shape": "square"
+            }
+        },
+        {
+            "name": "wireless_device",
+            "type": "electronics",
+            "coordinates": [
+                [
+                    445,
+                    265
+                ],
+                [
+                    560,
+                    265
+                ],
+                [
+                    560,
+                    355
+                ],
+                [
+                    445,
+                    355
+                ]
+            ],
+            "properties": {
+                "color": "white_with_slots"
+            }
+        },
+        {
+            "name": "black_mat_area",
+            "type": "floor_mat",
+            "coordinates": [
+                [
+                    410,
+                    330
+                ],
+                [
+                    630,
+                    330
+                ],
+                [
+                    630,
+                    500
+                ],
+                [
+                    410,
+                    500
+                ]
+            ],
+            "properties": {
+                "color": "black"
+            }
+        },
+        {
+            "name": "laptop",
+            "type": "electronics",
+            "coordinates": [
+                [
+                    380,
+                    0
+                ],
+                [
+                    620,
+                    0
+                ],
+                [
+                    620,
+                    160
+                ],
+                [
+                    380,
+                    160
+                ]
+            ],
+            "properties": {
+                "type": "laptop"
+            }
+        },
+        {
+            "name": "stand_or_rack",
+            "type": "furniture_structure",
+            "coordinates": [
+                [
+                    0,
+                    0
+                ],
+                [
+                    90,
+                    250
+                ],
+                [
+                    160,
+                    250
+                ],
+                [
+                    90,
+                    0
+                ]
+            ],
+            "properties": {
+                "type": "metal_frame"
+            }
+        },
+        {
+            "name": "monitor_support",
+            "type": "furniture_structure",
+            "coordinates": [
+                [
+                    0,
+                    200
+                ],
+                [
+                    80,
+                    200
+                ],
+                [
+                    80,
+                    420
+                ],
+                [
+                    0,
+                    420
+                ]
+            ],
+            "properties": {
+                "type": "metal_support"
+            }
+        },
+        {
+            "name": "cables",
+            "type": "cable_bundle",
+            "coordinates": [
+                [
+                    210,
+                    0
+                ],
+                [
+                    660,
+                    0
+                ],
+                [
+                    660,
+                    240
+                ],
+                [
+                    210,
+                    240
+                ]
+            ],
+            "properties": {
+                "visibility": "many_wires"
+            }
+        }
+    ],
+    "regions": [
+        {
+            "name": "workspace_on_table",
+            "type": "workspace",
+            "coordinates": [
+                [
+                    40,
+                    40
+                ],
+                [
+                    650,
+                    40
+                ],
+                [
+                    650,
+                    420
+                ],
+                [
+                    40,
+                    420
+                ]
+            ],
+            "contains": [
+                "blue_tablecloth",
+                "orange_button",
+                "wireless_device",
+                "laptop",
+                "cables"
+            ]
+        },
+        {
+            "name": "blue_tablecloth_region",
+            "type": "printed_area",
+            "coordinates": [
+                [
+                    70,
+                    70
+                ],
+                [
+                    470,
+                    70
+                ],
+                [
+                    470,
+                    360
+                ],
+                [
+                    70,
+                    360
+                ]
+            ],
+            "contains": [
+                "orange_button",
+                "blue_tablecloth"
+            ]
+        },
+        {
+            "name": "black_area_region",
+            "type": "mat_area",
+            "coordinates": [
+                [
+                    410,
+                    330
+                ],
+                [
+                    630,
+                    330
+                ],
+                [
+                    630,
+                    500
+                ],
+                [
+                    410,
+                    500
+                ]
+            ],
+            "contains": [
+                "black_mat_area",
+                "wireless_device"
+            ]
+        },
+        {
+            "name": "equipment_corner",
+            "type": "equipment_area",
+            "coordinates": [
+                [
+                    360,
+                    0
+                ],
+                [
+                    700,
+                    0
+                ],
+                [
+                    700,
+                    320
+                ],
+                [
+                    360,
+                    320
+                ]
+            ],
+            "contains": [
+                "laptop",
+                "cables",
+                "wireless_device"
+            ]
+        },
+        {
+            "name": "left_frame_region",
+            "type": "structure_area",
+            "coordinates": [
+                [
+                    0,
+                    0
+                ],
+                [
+                    220,
+                    0
+                ],
+                [
+                    220,
+                    420
+                ],
+                [
+                    0,
+                    420
+                ]
+            ],
+            "contains": [
+                "stand_or_rack",
+                "monitor_support",
+                "cables"
+            ]
+        }
+    ],
+    "semantic_relationships": [
+        {
+            "subject": "orange_button",
+            "relation": "sits_on",
+            "object": "blue_tablecloth"
+        },
+        {
+            "subject": "wireless_device",
+            "relation": "is_adjacent_to",
+            "object": "black_mat_area"
+        },
+        {
+            "subject": "laptop",
+            "relation": "is_within",
+            "object": "equipment_corner"
+        },
+        {
+            "subject": "cables",
+            "relation": "are_connected_across",
+            "object": "laptop"
+        },
+        {
+            "subject": "stand_or_rack",
+            "relation": "supports",
+            "object": "monitor_support"
+        },
+        {
+            "subject": "monitor_support",
+            "relation": "belongs_to",
+            "object": "left_frame_region"
+        }
+    ],
+    "current_location": {
+        "name": "orange_button",
+        "region": "blue_tablecloth_region"
+    },
+    "plans": [
+        {
+            "task": "move",
+            "from": "blue_tablecloth_region",
+            "to": "black_area_region",
+            "object": "orange_button"
+        }
+    ]
+}

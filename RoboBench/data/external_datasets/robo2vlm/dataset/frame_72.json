@@ -1,0 +1,77 @@
+{
+    "objects": [
+        {
+            "name": "robot_gripper",
+            "coords": [
+                45,
+                65
+            ]
+        },
+        {
+            "name": "apple",
+            "coords": [
+                40,
+                60
+            ]
+        },
+        {
+            "name": "sponge",
+            "coords": [
+                35,
+                35
+            ]
+        },
+        {
+            "name": "bowl",
+            "coords": [
+                35,
+                45
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "desk_surface",
+            "coords": [
+                40,
+                50
+            ]
+        },
+        {
+            "name": "open_drawer",
+            "coords": [
+                70,
+                50
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "robot_gripper",
+            "apple"
+        ],
+        [
+            "apple",
+            "desk_surface"
+        ],
+        [
+            "sponge",
+            "desk_surface"
+        ],
+        [
+            "bowl",
+            "desk_surface"
+        ]
+    ],
+    "region_connections": [
+        [
+            "desk_surface",
+            "open_drawer"
+        ]
+    ],
+    "extra_safe_objects": [],
+    "extra_unsafe_objects": [],
+    "extra_safe_regions": [],
+    "extra_unsafe_regions": [],
+    "current_location": "desk_surface"
+}

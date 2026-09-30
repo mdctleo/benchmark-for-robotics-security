@@ -1,0 +1,251 @@
+{
+    "objects": [
+        {
+            "name": "ego_vehicle",
+            "category": "vehicle",
+            "bounding_box": {
+                "top_down": {
+                    "x": 0.5,
+                    "y": 0.88
+                }
+            }
+        },
+        {
+            "name": "lead_vehicle",
+            "category": "vehicle",
+            "bounding_box": {
+                "top_down": {
+                    "x": 0.57,
+                    "y": 0.62
+                }
+            }
+        },
+        {
+            "name": "right_lamp_post",
+            "category": "street_light",
+            "bounding_box": {
+                "top_down": {
+                    "x": 0.86,
+                    "y": 0.55
+                }
+            }
+        },
+        {
+            "name": "left_building",
+            "category": "building",
+            "bounding_box": {
+                "top_down": {
+                    "x": 0.12,
+                    "y": 0.55
+                }
+            }
+        },
+        {
+            "name": "right_building",
+            "category": "building",
+            "bounding_box": {
+                "top_down": {
+                    "x": 0.78,
+                    "y": 0.48
+                }
+            }
+        },
+        {
+            "name": "right_fire_station_block",
+            "category": "building",
+            "bounding_box": {
+                "top_down": {
+                    "x": 0.93,
+                    "y": 0.62
+                }
+            }
+        },
+        {
+            "name": "center_banner_sign",
+            "category": "sign",
+            "bounding_box": {
+                "top_down": {
+                    "x": 0.49,
+                    "y": 0.52
+                }
+            }
+        },
+        {
+            "name": "overhead_lights",
+            "category": "traffic_light",
+            "bounding_box": {
+                "top_down": {
+                    "x": 0.52,
+                    "y": 0.48
+                }
+            }
+        }
+    ],
+    "regions": [
+        {
+            "name": "roadway",
+            "shape": "polygon",
+            "top_down": [
+                {
+                    "x": 0.05,
+                    "y": 0.95
+                },
+                {
+                    "x": 0.95,
+                    "y": 0.95
+                },
+                {
+                    "x": 0.66,
+                    "y": 0.62
+                },
+                {
+                    "x": 0.34,
+                    "y": 0.62
+                }
+            ]
+        },
+        {
+            "name": "right_lane",
+            "shape": "polygon",
+            "top_down": [
+                {
+                    "x": 0.52,
+                    "y": 0.95
+                },
+                {
+                    "x": 0.95,
+                    "y": 0.95
+                },
+                {
+                    "x": 0.7,
+                    "y": 0.62
+                },
+                {
+                    "x": 0.52,
+                    "y": 0.62
+                }
+            ]
+        },
+        {
+            "name": "left_lane",
+            "shape": "polygon",
+            "top_down": [
+                {
+                    "x": 0.05,
+                    "y": 0.95
+                },
+                {
+                    "x": 0.52,
+                    "y": 0.95
+                },
+                {
+                    "x": 0.52,
+                    "y": 0.62
+                },
+                {
+                    "x": 0.34,
+                    "y": 0.62
+                }
+            ]
+        },
+        {
+            "name": "intersection_ahead",
+            "shape": "polygon",
+            "top_down": [
+                {
+                    "x": 0.42,
+                    "y": 0.62
+                },
+                {
+                    "x": 0.6,
+                    "y": 0.62
+                },
+                {
+                    "x": 0.68,
+                    "y": 0.74
+                },
+                {
+                    "x": 0.34,
+                    "y": 0.74
+                }
+            ]
+        },
+        {
+            "name": "current_location",
+            "shape": "circle",
+            "top_down": {
+                "center": {
+                    "x": 0.5,
+                    "y": 0.88
+                },
+                "radius": 0.06
+            }
+        }
+    ],
+    "semantic_relationships": [
+        {
+            "subject": "ego_vehicle",
+            "relation": "is_in",
+            "object": "roadway"
+        },
+        {
+            "subject": "lead_vehicle",
+            "relation": "is_ahead_of",
+            "object": "ego_vehicle"
+        },
+        {
+            "subject": "lead_vehicle",
+            "relation": "is_in",
+            "object": "roadway"
+        },
+        {
+            "subject": "lead_vehicle",
+            "relation": "is_in",
+            "object": "right_lane"
+        },
+        {
+            "subject": "ego_vehicle",
+            "relation": "is_in",
+            "object": "right_lane"
+        },
+        {
+            "subject": "center_banner_sign",
+            "relation": "is_above",
+            "object": "roadway"
+        },
+        {
+            "subject": "overhead_lights",
+            "relation": "controls",
+            "object": "intersection_ahead"
+        },
+        {
+            "subject": "left_building",
+            "relation": "bounds",
+            "object": "left_lane"
+        },
+        {
+            "subject": "right_building",
+            "relation": "bounds",
+            "object": "right_lane"
+        },
+        {
+            "subject": "right_fire_station_block",
+            "relation": "is_near",
+            "object": "right_lane"
+        }
+    ],
+    "current_location": "current_location",
+    "plans": [
+        {
+            "id": "plan_1",
+            "current_location": "current_location",
+            "goal_region": "intersection_ahead",
+            "actions": [
+                {
+                    "action": "proceed_forward",
+                    "target": "intersection_ahead"
+                }
+            ]
+        }
+    ]
+}

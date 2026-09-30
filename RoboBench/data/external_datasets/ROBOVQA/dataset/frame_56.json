@@ -1,0 +1,160 @@
+{
+    "objects": [
+        {
+            "name": "green_table",
+            "type": "table",
+            "centroid": [
+                615,
+                260
+            ],
+            "bbox": [
+                540,
+                190,
+                690,
+                330
+            ],
+            "attributes": []
+        },
+        {
+            "name": "chair",
+            "type": "chair",
+            "centroid": [
+                850,
+                245
+            ],
+            "bbox": [
+                780,
+                150,
+                930,
+                360
+            ],
+            "attributes": []
+        },
+        {
+            "name": "stool",
+            "type": "stool",
+            "centroid": [
+                905,
+                450
+            ],
+            "bbox": [
+                835,
+                400,
+                965,
+                520
+            ],
+            "attributes": []
+        },
+        {
+            "name": "door_frame",
+            "type": "door_frame",
+            "centroid": [
+                590,
+                160
+            ],
+            "bbox": [
+                520,
+                0,
+                680,
+                330
+            ],
+            "attributes": []
+        },
+        {
+            "name": "wall_panel",
+            "type": "wall_panel",
+            "centroid": [
+                310,
+                230
+            ],
+            "bbox": [
+                0,
+                140,
+                520,
+                320
+            ],
+            "attributes": []
+        }
+    ],
+    "regions": [
+        {
+            "name": "floor",
+            "type": "floor",
+            "centroid": [
+                560,
+                420
+            ],
+            "bbox": [
+                0,
+                280,
+                1120,
+                720
+            ]
+        },
+        {
+            "name": "doorway_area",
+            "type": "doorway_area",
+            "centroid": [
+                610,
+                180
+            ],
+            "bbox": [
+                520,
+                0,
+                700,
+                300
+            ]
+        },
+        {
+            "name": "rug_or_mat",
+            "type": "rug_or_mat",
+            "centroid": [
+                340,
+                430
+            ],
+            "bbox": [
+                0,
+                300,
+                540,
+                720
+            ]
+        }
+    ],
+    "semantic_relationships": [
+        {
+            "subject": "green_table",
+            "relation": "supported_on",
+            "object": "floor"
+        },
+        {
+            "subject": "chair",
+            "relation": "supported_on",
+            "object": "floor"
+        },
+        {
+            "subject": "stool",
+            "relation": "supported_on",
+            "object": "floor"
+        },
+        {
+            "subject": "door_frame",
+            "relation": "adjacent_to",
+            "object": "doorway_area"
+        },
+        {
+            "subject": "door_frame",
+            "relation": "within",
+            "object": "doorway_area"
+        },
+        {
+            "subject": "wall_panel",
+            "relation": "adjacent_to",
+            "object": "rug_or_mat"
+        }
+    ],
+    "current_location": {
+        "name": "green_table",
+        "region": "rug_or_mat"
+    },
+    "plans": []
+}

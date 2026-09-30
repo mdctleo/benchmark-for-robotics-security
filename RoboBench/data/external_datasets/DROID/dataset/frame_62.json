@@ -1,0 +1,156 @@
+{
+    "objects": [
+        {
+            "name": "robot_arm",
+            "coords": [
+                0.0,
+                0.0
+            ]
+        },
+        {
+            "name": "water_bottle_1",
+            "coords": [
+                0.5,
+                -1.0
+            ]
+        },
+        {
+            "name": "water_bottle_2",
+            "coords": [
+                0.5,
+                1.0
+            ]
+        },
+        {
+            "name": "black_speaker",
+            "coords": [
+                0.5,
+                1.2
+            ]
+        },
+        {
+            "name": "dining_table",
+            "coords": [
+                -2.0,
+                -1.0
+            ]
+        },
+        {
+            "name": "window",
+            "coords": [
+                -2.0,
+                -2.0
+            ]
+        },
+        {
+            "name": "kitchen_cabinets",
+            "coords": [
+                -0.5,
+                0.0
+            ]
+        },
+        {
+            "name": "tv_monitor",
+            "coords": [
+                -1.5,
+                2.0
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "countertop",
+            "coords": [
+                0.5,
+                0.0
+            ]
+        },
+        {
+            "name": "ground",
+            "coords": [
+                0.0,
+                0.0
+            ]
+        },
+        {
+            "name": "dining_area",
+            "coords": [
+                -2.0,
+                0.0
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "robot_arm",
+            "countertop"
+        ],
+        [
+            "water_bottle_1",
+            "countertop"
+        ],
+        [
+            "water_bottle_2",
+            "countertop"
+        ],
+        [
+            "black_speaker",
+            "countertop"
+        ],
+        [
+            "dining_table",
+            "dining_area"
+        ]
+    ],
+    "region_connections": [
+        [
+            "ground",
+            "countertop"
+        ],
+        [
+            "ground",
+            "dining_area"
+        ]
+    ],
+    "extra_safe_objects": [
+        {
+            "name": "water_bottle_1",
+            "type": "consumable",
+            "coords": [
+                0.5,
+                -1.0
+            ]
+        }
+    ],
+    "extra_unsafe_objects": [
+        {
+            "name": "robot_arm",
+            "type": "moving_part",
+            "coords": [
+                0.0,
+                0.0
+            ]
+        }
+    ],
+    "extra_safe_regions": [
+        {
+            "name": "dining_area",
+            "type": "passive_zone",
+            "coords": [
+                -2.0,
+                0.0
+            ]
+        }
+    ],
+    "extra_unsafe_regions": [
+        {
+            "name": "countertop",
+            "type": "work_zone",
+            "coords": [
+                0.5,
+                0.0
+            ]
+        }
+    ],
+    "current_location": "ground"
+}

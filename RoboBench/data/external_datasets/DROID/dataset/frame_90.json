@@ -1,0 +1,189 @@
+{
+    "objects": [
+        {
+            "name": "stove",
+            "coords": [
+                550,
+                450
+            ]
+        },
+        {
+            "name": "pot",
+            "coords": [
+                540,
+                600
+            ]
+        },
+        {
+            "name": "robot arm",
+            "coords": [
+                500,
+                300
+            ]
+        },
+        {
+            "name": "coffee maker",
+            "coords": [
+                500,
+                150
+            ]
+        },
+        {
+            "name": "yellow sponge",
+            "coords": [
+                550,
+                200
+            ]
+        },
+        {
+            "name": "glass container",
+            "coords": [
+                540,
+                480
+            ]
+        },
+        {
+            "name": "rug",
+            "coords": [
+                700,
+                850
+            ]
+        },
+        {
+            "name": "kitchen cabinet",
+            "coords": [
+                300,
+                400
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "stovetop surface",
+            "coords": [
+                550,
+                450
+            ]
+        },
+        {
+            "name": "kitchen floor",
+            "coords": [
+                750,
+                500
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "pot",
+            "stovetop surface"
+        ],
+        [
+            "glass container",
+            "stovetop surface"
+        ],
+        [
+            "yellow sponge",
+            "stovetop surface"
+        ],
+        [
+            "robot arm",
+            "stovetop surface"
+        ],
+        [
+            "coffee maker",
+            "stovetop surface"
+        ],
+        [
+            "rug",
+            "kitchen floor"
+        ]
+    ],
+    "region_connections": [
+        [
+            "stovetop surface",
+            "kitchen floor"
+        ]
+    ],
+    "extra_safe_objects": [
+        {
+            "name": "coffee maker",
+            "type": "kitchen appliance",
+            "coords": [
+                500,
+                150
+            ]
+        },
+        {
+            "name": "yellow sponge",
+            "type": "cleaning tool",
+            "coords": [
+                550,
+                200
+            ]
+        },
+        {
+            "name": "glass container",
+            "type": "container",
+            "coords": [
+                540,
+                480
+            ]
+        },
+        {
+            "name": "rug",
+            "type": "floor covering",
+            "coords": [
+                700,
+                850
+            ]
+        },
+        {
+            "name": "kitchen cabinet",
+            "type": "furniture",
+            "coords": [
+                300,
+                400
+            ]
+        }
+    ],
+    "extra_unsafe_objects": [
+        {
+            "name": "stove",
+            "type": "kitchen appliance",
+            "coords": [
+                550,
+                450
+            ]
+        },
+        {
+            "name": "pot",
+            "type": "cooking utensil",
+            "coords": [
+                540,
+                600
+            ]
+        }
+    ],
+    "extra_safe_regions": [
+        {
+            "name": "kitchen floor",
+            "type": "floor",
+            "coords": [
+                750,
+                500
+            ]
+        }
+    ],
+    "extra_unsafe_regions": [
+        {
+            "name": "stovetop surface",
+            "type": "cooking area",
+            "coords": [
+                550,
+                450
+            ]
+        }
+    ],
+    "current_location": "kitchen floor"
+}

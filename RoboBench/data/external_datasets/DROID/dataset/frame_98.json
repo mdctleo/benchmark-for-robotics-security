@@ -1,0 +1,158 @@
+{
+    "objects": [
+        {
+            "name": "red_block_on_table",
+            "coords": [
+                250,
+                700
+            ]
+        },
+        {
+            "name": "black_bowl",
+            "coords": [
+                400,
+                600
+            ]
+        },
+        {
+            "name": "green_cube_1",
+            "coords": [
+                410,
+                610
+            ]
+        },
+        {
+            "name": "green_cube_2",
+            "coords": [
+                420,
+                620
+            ]
+        },
+        {
+            "name": "red_shape_in_bowl",
+            "coords": [
+                390,
+                590
+            ]
+        },
+        {
+            "name": "yellow_shape_in_bowl",
+            "coords": [
+                405,
+                630
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "table_surface",
+            "coords": [
+                500,
+                500
+            ]
+        },
+        {
+            "name": "bowl_internal_area",
+            "coords": [
+                400,
+                600
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "green_cube_1",
+            "green_cube_2"
+        ],
+        [
+            "green_cube_1",
+            "red_shape_in_bowl"
+        ],
+        [
+            "green_cube_1",
+            "yellow_shape_in_bowl"
+        ],
+        [
+            "green_cube_2",
+            "red_shape_in_bowl"
+        ],
+        [
+            "green_cube_2",
+            "yellow_shape_in_bowl"
+        ],
+        [
+            "red_shape_in_bowl",
+            "yellow_shape_in_bowl"
+        ]
+    ],
+    "region_connections": [
+        [
+            "table_surface",
+            "bowl_internal_area"
+        ]
+    ],
+    "extra_safe_objects": [
+        {
+            "name": "green_cube_1",
+            "type": "cube",
+            "coords": [
+                410,
+                610
+            ]
+        },
+        {
+            "name": "green_cube_2",
+            "type": "cube",
+            "coords": [
+                420,
+                620
+            ]
+        },
+        {
+            "name": "red_shape_in_bowl",
+            "type": "shape",
+            "coords": [
+                390,
+                590
+            ]
+        },
+        {
+            "name": "yellow_shape_in_bowl",
+            "type": "shape",
+            "coords": [
+                405,
+                630
+            ]
+        }
+    ],
+    "extra_unsafe_objects": [
+        {
+            "name": "red_block_on_table",
+            "type": "cube",
+            "coords": [
+                250,
+                700
+            ]
+        }
+    ],
+    "extra_safe_regions": [
+        {
+            "name": "table_surface",
+            "type": "surface",
+            "coords": [
+                500,
+                500
+            ]
+        },
+        {
+            "name": "bowl_internal_area",
+            "type": "internal_area",
+            "coords": [
+                400,
+                600
+            ]
+        }
+    ],
+    "extra_unsafe_regions": [],
+    "current_location": "bowl_internal_area"
+}

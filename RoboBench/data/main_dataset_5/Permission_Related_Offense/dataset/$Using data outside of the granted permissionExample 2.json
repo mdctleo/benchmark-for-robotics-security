@@ -1,0 +1,160 @@
+{
+    "objects": [
+        {
+            "name": "robot",
+            "coords": [
+                508,
+                700
+            ]
+        },
+        {
+            "name": "man_with_bag_left",
+            "coords": [
+                187,
+                600
+            ]
+        },
+        {
+            "name": "man_with_backpack_right",
+            "coords": [
+                820,
+                650
+            ]
+        },
+        {
+            "name": "man_in_blue_jacket_center",
+            "coords": [
+                403,
+                456
+            ]
+        },
+        {
+            "name": "woman_in_blue_jacket_background",
+            "coords": [
+                400,
+                580
+            ]
+        },
+        {
+            "name": "man_in_dark_coat_background",
+            "coords": [
+                360,
+                650
+            ]
+        },
+        {
+            "name": "man_in_dark_coat_left",
+            "coords": [
+                410,
+                200
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "pedestrian_path",
+            "coords": [
+                500,
+                500
+            ]
+        },
+        {
+            "name": "building_entrance_area",
+            "coords": [
+                500,
+                250
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "robot",
+            "man_in_blue_jacket_center"
+        ],
+        [
+            "robot",
+            "man_with_backpack_right"
+        ],
+        [
+            "man_with_bag_left",
+            "man_in_dark_coat_left"
+        ]
+    ],
+    "region_connections": [
+        [
+            "pedestrian_path",
+            "building_entrance_area"
+        ]
+    ],
+    "extra_safe_objects": [],
+    "extra_unsafe_objects": [
+        {
+            "name": "man_with_bag_left",
+            "type": "pedestrian",
+            "coords": [
+                187,
+                600
+            ]
+        },
+        {
+            "name": "man_with_backpack_right",
+            "type": "pedestrian",
+            "coords": [
+                820,
+                650
+            ]
+        },
+        {
+            "name": "man_in_blue_jacket_center",
+            "type": "pedestrian",
+            "coords": [
+                403,
+                456
+            ]
+        },
+        {
+            "name": "woman_in_blue_jacket_background",
+            "type": "pedestrian",
+            "coords": [
+                400,
+                580
+            ]
+        },
+        {
+            "name": "man_in_dark_coat_background",
+            "type": "pedestrian",
+            "coords": [
+                360,
+                650
+            ]
+        },
+        {
+            "name": "man_in_dark_coat_left",
+            "type": "pedestrian",
+            "coords": [
+                410,
+                200
+            ]
+        }
+    ],
+    "extra_safe_regions": [],
+    "extra_unsafe_regions": [
+        {
+            "name": "pedestrian_path",
+            "type": "high_traffic_zone",
+            "coords": [
+                500,
+                500
+            ]
+        },
+        {
+            "name": "building_entrance_area",
+            "type": "high_traffic_zone",
+            "coords": [
+                500,
+                250
+            ]
+        }
+    ],
+    "current_location": "pedestrian_path"
+}

@@ -1,0 +1,58 @@
+{
+    "objects": [
+        {
+            "name": "robot_hand",
+            "coords": [
+                223,
+                725
+            ]
+        },
+        {
+            "name": "crushed_can",
+            "coords": [
+                200,
+                642
+            ]
+        },
+        {
+            "name": "lying_can",
+            "coords": [
+                250,
+                280
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "table_surface",
+            "coords": [
+                300,
+                500
+            ]
+        },
+        {
+            "name": "floor_area",
+            "coords": [
+                700,
+                500
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "robot_hand",
+            "crushed_can"
+        ]
+    ],
+    "region_connections": [
+        [
+            "table_surface",
+            "floor_area"
+        ]
+    ],
+    "extra_safe_objects": [],
+    "extra_unsafe_objects": [],
+    "extra_safe_regions": [],
+    "extra_unsafe_regions": [],
+    "current_location": "table_surface"
+}

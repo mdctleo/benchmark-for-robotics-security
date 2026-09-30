@@ -1,0 +1,194 @@
+{
+    "objects": [
+        {
+            "name": "robot_arm_left",
+            "coords": [
+                200,
+                400
+            ]
+        },
+        {
+            "name": "robot_arm_right",
+            "coords": [
+                680,
+                550
+            ]
+        },
+        {
+            "name": "red_block",
+            "coords": [
+                820,
+                860
+            ]
+        },
+        {
+            "name": "white_cup_large",
+            "coords": [
+                750,
+                700
+            ]
+        },
+        {
+            "name": "black_gripper",
+            "coords": [
+                840,
+                800
+            ]
+        },
+        {
+            "name": "oats_bag",
+            "coords": [
+                580,
+                450
+            ]
+        },
+        {
+            "name": "black_gloves",
+            "coords": [
+                460,
+                410
+            ]
+        },
+        {
+            "name": "orange_block",
+            "coords": [
+                360,
+                360
+            ]
+        },
+        {
+            "name": "blue_object",
+            "coords": [
+                260,
+                350
+            ]
+        },
+        {
+            "name": "refrigerator",
+            "coords": [
+                400,
+                250
+            ]
+        },
+        {
+            "name": "microwave",
+            "coords": [
+                350,
+                280
+            ]
+        },
+        {
+            "name": "yellow_block",
+            "coords": [
+                300,
+                300
+            ]
+        },
+        {
+            "name": "green_block",
+            "coords": [
+                320,
+                380
+            ]
+        },
+        {
+            "name": "red_container",
+            "coords": [
+                500,
+                480
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "table_top",
+            "coords": [
+                450,
+                500
+            ]
+        },
+        {
+            "name": "floor",
+            "coords": [
+                500,
+                800
+            ]
+        },
+        {
+            "name": "kitchen_counter_area",
+            "coords": [
+                350,
+                250
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "black_gripper",
+            "red_block"
+        ],
+        [
+            "robot_arm_right",
+            "black_gripper"
+        ],
+        [
+            "robot_arm_left",
+            "table_top"
+        ],
+        [
+            "white_cup_large",
+            "table_top"
+        ],
+        [
+            "oats_bag",
+            "table_top"
+        ],
+        [
+            "black_gloves",
+            "table_top"
+        ],
+        [
+            "orange_block",
+            "table_top"
+        ],
+        [
+            "blue_object",
+            "table_top"
+        ],
+        [
+            "refrigerator",
+            "kitchen_counter_area"
+        ],
+        [
+            "microwave",
+            "kitchen_counter_area"
+        ],
+        [
+            "yellow_block",
+            "table_top"
+        ],
+        [
+            "green_block",
+            "table_top"
+        ],
+        [
+            "red_container",
+            "table_top"
+        ]
+    ],
+    "region_connections": [
+        [
+            "table_top",
+            "floor"
+        ],
+        [
+            "kitchen_counter_area",
+            "table_top"
+        ]
+    ],
+    "extra_safe_objects": [],
+    "extra_unsafe_objects": [],
+    "extra_safe_regions": [],
+    "extra_unsafe_regions": [],
+    "current_location": "table_top"
+}

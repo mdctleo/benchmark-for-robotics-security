@@ -1,0 +1,304 @@
+{
+    "objects": [
+        {
+            "name": "robot_arm",
+            "type": "robotic_arm",
+            "position": {
+                "x": 0.58,
+                "y": 0.18
+            }
+        },
+        {
+            "name": "gripper",
+            "type": "end_effector",
+            "position": {
+                "x": 0.66,
+                "y": 0.12
+            }
+        },
+        {
+            "name": "control_console",
+            "type": "computer_console",
+            "position": {
+                "x": 0.86,
+                "y": 0.22
+            }
+        },
+        {
+            "name": "cylinder_container",
+            "type": "cylinder_container",
+            "position": {
+                "x": 0.07,
+                "y": 0.2
+            }
+        },
+        {
+            "name": "workbench_leg_1",
+            "type": "frame_leg",
+            "position": {
+                "x": 0.03,
+                "y": 0.55
+            }
+        },
+        {
+            "name": "workbench_leg_2",
+            "type": "frame_leg",
+            "position": {
+                "x": 0.13,
+                "y": 0.86
+            }
+        },
+        {
+            "name": "blue_mat",
+            "type": "mat",
+            "position": {
+                "x": 0.44,
+                "y": 0.62
+            }
+        },
+        {
+            "name": "monitoring_device",
+            "type": "device",
+            "position": {
+                "x": 0.79,
+                "y": 0.05
+            }
+        },
+        {
+            "name": "keyboard",
+            "type": "keyboard",
+            "position": {
+                "x": 0.92,
+                "y": 0.08
+            }
+        },
+        {
+            "name": "cable_bundle_1",
+            "type": "cables",
+            "position": {
+                "x": 0.72,
+                "y": 0.26
+            }
+        },
+        {
+            "name": "cable_bundle_2",
+            "type": "cables",
+            "position": {
+                "x": 0.62,
+                "y": 0.33
+            }
+        },
+        {
+            "name": "bottle_1",
+            "type": "bottle",
+            "position": {
+                "x": 0.06,
+                "y": 0.78
+            }
+        },
+        {
+            "name": "box_A",
+            "type": "object_box",
+            "position": {
+                "x": 0.49,
+                "y": 0.47
+            }
+        },
+        {
+            "name": "beige_board",
+            "type": "board",
+            "position": {
+                "x": 0.45,
+                "y": 0.4
+            }
+        },
+        {
+            "name": "tool_1",
+            "type": "tool",
+            "position": {
+                "x": 0.76,
+                "y": 0.62
+            }
+        },
+        {
+            "name": "white_strip",
+            "type": "strip",
+            "position": {
+                "x": 0.31,
+                "y": 0.86
+            }
+        },
+        {
+            "name": "drawer_handle_1",
+            "type": "handle",
+            "position": {
+                "x": 0.42,
+                "y": 0.89
+            }
+        }
+    ],
+    "regions": [
+        {
+            "name": "robot_work_area",
+            "type": "area",
+            "top_down_bounds": {
+                "x_min": 0.2,
+                "x_max": 0.8,
+                "y_min": 0.25,
+                "y_max": 0.75
+            }
+        },
+        {
+            "name": "blue_mat_region",
+            "type": "surface",
+            "top_down_bounds": {
+                "x_min": 0.17,
+                "x_max": 0.83,
+                "y_min": 0.3,
+                "y_max": 0.75
+            }
+        },
+        {
+            "name": "bench_left_edge",
+            "type": "boundary",
+            "top_down_bounds": {
+                "x_min": 0.0,
+                "x_max": 0.2,
+                "y_min": 0.0,
+                "y_max": 1.0
+            }
+        },
+        {
+            "name": "bench_right_edge",
+            "type": "boundary",
+            "top_down_bounds": {
+                "x_min": 0.8,
+                "x_max": 1.0,
+                "y_min": 0.0,
+                "y_max": 1.0
+            }
+        },
+        {
+            "name": "background_floor",
+            "type": "background",
+            "top_down_bounds": {
+                "x_min": 0.0,
+                "x_max": 1.0,
+                "y_min": 0.75,
+                "y_max": 1.0
+            }
+        },
+        {
+            "name": "gripper_proximal_zone",
+            "type": "zone",
+            "top_down_bounds": {
+                "x_min": 0.48,
+                "x_max": 0.74,
+                "y_min": 0.1,
+                "y_max": 0.45
+            }
+        },
+        {
+            "name": "current_location_area",
+            "type": "current_location_region",
+            "top_down_bounds": {
+                "x_min": 0.35,
+                "x_max": 0.6,
+                "y_min": 0.4,
+                "y_max": 0.6
+            }
+        }
+    ],
+    "semantic_relationships": [
+        {
+            "subject": "robot_arm",
+            "relation": "located_in",
+            "object": "robot_work_area"
+        },
+        {
+            "subject": "gripper",
+            "relation": "located_in",
+            "object": "gripper_proximal_zone"
+        },
+        {
+            "subject": "blue_mat",
+            "relation": "covers",
+            "object": "blue_mat_region"
+        },
+        {
+            "subject": "beige_board",
+            "relation": "lies_on",
+            "object": "blue_mat_region"
+        },
+        {
+            "subject": "box_A",
+            "relation": "sits_on",
+            "object": "beige_board"
+        },
+        {
+            "subject": "box_A",
+            "relation": "located_in",
+            "object": "current_location_area"
+        },
+        {
+            "subject": "control_console",
+            "relation": "located_in",
+            "object": "bench_right_edge"
+        },
+        {
+            "subject": "keyboard",
+            "relation": "located_in",
+            "object": "bench_right_edge"
+        },
+        {
+            "subject": "cable_bundle_1",
+            "relation": "routes_across",
+            "object": "robot_work_area"
+        },
+        {
+            "subject": "cable_bundle_2",
+            "relation": "routes_across",
+            "object": "robot_work_area"
+        },
+        {
+            "subject": "cylinder_container",
+            "relation": "located_in",
+            "object": "bench_left_edge"
+        },
+        {
+            "subject": "bottle_1",
+            "relation": "located_in",
+            "object": "bench_left_edge"
+        },
+        {
+            "subject": "monitoring_device",
+            "relation": "located_in",
+            "object": "bench_right_edge"
+        },
+        {
+            "subject": "tool_1",
+            "relation": "located_in",
+            "object": "background_floor"
+        },
+        {
+            "subject": "white_strip",
+            "relation": "located_in",
+            "object": "background_floor"
+        },
+        {
+            "subject": "drawer_handle_1",
+            "relation": "located_in",
+            "object": "background_floor"
+        }
+    ],
+    "task_state": {
+        "current_location": "current_location_area",
+        "plans": [
+            {
+                "plan_name": "manipulate_box_A",
+                "target": "box_A",
+                "destination_region": "current_location_area"
+            }
+        ]
+    }
+}

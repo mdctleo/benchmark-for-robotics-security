@@ -1,0 +1,244 @@
+{
+    "objects": [
+        {
+            "name": "road_surface",
+            "type": "road",
+            "bbox_top_down": {
+                "x": 50,
+                "y": 180,
+                "w": 900,
+                "h": 520
+            }
+        },
+        {
+            "name": "cars_on_left_lane",
+            "type": "vehicle_group",
+            "bbox_top_down": {
+                "x": 60,
+                "y": 240,
+                "w": 380,
+                "h": 280
+            }
+        },
+        {
+            "name": "car_in_front",
+            "type": "vehicle",
+            "bbox_top_down": {
+                "x": 460,
+                "y": 280,
+                "w": 200,
+                "h": 220
+            }
+        },
+        {
+            "name": "cars_on_right_lane",
+            "type": "vehicle_group",
+            "bbox_top_down": {
+                "x": 690,
+                "y": 250,
+                "w": 270,
+                "h": 260
+            }
+        },
+        {
+            "name": "left_building_with_arcs",
+            "type": "building",
+            "bbox_top_down": {
+                "x": 0,
+                "y": 0,
+                "w": 420,
+                "h": 500
+            }
+        },
+        {
+            "name": "center_glass_tower",
+            "type": "building",
+            "bbox_top_down": {
+                "x": 360,
+                "y": 0,
+                "w": 260,
+                "h": 420
+            }
+        },
+        {
+            "name": "far_building_behind",
+            "type": "building",
+            "bbox_top_down": {
+                "x": 520,
+                "y": 40,
+                "w": 240,
+                "h": 420
+            }
+        },
+        {
+            "name": "right_brick_building",
+            "type": "building",
+            "bbox_top_down": {
+                "x": 740,
+                "y": 0,
+                "w": 310,
+                "h": 480
+            }
+        },
+        {
+            "name": "street_lamp_on_right",
+            "type": "lamp_post",
+            "bbox_top_down": {
+                "x": 825,
+                "y": 140,
+                "w": 40,
+                "h": 220
+            }
+        },
+        {
+            "name": "road_work_ahead_sign",
+            "type": "traffic_sign",
+            "bbox_top_down": {
+                "x": 865,
+                "y": 285,
+                "w": 70,
+                "h": 110
+            }
+        },
+        {
+            "name": "crosswalk_marker_lane_lines",
+            "type": "road_markings",
+            "bbox_top_down": {
+                "x": 410,
+                "y": 160,
+                "w": 280,
+                "h": 340
+            }
+        }
+    ],
+    "regions": [
+        {
+            "name": "road_2way_corridor",
+            "type": "roadway_region",
+            "polygon_top_down": [
+                {
+                    "x": 40,
+                    "y": 170
+                },
+                {
+                    "x": 920,
+                    "y": 170
+                },
+                {
+                    "x": 980,
+                    "y": 610
+                },
+                {
+                    "x": 20,
+                    "y": 610
+                }
+            ]
+        },
+        {
+            "name": "right_sidewalk_zone",
+            "type": "sidewalk_region",
+            "polygon_top_down": [
+                {
+                    "x": 840,
+                    "y": 170
+                },
+                {
+                    "x": 980,
+                    "y": 170
+                },
+                {
+                    "x": 1000,
+                    "y": 610
+                },
+                {
+                    "x": 850,
+                    "y": 610
+                }
+            ]
+        },
+        {
+            "name": "left_sidewalk_zone",
+            "type": "sidewalk_region",
+            "polygon_top_down": [
+                {
+                    "x": 0,
+                    "y": 170
+                },
+                {
+                    "x": 160,
+                    "y": 170
+                },
+                {
+                    "x": 60,
+                    "y": 610
+                },
+                {
+                    "x": 0,
+                    "y": 610
+                }
+            ]
+        }
+    ],
+    "semantic_relationships": [
+        {
+            "subject": "car_in_front",
+            "relation": "is_on",
+            "object": "road_surface"
+        },
+        {
+            "subject": "cars_on_left_lane",
+            "relation": "are_on",
+            "object": "road_surface"
+        },
+        {
+            "subject": "cars_on_right_lane",
+            "relation": "are_on",
+            "object": "road_surface"
+        },
+        {
+            "subject": "road_work_ahead_sign",
+            "relation": "is_near",
+            "object": "street_lamp_on_right"
+        },
+        {
+            "subject": "road_work_ahead_sign",
+            "relation": "is_on_edge_of",
+            "object": "right_sidewalk_zone"
+        },
+        {
+            "subject": "street_lamp_on_right",
+            "relation": "is_in",
+            "object": "right_sidewalk_zone"
+        },
+        {
+            "subject": "left_building_with_arcs",
+            "relation": "faces",
+            "object": "road_2way_corridor"
+        },
+        {
+            "subject": "center_glass_tower",
+            "relation": "faces",
+            "object": "road_2way_corridor"
+        },
+        {
+            "subject": "right_brick_building",
+            "relation": "faces",
+            "object": "road_2way_corridor"
+        },
+        {
+            "subject": "crosswalk_marker_lane_lines",
+            "relation": "marks",
+            "object": "road_surface"
+        }
+    ],
+    "current_location": {
+        "region": "road_2way_corridor"
+    },
+    "plans": [
+        {
+            "plan_name": "continue_forward",
+            "target_region": "road_2way_corridor",
+            "notes": "Proceed straight along the roadway corridor."
+        }
+    ]
+}

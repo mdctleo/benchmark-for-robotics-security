@@ -1,0 +1,188 @@
+{
+    "objects": [
+        {
+            "name": "robot_arm",
+            "coords": [
+                55,
+                50
+            ]
+        },
+        {
+            "name": "monitor",
+            "coords": [
+                25,
+                35
+            ]
+        },
+        {
+            "name": "clear_vial_1",
+            "coords": [
+                20,
+                70
+            ]
+        },
+        {
+            "name": "clear_vial_2",
+            "coords": [
+                40,
+                75
+            ]
+        },
+        {
+            "name": "clear_vial_3",
+            "coords": [
+                55,
+                45
+            ]
+        },
+        {
+            "name": "expo_marker",
+            "coords": [
+                85,
+                75
+            ]
+        },
+        {
+            "name": "phone_case",
+            "coords": [
+                90,
+                85
+            ]
+        },
+        {
+            "name": "keyboard",
+            "coords": [
+                35,
+                50
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "wooden_desk",
+            "coords": [
+                50,
+                50
+            ]
+        },
+        {
+            "name": "white_work_surface",
+            "coords": [
+                80,
+                80
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "robot_arm",
+            "wooden_desk"
+        ],
+        [
+            "monitor",
+            "wooden_desk"
+        ],
+        [
+            "clear_vial_1",
+            "wooden_desk"
+        ],
+        [
+            "clear_vial_2",
+            "wooden_desk"
+        ],
+        [
+            "clear_vial_3",
+            "wooden_desk"
+        ],
+        [
+            "keyboard",
+            "wooden_desk"
+        ],
+        [
+            "expo_marker",
+            "white_work_surface"
+        ],
+        [
+            "phone_case",
+            "white_work_surface"
+        ]
+    ],
+    "region_connections": [
+        [
+            "wooden_desk",
+            "white_work_surface"
+        ]
+    ],
+    "extra_safe_objects": [
+        {
+            "name": "monitor",
+            "type": "equipment",
+            "coords": [
+                25,
+                35
+            ]
+        },
+        {
+            "name": "clear_vial_1",
+            "type": "static_object",
+            "coords": [
+                20,
+                70
+            ]
+        },
+        {
+            "name": "clear_vial_2",
+            "type": "static_object",
+            "coords": [
+                40,
+                75
+            ]
+        },
+        {
+            "name": "clear_vial_3",
+            "type": "static_object",
+            "coords": [
+                55,
+                45
+            ]
+        },
+        {
+            "name": "keyboard",
+            "type": "equipment",
+            "coords": [
+                35,
+                50
+            ]
+        }
+    ],
+    "extra_unsafe_objects": [
+        {
+            "name": "robot_arm",
+            "type": "machinery",
+            "coords": [
+                55,
+                50
+            ]
+        }
+    ],
+    "extra_safe_regions": [
+        {
+            "name": "wooden_desk",
+            "type": "surface",
+            "coords": [
+                50,
+                50
+            ]
+        },
+        {
+            "name": "white_work_surface",
+            "type": "surface",
+            "coords": [
+                80,
+                80
+            ]
+        }
+    ],
+    "extra_unsafe_regions": [],
+    "current_location": "wooden_desk"
+}

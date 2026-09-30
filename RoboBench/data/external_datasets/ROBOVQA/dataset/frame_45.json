@@ -1,0 +1,432 @@
+{
+    "regions": [
+        {
+            "name": "pool_table_surface",
+            "type": "surface",
+            "bounding_polygon": [
+                [
+                    40,
+                    40
+                ],
+                [
+                    640,
+                    40
+                ],
+                [
+                    640,
+                    460
+                ],
+                [
+                    40,
+                    460
+                ]
+            ]
+        },
+        {
+            "name": "pool_table_corner_tray",
+            "type": "container_region",
+            "bounding_polygon": [
+                [
+                    110,
+                    210
+                ],
+                [
+                    330,
+                    210
+                ],
+                [
+                    330,
+                    360
+                ],
+                [
+                    110,
+                    360
+                ]
+            ]
+        },
+        {
+            "name": "near_cushion_area",
+            "type": "area",
+            "bounding_polygon": [
+                [
+                    40,
+                    120
+                ],
+                [
+                    640,
+                    120
+                ],
+                [
+                    640,
+                    220
+                ],
+                [
+                    40,
+                    220
+                ]
+            ]
+        }
+    ],
+    "objects": [
+        {
+            "name": "cue_balls",
+            "type": "ball_group",
+            "bounding_polygon": [
+                [
+                    450,
+                    0
+                ],
+                [
+                    690,
+                    0
+                ],
+                [
+                    690,
+                    120
+                ],
+                [
+                    450,
+                    120
+                ]
+            ]
+        },
+        {
+            "name": "rack_triangle_balls",
+            "type": "ball_group",
+            "bounding_polygon": [
+                [
+                    110,
+                    210
+                ],
+                [
+                    330,
+                    210
+                ],
+                [
+                    330,
+                    360
+                ],
+                [
+                    110,
+                    360
+                ]
+            ]
+        },
+        {
+            "name": "pool_balls_mixed",
+            "type": "balls",
+            "bounding_polygon": [
+                [
+                    120,
+                    230
+                ],
+                [
+                    320,
+                    230
+                ],
+                [
+                    320,
+                    350
+                ],
+                [
+                    120,
+                    350
+                ]
+            ]
+        },
+        {
+            "name": "pool_table",
+            "type": "table",
+            "bounding_polygon": [
+                [
+                    20,
+                    20
+                ],
+                [
+                    660,
+                    20
+                ],
+                [
+                    660,
+                    500
+                ],
+                [
+                    20,
+                    500
+                ]
+            ]
+        },
+        {
+            "name": "pool_table_corner_pocket",
+            "type": "pocket",
+            "bounding_polygon": [
+                [
+                    265,
+                    235
+                ],
+                [
+                    335,
+                    235
+                ],
+                [
+                    335,
+                    300
+                ],
+                [
+                    265,
+                    300
+                ]
+            ]
+        },
+        {
+            "name": "ball_on_far_left",
+            "type": "ball",
+            "bounding_polygon": [
+                [
+                    55,
+                    150
+                ],
+                [
+                    95,
+                    150
+                ],
+                [
+                    95,
+                    190
+                ],
+                [
+                    55,
+                    190
+                ]
+            ]
+        },
+        {
+            "name": "rail_cushion",
+            "type": "cushion",
+            "bounding_polygon": [
+                [
+                    20,
+                    20
+                ],
+                [
+                    660,
+                    20
+                ],
+                [
+                    660,
+                    80
+                ],
+                [
+                    20,
+                    80
+                ]
+            ]
+        },
+        {
+            "name": "automated_camera_or_cart",
+            "type": "robotic_appliance",
+            "bounding_polygon": [
+                [
+                    260,
+                    120
+                ],
+                [
+                    640,
+                    120
+                ],
+                [
+                    640,
+                    230
+                ],
+                [
+                    260,
+                    230
+                ]
+            ]
+        },
+        {
+            "name": "robotic_arm_or_nozzle",
+            "type": "tool",
+            "bounding_polygon": [
+                [
+                    430,
+                    120
+                ],
+                [
+                    610,
+                    120
+                ],
+                [
+                    610,
+                    205
+                ],
+                [
+                    430,
+                    205
+                ]
+            ]
+        },
+        {
+            "name": "robot_casing",
+            "type": "device_body",
+            "bounding_polygon": [
+                [
+                    360,
+                    115
+                ],
+                [
+                    650,
+                    115
+                ],
+                [
+                    650,
+                    245
+                ],
+                [
+                    360,
+                    245
+                ]
+            ]
+        }
+    ],
+    "semantic_relationships": [
+        {
+            "name": "cue_balls",
+            "relation": "is_on",
+            "target": "pool_table_surface",
+            "confidence": 0.78,
+            "coord": [
+                575,
+                60
+            ]
+        },
+        {
+            "name": "rack_triangle_balls",
+            "relation": "is_contained_in",
+            "target": "pool_table_corner_tray",
+            "confidence": 0.9,
+            "coord": [
+                220,
+                290
+            ]
+        },
+        {
+            "name": "pool_balls_mixed",
+            "relation": "is_in",
+            "target": "pool_table_corner_tray",
+            "confidence": 0.88,
+            "coord": [
+                220,
+                290
+            ]
+        },
+        {
+            "name": "pool_table",
+            "relation": "has_region",
+            "target": "pool_table_surface",
+            "confidence": 0.95,
+            "coord": [
+                340,
+                250
+            ]
+        },
+        {
+            "name": "pool_table",
+            "relation": "has_region",
+            "target": "pool_table_corner_tray",
+            "confidence": 0.92,
+            "coord": [
+                220,
+                285
+            ]
+        },
+        {
+            "name": "pool_table_corner_pocket",
+            "relation": "is_part_of",
+            "target": "pool_table_corner_tray",
+            "confidence": 0.7,
+            "coord": [
+                300,
+                270
+            ]
+        },
+        {
+            "name": "ball_on_far_left",
+            "relation": "is_on",
+            "target": "pool_table_surface",
+            "confidence": 0.8,
+            "coord": [
+                75,
+                170
+            ]
+        },
+        {
+            "name": "rail_cushion",
+            "relation": "bounds",
+            "target": "pool_table_surface",
+            "confidence": 0.85,
+            "coord": [
+                340,
+                60
+            ]
+        },
+        {
+            "name": "automated_camera_or_cart",
+            "relation": "is_near",
+            "target": "pool_table_corner_tray",
+            "confidence": 0.74,
+            "coord": [
+                470,
+                170
+            ]
+        },
+        {
+            "name": "robotic_arm_or_nozzle",
+            "relation": "extends_over",
+            "target": "pool_table_surface",
+            "confidence": 0.77,
+            "coord": [
+                510,
+                165
+            ]
+        },
+        {
+            "name": "robot_casing",
+            "relation": "supports",
+            "target": "robotic_arm_or_nozzle",
+            "confidence": 0.8,
+            "coord": [
+                500,
+                170
+            ]
+        }
+    ],
+    "current_location": {
+        "entity": "ball_on_far_left",
+        "region": "near_cushion_area",
+        "coord": [
+            75,
+            170
+        ]
+    },
+    "plans": [
+        {
+            "plan_name": "process_corner_balls",
+            "entities": [
+                "rack_triangle_balls",
+                "pool_balls_mixed"
+            ],
+            "target_region": "pool_table_corner_tray",
+            "steps": [
+                {
+                    "action": "locate_balls",
+                    "on": "pool_table_corner_tray"
+                },
+                {
+                    "action": "engage_with_tool",
+                    "using": "robotic_arm_or_nozzle"
+                }
+            ]
+        }
+    ]
+}

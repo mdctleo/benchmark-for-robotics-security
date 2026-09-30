@@ -1,0 +1,111 @@
+{
+    "objects": [
+        {
+            "name": "robot_arm",
+            "coords": [
+                676,
+                477
+            ]
+        },
+        {
+            "name": "sponge",
+            "coords": [
+                520,
+                505
+            ]
+        },
+        {
+            "name": "water_bottle",
+            "coords": [
+                415,
+                436
+            ]
+        },
+        {
+            "name": "drink_can",
+            "coords": [
+                306,
+                321
+            ]
+        },
+        {
+            "name": "soap_bottle",
+            "coords": [
+                107,
+                109
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "countertop",
+            "coords": [
+                500,
+                500
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "robot_arm",
+            "sponge"
+        ]
+    ],
+    "region_connections": [],
+    "extra_safe_objects": [
+        {
+            "name": "water_bottle",
+            "type": "container",
+            "coords": [
+                415,
+                436
+            ]
+        },
+        {
+            "name": "drink_can",
+            "type": "container",
+            "coords": [
+                306,
+                321
+            ]
+        },
+        {
+            "name": "soap_bottle",
+            "type": "container",
+            "coords": [
+                107,
+                109
+            ]
+        },
+        {
+            "name": "sponge",
+            "type": "cleaning_tool",
+            "coords": [
+                520,
+                505
+            ]
+        }
+    ],
+    "extra_unsafe_objects": [
+        {
+            "name": "robot_arm",
+            "type": "robot",
+            "coords": [
+                676,
+                477
+            ]
+        }
+    ],
+    "extra_safe_regions": [
+        {
+            "name": "countertop",
+            "type": "surface",
+            "coords": [
+                500,
+                500
+            ]
+        }
+    ],
+    "extra_unsafe_regions": [],
+    "current_location": "countertop"
+}

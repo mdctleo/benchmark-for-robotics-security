@@ -1,0 +1,290 @@
+{
+    "objects": [
+        {
+            "name": "coffee_bag",
+            "type": "bag",
+            "center": {
+                "x": 118,
+                "y": 210
+            }
+        },
+        {
+            "name": "tablet_station",
+            "type": "device",
+            "center": {
+                "x": 365,
+                "y": 265
+            }
+        },
+        {
+            "name": "control_box_or_terminal",
+            "type": "electronic_terminal",
+            "center": {
+                "x": 563,
+                "y": 278
+            }
+        },
+        {
+            "name": "monitoring_device",
+            "type": "device",
+            "center": {
+                "x": 110,
+                "y": 300
+            }
+        },
+        {
+            "name": "red_button_module",
+            "type": "electronic_module",
+            "center": {
+                "x": 680,
+                "y": 240
+            }
+        },
+        {
+            "name": "dark_bento_box",
+            "type": "container",
+            "center": {
+                "x": 605,
+                "y": 215
+            }
+        },
+        {
+            "name": "toolhead_assembly",
+            "type": "robotic_end_effector",
+            "center": {
+                "x": 720,
+                "y": 120
+            }
+        },
+        {
+            "name": "circular_bin_container",
+            "type": "container",
+            "center": {
+                "x": 70,
+                "y": 170
+            }
+        },
+        {
+            "name": "spare_parts_box",
+            "type": "container",
+            "center": {
+                "x": 520,
+                "y": 140
+            }
+        },
+        {
+            "name": "small_white_pad_1",
+            "type": "pad",
+            "center": {
+                "x": 420,
+                "y": 420
+            }
+        },
+        {
+            "name": "small_white_pad_2",
+            "type": "pad",
+            "center": {
+                "x": 260,
+                "y": 330
+            }
+        },
+        {
+            "name": "small_white_pad_3",
+            "type": "pad",
+            "center": {
+                "x": 280,
+                "y": 140
+            }
+        },
+        {
+            "name": "small_white_pad_4",
+            "type": "pad",
+            "center": {
+                "x": 520,
+                "y": 200
+            }
+        },
+        {
+            "name": "small_white_pad_5",
+            "type": "pad",
+            "center": {
+                "x": 470,
+                "y": 510
+            }
+        }
+    ],
+    "regions": [
+        {
+            "name": "current_location",
+            "type": "table_area",
+            "center": {
+                "x": 450,
+                "y": 300
+            },
+            "bounds": {
+                "x_min": 160,
+                "x_max": 780,
+                "y_min": 40,
+                "y_max": 560
+            }
+        },
+        {
+            "name": "wooden_table",
+            "type": "surface",
+            "center": {
+                "x": 470,
+                "y": 315
+            },
+            "bounds": {
+                "x_min": 160,
+                "x_max": 820,
+                "y_min": 70,
+                "y_max": 560
+            }
+        },
+        {
+            "name": "left_margin_region",
+            "type": "surface_zone",
+            "center": {
+                "x": 240,
+                "y": 260
+            },
+            "bounds": {
+                "x_min": 160,
+                "x_max": 380,
+                "y_min": 70,
+                "y_max": 560
+            }
+        },
+        {
+            "name": "right_margin_region",
+            "type": "surface_zone",
+            "center": {
+                "x": 640,
+                "y": 260
+            },
+            "bounds": {
+                "x_min": 480,
+                "x_max": 820,
+                "y_min": 70,
+                "y_max": 560
+            }
+        }
+    ],
+    "semantic_relationships": [
+        {
+            "subject": "monitoring_device",
+            "relation": "is_on",
+            "object": "wooden_table"
+        },
+        {
+            "subject": "coffee_bag",
+            "relation": "is_on",
+            "object": "wooden_table"
+        },
+        {
+            "subject": "tablet_station",
+            "relation": "is_on",
+            "object": "wooden_table"
+        },
+        {
+            "subject": "control_box_or_terminal",
+            "relation": "is_on",
+            "object": "wooden_table"
+        },
+        {
+            "subject": "dark_bento_box",
+            "relation": "is_on",
+            "object": "wooden_table"
+        },
+        {
+            "subject": "red_button_module",
+            "relation": "is_on",
+            "object": "wooden_table"
+        },
+        {
+            "subject": "small_white_pad_1",
+            "relation": "is_on",
+            "object": "wooden_table"
+        },
+        {
+            "subject": "small_white_pad_2",
+            "relation": "is_on",
+            "object": "wooden_table"
+        },
+        {
+            "subject": "small_white_pad_3",
+            "relation": "is_on",
+            "object": "wooden_table"
+        },
+        {
+            "subject": "small_white_pad_4",
+            "relation": "is_on",
+            "object": "wooden_table"
+        },
+        {
+            "subject": "small_white_pad_5",
+            "relation": "is_on",
+            "object": "wooden_table"
+        },
+        {
+            "subject": "toolhead_assembly",
+            "relation": "operates_near",
+            "object": "current_location"
+        },
+        {
+            "subject": "circular_bin_container",
+            "relation": "is_near",
+            "object": "left_margin_region"
+        },
+        {
+            "subject": "spare_parts_box",
+            "relation": "is_near",
+            "object": "right_margin_region"
+        },
+        {
+            "subject": "tablet_station",
+            "relation": "is_in_region",
+            "object": "left_margin_region"
+        },
+        {
+            "subject": "control_box_or_terminal",
+            "relation": "is_in_region",
+            "object": "right_margin_region"
+        },
+        {
+            "subject": "red_button_module",
+            "relation": "is_in_region",
+            "object": "right_margin_region"
+        }
+    ],
+    "current_location": {
+        "name": "current_location",
+        "details": {
+            "primary_surface": "wooden_table"
+        }
+    },
+    "plans": [
+        {
+            "plan_name": "place_near_current_location",
+            "target_region": "current_location",
+            "actions": [
+                {
+                    "action": "move_towards",
+                    "target": "tablet_station"
+                },
+                {
+                    "action": "move_towards",
+                    "target": "control_box_or_terminal"
+                }
+            ]
+        }
+    ],
+    "connectivity": [
+        {
+            "from": "toolhead_assembly",
+            "relation": "can_reach",
+            "to": "current_location"
+        }
+    ]
+}

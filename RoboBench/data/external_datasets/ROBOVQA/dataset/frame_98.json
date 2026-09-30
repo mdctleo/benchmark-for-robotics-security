@@ -1,0 +1,149 @@
+{
+    "objects": [
+        {
+            "name": "robot_arm",
+            "coords": [
+                700,
+                700
+            ]
+        },
+        {
+            "name": "yellow_snack_bag",
+            "coords": [
+                300,
+                280
+            ]
+        },
+        {
+            "name": "pen_holder",
+            "coords": [
+                250,
+                200
+            ]
+        },
+        {
+            "name": "hand_sanitizer",
+            "coords": [
+                400,
+                320
+            ]
+        },
+        {
+            "name": "small_snack_bags",
+            "coords": [
+                500,
+                500
+            ]
+        },
+        {
+            "name": "white_candies",
+            "coords": [
+                60,
+                50
+            ]
+        },
+        {
+            "name": "monitor_stand",
+            "coords": [
+                750,
+                300
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "desk_surface",
+            "coords": [
+                500,
+                500
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "robot_arm",
+            "small_snack_bags"
+        ],
+        [
+            "yellow_snack_bag",
+            "pen_holder"
+        ],
+        [
+            "yellow_snack_bag",
+            "hand_sanitizer"
+        ]
+    ],
+    "region_connections": [],
+    "extra_safe_objects": [
+        {
+            "name": "robot_arm",
+            "type": "mechanical",
+            "coords": [
+                700,
+                700
+            ]
+        },
+        {
+            "name": "yellow_snack_bag",
+            "type": "food",
+            "coords": [
+                300,
+                280
+            ]
+        },
+        {
+            "name": "pen_holder",
+            "type": "storage",
+            "coords": [
+                250,
+                200
+            ]
+        },
+        {
+            "name": "hand_sanitizer",
+            "type": "hygiene_product",
+            "coords": [
+                400,
+                320
+            ]
+        },
+        {
+            "name": "small_snack_bags",
+            "type": "food",
+            "coords": [
+                500,
+                500
+            ]
+        },
+        {
+            "name": "white_candies",
+            "type": "food",
+            "coords": [
+                60,
+                50
+            ]
+        }
+    ],
+    "extra_unsafe_objects": [
+        {
+            "name": "monitor_stand",
+            "type": "furniture_part",
+            "coords": [
+                750,
+                300
+            ]
+        }
+    ],
+    "extra_safe_regions": [
+        {
+            "name": "desk_surface",
+            "type": "flat_surface",
+            "coords": [
+                500,
+                500
+            ]
+        }
+    ],
+    "extra_unsafe_regions": [],
+    "current_location": "desk_surface"
+}

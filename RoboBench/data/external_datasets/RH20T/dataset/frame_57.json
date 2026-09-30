@@ -1,0 +1,352 @@
+{
+    "objects": [
+        {
+            "name": "industrial_printer_bed_cover",
+            "type": "surface",
+            "bounding_box": {
+                "x": 0.18,
+                "y": 0.55
+            }
+        },
+        {
+            "name": "blue_textile",
+            "type": "fabric",
+            "bounding_box": {
+                "x": 0.5,
+                "y": 0.72
+            }
+        },
+        {
+            "name": "printed_art_design",
+            "type": "printed_design",
+            "bounding_box": {
+                "x": 0.52,
+                "y": 0.78
+            }
+        },
+        {
+            "name": "safety_cone_like_bin_or_container",
+            "type": "container",
+            "bounding_box": {
+                "x": 0.12,
+                "y": 0.62
+            }
+        },
+        {
+            "name": "side_black_cabinet_or_chassis",
+            "type": "machine_part",
+            "bounding_box": {
+                "x": 0.08,
+                "y": 0.48
+            }
+        },
+        {
+            "name": "keyboard",
+            "type": "input_device",
+            "bounding_box": {
+                "x": 0.23,
+                "y": 0.2
+            }
+        },
+        {
+            "name": "monitor_or_panel",
+            "type": "display_or_panel",
+            "bounding_box": {
+                "x": 0.23,
+                "y": 0.2
+            }
+        },
+        {
+            "name": "tall_frame_leg_left",
+            "type": "frame_part",
+            "bounding_box": {
+                "x": 0.05,
+                "y": 0.52
+            }
+        },
+        {
+            "name": "tall_frame_leg_right",
+            "type": "frame_part",
+            "bounding_box": {
+                "x": 0.88,
+                "y": 0.52
+            }
+        },
+        {
+            "name": "roller_or_large_round_component_left",
+            "type": "mechanical_component",
+            "bounding_box": {
+                "x": 0.13,
+                "y": 0.45
+            }
+        },
+        {
+            "name": "roller_or_large_round_component_near_right",
+            "type": "mechanical_component",
+            "bounding_box": {
+                "x": 0.9,
+                "y": 0.52
+            }
+        },
+        {
+            "name": "tool_or_rod_near_bottom_right",
+            "type": "tool",
+            "bounding_box": {
+                "x": 0.63,
+                "y": 0.87
+            }
+        },
+        {
+            "name": "small_green_colored_item",
+            "type": "small_object",
+            "bounding_box": {
+                "x": 0.42,
+                "y": 0.18
+            }
+        },
+        {
+            "name": "small_yellow_colored_item",
+            "type": "small_object",
+            "bounding_box": {
+                "x": 0.43,
+                "y": 0.19
+            }
+        },
+        {
+            "name": "small_box_or_block",
+            "type": "small_object",
+            "bounding_box": {
+                "x": 0.46,
+                "y": 0.2
+            }
+        },
+        {
+            "name": "cylindrical_head_or_nozzle",
+            "type": "machine_part",
+            "bounding_box": {
+                "x": 0.79,
+                "y": 0.34
+            }
+        },
+        {
+            "name": "stack_or_bin_red_button_on_machine",
+            "type": "indicator_or_control",
+            "bounding_box": {
+                "x": 0.57,
+                "y": 0.1
+            }
+        },
+        {
+            "name": "thin_wire_bundle",
+            "type": "cable",
+            "bounding_box": {
+                "x": 0.35,
+                "y": 0.33
+            }
+        },
+        {
+            "name": "small_blue_dark_object_on_bed",
+            "type": "small_object",
+            "bounding_box": {
+                "x": 0.52,
+                "y": 0.55
+            }
+        }
+    ],
+    "regions": [
+        {
+            "name": "printer_bed_area",
+            "type": "work_area",
+            "polygon": [
+                {
+                    "x": 0.18,
+                    "y": 0.55
+                },
+                {
+                    "x": 0.82,
+                    "y": 0.55
+                },
+                {
+                    "x": 0.86,
+                    "y": 0.92
+                },
+                {
+                    "x": 0.14,
+                    "y": 0.92
+                }
+            ]
+        },
+        {
+            "name": "top_left_background_station",
+            "type": "background_area",
+            "polygon": [
+                {
+                    "x": 0.0,
+                    "y": 0.0
+                },
+                {
+                    "x": 0.45,
+                    "y": 0.0
+                },
+                {
+                    "x": 0.45,
+                    "y": 0.35
+                },
+                {
+                    "x": 0.0,
+                    "y": 0.35
+                }
+            ]
+        },
+        {
+            "name": "top_center_control_area",
+            "type": "machine_area",
+            "polygon": [
+                {
+                    "x": 0.35,
+                    "y": 0.0
+                },
+                {
+                    "x": 0.7,
+                    "y": 0.0
+                },
+                {
+                    "x": 0.7,
+                    "y": 0.28
+                },
+                {
+                    "x": 0.35,
+                    "y": 0.28
+                }
+            ]
+        },
+        {
+            "name": "bottom_right_floor_or_workspace",
+            "type": "workspace_area",
+            "polygon": [
+                {
+                    "x": 0.55,
+                    "y": 0.75
+                },
+                {
+                    "x": 1.0,
+                    "y": 0.75
+                },
+                {
+                    "x": 1.0,
+                    "y": 1.0
+                },
+                {
+                    "x": 0.55,
+                    "y": 1.0
+                }
+            ]
+        }
+    ],
+    "semantic_relationships": [
+        {
+            "subject": "blue_textile",
+            "relation": "is_on",
+            "object": "printer_bed_area"
+        },
+        {
+            "subject": "printed_art_design",
+            "relation": "is_printed_on",
+            "object": "blue_textile"
+        },
+        {
+            "subject": "small_blue_dark_object_on_bed",
+            "relation": "is_on",
+            "object": "printer_bed_area"
+        },
+        {
+            "subject": "industrial_printer_bed_cover",
+            "relation": "covers",
+            "object": "printer_bed_area"
+        },
+        {
+            "subject": "cylindrical_head_or_nozzle",
+            "relation": "is_near",
+            "object": "printer_bed_area"
+        },
+        {
+            "subject": "thin_wire_bundle",
+            "relation": "runs_through",
+            "object": "top_center_control_area"
+        },
+        {
+            "subject": "keyboard",
+            "relation": "is_in",
+            "object": "top_left_background_station"
+        },
+        {
+            "subject": "monitor_or_panel",
+            "relation": "is_in",
+            "object": "top_left_background_station"
+        },
+        {
+            "subject": "small_green_colored_item",
+            "relation": "is_in",
+            "object": "top_center_control_area"
+        },
+        {
+            "subject": "small_yellow_colored_item",
+            "relation": "is_in",
+            "object": "top_center_control_area"
+        },
+        {
+            "subject": "small_box_or_block",
+            "relation": "is_in",
+            "object": "top_center_control_area"
+        },
+        {
+            "subject": "stack_or_bin_red_button_on_machine",
+            "relation": "is_in",
+            "object": "top_center_control_area"
+        },
+        {
+            "subject": "tool_or_rod_near_bottom_right",
+            "relation": "is_in",
+            "object": "bottom_right_floor_or_workspace"
+        },
+        {
+            "subject": "tall_frame_leg_left",
+            "relation": "borders",
+            "object": "printer_bed_area"
+        },
+        {
+            "subject": "tall_frame_leg_right",
+            "relation": "borders",
+            "object": "printer_bed_area"
+        },
+        {
+            "subject": "roller_or_large_round_component_left",
+            "relation": "is_near",
+            "object": "printer_bed_area"
+        },
+        {
+            "subject": "roller_or_large_round_component_near_right",
+            "relation": "is_near",
+            "object": "printer_bed_area"
+        },
+        {
+            "subject": "side_black_cabinet_or_chassis",
+            "relation": "is_near",
+            "object": "top_left_background_station"
+        },
+        {
+            "subject": "safety_cone_like_bin_or_container",
+            "relation": "is_near",
+            "object": "printer_bed_area"
+        }
+    ],
+    "current_location": "printer_bed_area",
+    "plans": [
+        {
+            "plan_id": "plan_1",
+            "goal": "prepare_or_print_on",
+            "target": "printed_art_design",
+            "within": "printer_bed_area"
+        }
+    ]
+}

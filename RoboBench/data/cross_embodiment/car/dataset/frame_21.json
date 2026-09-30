@@ -1,0 +1,294 @@
+{
+    "objects": [
+        {
+            "name": "road",
+            "type": "infrastructure"
+        },
+        {
+            "name": "vehicles",
+            "type": "dynamic_entities",
+            "includes": [
+                "red_truck",
+                "white_suv",
+                "dark_van"
+            ]
+        },
+        {
+            "name": "red_truck",
+            "type": "vehicle"
+        },
+        {
+            "name": "white_suv",
+            "type": "vehicle"
+        },
+        {
+            "name": "dark_van",
+            "type": "vehicle"
+        },
+        {
+            "name": "trees",
+            "type": "vegetation"
+        },
+        {
+            "name": "buildings_walls",
+            "type": "structures"
+        },
+        {
+            "name": "fence_walls",
+            "type": "structures"
+        },
+        {
+            "name": "bushes",
+            "type": "vegetation"
+        },
+        {
+            "name": "street_lamps",
+            "type": "infrastructure"
+        },
+        {
+            "name": "sidewalk_edge",
+            "type": "infrastructure"
+        }
+    ],
+    "regions": [
+        {
+            "name": "current_location",
+            "polygon": [
+                [
+                    495,
+                    900
+                ],
+                [
+                    820,
+                    620
+                ],
+                [
+                    1180,
+                    650
+                ],
+                [
+                    860,
+                    980
+                ]
+            ],
+            "type": "road_segment"
+        },
+        {
+            "name": "lane_left",
+            "polygon": [
+                [
+                    450,
+                    900
+                ],
+                [
+                    740,
+                    650
+                ],
+                [
+                    920,
+                    670
+                ],
+                [
+                    610,
+                    940
+                ]
+            ],
+            "type": "road_lane"
+        },
+        {
+            "name": "lane_right",
+            "polygon": [
+                [
+                    740,
+                    650
+                ],
+                [
+                    820,
+                    620
+                ],
+                [
+                    1180,
+                    650
+                ],
+                [
+                    920,
+                    670
+                ]
+            ],
+            "type": "road_lane"
+        },
+        {
+            "name": "tree_strip_left",
+            "polygon": [
+                [
+                    0,
+                    900
+                ],
+                [
+                    450,
+                    900
+                ],
+                [
+                    610,
+                    940
+                ],
+                [
+                    120,
+                    980
+                ]
+            ],
+            "type": "vegetation_strip"
+        },
+        {
+            "name": "tree_strip_right",
+            "polygon": [
+                [
+                    820,
+                    620
+                ],
+                [
+                    1180,
+                    650
+                ],
+                [
+                    1280,
+                    720
+                ],
+                [
+                    930,
+                    700
+                ]
+            ],
+            "type": "vegetation_strip"
+        },
+        {
+            "name": "fence_zone_right",
+            "polygon": [
+                [
+                    930,
+                    700
+                ],
+                [
+                    1280,
+                    720
+                ],
+                [
+                    1280,
+                    980
+                ],
+                [
+                    860,
+                    980
+                ]
+            ],
+            "type": "side_structure_zone"
+        },
+        {
+            "name": "sidewalk_zone_left",
+            "polygon": [
+                [
+                    0,
+                    900
+                ],
+                [
+                    120,
+                    980
+                ],
+                [
+                    610,
+                    940
+                ],
+                [
+                    450,
+                    900
+                ]
+            ],
+            "type": "sidewalk_edge_zone"
+        }
+    ],
+    "semantic_relationships": [
+        {
+            "subject": "current_location",
+            "predicate": "part_of",
+            "object": "road"
+        },
+        {
+            "subject": "lane_left",
+            "predicate": "adjacent_to",
+            "object": "lane_right"
+        },
+        {
+            "subject": "current_location",
+            "predicate": "overlaps",
+            "object": "lane_left"
+        },
+        {
+            "subject": "current_location",
+            "predicate": "overlaps",
+            "object": "lane_right"
+        },
+        {
+            "subject": "trees",
+            "predicate": "border_along",
+            "object": "tree_strip_left"
+        },
+        {
+            "subject": "trees",
+            "predicate": "border_along",
+            "object": "tree_strip_right"
+        },
+        {
+            "subject": "bushes",
+            "predicate": "located_in",
+            "object": "fence_zone_right"
+        },
+        {
+            "subject": "fence_walls",
+            "predicate": "encloses",
+            "object": "fence_zone_right"
+        },
+        {
+            "subject": "sidewalk_edge",
+            "predicate": "near",
+            "object": "sidewalk_zone_left"
+        },
+        {
+            "subject": "vehicles",
+            "predicate": "travel_on",
+            "object": "road"
+        },
+        {
+            "subject": "red_truck",
+            "predicate": "parked_or_stopped_near",
+            "object": "lane_right"
+        },
+        {
+            "subject": "white_suv",
+            "predicate": "traveling_or_stopped_near",
+            "object": "lane_left"
+        },
+        {
+            "subject": "dark_van",
+            "predicate": "traveling_or_stopped_near",
+            "object": "lane_left"
+        },
+        {
+            "subject": "street_lamps",
+            "predicate": "aligned_along",
+            "object": "road"
+        }
+    ],
+    "current_location": "current_location",
+    "connections": [
+        {
+            "from": "current_location",
+            "to": "lane_left",
+            "type": "lane_continuation"
+        },
+        {
+            "from": "current_location",
+            "to": "lane_right",
+            "type": "lane_continuation"
+        }
+    ]
+}

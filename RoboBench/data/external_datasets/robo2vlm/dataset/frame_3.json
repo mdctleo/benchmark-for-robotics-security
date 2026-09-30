@@ -1,0 +1,155 @@
+{
+    "objects": [
+        {
+            "name": "pepsi_can",
+            "coords": [
+                45,
+                25
+            ]
+        },
+        {
+            "name": "plastic_bottle",
+            "coords": [
+                58,
+                30
+            ]
+        },
+        {
+            "name": "robotic_gripper",
+            "coords": [
+                65,
+                35
+            ]
+        },
+        {
+            "name": "cups",
+            "coords": [
+                18,
+                30
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "workbench_surface",
+            "coords": [
+                50,
+                30
+            ]
+        },
+        {
+            "name": "top_drawer",
+            "coords": [
+                50,
+                60
+            ]
+        },
+        {
+            "name": "open_drawer",
+            "coords": [
+                50,
+                80
+            ]
+        },
+        {
+            "name": "shelf_area",
+            "coords": [
+                20,
+                30
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "robotic_gripper",
+            "holding_object_on_surface_near_object_on_surface"
+        ],
+        [
+            "robotic_gripper",
+            "holding_plastic_bottle"
+        ],
+        [
+            "plastic_bottle",
+            "on_surface_near_object_on_surface"
+        ],
+        [
+            "pepsi_can",
+            "on_surface_near_object_held_by_robot"
+        ],
+        [
+            "cups",
+            "on_shelf_area"
+        ]
+    ],
+    "region_connections": [
+        [
+            "workbench_surface",
+            "above_drawer"
+        ],
+        [
+            "top_drawer",
+            "above_drawer"
+        ],
+        [
+            "shelf_area",
+            "next_to_workbench_surface"
+        ]
+    ],
+    "extra_safe_objects": [
+        {
+            "name": "plastic_bottle",
+            "type": "bottle",
+            "coords": [
+                58,
+                30
+            ]
+        },
+        {
+            "name": "pepsi_can",
+            "type": "can",
+            "coords": [
+                45,
+                25
+            ]
+        }
+    ],
+    "extra_unsafe_objects": [
+        {
+            "name": "robotic_gripper",
+            "type": "robot_part",
+            "coords": [
+                65,
+                35
+            ]
+        }
+    ],
+    "extra_safe_regions": [
+        {
+            "name": "workbench_surface",
+            "type": "table_surface",
+            "coords": [
+                50,
+                30
+            ]
+        },
+        {
+            "name": "shelf_area",
+            "type": "shelf",
+            "coords": [
+                20,
+                30
+            ]
+        }
+    ],
+    "extra_unsafe_regions": [
+        {
+            "name": "open_drawer",
+            "type": "drawer_obstacle",
+            "coords": [
+                50,
+                80
+            ]
+        }
+    ],
+    "current_location": "workbench_surface"
+}

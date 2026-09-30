@@ -1,0 +1,102 @@
+{
+    "objects": [
+        {
+            "name": "bananas",
+            "coords": [
+                200,
+                500
+            ]
+        },
+        {
+            "name": "white_bowl",
+            "coords": [
+                200,
+                500
+            ]
+        },
+        {
+            "name": "utensil",
+            "coords": [
+                180,
+                680
+            ]
+        },
+        {
+            "name": "jars",
+            "coords": [
+                100,
+                250
+            ]
+        },
+        {
+            "name": "butter_block",
+            "coords": [
+                350,
+                850
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "countertop",
+            "coords": [
+                500,
+                500
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "bananas",
+            "white_bowl"
+        ],
+        [
+            "white_bowl",
+            "countertop"
+        ],
+        [
+            "utensil",
+            "countertop"
+        ],
+        [
+            "butter_block",
+            "countertop"
+        ],
+        [
+            "jars",
+            "countertop"
+        ]
+    ],
+    "region_connections": [],
+    "extra_safe_objects": [
+        {
+            "name": "bananas",
+            "type": "food",
+            "coords": [
+                200,
+                500
+            ]
+        },
+        {
+            "name": "white_bowl",
+            "type": "container",
+            "coords": [
+                200,
+                500
+            ]
+        }
+    ],
+    "extra_unsafe_objects": [],
+    "extra_safe_regions": [
+        {
+            "name": "countertop",
+            "type": "surface",
+            "coords": [
+                500,
+                500
+            ]
+        }
+    ],
+    "extra_unsafe_regions": [],
+    "current_location": "countertop"
+}

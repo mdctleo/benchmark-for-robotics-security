@@ -1,0 +1,240 @@
+{
+    "objects": [
+        {
+            "name": "stop_sign",
+            "type": "sign",
+            "position": {
+                "x": 0.66,
+                "y": 0.63
+            },
+            "attributes": {
+                "color": "red",
+                "text": "STOP"
+            }
+        },
+        {
+            "name": "all_way_plaque",
+            "type": "sign_plaque",
+            "position": {
+                "x": 0.67,
+                "y": 0.64
+            },
+            "attributes": {
+                "text": "ALL WAY"
+            },
+            "parent": "stop_sign"
+        },
+        {
+            "name": "dead_end_sign",
+            "type": "sign",
+            "position": {
+                "x": 0.94,
+                "y": 0.63
+            },
+            "attributes": {
+                "shape": "pentagon",
+                "color": "yellow",
+                "text": "DEAD END"
+            }
+        },
+        {
+            "name": "utility_pole",
+            "type": "pole",
+            "position": {
+                "x": 0.79,
+                "y": 0.54
+            },
+            "attributes": {
+                "material": "wood"
+            }
+        },
+        {
+            "name": "cross_streets_sign_post",
+            "type": "sign_post",
+            "position": {
+                "x": 0.83,
+                "y": 0.78
+            },
+            "attributes": {}
+        },
+        {
+            "name": "vehicle_1",
+            "type": "vehicle",
+            "position": {
+                "x": 0.52,
+                "y": 0.8
+            },
+            "attributes": {
+                "color": "unknown",
+                "orientation": "unknown"
+            }
+        },
+        {
+            "name": "street_lamp_left",
+            "type": "lamp",
+            "position": {
+                "x": 0.08,
+                "y": 0.69
+            },
+            "attributes": {}
+        }
+    ],
+    "regions": [
+        {
+            "name": "road_intersection",
+            "type": "road",
+            "polygon": [
+                {
+                    "x": 0.18,
+                    "y": 0.74
+                },
+                {
+                    "x": 0.86,
+                    "y": 0.74
+                },
+                {
+                    "x": 0.88,
+                    "y": 0.98
+                },
+                {
+                    "x": 0.16,
+                    "y": 0.98
+                }
+            ]
+        },
+        {
+            "name": "stop_line_area",
+            "type": "lane_marker_area",
+            "polygon": [
+                {
+                    "x": 0.3,
+                    "y": 0.9
+                },
+                {
+                    "x": 0.62,
+                    "y": 0.9
+                },
+                {
+                    "x": 0.62,
+                    "y": 0.94
+                },
+                {
+                    "x": 0.3,
+                    "y": 0.94
+                }
+            ]
+        },
+        {
+            "name": "current_location",
+            "type": "vehicle_position",
+            "point": {
+                "x": 0.5,
+                "y": 0.96
+            }
+        },
+        {
+            "name": "right_hedge_background",
+            "type": "vegetation_area",
+            "polygon": [
+                {
+                    "x": 0.63,
+                    "y": 0.58
+                },
+                {
+                    "x": 1.0,
+                    "y": 0.58
+                },
+                {
+                    "x": 1.0,
+                    "y": 0.98
+                },
+                {
+                    "x": 0.63,
+                    "y": 0.98
+                }
+            ]
+        },
+        {
+            "name": "left_tree_line",
+            "type": "vegetation_area",
+            "polygon": [
+                {
+                    "x": 0.0,
+                    "y": 0.55
+                },
+                {
+                    "x": 0.4,
+                    "y": 0.55
+                },
+                {
+                    "x": 0.4,
+                    "y": 0.98
+                },
+                {
+                    "x": 0.0,
+                    "y": 0.98
+                }
+            ]
+        }
+    ],
+    "semantic_relationships": [
+        {
+            "subject": "stop_sign",
+            "relation": "controls_movement_for",
+            "object": "road_intersection"
+        },
+        {
+            "subject": "all_way_plaque",
+            "relation": "is_attached_to",
+            "object": "stop_sign"
+        },
+        {
+            "subject": "dead_end_sign",
+            "relation": "indicates_condition_of",
+            "object": "road_intersection"
+        },
+        {
+            "subject": "utility_pole",
+            "relation": "stands_along_boundary_of",
+            "object": "road_intersection"
+        },
+        {
+            "subject": "street_lamp_left",
+            "relation": "stands_along_boundary_of",
+            "object": "road_intersection"
+        },
+        {
+            "subject": "vehicle_1",
+            "relation": "is_within",
+            "object": "road_intersection"
+        },
+        {
+            "subject": "current_location",
+            "relation": "is_near",
+            "object": "stop_line_area"
+        },
+        {
+            "subject": "current_location",
+            "relation": "is_within",
+            "object": "road_intersection"
+        },
+        {
+            "subject": "right_hedge_background",
+            "relation": "is_adjacent_to",
+            "object": "road_intersection"
+        },
+        {
+            "subject": "left_tree_line",
+            "relation": "is_adjacent_to",
+            "object": "road_intersection"
+        }
+    ],
+    "current_location": "current_location",
+    "plans": [
+        {
+            "name": "approach_stop_line",
+            "target_region": "stop_line_area",
+            "rationale": "Stop-controlled intersection sign is present; stop line area is immediately ahead."
+        }
+    ]
+}

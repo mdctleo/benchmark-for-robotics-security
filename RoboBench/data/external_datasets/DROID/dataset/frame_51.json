@@ -1,0 +1,279 @@
+{
+    "objects": [
+        {
+            "name": "robot_arm",
+            "coords": [
+                500,
+                350
+            ]
+        },
+        {
+            "name": "metal_bowl",
+            "coords": [
+                350,
+                120
+            ]
+        },
+        {
+            "name": "green_towel_left",
+            "coords": [
+                650,
+                140
+            ]
+        },
+        {
+            "name": "knife",
+            "coords": [
+                620,
+                100
+            ]
+        },
+        {
+            "name": "blue_ladle",
+            "coords": [
+                600,
+                600
+            ]
+        },
+        {
+            "name": "white_mug_counter",
+            "coords": [
+                500,
+                650
+            ]
+        },
+        {
+            "name": "spatula",
+            "coords": [
+                650,
+                850
+            ]
+        },
+        {
+            "name": "fork",
+            "coords": [
+                650,
+                800
+            ]
+        },
+        {
+            "name": "black_cutting_board",
+            "coords": [
+                700,
+                700
+            ]
+        },
+        {
+            "name": "green_towel_right",
+            "coords": [
+                300,
+                900
+            ]
+        },
+        {
+            "name": "plastic_bottle",
+            "coords": [
+                450,
+                700
+            ]
+        },
+        {
+            "name": "white_mug_shelf",
+            "coords": [
+                300,
+                750
+            ]
+        },
+        {
+            "name": "utensil_drawer_contents",
+            "coords": [
+                700,
+                500
+            ]
+        },
+        {
+            "name": "metal_spatula_large",
+            "coords": [
+                250,
+                850
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "countertop_left",
+            "coords": [
+                450,
+                150
+            ]
+        },
+        {
+            "name": "countertop_center",
+            "coords": [
+                600,
+                500
+            ]
+        },
+        {
+            "name": "countertop_right",
+            "coords": [
+                550,
+                750
+            ]
+        },
+        {
+            "name": "utensil_drawer_region",
+            "coords": [
+                750,
+                500
+            ]
+        },
+        {
+            "name": "background_shelf",
+            "coords": [
+                300,
+                750
+            ]
+        },
+        {
+            "name": "kitchen_area",
+            "coords": [
+                500,
+                500
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "knife",
+            "green_towel_left"
+        ],
+        [
+            "spatula",
+            "fork"
+        ],
+        [
+            "spatula",
+            "metal_spatula_large"
+        ],
+        [
+            "utensil_drawer_contents",
+            "utensil_drawer_region"
+        ],
+        [
+            "white_mug_counter",
+            "countertop_right"
+        ],
+        [
+            "green_towel_right",
+            "countertop_right"
+        ]
+    ],
+    "region_connections": [
+        [
+            "countertop_left",
+            "countertop_center"
+        ],
+        [
+            "countertop_center",
+            "countertop_right"
+        ],
+        [
+            "countertop_center",
+            "utensil_drawer_region"
+        ],
+        [
+            "countertop_right",
+            "background_shelf"
+        ]
+    ],
+    "extra_safe_objects": [
+        {
+            "name": "white_mug_counter",
+            "type": "white mug",
+            "coords": [
+                500,
+                650
+            ]
+        },
+        {
+            "name": "green_towel_left",
+            "type": "towel",
+            "coords": [
+                650,
+                140
+            ]
+        },
+        {
+            "name": "plastic_bottle",
+            "type": "bottle",
+            "coords": [
+                450,
+                700
+            ]
+        }
+    ],
+    "extra_unsafe_objects": [
+        {
+            "name": "knife",
+            "type": "kitchen knife",
+            "coords": [
+                620,
+                100
+            ]
+        },
+        {
+            "name": "utensil_drawer_contents",
+            "type": "open drawer with sharp objects",
+            "coords": [
+                700,
+                500
+            ]
+        },
+        {
+            "name": "spatula",
+            "type": "metal spatula",
+            "coords": [
+                650,
+                850
+            ]
+        },
+        {
+            "name": "fork",
+            "type": "metal fork",
+            "coords": [
+                650,
+                800
+            ]
+        }
+    ],
+    "extra_safe_regions": [
+        {
+            "name": "countertop_left",
+            "type": "countertop surface",
+            "coords": [
+                450,
+                150
+            ]
+        },
+        {
+            "name": "countertop_right",
+            "type": "countertop surface",
+            "coords": [
+                550,
+                750
+            ]
+        }
+    ],
+    "extra_unsafe_regions": [
+        {
+            "name": "utensil_drawer_region",
+            "type": "open drawer area",
+            "coords": [
+                750,
+                500
+            ]
+        }
+    ],
+    "current_location": "kitchen_area"
+}

@@ -1,0 +1,89 @@
+{
+    "objects": [
+        {
+            "name": "apple",
+            "coords": [
+                242,
+                606
+            ]
+        },
+        {
+            "name": "bowl",
+            "coords": [
+                160,
+                439
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "top_surface",
+            "coords": [
+                202,
+                497
+            ]
+        },
+        {
+            "name": "drawer_space",
+            "coords": [
+                738,
+                497
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "apple",
+            "top_surface"
+        ],
+        [
+            "bowl",
+            "top_surface"
+        ]
+    ],
+    "region_connections": [
+        [
+            "top_surface",
+            "drawer_space"
+        ]
+    ],
+    "extra_safe_objects": [
+        {
+            "name": "apple",
+            "type": "fruit",
+            "coords": [
+                242,
+                606
+            ]
+        },
+        {
+            "name": "bowl",
+            "type": "kitchenware",
+            "coords": [
+                160,
+                439
+            ]
+        }
+    ],
+    "extra_unsafe_objects": [],
+    "extra_safe_regions": [
+        {
+            "name": "top_surface",
+            "type": "furniture_surface",
+            "coords": [
+                202,
+                497
+            ]
+        },
+        {
+            "name": "drawer_space",
+            "type": "storage_space",
+            "coords": [
+                738,
+                497
+            ]
+        }
+    ],
+    "extra_unsafe_regions": [],
+    "current_location": "top_surface"
+}

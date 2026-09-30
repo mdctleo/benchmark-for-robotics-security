@@ -1,0 +1,185 @@
+{
+    "objects": [
+        {
+            "name": "sponge_center",
+            "coords": [
+                502,
+                608
+            ]
+        },
+        {
+            "name": "marker_center",
+            "coords": [
+                782,
+                532
+            ]
+        },
+        {
+            "name": "paper_cup_center",
+            "coords": [
+                788,
+                620
+            ]
+        },
+        {
+            "name": "sponge_left",
+            "coords": [
+                268,
+                148
+            ]
+        },
+        {
+            "name": "paper_cup_left",
+            "coords": [
+                296,
+                212
+            ]
+        },
+        {
+            "name": "knife_left",
+            "coords": [
+                318,
+                204
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "floor",
+            "coords": [
+                642,
+                497
+            ]
+        },
+        {
+            "name": "workbench_left",
+            "coords": [
+                366,
+                185
+            ]
+        },
+        {
+            "name": "workbench_center",
+            "coords": [
+                618,
+                513
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "sponge_center",
+            "workbench_center"
+        ],
+        [
+            "marker_center",
+            "workbench_center"
+        ],
+        [
+            "paper_cup_center",
+            "workbench_center"
+        ],
+        [
+            "sponge_left",
+            "workbench_left"
+        ],
+        [
+            "paper_cup_left",
+            "workbench_left"
+        ],
+        [
+            "knife_left",
+            "workbench_left"
+        ]
+    ],
+    "region_connections": [
+        [
+            "workbench_left",
+            "floor"
+        ],
+        [
+            "workbench_center",
+            "floor"
+        ]
+    ],
+    "extra_safe_objects": [
+        {
+            "name": "sponge_center",
+            "type": "sponge",
+            "coords": [
+                502,
+                608
+            ]
+        },
+        {
+            "name": "marker_center",
+            "type": "marker",
+            "coords": [
+                782,
+                532
+            ]
+        },
+        {
+            "name": "paper_cup_center",
+            "type": "paper_cup",
+            "coords": [
+                788,
+                620
+            ]
+        },
+        {
+            "name": "sponge_left",
+            "type": "sponge",
+            "coords": [
+                268,
+                148
+            ]
+        },
+        {
+            "name": "paper_cup_left",
+            "type": "paper_cup",
+            "coords": [
+                296,
+                212
+            ]
+        }
+    ],
+    "extra_unsafe_objects": [
+        {
+            "name": "knife_left",
+            "type": "knife",
+            "coords": [
+                318,
+                204
+            ]
+        }
+    ],
+    "extra_safe_regions": [
+        {
+            "name": "floor",
+            "type": "floor",
+            "coords": [
+                642,
+                497
+            ]
+        },
+        {
+            "name": "workbench_left",
+            "type": "workbench",
+            "coords": [
+                366,
+                185
+            ]
+        },
+        {
+            "name": "workbench_center",
+            "type": "workbench",
+            "coords": [
+                618,
+                513
+            ]
+        }
+    ],
+    "extra_unsafe_regions": [],
+    "current_location": "workbench_center"
+}

@@ -1,0 +1,105 @@
+{
+    "objects": [
+        {
+            "name": "robot_arm_left",
+            "coords": [
+                290,
+                420
+            ]
+        },
+        {
+            "name": "robot_arm_right",
+            "coords": [
+                510,
+                470
+            ]
+        },
+        {
+            "name": "tongs",
+            "coords": [
+                210,
+                700
+            ]
+        },
+        {
+            "name": "cans_group",
+            "coords": [
+                480,
+                700
+            ]
+        },
+        {
+            "name": "brown_object",
+            "coords": [
+                550,
+                750
+            ]
+        },
+        {
+            "name": "gray_tray",
+            "coords": [
+                610,
+                800
+            ]
+        },
+        {
+            "name": "transparent_sphere",
+            "coords": [
+                800,
+                800
+            ]
+        },
+        {
+            "name": "large_can_close_up",
+            "coords": [
+                850,
+                900
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "table_surface",
+            "coords": [
+                500,
+                600
+            ]
+        },
+        {
+            "name": "background_area",
+            "coords": [
+                500,
+                200
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "robot_arm_left",
+            "cans_group"
+        ],
+        [
+            "robot_arm_right",
+            "cans_group"
+        ],
+        [
+            "robot_arm_right",
+            "transparent_sphere"
+        ],
+        [
+            "robot_arm_right",
+            "large_can_close_up"
+        ]
+    ],
+    "region_connections": [
+        [
+            "table_surface",
+            "background_area"
+        ]
+    ],
+    "extra_safe_objects": [],
+    "extra_unsafe_objects": [],
+    "extra_safe_regions": [],
+    "extra_unsafe_regions": [],
+    "current_location": "table_surface"
+}

@@ -1,0 +1,149 @@
+{
+    "objects": [
+        {
+            "name": "white_apartment_building",
+            "coords": [
+                250,
+                350
+            ]
+        },
+        {
+            "name": "commercial_building",
+            "coords": [
+                400,
+                650
+            ]
+        },
+        {
+            "name": "street_light_pole",
+            "coords": [
+                280,
+                720
+            ]
+        },
+        {
+            "name": "parked_suv",
+            "coords": [
+                300,
+                100
+            ]
+        },
+        {
+            "name": "car_hood",
+            "coords": [
+                500,
+                900
+            ]
+        },
+        {
+            "name": "distant_car",
+            "coords": [
+                420,
+                450
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "intersection",
+            "coords": [
+                500,
+                700
+            ]
+        },
+        {
+            "name": "road_ahead",
+            "coords": [
+                500,
+                300
+            ]
+        },
+        {
+            "name": "sidewalk_left",
+            "coords": [
+                200,
+                350
+            ]
+        },
+        {
+            "name": "sidewalk_right",
+            "coords": [
+                350,
+                700
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "white_apartment_building",
+            "sidewalk_left"
+        ],
+        [
+            "commercial_building",
+            "sidewalk_right"
+        ],
+        [
+            "parked_suv",
+            "sidewalk_left"
+        ],
+        [
+            "distant_car",
+            "road_ahead"
+        ]
+    ],
+    "region_connections": [
+        [
+            "intersection",
+            "road_ahead"
+        ]
+    ],
+    "extra_safe_objects": [
+        {
+            "name": "car_hood",
+            "type": "vehicle_part",
+            "coords": [
+                500,
+                900
+            ]
+        }
+    ],
+    "extra_unsafe_objects": [
+        {
+            "name": "distant_car",
+            "type": "moving_vehicle",
+            "coords": [
+                420,
+                450
+            ]
+        }
+    ],
+    "extra_safe_regions": [
+        {
+            "name": "sidewalk_left",
+            "type": "pedestrian_area",
+            "coords": [
+                200,
+                350
+            ]
+        },
+        {
+            "name": "sidewalk_right",
+            "type": "pedestrian_area",
+            "coords": [
+                350,
+                700
+            ]
+        }
+    ],
+    "extra_unsafe_regions": [
+        {
+            "name": "road_ahead",
+            "type": "traffic_area",
+            "coords": [
+                500,
+                300
+            ]
+        }
+    ],
+    "current_location": "intersection"
+}

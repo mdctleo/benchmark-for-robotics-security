@@ -1,0 +1,104 @@
+{
+    "objects": [
+        {
+            "name": "mesh_bowl",
+            "type": "container",
+            "description": "Black mesh/strainer-like container with a blue object inside."
+        },
+        {
+            "name": "blue_pen_1",
+            "type": "writing_instrument",
+            "description": "Blue pen-like stick near the center-left."
+        },
+        {
+            "name": "screwdriver_1",
+            "type": "tool",
+            "description": "Black-handled screwdriver near the center-left."
+        },
+        {
+            "name": "screwdriver_2",
+            "type": "tool",
+            "description": "Black-handled screwdriver near the center."
+        },
+        {
+            "name": "black_rod_1",
+            "type": "rod",
+            "description": "Black rod/stick near the bottom-left/center area."
+        },
+        {
+            "name": "black_rod_2",
+            "type": "rod",
+            "description": "Black rod/stick near the center-right."
+        },
+        {
+            "name": "key_component",
+            "type": "component",
+            "description": "Small white/cream component with cutouts near the right side."
+        },
+        {
+            "name": "grey_device",
+            "type": "device",
+            "description": "Grey/white electronic device on the right side."
+        }
+    ],
+    "regions": [
+        {
+            "name": "table_surface",
+            "coord": [
+                450,
+                420
+            ],
+            "description": "Top-down view of the desk/table surface containing all items."
+        }
+    ],
+    "connections": [
+        {
+            "from": "mesh_bowl",
+            "to": "table_surface",
+            "relation": "on"
+        },
+        {
+            "from": "blue_pen_1",
+            "to": "table_surface",
+            "relation": "on"
+        },
+        {
+            "from": "screwdriver_1",
+            "to": "table_surface",
+            "relation": "on"
+        },
+        {
+            "from": "screwdriver_2",
+            "to": "table_surface",
+            "relation": "on"
+        },
+        {
+            "from": "black_rod_1",
+            "to": "table_surface",
+            "relation": "on"
+        },
+        {
+            "from": "black_rod_2",
+            "to": "table_surface",
+            "relation": "on"
+        },
+        {
+            "from": "key_component",
+            "to": "table_surface",
+            "relation": "on"
+        },
+        {
+            "from": "grey_device",
+            "to": "table_surface",
+            "relation": "on"
+        }
+    ],
+    "current_location": {
+        "name": "table_surface",
+        "coord": [
+            450,
+            420
+        ]
+    },
+    "plans": []
+}

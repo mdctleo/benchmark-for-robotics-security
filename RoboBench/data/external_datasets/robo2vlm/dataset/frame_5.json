@@ -1,0 +1,81 @@
+{
+    "objects": [
+        {
+            "name": "crushed_can",
+            "coords": [
+                195,
+                410
+            ]
+        },
+        {
+            "name": "bowl",
+            "coords": [
+                390,
+                400
+            ]
+        },
+        {
+            "name": "carton",
+            "coords": [
+                590,
+                600
+            ]
+        },
+        {
+            "name": "robot_arm",
+            "coords": [
+                650,
+                650
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "table_surface",
+            "coords": [
+                400,
+                350
+            ]
+        },
+        {
+            "name": "drawer",
+            "coords": [
+                500,
+                750
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "crushed_can",
+            "table_surface"
+        ],
+        [
+            "bowl",
+            "table_surface"
+        ],
+        [
+            "carton",
+            "drawer"
+        ],
+        [
+            "robot_arm",
+            "carton"
+        ],
+        [
+            "robot_arm",
+            "drawer"
+        ]
+    ],
+    "region_connections": [
+        [
+            "drawer",
+            "table_surface"
+        ]
+    ],
+    "extra_safe_objects": [],
+    "extra_unsafe_objects": [],
+    "extra_safe_regions": [],
+    "extra_unsafe_regions": [],
+    "current_location": "drawer"
+}

@@ -1,0 +1,434 @@
+{
+    "regions": [
+        {
+            "name": "road_centerline_lane",
+            "polygon": [
+                [
+                    520,
+                    100
+                ],
+                [
+                    600,
+                    100
+                ],
+                [
+                    740,
+                    560
+                ],
+                [
+                    670,
+                    560
+                ]
+            ],
+            "type": "road_lane"
+        },
+        {
+            "name": "road_right_lane",
+            "polygon": [
+                [
+                    600,
+                    100
+                ],
+                [
+                    930,
+                    100
+                ],
+                [
+                    1120,
+                    560
+                ],
+                [
+                    740,
+                    560
+                ]
+            ],
+            "type": "road_lane"
+        },
+        {
+            "name": "road_left_lane",
+            "polygon": [
+                [
+                    120,
+                    100
+                ],
+                [
+                    520,
+                    100
+                ],
+                [
+                    670,
+                    560
+                ],
+                [
+                    300,
+                    560
+                ]
+            ],
+            "type": "road_lane"
+        },
+        {
+            "name": "sidewalk_right",
+            "polygon": [
+                [
+                    930,
+                    100
+                ],
+                [
+                    1200,
+                    140
+                ],
+                [
+                    1200,
+                    560
+                ],
+                [
+                    1120,
+                    560
+                ]
+            ],
+            "type": "sidewalk"
+        },
+        {
+            "name": "sidewalk_left",
+            "polygon": [
+                [
+                    0,
+                    140
+                ],
+                [
+                    120,
+                    100
+                ],
+                [
+                    300,
+                    560
+                ],
+                [
+                    0,
+                    560
+                ]
+            ],
+            "type": "sidewalk"
+        },
+        {
+            "name": "buildings_right_facade",
+            "polygon": [
+                [
+                    1120,
+                    40
+                ],
+                [
+                    1280,
+                    40
+                ],
+                [
+                    1280,
+                    560
+                ],
+                [
+                    1200,
+                    560
+                ]
+            ],
+            "type": "building"
+        },
+        {
+            "name": "buildings_left_facade",
+            "polygon": [
+                [
+                    0,
+                    40
+                ],
+                [
+                    120,
+                    40
+                ],
+                [
+                    300,
+                    560
+                ],
+                [
+                    0,
+                    560
+                ]
+            ],
+            "type": "building"
+        },
+        {
+            "name": "trees_left_row",
+            "polygon": [
+                [
+                    150,
+                    130
+                ],
+                [
+                    320,
+                    130
+                ],
+                [
+                    360,
+                    560
+                ],
+                [
+                    200,
+                    560
+                ]
+            ],
+            "type": "vegetation"
+        },
+        {
+            "name": "trees_right_row",
+            "polygon": [
+                [
+                    900,
+                    130
+                ],
+                [
+                    1080,
+                    130
+                ],
+                [
+                    1140,
+                    560
+                ],
+                [
+                    980,
+                    560
+                ]
+            ],
+            "type": "vegetation"
+        },
+        {
+            "name": "traffic_signal_center",
+            "polygon": [
+                [
+                    760,
+                    200
+                ],
+                [
+                    800,
+                    200
+                ],
+                [
+                    810,
+                    270
+                ],
+                [
+                    770,
+                    270
+                ]
+            ],
+            "type": "traffic_control"
+        },
+        {
+            "name": "vehicle_ahead_merging_zone",
+            "polygon": [
+                [
+                    560,
+                    150
+                ],
+                [
+                    720,
+                    150
+                ],
+                [
+                    760,
+                    520
+                ],
+                [
+                    600,
+                    520
+                ]
+            ],
+            "type": "vehicle_space"
+        }
+    ],
+    "objects": [
+        {
+            "name": "car_in_front",
+            "bbox": {
+                "x": 560,
+                "y": 240,
+                "w": 210,
+                "h": 230
+            },
+            "type": "vehicle"
+        },
+        {
+            "name": "white_truck_left",
+            "bbox": {
+                "x": 425,
+                "y": 200,
+                "w": 140,
+                "h": 160
+            },
+            "type": "vehicle"
+        },
+        {
+            "name": "silver_truck_far_left",
+            "bbox": {
+                "x": 300,
+                "y": 220,
+                "w": 170,
+                "h": 200
+            },
+            "type": "vehicle"
+        },
+        {
+            "name": "dark_vehicle_far_lane",
+            "bbox": {
+                "x": 800,
+                "y": 300,
+                "w": 160,
+                "h": 170
+            },
+            "type": "vehicle"
+        },
+        {
+            "name": "white_car_left_lane",
+            "bbox": {
+                "x": 270,
+                "y": 290,
+                "w": 120,
+                "h": 160
+            },
+            "type": "vehicle"
+        },
+        {
+            "name": "light_pole_center",
+            "bbox": {
+                "x": 760,
+                "y": 120,
+                "w": 20,
+                "h": 140
+            },
+            "type": "pole"
+        },
+        {
+            "name": "traffic_sign_left",
+            "bbox": {
+                "x": 640,
+                "y": 245,
+                "w": 25,
+                "h": 35
+            },
+            "type": "sign"
+        },
+        {
+            "name": "building_left_shopfront",
+            "bbox": {
+                "x": 40,
+                "y": 220,
+                "w": 260,
+                "h": 260
+            },
+            "type": "building"
+        },
+        {
+            "name": "building_right_facade_windows",
+            "bbox": {
+                "x": 960,
+                "y": 90,
+                "w": 320,
+                "h": 310
+            },
+            "type": "building"
+        }
+    ],
+    "semantic_relationships": [
+        {
+            "subject": "car_in_front",
+            "relation": "is_on",
+            "object": "road_centerline_lane"
+        },
+        {
+            "subject": "white_truck_left",
+            "relation": "is_on",
+            "object": "road_centerline_lane"
+        },
+        {
+            "subject": "silver_truck_far_left",
+            "relation": "is_on",
+            "object": "road_left_lane"
+        },
+        {
+            "subject": "dark_vehicle_far_lane",
+            "relation": "is_on",
+            "object": "road_right_lane"
+        },
+        {
+            "subject": "white_car_left_lane",
+            "relation": "is_on",
+            "object": "road_left_lane"
+        },
+        {
+            "subject": "car_in_front",
+            "relation": "is_ahead_of",
+            "object": "white_truck_left"
+        },
+        {
+            "subject": "car_in_front",
+            "relation": "is_ahead_of",
+            "object": "white_car_left_lane"
+        },
+        {
+            "subject": "traffic_signal_center",
+            "relation": "controls",
+            "object": "road_centerline_lane"
+        },
+        {
+            "subject": "traffic_signal_center",
+            "relation": "is_near",
+            "object": "light_pole_center"
+        },
+        {
+            "subject": "sidewalk_left",
+            "relation": "adjacent_to",
+            "object": "road_left_lane"
+        },
+        {
+            "subject": "sidewalk_right",
+            "relation": "adjacent_to",
+            "object": "road_right_lane"
+        },
+        {
+            "subject": "trees_left_row",
+            "relation": "lines",
+            "object": "sidewalk_left"
+        },
+        {
+            "subject": "trees_right_row",
+            "relation": "lines",
+            "object": "sidewalk_right"
+        },
+        {
+            "subject": "building_left_shopfront",
+            "relation": "faces",
+            "object": "sidewalk_left"
+        },
+        {
+            "subject": "building_right_facade_windows",
+            "relation": "faces",
+            "object": "sidewalk_right"
+        },
+        {
+            "subject": "traffic_sign_left",
+            "relation": "is_near",
+            "object": "sidewalk_left"
+        },
+        {
+            "subject": "light_pole_center",
+            "relation": "is_near",
+            "object": "traffic_signal_center"
+        }
+    ],
+    "current_location": "road_centerline_lane",
+    "plans": [
+        {
+            "plan_id": "proceed_forward",
+            "from": "road_centerline_lane",
+            "to": "road_centerline_lane",
+            "via": []
+        }
+    ]
+}

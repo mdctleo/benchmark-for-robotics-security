@@ -1,0 +1,27 @@
+{
+    "objects": [
+        {
+            "name": "blue_balloon",
+            "coords": [
+                60,
+                30
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "curved_container_region",
+            "coords": [
+                50,
+                50
+            ]
+        }
+    ],
+    "object_connections": [],
+    "region_connections": [],
+    "extra_safe_objects": [],
+    "extra_unsafe_objects": [],
+    "extra_safe_regions": [],
+    "extra_unsafe_regions": [],
+    "current_location": "curved_container_region"
+}

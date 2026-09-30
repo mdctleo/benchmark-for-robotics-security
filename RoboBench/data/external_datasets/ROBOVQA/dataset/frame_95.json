@@ -1,0 +1,196 @@
+{
+    "objects": [
+        {
+            "name": "office_chair",
+            "coords": [
+                333,
+                269
+            ]
+        },
+        {
+            "name": "book_box",
+            "coords": [
+                426,
+                439
+            ]
+        },
+        {
+            "name": "remote_control",
+            "coords": [
+                292,
+                517
+            ]
+        },
+        {
+            "name": "yellow_bottle",
+            "coords": [
+                362,
+                608
+            ]
+        },
+        {
+            "name": "pink_bowl",
+            "coords": [
+                486,
+                722
+            ]
+        },
+        {
+            "name": "silver_cup",
+            "coords": [
+                453,
+                893
+            ]
+        },
+        {
+            "name": "glass",
+            "coords": [
+                792,
+                421
+            ]
+        },
+        {
+            "name": "robot_arm",
+            "coords": [
+                250,
+                756
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "desk",
+            "coords": [
+                500,
+                600
+            ]
+        },
+        {
+            "name": "floor",
+            "coords": [
+                700,
+                200
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "book_box",
+            "remote_control"
+        ],
+        [
+            "remote_control",
+            "yellow_bottle"
+        ],
+        [
+            "yellow_bottle",
+            "pink_bowl"
+        ],
+        [
+            "pink_bowl",
+            "silver_cup"
+        ],
+        [
+            "desk",
+            "glass"
+        ],
+        [
+            "desk",
+            "office_chair"
+        ]
+    ],
+    "region_connections": [
+        [
+            "desk",
+            "floor"
+        ]
+    ],
+    "extra_safe_objects": [
+        {
+            "name": "office_chair",
+            "type": "chair",
+            "coords": [
+                333,
+                269
+            ]
+        },
+        {
+            "name": "book_box",
+            "type": "container",
+            "coords": [
+                426,
+                439
+            ]
+        },
+        {
+            "name": "remote_control",
+            "type": "device",
+            "coords": [
+                292,
+                517
+            ]
+        },
+        {
+            "name": "yellow_bottle",
+            "type": "container",
+            "coords": [
+                362,
+                608
+            ]
+        },
+        {
+            "name": "pink_bowl",
+            "type": "container",
+            "coords": [
+                486,
+                722
+            ]
+        },
+        {
+            "name": "silver_cup",
+            "type": "container",
+            "coords": [
+                453,
+                893
+            ]
+        },
+        {
+            "name": "glass",
+            "type": "container",
+            "coords": [
+                792,
+                421
+            ]
+        }
+    ],
+    "extra_unsafe_objects": [
+        {
+            "name": "robot_arm",
+            "type": "robot_component",
+            "coords": [
+                250,
+                756
+            ]
+        }
+    ],
+    "extra_safe_regions": [
+        {
+            "name": "desk",
+            "type": "surface",
+            "coords": [
+                500,
+                600
+            ]
+        },
+        {
+            "name": "floor",
+            "type": "surface",
+            "coords": [
+                700,
+                200
+            ]
+        }
+    ],
+    "extra_unsafe_regions": [],
+    "current_location": "desk"
+}

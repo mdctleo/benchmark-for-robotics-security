@@ -1,0 +1,100 @@
+{
+    "objects": [
+        {
+            "name": "robot_arm_1",
+            "coords": [
+                380,
+                450
+            ]
+        },
+        {
+            "name": "gripper_1",
+            "coords": [
+                250,
+                750
+            ]
+        },
+        {
+            "name": "plaid_shirt_1",
+            "coords": [
+                260,
+                760
+            ]
+        },
+        {
+            "name": "white_shirt_1",
+            "coords": [
+                300,
+                800
+            ]
+        },
+        {
+            "name": "bed_frame_1",
+            "coords": [
+                700,
+                850
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "bed_1",
+            "coords": [
+                500,
+                700
+            ]
+        },
+        {
+            "name": "room_1",
+            "coords": [
+                500,
+                500
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "robot_arm_1",
+            "holds"
+        ],
+        [
+            "robot_arm_1",
+            "gripper_1"
+        ],
+        [
+            "gripper_1",
+            "plaid_shirt_1"
+        ]
+    ],
+    "region_connections": [
+        [
+            "plaid_shirt_1",
+            "is located over"
+        ],
+        [
+            "plaid_shirt_1",
+            "bed_1"
+        ],
+        [
+            "white_shirt_1",
+            "is on"
+        ],
+        [
+            "white_shirt_1",
+            "bed_1"
+        ],
+        [
+            "bed_frame_1",
+            "supports"
+        ],
+        [
+            "bed_frame_1",
+            "bed_1"
+        ]
+    ],
+    "extra_safe_objects": [],
+    "extra_unsafe_objects": [],
+    "extra_safe_regions": [],
+    "extra_unsafe_regions": [],
+    "current_location": "bed_1"
+}

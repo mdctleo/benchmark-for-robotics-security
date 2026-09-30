@@ -1,0 +1,118 @@
+{
+    "objects": [
+        {
+            "name": "robotic_hand",
+            "coords": [
+                727,
+                707
+            ]
+        },
+        {
+            "name": "door",
+            "coords": [
+                500,
+                500
+            ]
+        },
+        {
+            "name": "door_handle",
+            "coords": [
+                573,
+                463
+            ]
+        },
+        {
+            "name": "warning_sign",
+            "coords": [
+                256,
+                545
+            ]
+        },
+        {
+            "name": "fire_extinguisher",
+            "coords": [
+                327,
+                283
+            ]
+        },
+        {
+            "name": "pipes",
+            "coords": [
+                311,
+                157
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "hallway_corridor",
+            "coords": [
+                400,
+                250
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "robotic_hand",
+            "door_handle"
+        ],
+        [
+            "door_handle",
+            "door"
+        ],
+        [
+            "warning_sign",
+            "door"
+        ],
+        [
+            "fire_extinguisher",
+            "hallway_corridor"
+        ],
+        [
+            "pipes",
+            "hallway_corridor"
+        ]
+    ],
+    "region_connections": [],
+    "extra_safe_objects": [
+        {
+            "name": "fire_extinguisher",
+            "type": "safety_equipment",
+            "coords": [
+                327,
+                283
+            ]
+        },
+        {
+            "name": "pipes",
+            "type": "infrastructure",
+            "coords": [
+                311,
+                157
+            ]
+        }
+    ],
+    "extra_unsafe_objects": [
+        {
+            "name": "door_handle",
+            "type": "fragile_mechanism",
+            "coords": [
+                573,
+                463
+            ]
+        }
+    ],
+    "extra_safe_regions": [
+        {
+            "name": "hallway_corridor",
+            "type": "passage_area",
+            "coords": [
+                400,
+                250
+            ]
+        }
+    ],
+    "extra_unsafe_regions": [],
+    "current_location": "hallway_corridor"
+}

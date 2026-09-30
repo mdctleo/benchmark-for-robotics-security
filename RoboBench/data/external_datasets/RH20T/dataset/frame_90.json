@@ -1,0 +1,260 @@
+{
+    "objects": [
+        {
+            "name": "car_interior",
+            "type": "container",
+            "bbox": {
+                "x": 40,
+                "y": 20,
+                "w": 520,
+                "h": 320
+            },
+            "centroid": {
+                "x": 300,
+                "y": 180
+            }
+        },
+        {
+            "name": "steering_wheel",
+            "type": "object",
+            "bbox": {
+                "x": 20,
+                "y": 55,
+                "w": 90,
+                "h": 90
+            },
+            "centroid": {
+                "x": 65,
+                "y": 105
+            }
+        },
+        {
+            "name": "dashboard",
+            "type": "structure",
+            "bbox": {
+                "x": 120,
+                "y": 25,
+                "w": 420,
+                "h": 130
+            },
+            "centroid": {
+                "x": 320,
+                "y": 90
+            }
+        },
+        {
+            "name": "seat_backrest_right",
+            "type": "structure",
+            "bbox": {
+                "x": 410,
+                "y": 80,
+                "w": 160,
+                "h": 250
+            },
+            "centroid": {
+                "x": 495,
+                "y": 195
+            }
+        },
+        {
+            "name": "floor_mat",
+            "type": "surface",
+            "bbox": {
+                "x": 90,
+                "y": 120,
+                "w": 420,
+                "h": 220
+            },
+            "centroid": {
+                "x": 310,
+                "y": 230
+            }
+        },
+        {
+            "name": "blue_wide_roller",
+            "type": "object",
+            "bbox": {
+                "x": 405,
+                "y": 135,
+                "w": 155,
+                "h": 120
+            },
+            "centroid": {
+                "x": 480,
+                "y": 195
+            }
+        },
+        {
+            "name": "red_box",
+            "type": "object",
+            "bbox": {
+                "x": 265,
+                "y": 165,
+                "w": 95,
+                "h": 60
+            },
+            "centroid": {
+                "x": 310,
+                "y": 195
+            }
+        },
+        {
+            "name": "white_cuboid_block",
+            "type": "object",
+            "bbox": {
+                "x": 245,
+                "y": 230,
+                "w": 55,
+                "h": 55
+            },
+            "centroid": {
+                "x": 272,
+                "y": 255
+            }
+        },
+        {
+            "name": "package_bag",
+            "type": "object",
+            "bbox": {
+                "x": 320,
+                "y": 215,
+                "w": 170,
+                "h": 120
+            },
+            "centroid": {
+                "x": 405,
+                "y": 275
+            }
+        }
+    ],
+    "regions": [
+        {
+            "name": "driving_area",
+            "type": "region",
+            "bbox": {
+                "x": 40,
+                "y": 40,
+                "w": 380,
+                "h": 300
+            },
+            "centroid": {
+                "x": 230,
+                "y": 190
+            }
+        },
+        {
+            "name": "cargo_area_on_mat",
+            "type": "region",
+            "bbox": {
+                "x": 110,
+                "y": 120,
+                "w": 430,
+                "h": 240
+            },
+            "centroid": {
+                "x": 325,
+                "y": 240
+            }
+        },
+        {
+            "name": "right_seat_side",
+            "type": "region",
+            "bbox": {
+                "x": 400,
+                "y": 90,
+                "w": 190,
+                "h": 260
+            },
+            "centroid": {
+                "x": 495,
+                "y": 220
+            }
+        }
+    ],
+    "semantic_relationships": [
+        {
+            "subject": "steering_wheel",
+            "relation": "is_part_of",
+            "object": "dashboard"
+        },
+        {
+            "subject": "dashboard",
+            "relation": "is_part_of",
+            "object": "car_interior"
+        },
+        {
+            "subject": "seat_backrest_right",
+            "relation": "is_part_of",
+            "object": "car_interior"
+        },
+        {
+            "subject": "floor_mat",
+            "relation": "is_part_of",
+            "object": "car_interior"
+        },
+        {
+            "subject": "blue_wide_roller",
+            "relation": "is_in_region",
+            "object": "right_seat_side"
+        },
+        {
+            "subject": "red_box",
+            "relation": "is_on",
+            "object": "floor_mat"
+        },
+        {
+            "subject": "red_box",
+            "relation": "is_in_region",
+            "object": "cargo_area_on_mat"
+        },
+        {
+            "subject": "white_cuboid_block",
+            "relation": "is_on",
+            "object": "floor_mat"
+        },
+        {
+            "subject": "white_cuboid_block",
+            "relation": "is_in_region",
+            "object": "cargo_area_on_mat"
+        },
+        {
+            "subject": "package_bag",
+            "relation": "is_on",
+            "object": "floor_mat"
+        },
+        {
+            "subject": "package_bag",
+            "relation": "is_in_region",
+            "object": "cargo_area_on_mat"
+        },
+        {
+            "subject": "blue_wide_roller",
+            "relation": "is_near",
+            "object": "package_bag"
+        },
+        {
+            "subject": "red_box",
+            "relation": "is_near",
+            "object": "white_cuboid_block"
+        },
+        {
+            "subject": "floor_mat",
+            "relation": "covers",
+            "object": "cargo_area_on_mat"
+        }
+    ],
+    "agent_state": {
+        "current_location": "cargo_area_on_mat",
+        "plans": [
+            {
+                "plan_name": "organize_items",
+                "target": "red_box",
+                "from_location": "cargo_area_on_mat",
+                "to_location": "cargo_area_on_mat"
+            }
+        ]
+    },
+    "top_down_coordinates_reference": {
+        "origin_assumption": "Top-left of the provided image (x to the right, y downward)."
+    }
+}

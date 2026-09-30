@@ -1,0 +1,193 @@
+{
+    "objects": [
+        {
+            "name": "vehicle_left",
+            "type": "vehicle",
+            "position": {
+                "x": 0.18,
+                "y": 0.72
+            }
+        },
+        {
+            "name": "vehicle_center_far",
+            "type": "vehicle",
+            "position": {
+                "x": 0.52,
+                "y": 0.46
+            }
+        }
+    ],
+    "regions": [
+        {
+            "name": "road_main",
+            "type": "road",
+            "polygon": [
+                {
+                    "x": 0.28,
+                    "y": 0.98
+                },
+                {
+                    "x": 0.62,
+                    "y": 0.62
+                },
+                {
+                    "x": 0.56,
+                    "y": 0.4
+                },
+                {
+                    "x": 0.34,
+                    "y": 0.4
+                }
+            ]
+        },
+        {
+            "name": "road_shoulder_left",
+            "type": "road_edge",
+            "polygon": [
+                {
+                    "x": 0.12,
+                    "y": 0.98
+                },
+                {
+                    "x": 0.28,
+                    "y": 0.98
+                },
+                {
+                    "x": 0.34,
+                    "y": 0.4
+                },
+                {
+                    "x": 0.2,
+                    "y": 0.4
+                }
+            ]
+        },
+        {
+            "name": "road_shoulder_right",
+            "type": "road_edge",
+            "polygon": [
+                {
+                    "x": 0.62,
+                    "y": 0.62
+                },
+                {
+                    "x": 0.86,
+                    "y": 0.62
+                },
+                {
+                    "x": 0.8,
+                    "y": 0.98
+                },
+                {
+                    "x": 0.28,
+                    "y": 0.98
+                }
+            ]
+        },
+        {
+            "name": "hedge_right",
+            "type": "vegetation",
+            "polygon": [
+                {
+                    "x": 0.56,
+                    "y": 0.62
+                },
+                {
+                    "x": 0.86,
+                    "y": 0.62
+                },
+                {
+                    "x": 0.8,
+                    "y": 0.92
+                },
+                {
+                    "x": 0.58,
+                    "y": 0.92
+                }
+            ]
+        },
+        {
+            "name": "tree_line_left",
+            "type": "vegetation",
+            "polygon": [
+                {
+                    "x": 0.0,
+                    "y": 1.0
+                },
+                {
+                    "x": 0.22,
+                    "y": 1.0
+                },
+                {
+                    "x": 0.3,
+                    "y": 0.42
+                },
+                {
+                    "x": 0.05,
+                    "y": 0.42
+                }
+            ]
+        },
+        {
+            "name": "tree_line_right",
+            "type": "vegetation",
+            "polygon": [
+                {
+                    "x": 0.62,
+                    "y": 0.62
+                },
+                {
+                    "x": 1.0,
+                    "y": 0.62
+                },
+                {
+                    "x": 1.0,
+                    "y": 0.98
+                },
+                {
+                    "x": 0.8,
+                    "y": 0.98
+                }
+            ]
+        }
+    ],
+    "semantic_relationships": [
+        {
+            "relation": "vehicle_on",
+            "from": "vehicle_left",
+            "to": "road_shoulder_left"
+        },
+        {
+            "relation": "vehicle_in_front_of",
+            "from": "vehicle_center_far",
+            "to": "vehicle_left"
+        },
+        {
+            "relation": "vehicle_on",
+            "from": "vehicle_center_far",
+            "to": "road_main"
+        },
+        {
+            "relation": "hedge_adjacent_to",
+            "from": "hedge_right",
+            "to": "road_shoulder_right"
+        },
+        {
+            "relation": "trees_adjacent_to",
+            "from": "tree_line_left",
+            "to": "road_shoulder_left"
+        },
+        {
+            "relation": "trees_adjacent_to",
+            "from": "tree_line_right",
+            "to": "road_shoulder_right"
+        }
+    ],
+    "current_location": "road_main",
+    "plans": [
+        {
+            "name": "continue_forward",
+            "target": "road_main"
+        }
+    ]
+}

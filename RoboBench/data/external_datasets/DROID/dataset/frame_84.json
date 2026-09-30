@@ -1,0 +1,114 @@
+{
+    "objects": [
+        {
+            "name": "robotic_arm",
+            "coords": [
+                250,
+                400
+            ]
+        },
+        {
+            "name": "toaster",
+            "coords": [
+                300,
+                500
+            ]
+        },
+        {
+            "name": "red_bowl",
+            "coords": [
+                400,
+                600
+            ]
+        },
+        {
+            "name": "red_mug",
+            "coords": [
+                350,
+                550
+            ]
+        },
+        {
+            "name": "coffee_beans",
+            "coords": [
+                400,
+                600
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "table_surface",
+            "coords": [
+                500,
+                500
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "robotic_arm",
+            "toaster"
+        ],
+        [
+            "robotic_arm",
+            "red_bowl"
+        ],
+        [
+            "toaster",
+            "red_mug"
+        ],
+        [
+            "red_mug",
+            "red_bowl"
+        ]
+    ],
+    "region_connections": [],
+    "extra_safe_objects": [
+        {
+            "name": "toaster",
+            "type": "appliance",
+            "coords": [
+                300,
+                500
+            ]
+        },
+        {
+            "name": "red_bowl",
+            "type": "container",
+            "coords": [
+                400,
+                600
+            ]
+        },
+        {
+            "name": "red_mug",
+            "type": "container",
+            "coords": [
+                350,
+                550
+            ]
+        },
+        {
+            "name": "coffee_beans",
+            "type": "content",
+            "coords": [
+                400,
+                600
+            ]
+        }
+    ],
+    "extra_unsafe_objects": [],
+    "extra_safe_regions": [
+        {
+            "name": "table_surface",
+            "type": "workspace",
+            "coords": [
+                500,
+                500
+            ]
+        }
+    ],
+    "extra_unsafe_regions": [],
+    "current_location": "table_surface"
+}

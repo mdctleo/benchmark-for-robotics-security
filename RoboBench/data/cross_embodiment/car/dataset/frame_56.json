@@ -1,0 +1,364 @@
+{
+    "objects": [
+        {
+            "name": "street_rails",
+            "type": "road_features",
+            "description": "Embedded tram/trolley rails running down the center of the street.",
+            "polygon": [
+                [
+                    463,
+                    756
+                ],
+                [
+                    498,
+                    756
+                ],
+                [
+                    560,
+                    1010
+                ],
+                [
+                    525,
+                    1010
+                ]
+            ]
+        },
+        {
+            "name": "left_row_of_cars",
+            "type": "vehicles",
+            "description": "Parked vehicles along the left curb.",
+            "polygon": [
+                [
+                    0,
+                    340
+                ],
+                [
+                    360,
+                    340
+                ],
+                [
+                    430,
+                    870
+                ],
+                [
+                    70,
+                    900
+                ]
+            ]
+        },
+        {
+            "name": "right_row_of_cars",
+            "type": "vehicles",
+            "description": "Parked vehicles along the right curb.",
+            "polygon": [
+                [
+                    980,
+                    365
+                ],
+                [
+                    1280,
+                    365
+                ],
+                [
+                    1250,
+                    920
+                ],
+                [
+                    960,
+                    900
+                ]
+            ]
+        },
+        {
+            "name": "left_buildings",
+            "type": "buildings",
+            "description": "Left-side row of multi-story buildings.",
+            "polygon": [
+                [
+                    0,
+                    120
+                ],
+                [
+                    340,
+                    120
+                ],
+                [
+                    430,
+                    970
+                ],
+                [
+                    0,
+                    980
+                ]
+            ]
+        },
+        {
+            "name": "right_buildings",
+            "type": "buildings",
+            "description": "Right-side row of multi-story buildings.",
+            "polygon": [
+                [
+                    870,
+                    120
+                ],
+                [
+                    1280,
+                    120
+                ],
+                [
+                    1280,
+                    980
+                ],
+                [
+                    910,
+                    950
+                ]
+            ]
+        },
+        {
+            "name": "utility_poles_and_wires",
+            "type": "infrastructure",
+            "description": "Utility poles and overhead wires spanning the street.",
+            "polygon": [
+                [
+                    460,
+                    140
+                ],
+                [
+                    560,
+                    140
+                ],
+                [
+                    600,
+                    820
+                ],
+                [
+                    490,
+                    860
+                ]
+            ]
+        },
+        {
+            "name": "tree_canopy_left",
+            "type": "vegetation",
+            "description": "Tree canopy overhanging the left side of the street.",
+            "polygon": [
+                [
+                    90,
+                    0
+                ],
+                [
+                    470,
+                    0
+                ],
+                [
+                    410,
+                    250
+                ],
+                [
+                    70,
+                    220
+                ]
+            ]
+        },
+        {
+            "name": "distant_building_center",
+            "type": "buildings",
+            "description": "A tall central building visible in the distance.",
+            "polygon": [
+                [
+                    570,
+                    170
+                ],
+                [
+                    710,
+                    170
+                ],
+                [
+                    760,
+                    520
+                ],
+                [
+                    610,
+                    560
+                ]
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "driving_lane_center",
+            "type": "road_region",
+            "description": "The main roadway region in the center with visible embedded rails.",
+            "polygon": [
+                [
+                    420,
+                    380
+                ],
+                [
+                    860,
+                    380
+                ],
+                [
+                    900,
+                    1040
+                ],
+                [
+                    380,
+                    1040
+                ]
+            ]
+        },
+        {
+            "name": "left_parking_area",
+            "type": "road_edge_region",
+            "description": "Left side region containing parked cars and curbside space.",
+            "polygon": [
+                [
+                    0,
+                    360
+                ],
+                [
+                    420,
+                    360
+                ],
+                [
+                    450,
+                    1020
+                ],
+                [
+                    0,
+                    1020
+                ]
+            ]
+        },
+        {
+            "name": "right_parking_area",
+            "type": "road_edge_region",
+            "description": "Right side region containing parked cars and curbside space.",
+            "polygon": [
+                [
+                    860,
+                    360
+                ],
+                [
+                    1280,
+                    360
+                ],
+                [
+                    1280,
+                    1020
+                ],
+                [
+                    800,
+                    1020
+                ]
+            ]
+        },
+        {
+            "name": "sidewalk_or_building_corridor_left",
+            "type": "sidewalk_region",
+            "description": "Left corridor along building fronts.",
+            "polygon": [
+                [
+                    0,
+                    120
+                ],
+                [
+                    360,
+                    120
+                ],
+                [
+                    420,
+                    980
+                ],
+                [
+                    0,
+                    980
+                ]
+            ]
+        },
+        {
+            "name": "sidewalk_or_building_corridor_right",
+            "type": "sidewalk_region",
+            "description": "Right corridor along building fronts.",
+            "polygon": [
+                [
+                    860,
+                    120
+                ],
+                [
+                    1280,
+                    120
+                ],
+                [
+                    1280,
+                    980
+                ],
+                [
+                    910,
+                    950
+                ]
+            ]
+        }
+    ],
+    "semantic_relationships": [
+        {
+            "from": "driving_lane_center",
+            "to": "street_rails",
+            "relation": "contains"
+        },
+        {
+            "from": "driving_lane_center",
+            "to": "left_row_of_cars",
+            "relation": "adjacent_to"
+        },
+        {
+            "from": "driving_lane_center",
+            "to": "right_row_of_cars",
+            "relation": "adjacent_to"
+        },
+        {
+            "from": "left_parking_area",
+            "to": "left_row_of_cars",
+            "relation": "contains"
+        },
+        {
+            "from": "right_parking_area",
+            "to": "right_row_of_cars",
+            "relation": "contains"
+        },
+        {
+            "from": "sidewalk_or_building_corridor_left",
+            "to": "left_buildings",
+            "relation": "alongside"
+        },
+        {
+            "from": "sidewalk_or_building_corridor_right",
+            "to": "right_buildings",
+            "relation": "alongside"
+        },
+        {
+            "from": "utility_poles_and_wires",
+            "to": "left_buildings",
+            "relation": "supported_by_or_connected_to"
+        },
+        {
+            "from": "utility_poles_and_wires",
+            "to": "right_buildings",
+            "relation": "supported_by_or_connected_to"
+        },
+        {
+            "from": "tree_canopy_left",
+            "to": "left_buildings",
+            "relation": "overhangs"
+        },
+        {
+            "from": "driving_lane_center",
+            "to": "distant_building_center",
+            "relation": "points_towards"
+        }
+    ],
+    "current_location": "driving_lane_center",
+    "plans": []
+}

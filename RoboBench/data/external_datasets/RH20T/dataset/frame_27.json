@@ -1,0 +1,193 @@
+{
+    "objects": [
+        {
+            "name": "robot_base_left",
+            "type": "robot_base",
+            "center": [
+                70,
+                60
+            ]
+        },
+        {
+            "name": "robot_right_shell",
+            "type": "robot_shell",
+            "center": [
+                430,
+                70
+            ]
+        },
+        {
+            "name": "interlock_start_button_cluster",
+            "type": "control_panel",
+            "center": [
+                315,
+                45
+            ]
+        },
+        {
+            "name": "electrical_box",
+            "type": "electrical_outlet_box",
+            "center": [
+                430,
+                170
+            ]
+        },
+        {
+            "name": "stepper_post",
+            "type": "metal_post",
+            "center": [
+                40,
+                170
+            ]
+        },
+        {
+            "name": "cable_bundle",
+            "type": "cables",
+            "center": [
+                60,
+                25
+            ]
+        },
+        {
+            "name": "cable_bundle_right",
+            "type": "cables",
+            "center": [
+                475,
+                30
+            ]
+        },
+        {
+            "name": "tool_marker_stick",
+            "type": "stick_tool",
+            "center": [
+                395,
+                235
+            ]
+        },
+        {
+            "name": "small_block_cube",
+            "type": "small_object",
+            "center": [
+                310,
+                170
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "current_location",
+            "type": "workspace_region",
+            "center": [
+                275,
+                210
+            ]
+        },
+        {
+            "name": "blue_mat_surface",
+            "type": "surface",
+            "center": [
+                275,
+                250
+            ]
+        },
+        {
+            "name": "printed_image_area",
+            "type": "printed_graphics",
+            "center": [
+                255,
+                245
+            ]
+        },
+        {
+            "name": "floor_left_strip",
+            "type": "floor_strip",
+            "center": [
+                70,
+                250
+            ]
+        },
+        {
+            "name": "floor_right_strip",
+            "type": "floor_strip",
+            "center": [
+                470,
+                250
+            ]
+        }
+    ],
+    "semantic_relationships": [
+        {
+            "subject": "robot_base_left",
+            "relation": "is_on_or_adjacent_to",
+            "object": "floor_left_strip"
+        },
+        {
+            "subject": "robot_right_shell",
+            "relation": "is_on_or_adjacent_to",
+            "object": "floor_right_strip"
+        },
+        {
+            "subject": "blue_mat_surface",
+            "relation": "covers",
+            "object": "current_location"
+        },
+        {
+            "subject": "printed_image_area",
+            "relation": "is_part_of",
+            "object": "blue_mat_surface"
+        },
+        {
+            "subject": "small_block_cube",
+            "relation": "is_on",
+            "object": "blue_mat_surface"
+        },
+        {
+            "subject": "tool_marker_stick",
+            "relation": "is_on",
+            "object": "blue_mat_surface"
+        },
+        {
+            "subject": "interlock_start_button_cluster",
+            "relation": "is_near",
+            "object": "current_location"
+        },
+        {
+            "subject": "electrical_box",
+            "relation": "is_near",
+            "object": "current_location"
+        },
+        {
+            "subject": "cable_bundle",
+            "relation": "is_near",
+            "object": "robot_base_left"
+        },
+        {
+            "subject": "cable_bundle_right",
+            "relation": "is_near",
+            "object": "robot_right_shell"
+        },
+        {
+            "subject": "stepper_post",
+            "relation": "is_near",
+            "object": "current_location"
+        }
+    ],
+    "current_state": {
+        "current_location": "current_location"
+    },
+    "plans": [
+        {
+            "name": "inspect_workspace",
+            "target_region": "current_location",
+            "actions": [
+                {
+                    "action": "check_objects_on_surface",
+                    "target_object_types": [
+                        "small_object",
+                        "stick_tool"
+                    ]
+                }
+            ]
+        }
+    ]
+}

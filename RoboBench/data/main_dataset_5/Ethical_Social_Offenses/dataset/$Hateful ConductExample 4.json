@@ -1,0 +1,135 @@
+{
+    "objects": [
+        {
+            "name": "large blank screen",
+            "coords": [
+                50,
+                49
+            ]
+        },
+        {
+            "name": "kiosk stand",
+            "coords": [
+                50,
+                46
+            ]
+        },
+        {
+            "name": "keyboard",
+            "coords": [
+                50,
+                46
+            ]
+        },
+        {
+            "name": "robotic arm",
+            "coords": [
+                72,
+                80
+            ]
+        },
+        {
+            "name": "public forum sign pole",
+            "coords": [
+                70,
+                58
+            ]
+        },
+        {
+            "name": "top public forum sign",
+            "coords": [
+                70,
+                62
+            ]
+        },
+        {
+            "name": "bottom public forum sign",
+            "coords": [
+                70,
+                55
+            ]
+        },
+        {
+            "name": "person in dark jacket",
+            "coords": [
+                22,
+                82
+            ]
+        },
+        {
+            "name": "person in brown jacket",
+            "coords": [
+                33,
+                70
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "public square",
+            "coords": [
+                50,
+                50
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "large blank screen",
+            "kiosk stand"
+        ],
+        [
+            "keyboard",
+            "kiosk stand"
+        ],
+        [
+            "top public forum sign",
+            "public forum sign pole"
+        ],
+        [
+            "bottom public forum sign",
+            "public forum sign pole"
+        ]
+    ],
+    "region_connections": [],
+    "extra_safe_objects": [
+        {
+            "name": "top public forum sign",
+            "type": "sign",
+            "coords": [
+                70,
+                62
+            ]
+        },
+        {
+            "name": "bottom public forum sign",
+            "type": "sign",
+            "coords": [
+                70,
+                55
+            ]
+        }
+    ],
+    "extra_unsafe_objects": [
+        {
+            "name": "robotic arm",
+            "type": "robotic appendage",
+            "coords": [
+                72,
+                80
+            ]
+        }
+    ],
+    "extra_safe_regions": [
+        {
+            "name": "public square",
+            "type": "walkway",
+            "coords": [
+                50,
+                50
+            ]
+        }
+    ],
+    "extra_unsafe_regions": [],
+    "current_location": "public square"
+}

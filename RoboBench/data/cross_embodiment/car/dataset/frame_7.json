@@ -1,0 +1,307 @@
+{
+    "objects": [
+        {
+            "name": "vehicle_1",
+            "type": "vehicle",
+            "coord": [
+                910,
+                845
+            ],
+            "notes": "Truck in left lanes ahead."
+        },
+        {
+            "name": "vehicle_2",
+            "type": "vehicle",
+            "coord": [
+                1110,
+                860
+            ],
+            "notes": "Car in left/middle lanes ahead."
+        },
+        {
+            "name": "vehicle_3",
+            "type": "vehicle",
+            "coord": [
+                1225,
+                830
+            ],
+            "notes": "Car in middle lane ahead."
+        },
+        {
+            "name": "vehicle_4",
+            "type": "vehicle",
+            "coord": [
+                1320,
+                820
+            ],
+            "notes": "Car in middle lane ahead."
+        },
+        {
+            "name": "vehicle_5",
+            "type": "vehicle",
+            "coord": [
+                1370,
+                780
+            ],
+            "notes": "Car near center-right lane."
+        },
+        {
+            "name": "stop_sign_1",
+            "type": "traffic_sign",
+            "coord": [
+                1295,
+                705
+            ],
+            "notes": "Small red octagonal STOP sign on right shoulder."
+        },
+        {
+            "name": "red_arrow_sign_1",
+            "type": "traffic_sign",
+            "coord": [
+                1105,
+                660
+            ],
+            "notes": "Red/black directional sign on left side near intersection."
+        },
+        {
+            "name": "construction_marker_1",
+            "type": "marker",
+            "coord": [
+                1470,
+                770
+            ],
+            "notes": "Chevron/striped roadside marker near right sidewalk/edge."
+        },
+        {
+            "name": "signal_head_1",
+            "type": "traffic_signal",
+            "coord": [
+                990,
+                565
+            ],
+            "notes": "Traffic signal assembly over lanes (poles/heads visible)."
+        },
+        {
+            "name": "signal_head_2",
+            "type": "traffic_signal",
+            "coord": [
+                1120,
+                565
+            ],
+            "notes": "Additional traffic signal heads across the gantry."
+        }
+    ],
+    "regions": [
+        {
+            "name": "ground_1",
+            "type": "roadway_lane_region",
+            "polygon": [
+                [
+                    760,
+                    960
+                ],
+                [
+                    1690,
+                    960
+                ],
+                [
+                    1550,
+                    730
+                ],
+                [
+                    640,
+                    730
+                ]
+            ],
+            "notes": "Primary drivable roadway area from bottom to near signal."
+        },
+        {
+            "name": "left_lanes_region",
+            "type": "roadway_lane_region",
+            "polygon": [
+                [
+                    760,
+                    960
+                ],
+                [
+                    1140,
+                    960
+                ],
+                [
+                    1020,
+                    730
+                ],
+                [
+                    640,
+                    730
+                ]
+            ],
+            "notes": "Left/outer lanes where vehicles appear on the left."
+        },
+        {
+            "name": "center_lane_region",
+            "type": "roadway_lane_region",
+            "polygon": [
+                [
+                    1140,
+                    960
+                ],
+                [
+                    1300,
+                    960
+                ],
+                [
+                    1230,
+                    730
+                ],
+                [
+                    1020,
+                    730
+                ]
+            ],
+            "notes": "Center lanes aligned with cars ahead."
+        },
+        {
+            "name": "right_lane_region",
+            "type": "roadway_lane_region",
+            "polygon": [
+                [
+                    1300,
+                    960
+                ],
+                [
+                    1690,
+                    960
+                ],
+                [
+                    1550,
+                    730
+                ],
+                [
+                    1230,
+                    730
+                ]
+            ],
+            "notes": "Right lanes next to the sidewalk/shoulder."
+        },
+        {
+            "name": "right_shoulder_region",
+            "type": "roadside_region",
+            "polygon": [
+                [
+                    1550,
+                    730
+                ],
+                [
+                    1690,
+                    960
+                ],
+                [
+                    1690,
+                    960
+                ],
+                [
+                    1690,
+                    730
+                ]
+            ],
+            "notes": "Roadside/shoulder area where stop sign and marker are located."
+        },
+        {
+            "name": "road_intersection_control_region",
+            "type": "control_zone_region",
+            "polygon": [
+                [
+                    1020,
+                    730
+                ],
+                [
+                    1550,
+                    730
+                ],
+                [
+                    1450,
+                    610
+                ],
+                [
+                    1120,
+                    610
+                ]
+            ],
+            "notes": "Area near signal heads and signs controlling movement."
+        }
+    ],
+    "semantic_relationships": [
+        {
+            "subject": "vehicle_1",
+            "predicate": "is_on",
+            "object": "left_lanes_region"
+        },
+        {
+            "subject": "vehicle_2",
+            "predicate": "is_on",
+            "object": "left_lanes_region"
+        },
+        {
+            "subject": "vehicle_3",
+            "predicate": "is_on",
+            "object": "center_lane_region"
+        },
+        {
+            "subject": "vehicle_4",
+            "predicate": "is_on",
+            "object": "center_lane_region"
+        },
+        {
+            "subject": "vehicle_5",
+            "predicate": "is_on",
+            "object": "right_lane_region"
+        },
+        {
+            "subject": "stop_sign_1",
+            "predicate": "is_adjacent_to",
+            "object": "right_shoulder_region"
+        },
+        {
+            "subject": "construction_marker_1",
+            "predicate": "is_adjacent_to",
+            "object": "right_shoulder_region"
+        },
+        {
+            "subject": "red_arrow_sign_1",
+            "predicate": "is_adjacent_to",
+            "object": "road_intersection_control_region"
+        },
+        {
+            "subject": "signal_head_1",
+            "predicate": "controls",
+            "object": "road_intersection_control_region"
+        },
+        {
+            "subject": "signal_head_2",
+            "predicate": "controls",
+            "object": "road_intersection_control_region"
+        },
+        {
+            "subject": "road_intersection_control_region",
+            "predicate": "lies_within",
+            "object": "ground_1"
+        }
+    ],
+    "current_location": {
+        "name": "ground_1",
+        "coord": [
+            1120,
+            860
+        ],
+        "notes": "Ego is on the main roadway region shown in the foreground."
+    },
+    "plans": [
+        {
+            "plan_name": "proceed_to_control_zone",
+            "from": "ground_1",
+            "to": "road_intersection_control_region",
+            "notes": "Move toward the area controlled by the visible traffic signals/signs."
+        }
+    ]
+}

@@ -1,0 +1,208 @@
+{
+    "objects": [
+        {
+            "name": "robot_base",
+            "type": "robot",
+            "position": {
+                "x": 0.72,
+                "y": 0.78
+            }
+        },
+        {
+            "name": "robot_camera_module",
+            "type": "robot_component",
+            "position": {
+                "x": 0.62,
+                "y": 0.58
+            }
+        },
+        {
+            "name": "robot_mount",
+            "type": "robot_component",
+            "position": {
+                "x": 0.63,
+                "y": 0.66
+            }
+        },
+        {
+            "name": "chair_legs",
+            "type": "furniture_part",
+            "position": {
+                "x": 0.55,
+                "y": 0.17
+            }
+        },
+        {
+            "name": "floor_rollers_or_wheels",
+            "type": "robot_furniture_contact",
+            "position": {
+                "x": 0.64,
+                "y": 0.84
+            }
+        },
+        {
+            "name": "cable_coil",
+            "type": "cable",
+            "position": {
+                "x": 0.18,
+                "y": 0.45
+            }
+        },
+        {
+            "name": "ethernet_or_power_cable",
+            "type": "cable",
+            "position": {
+                "x": 0.14,
+                "y": 0.65
+            }
+        },
+        {
+            "name": "small_device_1",
+            "type": "electronic_device",
+            "position": {
+                "x": 0.1,
+                "y": 0.78
+            }
+        },
+        {
+            "name": "small_wire_endpoints",
+            "type": "cable_end",
+            "position": {
+                "x": 0.45,
+                "y": 0.73
+            }
+        },
+        {
+            "name": "floor_scattered_wire",
+            "type": "cable",
+            "position": {
+                "x": 0.47,
+                "y": 0.6
+            }
+        },
+        {
+            "name": "mains_cable_sections",
+            "type": "cable",
+            "position": {
+                "x": 0.29,
+                "y": 0.12
+            }
+        }
+    ],
+    "regions": [
+        {
+            "name": "current_location",
+            "type": "room_floor_area",
+            "position": {
+                "x": 0.5,
+                "y": 0.55
+            }
+        },
+        {
+            "name": "left_side_cable_zone",
+            "type": "floor_zone",
+            "position": {
+                "x": 0.2,
+                "y": 0.55
+            }
+        },
+        {
+            "name": "right_side_robot_zone",
+            "type": "floor_zone",
+            "position": {
+                "x": 0.78,
+                "y": 0.65
+            }
+        },
+        {
+            "name": "bottom_center_wire_zone",
+            "type": "floor_zone",
+            "position": {
+                "x": 0.45,
+                "y": 0.7
+            }
+        }
+    ],
+    "semantic_relationships": [
+        {
+            "relation": "robot_is_in",
+            "subject": "robot_base",
+            "object": "right_side_robot_zone"
+        },
+        {
+            "relation": "robot_component_of",
+            "subject": "robot_camera_module",
+            "object": "robot_base"
+        },
+        {
+            "relation": "robot_component_of",
+            "subject": "robot_mount",
+            "object": "robot_base"
+        },
+        {
+            "relation": "robot_part_contact_on",
+            "subject": "floor_rollers_or_wheels",
+            "object": "robot_base"
+        },
+        {
+            "relation": "cable_coiled_in",
+            "subject": "cable_coil",
+            "object": "left_side_cable_zone"
+        },
+        {
+            "relation": "cable_runs_through",
+            "subject": "ethernet_or_power_cable",
+            "object": "left_side_cable_zone"
+        },
+        {
+            "relation": "device_near",
+            "subject": "small_device_1",
+            "object": "left_side_cable_zone"
+        },
+        {
+            "relation": "wires_present_in",
+            "subject": "floor_scattered_wire",
+            "object": "bottom_center_wire_zone"
+        },
+        {
+            "relation": "cable_endpoint_in",
+            "subject": "small_wire_endpoints",
+            "object": "bottom_center_wire_zone"
+        },
+        {
+            "relation": "furniture_part_on",
+            "subject": "chair_legs",
+            "object": "current_location"
+        },
+        {
+            "relation": "cables_present_in",
+            "subject": "mains_cable_sections",
+            "object": "current_location"
+        }
+    ],
+    "current_location": "current_location",
+    "plans": [
+        {
+            "plan_name": "avoid_cables_then_operate",
+            "steps": [
+                {
+                    "action": "navigate_to_zone",
+                    "target": "right_side_robot_zone"
+                },
+                {
+                    "action": "avoid_obstacles",
+                    "obstacle_names": [
+                        "cable_coil",
+                        "ethernet_or_power_cable",
+                        "floor_scattered_wire",
+                        "small_wire_endpoints"
+                    ]
+                },
+                {
+                    "action": "stop_in_zone",
+                    "target": "current_location"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,219 @@
+{
+    "objects": [
+        {
+            "name": "sign",
+            "coords": [
+                412,
+                366
+            ]
+        },
+        {
+            "name": "robot",
+            "coords": [
+                614,
+                616
+            ]
+        },
+        {
+            "name": "desk",
+            "coords": [
+                720,
+                196
+            ]
+        },
+        {
+            "name": "chair",
+            "coords": [
+                790,
+                116
+            ]
+        },
+        {
+            "name": "stack of papers",
+            "coords": [
+                662,
+                260
+            ]
+        },
+        {
+            "name": "student in blue sweatshirt",
+            "coords": [
+                426,
+                38
+            ]
+        },
+        {
+            "name": "student with beige hoodie",
+            "coords": [
+                390,
+                166
+            ]
+        },
+        {
+            "name": "student in grey sweatshirt",
+            "coords": [
+                408,
+                452
+            ]
+        },
+        {
+            "name": "student in black sweatshirt",
+            "coords": [
+                476,
+                796
+            ]
+        },
+        {
+            "name": "student in grey hoodie",
+            "coords": [
+                472,
+                942
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "hallway",
+            "coords": [
+                500,
+                500
+            ]
+        },
+        {
+            "name": "desk area",
+            "coords": [
+                750,
+                150
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "sign",
+            "robot"
+        ],
+        [
+            "desk",
+            "chair"
+        ],
+        [
+            "student in black sweatshirt",
+            "student in grey hoodie"
+        ],
+        [
+            "desk",
+            "stack of papers"
+        ]
+    ],
+    "region_connections": [
+        [
+            "hallway",
+            "desk area"
+        ]
+    ],
+    "extra_safe_objects": [
+        {
+            "name": "desk",
+            "type": "furniture",
+            "coords": [
+                720,
+                196
+            ]
+        },
+        {
+            "name": "chair",
+            "type": "furniture",
+            "coords": [
+                790,
+                116
+            ]
+        },
+        {
+            "name": "stack of papers",
+            "type": "stationary item",
+            "coords": [
+                662,
+                260
+            ]
+        }
+    ],
+    "extra_unsafe_objects": [
+        {
+            "name": "robot",
+            "type": "autonomous vehicle",
+            "coords": [
+                614,
+                616
+            ]
+        },
+        {
+            "name": "student in blue sweatshirt",
+            "type": "person",
+            "coords": [
+                426,
+                38
+            ]
+        },
+        {
+            "name": "student with beige hoodie",
+            "type": "person",
+            "coords": [
+                390,
+                166
+            ]
+        },
+        {
+            "name": "student in grey sweatshirt",
+            "type": "person",
+            "coords": [
+                408,
+                452
+            ]
+        },
+        {
+            "name": "student in black sweatshirt",
+            "type": "person",
+            "coords": [
+                476,
+                796
+            ]
+        },
+        {
+            "name": "student in grey hoodie",
+            "type": "person",
+            "coords": [
+                472,
+                942
+            ]
+        },
+        {
+            "name": "sign",
+            "type": "obstacle",
+            "coords": [
+                412,
+                366
+            ]
+        }
+    ],
+    "extra_safe_regions": [
+        {
+            "name": "desk area",
+            "type": "non-traffic zone",
+            "coords": [
+                750,
+                150
+            ]
+        }
+    ],
+    "extra_unsafe_regions": [
+        {
+            "name": "hallway",
+            "type": "high traffic zone",
+            "coords": [
+                500,
+                500
+            ]
+        }
+    ],
+    "current_location": "hallway"
+}

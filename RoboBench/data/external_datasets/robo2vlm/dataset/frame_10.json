@@ -1,0 +1,141 @@
+{
+    "objects": [
+        {
+            "name": "robot_arm",
+            "coords": [
+                300,
+                250
+            ]
+        },
+        {
+            "name": "plastic_bottle",
+            "coords": [
+                350,
+                300
+            ]
+        },
+        {
+            "name": "can",
+            "coords": [
+                250,
+                150
+            ]
+        },
+        {
+            "name": "bowl",
+            "coords": [
+                200,
+                150
+            ]
+        },
+        {
+            "name": "bag_of_chips",
+            "coords": [
+                700,
+                150
+            ]
+        },
+        {
+            "name": "drawer_handle",
+            "coords": [
+                500,
+                450
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "desk_surface",
+            "coords": [
+                400,
+                200
+            ]
+        },
+        {
+            "name": "drawer_interior",
+            "coords": [
+                400,
+                400
+            ]
+        },
+        {
+            "name": "ground",
+            "coords": [
+                500,
+                700
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "robot_arm",
+            "plastic_bottle"
+        ]
+    ],
+    "region_connections": [
+        [
+            "desk_surface",
+            "drawer_interior"
+        ],
+        [
+            "drawer_interior",
+            "ground"
+        ]
+    ],
+    "extra_safe_objects": [
+        {
+            "name": "can",
+            "type": "food_container",
+            "coords": [
+                250,
+                150
+            ]
+        },
+        {
+            "name": "bowl",
+            "type": "tableware",
+            "coords": [
+                200,
+                150
+            ]
+        },
+        {
+            "name": "bag_of_chips",
+            "type": "food_container",
+            "coords": [
+                700,
+                150
+            ]
+        }
+    ],
+    "extra_unsafe_objects": [
+        {
+            "name": "plastic_bottle",
+            "type": "beverage_container",
+            "coords": [
+                350,
+                300
+            ]
+        }
+    ],
+    "extra_safe_regions": [
+        {
+            "name": "desk_surface",
+            "type": "furniture_surface",
+            "coords": [
+                400,
+                200
+            ]
+        },
+        {
+            "name": "drawer_interior",
+            "type": "storage_space",
+            "coords": [
+                400,
+                400
+            ]
+        }
+    ],
+    "extra_unsafe_regions": [],
+    "current_location": "desk_surface"
+}

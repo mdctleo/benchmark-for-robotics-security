@@ -1,0 +1,286 @@
+{
+    "objects": [
+        {
+            "name": "rolling_white_shelves",
+            "type": "floor_fixture",
+            "bbox_approx": [
+                0,
+                0,
+                0,
+                0
+            ]
+        },
+        {
+            "name": "black_chamber_head",
+            "type": "equipment",
+            "bbox_approx": [
+                0,
+                0,
+                0,
+                0
+            ]
+        },
+        {
+            "name": "left_support_stanchion",
+            "type": "stand",
+            "bbox_approx": [
+                0.07,
+                0.1,
+                0.12,
+                0.95
+            ]
+        },
+        {
+            "name": "right_support_stanchion",
+            "type": "stand",
+            "bbox_approx": [
+                0.63,
+                0.05,
+                0.78,
+                0.9
+            ]
+        },
+        {
+            "name": "cylindrical_container_left",
+            "type": "container",
+            "bbox_approx": [
+                0.02,
+                0.18,
+                0.18,
+                0.45
+            ]
+        },
+        {
+            "name": "switch_panel_block",
+            "type": "control_panel",
+            "bbox_approx": [
+                0.25,
+                0.02,
+                0.55,
+                0.2
+            ]
+        },
+        {
+            "name": "colored_push_buttons",
+            "type": "input_devices",
+            "bbox_approx": [
+                0.26,
+                0.02,
+                0.44,
+                0.13
+            ]
+        },
+        {
+            "name": "robotic_arm_base",
+            "type": "robotic_component",
+            "bbox_approx": [
+                0.52,
+                0.0,
+                0.66,
+                0.32
+            ]
+        },
+        {
+            "name": "blue_working_surface",
+            "type": "work_surface",
+            "bbox_approx": [
+                0.02,
+                0.25,
+                0.92,
+                0.95
+            ]
+        },
+        {
+            "name": "small_cube",
+            "type": "object",
+            "bbox_approx": [
+                0.44,
+                0.23,
+                0.56,
+                0.37
+            ]
+        },
+        {
+            "name": "white_strip_with_pads",
+            "type": "mounted_device",
+            "bbox_approx": [
+                0.78,
+                0.45,
+                0.98,
+                0.7
+            ]
+        },
+        {
+            "name": "thick_black_matte_area",
+            "type": "surface",
+            "bbox_approx": [
+                0.35,
+                0.55,
+                0.98,
+                0.95
+            ]
+        },
+        {
+            "name": "wired_electronics_background",
+            "type": "cables",
+            "bbox_approx": [
+                0.55,
+                0.0,
+                1.0,
+                0.6
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "workspace_area",
+            "polygon_top_down": [
+                [
+                    0.02,
+                    0.25
+                ],
+                [
+                    0.92,
+                    0.25
+                ],
+                [
+                    0.92,
+                    0.95
+                ],
+                [
+                    0.02,
+                    0.95
+                ]
+            ],
+            "description": "Overall working area covering the blue surface and black matte region."
+        },
+        {
+            "name": "blue_mat_region",
+            "polygon_top_down": [
+                [
+                    0.02,
+                    0.25
+                ],
+                [
+                    0.92,
+                    0.25
+                ],
+                [
+                    0.92,
+                    0.7
+                ],
+                [
+                    0.02,
+                    0.7
+                ]
+            ],
+            "description": "The blue cloth/work surface region."
+        },
+        {
+            "name": "black_path_region",
+            "polygon_top_down": [
+                [
+                    0.02,
+                    0.55
+                ],
+                [
+                    0.98,
+                    0.55
+                ],
+                [
+                    0.98,
+                    0.95
+                ],
+                [
+                    0.02,
+                    0.95
+                ]
+            ],
+            "description": "Dark/black area where movement or placing may occur."
+        },
+        {
+            "name": "control_equipment_region",
+            "polygon_top_down": [
+                [
+                    0.18,
+                    0.02
+                ],
+                [
+                    0.68,
+                    0.02
+                ],
+                [
+                    0.68,
+                    0.28
+                ],
+                [
+                    0.18,
+                    0.28
+                ]
+            ],
+            "description": "Region containing the control panel block and push buttons."
+        }
+    ],
+    "semantic_relationships": [
+        {
+            "subject": "blue_working_surface",
+            "relation": "located_in",
+            "object": "workspace_area"
+        },
+        {
+            "subject": "blue_working_surface",
+            "relation": "covers",
+            "object": "blue_mat_region"
+        },
+        {
+            "subject": "thick_black_matte_area",
+            "relation": "located_in",
+            "object": "workspace_area"
+        },
+        {
+            "subject": "thick_black_matte_area",
+            "relation": "covers",
+            "object": "black_path_region"
+        },
+        {
+            "subject": "switch_panel_block",
+            "relation": "located_in",
+            "object": "control_equipment_region"
+        },
+        {
+            "subject": "colored_push_buttons",
+            "relation": "mounted_on",
+            "object": "switch_panel_block"
+        },
+        {
+            "subject": "small_cube",
+            "relation": "on_surface",
+            "object": "blue_mat_region"
+        },
+        {
+            "subject": "small_cube",
+            "relation": "within",
+            "object": "workspace_area"
+        },
+        {
+            "subject": "white_strip_with_pads",
+            "relation": "located_in",
+            "object": "workspace_area"
+        },
+        {
+            "subject": "wired_electronics_background",
+            "relation": "surrounds",
+            "object": "workspace_area"
+        }
+    ],
+    "current_location": {
+        "small_cube": {
+            "region": "blue_mat_region",
+            "xy_top_down": [
+                0.5,
+                0.31
+            ]
+        }
+    },
+    "plans": []
+}

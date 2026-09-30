@@ -1,0 +1,194 @@
+{
+    "objects": [
+        {
+            "name": "robot_base_left",
+            "type": "robot",
+            "center": {
+                "x": 45,
+                "y": 95
+            }
+        },
+        {
+            "name": "robot_arm_right",
+            "type": "robot",
+            "center": {
+                "x": 905,
+                "y": 115
+            }
+        },
+        {
+            "name": "robot_end_effector",
+            "type": "robot_tool",
+            "center": {
+                "x": 675,
+                "y": 95
+            }
+        },
+        {
+            "name": "floor_mat",
+            "type": "surface",
+            "center": {
+                "x": 480,
+                "y": 585
+            }
+        },
+        {
+            "name": "tray_with_mesh",
+            "type": "container",
+            "center": {
+                "x": 610,
+                "y": 620
+            }
+        },
+        {
+            "name": "greenish_translucent_sheet",
+            "type": "sheet_material",
+            "center": {
+                "x": 520,
+                "y": 540
+            }
+        },
+        {
+            "name": "control_box_orange",
+            "type": "device",
+            "center": {
+                "x": 205,
+                "y": 75
+            }
+        },
+        {
+            "name": "control_box_red",
+            "type": "device",
+            "center": {
+                "x": 140,
+                "y": 110
+            }
+        }
+    ],
+    "regions": [
+        {
+            "name": "factory_floor",
+            "type": "floor_area",
+            "polygon": [
+                {
+                    "x": 0,
+                    "y": 0
+                },
+                {
+                    "x": 1020,
+                    "y": 0
+                },
+                {
+                    "x": 1020,
+                    "y": 720
+                },
+                {
+                    "x": 0,
+                    "y": 720
+                }
+            ]
+        },
+        {
+            "name": "work_area_on_mat",
+            "type": "working_surface",
+            "polygon": [
+                {
+                    "x": 70,
+                    "y": 190
+                },
+                {
+                    "x": 940,
+                    "y": 190
+                },
+                {
+                    "x": 860,
+                    "y": 700
+                },
+                {
+                    "x": 120,
+                    "y": 700
+                }
+            ]
+        },
+        {
+            "name": "main_action_area",
+            "type": "target_zone",
+            "polygon": [
+                {
+                    "x": 250,
+                    "y": 260
+                },
+                {
+                    "x": 820,
+                    "y": 260
+                },
+                {
+                    "x": 780,
+                    "y": 665
+                },
+                {
+                    "x": 280,
+                    "y": 665
+                }
+            ]
+        }
+    ],
+    "semantic_relationships": [
+        {
+            "relation": "located_in",
+            "source": "robot_end_effector",
+            "target": "main_action_area"
+        },
+        {
+            "relation": "located_in",
+            "source": "tray_with_mesh",
+            "target": "main_action_area"
+        },
+        {
+            "relation": "covers",
+            "source": "greenish_translucent_sheet",
+            "target": "work_area_on_mat"
+        },
+        {
+            "relation": "located_on",
+            "source": "tray_with_mesh",
+            "target": "work_area_on_mat"
+        },
+        {
+            "relation": "located_on",
+            "source": "greenish_translucent_sheet",
+            "target": "floor_mat"
+        },
+        {
+            "relation": "within",
+            "source": "robot_base_left",
+            "target": "factory_floor"
+        },
+        {
+            "relation": "within",
+            "source": "robot_arm_right",
+            "target": "factory_floor"
+        },
+        {
+            "relation": "within",
+            "source": "control_box_orange",
+            "target": "factory_floor"
+        },
+        {
+            "relation": "within",
+            "source": "control_box_red",
+            "target": "factory_floor"
+        }
+    ],
+    "current_location": "main_action_area",
+    "plans": [
+        {
+            "plan_name": "place_or_handle_item_on_mesh_tray",
+            "target_region": "main_action_area",
+            "involved_objects": [
+                "robot_end_effector",
+                "tray_with_mesh"
+            ]
+        }
+    ]
+}

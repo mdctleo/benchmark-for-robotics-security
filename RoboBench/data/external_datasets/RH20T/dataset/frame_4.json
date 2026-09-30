@@ -1,0 +1,228 @@
+{
+    "objects": [
+        {
+            "name": "blue_cloth_mat",
+            "type": "surface",
+            "bounding_box": {
+                "x": 320,
+                "y": 150,
+                "width": 540,
+                "height": 360
+            },
+            "semantic_description": "A blue printed cloth laid out on the floor."
+        },
+        {
+            "name": "red_yellow_button",
+            "type": "button",
+            "bounding_box": {
+                "x": 480,
+                "y": 65,
+                "width": 70,
+                "height": 60
+            },
+            "semantic_description": "A small red and yellow control button on a black base near the top-left of the mat."
+        },
+        {
+            "name": "black_keyboard",
+            "type": "device",
+            "bounding_box": {
+                "x": 675,
+                "y": 0,
+                "width": 310,
+                "height": 180
+            },
+            "semantic_description": "A black keyboard located near the upper area of the scene."
+        },
+        {
+            "name": "white_power_strip",
+            "type": "power_strip",
+            "bounding_box": {
+                "x": 870,
+                "y": 205,
+                "width": 170,
+                "height": 130
+            },
+            "semantic_description": "A white power strip with multiple outlets along the right side."
+        },
+        {
+            "name": "floor_carpet_green_edge",
+            "type": "surface_edge",
+            "bounding_box": {
+                "x": 830,
+                "y": 220,
+                "width": 300,
+                "height": 430
+            },
+            "semantic_description": "A green-edged surface or mat area visible near the right side."
+        },
+        {
+            "name": "metal_frame_left",
+            "type": "structure",
+            "bounding_box": {
+                "x": 0,
+                "y": 60,
+                "width": 220,
+                "height": 420
+            },
+            "semantic_description": "Metal frame/rails visible along the left side."
+        },
+        {
+            "name": "black_device_center_top",
+            "type": "device",
+            "bounding_box": {
+                "x": 610,
+                "y": 40,
+                "width": 180,
+                "height": 140
+            },
+            "semantic_description": "A black rectangular device near the top center."
+        }
+    ],
+    "regions": [
+        {
+            "name": "current_location",
+            "region_type": "workspace_region",
+            "polygon": [
+                [
+                    330,
+                    155
+                ],
+                [
+                    865,
+                    155
+                ],
+                [
+                    865,
+                    515
+                ],
+                [
+                    330,
+                    515
+                ]
+            ],
+            "semantic_description": "The main working area on top of the blue cloth mat."
+        },
+        {
+            "name": "left_side_rails_region",
+            "region_type": "boundary_region",
+            "polygon": [
+                [
+                    0,
+                    60
+                ],
+                [
+                    230,
+                    60
+                ],
+                [
+                    230,
+                    520
+                ],
+                [
+                    0,
+                    520
+                ]
+            ],
+            "semantic_description": "Region covering the left-side metal rails/frame."
+        },
+        {
+            "name": "right_power_area",
+            "region_type": "adjacent_area",
+            "polygon": [
+                [
+                    820,
+                    200
+                ],
+                [
+                    1040,
+                    200
+                ],
+                [
+                    1040,
+                    560
+                ],
+                [
+                    820,
+                    560
+                ]
+            ],
+            "semantic_description": "Region near the white power strip and right-side surface edge."
+        },
+        {
+            "name": "top_control_area",
+            "region_type": "adjacent_area",
+            "polygon": [
+                [
+                    430,
+                    30
+                ],
+                [
+                    650,
+                    30
+                ],
+                [
+                    650,
+                    160
+                ],
+                [
+                    430,
+                    160
+                ]
+            ],
+            "semantic_description": "Region near the red/yellow button and top devices."
+        }
+    ],
+    "semantic_relationships": [
+        {
+            "subject": "blue_cloth_mat",
+            "predicate": "covers_area",
+            "object": "current_location"
+        },
+        {
+            "subject": "red_yellow_button",
+            "predicate": "is_near",
+            "object": "current_location"
+        },
+        {
+            "subject": "black_device_center_top",
+            "predicate": "is_near",
+            "object": "top_control_area"
+        },
+        {
+            "subject": "black_keyboard",
+            "predicate": "is_near",
+            "object": "top_control_area"
+        },
+        {
+            "subject": "white_power_strip",
+            "predicate": "is_on_right_side_of",
+            "object": "current_location"
+        },
+        {
+            "subject": "floor_carpet_green_edge",
+            "predicate": "forms_boundary_along",
+            "object": "right_power_area"
+        },
+        {
+            "subject": "metal_frame_left",
+            "predicate": "runs_along",
+            "object": "left_side_rails_region"
+        }
+    ],
+    "current_state": {
+        "current_location": "current_location",
+        "status": "robot_operating_on_mat_area"
+    },
+    "plans": [
+        {
+            "plan_name": "orient_and_prepare_workspace",
+            "target_region": "current_location",
+            "constraints": [
+                {
+                    "type": "avoid",
+                    "name": "right_power_area"
+                }
+            ]
+        }
+    ]
+}

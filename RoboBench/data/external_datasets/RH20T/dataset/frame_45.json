@@ -1,0 +1,230 @@
+{
+    "objects": [
+        {
+            "name": "blue_tablecloth",
+            "type": "surface",
+            "position": {
+                "x": 0.44,
+                "y": 0.54
+            }
+        },
+        {
+            "name": "mounting_robot_controller",
+            "type": "device",
+            "position": {
+                "x": 0.72,
+                "y": 0.33
+            }
+        },
+        {
+            "name": "robot_arm_base_or_bracket",
+            "type": "hardware",
+            "position": {
+                "x": 0.91,
+                "y": 0.22
+            }
+        },
+        {
+            "name": "dome_light_or_sensor",
+            "type": "device",
+            "position": {
+                "x": 0.02,
+                "y": 0.1
+            }
+        },
+        {
+            "name": "keyboard",
+            "type": "input_device",
+            "position": {
+                "x": 0.6,
+                "y": 0.02
+            }
+        },
+        {
+            "name": "desktop_electronics_box",
+            "type": "container",
+            "position": {
+                "x": 0.5,
+                "y": 0.05
+            }
+        },
+        {
+            "name": "red_button",
+            "type": "button",
+            "position": {
+                "x": 0.7,
+                "y": 0.08
+            }
+        },
+        {
+            "name": "green_yellow_button",
+            "type": "button",
+            "position": {
+                "x": 0.62,
+                "y": 0.1
+            }
+        },
+        {
+            "name": "small_riser_block",
+            "type": "block",
+            "position": {
+                "x": 0.74,
+                "y": 0.15
+            }
+        },
+        {
+            "name": "power_cable_cluster",
+            "type": "cable",
+            "position": {
+                "x": 0.64,
+                "y": 0.18
+            }
+        },
+        {
+            "name": "keycap_or_small_controller_part",
+            "type": "object",
+            "position": {
+                "x": 0.55,
+                "y": 0.14
+            }
+        },
+        {
+            "name": "beige_metal_arm",
+            "type": "hardware",
+            "position": {
+                "x": 0.94,
+                "y": 0.47
+            }
+        },
+        {
+            "name": "steel_pole",
+            "type": "hardware",
+            "position": {
+                "x": 0.86,
+                "y": 0.62
+            }
+        },
+        {
+            "name": "black_device_housing",
+            "type": "device",
+            "position": {
+                "x": 0.08,
+                "y": 0.2
+            }
+        }
+    ],
+    "regions": [
+        {
+            "name": "blue_tablecloth_area",
+            "type": "work_area",
+            "position": {
+                "x": 0.44,
+                "y": 0.54
+            }
+        },
+        {
+            "name": "robot_work_region_near_center",
+            "type": "work_region",
+            "position": {
+                "x": 0.7,
+                "y": 0.33
+            }
+        },
+        {
+            "name": "background_floor_and_shelves",
+            "type": "background",
+            "position": {
+                "x": 0.5,
+                "y": 0.15
+            }
+        },
+        {
+            "name": "right_side_beige_arm_region",
+            "type": "constraint_region",
+            "position": {
+                "x": 0.9,
+                "y": 0.55
+            }
+        }
+    ],
+    "semantic_relationships": [
+        {
+            "subject": "blue_tablecloth",
+            "predicate": "covers_region",
+            "object": "blue_tablecloth_area"
+        },
+        {
+            "subject": "mounting_robot_controller",
+            "predicate": "mounted_near",
+            "object": "robot_work_region_near_center"
+        },
+        {
+            "subject": "power_cable_cluster",
+            "predicate": "connects_near",
+            "object": "mounting_robot_controller"
+        },
+        {
+            "subject": "small_riser_block",
+            "predicate": "supports_or_positions",
+            "object": "mounting_robot_controller"
+        },
+        {
+            "subject": "robot_arm_base_or_bracket",
+            "predicate": "located_in",
+            "object": "right_side_beige_arm_region"
+        },
+        {
+            "subject": "beige_metal_arm",
+            "predicate": "occupies_boundary_of",
+            "object": "right_side_beige_arm_region"
+        },
+        {
+            "subject": "steel_pole",
+            "predicate": "located_in",
+            "object": "right_side_beige_arm_region"
+        },
+        {
+            "subject": "keyboard",
+            "predicate": "located_in_background",
+            "object": "background_floor_and_shelves"
+        },
+        {
+            "subject": "desktop_electronics_box",
+            "predicate": "located_in_background",
+            "object": "background_floor_and_shelves"
+        },
+        {
+            "subject": "red_button",
+            "predicate": "part_of_device",
+            "object": "desktop_electronics_box"
+        },
+        {
+            "subject": "green_yellow_button",
+            "predicate": "part_of_device",
+            "object": "desktop_electronics_box"
+        },
+        {
+            "subject": "dome_light_or_sensor",
+            "predicate": "located_in_background",
+            "object": "background_floor_and_shelves"
+        },
+        {
+            "subject": "black_device_housing",
+            "predicate": "located_in_background",
+            "object": "background_floor_and_shelves"
+        }
+    ],
+    "current_location": {
+        "name": "robot_work_region_near_center"
+    },
+    "plans": [
+        {
+            "plan_name": "operate_on_work_surface",
+            "target_region": "blue_tablecloth_area",
+            "involves": [
+                "mounting_robot_controller",
+                "power_cable_cluster"
+            ]
+        }
+    ]
+}

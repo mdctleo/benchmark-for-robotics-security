@@ -1,0 +1,317 @@
+{
+    "objects": [
+        {
+            "name": "blue_fabric_surface",
+            "type": "surface",
+            "bounding_box_top_down": {
+                "x": 180,
+                "y": 70,
+                "width": 430,
+                "height": 340
+            },
+            "semantic_description": "A blue tarp/mat covering part of the scene."
+        },
+        {
+            "name": "printed_night_sky_graphic",
+            "type": "graphic",
+            "bounding_box_top_down": {
+                "x": 230,
+                "y": 200,
+                "width": 330,
+                "height": 190
+            },
+            "semantic_description": "A printed artwork (mountain/landscape) on the blue surface."
+        },
+        {
+            "name": "white_control_box",
+            "type": "device",
+            "bounding_box_top_down": {
+                "x": 270,
+                "y": 110,
+                "width": 90,
+                "height": 70
+            },
+            "semantic_description": "Small white rectangular device on top of the blue surface."
+        },
+        {
+            "name": "black_motor",
+            "type": "device",
+            "bounding_box_top_down": {
+                "x": 35,
+                "y": 55,
+                "width": 115,
+                "height": 120
+            },
+            "semantic_description": "Black cylindrical motor-like unit on the left side."
+        },
+        {
+            "name": "black_cylinder_base",
+            "type": "support",
+            "bounding_box_top_down": {
+                "x": 75,
+                "y": 120,
+                "width": 55,
+                "height": 55
+            },
+            "semantic_description": "Base/cap area associated with the motor."
+        },
+        {
+            "name": "metal_frame_bar",
+            "type": "structure",
+            "bounding_box_top_down": {
+                "x": 150,
+                "y": 30,
+                "width": 90,
+                "height": 60
+            },
+            "semantic_description": "A tubular metal frame section near the top-left."
+        },
+        {
+            "name": "light_gray_side_guard",
+            "type": "furniture_part",
+            "bounding_box_top_down": {
+                "x": 560,
+                "y": 95,
+                "width": 120,
+                "height": 240
+            },
+            "semantic_description": "Light gray curved guard/enclosure on the right."
+        },
+        {
+            "name": "right_guard_end_cap",
+            "type": "furniture_part",
+            "bounding_box_top_down": {
+                "x": 650,
+                "y": 250,
+                "width": 60,
+                "height": 85
+            },
+            "semantic_description": "End-cap/feature on the right guard."
+        },
+        {
+            "name": "metal_frame_support",
+            "type": "structure",
+            "bounding_box_top_down": {
+                "x": 610,
+                "y": 0,
+                "width": 110,
+                "height": 120
+            },
+            "semantic_description": "Metal structural support near the top-right."
+        },
+        {
+            "name": "grid_floor",
+            "type": "background",
+            "bounding_box_top_down": {
+                "x": 0,
+                "y": 0,
+                "width": 720,
+                "height": 420
+            },
+            "semantic_description": "Overall tiled/gridded background floor area surrounding the mat."
+        },
+        {
+            "name": "white_usb_plug_on_guard",
+            "type": "connector",
+            "bounding_box_top_down": {
+                "x": 610,
+                "y": 220,
+                "width": 65,
+                "height": 35
+            },
+            "semantic_description": "A white connector/plug visible near the right guard."
+        },
+        {
+            "name": "thin_stick_tool",
+            "type": "tool",
+            "bounding_box_top_down": {
+                "x": 520,
+                "y": 305,
+                "width": 120,
+                "height": 25
+            },
+            "semantic_description": "A thin stick-like tool lying on the dark portion of the surface."
+        }
+    ],
+    "regions": [
+        {
+            "name": "current_location",
+            "type": "work_area",
+            "bounding_box_top_down": {
+                "x": 150,
+                "y": 40,
+                "width": 520,
+                "height": 360
+            },
+            "semantic_description": "Primary workspace region containing the blue tarp, graphic, devices, and tools."
+        },
+        {
+            "name": "blue_tarp_region",
+            "type": "surface_region",
+            "bounding_box_top_down": {
+                "x": 180,
+                "y": 70,
+                "width": 430,
+                "height": 340
+            },
+            "semantic_description": "Region of the blue tarp/mat."
+        },
+        {
+            "name": "printed_graphic_region",
+            "type": "image_region",
+            "bounding_box_top_down": {
+                "x": 230,
+                "y": 200,
+                "width": 330,
+                "height": 190
+            },
+            "semantic_description": "Region corresponding to the printed night-sky/mountain artwork."
+        },
+        {
+            "name": "left_side_motor_zone",
+            "type": "device_zone",
+            "bounding_box_top_down": {
+                "x": 0,
+                "y": 40,
+                "width": 220,
+                "height": 210
+            },
+            "semantic_description": "Zone around the left motor/cylinder."
+        },
+        {
+            "name": "right_guard_zone",
+            "type": "device_zone",
+            "bounding_box_top_down": {
+                "x": 560,
+                "y": 70,
+                "width": 170,
+                "height": 300
+            },
+            "semantic_description": "Zone around the right light-gray guard/enclosure."
+        },
+        {
+            "name": "metal_frame_region",
+            "type": "structure_region",
+            "bounding_box_top_down": {
+                "x": 120,
+                "y": 10,
+                "width": 580,
+                "height": 120
+            },
+            "semantic_description": "Region of the metal frame visible along the top."
+        }
+    ],
+    "relationships": [
+        {
+            "relation": "contains",
+            "from": "current_location",
+            "to": "blue_tarp_region"
+        },
+        {
+            "relation": "contains",
+            "from": "current_location",
+            "to": "left_side_motor_zone"
+        },
+        {
+            "relation": "contains",
+            "from": "current_location",
+            "to": "right_guard_zone"
+        },
+        {
+            "relation": "contains",
+            "from": "current_location",
+            "to": "metal_frame_region"
+        },
+        {
+            "relation": "overlaps",
+            "from": "blue_tarp_region",
+            "to": "printed_graphic_region"
+        },
+        {
+            "relation": "located_on",
+            "from": "white_control_box",
+            "to": "blue_fabric_surface"
+        },
+        {
+            "relation": "part_of",
+            "from": "printed_night_sky_graphic",
+            "to": "blue_fabric_surface"
+        },
+        {
+            "relation": "located_in",
+            "from": "white_control_box",
+            "to": "blue_tarp_region"
+        },
+        {
+            "relation": "located_in",
+            "from": "thin_stick_tool",
+            "to": "blue_tarp_region"
+        },
+        {
+            "relation": "adjacent_to",
+            "from": "light_gray_side_guard",
+            "to": "blue_fabric_surface"
+        },
+        {
+            "relation": "located_in",
+            "from": "light_gray_side_guard",
+            "to": "right_guard_zone"
+        },
+        {
+            "relation": "located_in",
+            "from": "white_usb_plug_on_guard",
+            "to": "right_guard_zone"
+        },
+        {
+            "relation": "supported_by",
+            "from": "metal_frame_support",
+            "to": "grid_floor"
+        },
+        {
+            "relation": "part_of",
+            "from": "metal_frame_bar",
+            "to": "metal_frame_region"
+        },
+        {
+            "relation": "located_in",
+            "from": "black_motor",
+            "to": "left_side_motor_zone"
+        },
+        {
+            "relation": "associated_with",
+            "from": "black_cylinder_base",
+            "to": "black_motor"
+        }
+    ],
+    "current_location": "current_location",
+    "plans": [
+        {
+            "plan_name": "inspect_devices_on_tarp",
+            "target_region": "blue_tarp_region",
+            "actions": [
+                {
+                    "action": "observe",
+                    "entity": "white_control_box"
+                },
+                {
+                    "action": "observe",
+                    "entity": "printed_night_sky_graphic"
+                }
+            ]
+        },
+        {
+            "plan_name": "check_safety_guard_and_connectors",
+            "target_region": "right_guard_zone",
+            "actions": [
+                {
+                    "action": "observe",
+                    "entity": "light_gray_side_guard"
+                },
+                {
+                    "action": "observe",
+                    "entity": "white_usb_plug_on_guard"
+                }
+            ]
+        }
+    ]
+}

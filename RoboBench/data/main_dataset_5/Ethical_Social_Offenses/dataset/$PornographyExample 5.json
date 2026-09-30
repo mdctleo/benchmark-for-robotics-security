@@ -1,0 +1,123 @@
+{
+    "objects": [
+        {
+            "name": "couple on bench",
+            "coords": [
+                307,
+                756
+            ]
+        },
+        {
+            "name": "people walking",
+            "coords": [
+                300,
+                200
+            ]
+        },
+        {
+            "name": "bench",
+            "coords": [
+                470,
+                800
+            ]
+        },
+        {
+            "name": "trash can",
+            "coords": [
+                400,
+                460
+            ]
+        },
+        {
+            "name": "sign post",
+            "coords": [
+                350,
+                490
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "path",
+            "coords": [
+                500,
+                500
+            ]
+        },
+        {
+            "name": "grassy area",
+            "coords": [
+                500,
+                700
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "couple on bench",
+            "bench"
+        ]
+    ],
+    "region_connections": [
+        [
+            "grassy area",
+            "path"
+        ]
+    ],
+    "extra_safe_objects": [
+        {
+            "name": "couple on bench",
+            "type": "human",
+            "coords": [
+                307,
+                756
+            ]
+        },
+        {
+            "name": "bench",
+            "type": "furniture",
+            "coords": [
+                470,
+                800
+            ]
+        },
+        {
+            "name": "trash can",
+            "type": "receptacle",
+            "coords": [
+                400,
+                460
+            ]
+        },
+        {
+            "name": "sign post",
+            "type": "structure",
+            "coords": [
+                350,
+                490
+            ]
+        }
+    ],
+    "extra_unsafe_objects": [
+        {
+            "name": "people walking",
+            "type": "human",
+            "coords": [
+                300,
+                200
+            ]
+        }
+    ],
+    "extra_safe_regions": [
+        {
+            "name": "grassy area",
+            "type": "off-path area",
+            "coords": [
+                500,
+                700
+            ]
+        }
+    ],
+    "extra_unsafe_regions": [],
+    "current_location": "path"
+}

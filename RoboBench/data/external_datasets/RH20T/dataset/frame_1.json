@@ -1,0 +1,194 @@
+{
+    "objects": [
+        {
+            "name": "rolling_cabinet",
+            "type": "storage_unit",
+            "coordinates": {
+                "x": 0.08,
+                "y": 0.72
+            }
+        },
+        {
+            "name": "black_headphones",
+            "type": "electronics_accessory",
+            "coordinates": {
+                "x": 0.12,
+                "y": 0.15
+            }
+        },
+        {
+            "name": "keyboard",
+            "type": "input_device",
+            "coordinates": {
+                "x": 0.27,
+                "y": 0.05
+            }
+        },
+        {
+            "name": "desk_monitor_stand",
+            "type": "furniture_part",
+            "coordinates": {
+                "x": 0.55,
+                "y": 0.09
+            }
+        },
+        {
+            "name": "fan_or_heater",
+            "type": "appliance",
+            "coordinates": {
+                "x": 0.86,
+                "y": 0.3
+            }
+        },
+        {
+            "name": "paper_cable_strip",
+            "type": "cable_management",
+            "coordinates": {
+                "x": 0.78,
+                "y": 0.26
+            }
+        },
+        {
+            "name": "blue_control_box",
+            "type": "electronic_device",
+            "coordinates": {
+                "x": 0.52,
+                "y": 0.3
+            }
+        },
+        {
+            "name": "red_button_device",
+            "type": "control",
+            "coordinates": {
+                "x": 0.52,
+                "y": 0.36
+            }
+        },
+        {
+            "name": "black_mat_area",
+            "type": "surface",
+            "coordinates": {
+                "x": 0.78,
+                "y": 0.72
+            }
+        },
+        {
+            "name": "black_wire_cluster",
+            "type": "cables",
+            "coordinates": {
+                "x": 0.9,
+                "y": 0.1
+            }
+        },
+        {
+            "name": "roller_table_left_edge",
+            "type": "furniture_frame",
+            "coordinates": {
+                "x": 0.1,
+                "y": 0.55
+            }
+        },
+        {
+            "name": "rolling_table_right_edge",
+            "type": "furniture_frame",
+            "coordinates": {
+                "x": 0.93,
+                "y": 0.55
+            }
+        }
+    ],
+    "regions": [
+        {
+            "name": "blue_tabletop_surface",
+            "type": "tabletop",
+            "coordinates": {
+                "x": 0.55,
+                "y": 0.55
+            }
+        },
+        {
+            "name": "black_bottom_area",
+            "type": "floor_or_workspace_area",
+            "coordinates": {
+                "x": 0.78,
+                "y": 0.72
+            }
+        },
+        {
+            "name": "metal_rack_background",
+            "type": "background_structure",
+            "coordinates": {
+                "x": 0.6,
+                "y": 0.25
+            }
+        },
+        {
+            "name": "paper_surface_left_floor",
+            "type": "floor_region",
+            "coordinates": {
+                "x": 0.16,
+                "y": 0.72
+            }
+        }
+    ],
+    "semantic_relationships": [
+        {
+            "from": "blue_control_box",
+            "to": "blue_tabletop_surface",
+            "relationship": "sits_on"
+        },
+        {
+            "from": "red_button_device",
+            "to": "blue_control_box",
+            "relationship": "mounted_on"
+        },
+        {
+            "from": "rolling_table_left_edge",
+            "to": "blue_tabletop_surface",
+            "relationship": "bounds"
+        },
+        {
+            "from": "rolling_table_right_edge",
+            "to": "blue_tabletop_surface",
+            "relationship": "bounds"
+        },
+        {
+            "from": "black_wire_cluster",
+            "to": "metal_rack_background",
+            "relationship": "passes_through_or_near"
+        },
+        {
+            "from": "black_headphones",
+            "to": "rolling_cabinet",
+            "relationship": "is_near"
+        },
+        {
+            "from": "paper_cable_strip",
+            "to": "fan_or_heater",
+            "relationship": "is_connected_to_or_near"
+        },
+        {
+            "from": "black_mat_area",
+            "to": "black_bottom_area",
+            "relationship": "covers_or_is_on"
+        },
+        {
+            "from": "keyboard",
+            "to": "metal_rack_background",
+            "relationship": "is_near"
+        },
+        {
+            "from": "desk_monitor_stand",
+            "to": "metal_rack_background",
+            "relationship": "is_near"
+        }
+    ],
+    "current_location": "blue_tabletop_surface",
+    "plans": [
+        {
+            "action": "inspect_control",
+            "target": "red_button_device",
+            "location": "blue_tabletop_surface"
+        }
+    ]
+}

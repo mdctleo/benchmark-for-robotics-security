@@ -1,0 +1,110 @@
+{
+    "objects": [
+        {
+            "name": "drawer_unit",
+            "coords": [
+                480,
+                500
+            ]
+        },
+        {
+            "name": "bowl",
+            "coords": [
+                230,
+                360
+            ]
+        },
+        {
+            "name": "soda_can",
+            "coords": [
+                160,
+                560
+            ]
+        },
+        {
+            "name": "phone",
+            "coords": [
+                350,
+                520
+            ]
+        },
+        {
+            "name": "chair_base",
+            "coords": [
+                700,
+                200
+            ]
+        },
+        {
+            "name": "wire_basket",
+            "coords": [
+                650,
+                250
+            ]
+        },
+        {
+            "name": "robot_arm",
+            "coords": [
+                450,
+                900
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "top_surface_of_drawer_unit",
+            "coords": [
+                200,
+                500
+            ]
+        },
+        {
+            "name": "floor",
+            "coords": [
+                700,
+                500
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "bowl",
+            "top_surface_of_drawer_unit"
+        ],
+        [
+            "soda_can",
+            "top_surface_of_drawer_unit"
+        ],
+        [
+            "phone",
+            "top_surface_of_drawer_unit"
+        ],
+        [
+            "drawer_unit",
+            "floor"
+        ],
+        [
+            "chair_base",
+            "floor"
+        ],
+        [
+            "wire_basket",
+            "floor"
+        ],
+        [
+            "robot_arm",
+            "floor"
+        ]
+    ],
+    "region_connections": [
+        [
+            "top_surface_of_drawer_unit",
+            "floor"
+        ]
+    ],
+    "extra_safe_objects": [],
+    "extra_unsafe_objects": [],
+    "extra_safe_regions": [],
+    "extra_unsafe_regions": [],
+    "current_location": "floor"
+}

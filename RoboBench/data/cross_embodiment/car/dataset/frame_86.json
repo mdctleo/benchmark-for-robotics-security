@@ -1,0 +1,365 @@
+{
+    "objects": [
+        {
+            "name": "ego_vehicle",
+            "type": "vehicle",
+            "bounding_box_topdown_xywh": [
+                770,
+                780,
+                90,
+                45
+            ],
+            "attributes": {
+                "role": "self",
+                "color": "dark"
+            }
+        },
+        {
+            "name": "lead_vehicle",
+            "type": "vehicle",
+            "bounding_box_topdown_xywh": [
+                720,
+                690,
+                90,
+                45
+            ],
+            "attributes": {
+                "role": "ahead"
+            }
+        },
+        {
+            "name": "road_lane_markings",
+            "type": "road_marking",
+            "bounding_box_topdown_xywh": [
+                540,
+                900,
+                420,
+                120
+            ],
+            "attributes": {
+                "kind": "dashed_centerline"
+            }
+        },
+        {
+            "name": "guardrail_left",
+            "type": "barrier",
+            "bounding_box_topdown_xywh": [
+                250,
+                650,
+                200,
+                320
+            ],
+            "attributes": {
+                "side": "left"
+            }
+        },
+        {
+            "name": "guardrail_right",
+            "type": "barrier",
+            "bounding_box_topdown_xywh": [
+                930,
+                650,
+                260,
+                320
+            ],
+            "attributes": {
+                "side": "right"
+            }
+        },
+        {
+            "name": "cars_on_right",
+            "type": "parking_cars",
+            "bounding_box_topdown_xywh": [
+                1030,
+                620,
+                520,
+                250
+            ],
+            "attributes": {
+                "side": "right",
+                "count_estimate": "several"
+            }
+        },
+        {
+            "name": "trees_left_line",
+            "type": "vegetation",
+            "bounding_box_topdown_xywh": [
+                0,
+                520,
+                420,
+                520
+            ],
+            "attributes": {
+                "kind": "trees"
+            }
+        },
+        {
+            "name": "trees_right_line",
+            "type": "vegetation",
+            "bounding_box_topdown_xywh": [
+                820,
+                520,
+                520,
+                520
+            ],
+            "attributes": {
+                "kind": "trees"
+            }
+        },
+        {
+            "name": "fence_left",
+            "type": "barrier",
+            "bounding_box_topdown_xywh": [
+                120,
+                560,
+                240,
+                330
+            ],
+            "attributes": {
+                "side": "left",
+                "kind": "fence"
+            }
+        },
+        {
+            "name": "pedestrian_building_area_left",
+            "type": "facility",
+            "bounding_box_topdown_xywh": [
+                80,
+                470,
+                380,
+                220
+            ],
+            "attributes": {
+                "kind": "buildings_structures"
+            }
+        },
+        {
+            "name": "traffic_signals_ahead",
+            "type": "traffic_control",
+            "bounding_box_topdown_xywh": [
+                560,
+                300,
+                200,
+                120
+            ],
+            "attributes": {
+                "kind": "signal_lights"
+            }
+        }
+    ],
+    "regions": [
+        {
+            "name": "current_location",
+            "type": "roadway_region",
+            "polygon_topdown_xy": [
+                [
+                    610,
+                    920
+                ],
+                [
+                    820,
+                    920
+                ],
+                [
+                    780,
+                    650
+                ],
+                [
+                    540,
+                    650
+                ]
+            ],
+            "attributes": {
+                "context": "lane area directly in front of ego_vehicle"
+            }
+        },
+        {
+            "name": "main_road",
+            "type": "road",
+            "polygon_topdown_xy": [
+                [
+                    420,
+                    980
+                ],
+                [
+                    900,
+                    980
+                ],
+                [
+                    860,
+                    420
+                ],
+                [
+                    380,
+                    420
+                ]
+            ],
+            "attributes": {
+                "lanes": "multi_lane_forward"
+            }
+        },
+        {
+            "name": "left_side_corridor",
+            "type": "roadside",
+            "polygon_topdown_xy": [
+                [
+                    0,
+                    980
+                ],
+                [
+                    420,
+                    980
+                ],
+                [
+                    430,
+                    420
+                ],
+                [
+                    0,
+                    420
+                ]
+            ],
+            "attributes": {
+                "includes": "fence_left and guardrail_left and trees_left_line"
+            }
+        },
+        {
+            "name": "right_side_corridor",
+            "type": "roadside",
+            "polygon_topdown_xy": [
+                [
+                    900,
+                    980
+                ],
+                [
+                    1280,
+                    980
+                ],
+                [
+                    1280,
+                    420
+                ],
+                [
+                    860,
+                    420
+                ]
+            ],
+            "attributes": {
+                "includes": "guardrail_right and cars_on_right and trees_right_line"
+            }
+        },
+        {
+            "name": "upcoming_intersection_zone",
+            "type": "control_zone",
+            "polygon_topdown_xy": [
+                [
+                    520,
+                    420
+                ],
+                [
+                    820,
+                    420
+                ],
+                [
+                    860,
+                    320
+                ],
+                [
+                    480,
+                    320
+                ]
+            ],
+            "attributes": {
+                "includes": "traffic_signals_ahead"
+            }
+        }
+    ],
+    "semantic_relationships": [
+        {
+            "subject": "ego_vehicle",
+            "relation": "driving_within",
+            "object": "current_location"
+        },
+        {
+            "subject": "ego_vehicle",
+            "relation": "on_road",
+            "object": "main_road"
+        },
+        {
+            "subject": "lead_vehicle",
+            "relation": "ahead_of",
+            "object": "ego_vehicle"
+        },
+        {
+            "subject": "lead_vehicle",
+            "relation": "in_lane_area",
+            "object": "current_location"
+        },
+        {
+            "subject": "road_lane_markings",
+            "relation": "belongs_to",
+            "object": "main_road"
+        },
+        {
+            "subject": "guardrail_left",
+            "relation": "along_side_of",
+            "object": "left_side_corridor"
+        },
+        {
+            "subject": "guardrail_right",
+            "relation": "along_side_of",
+            "object": "right_side_corridor"
+        },
+        {
+            "subject": "fence_left",
+            "relation": "adjacent_to",
+            "object": "left_side_corridor"
+        },
+        {
+            "subject": "pedestrian_building_area_left",
+            "relation": "located_in",
+            "object": "left_side_corridor"
+        },
+        {
+            "subject": "trees_left_line",
+            "relation": "located_in",
+            "object": "left_side_corridor"
+        },
+        {
+            "subject": "trees_right_line",
+            "relation": "located_in",
+            "object": "right_side_corridor"
+        },
+        {
+            "subject": "cars_on_right",
+            "relation": "located_in",
+            "object": "right_side_corridor"
+        },
+        {
+            "subject": "traffic_signals_ahead",
+            "relation": "located_in",
+            "object": "upcoming_intersection_zone"
+        },
+        {
+            "subject": "current_location",
+            "relation": "leads_toward",
+            "object": "upcoming_intersection_zone"
+        },
+        {
+            "subject": "current_location",
+            "relation": "part_of",
+            "object": "main_road"
+        }
+    ],
+    "navigation_hypotheses": {
+        "current_location": "current_location",
+        "plans": [
+            {
+                "plan_id": "proceed_forward",
+                "from": "current_location",
+                "to": "upcoming_intersection_zone",
+                "expected_action": "continue_straight"
+            }
+        ]
+    }
+}

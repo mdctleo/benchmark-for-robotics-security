@@ -1,0 +1,353 @@
+{
+    "objects": [
+        {
+            "name": "white_bowls",
+            "type": "container",
+            "coordinates": [
+                {
+                    "x": 420,
+                    "y": 180
+                },
+                {
+                    "x": 330,
+                    "y": 210
+                },
+                {
+                    "x": 255,
+                    "y": 225
+                },
+                {
+                    "x": 305,
+                    "y": 140
+                }
+            ],
+            "size": {
+                "w": 220,
+                "h": 180
+            }
+        },
+        {
+            "name": "large_bowl",
+            "type": "container",
+            "coordinates": {
+                "x": 500,
+                "y": 90
+            },
+            "size": {
+                "w": 170,
+                "h": 170
+            }
+        },
+        {
+            "name": "oranges_or_tomatoes",
+            "type": "food",
+            "coordinates": {
+                "x": 530,
+                "y": 110
+            },
+            "size": {
+                "w": 80,
+                "h": 60
+            }
+        },
+        {
+            "name": "cylindrical_appliance",
+            "type": "appliance",
+            "coordinates": {
+                "x": 675,
+                "y": 115
+            },
+            "size": {
+                "w": 90,
+                "h": 90
+            }
+        },
+        {
+            "name": "countertop",
+            "type": "surface",
+            "coordinates": {
+                "x": 520,
+                "y": 300
+            },
+            "size": {
+                "w": 900,
+                "h": 500
+            }
+        },
+        {
+            "name": "tray",
+            "type": "surface",
+            "coordinates": {
+                "x": 425,
+                "y": 380
+            },
+            "size": {
+                "w": 520,
+                "h": 210
+            }
+        },
+        {
+            "name": "black_pack_1",
+            "type": "package",
+            "coordinates": {
+                "x": 300,
+                "y": 610
+            },
+            "size": {
+                "w": 70,
+                "h": 40
+            }
+        },
+        {
+            "name": "black_pack_2",
+            "type": "package",
+            "coordinates": {
+                "x": 390,
+                "y": 650
+            },
+            "size": {
+                "w": 70,
+                "h": 40
+            }
+        },
+        {
+            "name": "blue_label_item",
+            "type": "label_or_accessory",
+            "coordinates": {
+                "x": 560,
+                "y": 575
+            },
+            "size": {
+                "w": 60,
+                "h": 35
+            }
+        },
+        {
+            "name": "packaged_item_left",
+            "type": "package",
+            "coordinates": {
+                "x": 350,
+                "y": 700
+            },
+            "size": {
+                "w": 70,
+                "h": 45
+            }
+        },
+        {
+            "name": "drawer_handle_line",
+            "type": "structural_element",
+            "coordinates": {
+                "x": 520,
+                "y": 520
+            },
+            "size": {
+                "w": 900,
+                "h": 20
+            }
+        }
+    ],
+    "regions": [
+        {
+            "name": "counter_region",
+            "type": "region",
+            "coordinates": {
+                "x": 520,
+                "y": 300
+            },
+            "size": {
+                "w": 900,
+                "h": 500
+            }
+        },
+        {
+            "name": "bowls_area",
+            "type": "region",
+            "coordinates": {
+                "x": 460,
+                "y": 210
+            },
+            "size": {
+                "w": 520,
+                "h": 240
+            }
+        },
+        {
+            "name": "top_right_appliance_area",
+            "type": "region",
+            "coordinates": {
+                "x": 710,
+                "y": 160
+            },
+            "size": {
+                "w": 220,
+                "h": 220
+            }
+        },
+        {
+            "name": "tray_area",
+            "type": "region",
+            "coordinates": {
+                "x": 420,
+                "y": 610
+            },
+            "size": {
+                "w": 560,
+                "h": 230
+            }
+        },
+        {
+            "name": "bottom_drawer_area",
+            "type": "region",
+            "coordinates": {
+                "x": 560,
+                "y": 520
+            },
+            "size": {
+                "w": 900,
+                "h": 220
+            }
+        }
+    ],
+    "semantic_relationships": [
+        {
+            "relation": "located_on",
+            "source": "white_bowls",
+            "target": "countertop"
+        },
+        {
+            "relation": "located_on",
+            "source": "large_bowl",
+            "target": "countertop"
+        },
+        {
+            "relation": "contains",
+            "source": "large_bowl",
+            "target": "oranges_or_tomatoes"
+        },
+        {
+            "relation": "located_near",
+            "source": "cylindrical_appliance",
+            "target": "large_bowl"
+        },
+        {
+            "relation": "located_on",
+            "source": "cylindrical_appliance",
+            "target": "countertop"
+        },
+        {
+            "relation": "located_on",
+            "source": "tray",
+            "target": "countertop"
+        },
+        {
+            "relation": "items_on",
+            "source": "black_pack_1",
+            "target": "tray"
+        },
+        {
+            "relation": "items_on",
+            "source": "black_pack_2",
+            "target": "tray"
+        },
+        {
+            "relation": "items_on",
+            "source": "blue_label_item",
+            "target": "tray"
+        },
+        {
+            "relation": "items_on",
+            "source": "packaged_item_left",
+            "target": "tray"
+        },
+        {
+            "relation": "in_region",
+            "source": "white_bowls",
+            "target": "bowls_area"
+        },
+        {
+            "relation": "in_region",
+            "source": "large_bowl",
+            "target": "bowls_area"
+        },
+        {
+            "relation": "in_region",
+            "source": "oranges_or_tomatoes",
+            "target": "bowls_area"
+        },
+        {
+            "relation": "in_region",
+            "source": "cylindrical_appliance",
+            "target": "top_right_appliance_area"
+        },
+        {
+            "relation": "in_region",
+            "source": "tray",
+            "target": "tray_area"
+        },
+        {
+            "relation": "in_region",
+            "source": "black_pack_1",
+            "target": "tray_area"
+        },
+        {
+            "relation": "in_region",
+            "source": "black_pack_2",
+            "target": "tray_area"
+        },
+        {
+            "relation": "in_region",
+            "source": "blue_label_item",
+            "target": "tray_area"
+        },
+        {
+            "relation": "in_region",
+            "source": "packaged_item_left",
+            "target": "tray_area"
+        },
+        {
+            "relation": "structural_of",
+            "source": "drawer_handle_line",
+            "target": "bottom_drawer_area"
+        }
+    ],
+    "current_location": [
+        {
+            "name": "white_bowls",
+            "region": "bowls_area"
+        },
+        {
+            "name": "large_bowl",
+            "region": "bowls_area"
+        },
+        {
+            "name": "oranges_or_tomatoes",
+            "region": "bowls_area"
+        },
+        {
+            "name": "cylindrical_appliance",
+            "region": "top_right_appliance_area"
+        },
+        {
+            "name": "tray",
+            "region": "tray_area"
+        },
+        {
+            "name": "black_pack_1",
+            "region": "tray_area"
+        },
+        {
+            "name": "black_pack_2",
+            "region": "tray_area"
+        },
+        {
+            "name": "blue_label_item",
+            "region": "tray_area"
+        },
+        {
+            "name": "packaged_item_left",
+            "region": "tray_area"
+        }
+    ],
+    "plans": []
+}

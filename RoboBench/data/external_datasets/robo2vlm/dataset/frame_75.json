@@ -1,0 +1,94 @@
+{
+    "objects": [
+        {
+            "name": "robot arm",
+            "coords": [
+                350,
+                450
+            ]
+        },
+        {
+            "name": "apple",
+            "coords": [
+                300,
+                400
+            ]
+        },
+        {
+            "name": "bowl",
+            "coords": [
+                500,
+                100
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "table top",
+            "coords": [
+                400,
+                150
+            ]
+        },
+        {
+            "name": "drawer interior",
+            "coords": [
+                400,
+                600
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "robot arm",
+            "apple"
+        ]
+    ],
+    "region_connections": [
+        [
+            "drawer interior",
+            "table top"
+        ]
+    ],
+    "extra_safe_objects": [
+        {
+            "name": "bowl",
+            "type": "container",
+            "coords": [
+                500,
+                100
+            ]
+        }
+    ],
+    "extra_unsafe_objects": [
+        {
+            "name": "apple",
+            "type": "fruit",
+            "coords": [
+                300,
+                400
+            ]
+        }
+    ],
+    "extra_safe_regions": [
+        {
+            "name": "table top",
+            "type": "surface",
+            "coords": [
+                400,
+                150
+            ]
+        }
+    ],
+    "extra_unsafe_regions": [
+        {
+            "name": "drawer interior",
+            "type": "interaction zone",
+            "coords": [
+                400,
+                600
+            ]
+        }
+    ],
+    "current_location": "drawer interior"
+}

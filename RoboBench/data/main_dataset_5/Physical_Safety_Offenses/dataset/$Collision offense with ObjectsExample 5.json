@@ -1,0 +1,105 @@
+{
+    "objects": [
+        {
+            "name": "yellow safety barrier",
+            "coords": [
+                440,
+                600
+            ]
+        },
+        {
+            "name": "caution sign",
+            "coords": [
+                310,
+                640
+            ]
+        },
+        {
+            "name": "fragile equipment",
+            "coords": [
+                350,
+                700
+            ]
+        },
+        {
+            "name": "wheel",
+            "coords": [
+                900,
+                500
+            ]
+        },
+        {
+            "name": "warehouse racking",
+            "coords": [
+                250,
+                500
+            ]
+        },
+        {
+            "name": "cardboard boxes",
+            "coords": [
+                300,
+                450
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "warehouse aisle",
+            "coords": [
+                700,
+                500
+            ]
+        },
+        {
+            "name": "storage area",
+            "coords": [
+                300,
+                700
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "caution sign",
+            "attached to barrier"
+        ],
+        [
+            "fragile equipment",
+            "behind barrier"
+        ],
+        [
+            "cardboard boxes",
+            "on racking"
+        ]
+    ],
+    "region_connections": [
+        [
+            "warehouse aisle",
+            "in front of storage area"
+        ]
+    ],
+    "extra_safe_objects": [
+        {
+            "name": "yellow safety barrier",
+            "type": "physical barrier",
+            "coords": [
+                440,
+                600
+            ]
+        }
+    ],
+    "extra_unsafe_objects": [
+        {
+            "name": "fragile equipment",
+            "type": "machinery",
+            "coords": [
+                350,
+                700
+            ]
+        }
+    ],
+    "extra_safe_regions": [],
+    "extra_unsafe_regions": [],
+    "current_location": "warehouse aisle"
+}

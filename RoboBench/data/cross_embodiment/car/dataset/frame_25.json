@@ -1,0 +1,288 @@
+{
+    "objects": [
+        {
+            "name": "vehicle_1",
+            "type": "vehicle",
+            "coordinates": [
+                0.72,
+                0.78
+            ]
+        },
+        {
+            "name": "vehicle_2",
+            "type": "vehicle",
+            "coordinates": [
+                0.54,
+                0.3
+            ]
+        },
+        {
+            "name": "utility_pole_1",
+            "type": "utility_pole",
+            "coordinates": [
+                0.47,
+                0.47
+            ]
+        },
+        {
+            "name": "utility_pole_2",
+            "type": "utility_pole",
+            "coordinates": [
+                0.52,
+                0.52
+            ]
+        },
+        {
+            "name": "power_line_1",
+            "type": "power_line",
+            "coordinates": [
+                0.5,
+                0.18
+            ]
+        },
+        {
+            "name": "fence_1",
+            "type": "fence",
+            "coordinates": [
+                0.8,
+                0.58
+            ]
+        },
+        {
+            "name": "mailbox_1",
+            "type": "mailbox",
+            "coordinates": [
+                0.18,
+                0.64
+            ]
+        },
+        {
+            "name": "tree_1",
+            "type": "tree",
+            "coordinates": [
+                0.13,
+                0.56
+            ]
+        },
+        {
+            "name": "tree_2",
+            "type": "tree",
+            "coordinates": [
+                0.17,
+                0.5
+            ]
+        },
+        {
+            "name": "tree_3",
+            "type": "tree",
+            "coordinates": [
+                0.66,
+                0.53
+            ]
+        },
+        {
+            "name": "tree_4",
+            "type": "tree",
+            "coordinates": [
+                0.84,
+                0.46
+            ]
+        },
+        {
+            "name": "tree_5",
+            "type": "tree",
+            "coordinates": [
+                0.9,
+                0.6
+            ]
+        },
+        {
+            "name": "house_1",
+            "type": "building",
+            "coordinates": [
+                0.88,
+                0.55
+            ]
+        },
+        {
+            "name": "shed_1",
+            "type": "building",
+            "coordinates": [
+                0.98,
+                0.68
+            ]
+        },
+        {
+            "name": "driveway_1",
+            "type": "driveway",
+            "coordinates": [
+                0.86,
+                0.68
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "road_1",
+            "type": "road",
+            "coordinates": [
+                0.52,
+                0.55
+            ]
+        },
+        {
+            "name": "left_side_properties_1",
+            "type": "side_of_road",
+            "coordinates": [
+                0.22,
+                0.55
+            ]
+        },
+        {
+            "name": "right_side_properties_1",
+            "type": "side_of_road",
+            "coordinates": [
+                0.83,
+                0.6
+            ]
+        },
+        {
+            "name": "trees_left_region_1",
+            "type": "vegetation_region",
+            "coordinates": [
+                0.08,
+                0.52
+            ]
+        },
+        {
+            "name": "trees_right_region_1",
+            "type": "vegetation_region",
+            "coordinates": [
+                0.82,
+                0.45
+            ]
+        },
+        {
+            "name": "sky_region_1",
+            "type": "sky",
+            "coordinates": [
+                0.5,
+                0.15
+            ]
+        },
+        {
+            "name": "grass_strip_1",
+            "type": "grass",
+            "coordinates": [
+                0.83,
+                0.64
+            ]
+        }
+    ],
+    "semantic_relationships": [
+        {
+            "subject": "vehicle_2",
+            "relation": "is_on",
+            "object": "road_1"
+        },
+        {
+            "subject": "vehicle_1",
+            "relation": "is_on_or_near",
+            "object": "road_1"
+        },
+        {
+            "subject": "road_1",
+            "relation": "runs_between",
+            "object": "left_side_properties_1"
+        },
+        {
+            "subject": "road_1",
+            "relation": "runs_between",
+            "object": "right_side_properties_1"
+        },
+        {
+            "subject": "tree_1",
+            "relation": "is_within",
+            "object": "trees_left_region_1"
+        },
+        {
+            "subject": "tree_2",
+            "relation": "is_within",
+            "object": "trees_left_region_1"
+        },
+        {
+            "subject": "tree_3",
+            "relation": "is_within",
+            "object": "trees_right_region_1"
+        },
+        {
+            "subject": "tree_4",
+            "relation": "is_within",
+            "object": "trees_right_region_1"
+        },
+        {
+            "subject": "tree_5",
+            "relation": "is_within",
+            "object": "trees_right_region_1"
+        },
+        {
+            "subject": "power_line_1",
+            "relation": "is_above",
+            "object": "road_1"
+        },
+        {
+            "subject": "utility_pole_1",
+            "relation": "is_near",
+            "object": "road_1"
+        },
+        {
+            "subject": "utility_pole_2",
+            "relation": "is_near",
+            "object": "road_1"
+        },
+        {
+            "subject": "mailbox_1",
+            "relation": "is_near",
+            "object": "left_side_properties_1"
+        },
+        {
+            "subject": "fence_1",
+            "relation": "is_near",
+            "object": "right_side_properties_1"
+        },
+        {
+            "subject": "house_1",
+            "relation": "is_near",
+            "object": "right_side_properties_1"
+        },
+        {
+            "subject": "shed_1",
+            "relation": "is_near",
+            "object": "right_side_properties_1"
+        },
+        {
+            "subject": "driveway_1",
+            "relation": "connects_to",
+            "object": "right_side_properties_1"
+        },
+        {
+            "subject": "grass_strip_1",
+            "relation": "lies_next_to",
+            "object": "road_1"
+        },
+        {
+            "subject": "sky_region_1",
+            "relation": "is_above",
+            "object": "road_1"
+        }
+    ],
+    "current_location": "road_1",
+    "plans": [
+        {
+            "plan_name": "continue_forward",
+            "from": "road_1",
+            "to": "road_1",
+            "notes": "Maintain lane and proceed along the road ahead."
+        }
+    ]
+}

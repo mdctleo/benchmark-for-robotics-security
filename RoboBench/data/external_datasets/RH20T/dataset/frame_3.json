@@ -1,0 +1,362 @@
+{
+    "objects": [
+        {
+            "name": "rolling_chassis",
+            "type": "platform",
+            "bounding_box": [
+                [
+                    40,
+                    330
+                ],
+                [
+                    640,
+                    330
+                ],
+                [
+                    640,
+                    470
+                ],
+                [
+                    40,
+                    470
+                ]
+            ]
+        },
+        {
+            "name": "blue_tablecloth",
+            "type": "textile",
+            "bounding_box": [
+                [
+                    80,
+                    60
+                ],
+                [
+                    610,
+                    60
+                ],
+                [
+                    610,
+                    340
+                ],
+                [
+                    80,
+                    340
+                ]
+            ]
+        },
+        {
+            "name": "red_white_stop_button",
+            "type": "button",
+            "bounding_box": [
+                [
+                    315,
+                    140
+                ],
+                [
+                    370,
+                    140
+                ],
+                [
+                    370,
+                    220
+                ],
+                [
+                    315,
+                    220
+                ]
+            ]
+        },
+        {
+            "name": "black_lid_container",
+            "type": "container",
+            "bounding_box": [
+                [
+                    0,
+                    40
+                ],
+                [
+                    140,
+                    40
+                ],
+                [
+                    140,
+                    160
+                ],
+                [
+                    0,
+                    160
+                ]
+            ]
+        },
+        {
+            "name": "monitor_stand_or_leg",
+            "type": "support",
+            "bounding_box": [
+                [
+                    90,
+                    0
+                ],
+                [
+                    170,
+                    0
+                ],
+                [
+                    170,
+                    260
+                ],
+                [
+                    90,
+                    260
+                ]
+            ]
+        },
+        {
+            "name": "monitor_camera_device",
+            "type": "device",
+            "bounding_box": [
+                [
+                    0,
+                    0
+                ],
+                [
+                    110,
+                    0
+                ],
+                [
+                    110,
+                    120
+                ],
+                [
+                    0,
+                    120
+                ]
+            ]
+        },
+        {
+            "name": "server_or_device_case",
+            "type": "equipment",
+            "bounding_box": [
+                [
+                    600,
+                    0
+                ],
+                [
+                    840,
+                    0
+                ],
+                [
+                    840,
+                    380
+                ],
+                [
+                    600,
+                    380
+                ]
+            ]
+        },
+        {
+            "name": "robot_right_side_housing",
+            "type": "robot_part",
+            "bounding_box": [
+                [
+                    680,
+                    120
+                ],
+                [
+                    840,
+                    120
+                ],
+                [
+                    840,
+                    520
+                ],
+                [
+                    680,
+                    520
+                ]
+            ]
+        },
+        {
+            "name": "right_side_power_strip",
+            "type": "accessory",
+            "bounding_box": [
+                [
+                    705,
+                    160
+                ],
+                [
+                    820,
+                    160
+                ],
+                [
+                    820,
+                    290
+                ],
+                [
+                    705,
+                    290
+                ]
+            ]
+        },
+        {
+            "name": "cables_bundle",
+            "type": "cables",
+            "bounding_box": [
+                [
+                    520,
+                    0
+                ],
+                [
+                    850,
+                    0
+                ],
+                [
+                    850,
+                    220
+                ],
+                [
+                    520,
+                    220
+                ]
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "current_location",
+            "type": "operational_area",
+            "polygon": [
+                [
+                    60,
+                    40
+                ],
+                [
+                    650,
+                    40
+                ],
+                [
+                    650,
+                    490
+                ],
+                [
+                    60,
+                    490
+                ]
+            ]
+        },
+        {
+            "name": "blue_tabletop_area",
+            "type": "surface",
+            "polygon": [
+                [
+                    80,
+                    60
+                ],
+                [
+                    610,
+                    60
+                ],
+                [
+                    610,
+                    340
+                ],
+                [
+                    80,
+                    340
+                ]
+            ]
+        },
+        {
+            "name": "left_container_zone",
+            "type": "area",
+            "polygon": [
+                [
+                    0,
+                    40
+                ],
+                [
+                    200,
+                    40
+                ],
+                [
+                    200,
+                    190
+                ],
+                [
+                    0,
+                    190
+                ]
+            ]
+        },
+        {
+            "name": "right_equipment_zone",
+            "type": "area",
+            "polygon": [
+                [
+                    600,
+                    0
+                ],
+                [
+                    870,
+                    0
+                ],
+                [
+                    870,
+                    520
+                ],
+                [
+                    600,
+                    520
+                ]
+            ]
+        }
+    ],
+    "semantic_relationships": [
+        {
+            "subject": "red_white_stop_button",
+            "relation": "is_on",
+            "object": "blue_tablecloth"
+        },
+        {
+            "subject": "blue_tablecloth",
+            "relation": "covers",
+            "object": "rolling_chassis"
+        },
+        {
+            "subject": "black_lid_container",
+            "relation": "is_near",
+            "object": "blue_tablecloth"
+        },
+        {
+            "subject": "server_or_device_case",
+            "relation": "is_adjacent_to",
+            "object": "blue_tablecloth"
+        },
+        {
+            "subject": "cables_bundle",
+            "relation": "is_connected_to",
+            "object": "right_side_power_strip"
+        },
+        {
+            "subject": "robot_right_side_housing",
+            "relation": "is_adjacent_to",
+            "object": "right_side_power_strip"
+        }
+    ],
+    "connections": [
+        {
+            "from": "cables_bundle",
+            "to": "right_side_power_strip",
+            "type": "cable_connection"
+        }
+    ],
+    "navigation": {
+        "current_location": "current_location",
+        "plans": [
+            {
+                "name": "inspect_stop_button",
+                "target_region": "blue_tabletop_area"
+            }
+        ]
+    }
+}

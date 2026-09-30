@@ -1,0 +1,198 @@
+{
+    "regions": [
+        {
+            "name": "table_surface",
+            "label": "table surface",
+            "polygon": [
+                [
+                    0,
+                    0
+                ],
+                [
+                    1000,
+                    0
+                ],
+                [
+                    1000,
+                    650
+                ],
+                [
+                    0,
+                    650
+                ]
+            ],
+            "center": [
+                500,
+                325
+            ]
+        },
+        {
+            "name": "floor_area",
+            "label": "floor area",
+            "polygon": [
+                [
+                    0,
+                    650
+                ],
+                [
+                    1000,
+                    650
+                ],
+                [
+                    1000,
+                    1000
+                ],
+                [
+                    0,
+                    1000
+                ]
+            ],
+            "center": [
+                500,
+                825
+            ]
+        }
+    ],
+    "objects": [
+        {
+            "name": "table",
+            "label": "wooden table",
+            "center": [
+                520,
+                315
+            ],
+            "bbox": [
+                180,
+                70,
+                850,
+                600
+            ]
+        },
+        {
+            "name": "robot_vacuum",
+            "label": "robot vacuum / device base",
+            "center": [
+                710,
+                140
+            ],
+            "bbox": [
+                600,
+                40,
+                980,
+                320
+            ]
+        },
+        {
+            "name": "glass_bowl",
+            "label": "glass bowl",
+            "center": [
+                430,
+                300
+            ],
+            "bbox": [
+                330,
+                170,
+                540,
+                450
+            ]
+        },
+        {
+            "name": "metal_clips",
+            "label": "metal clips/pieces inside bowl",
+            "center": [
+                430,
+                290
+            ],
+            "bbox": [
+                350,
+                210,
+                520,
+                390
+            ]
+        },
+        {
+            "name": "blue_trash_item",
+            "label": "small blue item on table",
+            "center": [
+                690,
+                430
+            ],
+            "bbox": [
+                630,
+                385,
+                760,
+                500
+            ]
+        },
+        {
+            "name": "poster_board_or_box_side",
+            "label": "brown poster board / box side at left",
+            "center": [
+                160,
+                235
+            ],
+            "bbox": [
+                40,
+                90,
+                330,
+                430
+            ]
+        }
+    ],
+    "semantic_relationships": [
+        {
+            "type": "on",
+            "source": "robot_vacuum",
+            "target": "table_surface"
+        },
+        {
+            "type": "on",
+            "source": "glass_bowl",
+            "target": "table_surface"
+        },
+        {
+            "type": "contains",
+            "source": "glass_bowl",
+            "target": "metal_clips"
+        },
+        {
+            "type": "on",
+            "source": "blue_trash_item",
+            "target": "table_surface"
+        },
+        {
+            "type": "adjacent_to",
+            "source": "robot_vacuum",
+            "target": "glass_bowl"
+        },
+        {
+            "type": "adjacent_to",
+            "source": "poster_board_or_box_side",
+            "target": "table"
+        }
+    ],
+    "current_location": {
+        "robot_vacuum": "table_surface",
+        "glass_bowl": "table_surface",
+        "blue_trash_item": "table_surface",
+        "metal_clips": "glass_bowl",
+        "poster_board_or_box_side": "table_surface"
+    },
+    "plans": [
+        {
+            "plan_name": "inspect_scene",
+            "goal": "robot_vacuum",
+            "current_location": "table_surface",
+            "actions": [
+                {
+                    "action": "move_near",
+                    "target": "glass_bowl"
+                },
+                {
+                    "action": "avoid_collision",
+                    "target": "blue_trash_item"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,276 @@
+{
+    "objects": [
+        {
+            "name": "black_machine_left",
+            "type": "machine",
+            "position": {
+                "x": 70,
+                "y": 120
+            }
+        },
+        {
+            "name": "blue_control_box",
+            "type": "machine_part",
+            "position": {
+                "x": 310,
+                "y": 80
+            }
+        },
+        {
+            "name": "yellow_machine_part",
+            "type": "machine_part",
+            "position": {
+                "x": 330,
+                "y": 80
+            }
+        },
+        {
+            "name": "red_button",
+            "type": "control",
+            "position": {
+                "x": 350,
+                "y": 35
+            }
+        },
+        {
+            "name": "green_button",
+            "type": "control",
+            "position": {
+                "x": 275,
+                "y": 80
+            }
+        },
+        {
+            "name": "orange_emergency_stop",
+            "type": "control",
+            "position": {
+                "x": 305,
+                "y": 110
+            }
+        },
+        {
+            "name": "white_base_block",
+            "type": "support",
+            "position": {
+                "x": 320,
+                "y": 150
+            }
+        },
+        {
+            "name": "small_cushion_block",
+            "type": "object",
+            "position": {
+                "x": 345,
+                "y": 135
+            }
+        },
+        {
+            "name": "white_extension_block",
+            "type": "block",
+            "position": {
+                "x": 400,
+                "y": 155
+            }
+        },
+        {
+            "name": "white_wall_socket_strip",
+            "type": "electronics",
+            "position": {
+                "x": 425,
+                "y": 190
+            }
+        },
+        {
+            "name": "right_white_bin",
+            "type": "bin",
+            "position": {
+                "x": 610,
+                "y": 130
+            }
+        },
+        {
+            "name": "left_light_stand",
+            "type": "stand",
+            "position": {
+                "x": 40,
+                "y": 120
+            }
+        },
+        {
+            "name": "green_ground_stub",
+            "type": "stub",
+            "position": {
+                "x": 520,
+                "y": 30
+            }
+        },
+        {
+            "name": "cable_bundle",
+            "type": "cable",
+            "position": {
+                "x": 520,
+                "y": 80
+            }
+        },
+        {
+            "name": "flooring_wood",
+            "type": "surface",
+            "position": {
+                "x": 40,
+                "y": 230
+            }
+        },
+        {
+            "name": "gray_floor",
+            "type": "surface",
+            "position": {
+                "x": 560,
+                "y": 240
+            }
+        }
+    ],
+    "regions": [
+        {
+            "name": "blue_table_top",
+            "type": "table_surface",
+            "position": {
+                "x": 360,
+                "y": 165
+            }
+        },
+        {
+            "name": "printed_area_on_table",
+            "type": "printed_surface",
+            "position": {
+                "x": 360,
+                "y": 195
+            }
+        },
+        {
+            "name": "left_side_background_region",
+            "type": "workspace_region",
+            "position": {
+                "x": 120,
+                "y": 150
+            }
+        },
+        {
+            "name": "right_side_background_region",
+            "type": "workspace_region",
+            "position": {
+                "x": 560,
+                "y": 165
+            }
+        },
+        {
+            "name": "current_location",
+            "type": "location_marker",
+            "position": {
+                "x": 405,
+                "y": 160
+            }
+        }
+    ],
+    "semantic_relationships": [
+        {
+            "subject": "black_machine_left",
+            "relation": "placed_on",
+            "object": "left_side_background_region"
+        },
+        {
+            "subject": "blue_control_box",
+            "relation": "located_on",
+            "object": "left_side_background_region"
+        },
+        {
+            "subject": "yellow_machine_part",
+            "relation": "located_on",
+            "object": "left_side_background_region"
+        },
+        {
+            "subject": "red_button",
+            "relation": "mounted_on",
+            "object": "blue_control_box"
+        },
+        {
+            "subject": "green_button",
+            "relation": "mounted_on",
+            "object": "blue_control_box"
+        },
+        {
+            "subject": "orange_emergency_stop",
+            "relation": "mounted_on",
+            "object": "blue_control_box"
+        },
+        {
+            "subject": "white_base_block",
+            "relation": "resting_on",
+            "object": "blue_table_top"
+        },
+        {
+            "subject": "small_cushion_block",
+            "relation": "resting_on",
+            "object": "blue_table_top"
+        },
+        {
+            "subject": "white_extension_block",
+            "relation": "resting_on",
+            "object": "blue_table_top"
+        },
+        {
+            "subject": "white_wall_socket_strip",
+            "relation": "mounted_near",
+            "object": "right_side_background_region"
+        },
+        {
+            "subject": "right_white_bin",
+            "relation": "located_on",
+            "object": "right_side_background_region"
+        },
+        {
+            "subject": "cable_bundle",
+            "relation": "connected_to",
+            "object": "right_white_bin"
+        },
+        {
+            "subject": "left_light_stand",
+            "relation": "stands_in",
+            "object": "left_side_background_region"
+        },
+        {
+            "subject": "green_ground_stub",
+            "relation": "attached_to",
+            "object": "right_white_bin"
+        },
+        {
+            "subject": "printed_area_on_table",
+            "relation": "covers_part_of",
+            "object": "blue_table_top"
+        },
+        {
+            "subject": "small_cushion_block",
+            "relation": "near",
+            "object": "current_location"
+        },
+        {
+            "subject": "white_extension_block",
+            "relation": "near",
+            "object": "current_location"
+        },
+        {
+            "subject": "blue_control_box",
+            "relation": "above",
+            "object": "blue_table_top"
+        }
+    ],
+    "current_location": {
+        "name": "current_location"
+    },
+    "plans": [
+        {
+            "plan_name": "move_small_cushion_block_towards_current_location",
+            "target": "current_location",
+            "moved_object": "small_cushion_block"
+        }
+    ]
+}

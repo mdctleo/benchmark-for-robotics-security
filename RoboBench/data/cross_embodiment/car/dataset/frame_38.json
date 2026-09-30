@@ -1,0 +1,391 @@
+{
+    "regions": [
+        {
+            "name": "road_lane",
+            "type": "roadway",
+            "polygon": [
+                [
+                    35,
+                    700
+                ],
+                [
+                    820,
+                    700
+                ],
+                [
+                    940,
+                    400
+                ],
+                [
+                    120,
+                    400
+                ]
+            ]
+        },
+        {
+            "name": "right_shoulder",
+            "type": "sidewalk_or_shoulder",
+            "polygon": [
+                [
+                    820,
+                    700
+                ],
+                [
+                    1100,
+                    700
+                ],
+                [
+                    1220,
+                    380
+                ],
+                [
+                    940,
+                    400
+                ]
+            ]
+        },
+        {
+            "name": "fenced_area_right",
+            "type": "fenced_property",
+            "polygon": [
+                [
+                    900,
+                    460
+                ],
+                [
+                    1320,
+                    520
+                ],
+                [
+                    1320,
+                    760
+                ],
+                [
+                    900,
+                    720
+                ]
+            ]
+        },
+        {
+            "name": "buildings_right",
+            "type": "building_footprint",
+            "polygon": [
+                [
+                    1180,
+                    430
+                ],
+                [
+                    1500,
+                    430
+                ],
+                [
+                    1500,
+                    860
+                ],
+                [
+                    1180,
+                    860
+                ]
+            ]
+        },
+        {
+            "name": "ground_1",
+            "type": "ground",
+            "polygon": [
+                [
+                    0,
+                    860
+                ],
+                [
+                    1600,
+                    860
+                ],
+                [
+                    1600,
+                    0
+                ],
+                [
+                    0,
+                    0
+                ]
+            ]
+        }
+    ],
+    "objects": [
+        {
+            "name": "vehicles_lane",
+            "type": "vehicle_cluster",
+            "points": [
+                [
+                    520,
+                    520
+                ],
+                [
+                    760,
+                    520
+                ],
+                [
+                    980,
+                    530
+                ],
+                [
+                    640,
+                    600
+                ]
+            ]
+        },
+        {
+            "name": "vehicle_a",
+            "type": "car",
+            "points": [
+                [
+                    640,
+                    520
+                ]
+            ]
+        },
+        {
+            "name": "vehicle_b",
+            "type": "car",
+            "points": [
+                [
+                    760,
+                    510
+                ]
+            ]
+        },
+        {
+            "name": "vehicle_c",
+            "type": "car",
+            "points": [
+                [
+                    980,
+                    530
+                ]
+            ]
+        },
+        {
+            "name": "traffic_signboard",
+            "type": "signboard",
+            "points": [
+                [
+                    960,
+                    430
+                ]
+            ]
+        },
+        {
+            "name": "traffic_light_pole",
+            "type": "utility_pole",
+            "points": [
+                [
+                    930,
+                    480
+                ]
+            ]
+        },
+        {
+            "name": "utility_poles",
+            "type": "utility_pole_cluster",
+            "points": [
+                [
+                    520,
+                    480
+                ],
+                [
+                    880,
+                    470
+                ],
+                [
+                    980,
+                    470
+                ],
+                [
+                    1120,
+                    470
+                ]
+            ]
+        },
+        {
+            "name": "overhead_cables",
+            "type": "cables",
+            "points": [
+                [
+                    1030,
+                    120
+                ],
+                [
+                    1510,
+                    210
+                ]
+            ]
+        },
+        {
+            "name": "fence_right",
+            "type": "fence",
+            "points": [
+                [
+                    1030,
+                    520
+                ],
+                [
+                    1510,
+                    610
+                ]
+            ]
+        },
+        {
+            "name": "building_facade_right",
+            "type": "building",
+            "points": [
+                [
+                    1230,
+                    520
+                ],
+                [
+                    1450,
+                    520
+                ]
+            ]
+        },
+        {
+            "name": "street_lamps",
+            "type": "street_light_cluster",
+            "points": [
+                [
+                    160,
+                    450
+                ],
+                [
+                    300,
+                    420
+                ],
+                [
+                    460,
+                    420
+                ]
+            ]
+        },
+        {
+            "name": "vegetation_right",
+            "type": "vegetation_cluster",
+            "points": [
+                [
+                    1180,
+                    640
+                ],
+                [
+                    1290,
+                    680
+                ],
+                [
+                    1110,
+                    600
+                ]
+            ]
+        },
+        {
+            "name": "industrial_structure_left",
+            "type": "industrial_structure",
+            "points": [
+                [
+                    260,
+                    470
+                ],
+                [
+                    360,
+                    430
+                ]
+            ]
+        }
+    ],
+    "relationships": [
+        {
+            "subject": "vehicle_a",
+            "relation": "driving_on",
+            "object": "road_lane"
+        },
+        {
+            "subject": "vehicle_b",
+            "relation": "driving_on",
+            "object": "road_lane"
+        },
+        {
+            "subject": "vehicle_c",
+            "relation": "driving_on",
+            "object": "road_lane"
+        },
+        {
+            "subject": "vehicles_lane",
+            "relation": "located_on",
+            "object": "road_lane"
+        },
+        {
+            "subject": "vegetation_right",
+            "relation": "along",
+            "object": "right_shoulder"
+        },
+        {
+            "subject": "fence_right",
+            "relation": "bounds",
+            "object": "fenced_area_right"
+        },
+        {
+            "subject": "building_facade_right",
+            "relation": "within",
+            "object": "buildings_right"
+        },
+        {
+            "subject": "industrial_structure_left",
+            "relation": "near",
+            "object": "road_lane"
+        },
+        {
+            "subject": "utility_poles",
+            "relation": "adjacent_to",
+            "object": "road_lane"
+        },
+        {
+            "subject": "traffic_light_pole",
+            "relation": "near",
+            "object": "road_lane"
+        },
+        {
+            "subject": "overhead_cables",
+            "relation": "spans_over",
+            "object": "road_lane"
+        },
+        {
+            "subject": "traffic_signboard",
+            "relation": "above",
+            "object": "road_lane"
+        },
+        {
+            "subject": "street_lamps",
+            "relation": "installed_on",
+            "object": "road_lane"
+        },
+        {
+            "subject": "ground_1",
+            "relation": "covers",
+            "object": "road_lane"
+        }
+    ],
+    "current_location": {
+        "name": "ground_1",
+        "point": [
+            800,
+            800
+        ]
+    },
+    "plans": [
+        {
+            "target_region": "road_lane",
+            "action": "continue_driving"
+        },
+        {
+            "target_region": "right_shoulder",
+            "action": "avoid_edge_obstacles"
+        }
+    ]
+}

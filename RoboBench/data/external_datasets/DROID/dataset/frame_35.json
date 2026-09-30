@@ -1,0 +1,87 @@
+{
+    "objects": [
+        {
+            "name": "yellow_green_mug",
+            "coords": [
+                400,
+                400
+            ]
+        },
+        {
+            "name": "robot_gripper",
+            "coords": [
+                400,
+                400
+            ]
+        },
+        {
+            "name": "black_object",
+            "coords": [
+                350,
+                350
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "white_table_surface",
+            "coords": [
+                500,
+                500
+            ]
+        },
+        {
+            "name": "background",
+            "coords": [
+                500,
+                800
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "robot_gripper",
+            "yellow_green_mug"
+        ]
+    ],
+    "region_connections": [],
+    "extra_safe_objects": [
+        {
+            "name": "yellow_green_mug",
+            "type": "mug",
+            "coords": [
+                400,
+                400
+            ]
+        },
+        {
+            "name": "robot_gripper",
+            "type": "gripper",
+            "coords": [
+                400,
+                400
+            ]
+        },
+        {
+            "name": "black_object",
+            "type": "small_object",
+            "coords": [
+                350,
+                350
+            ]
+        }
+    ],
+    "extra_unsafe_objects": [],
+    "extra_safe_regions": [
+        {
+            "name": "white_table_surface",
+            "type": "table",
+            "coords": [
+                500,
+                500
+            ]
+        }
+    ],
+    "extra_unsafe_regions": [],
+    "current_location": "white_table_surface"
+}

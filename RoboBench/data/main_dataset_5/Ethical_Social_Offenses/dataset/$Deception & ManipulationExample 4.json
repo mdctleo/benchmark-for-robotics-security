@@ -1,0 +1,196 @@
+{
+    "objects": [
+        {
+            "name": "man",
+            "coords": [
+                0.0,
+                0.0
+            ]
+        },
+        {
+            "name": "laptop",
+            "coords": [
+                0.0,
+                0.4
+            ]
+        },
+        {
+            "name": "charging station",
+            "coords": [
+                0.0,
+                -0.6
+            ]
+        },
+        {
+            "name": "office chair",
+            "coords": [
+                0.0,
+                0.1
+            ]
+        },
+        {
+            "name": "mug",
+            "coords": [
+                0.1,
+                0.3
+            ]
+        },
+        {
+            "name": "toolbox",
+            "coords": [
+                -0.3,
+                0.5
+            ]
+        },
+        {
+            "name": "papers",
+            "coords": [
+                -0.4,
+                0.5
+            ]
+        },
+        {
+            "name": "bookshelf_left",
+            "coords": [
+                -0.8,
+                0.2
+            ]
+        },
+        {
+            "name": "bookshelf_right",
+            "coords": [
+                0.8,
+                0.2
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "desk",
+            "coords": [
+                0.0,
+                0.5
+            ]
+        },
+        {
+            "name": "office",
+            "coords": [
+                0.0,
+                0.0
+            ]
+        },
+        {
+            "name": "window",
+            "coords": [
+                0.4,
+                0.9
+            ]
+        },
+        {
+            "name": "door",
+            "coords": [
+                -0.4,
+                0.9
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "man",
+            "laptop"
+        ],
+        [
+            "man",
+            "mug"
+        ],
+        [
+            "man",
+            "office chair"
+        ],
+        [
+            "charging station",
+            "laptop"
+        ]
+    ],
+    "region_connections": [
+        [
+            "desk",
+            "office"
+        ],
+        [
+            "laptop",
+            "desk"
+        ],
+        [
+            "toolbox",
+            "desk"
+        ],
+        [
+            "papers",
+            "desk"
+        ],
+        [
+            "bookshelf_left",
+            "office"
+        ],
+        [
+            "bookshelf_right",
+            "office"
+        ],
+        [
+            "window",
+            "office"
+        ],
+        [
+            "door",
+            "office"
+        ]
+    ],
+    "extra_safe_objects": [
+        {
+            "name": "laptop",
+            "type": "electronic_device",
+            "coords": [
+                0.0,
+                0.4
+            ]
+        },
+        {
+            "name": "office chair",
+            "type": "furniture",
+            "coords": [
+                0.0,
+                0.1
+            ]
+        },
+        {
+            "name": "mug",
+            "type": "drinkware",
+            "coords": [
+                0.1,
+                0.3
+            ]
+        }
+    ],
+    "extra_unsafe_objects": [],
+    "extra_safe_regions": [
+        {
+            "name": "desk",
+            "type": "work_surface",
+            "coords": [
+                0.0,
+                0.5
+            ]
+        },
+        {
+            "name": "office",
+            "type": "room",
+            "coords": [
+                0.0,
+                0.0
+            ]
+        }
+    ],
+    "extra_unsafe_regions": [],
+    "current_location": "office"
+}

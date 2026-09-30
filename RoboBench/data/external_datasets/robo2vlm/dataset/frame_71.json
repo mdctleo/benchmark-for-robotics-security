@@ -1,0 +1,53 @@
+{
+    "objects": [
+        {
+            "name": "robot_arm",
+            "coords": [
+                40,
+                35
+            ]
+        },
+        {
+            "name": "snack_bag",
+            "coords": [
+                40,
+                40
+            ]
+        },
+        {
+            "name": "drink_can",
+            "coords": [
+                25,
+                55
+            ]
+        },
+        {
+            "name": "water_bottle",
+            "coords": [
+                65,
+                30
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "table_surface",
+            "coords": [
+                50,
+                50
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "robot_arm",
+            "snack_bag"
+        ]
+    ],
+    "region_connections": [],
+    "extra_safe_objects": [],
+    "extra_unsafe_objects": [],
+    "extra_safe_regions": [],
+    "extra_unsafe_regions": [],
+    "current_location": "table_surface"
+}

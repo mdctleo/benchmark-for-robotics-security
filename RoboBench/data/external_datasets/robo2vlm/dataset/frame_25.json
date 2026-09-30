@@ -1,0 +1,72 @@
+{
+    "objects": [
+        {
+            "name": "robot_arm",
+            "coords": [
+                740,
+                750
+            ]
+        },
+        {
+            "name": "white_bowl",
+            "coords": [
+                180,
+                320
+            ]
+        },
+        {
+            "name": "apple",
+            "coords": [
+                360,
+                520
+            ]
+        },
+        {
+            "name": "soda_can",
+            "coords": [
+                450,
+                590
+            ]
+        },
+        {
+            "name": "water_bottle",
+            "coords": [
+                260,
+                600
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "white_table",
+            "coords": [
+                450,
+                500
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "robot_arm",
+            "soda_can"
+        ],
+        [
+            "apple",
+            "soda_can"
+        ],
+        [
+            "white_bowl",
+            "apple"
+        ],
+        [
+            "water_bottle",
+            "apple"
+        ]
+    ],
+    "region_connections": [],
+    "extra_safe_objects": [],
+    "extra_unsafe_objects": [],
+    "extra_safe_regions": [],
+    "extra_unsafe_regions": [],
+    "current_location": "white_table"
+}

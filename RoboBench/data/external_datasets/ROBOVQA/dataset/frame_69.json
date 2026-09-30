@@ -1,0 +1,354 @@
+{
+    "objects": [
+        {
+            "name": "bowl_with_oranges",
+            "type": "container",
+            "bounding_box": {
+                "x1": 16,
+                "y1": 82,
+                "x2": 168,
+                "y2": 262
+            },
+            "center": {
+                "x": 92,
+                "y": 172
+            },
+            "semantic_properties": [
+                "contains_oranges"
+            ]
+        },
+        {
+            "name": "oranges",
+            "type": "food",
+            "bounding_box": {
+                "x1": 40,
+                "y1": 120,
+                "x2": 146,
+                "y2": 250
+            },
+            "center": {
+                "x": 93,
+                "y": 185
+            },
+            "semantic_properties": []
+        },
+        {
+            "name": "handheld_fan",
+            "type": "tool",
+            "bounding_box": {
+                "x1": 156,
+                "y1": 86,
+                "x2": 237,
+                "y2": 174
+            },
+            "center": {
+                "x": 196,
+                "y": 130
+            },
+            "semantic_properties": []
+        },
+        {
+            "name": "cups_and_jars",
+            "type": "container_group",
+            "bounding_box": {
+                "x1": 250,
+                "y1": 52,
+                "x2": 420,
+                "y2": 175
+            },
+            "center": {
+                "x": 335,
+                "y": 114
+            },
+            "semantic_properties": [
+                "has_various_items"
+            ]
+        },
+        {
+            "name": "toothpick_container_area",
+            "type": "surface_items_area",
+            "bounding_box": {
+                "x1": 255,
+                "y1": 170,
+                "x2": 520,
+                "y2": 360
+            },
+            "center": {
+                "x": 385,
+                "y": 265
+            },
+            "semantic_properties": [
+                "holds_spread_objects"
+            ]
+        },
+        {
+            "name": "toothpicks",
+            "type": "utensils",
+            "bounding_box": {
+                "x1": 255,
+                "y1": 185,
+                "x2": 520,
+                "y2": 365
+            },
+            "center": {
+                "x": 390,
+                "y": 275
+            },
+            "semantic_properties": []
+        },
+        {
+            "name": "light_colored_piece",
+            "type": "item",
+            "bounding_box": {
+                "x1": 285,
+                "y1": 215,
+                "x2": 355,
+                "y2": 295
+            },
+            "center": {
+                "x": 320,
+                "y": 255
+            },
+            "semantic_properties": []
+        },
+        {
+            "name": "handheld_device",
+            "type": "appliance",
+            "bounding_box": {
+                "x1": 350,
+                "y1": 180,
+                "x2": 510,
+                "y2": 270
+            },
+            "center": {
+                "x": 430,
+                "y": 225
+            },
+            "semantic_properties": []
+        },
+        {
+            "name": "air_blower_or_stand",
+            "type": "appliance_support",
+            "bounding_box": {
+                "x1": 395,
+                "y1": 110,
+                "x2": 505,
+                "y2": 230
+            },
+            "center": {
+                "x": 450,
+                "y": 170
+            },
+            "semantic_properties": []
+        }
+    ],
+    "regions": [
+        {
+            "name": "counter_top",
+            "type": "surface",
+            "polygon": [
+                {
+                    "x": 0,
+                    "y": 40
+                },
+                {
+                    "x": 640,
+                    "y": 40
+                },
+                {
+                    "x": 640,
+                    "y": 440
+                },
+                {
+                    "x": 0,
+                    "y": 440
+                }
+            ],
+            "center": {
+                "x": 320,
+                "y": 240
+            },
+            "semantic_properties": []
+        },
+        {
+            "name": "near_left_bowl_area",
+            "type": "working_area",
+            "polygon": [
+                {
+                    "x": 0,
+                    "y": 70
+                },
+                {
+                    "x": 240,
+                    "y": 70
+                },
+                {
+                    "x": 240,
+                    "y": 310
+                },
+                {
+                    "x": 0,
+                    "y": 310
+                }
+            ],
+            "center": {
+                "x": 120,
+                "y": 190
+            },
+            "semantic_properties": [
+                "contains_oranges"
+            ]
+        },
+        {
+            "name": "near_center_toothpick_area",
+            "type": "working_area",
+            "polygon": [
+                {
+                    "x": 210,
+                    "y": 120
+                },
+                {
+                    "x": 560,
+                    "y": 120
+                },
+                {
+                    "x": 560,
+                    "y": 420
+                },
+                {
+                    "x": 210,
+                    "y": 420
+                }
+            ],
+            "center": {
+                "x": 385,
+                "y": 270
+            },
+            "semantic_properties": [
+                "contains_toothpicks"
+            ]
+        },
+        {
+            "name": "near_back_cups_and_jars_area",
+            "type": "working_area",
+            "polygon": [
+                {
+                    "x": 210,
+                    "y": 40
+                },
+                {
+                    "x": 560,
+                    "y": 40
+                },
+                {
+                    "x": 560,
+                    "y": 170
+                },
+                {
+                    "x": 210,
+                    "y": 170
+                }
+            ],
+            "center": {
+                "x": 385,
+                "y": 105
+            },
+            "semantic_properties": [
+                "contains_cups_and_jars"
+            ]
+        }
+    ],
+    "semantic_relationships": [
+        {
+            "subject": "bowl_with_oranges",
+            "predicate": "is_on",
+            "object": "counter_top"
+        },
+        {
+            "subject": "oranges",
+            "predicate": "are_in",
+            "object": "bowl_with_oranges"
+        },
+        {
+            "subject": "handheld_fan",
+            "predicate": "is_on",
+            "object": "counter_top"
+        },
+        {
+            "subject": "cups_and_jars",
+            "predicate": "is_on",
+            "object": "counter_top"
+        },
+        {
+            "subject": "toothpick_container_area",
+            "predicate": "is_on",
+            "object": "counter_top"
+        },
+        {
+            "subject": "toothpicks",
+            "predicate": "are_spread_on",
+            "object": "toothpick_container_area"
+        },
+        {
+            "subject": "light_colored_piece",
+            "predicate": "is_on",
+            "object": "toothpick_container_area"
+        },
+        {
+            "subject": "handheld_device",
+            "predicate": "is_on",
+            "object": "toothpick_container_area"
+        },
+        {
+            "subject": "air_blower_or_stand",
+            "predicate": "is_near",
+            "object": "handheld_device"
+        },
+        {
+            "subject": "bowl_with_oranges",
+            "predicate": "is_within",
+            "object": "near_left_bowl_area"
+        },
+        {
+            "subject": "handheld_fan",
+            "predicate": "is_within",
+            "object": "near_left_bowl_area"
+        },
+        {
+            "subject": "toothpick_container_area",
+            "predicate": "is_within",
+            "object": "near_center_toothpick_area"
+        },
+        {
+            "subject": "toothpicks",
+            "predicate": "is_within",
+            "object": "near_center_toothpick_area"
+        },
+        {
+            "subject": "cups_and_jars",
+            "predicate": "is_within",
+            "object": "near_back_cups_and_jars_area"
+        }
+    ],
+    "current_location": {
+        "entity": "toothpicks",
+        "region": "near_center_toothpick_area"
+    },
+    "plans": [
+        {
+            "plan_name": "organize_scene_items",
+            "steps": [
+                {
+                    "action": "group",
+                    "target": "toothpicks",
+                    "reference_region": "toothpick_container_area"
+                },
+                {
+                    "action": "keep",
+                    "target": "bowl_with_oranges",
+                    "reference_region": "near_left_bowl_area"
+                }
+            ]
+        }
+    ]
+}

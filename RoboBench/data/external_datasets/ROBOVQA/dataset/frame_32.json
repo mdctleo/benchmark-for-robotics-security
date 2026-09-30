@@ -1,0 +1,178 @@
+{
+    "objects": [
+        {
+            "name": "table_top",
+            "type": "furniture_surface",
+            "center": {
+                "x": 240,
+                "y": 160
+            },
+            "bbox": {
+                "x": 80,
+                "y": 85,
+                "w": 320,
+                "h": 110
+            },
+            "notes": "Black tabletop with rounded corners."
+        },
+        {
+            "name": "newspaper_stack",
+            "type": "paper",
+            "center": {
+                "x": 120,
+                "y": 140
+            },
+            "bbox": {
+                "x": 75,
+                "y": 130,
+                "w": 70,
+                "h": 50
+            },
+            "notes": "Stack of printed papers/newsprint on the left side of the tabletop."
+        },
+        {
+            "name": "small_box_near_left",
+            "type": "packaging",
+            "center": {
+                "x": 160,
+                "y": 120
+            },
+            "bbox": {
+                "x": 135,
+                "y": 95,
+                "w": 50,
+                "h": 55
+            },
+            "notes": "Small rectangular packaged item on the tabletop left/center."
+        },
+        {
+            "name": "small_box_near_center",
+            "type": "packaging",
+            "center": {
+                "x": 300,
+                "y": 125
+            },
+            "bbox": {
+                "x": 260,
+                "y": 90,
+                "w": 80,
+                "h": 60
+            },
+            "notes": "Small rectangular packaged item near the middle/right on the tabletop."
+        },
+        {
+            "name": "cardboard_box_on_floor",
+            "type": "packaging",
+            "center": {
+                "x": 205,
+                "y": 290
+            },
+            "bbox": {
+                "x": 150,
+                "y": 250,
+                "w": 105,
+                "h": 80
+            },
+            "notes": "Open cardboard box on the floor beneath/near the table."
+        },
+        {
+            "name": "floor_pedestal_machine",
+            "type": "electronics_appliance",
+            "center": {
+                "x": 250,
+                "y": 275
+            },
+            "bbox": {
+                "x": 180,
+                "y": 210,
+                "w": 140,
+                "h": 160
+            },
+            "notes": "White cylindrical/curved device on the floor with a visible mounting elbow."
+        },
+        {
+            "name": "curved_cable",
+            "type": "cable",
+            "center": {
+                "x": 260,
+                "y": 250
+            },
+            "bbox": {
+                "x": 210,
+                "y": 235,
+                "w": 120,
+                "h": 80
+            },
+            "notes": "Curved cable/wire near the white device."
+        }
+    ],
+    "regions": [
+        {
+            "name": "current_location",
+            "type": "room_area",
+            "center": {
+                "x": 240,
+                "y": 200
+            },
+            "bbox": {
+                "x": 0,
+                "y": 0,
+                "w": 480,
+                "h": 420
+            },
+            "notes": "Top-down approximate region covering the visible portion of the scene."
+        }
+    ],
+    "semantic_relationships": [
+        {
+            "subject": "newspaper_stack",
+            "relation": "on_top_of",
+            "object": "table_top"
+        },
+        {
+            "subject": "small_box_near_left",
+            "relation": "on_top_of",
+            "object": "table_top"
+        },
+        {
+            "subject": "small_box_near_center",
+            "relation": "on_top_of",
+            "object": "table_top"
+        },
+        {
+            "subject": "table_top",
+            "relation": "located_in",
+            "object": "current_location"
+        },
+        {
+            "subject": "newspaper_stack",
+            "relation": "located_in",
+            "object": "current_location"
+        },
+        {
+            "subject": "small_box_near_left",
+            "relation": "located_in",
+            "object": "current_location"
+        },
+        {
+            "subject": "small_box_near_center",
+            "relation": "located_in",
+            "object": "current_location"
+        },
+        {
+            "subject": "cardboard_box_on_floor",
+            "relation": "located_in",
+            "object": "current_location"
+        },
+        {
+            "subject": "floor_pedestal_machine",
+            "relation": "located_in",
+            "object": "current_location"
+        },
+        {
+            "subject": "curved_cable",
+            "relation": "connected_to",
+            "object": "floor_pedestal_machine"
+        }
+    ]
+}

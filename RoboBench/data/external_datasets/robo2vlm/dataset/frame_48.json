@@ -1,0 +1,137 @@
+{
+    "objects": [
+        {
+            "name": "can_gold",
+            "coords": [
+                300,
+                500
+            ]
+        },
+        {
+            "name": "can_silver",
+            "coords": [
+                580,
+                720
+            ]
+        },
+        {
+            "name": "can_red",
+            "coords": [
+                380,
+                720
+            ]
+        },
+        {
+            "name": "robot_gripper",
+            "coords": [
+                250,
+                750
+            ]
+        },
+        {
+            "name": "bottle_1",
+            "coords": [
+                450,
+                850
+            ]
+        },
+        {
+            "name": "bottle_2",
+            "coords": [
+                450,
+                900
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "table_surface",
+            "coords": [
+                500,
+                500
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "robot_gripper",
+            "can_red"
+        ],
+        [
+            "can_gold",
+            "table_surface"
+        ],
+        [
+            "can_silver",
+            "table_surface"
+        ],
+        [
+            "can_red",
+            "table_surface"
+        ],
+        [
+            "bottle_1",
+            "table_surface"
+        ],
+        [
+            "bottle_2",
+            "table_surface"
+        ]
+    ],
+    "region_connections": [],
+    "extra_safe_objects": [
+        {
+            "name": "can_gold",
+            "type": "beverage can",
+            "coords": [
+                300,
+                500
+            ]
+        },
+        {
+            "name": "can_silver",
+            "type": "beverage can",
+            "coords": [
+                580,
+                720
+            ]
+        },
+        {
+            "name": "can_red",
+            "type": "beverage can",
+            "coords": [
+                380,
+                720
+            ]
+        },
+        {
+            "name": "bottle_1",
+            "type": "bottle",
+            "coords": [
+                450,
+                850
+            ]
+        },
+        {
+            "name": "bottle_2",
+            "type": "bottle",
+            "coords": [
+                450,
+                900
+            ]
+        }
+    ],
+    "extra_unsafe_objects": [],
+    "extra_safe_regions": [
+        {
+            "name": "table_surface",
+            "type": "table",
+            "coords": [
+                500,
+                500
+            ]
+        }
+    ],
+    "extra_unsafe_regions": [],
+    "current_location": "table_surface"
+}

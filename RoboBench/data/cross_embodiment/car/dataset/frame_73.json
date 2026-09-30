@@ -1,0 +1,429 @@
+{
+    "objects": [
+        {
+            "name": "street_lanes",
+            "type": "road_markings",
+            "centroid": [
+                410,
+                520
+            ],
+            "bbox": [
+                260,
+                320,
+                560,
+                720
+            ]
+        },
+        {
+            "name": "centerline_dashes",
+            "type": "road_markings",
+            "centroid": [
+                410,
+                600
+            ],
+            "bbox": [
+                385,
+                420,
+                435,
+                720
+            ]
+        },
+        {
+            "name": "right_lane_markings",
+            "type": "road_markings",
+            "centroid": [
+                640,
+                610
+            ],
+            "bbox": [
+                585,
+                430,
+                690,
+                720
+            ]
+        },
+        {
+            "name": "left_lane_markings",
+            "type": "road_markings",
+            "centroid": [
+                180,
+                610
+            ],
+            "bbox": [
+                130,
+                430,
+                230,
+                720
+            ]
+        },
+        {
+            "name": "traffic_lights_left",
+            "type": "traffic_signal",
+            "centroid": [
+                185,
+                395
+            ],
+            "bbox": [
+                140,
+                280,
+                230,
+                460
+            ]
+        },
+        {
+            "name": "traffic_lights_right",
+            "type": "traffic_signal",
+            "centroid": [
+                610,
+                395
+            ],
+            "bbox": [
+                560,
+                280,
+                660,
+                460
+            ]
+        },
+        {
+            "name": "vehicles_ahead",
+            "type": "vehicle_group",
+            "centroid": [
+                410,
+                705
+            ],
+            "bbox": [
+                320,
+                620,
+                500,
+                770
+            ]
+        },
+        {
+            "name": "crosswalk_area",
+            "type": "crosswalk",
+            "centroid": [
+                410,
+                520
+            ],
+            "bbox": [
+                320,
+                455,
+                500,
+                575
+            ]
+        },
+        {
+            "name": "street_lighting_poles",
+            "type": "infrastructure",
+            "centroid": [
+                550,
+                420
+            ],
+            "bbox": [
+                480,
+                280,
+                620,
+                520
+            ]
+        },
+        {
+            "name": "trees_left_row",
+            "type": "vegetation",
+            "centroid": [
+                90,
+                520
+            ],
+            "bbox": [
+                0,
+                250,
+                220,
+                720
+            ]
+        },
+        {
+            "name": "trees_right_row",
+            "type": "vegetation",
+            "centroid": [
+                720,
+                520
+            ],
+            "bbox": [
+                590,
+                250,
+                900,
+                720
+            ]
+        },
+        {
+            "name": "sidewalk_edge",
+            "type": "road_edge",
+            "centroid": [
+                700,
+                610
+            ],
+            "bbox": [
+                560,
+                520,
+                850,
+                720
+            ]
+        },
+        {
+            "name": "roadway",
+            "type": "drivable_area",
+            "centroid": [
+                410,
+                620
+            ],
+            "bbox": [
+                90,
+                340,
+                720,
+                820
+            ]
+        },
+        {
+            "name": "driver_vehicle",
+            "type": "ego_vehicle",
+            "centroid": [
+                410,
+                820
+            ],
+            "bbox": [
+                260,
+                740,
+                560,
+                960
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "road_intersection_ahead",
+            "type": "intersection",
+            "polygon": [
+                [
+                    40,
+                    520
+                ],
+                [
+                    880,
+                    520
+                ],
+                [
+                    880,
+                    360
+                ],
+                [
+                    40,
+                    360
+                ]
+            ]
+        },
+        {
+            "name": "lane_zone_center",
+            "type": "lane_area",
+            "polygon": [
+                [
+                    340,
+                    360
+                ],
+                [
+                    480,
+                    360
+                ],
+                [
+                    540,
+                    820
+                ],
+                [
+                    280,
+                    820
+                ]
+            ]
+        },
+        {
+            "name": "left_side_zone",
+            "type": "side_area",
+            "polygon": [
+                [
+                    0,
+                    360
+                ],
+                [
+                    320,
+                    360
+                ],
+                [
+                    320,
+                    820
+                ],
+                [
+                    0,
+                    820
+                ]
+            ]
+        },
+        {
+            "name": "right_side_zone",
+            "type": "side_area",
+            "polygon": [
+                [
+                    500,
+                    360
+                ],
+                [
+                    900,
+                    360
+                ],
+                [
+                    900,
+                    820
+                ],
+                [
+                    500,
+                    820
+                ]
+            ]
+        },
+        {
+            "name": "crosswalk_region",
+            "type": "crosswalk_area",
+            "polygon": [
+                [
+                    330,
+                    430
+                ],
+                [
+                    490,
+                    430
+                ],
+                [
+                    520,
+                    560
+                ],
+                [
+                    300,
+                    560
+                ]
+            ]
+        },
+        {
+            "name": "current_corridor",
+            "type": "navigable_corridor",
+            "polygon": [
+                [
+                    120,
+                    360
+                ],
+                [
+                    700,
+                    360
+                ],
+                [
+                    760,
+                    820
+                ],
+                [
+                    60,
+                    820
+                ]
+            ]
+        }
+    ],
+    "semantic_relationships": [
+        {
+            "subject": "driver_vehicle",
+            "relation": "is_within",
+            "object": "current_corridor"
+        },
+        {
+            "subject": "vehicles_ahead",
+            "relation": "are_in_front_of",
+            "object": "driver_vehicle"
+        },
+        {
+            "subject": "vehicles_ahead",
+            "relation": "are_in",
+            "object": "road_intersection_ahead"
+        },
+        {
+            "subject": "crosswalk_area",
+            "relation": "lies_within",
+            "object": "crosswalk_region"
+        },
+        {
+            "subject": "crosswalk_region",
+            "relation": "is_part_of",
+            "object": "road_intersection_ahead"
+        },
+        {
+            "subject": "street_lanes",
+            "relation": "is_on",
+            "object": "roadway"
+        },
+        {
+            "subject": "centerline_dashes",
+            "relation": "are_aligned_with",
+            "object": "lane_zone_center"
+        },
+        {
+            "subject": "left_lane_markings",
+            "relation": "are_on_left_of",
+            "object": "roadway"
+        },
+        {
+            "subject": "right_lane_markings",
+            "relation": "are_on_right_of",
+            "object": "roadway"
+        },
+        {
+            "subject": "traffic_lights_left",
+            "relation": "controls",
+            "object": "road_intersection_ahead"
+        },
+        {
+            "subject": "traffic_lights_right",
+            "relation": "controls",
+            "object": "road_intersection_ahead"
+        },
+        {
+            "subject": "trees_left_row",
+            "relation": "border",
+            "object": "left_side_zone"
+        },
+        {
+            "subject": "trees_right_row",
+            "relation": "border",
+            "object": "right_side_zone"
+        },
+        {
+            "subject": "sidewalk_edge",
+            "relation": "is_adjacent_to",
+            "object": "right_side_zone"
+        },
+        {
+            "subject": "street_lighting_poles",
+            "relation": "are_associated_with",
+            "object": "current_corridor"
+        }
+    ],
+    "current_location": "current_corridor",
+    "plans": [
+        {
+            "plan_name": "proceed_forward_through_intersection",
+            "start_region": "current_corridor",
+            "target_region": "road_intersection_ahead",
+            "constraints": [
+                {
+                    "constraint_name": "stay_in_lane_center_when_possible",
+                    "region": "lane_zone_center"
+                },
+                {
+                    "constraint_name": "crosswalk_region_must_be_interpreted",
+                    "region": "crosswalk_region"
+                }
+            ]
+        }
+    ]
+}

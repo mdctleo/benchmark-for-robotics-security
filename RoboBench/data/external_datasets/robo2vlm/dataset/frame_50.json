@@ -1,0 +1,95 @@
+{
+    "objects": [
+        {
+            "name": "robot_arm",
+            "coords": [
+                198,
+                303
+            ]
+        },
+        {
+            "name": "silver_can",
+            "coords": [
+                332,
+                400
+            ]
+        },
+        {
+            "name": "blue_can",
+            "coords": [
+                243,
+                508
+            ]
+        },
+        {
+            "name": "sponge",
+            "coords": [
+                363,
+                597
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "table_surface",
+            "coords": [
+                347,
+                497
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "robot_arm",
+            "silver_can"
+        ]
+    ],
+    "region_connections": [],
+    "extra_safe_objects": [
+        {
+            "name": "robot_arm",
+            "type": "manipulator",
+            "coords": [
+                198,
+                303
+            ]
+        },
+        {
+            "name": "silver_can",
+            "type": "object",
+            "coords": [
+                332,
+                400
+            ]
+        },
+        {
+            "name": "blue_can",
+            "type": "object",
+            "coords": [
+                243,
+                508
+            ]
+        },
+        {
+            "name": "sponge",
+            "type": "object",
+            "coords": [
+                363,
+                597
+            ]
+        }
+    ],
+    "extra_unsafe_objects": [],
+    "extra_safe_regions": [
+        {
+            "name": "table_surface",
+            "type": "work_area",
+            "coords": [
+                347,
+                497
+            ]
+        }
+    ],
+    "extra_unsafe_regions": [],
+    "current_location": "table_surface"
+}

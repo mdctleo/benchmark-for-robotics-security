@@ -1,0 +1,191 @@
+{
+    "objects": [
+        {
+            "name": "wrapped_packages_1",
+            "type": "package",
+            "bbox_topdown": {
+                "x": 0.43,
+                "y": 0.52
+            }
+        },
+        {
+            "name": "wrapped_packages_2",
+            "type": "package",
+            "bbox_topdown": {
+                "x": 0.49,
+                "y": 0.54
+            }
+        },
+        {
+            "name": "wrapped_packages_3",
+            "type": "package",
+            "bbox_topdown": {
+                "x": 0.56,
+                "y": 0.48
+            }
+        },
+        {
+            "name": "tape_roll_1",
+            "type": "tape",
+            "bbox_topdown": {
+                "x": 0.42,
+                "y": 0.49
+            }
+        },
+        {
+            "name": "tool_lid_or_box_1",
+            "type": "container_lid",
+            "bbox_topdown": {
+                "x": 0.33,
+                "y": 0.44
+            }
+        },
+        {
+            "name": "power_tool_handle_1",
+            "type": "tool_handle",
+            "bbox_topdown": {
+                "x": 0.31,
+                "y": 0.5
+            }
+        },
+        {
+            "name": "cylindrical_barrel_1",
+            "type": "cylinder",
+            "bbox_topdown": {
+                "x": 0.78,
+                "y": 0.45
+            }
+        },
+        {
+            "name": "trash_bag_1",
+            "type": "bag",
+            "bbox_topdown": {
+                "x": 0.05,
+                "y": 0.55
+            }
+        },
+        {
+            "name": "gloves_1",
+            "type": "gloves",
+            "bbox_topdown": {
+                "x": 0.12,
+                "y": 0.88
+            }
+        },
+        {
+            "name": "cable_1",
+            "type": "cable",
+            "bbox_topdown": {
+                "x": 0.03,
+                "y": 0.78
+            }
+        }
+    ],
+    "regions": [
+        {
+            "name": "workbench_1",
+            "type": "surface",
+            "center_xy": {
+                "x": 0.52,
+                "y": 0.7
+            }
+        },
+        {
+            "name": "floor_1",
+            "type": "ground",
+            "center_xy": {
+                "x": 0.52,
+                "y": 0.95
+            }
+        },
+        {
+            "name": "furnace_area_1",
+            "type": "machine_area",
+            "center_xy": {
+                "x": 0.86,
+                "y": 0.55
+            }
+        }
+    ],
+    "semantic_relationships": [
+        {
+            "subject": "wrapped_packages_1",
+            "relation": "located_on",
+            "object": "workbench_1"
+        },
+        {
+            "subject": "wrapped_packages_2",
+            "relation": "located_on",
+            "object": "workbench_1"
+        },
+        {
+            "subject": "wrapped_packages_3",
+            "relation": "located_on",
+            "object": "workbench_1"
+        },
+        {
+            "subject": "tape_roll_1",
+            "relation": "on_top_of",
+            "object": "workbench_1"
+        },
+        {
+            "subject": "tool_lid_or_box_1",
+            "relation": "on_top_of",
+            "object": "workbench_1"
+        },
+        {
+            "subject": "cylindrical_barrel_1",
+            "relation": "adjacent_to",
+            "object": "workbench_1"
+        },
+        {
+            "subject": "cylindrical_barrel_1",
+            "relation": "located_in",
+            "object": "furnace_area_1"
+        },
+        {
+            "subject": "power_tool_handle_1",
+            "relation": "adjacent_to",
+            "object": "workbench_1"
+        },
+        {
+            "subject": "trash_bag_1",
+            "relation": "located_on",
+            "object": "floor_1"
+        },
+        {
+            "subject": "cable_1",
+            "relation": "located_on",
+            "object": "floor_1"
+        },
+        {
+            "subject": "gloves_1",
+            "relation": "located_on",
+            "object": "floor_1"
+        }
+    ],
+    "current_location": "workbench_1",
+    "plans": [
+        {
+            "plan_name": "organize_packages",
+            "target_region": "workbench_1",
+            "actions": [
+                {
+                    "action": "move",
+                    "object": "wrapped_packages_1",
+                    "to": "workbench_1"
+                },
+                {
+                    "action": "move",
+                    "object": "wrapped_packages_2",
+                    "to": "workbench_1"
+                },
+                {
+                    "action": "move",
+                    "object": "wrapped_packages_3",
+                    "to": "workbench_1"
+                }
+            ]
+        }
+    ]
+}

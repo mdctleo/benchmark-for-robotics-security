@@ -1,0 +1,366 @@
+{
+    "objects": [
+        {
+            "name": "coffee_bean_container",
+            "type": "container",
+            "bounding_box": {
+                "x1": 330,
+                "y1": 35,
+                "x2": 505,
+                "y2": 210
+            },
+            "center": {
+                "x": 417.5,
+                "y": 122.5
+            }
+        },
+        {
+            "name": "coffee_bean_contents",
+            "type": "food",
+            "bounding_box": {
+                "x1": 340,
+                "y1": 75,
+                "x2": 500,
+                "y2": 205
+            },
+            "center": {
+                "x": 420,
+                "y": 140
+            }
+        },
+        {
+            "name": "two_paper_cups",
+            "type": "cups",
+            "bounding_box": {
+                "x1": 515,
+                "y1": 115,
+                "x2": 615,
+                "y2": 260
+            },
+            "center": {
+                "x": 565,
+                "y": 187.5
+            }
+        },
+        {
+            "name": "paper_serviettes",
+            "type": "paper",
+            "bounding_box": {
+                "x1": 145,
+                "y1": 130,
+                "x2": 245,
+                "y2": 190
+            },
+            "center": {
+                "x": 195,
+                "y": 160
+            }
+        },
+        {
+            "name": "black_keyboard_device",
+            "type": "electronics",
+            "bounding_box": {
+                "x1": 0,
+                "y1": 95,
+                "x2": 125,
+                "y2": 210
+            },
+            "center": {
+                "x": 62.5,
+                "y": 152.5
+            }
+        },
+        {
+            "name": "stove_or_grill_area",
+            "type": "appliance",
+            "bounding_box": {
+                "x1": 380,
+                "y1": 0,
+                "x2": 1000,
+                "y2": 140
+            },
+            "center": {
+                "x": 690,
+                "y": 70
+            }
+        },
+        {
+            "name": "funnel_roaster_lid",
+            "type": "kitchen_tool",
+            "bounding_box": {
+                "x1": 335,
+                "y1": 0,
+                "x2": 505,
+                "y2": 95
+            },
+            "center": {
+                "x": 420,
+                "y": 47.5
+            }
+        },
+        {
+            "name": "metal_container_small",
+            "type": "container",
+            "bounding_box": {
+                "x1": 640,
+                "y1": 95,
+                "x2": 770,
+                "y2": 270
+            },
+            "center": {
+                "x": 705,
+                "y": 182.5
+            }
+        },
+        {
+            "name": "bag_of_tea_or_coffee",
+            "type": "packaging",
+            "bounding_box": {
+                "x1": 745,
+                "y1": 55,
+                "x2": 950,
+                "y2": 250
+            },
+            "center": {
+                "x": 847.5,
+                "y": 152.5
+            }
+        },
+        {
+            "name": "dark_metal_cup_or_filter",
+            "type": "tool",
+            "bounding_box": {
+                "x1": 735,
+                "y1": 250,
+                "x2": 910,
+                "y2": 410
+            },
+            "center": {
+                "x": 822.5,
+                "y": 330
+            }
+        },
+        {
+            "name": "black_speaker_or_device",
+            "type": "electronics",
+            "bounding_box": {
+                "x1": 0,
+                "y1": 250,
+                "x2": 170,
+                "y2": 520
+            },
+            "center": {
+                "x": 85,
+                "y": 385
+            }
+        },
+        {
+            "name": "curtain_or_shadow_area",
+            "type": "background",
+            "bounding_box": {
+                "x1": 0,
+                "y1": 0,
+                "x2": 210,
+                "y2": 520
+            },
+            "center": {
+                "x": 105,
+                "y": 260
+            }
+        }
+    ],
+    "regions": [
+        {
+            "name": "counter_top",
+            "type": "surface",
+            "bounding_box": {
+                "x1": 40,
+                "y1": 80,
+                "x2": 980,
+                "y2": 420
+            },
+            "center": {
+                "x": 510,
+                "y": 250
+            }
+        },
+        {
+            "name": "left_side_zone",
+            "type": "zone",
+            "bounding_box": {
+                "x1": 40,
+                "y1": 80,
+                "x2": 260,
+                "y2": 420
+            },
+            "center": {
+                "x": 150,
+                "y": 250
+            }
+        },
+        {
+            "name": "center_zone",
+            "type": "zone",
+            "bounding_box": {
+                "x1": 260,
+                "y1": 80,
+                "x2": 600,
+                "y2": 420
+            },
+            "center": {
+                "x": 430,
+                "y": 250
+            }
+        },
+        {
+            "name": "right_side_zone",
+            "type": "zone",
+            "bounding_box": {
+                "x1": 600,
+                "y1": 80,
+                "x2": 980,
+                "y2": 420
+            },
+            "center": {
+                "x": 790,
+                "y": 250
+            }
+        },
+        {
+            "name": "current_location",
+            "type": "pose_reference",
+            "bounding_box": {
+                "x1": 520,
+                "y1": 120,
+                "x2": 650,
+                "y2": 240
+            },
+            "center": {
+                "x": 585,
+                "y": 180
+            }
+        }
+    ],
+    "relations": [
+        {
+            "relation": "is_on",
+            "from": "coffee_bean_container",
+            "to": "counter_top"
+        },
+        {
+            "relation": "contains",
+            "from": "coffee_bean_container",
+            "to": "coffee_bean_contents"
+        },
+        {
+            "relation": "is_on",
+            "from": "two_paper_cups",
+            "to": "counter_top"
+        },
+        {
+            "relation": "is_on",
+            "from": "paper_serviettes",
+            "to": "counter_top"
+        },
+        {
+            "relation": "is_on",
+            "from": "black_keyboard_device",
+            "to": "counter_top"
+        },
+        {
+            "relation": "is_on",
+            "from": "metal_container_small",
+            "to": "counter_top"
+        },
+        {
+            "relation": "is_on",
+            "from": "bag_of_tea_or_coffee",
+            "to": "counter_top"
+        },
+        {
+            "relation": "is_on",
+            "from": "dark_metal_cup_or_filter",
+            "to": "counter_top"
+        },
+        {
+            "relation": "is_adjacent_to",
+            "from": "coffee_bean_container",
+            "to": "two_paper_cups"
+        },
+        {
+            "relation": "is_adjacent_to",
+            "from": "paper_serviettes",
+            "to": "black_keyboard_device"
+        },
+        {
+            "relation": "is_adjacent_to",
+            "from": "metal_container_small",
+            "to": "bag_of_tea_or_coffee"
+        },
+        {
+            "relation": "is_adjacent_to",
+            "from": "dark_metal_cup_or_filter",
+            "to": "bag_of_tea_or_coffee"
+        },
+        {
+            "relation": "part_of_appliance_area",
+            "from": "funnel_roaster_lid",
+            "to": "stove_or_grill_area"
+        },
+        {
+            "relation": "located_in",
+            "from": "black_keyboard_device",
+            "to": "left_side_zone"
+        },
+        {
+            "relation": "located_in",
+            "from": "paper_serviettes",
+            "to": "left_side_zone"
+        },
+        {
+            "relation": "located_in",
+            "from": "coffee_bean_container",
+            "to": "center_zone"
+        },
+        {
+            "relation": "located_in",
+            "from": "coffee_bean_contents",
+            "to": "center_zone"
+        },
+        {
+            "relation": "located_in",
+            "from": "two_paper_cups",
+            "to": "right_side_zone"
+        },
+        {
+            "relation": "located_in",
+            "from": "metal_container_small",
+            "to": "right_side_zone"
+        },
+        {
+            "relation": "located_in",
+            "from": "bag_of_tea_or_coffee",
+            "to": "right_side_zone"
+        },
+        {
+            "relation": "located_in",
+            "from": "dark_metal_cup_or_filter",
+            "to": "right_side_zone"
+        }
+    ],
+    "current_location": "current_location",
+    "plans": [
+        {
+            "plan_name": "place_cup_near_container",
+            "from_location": "current_location",
+            "to_object": "two_paper_cups",
+            "intended_target_region": "current_location"
+        },
+        {
+            "plan_name": "operate_on_container_area",
+            "from_location": "current_location",
+            "to_object": "coffee_bean_container",
+            "intended_target_region": "center_zone"
+        }
+    ]
+}

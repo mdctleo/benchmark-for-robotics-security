@@ -1,0 +1,77 @@
+{
+    "objects": [
+        {
+            "name": "human_hand",
+            "coords": [
+                561,
+                442
+            ]
+        },
+        {
+            "name": "robotic_arm_gripper",
+            "coords": [
+                363,
+                642
+            ]
+        },
+        {
+            "name": "caution_sign",
+            "coords": [
+                263,
+                131
+            ]
+        },
+        {
+            "name": "work_bench",
+            "coords": [
+                774,
+                509
+            ]
+        },
+        {
+            "name": "safety_fence",
+            "coords": [
+                336,
+                260
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "workshop_floor",
+            "coords": [
+                500,
+                500
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "human_hand",
+            "robotic_arm_gripper"
+        ],
+        [
+            "caution_sign",
+            "safety_fence"
+        ],
+        [
+            "human_hand",
+            "work_bench"
+        ]
+    ],
+    "region_connections": [],
+    "extra_safe_objects": [],
+    "extra_unsafe_objects": [
+        {
+            "name": "robotic_arm_gripper",
+            "type": "automated machinery",
+            "coords": [
+                363,
+                642
+            ]
+        }
+    ],
+    "extra_safe_regions": [],
+    "extra_unsafe_regions": [],
+    "current_location": "workshop_floor"
+}

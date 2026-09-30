@@ -1,0 +1,98 @@
+{
+    "objects": [
+        {
+            "name": "robotic arm",
+            "coords": [
+                498,
+                266
+            ]
+        },
+        {
+            "name": "keyboard",
+            "coords": [
+                649,
+                219
+            ]
+        },
+        {
+            "name": "mug",
+            "coords": [
+                400,
+                316
+            ]
+        },
+        {
+            "name": "tablet",
+            "coords": [
+                568,
+                659
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "desk surface",
+            "coords": [
+                744,
+                499
+            ]
+        },
+        {
+            "name": "office cubicle background",
+            "coords": [
+                296,
+                499
+            ]
+        },
+        {
+            "name": "document content",
+            "coords": [
+                549,
+                655
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "robotic arm",
+            "keyboard"
+        ],
+        [
+            "keyboard",
+            "tablet"
+        ],
+        [
+            "robotic arm",
+            "mug"
+        ]
+    ],
+    "region_connections": [
+        [
+            "desk surface",
+            "office cubicle background"
+        ]
+    ],
+    "extra_safe_objects": [],
+    "extra_unsafe_objects": [
+        {
+            "name": "robotic arm",
+            "type": "potential security risk",
+            "coords": [
+                498,
+                266
+            ]
+        }
+    ],
+    "extra_safe_regions": [],
+    "extra_unsafe_regions": [
+        {
+            "name": "document content",
+            "type": "sensitive information",
+            "coords": [
+                549,
+                655
+            ]
+        }
+    ],
+    "current_location": "desk surface"
+}

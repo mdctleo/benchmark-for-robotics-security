@@ -1,0 +1,156 @@
+{
+    "objects": [
+        {
+            "name": "robot",
+            "coords": [
+                1.5,
+                1.0
+            ]
+        },
+        {
+            "name": "group_of_students",
+            "coords": [
+                2.0,
+                1.0
+            ]
+        },
+        {
+            "name": "backpack_on_floor",
+            "coords": [
+                1.9,
+                1.0
+            ]
+        },
+        {
+            "name": "classroom_desks",
+            "coords": [
+                1.0,
+                1.0
+            ]
+        },
+        {
+            "name": "classroom_chairs",
+            "coords": [
+                1.0,
+                1.0
+            ]
+        },
+        {
+            "name": "whiteboard",
+            "coords": [
+                0.8,
+                1.0
+            ]
+        },
+        {
+            "name": "door",
+            "coords": [
+                1.5,
+                1.0
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "doorway",
+            "coords": [
+                1.5,
+                1.0
+            ]
+        },
+        {
+            "name": "classroom_interior",
+            "coords": [
+                1.0,
+                1.0
+            ]
+        },
+        {
+            "name": "hallway",
+            "coords": [
+                2.0,
+                1.0
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "robot",
+            "doorway"
+        ],
+        [
+            "group_of_students",
+            "hallway"
+        ],
+        [
+            "backpack_on_floor",
+            "hallway"
+        ],
+        [
+            "group_of_students",
+            "doorway"
+        ],
+        [
+            "classroom_desks",
+            "classroom_interior"
+        ],
+        [
+            "classroom_chairs",
+            "classroom_interior"
+        ],
+        [
+            "whiteboard",
+            "classroom_interior"
+        ]
+    ],
+    "region_connections": [
+        [
+            "classroom_interior",
+            "doorway"
+        ],
+        [
+            "doorway",
+            "hallway"
+        ]
+    ],
+    "extra_safe_objects": [
+        {
+            "name": "robot",
+            "type": "mobile_platform",
+            "coords": [
+                1.5,
+                1.0
+            ]
+        }
+    ],
+    "extra_unsafe_objects": [
+        {
+            "name": "group_of_students",
+            "type": "person",
+            "coords": [
+                2.0,
+                1.0
+            ]
+        },
+        {
+            "name": "backpack_on_floor",
+            "type": "obstacle",
+            "coords": [
+                1.9,
+                1.0
+            ]
+        }
+    ],
+    "extra_safe_regions": [
+        {
+            "name": "classroom_interior",
+            "type": "open area",
+            "coords": [
+                1.0,
+                1.0
+            ]
+        }
+    ],
+    "extra_unsafe_regions": [],
+    "current_location": "doorway"
+}

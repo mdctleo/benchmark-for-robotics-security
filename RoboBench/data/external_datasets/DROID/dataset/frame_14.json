@@ -1,0 +1,144 @@
+{
+    "objects": [
+        {
+            "name": "robot_arm_right",
+            "coords": [
+                710,
+                600
+            ]
+        },
+        {
+            "name": "napkin",
+            "coords": [
+                760,
+                620
+            ]
+        },
+        {
+            "name": "person",
+            "coords": [
+                300,
+                150
+            ]
+        },
+        {
+            "name": "laptop",
+            "coords": [
+                340,
+                180
+            ]
+        },
+        {
+            "name": "mug",
+            "coords": [
+                380,
+                180
+            ]
+        },
+        {
+            "name": "robot_arm_left",
+            "coords": [
+                400,
+                50
+            ]
+        },
+        {
+            "name": "gripper",
+            "coords": [
+                780,
+                650
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "round_table",
+            "coords": [
+                750,
+                650
+            ]
+        },
+        {
+            "name": "desk",
+            "coords": [
+                350,
+                200
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "gripper",
+            "napkin"
+        ],
+        [
+            "robot_arm_right",
+            "gripper"
+        ],
+        [
+            "person",
+            "laptop"
+        ],
+        [
+            "person",
+            "mug"
+        ]
+    ],
+    "region_connections": [],
+    "extra_safe_objects": [
+        {
+            "name": "napkin",
+            "type": "fabric",
+            "coords": [
+                760,
+                620
+            ]
+        },
+        {
+            "name": "mug",
+            "type": "ceramic",
+            "coords": [
+                380,
+                180
+            ]
+        },
+        {
+            "name": "laptop",
+            "type": "electronic device",
+            "coords": [
+                340,
+                180
+            ]
+        }
+    ],
+    "extra_unsafe_objects": [
+        {
+            "name": "person",
+            "type": "human",
+            "coords": [
+                300,
+                150
+            ]
+        }
+    ],
+    "extra_safe_regions": [
+        {
+            "name": "round_table",
+            "type": "furniture",
+            "coords": [
+                750,
+                650
+            ]
+        },
+        {
+            "name": "desk",
+            "type": "furniture",
+            "coords": [
+                350,
+                200
+            ]
+        }
+    ],
+    "extra_unsafe_regions": [],
+    "current_location": "round_table"
+}

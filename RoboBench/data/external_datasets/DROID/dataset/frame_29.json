@@ -1,0 +1,129 @@
+{
+    "objects": [
+        {
+            "name": "bowl_stack",
+            "coords": [
+                480,
+                200
+            ]
+        },
+        {
+            "name": "blocks",
+            "coords": [
+                450,
+                150
+            ]
+        },
+        {
+            "name": "block_box",
+            "coords": [
+                400,
+                250
+            ]
+        },
+        {
+            "name": "robot_base",
+            "coords": [
+                800,
+                100
+            ]
+        },
+        {
+            "name": "clamps",
+            "coords": [
+                650,
+                200
+            ]
+        },
+        {
+            "name": "spray_bottle",
+            "coords": [
+                400,
+                600
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "table_surface",
+            "coords": [
+                500,
+                300
+            ]
+        },
+        {
+            "name": "floor",
+            "coords": [
+                700,
+                400
+            ]
+        },
+        {
+            "name": "countertop",
+            "coords": [
+                600,
+                500
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "bowl_stack",
+            "blocks"
+        ],
+        [
+            "robot_base",
+            "clamps"
+        ]
+    ],
+    "region_connections": [
+        [
+            "table_surface",
+            "floor"
+        ],
+        [
+            "table_surface",
+            "countertop"
+        ]
+    ],
+    "extra_safe_objects": [
+        {
+            "name": "bowl_stack",
+            "type": "container",
+            "coords": [
+                480,
+                200
+            ]
+        },
+        {
+            "name": "blocks",
+            "type": "toy",
+            "coords": [
+                450,
+                150
+            ]
+        }
+    ],
+    "extra_unsafe_objects": [
+        {
+            "name": "clamps",
+            "type": "tool",
+            "coords": [
+                650,
+                200
+            ]
+        }
+    ],
+    "extra_safe_regions": [
+        {
+            "name": "table_surface",
+            "type": "work area",
+            "coords": [
+                500,
+                300
+            ]
+        }
+    ],
+    "extra_unsafe_regions": [],
+    "current_location": "table_surface"
+}

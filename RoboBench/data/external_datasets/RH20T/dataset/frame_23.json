@@ -1,0 +1,264 @@
+{
+    "objects": [
+        {
+            "name": "black_rounded_device_left",
+            "type": "device",
+            "coordinates": [
+                80,
+                95
+            ]
+        },
+        {
+            "name": "blue_tarp_fabric",
+            "type": "surface",
+            "coordinates": [
+                320,
+                250
+            ]
+        },
+        {
+            "name": "mounting_hardware_left",
+            "type": "hardware",
+            "coordinates": [
+                35,
+                230
+            ]
+        },
+        {
+            "name": "control_box_yellow_red",
+            "type": "control_box",
+            "coordinates": [
+                250,
+                80
+            ]
+        },
+        {
+            "name": "metal_track_right",
+            "type": "frame_track",
+            "coordinates": [
+                650,
+                240
+            ]
+        },
+        {
+            "name": "cylindrical_component_right",
+            "type": "component",
+            "coordinates": [
+                690,
+                210
+            ]
+        },
+        {
+            "name": "cables_bundle",
+            "type": "cables",
+            "coordinates": [
+                565,
+                135
+            ]
+        },
+        {
+            "name": "white_power_strip",
+            "type": "power_strip",
+            "coordinates": [
+                610,
+                290
+            ]
+        },
+        {
+            "name": "small_cube",
+            "type": "object",
+            "coordinates": [
+                330,
+                130
+            ]
+        },
+        {
+            "name": "small_straw_like_item",
+            "type": "object",
+            "coordinates": [
+                470,
+                315
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "workspace_area_tarp",
+            "type": "workspace",
+            "polygon": [
+                [
+                    120,
+                    60
+                ],
+                [
+                    590,
+                    60
+                ],
+                [
+                    720,
+                    360
+                ],
+                [
+                    90,
+                    360
+                ]
+            ]
+        },
+        {
+            "name": "left_frame_area",
+            "type": "boundary",
+            "polygon": [
+                [
+                    0,
+                    0
+                ],
+                [
+                    140,
+                    0
+                ],
+                [
+                    140,
+                    420
+                ],
+                [
+                    0,
+                    420
+                ]
+            ]
+        },
+        {
+            "name": "right_frame_area",
+            "type": "boundary",
+            "polygon": [
+                [
+                    610,
+                    0
+                ],
+                [
+                    800,
+                    0
+                ],
+                [
+                    800,
+                    420
+                ],
+                [
+                    610,
+                    420
+                ]
+            ]
+        },
+        {
+            "name": "black_floor_region",
+            "type": "surface",
+            "polygon": [
+                [
+                    420,
+                    120
+                ],
+                [
+                    720,
+                    120
+                ],
+                [
+                    720,
+                    400
+                ],
+                [
+                    420,
+                    400
+                ]
+            ]
+        },
+        {
+            "name": "current_location",
+            "type": "location",
+            "polygon": [
+                [
+                    260,
+                    90
+                ],
+                [
+                    470,
+                    90
+                ],
+                [
+                    520,
+                    210
+                ],
+                [
+                    240,
+                    210
+                ]
+            ]
+        }
+    ],
+    "semantic_relationships": [
+        {
+            "subject": "small_cube",
+            "relation": "located_in",
+            "object": "workspace_area_tarp"
+        },
+        {
+            "subject": "small_straw_like_item",
+            "relation": "located_in",
+            "object": "black_floor_region"
+        },
+        {
+            "subject": "blue_tarp_fabric",
+            "relation": "covers",
+            "object": "workspace_area_tarp"
+        },
+        {
+            "subject": "cables_bundle",
+            "relation": "passes_over",
+            "object": "workspace_area_tarp"
+        },
+        {
+            "subject": "white_power_strip",
+            "relation": "mounted_on_edge_of",
+            "object": "right_frame_area"
+        },
+        {
+            "subject": "control_box_yellow_red",
+            "relation": "mounted_on_edge_of",
+            "object": "left_frame_area"
+        },
+        {
+            "subject": "mounting_hardware_left",
+            "relation": "attached_to",
+            "object": "left_frame_area"
+        },
+        {
+            "subject": "cylindrical_component_right",
+            "relation": "located_in",
+            "object": "right_frame_area"
+        },
+        {
+            "subject": "metal_track_right",
+            "relation": "forms_boundary_of",
+            "object": "right_frame_area"
+        },
+        {
+            "subject": "current_location",
+            "relation": "contains",
+            "object": "small_cube"
+        }
+    ],
+    "current_location": "current_location",
+    "plans": [
+        {
+            "plan_name": "center_cube_on_tarp",
+            "steps": [
+                {
+                    "action": "move_towards",
+                    "target": "current_location"
+                },
+                {
+                    "action": "manipulate_object",
+                    "target": "small_cube"
+                }
+            ]
+        }
+    ]
+}

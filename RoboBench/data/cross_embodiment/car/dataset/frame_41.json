@@ -1,0 +1,777 @@
+{
+    "objects": [
+        {
+            "name": "24th_St_sign",
+            "type": "street_sign",
+            "polygon": [
+                [
+                    720,
+                    170
+                ],
+                [
+                    780,
+                    170
+                ],
+                [
+                    780,
+                    210
+                ],
+                [
+                    720,
+                    210
+                ]
+            ]
+        },
+        {
+            "name": "Church_street_sign",
+            "type": "street_sign",
+            "polygon": [
+                [
+                    760,
+                    250
+                ],
+                [
+                    820,
+                    250
+                ],
+                [
+                    820,
+                    295
+                ],
+                [
+                    760,
+                    295
+                ]
+            ]
+        },
+        {
+            "name": "Happy_Donuts_sign",
+            "type": "business_sign",
+            "polygon": [
+                [
+                    845,
+                    285
+                ],
+                [
+                    1020,
+                    285
+                ],
+                [
+                    1020,
+                    360
+                ],
+                [
+                    845,
+                    360
+                ]
+            ]
+        },
+        {
+            "name": "Storefront_window_left",
+            "type": "storefront",
+            "polygon": [
+                [
+                    770,
+                    350
+                ],
+                [
+                    960,
+                    350
+                ],
+                [
+                    960,
+                    500
+                ],
+                [
+                    770,
+                    500
+                ]
+            ]
+        },
+        {
+            "name": "Storefront_window_right",
+            "type": "storefront",
+            "polygon": [
+                [
+                    960,
+                    350
+                ],
+                [
+                    1160,
+                    350
+                ],
+                [
+                    1160,
+                    500
+                ],
+                [
+                    960,
+                    500
+                ]
+            ]
+        },
+        {
+            "name": "ATM_sign",
+            "type": "business_sign",
+            "polygon": [
+                [
+                    1165,
+                    365
+                ],
+                [
+                    1210,
+                    365
+                ],
+                [
+                    1210,
+                    405
+                ],
+                [
+                    1165,
+                    405
+                ]
+            ]
+        },
+        {
+            "name": "curb_sidewalk_right",
+            "type": "sidewalk",
+            "polygon": [
+                [
+                    650,
+                    380
+                ],
+                [
+                    1220,
+                    380
+                ],
+                [
+                    1220,
+                    720
+                ],
+                [
+                    650,
+                    720
+                ]
+            ]
+        },
+        {
+            "name": "curb_sidewalk_left",
+            "type": "sidewalk",
+            "polygon": [
+                [
+                    0,
+                    380
+                ],
+                [
+                    560,
+                    380
+                ],
+                [
+                    560,
+                    720
+                ],
+                [
+                    0,
+                    720
+                ]
+            ]
+        },
+        {
+            "name": "pole_1",
+            "type": "utility_pole",
+            "polygon": [
+                [
+                    850,
+                    170
+                ],
+                [
+                    870,
+                    170
+                ],
+                [
+                    870,
+                    500
+                ],
+                [
+                    850,
+                    500
+                ]
+            ]
+        },
+        {
+            "name": "pole_2",
+            "type": "utility_pole",
+            "polygon": [
+                [
+                    560,
+                    220
+                ],
+                [
+                    585,
+                    220
+                ],
+                [
+                    585,
+                    520
+                ],
+                [
+                    560,
+                    520
+                ]
+            ]
+        },
+        {
+            "name": "tree_1",
+            "type": "tree",
+            "polygon": [
+                [
+                    880,
+                    430
+                ],
+                [
+                    940,
+                    430
+                ],
+                [
+                    980,
+                    650
+                ],
+                [
+                    920,
+                    650
+                ]
+            ]
+        },
+        {
+            "name": "tree_2",
+            "type": "tree",
+            "polygon": [
+                [
+                    760,
+                    430
+                ],
+                [
+                    820,
+                    430
+                ],
+                [
+                    860,
+                    650
+                ],
+                [
+                    800,
+                    650
+                ]
+            ]
+        },
+        {
+            "name": "crosswalk_marking_left",
+            "type": "crosswalk",
+            "polygon": [
+                [
+                    520,
+                    650
+                ],
+                [
+                    650,
+                    650
+                ],
+                [
+                    650,
+                    700
+                ],
+                [
+                    520,
+                    700
+                ]
+            ]
+        },
+        {
+            "name": "crosswalk_marking_right",
+            "type": "crosswalk",
+            "polygon": [
+                [
+                    1030,
+                    650
+                ],
+                [
+                    1150,
+                    650
+                ],
+                [
+                    1150,
+                    700
+                ],
+                [
+                    1030,
+                    700
+                ]
+            ]
+        },
+        {
+            "name": "blue_sign_box_1",
+            "type": "information_post",
+            "polygon": [
+                [
+                    1010,
+                    560
+                ],
+                [
+                    1045,
+                    560
+                ],
+                [
+                    1045,
+                    635
+                ],
+                [
+                    1010,
+                    635
+                ]
+            ]
+        },
+        {
+            "name": "blue_sign_box_2",
+            "type": "information_post",
+            "polygon": [
+                [
+                    1000,
+                    500
+                ],
+                [
+                    1030,
+                    500
+                ],
+                [
+                    1030,
+                    560
+                ],
+                [
+                    1000,
+                    560
+                ]
+            ]
+        },
+        {
+            "name": "advertising_box_right",
+            "type": "advertising_post",
+            "polygon": [
+                [
+                    1040,
+                    600
+                ],
+                [
+                    1110,
+                    600
+                ],
+                [
+                    1110,
+                    690
+                ],
+                [
+                    1040,
+                    690
+                ]
+            ]
+        },
+        {
+            "name": "awning_left",
+            "type": "awning",
+            "polygon": [
+                [
+                    790,
+                    410
+                ],
+                [
+                    940,
+                    410
+                ],
+                [
+                    940,
+                    440
+                ],
+                [
+                    790,
+                    440
+                ]
+            ]
+        },
+        {
+            "name": "awning_right",
+            "type": "awning",
+            "polygon": [
+                [
+                    965,
+                    410
+                ],
+                [
+                    1120,
+                    410
+                ],
+                [
+                    1120,
+                    440
+                ],
+                [
+                    965,
+                    440
+                ]
+            ]
+        },
+        {
+            "name": "red_fenced_store_area",
+            "type": "storefront_fencing",
+            "polygon": [
+                [
+                    800,
+                    450
+                ],
+                [
+                    1220,
+                    450
+                ],
+                [
+                    1220,
+                    610
+                ],
+                [
+                    800,
+                    610
+                ]
+            ]
+        },
+        {
+            "name": "building_block_right",
+            "type": "building",
+            "polygon": [
+                [
+                    670,
+                    120
+                ],
+                [
+                    1220,
+                    120
+                ],
+                [
+                    1220,
+                    560
+                ],
+                [
+                    670,
+                    560
+                ]
+            ]
+        },
+        {
+            "name": "building_block_left",
+            "type": "building",
+            "polygon": [
+                [
+                    0,
+                    120
+                ],
+                [
+                    520,
+                    120
+                ],
+                [
+                    520,
+                    560
+                ],
+                [
+                    0,
+                    560
+                ]
+            ]
+        },
+        {
+            "name": "road_lane_center_lines",
+            "type": "road_markings",
+            "polygon": [
+                [
+                    420,
+                    430
+                ],
+                [
+                    580,
+                    430
+                ],
+                [
+                    620,
+                    720
+                ],
+                [
+                    460,
+                    720
+                ]
+            ]
+        },
+        {
+            "name": "road_lane_edges",
+            "type": "road_markings",
+            "polygon": [
+                [
+                    330,
+                    430
+                ],
+                [
+                    430,
+                    430
+                ],
+                [
+                    470,
+                    720
+                ],
+                [
+                    370,
+                    720
+                ]
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "current_location",
+            "type": "scene_region",
+            "polygon": [
+                [
+                    0,
+                    350
+                ],
+                [
+                    1280,
+                    350
+                ],
+                [
+                    1280,
+                    720
+                ],
+                [
+                    0,
+                    720
+                ]
+            ]
+        },
+        {
+            "name": "road_region",
+            "type": "road",
+            "polygon": [
+                [
+                    320,
+                    380
+                ],
+                [
+                    960,
+                    380
+                ],
+                [
+                    980,
+                    720
+                ],
+                [
+                    300,
+                    720
+                ]
+            ]
+        },
+        {
+            "name": "right_sidewalk_region",
+            "type": "sidewalk",
+            "polygon": [
+                [
+                    960,
+                    380
+                ],
+                [
+                    1280,
+                    380
+                ],
+                [
+                    1280,
+                    720
+                ],
+                [
+                    960,
+                    720
+                ]
+            ]
+        },
+        {
+            "name": "left_sidewalk_region",
+            "type": "sidewalk",
+            "polygon": [
+                [
+                    0,
+                    380
+                ],
+                [
+                    320,
+                    380
+                ],
+                [
+                    320,
+                    720
+                ],
+                [
+                    0,
+                    720
+                ]
+            ]
+        },
+        {
+            "name": "storefront_facade_region",
+            "type": "building_front",
+            "polygon": [
+                [
+                    760,
+                    250
+                ],
+                [
+                    1220,
+                    250
+                ],
+                [
+                    1220,
+                    620
+                ],
+                [
+                    760,
+                    620
+                ]
+            ]
+        },
+        {
+            "name": "intersection_zone",
+            "type": "intersection",
+            "polygon": [
+                [
+                    540,
+                    540
+                ],
+                [
+                    740,
+                    540
+                ],
+                [
+                    780,
+                    720
+                ],
+                [
+                    500,
+                    720
+                ]
+            ]
+        }
+    ],
+    "semantic_relationships": [
+        {
+            "subject": "Happy_Donuts_sign",
+            "relation": "is_on",
+            "object": "storefront_facade_region"
+        },
+        {
+            "subject": "ATM_sign",
+            "relation": "is_near",
+            "object": "Happy_Donuts_sign"
+        },
+        {
+            "subject": "Storefront_window_left",
+            "relation": "belongs_to",
+            "object": "building_block_right"
+        },
+        {
+            "subject": "Storefront_window_right",
+            "relation": "belongs_to",
+            "object": "building_block_right"
+        },
+        {
+            "subject": "24th_St_sign",
+            "relation": "labels",
+            "object": "intersection_zone"
+        },
+        {
+            "subject": "Church_street_sign",
+            "relation": "labels",
+            "object": "intersection_zone"
+        },
+        {
+            "subject": "tree_1",
+            "relation": "is_in",
+            "object": "right_sidewalk_region"
+        },
+        {
+            "subject": "tree_2",
+            "relation": "is_in",
+            "object": "left_sidewalk_region"
+        },
+        {
+            "subject": "pole_1",
+            "relation": "stands_on",
+            "object": "right_sidewalk_region"
+        },
+        {
+            "subject": "pole_2",
+            "relation": "stands_on",
+            "object": "left_sidewalk_region"
+        },
+        {
+            "subject": "red_fenced_store_area",
+            "relation": "is_on",
+            "object": "storefront_facade_region"
+        },
+        {
+            "subject": "advertising_box_right",
+            "relation": "is_on",
+            "object": "right_sidewalk_region"
+        },
+        {
+            "subject": "blue_sign_box_1",
+            "relation": "is_near",
+            "object": "advertising_box_right"
+        },
+        {
+            "subject": "blue_sign_box_2",
+            "relation": "is_near",
+            "object": "blue_sign_box_1"
+        },
+        {
+            "subject": "curb_sidewalk_right",
+            "relation": "borders",
+            "object": "road_region"
+        },
+        {
+            "subject": "curb_sidewalk_left",
+            "relation": "borders",
+            "object": "road_region"
+        },
+        {
+            "subject": "road_lane_center_lines",
+            "relation": "is_in",
+            "object": "road_region"
+        },
+        {
+            "subject": "road_lane_edges",
+            "relation": "is_in",
+            "object": "road_region"
+        },
+        {
+            "subject": "crosswalk_marking_left",
+            "relation": "is_near",
+            "object": "intersection_zone"
+        },
+        {
+            "subject": "crosswalk_marking_right",
+            "relation": "is_near",
+            "object": "intersection_zone"
+        }
+    ],
+    "current_location": {
+        "name": "current_location",
+        "connected_to": [
+            "road_region",
+            "right_sidewalk_region",
+            "left_sidewalk_region",
+            "intersection_zone"
+        ]
+    }
+}

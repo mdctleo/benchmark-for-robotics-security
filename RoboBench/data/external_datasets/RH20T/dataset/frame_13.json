@@ -1,0 +1,246 @@
+{
+    "objects": [
+        {
+            "name": "robot_base_left",
+            "type": "robot_base",
+            "coordinate": {
+                "x": 80,
+                "y": 120
+            }
+        },
+        {
+            "name": "robot_arm_right",
+            "type": "robot_arm",
+            "coordinate": {
+                "x": 1080,
+                "y": 220
+            }
+        },
+        {
+            "name": "black_circular_container",
+            "type": "container",
+            "coordinate": {
+                "x": 70,
+                "y": 155
+            }
+        },
+        {
+            "name": "blue_cloth",
+            "type": "surface_material",
+            "coordinate": {
+                "x": 520,
+                "y": 430
+            }
+        },
+        {
+            "name": "green_button",
+            "type": "button",
+            "coordinate": {
+                "x": 555,
+                "y": 360
+            }
+        },
+        {
+            "name": "red_button",
+            "type": "button",
+            "coordinate": {
+                "x": 510,
+                "y": 270
+            }
+        },
+        {
+            "name": "small_orange_platform",
+            "type": "platform",
+            "coordinate": {
+                "x": 500,
+                "y": 285
+            }
+        },
+        {
+            "name": "small_yellow_platform",
+            "type": "platform",
+            "coordinate": {
+                "x": 570,
+                "y": 360
+            }
+        },
+        {
+            "name": "red_pushbutton_top",
+            "type": "button",
+            "coordinate": {
+                "x": 705,
+                "y": 300
+            }
+        },
+        {
+            "name": "white_light_block",
+            "type": "control_light",
+            "coordinate": {
+                "x": 680,
+                "y": 275
+            }
+        },
+        {
+            "name": "control_box_near_left_top",
+            "type": "control_box",
+            "coordinate": {
+                "x": 430,
+                "y": 130
+            }
+        },
+        {
+            "name": "control_cylinder_right_top",
+            "type": "cylinder_unit",
+            "coordinate": {
+                "x": 980,
+                "y": 60
+            }
+        },
+        {
+            "name": "white_vent_panel_right",
+            "type": "panel",
+            "coordinate": {
+                "x": 1000,
+                "y": 420
+            }
+        },
+        {
+            "name": "tools_right_paper_tray",
+            "type": "tray",
+            "coordinate": {
+                "x": 1180,
+                "y": 440
+            }
+        },
+        {
+            "name": "floor_frame_left",
+            "type": "machine_frame",
+            "coordinate": {
+                "x": 140,
+                "y": 450
+            }
+        },
+        {
+            "name": "floor_frame_right",
+            "type": "machine_frame",
+            "coordinate": {
+                "x": 1180,
+                "y": 470
+            }
+        }
+    ],
+    "regions": [
+        {
+            "name": "workspace_blue_textile_region",
+            "type": "region",
+            "coordinate": {
+                "x": 520,
+                "y": 430
+            }
+        },
+        {
+            "name": "workspace_left_side_region",
+            "type": "region",
+            "coordinate": {
+                "x": 220,
+                "y": 420
+            }
+        },
+        {
+            "name": "workspace_right_side_region",
+            "type": "region",
+            "coordinate": {
+                "x": 1030,
+                "y": 420
+            }
+        },
+        {
+            "name": "current_location_blue_textile_region",
+            "type": "current_location",
+            "coordinate": {
+                "x": 520,
+                "y": 430
+            }
+        }
+    ],
+    "semantic_relationships": [
+        {
+            "subject": "robot_arm_right",
+            "relation": "operates_over",
+            "object": "workspace_blue_textile_region"
+        },
+        {
+            "subject": "green_button",
+            "relation": "located_on",
+            "object": "blue_cloth"
+        },
+        {
+            "subject": "red_button",
+            "relation": "located_on",
+            "object": "blue_cloth"
+        },
+        {
+            "subject": "small_orange_platform",
+            "relation": "holds",
+            "object": "red_button"
+        },
+        {
+            "subject": "small_yellow_platform",
+            "relation": "holds",
+            "object": "green_button"
+        },
+        {
+            "subject": "white_light_block",
+            "relation": "mounted_to",
+            "object": "blue_cloth"
+        },
+        {
+            "subject": "red_pushbutton_top",
+            "relation": "mounted_on",
+            "object": "white_light_block"
+        },
+        {
+            "subject": "control_box_near_left_top",
+            "relation": "in",
+            "object": "workspace_left_side_region"
+        },
+        {
+            "subject": "control_cylinder_right_top",
+            "relation": "in",
+            "object": "workspace_right_side_region"
+        },
+        {
+            "subject": "white_vent_panel_right",
+            "relation": "in",
+            "object": "workspace_right_side_region"
+        },
+        {
+            "subject": "tools_right_paper_tray",
+            "relation": "in",
+            "object": "workspace_right_side_region"
+        },
+        {
+            "subject": "robot_base_left",
+            "relation": "adjacent_to",
+            "object": "workspace_left_side_region"
+        },
+        {
+            "subject": "black_circular_container",
+            "relation": "in",
+            "object": "workspace_left_side_region"
+        },
+        {
+            "subject": "floor_frame_left",
+            "relation": "bounds",
+            "object": "workspace_left_side_region"
+        },
+        {
+            "subject": "floor_frame_right",
+            "relation": "bounds",
+            "object": "workspace_right_side_region"
+        }
+    ],
+    "current_state": {
+        "current_location": "current_location_blue_textile_region"
+    }
+}

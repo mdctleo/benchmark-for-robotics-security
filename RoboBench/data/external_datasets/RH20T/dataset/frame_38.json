@@ -1,0 +1,256 @@
+{
+    "regions": [
+        {
+            "name": "blue_table_surface",
+            "type": "surface",
+            "polygon": [
+                [
+                    25,
+                    40
+                ],
+                [
+                    270,
+                    40
+                ],
+                [
+                    270,
+                    300
+                ],
+                [
+                    25,
+                    300
+                ]
+            ]
+        },
+        {
+            "name": "black_matte_area",
+            "type": "surface",
+            "polygon": [
+                [
+                    0,
+                    300
+                ],
+                [
+                    295,
+                    300
+                ],
+                [
+                    295,
+                    360
+                ],
+                [
+                    0,
+                    360
+                ]
+            ]
+        },
+        {
+            "name": "workbench_floor_area",
+            "type": "area",
+            "polygon": [
+                [
+                    0,
+                    0
+                ],
+                [
+                    295,
+                    40
+                ],
+                [
+                    295,
+                    360
+                ],
+                [
+                    0,
+                    360
+                ]
+            ]
+        }
+    ],
+    "objects": [
+        {
+            "name": "cloth_poster_with_mountain_art",
+            "type": "textile",
+            "centroid": [
+                140,
+                170
+            ]
+        },
+        {
+            "name": "black_round_lens_in_mount",
+            "type": "optical_component",
+            "centroid": [
+                55,
+                85
+            ]
+        },
+        {
+            "name": "metal_tripod_stand_right_leg",
+            "type": "stand",
+            "centroid": [
+                35,
+                220
+            ]
+        },
+        {
+            "name": "monitor_or_device_corner",
+            "type": "electronic_device",
+            "centroid": [
+                280,
+                75
+            ]
+        },
+        {
+            "name": "cables_bundle",
+            "type": "cables",
+            "centroid": [
+                255,
+                35
+            ]
+        },
+        {
+            "name": "green_label_box",
+            "type": "container",
+            "centroid": [
+                155,
+                35
+            ]
+        },
+        {
+            "name": "yellow_tape_like_item",
+            "type": "tape",
+            "centroid": [
+                175,
+                35
+            ]
+        },
+        {
+            "name": "small_red_button_or_cap",
+            "type": "small_object",
+            "centroid": [
+                125,
+                22
+            ]
+        },
+        {
+            "name": "small_wooden_block",
+            "type": "block",
+            "centroid": [
+                150,
+                120
+            ]
+        },
+        {
+            "name": "power_strip",
+            "type": "electrical_device",
+            "centroid": [
+                235,
+                260
+            ]
+        },
+        {
+            "name": "white_cable_connection_box",
+            "type": "electrical_adapter",
+            "centroid": [
+                260,
+                260
+            ]
+        },
+        {
+            "name": "cursor_pointer_or_stylus",
+            "type": "tool_marker",
+            "centroid": [
+                165,
+                295
+            ]
+        },
+        {
+            "name": "large_black_background_block",
+            "type": "background",
+            "centroid": [
+                160,
+                335
+            ]
+        }
+    ],
+    "semantic_relationships": [
+        {
+            "relation": "contains_visual_art_on",
+            "subject": "cloth_poster_with_mountain_art",
+            "object": "blue_table_surface"
+        },
+        {
+            "relation": "lies_on",
+            "subject": "small_wooden_block",
+            "object": "blue_table_surface"
+        },
+        {
+            "relation": "lies_on",
+            "subject": "cloth_poster_with_mountain_art",
+            "object": "blue_table_surface"
+        },
+        {
+            "relation": "lies_on",
+            "subject": "power_strip",
+            "object": "black_matte_area"
+        },
+        {
+            "relation": "sits_near",
+            "subject": "green_label_box",
+            "object": "blue_table_surface"
+        },
+        {
+            "relation": "near",
+            "subject": "cables_bundle",
+            "object": "monitor_or_device_corner"
+        },
+        {
+            "relation": "near",
+            "subject": "cables_bundle",
+            "object": "black_round_lens_in_mount"
+        },
+        {
+            "relation": "near",
+            "subject": "black_round_lens_in_mount",
+            "object": "blue_table_surface"
+        },
+        {
+            "relation": "near",
+            "subject": "white_cable_connection_box",
+            "object": "power_strip"
+        },
+        {
+            "relation": "marker_pointing_on",
+            "subject": "cursor_pointer_or_stylus",
+            "object": "black_matte_area"
+        },
+        {
+            "relation": "background_area",
+            "subject": "large_black_background_block",
+            "object": "black_matte_area"
+        }
+    ],
+    "current_location": {
+        "name": "cloth_poster_with_mountain_art",
+        "region": "blue_table_surface",
+        "centroid": [
+            140,
+            170
+        ]
+    },
+    "plans": [
+        {
+            "plan_name": "inspect_layout",
+            "steps": [
+                {
+                    "target_object": "small_wooden_block",
+                    "region": "blue_table_surface"
+                },
+                {
+                    "target_object": "power_strip",
+                    "region": "black_matte_area"
+                }
+            ]
+        }
+    ]
+}

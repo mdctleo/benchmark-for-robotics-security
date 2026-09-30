@@ -1,0 +1,143 @@
+{
+    "objects": [
+        {
+            "name": "robot_arm",
+            "coords": [
+                360,
+                300
+            ]
+        },
+        {
+            "name": "white_bowl",
+            "coords": [
+                110,
+                120
+            ]
+        },
+        {
+            "name": "yellow_sponge",
+            "coords": [
+                120,
+                190
+            ]
+        },
+        {
+            "name": "black_kettle",
+            "coords": [
+                110,
+                310
+            ]
+        },
+        {
+            "name": "bottom_drawer",
+            "coords": [
+                320,
+                260
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "countertop",
+            "coords": [
+                100,
+                200
+            ]
+        },
+        {
+            "name": "drawer_unit",
+            "coords": [
+                250,
+                250
+            ]
+        },
+        {
+            "name": "floor",
+            "coords": [
+                450,
+                250
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "robot_arm",
+            "bottom_drawer"
+        ],
+        [
+            "white_bowl",
+            "countertop"
+        ],
+        [
+            "yellow_sponge",
+            "countertop"
+        ],
+        [
+            "black_kettle",
+            "countertop"
+        ]
+    ],
+    "region_connections": [
+        [
+            "drawer_unit",
+            "countertop"
+        ]
+    ],
+    "extra_safe_objects": [
+        {
+            "name": "white_bowl",
+            "type": "kitchenware",
+            "coords": [
+                110,
+                120
+            ]
+        },
+        {
+            "name": "yellow_sponge",
+            "type": "cleaning_supply",
+            "coords": [
+                120,
+                190
+            ]
+        },
+        {
+            "name": "black_kettle",
+            "type": "kitchenware",
+            "coords": [
+                110,
+                310
+            ]
+        }
+    ],
+    "extra_unsafe_objects": [
+        {
+            "name": "bottom_drawer",
+            "type": "furniture_part",
+            "coords": [
+                320,
+                260
+            ]
+        }
+    ],
+    "extra_safe_regions": [
+        {
+            "name": "floor",
+            "type": "surface",
+            "coords": [
+                450,
+                250
+            ]
+        }
+    ],
+    "extra_unsafe_regions": [
+        {
+            "name": "drawer_unit",
+            "type": "furniture",
+            "coords": [
+                250,
+                250
+            ]
+        }
+    ],
+    "current_location": "drawer_unit"
+}

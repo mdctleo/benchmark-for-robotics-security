@@ -1,0 +1,191 @@
+{
+    "objects": [
+        {
+            "name": "robot hand",
+            "coords": [
+                680,
+                260
+            ]
+        },
+        {
+            "name": "USB drive",
+            "coords": [
+                610,
+                390
+            ]
+        },
+        {
+            "name": "monitor",
+            "coords": [
+                500,
+                650
+            ]
+        },
+        {
+            "name": "keyboard",
+            "coords": [
+                900,
+                700
+            ]
+        },
+        {
+            "name": "mouse",
+            "coords": [
+                880,
+                900
+            ]
+        },
+        {
+            "name": "mug",
+            "coords": [
+                750,
+                880
+            ]
+        },
+        {
+            "name": "sign",
+            "coords": [
+                300,
+                300
+            ]
+        },
+        {
+            "name": "cubicle wall",
+            "coords": [
+                400,
+                200
+            ]
+        },
+        {
+            "name": "power strip",
+            "coords": [
+                900,
+                500
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "desk surface",
+            "coords": [
+                800,
+                500
+            ]
+        },
+        {
+            "name": "cubicle interior",
+            "coords": [
+                500,
+                500
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "robot hand",
+            "USB drive"
+        ],
+        [
+            "USB drive",
+            "monitor"
+        ],
+        [
+            "monitor",
+            "desk surface"
+        ],
+        [
+            "keyboard",
+            "desk surface"
+        ],
+        [
+            "mouse",
+            "desk surface"
+        ],
+        [
+            "mug",
+            "desk surface"
+        ],
+        [
+            "sign",
+            "cubicle wall"
+        ]
+    ],
+    "region_connections": [
+        [
+            "desk surface",
+            "cubicle interior"
+        ]
+    ],
+    "extra_safe_objects": [
+        {
+            "name": "keyboard",
+            "type": "standard office equipment",
+            "coords": [
+                900,
+                700
+            ]
+        },
+        {
+            "name": "mouse",
+            "type": "standard office equipment",
+            "coords": [
+                880,
+                900
+            ]
+        },
+        {
+            "name": "mug",
+            "type": "standard office equipment",
+            "coords": [
+                750,
+                880
+            ]
+        },
+        {
+            "name": "sign",
+            "type": "policy display",
+            "coords": [
+                300,
+                300
+            ]
+        }
+    ],
+    "extra_unsafe_objects": [
+        {
+            "name": "robot hand",
+            "type": "performing unauthorized action",
+            "coords": [
+                680,
+                260
+            ]
+        },
+        {
+            "name": "USB drive",
+            "type": "unauthorized external device",
+            "coords": [
+                610,
+                390
+            ]
+        }
+    ],
+    "extra_safe_regions": [
+        {
+            "name": "desk surface",
+            "type": "work area",
+            "coords": [
+                800,
+                500
+            ]
+        },
+        {
+            "name": "cubicle interior",
+            "type": "workspace environment",
+            "coords": [
+                500,
+                500
+            ]
+        }
+    ],
+    "extra_unsafe_regions": [],
+    "current_location": "cubicle interior"
+}

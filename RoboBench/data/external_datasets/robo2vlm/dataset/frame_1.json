@@ -1,0 +1,73 @@
+{
+    "objects": [
+        {
+            "name": "bowl",
+            "coords": [
+                290,
+                340
+            ]
+        },
+        {
+            "name": "bottle",
+            "coords": [
+                740,
+                640
+            ]
+        },
+        {
+            "name": "robot_hand",
+            "coords": [
+                780,
+                710
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "cabinet_top_surface",
+            "coords": [
+                350,
+                450
+            ]
+        },
+        {
+            "name": "lower_drawer",
+            "coords": [
+                700,
+                500
+            ]
+        },
+        {
+            "name": "cabinet",
+            "coords": [
+                500,
+                500
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "bowl",
+            "cabinet_top_surface"
+        ],
+        [
+            "robot_hand",
+            "bottle"
+        ]
+    ],
+    "region_connections": [
+        [
+            "cabinet_top_surface",
+            "cabinet"
+        ],
+        [
+            "lower_drawer",
+            "cabinet"
+        ]
+    ],
+    "extra_safe_objects": [],
+    "extra_unsafe_objects": [],
+    "extra_safe_regions": [],
+    "extra_unsafe_regions": [],
+    "current_location": "lower_drawer"
+}

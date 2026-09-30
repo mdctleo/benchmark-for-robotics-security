@@ -1,0 +1,234 @@
+{
+    "objects": [
+        {
+            "name": "drinking_glass",
+            "type": "container",
+            "center": [
+                252,
+                303
+            ],
+            "approx_size": [
+                120,
+                150
+            ]
+        },
+        {
+            "name": "telescope_or_projector_head",
+            "type": "device",
+            "center": [
+                364,
+                62
+            ],
+            "approx_size": [
+                220,
+                120
+            ]
+        },
+        {
+            "name": "mesh_cylinder",
+            "type": "tool",
+            "center": [
+                520,
+                271
+            ],
+            "approx_size": [
+                120,
+                110
+            ]
+        },
+        {
+            "name": "marker_pen",
+            "type": "stationery",
+            "center": [
+                686,
+                385
+            ],
+            "approx_size": [
+                140,
+                20
+            ]
+        },
+        {
+            "name": "sealed_packets",
+            "type": "packaging",
+            "center": [
+                210,
+                423
+            ],
+            "approx_size": [
+                200,
+                80
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "table_surface",
+            "type": "surface",
+            "polygon": [
+                [
+                    40,
+                    40
+                ],
+                [
+                    820,
+                    40
+                ],
+                [
+                    820,
+                    520
+                ],
+                [
+                    40,
+                    520
+                ]
+            ]
+        },
+        {
+            "name": "left_zone",
+            "type": "area",
+            "polygon": [
+                [
+                    40,
+                    150
+                ],
+                [
+                    340,
+                    150
+                ],
+                [
+                    340,
+                    520
+                ],
+                [
+                    40,
+                    520
+                ]
+            ]
+        },
+        {
+            "name": "right_zone",
+            "type": "area",
+            "polygon": [
+                [
+                    340,
+                    150
+                ],
+                [
+                    820,
+                    150
+                ],
+                [
+                    820,
+                    520
+                ],
+                [
+                    340,
+                    520
+                ]
+            ]
+        },
+        {
+            "name": "top_zone",
+            "type": "area",
+            "polygon": [
+                [
+                    40,
+                    40
+                ],
+                [
+                    820,
+                    40
+                ],
+                [
+                    820,
+                    180
+                ],
+                [
+                    40,
+                    180
+                ]
+            ]
+        },
+        {
+            "name": "current_location",
+            "type": "pose_region",
+            "polygon": [
+                [
+                    520,
+                    220
+                ],
+                [
+                    820,
+                    220
+                ],
+                [
+                    820,
+                    520
+                ],
+                [
+                    520,
+                    520
+                ]
+            ]
+        }
+    ],
+    "semantic_relationships": [
+        {
+            "subject": "drinking_glass",
+            "relation": "on",
+            "object": "table_surface"
+        },
+        {
+            "subject": "sealed_packets",
+            "relation": "on",
+            "object": "table_surface"
+        },
+        {
+            "subject": "mesh_cylinder",
+            "relation": "on",
+            "object": "table_surface"
+        },
+        {
+            "subject": "marker_pen",
+            "relation": "on",
+            "object": "table_surface"
+        },
+        {
+            "subject": "telescope_or_projector_head",
+            "relation": "above",
+            "object": "table_surface"
+        },
+        {
+            "subject": "drinking_glass",
+            "relation": "in",
+            "object": "left_zone"
+        },
+        {
+            "subject": "sealed_packets",
+            "relation": "in",
+            "object": "left_zone"
+        },
+        {
+            "subject": "mesh_cylinder",
+            "relation": "in",
+            "object": "right_zone"
+        },
+        {
+            "subject": "marker_pen",
+            "relation": "in",
+            "object": "right_zone"
+        },
+        {
+            "subject": "telescope_or_projector_head",
+            "relation": "in",
+            "object": "top_zone"
+        },
+        {
+            "subject": "mesh_cylinder",
+            "relation": "near",
+            "object": "marker_pen"
+        }
+    ],
+    "current_location": "current_location"
+}

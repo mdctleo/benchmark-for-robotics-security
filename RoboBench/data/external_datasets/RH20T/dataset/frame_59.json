@@ -1,0 +1,212 @@
+{
+    "objects": [
+        {
+            "name": "blue_surface",
+            "type": "surface",
+            "coordinates": [
+                0.55,
+                0.7
+            ]
+        },
+        {
+            "name": "mount_image",
+            "type": "printed_mural",
+            "coordinates": [
+                0.53,
+                0.64
+            ]
+        },
+        {
+            "name": "small_cube",
+            "type": "object",
+            "coordinates": [
+                0.58,
+                0.52
+            ]
+        },
+        {
+            "name": "drum_machine_shell",
+            "type": "equipment_part",
+            "coordinates": [
+                0.03,
+                0.42
+            ]
+        },
+        {
+            "name": "cylinder_left",
+            "type": "equipment_cylinder",
+            "coordinates": [
+                0.02,
+                0.42
+            ]
+        },
+        {
+            "name": "cylinder_right",
+            "type": "equipment_cylinder",
+            "coordinates": [
+                0.95,
+                0.46
+            ]
+        },
+        {
+            "name": "keyboard_device",
+            "type": "device",
+            "coordinates": [
+                0.1,
+                0.05
+            ]
+        },
+        {
+            "name": "blue_barrier_support",
+            "type": "support",
+            "coordinates": [
+                0.3,
+                0.18
+            ]
+        },
+        {
+            "name": "metal_frame",
+            "type": "frame",
+            "coordinates": [
+                0.5,
+                0.35
+            ]
+        },
+        {
+            "name": "floor_planks",
+            "type": "floor",
+            "coordinates": [
+                0.65,
+                0.98
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "stage_area",
+            "type": "area",
+            "coordinates": [
+                0.55,
+                0.65
+            ]
+        },
+        {
+            "name": "blue_mats_region",
+            "type": "region",
+            "coordinates": [
+                0.55,
+                0.65
+            ]
+        },
+        {
+            "name": "left_edge_equipment_region",
+            "type": "region",
+            "coordinates": [
+                0.06,
+                0.52
+            ]
+        },
+        {
+            "name": "right_edge_equipment_region",
+            "type": "region",
+            "coordinates": [
+                0.94,
+                0.55
+            ]
+        },
+        {
+            "name": "top_background_region",
+            "type": "region",
+            "coordinates": [
+                0.55,
+                0.1
+            ]
+        },
+        {
+            "name": "walking_space_bottom_region",
+            "type": "region",
+            "coordinates": [
+                0.55,
+                0.93
+            ]
+        }
+    ],
+    "semantic_relationships": [
+        {
+            "subject": "blue_surface",
+            "predicate": "is_part_of",
+            "object": "blue_mats_region"
+        },
+        {
+            "subject": "mount_image",
+            "predicate": "is_on_top_of",
+            "object": "blue_surface"
+        },
+        {
+            "subject": "small_cube",
+            "predicate": "is_on",
+            "object": "blue_surface"
+        },
+        {
+            "subject": "blue_mats_region",
+            "predicate": "is_part_of",
+            "object": "stage_area"
+        },
+        {
+            "subject": "drum_machine_shell",
+            "predicate": "is_adjacent_to",
+            "object": "left_edge_equipment_region"
+        },
+        {
+            "subject": "cylinder_left",
+            "predicate": "is_within",
+            "object": "left_edge_equipment_region"
+        },
+        {
+            "subject": "cylinder_right",
+            "predicate": "is_within",
+            "object": "right_edge_equipment_region"
+        },
+        {
+            "subject": "keyboard_device",
+            "predicate": "is_near",
+            "object": "top_background_region"
+        },
+        {
+            "subject": "blue_barrier_support",
+            "predicate": "is_near",
+            "object": "top_background_region"
+        },
+        {
+            "subject": "metal_frame",
+            "predicate": "surrounds",
+            "object": "stage_area"
+        },
+        {
+            "subject": "floor_planks",
+            "predicate": "is_below",
+            "object": "walking_space_bottom_region"
+        }
+    ],
+    "current_location": {
+        "name": "small_cube",
+        "region": "blue_mats_region"
+    },
+    "plans": [
+        {
+            "plan_name": "inspect_cube_on_blue_mat",
+            "target_object": "small_cube",
+            "target_region": "blue_mats_region",
+            "action_sequence": [
+                {
+                    "action": "move_to_region",
+                    "region": "blue_mats_region"
+                },
+                {
+                    "action": "inspect",
+                    "object": "small_cube"
+                }
+            ]
+        }
+    ]
+}

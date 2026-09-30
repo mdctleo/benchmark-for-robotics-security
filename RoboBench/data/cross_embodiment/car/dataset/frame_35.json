@@ -1,0 +1,395 @@
+{
+    "objects": [
+        {
+            "name": "building_left",
+            "type": "building",
+            "bbox": {
+                "x1": 0.06,
+                "y1": 0.21,
+                "x2": 0.43,
+                "y2": 0.92
+            },
+            "centroid": {
+                "x": 0.26,
+                "y": 0.6
+            }
+        },
+        {
+            "name": "tree_left",
+            "type": "tree",
+            "bbox": {
+                "x1": 0.07,
+                "y1": 0.33,
+                "x2": 0.18,
+                "y2": 0.74
+            },
+            "centroid": {
+                "x": 0.13,
+                "y": 0.56
+            }
+        },
+        {
+            "name": "road_left_lane_marking",
+            "type": "road_marking",
+            "bbox": {
+                "x1": 0.0,
+                "y1": 0.66,
+                "x2": 0.5,
+                "y2": 1.0
+            },
+            "centroid": {
+                "x": 0.28,
+                "y": 0.86
+            }
+        },
+        {
+            "name": "road_centerline",
+            "type": "road_marking",
+            "bbox": {
+                "x1": 0.44,
+                "y1": 0.68,
+                "x2": 0.58,
+                "y2": 1.0
+            },
+            "centroid": {
+                "x": 0.51,
+                "y": 0.84
+            }
+        },
+        {
+            "name": "street_lamp_right",
+            "type": "street_lamp",
+            "bbox": {
+                "x1": 0.77,
+                "y1": 0.2,
+                "x2": 0.9,
+                "y2": 0.8
+            },
+            "centroid": {
+                "x": 0.84,
+                "y": 0.48
+            }
+        },
+        {
+            "name": "lamp_pole_medium",
+            "type": "utility_pole",
+            "bbox": {
+                "x1": 0.59,
+                "y1": 0.1,
+                "x2": 0.67,
+                "y2": 0.77
+            },
+            "centroid": {
+                "x": 0.63,
+                "y": 0.44
+            }
+        },
+        {
+            "name": "utility_wire",
+            "type": "utility_wire",
+            "bbox": {
+                "x1": 0.55,
+                "y1": 0.0,
+                "x2": 1.0,
+                "y2": 0.35
+            },
+            "centroid": {
+                "x": 0.76,
+                "y": 0.16
+            }
+        },
+        {
+            "name": "fence_right",
+            "type": "fence",
+            "bbox": {
+                "x1": 0.74,
+                "y1": 0.54,
+                "x2": 1.0,
+                "y2": 0.98
+            },
+            "centroid": {
+                "x": 0.89,
+                "y": 0.76
+            }
+        },
+        {
+            "name": "trees_mid",
+            "type": "tree",
+            "bbox": {
+                "x1": 0.52,
+                "y1": 0.32,
+                "x2": 0.78,
+                "y2": 0.8
+            },
+            "centroid": {
+                "x": 0.65,
+                "y": 0.58
+            }
+        },
+        {
+            "name": "road_right_side_walk",
+            "type": "sidewalk",
+            "bbox": {
+                "x1": 0.58,
+                "y1": 0.6,
+                "x2": 1.0,
+                "y2": 1.0
+            },
+            "centroid": {
+                "x": 0.82,
+                "y": 0.8
+            }
+        },
+        {
+            "name": "crosswalk_area",
+            "type": "crosswalk",
+            "bbox": {
+                "x1": 0.3,
+                "y1": 0.7,
+                "x2": 0.61,
+                "y2": 1.0
+            },
+            "centroid": {
+                "x": 0.46,
+                "y": 0.87
+            }
+        },
+        {
+            "name": "vehicle_near_left",
+            "type": "vehicle",
+            "bbox": {
+                "x1": 0.0,
+                "y1": 0.62,
+                "x2": 0.15,
+                "y2": 0.92
+            },
+            "centroid": {
+                "x": 0.08,
+                "y": 0.78
+            }
+        },
+        {
+            "name": "vehicle_center_distance",
+            "type": "vehicle",
+            "bbox": {
+                "x1": 0.43,
+                "y1": 0.64,
+                "x2": 0.56,
+                "y2": 0.93
+            },
+            "centroid": {
+                "x": 0.5,
+                "y": 0.79
+            }
+        },
+        {
+            "name": "building_background_right",
+            "type": "building",
+            "bbox": {
+                "x1": 0.72,
+                "y1": 0.37,
+                "x2": 0.95,
+                "y2": 0.62
+            },
+            "centroid": {
+                "x": 0.84,
+                "y": 0.5
+            }
+        }
+    ],
+    "regions": [
+        {
+            "name": "ground_road",
+            "type": "road_surface",
+            "polygon": [
+                {
+                    "x": 0.0,
+                    "y": 0.55
+                },
+                {
+                    "x": 0.62,
+                    "y": 0.55
+                },
+                {
+                    "x": 0.6,
+                    "y": 1.0
+                },
+                {
+                    "x": 0.0,
+                    "y": 1.0
+                }
+            ],
+            "centroid": {
+                "x": 0.33,
+                "y": 0.82
+            }
+        },
+        {
+            "name": "ground_sidewalk_right",
+            "type": "sidewalk_area",
+            "polygon": [
+                {
+                    "x": 0.58,
+                    "y": 0.6
+                },
+                {
+                    "x": 1.0,
+                    "y": 0.6
+                },
+                {
+                    "x": 1.0,
+                    "y": 1.0
+                },
+                {
+                    "x": 0.58,
+                    "y": 1.0
+                }
+            ],
+            "centroid": {
+                "x": 0.8,
+                "y": 0.8
+            }
+        },
+        {
+            "name": "ground_building_left_front",
+            "type": "lawn_or_frontage",
+            "polygon": [
+                {
+                    "x": 0.0,
+                    "y": 0.35
+                },
+                {
+                    "x": 0.43,
+                    "y": 0.35
+                },
+                {
+                    "x": 0.4,
+                    "y": 0.7
+                },
+                {
+                    "x": 0.0,
+                    "y": 0.7
+                }
+            ],
+            "centroid": {
+                "x": 0.19,
+                "y": 0.52
+            }
+        },
+        {
+            "name": "current_location",
+            "type": "ego_vehicle_area",
+            "polygon": [
+                {
+                    "x": 0.3,
+                    "y": 0.78
+                },
+                {
+                    "x": 0.52,
+                    "y": 0.78
+                },
+                {
+                    "x": 0.54,
+                    "y": 0.92
+                },
+                {
+                    "x": 0.28,
+                    "y": 0.92
+                }
+            ],
+            "centroid": {
+                "x": 0.41,
+                "y": 0.85
+            }
+        }
+    ],
+    "semantic_relationships": [
+        {
+            "from": "vehicle_near_left",
+            "to": "ground_building_left_front",
+            "relation": "on"
+        },
+        {
+            "from": "vehicle_center_distance",
+            "to": "ground_road",
+            "relation": "on"
+        },
+        {
+            "from": "road_left_lane_marking",
+            "to": "ground_road",
+            "relation": "on"
+        },
+        {
+            "from": "road_centerline",
+            "to": "ground_road",
+            "relation": "on"
+        },
+        {
+            "from": "crosswalk_area",
+            "to": "ground_road",
+            "relation": "part_of"
+        },
+        {
+            "from": "road_right_side_walk",
+            "to": "ground_sidewalk_right",
+            "relation": "part_of"
+        },
+        {
+            "from": "street_lamp_right",
+            "to": "ground_sidewalk_right",
+            "relation": "adjacent_to"
+        },
+        {
+            "from": "lamp_pole_medium",
+            "to": "ground_sidewalk_right",
+            "relation": "adjacent_to"
+        },
+        {
+            "from": "utility_wire",
+            "to": "lamp_pole_medium",
+            "relation": "connects_to"
+        },
+        {
+            "from": "utility_wire",
+            "to": "street_lamp_right",
+            "relation": "spans_over"
+        },
+        {
+            "from": "fence_right",
+            "to": "ground_sidewalk_right",
+            "relation": "bordering"
+        },
+        {
+            "from": "trees_mid",
+            "to": "ground_sidewalk_right",
+            "relation": "near"
+        },
+        {
+            "from": "tree_left",
+            "to": "ground_building_left_front",
+            "relation": "near"
+        },
+        {
+            "from": "building_left",
+            "to": "ground_building_left_front",
+            "relation": "overlooks"
+        },
+        {
+            "from": "building_background_right",
+            "to": "ground_sidewalk_right",
+            "relation": "background_of"
+        },
+        {
+            "from": "building_left",
+            "to": "road_left_lane_marking",
+            "relation": "across_from"
+        },
+        {
+            "from": "current_location",
+            "to": "ground_road",
+            "relation": "in"
+        }
+    ],
+    "current_location": "current_location",
+    "plans": []
+}

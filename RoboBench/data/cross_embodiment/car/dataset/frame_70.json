@@ -1,0 +1,351 @@
+{
+    "objects": [
+        {
+            "name": "road_vehicle_ahead",
+            "type": "car",
+            "coord": [
+                [
+                    540,
+                    300
+                ]
+            ],
+            "attributes": {
+                "color": "unknown"
+            }
+        }
+    ],
+    "regions": [
+        {
+            "name": "road_main",
+            "type": "road",
+            "polygon": [
+                [
+                    0,
+                    500
+                ],
+                [
+                    820,
+                    500
+                ],
+                [
+                    820,
+                    200
+                ],
+                [
+                    0,
+                    200
+                ]
+            ]
+        },
+        {
+            "name": "lane_lines",
+            "type": "road_markings",
+            "polygon": [
+                [
+                    60,
+                    470
+                ],
+                [
+                    760,
+                    470
+                ],
+                [
+                    760,
+                    260
+                ],
+                [
+                    60,
+                    260
+                ]
+            ]
+        },
+        {
+            "name": "sidewalk_left",
+            "type": "sidewalk",
+            "polygon": [
+                [
+                    0,
+                    520
+                ],
+                [
+                    130,
+                    520
+                ],
+                [
+                    210,
+                    270
+                ],
+                [
+                    0,
+                    270
+                ]
+            ]
+        },
+        {
+            "name": "sidewalk_right",
+            "type": "sidewalk",
+            "polygon": [
+                [
+                    690,
+                    270
+                ],
+                [
+                    820,
+                    270
+                ],
+                [
+                    820,
+                    520
+                ],
+                [
+                    640,
+                    520
+                ]
+            ]
+        },
+        {
+            "name": "curb_left",
+            "type": "curb",
+            "polygon": [
+                [
+                    120,
+                    520
+                ],
+                [
+                    200,
+                    270
+                ],
+                [
+                    240,
+                    270
+                ],
+                [
+                    160,
+                    520
+                ]
+            ]
+        },
+        {
+            "name": "curb_right",
+            "type": "curb",
+            "polygon": [
+                [
+                    630,
+                    270
+                ],
+                [
+                    680,
+                    270
+                ],
+                [
+                    760,
+                    520
+                ],
+                [
+                    710,
+                    520
+                ]
+            ]
+        },
+        {
+            "name": "fence_right",
+            "type": "fence",
+            "polygon": [
+                [
+                    620,
+                    260
+                ],
+                [
+                    820,
+                    240
+                ],
+                [
+                    820,
+                    520
+                ],
+                [
+                    620,
+                    520
+                ]
+            ]
+        },
+        {
+            "name": "trees_left_row",
+            "type": "tree_line",
+            "polygon": [
+                [
+                    40,
+                    270
+                ],
+                [
+                    250,
+                    270
+                ],
+                [
+                    300,
+                    520
+                ],
+                [
+                    80,
+                    520
+                ]
+            ]
+        },
+        {
+            "name": "trees_right_row",
+            "type": "tree_line",
+            "polygon": [
+                [
+                    520,
+                    270
+                ],
+                [
+                    720,
+                    270
+                ],
+                [
+                    820,
+                    520
+                ],
+                [
+                    610,
+                    520
+                ]
+            ]
+        },
+        {
+            "name": "buildings_left_cluster",
+            "type": "building",
+            "polygon": [
+                [
+                    0,
+                    290
+                ],
+                [
+                    180,
+                    290
+                ],
+                [
+                    210,
+                    430
+                ],
+                [
+                    0,
+                    430
+                ]
+            ]
+        },
+        {
+            "name": "buildings_right_cluster",
+            "type": "building",
+            "polygon": [
+                [
+                    680,
+                    260
+                ],
+                [
+                    820,
+                    260
+                ],
+                [
+                    820,
+                    430
+                ],
+                [
+                    690,
+                    430
+                ]
+            ]
+        },
+        {
+            "name": "current_location",
+            "type": "ego_vehicle_position",
+            "coord": [
+                [
+                    410,
+                    540
+                ]
+            ]
+        }
+    ],
+    "connections": [
+        {
+            "from": "road_vehicle_ahead",
+            "relation": "is_ahead_of",
+            "to": "current_location"
+        },
+        {
+            "from": "road_vehicle_ahead",
+            "relation": "is_on",
+            "to": "road_main"
+        },
+        {
+            "from": "lane_lines",
+            "relation": "are_on",
+            "to": "road_main"
+        },
+        {
+            "from": "sidewalk_left",
+            "relation": "is_adjacent_to",
+            "to": "road_main"
+        },
+        {
+            "from": "sidewalk_right",
+            "relation": "is_adjacent_to",
+            "to": "road_main"
+        },
+        {
+            "from": "curb_left",
+            "relation": "separates",
+            "to": "road_main"
+        },
+        {
+            "from": "curb_right",
+            "relation": "separates",
+            "to": "road_main"
+        },
+        {
+            "from": "trees_left_row",
+            "relation": "is_adjacent_to",
+            "to": "sidewalk_left"
+        },
+        {
+            "from": "trees_right_row",
+            "relation": "is_adjacent_to",
+            "to": "sidewalk_right"
+        },
+        {
+            "from": "fence_right",
+            "relation": "is_along",
+            "to": "sidewalk_right"
+        },
+        {
+            "from": "buildings_left_cluster",
+            "relation": "are_near",
+            "to": "trees_left_row"
+        },
+        {
+            "from": "buildings_right_cluster",
+            "relation": "are_near",
+            "to": "trees_right_row"
+        },
+        {
+            "from": "current_location",
+            "relation": "is_on",
+            "to": "road_main"
+        }
+    ],
+    "current_location": "current_location",
+    "plans": [
+        {
+            "plan_id": "continue_forward",
+            "start": "current_location",
+            "steps": [
+                {
+                    "action": "move_forward_along",
+                    "target_region": "road_main"
+                }
+            ]
+        }
+    ]
+}

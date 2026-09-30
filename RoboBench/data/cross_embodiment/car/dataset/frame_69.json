@@ -1,0 +1,378 @@
+{
+    "regions": [
+        {
+            "name": "roadway",
+            "type": "road",
+            "polygon": [
+                [
+                    430,
+                    700
+                ],
+                [
+                    650,
+                    520
+                ],
+                [
+                    930,
+                    520
+                ],
+                [
+                    1160,
+                    710
+                ],
+                [
+                    880,
+                    900
+                ],
+                [
+                    520,
+                    900
+                ]
+            ],
+            "attributes": [
+                "asphalt",
+                "lane_centerline_visible"
+            ]
+        },
+        {
+            "name": "left_sidewalk",
+            "type": "sidewalk",
+            "polygon": [
+                [
+                    250,
+                    720
+                ],
+                [
+                    420,
+                    560
+                ],
+                [
+                    510,
+                    610
+                ],
+                [
+                    340,
+                    770
+                ]
+            ],
+            "attributes": [
+                "pedestrian_path",
+                "curb_edge_visible"
+            ]
+        },
+        {
+            "name": "right_sidewalk",
+            "type": "sidewalk",
+            "polygon": [
+                [
+                    960,
+                    600
+                ],
+                [
+                    1180,
+                    710
+                ],
+                [
+                    1130,
+                    780
+                ],
+                [
+                    900,
+                    660
+                ]
+            ],
+            "attributes": [
+                "pedestrian_path",
+                "curb_edge_visible"
+            ]
+        },
+        {
+            "name": "left_parking_area",
+            "type": "parking",
+            "polygon": [
+                [
+                    360,
+                    570
+                ],
+                [
+                    610,
+                    570
+                ],
+                [
+                    650,
+                    640
+                ],
+                [
+                    390,
+                    640
+                ]
+            ],
+            "attributes": [
+                "street_parking"
+            ]
+        },
+        {
+            "name": "right_parking_area",
+            "type": "parking",
+            "polygon": [
+                [
+                    740,
+                    600
+                ],
+                [
+                    1120,
+                    600
+                ],
+                [
+                    1140,
+                    680
+                ],
+                [
+                    760,
+                    680
+                ]
+            ],
+            "attributes": [
+                "street_parking"
+            ]
+        },
+        {
+            "name": "left_building_front",
+            "type": "building",
+            "polygon": [
+                [
+                    150,
+                    610
+                ],
+                [
+                    360,
+                    610
+                ],
+                [
+                    420,
+                    760
+                ],
+                [
+                    170,
+                    760
+                ]
+            ],
+            "attributes": [
+                "front_facade",
+                "lit_windows"
+            ]
+        },
+        {
+            "name": "right_building_front",
+            "type": "building",
+            "polygon": [
+                [
+                    1010,
+                    560
+                ],
+                [
+                    1260,
+                    560
+                ],
+                [
+                    1260,
+                    780
+                ],
+                [
+                    1010,
+                    740
+                ]
+            ],
+            "attributes": [
+                "front_facade",
+                "lit_entry"
+            ]
+        },
+        {
+            "name": "right_gutter_strip",
+            "type": "edge_area",
+            "polygon": [
+                [
+                    820,
+                    900
+                ],
+                [
+                    1120,
+                    710
+                ],
+                [
+                    1160,
+                    740
+                ],
+                [
+                    880,
+                    920
+                ]
+            ],
+            "attributes": [
+                "road_edge",
+                "debris_or_grass_edge"
+            ]
+        },
+        {
+            "name": "current_location",
+            "type": "ego_vehicle_start",
+            "polygon": [
+                [
+                    650,
+                    920
+                ],
+                [
+                    760,
+                    920
+                ],
+                [
+                    790,
+                    880
+                ],
+                [
+                    670,
+                    860
+                ]
+            ],
+            "attributes": [
+                "camera_position_estimate"
+            ]
+        }
+    ],
+    "objects": [
+        {
+            "name": "street_lamp",
+            "type": "lamp_post",
+            "point": [
+                720,
+                420
+            ],
+            "attributes": [
+                "bright_light",
+                "overhead_illumination"
+            ]
+        },
+        {
+            "name": "tree_1",
+            "type": "tree",
+            "point": [
+                555,
+                560
+            ],
+            "attributes": [
+                "street_tree",
+                "foliage_visible"
+            ]
+        },
+        {
+            "name": "tree_2",
+            "type": "tree",
+            "point": [
+                920,
+                580
+            ],
+            "attributes": [
+                "street_tree",
+                "foliage_visible"
+            ]
+        },
+        {
+            "name": "car_1",
+            "type": "parked_car",
+            "point": [
+                860,
+                670
+            ],
+            "attributes": [
+                "rear_visible",
+                "parked_on_right"
+            ]
+        },
+        {
+            "name": "car_2",
+            "type": "parked_car",
+            "point": [
+                790,
+                680
+            ],
+            "attributes": [
+                "parked_on_right",
+                "rear_visible"
+            ]
+        },
+        {
+            "name": "car_3",
+            "type": "parked_car",
+            "point": [
+                530,
+                690
+            ],
+            "attributes": [
+                "parked_on_left",
+                "side_visible"
+            ]
+        }
+    ],
+    "semantic_relationships": [
+        {
+            "subject": "current_location",
+            "predicate": "is_on",
+            "object": "roadway"
+        },
+        {
+            "subject": "car_1",
+            "predicate": "is_in",
+            "object": "right_parking_area"
+        },
+        {
+            "subject": "car_2",
+            "predicate": "is_in",
+            "object": "right_parking_area"
+        },
+        {
+            "subject": "car_3",
+            "predicate": "is_in",
+            "object": "left_parking_area"
+        },
+        {
+            "subject": "tree_1",
+            "predicate": "is_near",
+            "object": "left_sidewalk"
+        },
+        {
+            "subject": "tree_2",
+            "predicate": "is_near",
+            "object": "right_sidewalk"
+        },
+        {
+            "subject": "street_lamp",
+            "predicate": "illuminates",
+            "object": "roadway"
+        },
+        {
+            "subject": "left_building_front",
+            "predicate": "borders",
+            "object": "left_parking_area"
+        },
+        {
+            "subject": "right_building_front",
+            "predicate": "borders",
+            "object": "right_parking_area"
+        },
+        {
+            "subject": "right_gutter_strip",
+            "predicate": "adjacent_to",
+            "object": "roadway"
+        }
+    ],
+    "current_location": "current_location",
+    "plans": [
+        {
+            "name": "continue_forward_on_roadway",
+            "from": "current_location",
+            "to": "roadway",
+            "expected_action": "drive_straight"
+        }
+    ]
+}

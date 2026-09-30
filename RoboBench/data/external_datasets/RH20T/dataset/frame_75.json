@@ -1,0 +1,304 @@
+{
+    "objects": [
+        {
+            "name": "wood_table",
+            "type": "surface",
+            "coordinates": [
+                637,
+                345
+            ],
+            "size": [
+                710,
+                470
+            ]
+        },
+        {
+            "name": "toolbox_corner_bracket",
+            "type": "tool_part",
+            "coordinates": [
+                540,
+                260
+            ],
+            "size": [
+                120,
+                70
+            ]
+        },
+        {
+            "name": "red_top_button",
+            "type": "control",
+            "coordinates": [
+                570,
+                205
+            ],
+            "size": [
+                35,
+                35
+            ]
+        },
+        {
+            "name": "red_button_base",
+            "type": "control",
+            "coordinates": [
+                592,
+                240
+            ],
+            "size": [
+                40,
+                45
+            ]
+        },
+        {
+            "name": "purple_object",
+            "type": "box",
+            "coordinates": [
+                602,
+                226
+            ],
+            "size": [
+                45,
+                45
+            ]
+        },
+        {
+            "name": "cylindrical_cap",
+            "type": "container",
+            "coordinates": [
+                620,
+                190
+            ],
+            "size": [
+                30,
+                30
+            ]
+        },
+        {
+            "name": "gray_block",
+            "type": "block",
+            "coordinates": [
+                760,
+                420
+            ],
+            "size": [
+                55,
+                55
+            ]
+        },
+        {
+            "name": "white_block",
+            "type": "block",
+            "coordinates": [
+                835,
+                520
+            ],
+            "size": [
+                55,
+                55
+            ]
+        },
+        {
+            "name": "blue_package",
+            "type": "package",
+            "coordinates": [
+                720,
+                585
+            ],
+            "size": [
+                120,
+                80
+            ]
+        },
+        {
+            "name": "small_gray_cuboid",
+            "type": "container",
+            "coordinates": [
+                795,
+                470
+            ],
+            "size": [
+                45,
+                35
+            ]
+        },
+        {
+            "name": "paper_or_plastic_piece",
+            "type": "item",
+            "coordinates": [
+                740,
+                560
+            ],
+            "size": [
+                80,
+                60
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "table_area",
+            "type": "region",
+            "coordinates": [
+                637,
+                395
+            ],
+            "size": [
+                750,
+                520
+            ]
+        },
+        {
+            "name": "left_machine_area",
+            "type": "region",
+            "coordinates": [
+                180,
+                290
+            ],
+            "size": [
+                280,
+                420
+            ]
+        },
+        {
+            "name": "right_machine_area",
+            "type": "region",
+            "coordinates": [
+                1035,
+                310
+            ],
+            "size": [
+                250,
+                420
+            ]
+        },
+        {
+            "name": "upper_table_zone",
+            "type": "region",
+            "coordinates": [
+                650,
+                240
+            ],
+            "size": [
+                520,
+                220
+            ]
+        },
+        {
+            "name": "lower_table_zone",
+            "type": "region",
+            "coordinates": [
+                690,
+                540
+            ],
+            "size": [
+                520,
+                240
+            ]
+        }
+    ],
+    "relationships": [
+        {
+            "from": "red_top_button",
+            "relation": "sits_on",
+            "to": "red_button_base"
+        },
+        {
+            "from": "red_button_base",
+            "relation": "sits_on",
+            "to": "purple_object"
+        },
+        {
+            "from": "purple_object",
+            "relation": "sits_on",
+            "to": "toolbox_corner_bracket"
+        },
+        {
+            "from": "cylindrical_cap",
+            "relation": "on_top_of",
+            "to": "red_button_base"
+        },
+        {
+            "from": "toolbox_corner_bracket",
+            "relation": "located_in",
+            "to": "upper_table_zone"
+        },
+        {
+            "from": "red_top_button",
+            "relation": "located_in",
+            "to": "upper_table_zone"
+        },
+        {
+            "from": "red_button_base",
+            "relation": "located_in",
+            "to": "upper_table_zone"
+        },
+        {
+            "from": "purple_object",
+            "relation": "located_in",
+            "to": "upper_table_zone"
+        },
+        {
+            "from": "cylindrical_cap",
+            "relation": "located_in",
+            "to": "upper_table_zone"
+        },
+        {
+            "from": "gray_block",
+            "relation": "located_in",
+            "to": "lower_table_zone"
+        },
+        {
+            "from": "small_gray_cuboid",
+            "relation": "located_in",
+            "to": "lower_table_zone"
+        },
+        {
+            "from": "white_block",
+            "relation": "located_in",
+            "to": "lower_table_zone"
+        },
+        {
+            "from": "blue_package",
+            "relation": "located_in",
+            "to": "lower_table_zone"
+        },
+        {
+            "from": "paper_or_plastic_piece",
+            "relation": "located_in",
+            "to": "lower_table_zone"
+        },
+        {
+            "from": "table_area",
+            "relation": "contains",
+            "to": "gray_block"
+        },
+        {
+            "from": "table_area",
+            "relation": "contains",
+            "to": "white_block"
+        }
+    ],
+    "current_location": "table_area",
+    "plans": [
+        {
+            "plan_name": "organize_blocks_to_lower_zone",
+            "target_region": "lower_table_zone",
+            "actions": [
+                {
+                    "action": "move",
+                    "object": "gray_block",
+                    "to": "lower_table_zone"
+                },
+                {
+                    "action": "move",
+                    "object": "small_gray_cuboid",
+                    "to": "lower_table_zone"
+                },
+                {
+                    "action": "move",
+                    "object": "white_block",
+                    "to": "lower_table_zone"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,281 @@
+{
+    "objects": [
+        {
+            "name": "rolling_desk_edge",
+            "type": "object",
+            "bounding_box": {
+                "x": 0.03,
+                "y": 0.12,
+                "width": 0.12,
+                "height": 0.78
+            }
+        },
+        {
+            "name": "chair_or_frame_left",
+            "type": "object",
+            "bounding_box": {
+                "x": 0.08,
+                "y": 0.0,
+                "width": 0.18,
+                "height": 0.6
+            }
+        },
+        {
+            "name": "monitor_right",
+            "type": "object",
+            "bounding_box": {
+                "x": 0.62,
+                "y": 0.02,
+                "width": 0.35,
+                "height": 0.65
+            }
+        },
+        {
+            "name": "keyboard_top_right",
+            "type": "object",
+            "bounding_box": {
+                "x": 0.53,
+                "y": 0.0,
+                "width": 0.25,
+                "height": 0.18
+            }
+        },
+        {
+            "name": "wires_cable_bundle",
+            "type": "object",
+            "bounding_box": {
+                "x": 0.64,
+                "y": 0.0,
+                "width": 0.36,
+                "height": 0.75
+            }
+        },
+        {
+            "name": "plastic_bag_drum_or_case",
+            "type": "object",
+            "bounding_box": {
+                "x": 0.78,
+                "y": 0.35,
+                "width": 0.22,
+                "height": 0.3
+            }
+        },
+        {
+            "name": "small_block_yellow_green",
+            "type": "object",
+            "bounding_box": {
+                "x": 0.42,
+                "y": 0.02,
+                "width": 0.1,
+                "height": 0.08
+            }
+        },
+        {
+            "name": "box_stack_on_table",
+            "type": "object",
+            "bounding_box": {
+                "x": 0.36,
+                "y": 0.02,
+                "width": 0.15,
+                "height": 0.1
+            }
+        },
+        {
+            "name": "small_cube",
+            "type": "object",
+            "bounding_box": {
+                "x": 0.47,
+                "y": 0.24,
+                "width": 0.08,
+                "height": 0.08
+            }
+        },
+        {
+            "name": "table_leg_or_support",
+            "type": "object",
+            "bounding_box": {
+                "x": 0.07,
+                "y": 0.2,
+                "width": 0.05,
+                "height": 0.6
+            }
+        }
+    ],
+    "regions": [
+        {
+            "name": "ground_1",
+            "type": "region",
+            "polygon": [
+                {
+                    "x": 0.0,
+                    "y": 0.18
+                },
+                {
+                    "x": 1.0,
+                    "y": 0.18
+                },
+                {
+                    "x": 1.0,
+                    "y": 1.0
+                },
+                {
+                    "x": 0.0,
+                    "y": 1.0
+                }
+            ]
+        },
+        {
+            "name": "blue_sheet_region",
+            "type": "region",
+            "polygon": [
+                {
+                    "x": 0.08,
+                    "y": 0.2
+                },
+                {
+                    "x": 0.95,
+                    "y": 0.2
+                },
+                {
+                    "x": 0.95,
+                    "y": 0.6
+                },
+                {
+                    "x": 0.08,
+                    "y": 0.6
+                }
+            ]
+        },
+        {
+            "name": "wood_floor_left",
+            "type": "region",
+            "polygon": [
+                {
+                    "x": 0.0,
+                    "y": 0.6
+                },
+                {
+                    "x": 0.2,
+                    "y": 0.6
+                },
+                {
+                    "x": 0.2,
+                    "y": 1.0
+                },
+                {
+                    "x": 0.0,
+                    "y": 1.0
+                }
+            ]
+        },
+        {
+            "name": "dark_surface_right",
+            "type": "region",
+            "polygon": [
+                {
+                    "x": 0.55,
+                    "y": 0.6
+                },
+                {
+                    "x": 1.0,
+                    "y": 0.6
+                },
+                {
+                    "x": 1.0,
+                    "y": 1.0
+                },
+                {
+                    "x": 0.55,
+                    "y": 1.0
+                }
+            ]
+        }
+    ],
+    "semantic_relationships": [
+        {
+            "subject": "blue_sheet_region",
+            "relation": "covers",
+            "object": "ground_1"
+        },
+        {
+            "subject": "small_cube",
+            "relation": "lies_on",
+            "object": "blue_sheet_region"
+        },
+        {
+            "subject": "wires_cable_bundle",
+            "relation": "runs_over",
+            "object": "blue_sheet_region"
+        },
+        {
+            "subject": "keyboard_top_right",
+            "relation": "is_on_top_of",
+            "object": "ground_1"
+        },
+        {
+            "subject": "monitor_right",
+            "relation": "is_above",
+            "object": "ground_1"
+        },
+        {
+            "subject": "plastic_bag_drum_or_case",
+            "relation": "is_above",
+            "object": "dark_surface_right"
+        },
+        {
+            "subject": "wood_floor_left",
+            "relation": "adjacent_to",
+            "object": "ground_1"
+        },
+        {
+            "subject": "dark_surface_right",
+            "relation": "adjacent_to",
+            "object": "ground_1"
+        },
+        {
+            "subject": "small_block_yellow_green",
+            "relation": "lies_on",
+            "object": "ground_1"
+        },
+        {
+            "subject": "box_stack_on_table",
+            "relation": "is_near",
+            "object": "small_block_yellow_green"
+        },
+        {
+            "subject": "table_leg_or_support",
+            "relation": "supports",
+            "object": "ground_1"
+        },
+        {
+            "subject": "chair_or_frame_left",
+            "relation": "is_near",
+            "object": "wood_floor_left"
+        }
+    ],
+    "current_location": {
+        "name": "blue_sheet_region",
+        "coord": {
+            "x": 0.52,
+            "y": 0.4
+        }
+    },
+    "plans": [
+        {
+            "plan_name": "inspect_sheet_area",
+            "target_region": "blue_sheet_region",
+            "target_coord": {
+                "x": 0.52,
+                "y": 0.4
+            }
+        },
+        {
+            "plan_name": "locate_cube",
+            "target_object": "small_cube",
+            "target_coord": {
+                "x": 0.51,
+                "y": 0.28
+            }
+        }
+    ]
+}

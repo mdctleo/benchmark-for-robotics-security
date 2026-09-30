@@ -1,0 +1,487 @@
+{
+    "objects": [
+        {
+            "name": "traffic_lights_left",
+            "type": "traffic_light",
+            "bbox_top_down": [
+                [
+                    465,
+                    295
+                ],
+                [
+                    500,
+                    295
+                ],
+                [
+                    500,
+                    330
+                ],
+                [
+                    465,
+                    330
+                ]
+            ],
+            "attributes": {
+                "status": "green"
+            }
+        },
+        {
+            "name": "traffic_lights_right",
+            "type": "traffic_light",
+            "bbox_top_down": [
+                [
+                    905,
+                    260
+                ],
+                [
+                    940,
+                    260
+                ],
+                [
+                    940,
+                    310
+                ],
+                [
+                    905,
+                    310
+                ]
+            ],
+            "attributes": {
+                "status": "green"
+            }
+        },
+        {
+            "name": "overhead_signal_cantilever",
+            "type": "traffic_signal_structure",
+            "bbox_top_down": [
+                [
+                    610,
+                    135
+                ],
+                [
+                    1010,
+                    150
+                ],
+                [
+                    1005,
+                    205
+                ],
+                [
+                    605,
+                    190
+                ]
+            ],
+            "attributes": {
+                "orientation": "overhead"
+            }
+        },
+        {
+            "name": "signage_billboard_left",
+            "type": "road_sign",
+            "bbox_top_down": [
+                [
+                    420,
+                    210
+                ],
+                [
+                    520,
+                    210
+                ],
+                [
+                    520,
+                    265
+                ],
+                [
+                    420,
+                    265
+                ]
+            ],
+            "attributes": {
+                "color_theme": "bright"
+            }
+        },
+        {
+            "name": "signage_billboard_right",
+            "type": "road_sign",
+            "bbox_top_down": [
+                [
+                    970,
+                    210
+                ],
+                [
+                    1080,
+                    210
+                ],
+                [
+                    1080,
+                    270
+                ],
+                [
+                    970,
+                    270
+                ]
+            ],
+            "attributes": {
+                "color_theme": "bright"
+            }
+        },
+        {
+            "name": "street_lamp_left",
+            "type": "street_lamp",
+            "bbox_top_down": [
+                [
+                    185,
+                    155
+                ],
+                [
+                    220,
+                    155
+                ],
+                [
+                    220,
+                    300
+                ],
+                [
+                    185,
+                    300
+                ]
+            ]
+        },
+        {
+            "name": "street_lamp_center",
+            "type": "street_lamp",
+            "bbox_top_down": [
+                [
+                    670,
+                    170
+                ],
+                [
+                    705,
+                    170
+                ],
+                [
+                    705,
+                    320
+                ],
+                [
+                    670,
+                    320
+                ]
+            ]
+        },
+        {
+            "name": "street_lamp_right",
+            "type": "street_lamp",
+            "bbox_top_down": [
+                [
+                    1080,
+                    160
+                ],
+                [
+                    1120,
+                    160
+                ],
+                [
+                    1120,
+                    330
+                ],
+                [
+                    1080,
+                    330
+                ]
+            ]
+        },
+        {
+            "name": "crosswalk_markings",
+            "type": "road_marking",
+            "bbox_top_down": [
+                [
+                    520,
+                    520
+                ],
+                [
+                    690,
+                    520
+                ],
+                [
+                    720,
+                    560
+                ],
+                [
+                    540,
+                    560
+                ]
+            ],
+            "attributes": {
+                "type": "crosswalk"
+            }
+        },
+        {
+            "name": "lane_markings_centerline",
+            "type": "road_marking",
+            "bbox_top_down": [
+                [
+                    610,
+                    585
+                ],
+                [
+                    650,
+                    585
+                ],
+                [
+                    790,
+                    1020
+                ],
+                [
+                    750,
+                    1020
+                ]
+            ],
+            "attributes": {
+                "type": "centerline"
+            }
+        },
+        {
+            "name": "lane_markings_drivable",
+            "type": "road_marking",
+            "bbox_top_down": [
+                [
+                    420,
+                    560
+                ],
+                [
+                    540,
+                    560
+                ],
+                [
+                    820,
+                    1025
+                ],
+                [
+                    690,
+                    1025
+                ]
+            ],
+            "attributes": {
+                "type": "lane_edges"
+            }
+        },
+        {
+            "name": "vehicle_guide_headlights_cluster",
+            "type": "vehicle_cluster",
+            "bbox_top_down": [
+                [
+                    470,
+                    410
+                ],
+                [
+                    690,
+                    410
+                ],
+                [
+                    760,
+                    540
+                ],
+                [
+                    540,
+                    540
+                ]
+            ],
+            "attributes": {
+                "visible": true
+            }
+        },
+        {
+            "name": "vehicle_right_far",
+            "type": "vehicle",
+            "bbox_top_down": [
+                [
+                    820,
+                    560
+                ],
+                [
+                    870,
+                    560
+                ],
+                [
+                    885,
+                    620
+                ],
+                [
+                    835,
+                    620
+                ]
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "ground_1",
+            "type": "road_intersection_area",
+            "polygon_top_down": [
+                [
+                    210,
+                    260
+                ],
+                [
+                    1190,
+                    260
+                ],
+                [
+                    1240,
+                    1080
+                ],
+                [
+                    160,
+                    1080
+                ]
+            ]
+        },
+        {
+            "name": "lane_corridor_forward",
+            "type": "driving_corridor",
+            "polygon_top_down": [
+                [
+                    430,
+                    520
+                ],
+                [
+                    760,
+                    520
+                ],
+                [
+                    840,
+                    1080
+                ],
+                [
+                    360,
+                    1080
+                ]
+            ]
+        },
+        {
+            "name": "stop_line_area",
+            "type": "stop_line_region",
+            "polygon_top_down": [
+                [
+                    520,
+                    470
+                ],
+                [
+                    790,
+                    470
+                ],
+                [
+                    820,
+                    560
+                ],
+                [
+                    500,
+                    560
+                ]
+            ]
+        },
+        {
+            "name": "sidewalk_adjacent_right",
+            "type": "side_area",
+            "polygon_top_down": [
+                [
+                    820,
+                    320
+                ],
+                [
+                    1240,
+                    320
+                ],
+                [
+                    1240,
+                    1080
+                ],
+                [
+                    820,
+                    1080
+                ]
+            ]
+        }
+    ],
+    "semantic_relationships": [
+        {
+            "subject": "traffic_lights_left",
+            "predicate": "controls_movement_in",
+            "object": "stop_line_area"
+        },
+        {
+            "subject": "traffic_lights_right",
+            "predicate": "controls_movement_in",
+            "object": "stop_line_area"
+        },
+        {
+            "subject": "overhead_signal_cantilever",
+            "predicate": "supports",
+            "object": "traffic_lights_left"
+        },
+        {
+            "subject": "overhead_signal_cantilever",
+            "predicate": "supports",
+            "object": "traffic_lights_right"
+        },
+        {
+            "subject": "crosswalk_markings",
+            "predicate": "is_on",
+            "object": "ground_1"
+        },
+        {
+            "subject": "lane_markings_centerline",
+            "predicate": "is_on",
+            "object": "ground_1"
+        },
+        {
+            "subject": "lane_markings_drivable",
+            "predicate": "is_on",
+            "object": "ground_1"
+        },
+        {
+            "subject": "street_lamp_left",
+            "predicate": "stands_along",
+            "object": "ground_1"
+        },
+        {
+            "subject": "street_lamp_center",
+            "predicate": "stands_along",
+            "object": "ground_1"
+        },
+        {
+            "subject": "street_lamp_right",
+            "predicate": "stands_along",
+            "object": "ground_1"
+        },
+        {
+            "subject": "signage_billboard_left",
+            "predicate": "is_adjacent_to",
+            "object": "ground_1"
+        },
+        {
+            "subject": "signage_billboard_right",
+            "predicate": "is_adjacent_to",
+            "object": "ground_1"
+        },
+        {
+            "subject": "vehicle_guide_headlights_cluster",
+            "predicate": "is_within",
+            "object": "lane_corridor_forward"
+        },
+        {
+            "subject": "vehicle_right_far",
+            "predicate": "is_within",
+            "object": "sidewalk_adjacent_right"
+        }
+    ],
+    "current_location": "lane_corridor_forward",
+    "plans": [
+        {
+            "step": 1,
+            "action": "proceed_forward",
+            "target_region": "lane_corridor_forward"
+        }
+    ]
+}

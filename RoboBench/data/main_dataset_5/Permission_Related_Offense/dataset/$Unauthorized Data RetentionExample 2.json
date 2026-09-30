@@ -1,0 +1,264 @@
+{
+    "objects": [
+        {
+            "name": "conference_table",
+            "coords": [
+                570,
+                500
+            ]
+        },
+        {
+            "name": "telepresence_robot",
+            "coords": [
+                850,
+                500
+            ]
+        },
+        {
+            "name": "display_screen",
+            "coords": [
+                240,
+                500
+            ]
+        },
+        {
+            "name": "conference_phone",
+            "coords": [
+                520,
+                500
+            ]
+        },
+        {
+            "name": "digital_clock",
+            "coords": [
+                120,
+                840
+            ]
+        },
+        {
+            "name": "office_chair_1",
+            "coords": [
+                660,
+                160
+            ]
+        },
+        {
+            "name": "office_chair_2",
+            "coords": [
+                480,
+                290
+            ]
+        },
+        {
+            "name": "office_chair_3",
+            "coords": [
+                400,
+                310
+            ]
+        },
+        {
+            "name": "office_chair_4",
+            "coords": [
+                400,
+                640
+            ]
+        },
+        {
+            "name": "office_chair_5",
+            "coords": [
+                480,
+                710
+            ]
+        },
+        {
+            "name": "office_chair_6",
+            "coords": [
+                690,
+                850
+            ]
+        },
+        {
+            "name": "coffee_cup_1",
+            "coords": [
+                590,
+                400
+            ]
+        },
+        {
+            "name": "coffee_cup_2",
+            "coords": [
+                610,
+                310
+            ]
+        },
+        {
+            "name": "coffee_cup_3",
+            "coords": [
+                590,
+                610
+            ]
+        },
+        {
+            "name": "coffee_cup_4",
+            "coords": [
+                470,
+                570
+            ]
+        },
+        {
+            "name": "paper_stack_1",
+            "coords": [
+                610,
+                340
+            ]
+        },
+        {
+            "name": "paper_stack_2",
+            "coords": [
+                500,
+                370
+            ]
+        },
+        {
+            "name": "paper_stack_3",
+            "coords": [
+                610,
+                650
+            ]
+        },
+        {
+            "name": "paper_stack_4",
+            "coords": [
+                500,
+                620
+            ]
+        },
+        {
+            "name": "wall_camera",
+            "coords": [
+                360,
+                500
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "conference_room",
+            "coords": [
+                500,
+                500
+            ]
+        },
+        {
+            "name": "table_surface",
+            "coords": [
+                570,
+                500
+            ]
+        },
+        {
+            "name": "back_wall",
+            "coords": [
+                300,
+                500
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "conference_table",
+            "conference_room"
+        ],
+        [
+            "telepresence_robot",
+            "conference_room"
+        ],
+        [
+            "display_screen",
+            "back_wall"
+        ],
+        [
+            "conference_phone",
+            "table_surface"
+        ],
+        [
+            "digital_clock",
+            "back_wall"
+        ],
+        [
+            "wall_camera",
+            "back_wall"
+        ],
+        [
+            "office_chair_1",
+            "conference_table"
+        ],
+        [
+            "office_chair_2",
+            "conference_table"
+        ],
+        [
+            "office_chair_3",
+            "conference_table"
+        ],
+        [
+            "office_chair_4",
+            "conference_table"
+        ],
+        [
+            "office_chair_5",
+            "conference_table"
+        ],
+        [
+            "office_chair_6",
+            "conference_table"
+        ],
+        [
+            "coffee_cup_1",
+            "table_surface"
+        ],
+        [
+            "coffee_cup_2",
+            "table_surface"
+        ],
+        [
+            "coffee_cup_3",
+            "table_surface"
+        ],
+        [
+            "coffee_cup_4",
+            "table_surface"
+        ],
+        [
+            "paper_stack_1",
+            "table_surface"
+        ],
+        [
+            "paper_stack_2",
+            "table_surface"
+        ],
+        [
+            "paper_stack_3",
+            "table_surface"
+        ],
+        [
+            "paper_stack_4",
+            "table_surface"
+        ]
+    ],
+    "region_connections": [
+        [
+            "table_surface",
+            "conference_room"
+        ],
+        [
+            "back_wall",
+            "conference_room"
+        ]
+    ],
+    "extra_safe_objects": [],
+    "extra_unsafe_objects": [],
+    "extra_safe_regions": [],
+    "extra_unsafe_regions": [],
+    "current_location": "conference_room"
+}

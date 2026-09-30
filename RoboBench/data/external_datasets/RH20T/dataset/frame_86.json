@@ -1,0 +1,344 @@
+{
+    "objects": [
+        {
+            "name": "wood_table",
+            "type": "surface",
+            "bbox": [
+                160,
+                40,
+                430,
+                260
+            ],
+            "center": [
+                295,
+                150
+            ]
+        },
+        {
+            "name": "robot_arm",
+            "type": "robot",
+            "bbox": [
+                340,
+                0,
+                640,
+                180
+            ],
+            "center": [
+                490,
+                90
+            ]
+        },
+        {
+            "name": "power_tool",
+            "type": "device",
+            "bbox": [
+                390,
+                45,
+                560,
+                165
+            ],
+            "center": [
+                475,
+                105
+            ]
+        },
+        {
+            "name": "sensor_camera",
+            "type": "sensor",
+            "bbox": [
+                500,
+                20,
+                610,
+                80
+            ],
+            "center": [
+                555,
+                50
+            ]
+        },
+        {
+            "name": "base_plate_1",
+            "type": "plate",
+            "bbox": [
+                405,
+                120,
+                530,
+                170
+            ],
+            "center": [
+                468,
+                145
+            ]
+        },
+        {
+            "name": "base_plate_2",
+            "type": "plate",
+            "bbox": [
+                310,
+                105,
+                410,
+                170
+            ],
+            "center": [
+                360,
+                137
+            ]
+        },
+        {
+            "name": "red_button_1",
+            "type": "button",
+            "bbox": [
+                95,
+                70,
+                165,
+                130
+            ],
+            "center": [
+                130,
+                100
+            ]
+        },
+        {
+            "name": "yellow_block",
+            "type": "block",
+            "bbox": [
+                125,
+                95,
+                200,
+                175
+            ],
+            "center": [
+                162,
+                135
+            ]
+        },
+        {
+            "name": "rect_charger_1",
+            "type": "electronics",
+            "bbox": [
+                255,
+                95,
+                395,
+                205
+            ],
+            "center": [
+                325,
+                150
+            ]
+        },
+        {
+            "name": "cable_bundle",
+            "type": "cable",
+            "bbox": [
+                410,
+                0,
+                640,
+                110
+            ],
+            "center": [
+                525,
+                55
+            ]
+        },
+        {
+            "name": "microcontroller_board",
+            "type": "board",
+            "bbox": [
+                285,
+                115,
+                385,
+                185
+            ],
+            "center": [
+                335,
+                150
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "current_location",
+            "type": "workspace_area",
+            "polygon": [
+                [
+                    155,
+                    45
+                ],
+                [
+                    430,
+                    45
+                ],
+                [
+                    475,
+                    255
+                ],
+                [
+                    115,
+                    255
+                ]
+            ],
+            "center": [
+                295,
+                150
+            ]
+        },
+        {
+            "name": "robot_reach_zone",
+            "type": "workspace_zone",
+            "polygon": [
+                [
+                    330,
+                    40
+                ],
+                [
+                    520,
+                    40
+                ],
+                [
+                    585,
+                    210
+                ],
+                [
+                    360,
+                    210
+                ]
+            ],
+            "center": [
+                455,
+                125
+            ]
+        },
+        {
+            "name": "left_side_zone",
+            "type": "workspace_zone",
+            "polygon": [
+                [
+                    145,
+                    70
+                ],
+                [
+                    270,
+                    70
+                ],
+                [
+                    270,
+                    220
+                ],
+                [
+                    145,
+                    220
+                ]
+            ],
+            "center": [
+                207,
+                145
+            ]
+        },
+        {
+            "name": "center_zone",
+            "type": "workspace_zone",
+            "polygon": [
+                [
+                    255,
+                    80
+                ],
+                [
+                    360,
+                    80
+                ],
+                [
+                    420,
+                    220
+                ],
+                [
+                    255,
+                    220
+                ]
+            ],
+            "center": [
+                332,
+                150
+            ]
+        }
+    ],
+    "semantic_relationships": [
+        {
+            "subject": "wood_table",
+            "relation": "supports",
+            "object": "current_location"
+        },
+        {
+            "subject": "robot_arm",
+            "relation": "operates_within",
+            "object": "robot_reach_zone"
+        },
+        {
+            "subject": "yellow_block",
+            "relation": "located_in",
+            "object": "left_side_zone"
+        },
+        {
+            "subject": "red_button_1",
+            "relation": "on",
+            "object": "yellow_block"
+        },
+        {
+            "subject": "rect_charger_1",
+            "relation": "located_in",
+            "object": "center_zone"
+        },
+        {
+            "subject": "microcontroller_board",
+            "relation": "part_of",
+            "object": "rect_charger_1"
+        },
+        {
+            "subject": "power_tool",
+            "relation": "attached_to",
+            "object": "robot_arm"
+        },
+        {
+            "subject": "sensor_camera",
+            "relation": "mounted_on",
+            "object": "robot_arm"
+        },
+        {
+            "subject": "cable_bundle",
+            "relation": "connects_to",
+            "object": "power_tool"
+        },
+        {
+            "subject": "cable_bundle",
+            "relation": "connects_to",
+            "object": "sensor_camera"
+        },
+        {
+            "subject": "base_plate_1",
+            "relation": "placed_on",
+            "object": "wood_table"
+        },
+        {
+            "subject": "base_plate_2",
+            "relation": "placed_on",
+            "object": "wood_table"
+        }
+    ],
+    "state": {
+        "current_location": "current_location",
+        "plans": [
+            {
+                "plan_name": "position_and_process",
+                "actions": [
+                    {
+                        "action": "work_in_zone",
+                        "target_region": "robot_reach_zone"
+                    },
+                    {
+                        "action": "interact_with",
+                        "target_object": "rect_charger_1"
+                    }
+                ]
+            }
+        ]
+    }
+}

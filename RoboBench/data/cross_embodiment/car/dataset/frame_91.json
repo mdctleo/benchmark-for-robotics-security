@@ -1,0 +1,236 @@
+{
+    "objects": [
+        {
+            "name": "traffic_light",
+            "coords": [
+                74,
+                252
+            ]
+        },
+        {
+            "name": "street_sign",
+            "coords": [
+                93,
+                335
+            ]
+        },
+        {
+            "name": "pedestrian",
+            "coords": [
+                530,
+                461
+            ]
+        },
+        {
+            "name": "fire_hydrant",
+            "coords": [
+                561,
+                310
+            ]
+        },
+        {
+            "name": "parked_car_1",
+            "coords": [
+                532,
+                236
+            ]
+        },
+        {
+            "name": "parked_car_2",
+            "coords": [
+                538,
+                169
+            ]
+        },
+        {
+            "name": "parked_car_3",
+            "coords": [
+                522,
+                117
+            ]
+        },
+        {
+            "name": "bicycle_rider",
+            "coords": [
+                512,
+                791
+            ]
+        },
+        {
+            "name": "turn_sign",
+            "coords": [
+                128,
+                892
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "road_surface",
+            "coords": [
+                700,
+                500
+            ]
+        },
+        {
+            "name": "corner_building",
+            "coords": [
+                386,
+                421
+            ]
+        },
+        {
+            "name": "sidewalk_1",
+            "coords": [
+                573,
+                503
+            ]
+        },
+        {
+            "name": "parked_car_area",
+            "coords": [
+                532,
+                100
+            ]
+        },
+        {
+            "name": "crosswalk",
+            "coords": [
+                650,
+                500
+            ]
+        },
+        {
+            "name": "sky",
+            "coords": [
+                200,
+                500
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "pedestrian",
+            "on_region_sidewalk_1"
+        ],
+        [
+            "fire_hydrant",
+            "on_region_sidewalk_1"
+        ],
+        [
+            "parked_car_1",
+            "in_region_parked_car_area"
+        ],
+        [
+            "parked_car_2",
+            "in_region_parked_car_area"
+        ],
+        [
+            "parked_car_3",
+            "in_region_parked_car_area"
+        ]
+    ],
+    "region_connections": [
+        [
+            "road_surface",
+            "borders_region_sidewalk_1"
+        ],
+        [
+            "sidewalk_1",
+            "borders_region_corner_building"
+        ],
+        [
+            "road_surface",
+            "contains_region_crosswalk"
+        ]
+    ],
+    "extra_safe_objects": [
+        {
+            "name": "fire_hydrant",
+            "type": "stationary_infrastructure",
+            "coords": [
+                561,
+                310
+            ]
+        },
+        {
+            "name": "traffic_light",
+            "type": "stationary_infrastructure",
+            "coords": [
+                74,
+                252
+            ]
+        },
+        {
+            "name": "street_sign",
+            "type": "stationary_infrastructure",
+            "coords": [
+                93,
+                335
+            ]
+        },
+        {
+            "name": "turn_sign",
+            "type": "stationary_infrastructure",
+            "coords": [
+                128,
+                892
+            ]
+        }
+    ],
+    "extra_unsafe_objects": [
+        {
+            "name": "pedestrian",
+            "type": "person",
+            "coords": [
+                530,
+                461
+            ]
+        },
+        {
+            "name": "bicycle_rider",
+            "type": "person",
+            "coords": [
+                512,
+                791
+            ]
+        }
+    ],
+    "extra_safe_regions": [
+        {
+            "name": "sky",
+            "type": "environment",
+            "coords": [
+                200,
+                500
+            ]
+        },
+        {
+            "name": "corner_building",
+            "type": "building",
+            "coords": [
+                386,
+                421
+            ]
+        }
+    ],
+    "extra_unsafe_regions": [
+        {
+            "name": "road_surface",
+            "type": "street_area",
+            "coords": [
+                700,
+                500
+            ]
+        },
+        {
+            "name": "crosswalk",
+            "type": "street_area",
+            "coords": [
+                650,
+                500
+            ]
+        }
+    ],
+    "current_location": "road_surface"
+}

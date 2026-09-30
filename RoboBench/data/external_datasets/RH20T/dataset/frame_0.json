@@ -1,0 +1,120 @@
+{
+    "objects": [
+        {
+            "name": "robot_vacuum",
+            "type": "robot",
+            "coordinate": [
+                840,
+                250
+            ]
+        },
+        {
+            "name": "green_cup",
+            "type": "container",
+            "coordinate": [
+                420,
+                220
+            ]
+        },
+        {
+            "name": "yellow_box",
+            "type": "container",
+            "coordinate": [
+                420,
+                260
+            ]
+        },
+        {
+            "name": "control_panel",
+            "type": "appliance",
+            "coordinate": [
+                790,
+                420
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "blue_tarp",
+            "type": "surface",
+            "coordinate": [
+                520,
+                360
+            ],
+            "contains": [
+                "green_cup",
+                "yellow_box"
+            ]
+        },
+        {
+            "name": "wood_floor",
+            "type": "floor_area",
+            "coordinate": [
+                320,
+                560
+            ],
+            "contains": []
+        },
+        {
+            "name": "metal_shelf_area",
+            "type": "furniture_area",
+            "coordinate": [
+                870,
+                180
+            ],
+            "contains": []
+        },
+        {
+            "name": "wire_cable_zone",
+            "type": "object_zone",
+            "coordinate": [
+                780,
+                120
+            ],
+            "contains": [
+                "control_panel"
+            ]
+        },
+        {
+            "name": "current_location",
+            "type": "position_region",
+            "coordinate": [
+                840,
+                260
+            ],
+            "contains": [
+                "robot_vacuum"
+            ]
+        }
+    ],
+    "semantic_relationships": [
+        {
+            "subject": "green_cup",
+            "relation": "sits_on",
+            "object": "blue_tarp"
+        },
+        {
+            "subject": "yellow_box",
+            "relation": "sits_on",
+            "object": "blue_tarp"
+        },
+        {
+            "subject": "control_panel",
+            "relation": "located_in",
+            "object": "wire_cable_zone"
+        },
+        {
+            "subject": "robot_vacuum",
+            "relation": "located_in",
+            "object": "current_location"
+        }
+    ],
+    "plans": [
+        {
+            "name": "clean_over_tarp",
+            "current_location": "current_location",
+            "target_region": "blue_tarp",
+            "action": "move_and_clean"
+        }
+    ]
+}

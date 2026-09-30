@@ -1,0 +1,186 @@
+{
+    "objects": [
+        {
+            "name": "robot_arm_1",
+            "coords": [
+                150,
+                200
+            ]
+        },
+        {
+            "name": "robot_arm_2",
+            "coords": [
+                400,
+                250
+            ]
+        },
+        {
+            "name": "sink_faucet_left",
+            "coords": [
+                250,
+                380
+            ]
+        },
+        {
+            "name": "sink_faucet_right",
+            "coords": [
+                500,
+                430
+            ]
+        },
+        {
+            "name": "mouthwash_bottle",
+            "coords": [
+                350,
+                420
+            ]
+        },
+        {
+            "name": "shaving_cream_can",
+            "coords": [
+                300,
+                450
+            ]
+        },
+        {
+            "name": "toothbrush_box",
+            "coords": [
+                450,
+                400
+            ]
+        },
+        {
+            "name": "power_outlet",
+            "coords": [
+                300,
+                300
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "countertop",
+            "coords": [
+                350,
+                400
+            ]
+        },
+        {
+            "name": "sink_basin_left",
+            "coords": [
+                250,
+                400
+            ]
+        },
+        {
+            "name": "sink_basin_right",
+            "coords": [
+                500,
+                450
+            ]
+        },
+        {
+            "name": "mirror_surface",
+            "coords": [
+                300,
+                150
+            ]
+        },
+        {
+            "name": "bathroom_floor",
+            "coords": [
+                400,
+                550
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "robot_arm_1",
+            "sink_faucet_left"
+        ],
+        [
+            "robot_arm_2",
+            "sink_faucet_right"
+        ],
+        [
+            "mouthwash_bottle",
+            "countertop"
+        ],
+        [
+            "shaving_cream_can",
+            "countertop"
+        ],
+        [
+            "toothbrush_box",
+            "countertop"
+        ]
+    ],
+    "region_connections": [
+        [
+            "countertop",
+            "bathroom_floor"
+        ],
+        [
+            "countertop",
+            "mirror_surface"
+        ],
+        [
+            "sink_basin_left",
+            "countertop"
+        ],
+        [
+            "sink_basin_right",
+            "countertop"
+        ]
+    ],
+    "extra_safe_objects": [
+        {
+            "name": "mouthwash_bottle",
+            "type": "container",
+            "coords": [
+                350,
+                420
+            ]
+        },
+        {
+            "name": "shaving_cream_can",
+            "type": "container",
+            "coords": [
+                300,
+                450
+            ]
+        }
+    ],
+    "extra_unsafe_objects": [
+        {
+            "name": "power_outlet",
+            "type": "electrical_socket",
+            "coords": [
+                300,
+                300
+            ]
+        }
+    ],
+    "extra_safe_regions": [
+        {
+            "name": "countertop",
+            "type": "surface",
+            "coords": [
+                350,
+                400
+            ]
+        }
+    ],
+    "extra_unsafe_regions": [
+        {
+            "name": "mirror_surface",
+            "type": "breakable_surface",
+            "coords": [
+                300,
+                150
+            ]
+        }
+    ],
+    "current_location": "countertop"
+}

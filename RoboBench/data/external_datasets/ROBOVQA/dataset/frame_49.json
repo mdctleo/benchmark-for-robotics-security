@@ -1,0 +1,294 @@
+{
+    "objects": [
+        {
+            "name": "can_row_left",
+            "type": "object",
+            "kind": "drink_cans",
+            "position": [
+                120,
+                165
+            ]
+        },
+        {
+            "name": "can_row_right",
+            "type": "object",
+            "kind": "drink_cans",
+            "position": [
+                280,
+                165
+            ]
+        },
+        {
+            "name": "stack_cups",
+            "type": "object",
+            "kind": "cups",
+            "position": [
+                220,
+                105
+            ]
+        },
+        {
+            "name": "banana_holder_bowl",
+            "type": "object",
+            "kind": "bowl",
+            "position": [
+                215,
+                75
+            ]
+        },
+        {
+            "name": "banana",
+            "type": "object",
+            "kind": "fruit",
+            "position": [
+                215,
+                55
+            ]
+        },
+        {
+            "name": "cups_stack_front",
+            "type": "object",
+            "kind": "cups",
+            "position": [
+                300,
+                85
+            ]
+        },
+        {
+            "name": "coffee_pump_bottle",
+            "type": "object",
+            "kind": "syrup_bottle",
+            "position": [
+                355,
+                120
+            ]
+        },
+        {
+            "name": "spray_cans_multipack",
+            "type": "object",
+            "kind": "spray_cans",
+            "position": [
+                420,
+                115
+            ]
+        },
+        {
+            "name": "board_segment_left",
+            "type": "object",
+            "kind": "sign_or_panel",
+            "position": [
+                75,
+                165
+            ]
+        },
+        {
+            "name": "mounting_block_black",
+            "type": "object",
+            "kind": "attachment",
+            "position": [
+                200,
+                190
+            ]
+        },
+        {
+            "name": "monitor_or_frame_left",
+            "type": "object",
+            "kind": "electronic_or_frame",
+            "position": [
+                60,
+                45
+            ]
+        },
+        {
+            "name": "paper_towel_box",
+            "type": "object",
+            "kind": "box",
+            "position": [
+                330,
+                40
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "counter_top",
+            "type": "region",
+            "polygon": [
+                [
+                    10,
+                    0
+                ],
+                [
+                    500,
+                    0
+                ],
+                [
+                    500,
+                    260
+                ],
+                [
+                    10,
+                    260
+                ]
+            ]
+        },
+        {
+            "name": "counter_front_drawer_area",
+            "type": "region",
+            "polygon": [
+                [
+                    0,
+                    210
+                ],
+                [
+                    500,
+                    260
+                ],
+                [
+                    500,
+                    320
+                ],
+                [
+                    0,
+                    320
+                ]
+            ]
+        },
+        {
+            "name": "left_side_of_counter",
+            "type": "region",
+            "polygon": [
+                [
+                    0,
+                    0
+                ],
+                [
+                    220,
+                    260
+                ],
+                [
+                    220,
+                    260
+                ],
+                [
+                    0,
+                    0
+                ]
+            ]
+        },
+        {
+            "name": "right_side_of_counter",
+            "type": "region",
+            "polygon": [
+                [
+                    220,
+                    0
+                ],
+                [
+                    500,
+                    0
+                ],
+                [
+                    500,
+                    260
+                ],
+                [
+                    220,
+                    260
+                ]
+            ]
+        }
+    ],
+    "semantic_relationships": [
+        {
+            "subject": "can_row_left",
+            "predicate": "is_on",
+            "object": "counter_top"
+        },
+        {
+            "subject": "can_row_right",
+            "predicate": "is_on",
+            "object": "counter_top"
+        },
+        {
+            "subject": "stack_cups",
+            "predicate": "is_on",
+            "object": "counter_top"
+        },
+        {
+            "subject": "banana_holder_bowl",
+            "predicate": "is_on",
+            "object": "counter_top"
+        },
+        {
+            "subject": "banana",
+            "predicate": "is_in",
+            "object": "banana_holder_bowl"
+        },
+        {
+            "subject": "cups_stack_front",
+            "predicate": "is_on",
+            "object": "counter_top"
+        },
+        {
+            "subject": "coffee_pump_bottle",
+            "predicate": "is_on",
+            "object": "counter_top"
+        },
+        {
+            "subject": "spray_cans_multipack",
+            "predicate": "is_on",
+            "object": "counter_top"
+        },
+        {
+            "subject": "board_segment_left",
+            "predicate": "is_on",
+            "object": "counter_top"
+        },
+        {
+            "subject": "mounting_block_black",
+            "predicate": "is_on",
+            "object": "counter_top"
+        },
+        {
+            "subject": "monitor_or_frame_left",
+            "predicate": "is_on",
+            "object": "counter_top"
+        },
+        {
+            "subject": "paper_towel_box",
+            "predicate": "is_on",
+            "object": "counter_top"
+        },
+        {
+            "subject": "can_row_left",
+            "predicate": "is_in_region",
+            "object": "left_side_of_counter"
+        },
+        {
+            "subject": "banana_holder_bowl",
+            "predicate": "is_in_region",
+            "object": "left_side_of_counter"
+        },
+        {
+            "subject": "stack_cups",
+            "predicate": "is_in_region",
+            "object": "left_side_of_counter"
+        },
+        {
+            "subject": "coffee_pump_bottle",
+            "predicate": "is_in_region",
+            "object": "right_side_of_counter"
+        },
+        {
+            "subject": "spray_cans_multipack",
+            "predicate": "is_in_region",
+            "object": "right_side_of_counter"
+        }
+    ],
+    "current_location": {
+        "entity": "spray_cans_multipack",
+        "region": "right_side_of_counter"
+    },
+    "plans": []
+}

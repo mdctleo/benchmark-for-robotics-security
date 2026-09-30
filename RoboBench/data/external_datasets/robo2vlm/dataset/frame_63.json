@@ -1,0 +1,64 @@
+{
+    "objects": [
+        {
+            "name": "robot_arm",
+            "coords": [
+                450,
+                700
+            ]
+        },
+        {
+            "name": "pouch",
+            "coords": [
+                650,
+                280
+            ]
+        },
+        {
+            "name": "orange_object",
+            "coords": [
+                500,
+                550
+            ]
+        },
+        {
+            "name": "robot_gripper",
+            "coords": [
+                620,
+                300
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "counter_surface",
+            "coords": [
+                500,
+                450
+            ]
+        },
+        {
+            "name": "background_area",
+            "coords": [
+                150,
+                500
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "robot_arm",
+            "robot_gripper"
+        ],
+        [
+            "robot_gripper",
+            "pouch"
+        ]
+    ],
+    "region_connections": [],
+    "extra_safe_objects": [],
+    "extra_unsafe_objects": [],
+    "extra_safe_regions": [],
+    "extra_unsafe_regions": [],
+    "current_location": "counter_surface"
+}

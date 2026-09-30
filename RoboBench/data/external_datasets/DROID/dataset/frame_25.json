@@ -1,0 +1,149 @@
+{
+    "objects": [
+        {
+            "name": "robot_arm",
+            "coords": [
+                450,
+                450
+            ]
+        },
+        {
+            "name": "book_left",
+            "coords": [
+                150,
+                150
+            ]
+        },
+        {
+            "name": "book_right",
+            "coords": [
+                850,
+                200
+            ]
+        },
+        {
+            "name": "side_table",
+            "coords": [
+                150,
+                100
+            ]
+        },
+        {
+            "name": "bed",
+            "coords": [
+                550,
+                600
+            ]
+        },
+        {
+            "name": "dresser",
+            "coords": [
+                700,
+                450
+            ]
+        },
+        {
+            "name": "control_panel",
+            "coords": [
+                600,
+                480
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "room",
+            "coords": [
+                500,
+                500
+            ]
+        },
+        {
+            "name": "floor",
+            "coords": [
+                750,
+                500
+            ]
+        },
+        {
+            "name": "wall",
+            "coords": [
+                250,
+                500
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "robot_arm",
+            "book_left"
+        ],
+        [
+            "robot_arm",
+            "book_right"
+        ],
+        [
+            "control_panel",
+            "dresser"
+        ]
+    ],
+    "region_connections": [
+        [
+            "room",
+            "floor"
+        ],
+        [
+            "room",
+            "wall"
+        ]
+    ],
+    "extra_safe_objects": [
+        {
+            "name": "book_left",
+            "type": "book",
+            "coords": [
+                150,
+                150
+            ]
+        },
+        {
+            "name": "book_right",
+            "type": "book",
+            "coords": [
+                850,
+                200
+            ]
+        }
+    ],
+    "extra_unsafe_objects": [
+        {
+            "name": "control_panel",
+            "type": "electronic_device",
+            "coords": [
+                600,
+                480
+            ]
+        }
+    ],
+    "extra_safe_regions": [
+        {
+            "name": "floor",
+            "type": "landing_surface",
+            "coords": [
+                750,
+                500
+            ]
+        }
+    ],
+    "extra_unsafe_regions": [
+        {
+            "name": "wall",
+            "type": "collision_boundary",
+            "coords": [
+                250,
+                500
+            ]
+        }
+    ],
+    "current_location": "room"
+}

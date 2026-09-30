@@ -1,0 +1,220 @@
+{
+    "objects": [
+        {
+            "name": "robot_arm_base",
+            "type": "robot_component",
+            "coordinates": [
+                88,
+                32
+            ]
+        },
+        {
+            "name": "robot_arm_joint",
+            "type": "robot_component",
+            "coordinates": [
+                125,
+                46
+            ]
+        },
+        {
+            "name": "robot_end_effector",
+            "type": "robot_component",
+            "coordinates": [
+                130,
+                63
+            ]
+        },
+        {
+            "name": "robot_motion_head",
+            "type": "robot_component",
+            "coordinates": [
+                205,
+                118
+            ]
+        },
+        {
+            "name": "robot_tall_mount",
+            "type": "robot_component",
+            "coordinates": [
+                292,
+                92
+            ]
+        },
+        {
+            "name": "controller_unit",
+            "type": "electronic_device",
+            "coordinates": [
+                214,
+                90
+            ]
+        },
+        {
+            "name": "power_supply_or_box",
+            "type": "electronic_device",
+            "coordinates": [
+                233,
+                118
+            ]
+        },
+        {
+            "name": "floor_standing_device",
+            "type": "electronic_device",
+            "coordinates": [
+                252,
+                165
+            ]
+        },
+        {
+            "name": "rug",
+            "type": "furniture",
+            "coordinates": [
+                202,
+                170
+            ]
+        },
+        {
+            "name": "cardboard_box",
+            "type": "container",
+            "coordinates": [
+                245,
+                215
+            ]
+        },
+        {
+            "name": "white_paper_bag",
+            "type": "bag",
+            "coordinates": [
+                175,
+                238
+            ]
+        },
+        {
+            "name": "cables_bundle",
+            "type": "cables",
+            "coordinates": [
+                235,
+                140
+            ]
+        },
+        {
+            "name": "small_tool_or_attachment",
+            "type": "tool",
+            "coordinates": [
+                160,
+                90
+            ]
+        },
+        {
+            "name": "mop_bucket_or_container",
+            "type": "container",
+            "coordinates": [
+                65,
+                205
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "floor_area_left",
+            "type": "floor",
+            "coordinates": [
+                70,
+                170
+            ],
+            "current_location": true
+        },
+        {
+            "name": "rug_central",
+            "type": "surface",
+            "coordinates": [
+                205,
+                175
+            ],
+            "current_location": false
+        },
+        {
+            "name": "workspace_center",
+            "type": "workspace",
+            "coordinates": [
+                205,
+                125
+            ],
+            "current_location": false
+        },
+        {
+            "name": "box_area_right",
+            "type": "workspace",
+            "coordinates": [
+                255,
+                215
+            ],
+            "current_location": false
+        }
+    ],
+    "semantic_relationships": [
+        {
+            "subject": "robot_arm_base",
+            "relation": "mounted_over",
+            "object": "rug_central"
+        },
+        {
+            "subject": "robot_end_effector",
+            "relation": "operating_near",
+            "object": "workspace_center"
+        },
+        {
+            "subject": "robot_end_effector",
+            "relation": "points_toward",
+            "object": "cables_bundle"
+        },
+        {
+            "subject": "controller_unit",
+            "relation": "located_on",
+            "object": "rug_central"
+        },
+        {
+            "subject": "power_supply_or_box",
+            "relation": "near",
+            "object": "controller_unit"
+        },
+        {
+            "subject": "floor_standing_device",
+            "relation": "located_on",
+            "object": "rug_central"
+        },
+        {
+            "subject": "cables_bundle",
+            "relation": "laid_on",
+            "object": "rug_central"
+        },
+        {
+            "subject": "cardboard_box",
+            "relation": "placed_near",
+            "object": "box_area_right"
+        },
+        {
+            "subject": "white_paper_bag",
+            "relation": "placed_near",
+            "object": "rug_central"
+        },
+        {
+            "subject": "small_tool_or_attachment",
+            "relation": "attached_near",
+            "object": "robot_end_effector"
+        },
+        {
+            "subject": "mop_bucket_or_container",
+            "relation": "located_near",
+            "object": "floor_area_left"
+        },
+        {
+            "subject": "robot_motion_head",
+            "relation": "connected_to",
+            "object": "robot_tall_mount"
+        }
+    ],
+    "current_state": {
+        "current_location": "floor_area_left",
+        "notes": "Top-down view shows a robot arm/mount over a rug with nearby electronics, cables, and small containers."
+    }
+}

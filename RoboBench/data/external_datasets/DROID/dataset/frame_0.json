@@ -1,0 +1,116 @@
+{
+    "objects": [
+        {
+            "name": "robot_arm",
+            "coords": [
+                290,
+                390
+            ]
+        },
+        {
+            "name": "metal_bowl",
+            "coords": [
+                580,
+                180
+            ]
+        },
+        {
+            "name": "red_box",
+            "coords": [
+                670,
+                170
+            ]
+        },
+        {
+            "name": "wooden_block",
+            "coords": [
+                490,
+                240
+            ]
+        },
+        {
+            "name": "plank_structure",
+            "coords": [
+                500,
+                420
+            ]
+        },
+        {
+            "name": "white_device",
+            "coords": [
+                180,
+                480
+            ]
+        },
+        {
+            "name": "fan_like_object",
+            "coords": [
+                180,
+                840
+            ]
+        },
+        {
+            "name": "black_tool",
+            "coords": [
+                400,
+                850
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "countertop",
+            "coords": [
+                500,
+                300
+            ]
+        },
+        {
+            "name": "purple_wall",
+            "coords": [
+                300,
+                150
+            ]
+        },
+        {
+            "name": "floor",
+            "coords": [
+                900,
+                300
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "robot_arm",
+            "wooden_block"
+        ],
+        [
+            "metal_bowl",
+            "red_box"
+        ],
+        [
+            "plank_structure",
+            "white_device"
+        ],
+        [
+            "fan_like_object",
+            "black_tool"
+        ]
+    ],
+    "region_connections": [
+        [
+            "countertop",
+            "purple_wall"
+        ],
+        [
+            "countertop",
+            "floor"
+        ]
+    ],
+    "extra_safe_objects": [],
+    "extra_unsafe_objects": [],
+    "extra_safe_regions": [],
+    "extra_unsafe_regions": [],
+    "current_location": "countertop"
+}

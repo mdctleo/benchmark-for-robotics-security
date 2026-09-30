@@ -1,0 +1,252 @@
+{
+    "regions": [
+        {
+            "name": "table_surface",
+            "type": "surface",
+            "polygon": [
+                [
+                    40,
+                    20
+                ],
+                [
+                    520,
+                    20
+                ],
+                [
+                    520,
+                    360
+                ],
+                [
+                    40,
+                    360
+                ]
+            ]
+        },
+        {
+            "name": "blue_mat",
+            "type": "surface",
+            "polygon": [
+                [
+                    60,
+                    60
+                ],
+                [
+                    500,
+                    350
+                ],
+                [
+                    500,
+                    280
+                ],
+                [
+                    60,
+                    150
+                ]
+            ],
+            "current_location": true
+        }
+    ],
+    "objects": [
+        {
+            "name": "rolling_caster_workbench",
+            "type": "furniture",
+            "point": [
+                30,
+                70
+            ]
+        },
+        {
+            "name": "lamp_left",
+            "type": "lamp",
+            "point": [
+                20,
+                120
+            ]
+        },
+        {
+            "name": "monitor_or_device_left",
+            "type": "device",
+            "point": [
+                95,
+                40
+            ]
+        },
+        {
+            "name": "keyboard",
+            "type": "input_device",
+            "point": [
+                250,
+                35
+            ]
+        },
+        {
+            "name": "lamp_arm_right",
+            "type": "lamp_arm",
+            "point": [
+                500,
+                130
+            ]
+        },
+        {
+            "name": "lamp_head_right",
+            "type": "lamp_head",
+            "point": [
+                530,
+                110
+            ]
+        },
+        {
+            "name": "cloth_artwork",
+            "type": "textile_or_canvas",
+            "point": [
+                280,
+                220
+            ]
+        },
+        {
+            "name": "small_blocks",
+            "type": "props",
+            "point": [
+                210,
+                110
+            ]
+        },
+        {
+            "name": "bottle_or_can",
+            "type": "container",
+            "point": [
+                420,
+                40
+            ]
+        },
+        {
+            "name": "monitor_cable_bundle",
+            "type": "cables",
+            "point": [
+                250,
+                70
+            ]
+        },
+        {
+            "name": "computer_keyboard_cable",
+            "type": "cables",
+            "point": [
+                310,
+                80
+            ]
+        },
+        {
+            "name": "red_button",
+            "type": "control",
+            "point": [
+                350,
+                90
+            ]
+        },
+        {
+            "name": "white_pins_straight",
+            "type": "tool",
+            "point": [
+                430,
+                290
+            ]
+        },
+        {
+            "name": "small_square_cubes_on_mat",
+            "type": "props",
+            "point": [
+                360,
+                135
+            ]
+        }
+    ],
+    "semantic_relationships": [
+        {
+            "subject": "cloth_artwork",
+            "relation": "is_on",
+            "object": "blue_mat"
+        },
+        {
+            "subject": "small_square_cubes_on_mat",
+            "relation": "is_on",
+            "object": "blue_mat"
+        },
+        {
+            "subject": "white_pins_straight",
+            "relation": "is_on",
+            "object": "blue_mat"
+        },
+        {
+            "subject": "lamp_head_right",
+            "relation": "is_above",
+            "object": "blue_mat"
+        },
+        {
+            "subject": "lamp_arm_right",
+            "relation": "supports",
+            "object": "lamp_head_right"
+        },
+        {
+            "subject": "monitor_cable_bundle",
+            "relation": "is_near",
+            "object": "blue_mat"
+        },
+        {
+            "subject": "computer_keyboard_cable",
+            "relation": "is_near",
+            "object": "keyboard"
+        },
+        {
+            "subject": "keyboard",
+            "relation": "is_near",
+            "object": "blue_mat"
+        },
+        {
+            "subject": "bottle_or_can",
+            "relation": "is_near",
+            "object": "blue_mat"
+        },
+        {
+            "subject": "red_button",
+            "relation": "is_near",
+            "object": "keyboard"
+        },
+        {
+            "subject": "rolling_caster_workbench",
+            "relation": "holds",
+            "object": "blue_mat"
+        },
+        {
+            "subject": "lamp_left",
+            "relation": "is_near",
+            "object": "blue_mat"
+        },
+        {
+            "subject": "monitor_or_device_left",
+            "relation": "is_near",
+            "object": "blue_mat"
+        },
+        {
+            "subject": "small_blocks",
+            "relation": "is_near",
+            "object": "blue_mat"
+        }
+    ],
+    "navigation": {
+        "current_location": "blue_mat",
+        "plans": [
+            {
+                "action": "observe_artwork",
+                "target": "cloth_artwork"
+            },
+            {
+                "action": "inspect_blocks",
+                "target": "small_square_cubes_on_mat"
+            },
+            {
+                "action": "check_tool",
+                "target": "white_pins_straight"
+            }
+        ]
+    }
+}

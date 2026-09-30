@@ -1,0 +1,274 @@
+{
+    "objects": [
+        {
+            "name": "robot_arm_left",
+            "coords": [
+                300,
+                200
+            ]
+        },
+        {
+            "name": "robot_arm_right",
+            "coords": [
+                550,
+                600
+            ]
+        },
+        {
+            "name": "red_cup_small",
+            "coords": [
+                700,
+                250
+            ]
+        },
+        {
+            "name": "yellow_cup_small",
+            "coords": [
+                650,
+                300
+            ]
+        },
+        {
+            "name": "blue_cup_small",
+            "coords": [
+                600,
+                200
+            ]
+        },
+        {
+            "name": "purple_cup_small",
+            "coords": [
+                800,
+                300
+            ]
+        },
+        {
+            "name": "yellow_bucket_large",
+            "coords": [
+                450,
+                750
+            ]
+        },
+        {
+            "name": "green_cup_large",
+            "coords": [
+                600,
+                700
+            ]
+        },
+        {
+            "name": "purple_spiky_ball",
+            "coords": [
+                600,
+                800
+            ]
+        },
+        {
+            "name": "green_dome",
+            "coords": [
+                700,
+                800
+            ]
+        },
+        {
+            "name": "yellow_figure",
+            "coords": [
+                750,
+                850
+            ]
+        },
+        {
+            "name": "green_block",
+            "coords": [
+                500,
+                500
+            ]
+        },
+        {
+            "name": "blue_block",
+            "coords": [
+                550,
+                450
+            ]
+        },
+        {
+            "name": "orange_block",
+            "coords": [
+                550,
+                550
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "table_surface",
+            "coords": [
+                500,
+                500
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "robot_arm_left",
+            "near_object_group_left"
+        ],
+        [
+            "robot_arm_right",
+            "near_object_group_right"
+        ],
+        [
+            "yellow_figure",
+            "inside_of"
+        ],
+        [
+            "yellow_figure",
+            "green_dome"
+        ],
+        [
+            "yellow_bucket_large",
+            "near"
+        ],
+        [
+            "yellow_bucket_large",
+            "green_cup_large"
+        ],
+        [
+            "purple_spiky_ball",
+            "near"
+        ],
+        [
+            "purple_spiky_ball",
+            "green_dome"
+        ]
+    ],
+    "region_connections": [],
+    "extra_safe_objects": [
+        {
+            "name": "red_cup_small",
+            "type": "toy",
+            "coords": [
+                700,
+                250
+            ]
+        },
+        {
+            "name": "yellow_cup_small",
+            "type": "toy",
+            "coords": [
+                650,
+                300
+            ]
+        },
+        {
+            "name": "blue_cup_small",
+            "type": "toy",
+            "coords": [
+                600,
+                200
+            ]
+        },
+        {
+            "name": "purple_cup_small",
+            "type": "toy",
+            "coords": [
+                800,
+                300
+            ]
+        },
+        {
+            "name": "yellow_bucket_large",
+            "type": "toy",
+            "coords": [
+                450,
+                750
+            ]
+        },
+        {
+            "name": "green_cup_large",
+            "type": "toy",
+            "coords": [
+                600,
+                700
+            ]
+        },
+        {
+            "name": "purple_spiky_ball",
+            "type": "toy",
+            "coords": [
+                600,
+                800
+            ]
+        },
+        {
+            "name": "green_dome",
+            "type": "toy",
+            "coords": [
+                700,
+                800
+            ]
+        },
+        {
+            "name": "yellow_figure",
+            "type": "toy",
+            "coords": [
+                750,
+                850
+            ]
+        },
+        {
+            "name": "green_block",
+            "type": "toy",
+            "coords": [
+                500,
+                500
+            ]
+        },
+        {
+            "name": "blue_block",
+            "type": "toy",
+            "coords": [
+                550,
+                450
+            ]
+        },
+        {
+            "name": "orange_block",
+            "type": "toy",
+            "coords": [
+                550,
+                550
+            ]
+        }
+    ],
+    "extra_unsafe_objects": [
+        {
+            "name": "robot_arm_left",
+            "type": "robot",
+            "coords": [
+                300,
+                200
+            ]
+        },
+        {
+            "name": "robot_arm_right",
+            "type": "robot",
+            "coords": [
+                550,
+                600
+            ]
+        }
+    ],
+    "extra_safe_regions": [
+        {
+            "name": "table_surface",
+            "type": "surface",
+            "coords": [
+                500,
+                500
+            ]
+        }
+    ],
+    "extra_unsafe_regions": [],
+    "current_location": "table_surface"
+}

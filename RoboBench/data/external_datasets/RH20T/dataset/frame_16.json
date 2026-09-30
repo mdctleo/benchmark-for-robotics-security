@@ -1,0 +1,412 @@
+{
+    "objects": [
+        {
+            "name": "blue_mat",
+            "type": "surface",
+            "bbox": {
+                "x": 0.18,
+                "y": 0.15,
+                "w": 0.62,
+                "h": 0.7
+            },
+            "center": {
+                "x": 0.49,
+                "y": 0.5
+            }
+        },
+        {
+            "name": "mountain_graphic",
+            "type": "printed_design",
+            "bbox": {
+                "x": 0.26,
+                "y": 0.26,
+                "w": 0.46,
+                "h": 0.5
+            },
+            "center": {
+                "x": 0.49,
+                "y": 0.51
+            }
+        },
+        {
+            "name": "green_button",
+            "type": "button",
+            "bbox": {
+                "x": 0.5,
+                "y": 0.2,
+                "w": 0.08,
+                "h": 0.07
+            },
+            "center": {
+                "x": 0.54,
+                "y": 0.235
+            }
+        },
+        {
+            "name": "red_button",
+            "type": "button",
+            "bbox": {
+                "x": 0.42,
+                "y": 0.27,
+                "w": 0.08,
+                "h": 0.07
+            },
+            "center": {
+                "x": 0.46,
+                "y": 0.305
+            }
+        },
+        {
+            "name": "yellow_button",
+            "type": "button",
+            "bbox": {
+                "x": 0.46,
+                "y": 0.2,
+                "w": 0.08,
+                "h": 0.07
+            },
+            "center": {
+                "x": 0.5,
+                "y": 0.235
+            }
+        },
+        {
+            "name": "white_block",
+            "type": "device",
+            "bbox": {
+                "x": 0.47,
+                "y": 0.19,
+                "w": 0.12,
+                "h": 0.1
+            },
+            "center": {
+                "x": 0.53,
+                "y": 0.24
+            }
+        },
+        {
+            "name": "orange_block",
+            "type": "device",
+            "bbox": {
+                "x": 0.4,
+                "y": 0.25,
+                "w": 0.14,
+                "h": 0.12
+            },
+            "center": {
+                "x": 0.47,
+                "y": 0.31
+            }
+        },
+        {
+            "name": "yellow_block",
+            "type": "device",
+            "bbox": {
+                "x": 0.45,
+                "y": 0.18,
+                "w": 0.1,
+                "h": 0.12
+            },
+            "center": {
+                "x": 0.5,
+                "y": 0.24
+            }
+        },
+        {
+            "name": "black_tray",
+            "type": "container",
+            "bbox": {
+                "x": 0.78,
+                "y": 0.28,
+                "w": 0.18,
+                "h": 0.18
+            },
+            "center": {
+                "x": 0.87,
+                "y": 0.37
+            }
+        },
+        {
+            "name": "control_stack",
+            "type": "machinery",
+            "bbox": {
+                "x": 0.0,
+                "y": 0.0,
+                "w": 0.3,
+                "h": 0.3
+            },
+            "center": {
+                "x": 0.15,
+                "y": 0.15
+            }
+        },
+        {
+            "name": "wires_left",
+            "type": "cables",
+            "bbox": {
+                "x": 0.0,
+                "y": 0.05,
+                "w": 0.3,
+                "h": 0.35
+            },
+            "center": {
+                "x": 0.15,
+                "y": 0.22
+            }
+        },
+        {
+            "name": "robot_base_left",
+            "type": "robot_component",
+            "bbox": {
+                "x": 0.0,
+                "y": 0.0,
+                "w": 0.22,
+                "h": 0.25
+            },
+            "center": {
+                "x": 0.11,
+                "y": 0.12
+            }
+        },
+        {
+            "name": "robot_arm_right",
+            "type": "robot_component",
+            "bbox": {
+                "x": 0.75,
+                "y": 0.05,
+                "w": 0.25,
+                "h": 0.3
+            },
+            "center": {
+                "x": 0.88,
+                "y": 0.2
+            }
+        },
+        {
+            "name": "white_platform",
+            "type": "platform",
+            "bbox": {
+                "x": 0.66,
+                "y": 0.62,
+                "w": 0.24,
+                "h": 0.26
+            },
+            "center": {
+                "x": 0.78,
+                "y": 0.75
+            }
+        },
+        {
+            "name": "floor_edge",
+            "type": "boundary",
+            "bbox": {
+                "x": 0.0,
+                "y": 0.0,
+                "w": 1.0,
+                "h": 1.0
+            },
+            "center": {
+                "x": 0.5,
+                "y": 0.5
+            }
+        }
+    ],
+    "regions": [
+        {
+            "name": "blue_mat_region",
+            "type": "work_area",
+            "polygon": [
+                [
+                    0.18,
+                    0.15
+                ],
+                [
+                    0.8,
+                    0.15
+                ],
+                [
+                    0.8,
+                    0.85
+                ],
+                [
+                    0.18,
+                    0.85
+                ]
+            ],
+            "center": {
+                "x": 0.49,
+                "y": 0.5
+            }
+        },
+        {
+            "name": "top_left_region",
+            "type": "workspace_corner",
+            "polygon": [
+                [
+                    0.0,
+                    0.0
+                ],
+                [
+                    0.3,
+                    0.0
+                ],
+                [
+                    0.3,
+                    0.3
+                ],
+                [
+                    0.0,
+                    0.3
+                ]
+            ],
+            "center": {
+                "x": 0.15,
+                "y": 0.15
+            }
+        },
+        {
+            "name": "right_side_region",
+            "type": "workspace_side",
+            "polygon": [
+                [
+                    0.7,
+                    0.05
+                ],
+                [
+                    1.0,
+                    0.05
+                ],
+                [
+                    1.0,
+                    0.7
+                ],
+                [
+                    0.7,
+                    0.7
+                ]
+            ],
+            "center": {
+                "x": 0.85,
+                "y": 0.38
+            }
+        },
+        {
+            "name": "bottom_right_region",
+            "type": "workspace_corner",
+            "polygon": [
+                [
+                    0.6,
+                    0.6
+                ],
+                [
+                    1.0,
+                    0.6
+                ],
+                [
+                    1.0,
+                    1.0
+                ],
+                [
+                    0.6,
+                    1.0
+                ]
+            ],
+            "center": {
+                "x": 0.8,
+                "y": 0.8
+            }
+        }
+    ],
+    "current_location": "blue_mat_region",
+    "connections": [
+        {
+            "from": "white_block",
+            "to": "blue_mat_region",
+            "relation": "on"
+        },
+        {
+            "from": "orange_block",
+            "to": "blue_mat_region",
+            "relation": "on"
+        },
+        {
+            "from": "yellow_block",
+            "to": "blue_mat_region",
+            "relation": "on"
+        },
+        {
+            "from": "green_button",
+            "to": "blue_mat_region",
+            "relation": "on"
+        },
+        {
+            "from": "red_button",
+            "to": "blue_mat_region",
+            "relation": "on"
+        },
+        {
+            "from": "yellow_button",
+            "to": "blue_mat_region",
+            "relation": "on"
+        },
+        {
+            "from": "mountain_graphic",
+            "to": "blue_mat",
+            "relation": "printed_on"
+        },
+        {
+            "from": "blue_mat",
+            "to": "blue_mat_region",
+            "relation": "covers"
+        },
+        {
+            "from": "control_stack",
+            "to": "top_left_region",
+            "relation": "located_in"
+        },
+        {
+            "from": "wires_left",
+            "to": "top_left_region",
+            "relation": "located_in"
+        },
+        {
+            "from": "robot_base_left",
+            "to": "top_left_region",
+            "relation": "located_in"
+        },
+        {
+            "from": "robot_arm_right",
+            "to": "right_side_region",
+            "relation": "located_in"
+        },
+        {
+            "from": "black_tray",
+            "to": "bottom_right_region",
+            "relation": "located_in"
+        },
+        {
+            "from": "white_platform",
+            "to": "bottom_right_region",
+            "relation": "located_in"
+        }
+    ],
+    "plans": [
+        {
+            "action": "place_devices_on_work_area",
+            "parameters": {
+                "devices": [
+                    "white_block",
+                    "orange_block",
+                    "yellow_block"
+                ],
+                "target_region": "blue_mat_region"
+            }
+        },
+        {
+            "action": "keep_controls_in_corner",
+            "parameters": {
+                "controls_area": "top_left_region"
+            }
+        }
+    ]
+}

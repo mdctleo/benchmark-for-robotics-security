@@ -1,0 +1,278 @@
+{
+    "objects": [
+        {
+            "name": "traffic_lights_at_intersection",
+            "type": "traffic_signal",
+            "position": {
+                "x": 0.52,
+                "y": 0.52
+            }
+        },
+        {
+            "name": "red_stoplight_signals",
+            "type": "signal_aspect",
+            "position": {
+                "x": 0.52,
+                "y": 0.5
+            },
+            "part_of": [
+                "traffic_lights_at_intersection"
+            ]
+        },
+        {
+            "name": "cars_in_road",
+            "type": "vehicle_group",
+            "position": {
+                "x": 0.53,
+                "y": 0.72
+            }
+        },
+        {
+            "name": "black_pickup_truck_front_right",
+            "type": "vehicle",
+            "position": {
+                "x": 0.73,
+                "y": 0.8
+            },
+            "part_of": [
+                "cars_in_road"
+            ]
+        },
+        {
+            "name": "vehicle_ahead_center",
+            "type": "vehicle",
+            "position": {
+                "x": 0.53,
+                "y": 0.74
+            },
+            "part_of": [
+                "cars_in_road"
+            ]
+        },
+        {
+            "name": "fence_right_side",
+            "type": "fence",
+            "position": {
+                "x": 0.86,
+                "y": 0.7
+            }
+        },
+        {
+            "name": "power_poles_left",
+            "type": "utility_pole_group",
+            "position": {
+                "x": 0.12,
+                "y": 0.62
+            }
+        },
+        {
+            "name": "power_poles_right",
+            "type": "utility_pole_group",
+            "position": {
+                "x": 0.82,
+                "y": 0.58
+            }
+        },
+        {
+            "name": "overhead_power_lines",
+            "type": "utility_lines",
+            "position": {
+                "x": 0.6,
+                "y": 0.4
+            },
+            "connected_to": [
+                "power_poles_left",
+                "power_poles_right"
+            ]
+        },
+        {
+            "name": "billboard_left",
+            "type": "billboard",
+            "position": {
+                "x": 0.86,
+                "y": 0.49
+            }
+        },
+        {
+            "name": "billboard_right",
+            "type": "billboard",
+            "position": {
+                "x": 0.95,
+                "y": 0.49
+            }
+        },
+        {
+            "name": "race_banner_5k",
+            "type": "banner_text",
+            "position": {
+                "x": 0.89,
+                "y": 0.52
+            },
+            "part_of": [
+                "billboard_right"
+            ]
+        },
+        {
+            "name": "sponsor_sign_board",
+            "type": "sign_board",
+            "position": {
+                "x": 0.91,
+                "y": 0.4
+            }
+        },
+        {
+            "name": "buildings_left_background",
+            "type": "building_group",
+            "position": {
+                "x": 0.3,
+                "y": 0.55
+            }
+        },
+        {
+            "name": "buildings_right_background",
+            "type": "building_group",
+            "position": {
+                "x": 0.72,
+                "y": 0.56
+            }
+        },
+        {
+            "name": "roadway",
+            "type": "road",
+            "position": {
+                "x": 0.52,
+                "y": 0.78
+            }
+        },
+        {
+            "name": "lane_markings",
+            "type": "road_markings",
+            "position": {
+                "x": 0.47,
+                "y": 0.86
+            },
+            "part_of": [
+                "roadway"
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "current_location",
+            "type": "camera_driving_area",
+            "position": {
+                "x": 0.5,
+                "y": 0.93
+            }
+        },
+        {
+            "name": "intersection_zone",
+            "type": "road_intersection",
+            "position": {
+                "x": 0.52,
+                "y": 0.6
+            }
+        },
+        {
+            "name": "right_side_fence_corridor",
+            "type": "side_walk_or_edge_area",
+            "position": {
+                "x": 0.86,
+                "y": 0.72
+            }
+        },
+        {
+            "name": "left_background_buildings_area",
+            "type": "background_area",
+            "position": {
+                "x": 0.25,
+                "y": 0.58
+            }
+        },
+        {
+            "name": "right_background_buildings_area",
+            "type": "background_area",
+            "position": {
+                "x": 0.78,
+                "y": 0.58
+            }
+        }
+    ],
+    "semantic_relationships": [
+        {
+            "relation": "current_location_is_facing",
+            "from": "current_location",
+            "to": "intersection_zone"
+        },
+        {
+            "relation": "cars_are_in",
+            "from": "cars_in_road",
+            "to": "intersection_zone"
+        },
+        {
+            "relation": "black_pickup_truck_front_right_is_on",
+            "from": "black_pickup_truck_front_right",
+            "to": "right_side_fence_corridor"
+        },
+        {
+            "relation": "vehicle_ahead_center_is_in_front_of",
+            "from": "vehicle_ahead_center",
+            "to": "current_location"
+        },
+        {
+            "relation": "traffic_lights_are_at",
+            "from": "traffic_lights_at_intersection",
+            "to": "intersection_zone"
+        },
+        {
+            "relation": "red_stoplight_signals_display",
+            "from": "red_stoplight_signals",
+            "to": "traffic_lights_at_intersection"
+        },
+        {
+            "relation": "fence_is_adjacent_to",
+            "from": "fence_right_side",
+            "to": "right_side_fence_corridor"
+        },
+        {
+            "relation": "overhead_power_lines_span",
+            "from": "overhead_power_lines",
+            "to": "intersection_zone"
+        },
+        {
+            "relation": "billboards_are_near",
+            "from": "billboard_left",
+            "to": "right_side_fence_corridor"
+        },
+        {
+            "relation": "billboards_are_near",
+            "from": "billboard_right",
+            "to": "right_side_fence_corridor"
+        },
+        {
+            "relation": "race_banner_5k_is_on",
+            "from": "race_banner_5k",
+            "to": "billboard_right"
+        },
+        {
+            "relation": "sponsor_sign_board_is_near",
+            "from": "sponsor_sign_board",
+            "to": "right_side_fence_corridor"
+        },
+        {
+            "relation": "buildings_left_background_are_in",
+            "from": "buildings_left_background",
+            "to": "left_background_buildings_area"
+        },
+        {
+            "relation": "buildings_right_background_are_in",
+            "from": "buildings_right_background",
+            "to": "right_background_buildings_area"
+        },
+        {
+            "relation": "lane_markings_are_on",
+            "from": "lane_markings",
+            "to": "roadway"
+        }
+    ]
+}

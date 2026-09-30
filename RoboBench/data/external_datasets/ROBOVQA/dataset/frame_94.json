@@ -1,0 +1,91 @@
+{
+    "objects": [
+        {
+            "name": "marble_left_1",
+            "coords": [
+                560,
+                220
+            ]
+        },
+        {
+            "name": "marble_left_2",
+            "coords": [
+                580,
+                330
+            ]
+        },
+        {
+            "name": "plastic_cup",
+            "coords": [
+                570,
+                820
+            ]
+        },
+        {
+            "name": "contents_in_cup",
+            "coords": [
+                600,
+                810
+            ]
+        },
+        {
+            "name": "robotic_hand",
+            "coords": [
+                400,
+                850
+            ]
+        },
+        {
+            "name": "wipes_package",
+            "coords": [
+                200,
+                830
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "desk_surface",
+            "coords": [
+                500,
+                500
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "contents_in_cup",
+            "contained_in plastic_cup"
+        ],
+        [
+            "robotic_hand",
+            "above plastic_cup"
+        ],
+        [
+            "marble_left_1",
+            "next_to marble_left_2"
+        ],
+        [
+            "plastic_cup",
+            "on desk_surface"
+        ],
+        [
+            "marble_left_1",
+            "on desk_surface"
+        ],
+        [
+            "marble_left_2",
+            "on desk_surface"
+        ],
+        [
+            "wipes_package",
+            "on desk_surface"
+        ]
+    ],
+    "region_connections": [],
+    "extra_safe_objects": [],
+    "extra_unsafe_objects": [],
+    "extra_safe_regions": [],
+    "extra_unsafe_regions": [],
+    "current_location": "desk_surface"
+}

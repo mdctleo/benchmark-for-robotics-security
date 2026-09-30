@@ -1,0 +1,249 @@
+{
+    "objects": [
+        {
+            "name": "cars",
+            "type": "vehicle",
+            "bbox_topdown": [
+                [
+                    600,
+                    260
+                ],
+                [
+                    880,
+                    260
+                ],
+                [
+                    880,
+                    470
+                ],
+                [
+                    600,
+                    470
+                ]
+            ]
+        },
+        {
+            "name": "street_lamps",
+            "type": "street_light",
+            "bbox_topdown": [
+                [
+                    650,
+                    240
+                ],
+                [
+                    920,
+                    240
+                ],
+                [
+                    920,
+                    330
+                ],
+                [
+                    650,
+                    330
+                ]
+            ]
+        },
+        {
+            "name": "traffic_lights",
+            "type": "traffic_light",
+            "bbox_topdown": [
+                [
+                    835,
+                    210
+                ],
+                [
+                    870,
+                    210
+                ],
+                [
+                    870,
+                    280
+                ],
+                [
+                    835,
+                    280
+                ]
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "roadway",
+            "type": "road",
+            "bbox_topdown": [
+                [
+                    520,
+                    300
+                ],
+                [
+                    1240,
+                    300
+                ],
+                [
+                    1240,
+                    700
+                ],
+                [
+                    520,
+                    700
+                ]
+            ]
+        },
+        {
+            "name": "sidewalk_left",
+            "type": "sidewalk",
+            "bbox_topdown": [
+                [
+                    480,
+                    310
+                ],
+                [
+                    640,
+                    310
+                ],
+                [
+                    640,
+                    700
+                ],
+                [
+                    480,
+                    700
+                ]
+            ]
+        },
+        {
+            "name": "sidewalk_right",
+            "type": "sidewalk",
+            "bbox_topdown": [
+                [
+                    1040,
+                    310
+                ],
+                [
+                    1320,
+                    310
+                ],
+                [
+                    1320,
+                    700
+                ],
+                [
+                    1040,
+                    700
+                ]
+            ]
+        },
+        {
+            "name": "building_left_block",
+            "type": "building",
+            "bbox_topdown": [
+                [
+                    350,
+                    250
+                ],
+                [
+                    780,
+                    250
+                ],
+                [
+                    780,
+                    520
+                ],
+                [
+                    350,
+                    520
+                ]
+            ]
+        },
+        {
+            "name": "building_right_wall",
+            "type": "wall_building",
+            "bbox_topdown": [
+                [
+                    950,
+                    260
+                ],
+                [
+                    1330,
+                    260
+                ],
+                [
+                    1330,
+                    560
+                ],
+                [
+                    950,
+                    560
+                ]
+            ]
+        },
+        {
+            "name": "intersection_ahead",
+            "type": "intersection",
+            "bbox_topdown": [
+                [
+                    720,
+                    420
+                ],
+                [
+                    1120,
+                    420
+                ],
+                [
+                    1120,
+                    640
+                ],
+                [
+                    720,
+                    640
+                ]
+            ]
+        }
+    ],
+    "semantic_relationships": [
+        {
+            "subject": "cars",
+            "predicate": "are_on",
+            "object": "roadway"
+        },
+        {
+            "subject": "street_lamps",
+            "predicate": "are_along",
+            "object": "roadway"
+        },
+        {
+            "subject": "traffic_lights",
+            "predicate": "govern",
+            "object": "intersection_ahead"
+        },
+        {
+            "subject": "sidewalk_left",
+            "predicate": "runs_along",
+            "object": "roadway"
+        },
+        {
+            "subject": "sidewalk_right",
+            "predicate": "runs_along",
+            "object": "roadway"
+        },
+        {
+            "subject": "building_left_block",
+            "predicate": "edges",
+            "object": "sidewalk_left"
+        },
+        {
+            "subject": "building_right_wall",
+            "predicate": "edges",
+            "object": "sidewalk_right"
+        }
+    ],
+    "current_location": "roadway",
+    "plans": [
+        {
+            "name": "approach_intersection",
+            "from": "roadway",
+            "to": "intersection_ahead"
+        }
+    ]
+}

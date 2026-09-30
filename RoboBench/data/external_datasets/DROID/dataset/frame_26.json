@@ -1,0 +1,211 @@
+{
+    "objects": [
+        {
+            "name": "robot_arm_1",
+            "coords": [
+                160,
+                405
+            ]
+        },
+        {
+            "name": "robot_arm_2",
+            "coords": [
+                690,
+                460
+            ]
+        },
+        {
+            "name": "smartphone",
+            "coords": [
+                285,
+                570
+            ]
+        },
+        {
+            "name": "water_bottle_1",
+            "coords": [
+                355,
+                500
+            ]
+        },
+        {
+            "name": "water_bottle_2",
+            "coords": [
+                500,
+                490
+            ]
+        },
+        {
+            "name": "person_sitting",
+            "coords": [
+                500,
+                100
+            ]
+        },
+        {
+            "name": "chair_1",
+            "coords": [
+                200,
+                710
+            ]
+        },
+        {
+            "name": "chair_2",
+            "coords": [
+                400,
+                750
+            ]
+        },
+        {
+            "name": "chair_3",
+            "coords": [
+                550,
+                740
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "long_white_table",
+            "coords": [
+                400,
+                550
+            ]
+        },
+        {
+            "name": "office_floor",
+            "coords": [
+                400,
+                800
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "robot_arm_1",
+            "long_white_table"
+        ],
+        [
+            "robot_arm_2",
+            "long_white_table"
+        ],
+        [
+            "smartphone",
+            "long_white_table"
+        ],
+        [
+            "water_bottle_1",
+            "long_white_table"
+        ],
+        [
+            "water_bottle_2",
+            "long_white_table"
+        ],
+        [
+            "chair_1",
+            "office_floor"
+        ],
+        [
+            "chair_2",
+            "office_floor"
+        ],
+        [
+            "chair_3",
+            "office_floor"
+        ]
+    ],
+    "region_connections": [
+        [
+            "long_white_table",
+            "office_floor"
+        ]
+    ],
+    "extra_safe_objects": [
+        {
+            "name": "smartphone",
+            "type": "electronic_device",
+            "coords": [
+                285,
+                570
+            ]
+        },
+        {
+            "name": "water_bottle_1",
+            "type": "container",
+            "coords": [
+                355,
+                500
+            ]
+        },
+        {
+            "name": "water_bottle_2",
+            "type": "container",
+            "coords": [
+                500,
+                490
+            ]
+        },
+        {
+            "name": "chair_1",
+            "type": "furniture",
+            "coords": [
+                200,
+                710
+            ]
+        },
+        {
+            "name": "chair_2",
+            "type": "furniture",
+            "coords": [
+                400,
+                750
+            ]
+        },
+        {
+            "name": "chair_3",
+            "type": "furniture",
+            "coords": [
+                550,
+                740
+            ]
+        }
+    ],
+    "extra_unsafe_objects": [
+        {
+            "name": "robot_arm_1",
+            "type": "robot",
+            "coords": [
+                160,
+                405
+            ]
+        },
+        {
+            "name": "robot_arm_2",
+            "type": "robot",
+            "coords": [
+                690,
+                460
+            ]
+        }
+    ],
+    "extra_safe_regions": [
+        {
+            "name": "long_white_table",
+            "type": "table",
+            "coords": [
+                400,
+                550
+            ]
+        },
+        {
+            "name": "office_floor",
+            "type": "floor",
+            "coords": [
+                400,
+                800
+            ]
+        }
+    ],
+    "extra_unsafe_regions": [],
+    "current_location": "long_white_table"
+}

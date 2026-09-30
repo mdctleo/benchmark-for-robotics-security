@@ -1,0 +1,62 @@
+{
+    "objects": [
+        {
+            "name": "can_table",
+            "coords": [
+                400,
+                450
+            ]
+        },
+        {
+            "name": "can_held",
+            "coords": [
+                600,
+                350
+            ]
+        },
+        {
+            "name": "chip_bag",
+            "coords": [
+                750,
+                480
+            ]
+        },
+        {
+            "name": "robot_arm",
+            "coords": [
+                600,
+                300
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "metal_table",
+            "coords": [
+                500,
+                500
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "robot_arm",
+            "can_held"
+        ]
+    ],
+    "region_connections": [],
+    "extra_safe_objects": [],
+    "extra_unsafe_objects": [
+        {
+            "name": "robot_arm",
+            "type": "robot",
+            "coords": [
+                600,
+                300
+            ]
+        }
+    ],
+    "extra_safe_regions": [],
+    "extra_unsafe_regions": [],
+    "current_location": "metal_table"
+}

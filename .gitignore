@@ -1,0 +1,14 @@
+*.pyc
+__pycache__/
+
+.env
+wandb
+.devcontainer/
+
+# external RoboGuard + SPINE checkout
+RoboBench/src/defenses/roboguard/RoboGuard/
+RoboBench/slides/slides.pdf
+
+# external RoboPAIR checkout lives here; only the README is tracked
+RoboBench/src/attacks/robopair/*
+!RoboBench/src/attacks/robopair/README.md

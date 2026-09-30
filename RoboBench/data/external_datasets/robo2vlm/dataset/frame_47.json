@@ -1,0 +1,104 @@
+{
+    "objects": [
+        {
+            "name": "robot arm",
+            "coords": [
+                300,
+                300
+            ]
+        },
+        {
+            "name": "silver crushed can",
+            "coords": [
+                250,
+                400
+            ]
+        },
+        {
+            "name": "red crushed can",
+            "coords": [
+                450,
+                400
+            ]
+        },
+        {
+            "name": "orange ball",
+            "coords": [
+                200,
+                200
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "tabletop",
+            "coords": [
+                350,
+                350
+            ]
+        },
+        {
+            "name": "background area",
+            "coords": [
+                100,
+                500
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "robot arm",
+            "silver crushed can"
+        ]
+    ],
+    "region_connections": [],
+    "extra_safe_objects": [
+        {
+            "name": "silver crushed can",
+            "type": "can",
+            "coords": [
+                250,
+                400
+            ]
+        }
+    ],
+    "extra_unsafe_objects": [
+        {
+            "name": "red crushed can",
+            "type": "can",
+            "coords": [
+                450,
+                400
+            ]
+        },
+        {
+            "name": "orange ball",
+            "type": "ball",
+            "coords": [
+                200,
+                200
+            ]
+        }
+    ],
+    "extra_safe_regions": [
+        {
+            "name": "tabletop",
+            "type": "surface",
+            "coords": [
+                350,
+                350
+            ]
+        }
+    ],
+    "extra_unsafe_regions": [
+        {
+            "name": "background area",
+            "type": "area",
+            "coords": [
+                100,
+                500
+            ]
+        }
+    ],
+    "current_location": "tabletop"
+}

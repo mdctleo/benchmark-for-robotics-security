@@ -1,0 +1,431 @@
+{
+    "objects": [
+        {
+            "name": "blue_table_cloth",
+            "type": "surface",
+            "polygon": [
+                [
+                    34,
+                    65
+                ],
+                [
+                    624,
+                    65
+                ],
+                [
+                    624,
+                    463
+                ],
+                [
+                    34,
+                    463
+                ]
+            ]
+        },
+        {
+            "name": "left_column_post",
+            "type": "fixture",
+            "polygon": [
+                [
+                    18,
+                    34
+                ],
+                [
+                    68,
+                    34
+                ],
+                [
+                    68,
+                    420
+                ],
+                [
+                    18,
+                    420
+                ]
+            ]
+        },
+        {
+            "name": "right_tool_box",
+            "type": "device",
+            "polygon": [
+                [
+                    534,
+                    0
+                ],
+                [
+                    672,
+                    132
+                ],
+                [
+                    534,
+                    132
+                ],
+                [
+                    672,
+                    0
+                ]
+            ]
+        },
+        {
+            "name": "control_panel_device",
+            "type": "device",
+            "polygon": [
+                [
+                    514,
+                    8
+                ],
+                [
+                    625,
+                    72
+                ],
+                [
+                    514,
+                    72
+                ],
+                [
+                    625,
+                    8
+                ]
+            ]
+        },
+        {
+            "name": "power_unit",
+            "type": "electrical_device",
+            "polygon": [
+                [
+                    416,
+                    10
+                ],
+                [
+                    522,
+                    55
+                ],
+                [
+                    416,
+                    55
+                ],
+                [
+                    522,
+                    10
+                ]
+            ]
+        },
+        {
+            "name": "white_keyboard_like_device",
+            "type": "device",
+            "polygon": [
+                [
+                    421,
+                    271
+                ],
+                [
+                    522,
+                    343
+                ],
+                [
+                    421,
+                    343
+                ],
+                [
+                    522,
+                    271
+                ]
+            ]
+        },
+        {
+            "name": "button_box_red",
+            "type": "control",
+            "polygon": [
+                [
+                    138,
+                    95
+                ],
+                [
+                    210,
+                    135
+                ],
+                [
+                    138,
+                    135
+                ],
+                [
+                    210,
+                    95
+                ]
+            ]
+        },
+        {
+            "name": "button_box_red_2",
+            "type": "control",
+            "polygon": [
+                [
+                    278,
+                    74
+                ],
+                [
+                    350,
+                    115
+                ],
+                [
+                    278,
+                    115
+                ],
+                [
+                    350,
+                    74
+                ]
+            ]
+        },
+        {
+            "name": "button_box_red_3",
+            "type": "control",
+            "polygon": [
+                [
+                    258,
+                    144
+                ],
+                [
+                    330,
+                    185
+                ],
+                [
+                    258,
+                    185
+                ],
+                [
+                    330,
+                    144
+                ]
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "work_area_top_down",
+            "polygon": [
+                [
+                    34,
+                    65
+                ],
+                [
+                    624,
+                    65
+                ],
+                [
+                    624,
+                    463
+                ],
+                [
+                    34,
+                    463
+                ]
+            ]
+        },
+        {
+            "name": "table_edge_left",
+            "polygon": [
+                [
+                    0,
+                    60
+                ],
+                [
+                    34,
+                    60
+                ],
+                [
+                    34,
+                    480
+                ],
+                [
+                    0,
+                    480
+                ]
+            ]
+        },
+        {
+            "name": "table_edge_right",
+            "polygon": [
+                [
+                    624,
+                    60
+                ],
+                [
+                    720,
+                    60
+                ],
+                [
+                    720,
+                    480
+                ],
+                [
+                    624,
+                    480
+                ]
+            ]
+        },
+        {
+            "name": "central_image_region",
+            "polygon": [
+                [
+                    120,
+                    160
+                ],
+                [
+                    520,
+                    420
+                ],
+                [
+                    520,
+                    160
+                ],
+                [
+                    120,
+                    420
+                ]
+            ]
+        },
+        {
+            "name": "near_keyboard_area",
+            "polygon": [
+                [
+                    360,
+                    230
+                ],
+                [
+                    560,
+                    380
+                ],
+                [
+                    560,
+                    230
+                ],
+                [
+                    360,
+                    380
+                ]
+            ]
+        },
+        {
+            "name": "near_button_boxes_area",
+            "polygon": [
+                [
+                    120,
+                    60
+                ],
+                [
+                    390,
+                    210
+                ],
+                [
+                    390,
+                    60
+                ],
+                [
+                    120,
+                    210
+                ]
+            ]
+        },
+        {
+            "name": "ground_1",
+            "polygon": [
+                [
+                    34,
+                    65
+                ],
+                [
+                    624,
+                    65
+                ],
+                [
+                    624,
+                    463
+                ],
+                [
+                    34,
+                    463
+                ]
+            ]
+        }
+    ],
+    "semantic_relationships": [
+        {
+            "subject": "blue_table_cloth",
+            "relation": "covers",
+            "object": "ground_1"
+        },
+        {
+            "subject": "left_column_post",
+            "relation": "stands_on",
+            "object": "ground_1"
+        },
+        {
+            "subject": "power_unit",
+            "relation": "placed_on",
+            "object": "blue_table_cloth"
+        },
+        {
+            "subject": "control_panel_device",
+            "relation": "placed_on",
+            "object": "blue_table_cloth"
+        },
+        {
+            "subject": "right_tool_box",
+            "relation": "placed_on",
+            "object": "blue_table_cloth"
+        },
+        {
+            "subject": "button_box_red",
+            "relation": "located_in",
+            "object": "near_button_boxes_area"
+        },
+        {
+            "subject": "button_box_red_2",
+            "relation": "located_in",
+            "object": "near_button_boxes_area"
+        },
+        {
+            "subject": "button_box_red_3",
+            "relation": "located_in",
+            "object": "near_button_boxes_area"
+        },
+        {
+            "subject": "white_keyboard_like_device",
+            "relation": "located_in",
+            "object": "near_keyboard_area"
+        },
+        {
+            "subject": "blue_table_cloth",
+            "relation": "contains_visual_art",
+            "object": "central_image_region"
+        },
+        {
+            "subject": "button_box_red",
+            "relation": "is_adjacent_to",
+            "object": "button_box_red_3"
+        },
+        {
+            "subject": "button_box_red_2",
+            "relation": "is_between",
+            "object": "button_box_red"
+        },
+        {
+            "subject": "white_keyboard_like_device",
+            "relation": "is_near",
+            "object": "central_image_region"
+        }
+    ],
+    "agent_state": {
+        "current_location": "ground_1",
+        "plans": [
+            {
+                "name": "inspect_controls",
+                "target": "near_button_boxes_area"
+            },
+            {
+                "name": "inspect_keyboard_device",
+                "target": "white_keyboard_like_device"
+            }
+        ]
+    }
+}

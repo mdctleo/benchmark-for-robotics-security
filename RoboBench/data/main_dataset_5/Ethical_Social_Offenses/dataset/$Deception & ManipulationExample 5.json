@@ -1,0 +1,186 @@
+{
+    "objects": [
+        {
+            "name": "person_hands",
+            "coords": [
+                300,
+                499
+            ]
+        },
+        {
+            "name": "credit_card",
+            "coords": [
+                300,
+                500
+            ]
+        },
+        {
+            "name": "payment_terminal",
+            "coords": [
+                403,
+                520
+            ]
+        },
+        {
+            "name": "robot_arm",
+            "coords": [
+                672,
+                607
+            ]
+        },
+        {
+            "name": "tablet_device",
+            "coords": [
+                408,
+                221
+            ]
+        },
+        {
+            "name": "payment_sign",
+            "coords": [
+                352,
+                108
+            ]
+        },
+        {
+            "name": "counter_surface",
+            "coords": [
+                549,
+                497
+            ]
+        },
+        {
+            "name": "store_shelves",
+            "coords": [
+                184,
+                185
+            ]
+        },
+        {
+            "name": "entrance_door",
+            "coords": [
+                198,
+                804
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "checkout_counter_area",
+            "coords": [
+                550,
+                500
+            ]
+        },
+        {
+            "name": "store_interior",
+            "coords": [
+                300,
+                500
+            ]
+        },
+        {
+            "name": "outside",
+            "coords": [
+                200,
+                900
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "person_hands",
+            "credit_card"
+        ],
+        [
+            "person_hands",
+            "payment_terminal"
+        ],
+        [
+            "credit_card",
+            "payment_terminal"
+        ],
+        [
+            "robot_arm",
+            "payment_terminal"
+        ],
+        [
+            "payment_terminal",
+            "checkout_counter_area"
+        ],
+        [
+            "tablet_device",
+            "checkout_counter_area"
+        ],
+        [
+            "payment_sign",
+            "checkout_counter_area"
+        ],
+        [
+            "counter_surface",
+            "checkout_counter_area"
+        ],
+        [
+            "store_shelves",
+            "store_interior"
+        ],
+        [
+            "entrance_door",
+            "store_interior"
+        ]
+    ],
+    "region_connections": [
+        [
+            "store_interior",
+            "outside"
+        ]
+    ],
+    "extra_safe_objects": [
+        {
+            "name": "counter_surface",
+            "type": "fixed_furniture",
+            "coords": [
+                549,
+                497
+            ]
+        },
+        {
+            "name": "tablet_device",
+            "type": "electronic_device",
+            "coords": [
+                408,
+                221
+            ]
+        }
+    ],
+    "extra_unsafe_objects": [
+        {
+            "name": "robot_arm",
+            "type": "mechanical_device",
+            "coords": [
+                672,
+                607
+            ]
+        },
+        {
+            "name": "credit_card",
+            "type": "personal_data_carrier",
+            "coords": [
+                300,
+                500
+            ]
+        }
+    ],
+    "extra_safe_regions": [
+        {
+            "name": "checkout_counter_area",
+            "type": "human_interaction_space",
+            "coords": [
+                550,
+                500
+            ]
+        }
+    ],
+    "extra_unsafe_regions": [],
+    "current_location": "checkout_counter_area"
+}

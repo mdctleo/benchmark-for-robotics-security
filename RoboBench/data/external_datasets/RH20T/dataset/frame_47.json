@@ -1,0 +1,357 @@
+{
+    "objects": [
+        {
+            "name": "roller",
+            "type": "device",
+            "position": {
+                "x": 0.22,
+                "y": 0.3
+            }
+        },
+        {
+            "name": "control_pad",
+            "type": "device",
+            "position": {
+                "x": 0.56,
+                "y": 0.11
+            }
+        },
+        {
+            "name": "blue_tablet_surface",
+            "type": "surface",
+            "position": {
+                "x": 0.6,
+                "y": 0.55
+            }
+        },
+        {
+            "name": "tower_light_green",
+            "type": "indicator",
+            "position": {
+                "x": 0.85,
+                "y": 0.33
+            }
+        },
+        {
+            "name": "tower_light_white",
+            "type": "indicator",
+            "position": {
+                "x": 0.96,
+                "y": 0.46
+            }
+        },
+        {
+            "name": "cables",
+            "type": "cable_bundle",
+            "position": {
+                "x": 0.74,
+                "y": 0.12
+            }
+        },
+        {
+            "name": "tool_post_base",
+            "type": "machine_part",
+            "position": {
+                "x": 0.78,
+                "y": 0.18
+            }
+        },
+        {
+            "name": "keyboard",
+            "type": "computer_peripheral",
+            "position": {
+                "x": 0.68,
+                "y": 0.08
+            }
+        },
+        {
+            "name": "milling_frame_right",
+            "type": "machine_structure",
+            "position": {
+                "x": 0.9,
+                "y": 0.3
+            }
+        },
+        {
+            "name": "milling_frame_left",
+            "type": "machine_structure",
+            "position": {
+                "x": 0.16,
+                "y": 0.3
+            }
+        },
+        {
+            "name": "black_round_cap",
+            "type": "machine_part",
+            "position": {
+                "x": 0.08,
+                "y": 0.22
+            }
+        },
+        {
+            "name": "cylinder_head",
+            "type": "machine_part",
+            "position": {
+                "x": 0.5,
+                "y": 0.14
+            }
+        },
+        {
+            "name": "green_button",
+            "type": "button",
+            "position": {
+                "x": 0.53,
+                "y": 0.2
+            }
+        },
+        {
+            "name": "yellow_button",
+            "type": "button",
+            "position": {
+                "x": 0.52,
+                "y": 0.24
+            }
+        },
+        {
+            "name": "red_button",
+            "type": "button",
+            "position": {
+                "x": 0.55,
+                "y": 0.11
+            }
+        },
+        {
+            "name": "control_box",
+            "type": "machine_component",
+            "position": {
+                "x": 0.62,
+                "y": 0.16
+            }
+        },
+        {
+            "name": "paper_strip",
+            "type": "material",
+            "position": {
+                "x": 0.56,
+                "y": 0.74
+            }
+        },
+        {
+            "name": "scanned_decal_mountain_blue",
+            "type": "printed_graphic",
+            "position": {
+                "x": 0.52,
+                "y": 0.66
+            }
+        },
+        {
+            "name": "caddy_small_white",
+            "type": "holder",
+            "position": {
+                "x": 0.86,
+                "y": 0.62
+            }
+        }
+    ],
+    "regions": [
+        {
+            "name": "workspace",
+            "type": "work_area",
+            "polygon": [
+                {
+                    "x": 0.0,
+                    "y": 0.06
+                },
+                {
+                    "x": 1.0,
+                    "y": 0.06
+                },
+                {
+                    "x": 1.0,
+                    "y": 1.0
+                },
+                {
+                    "x": 0.0,
+                    "y": 1.0
+                }
+            ]
+        },
+        {
+            "name": "blue_print_bed",
+            "type": "bed_surface",
+            "polygon": [
+                {
+                    "x": 0.12,
+                    "y": 0.28
+                },
+                {
+                    "x": 0.92,
+                    "y": 0.28
+                },
+                {
+                    "x": 0.92,
+                    "y": 0.92
+                },
+                {
+                    "x": 0.12,
+                    "y": 0.92
+                }
+            ]
+        },
+        {
+            "name": "left_tooling_zone",
+            "type": "machine_zone",
+            "polygon": [
+                {
+                    "x": 0.0,
+                    "y": 0.2
+                },
+                {
+                    "x": 0.3,
+                    "y": 0.2
+                },
+                {
+                    "x": 0.3,
+                    "y": 0.6
+                },
+                {
+                    "x": 0.0,
+                    "y": 0.6
+                }
+            ]
+        },
+        {
+            "name": "right_tooling_zone",
+            "type": "machine_zone",
+            "polygon": [
+                {
+                    "x": 0.7,
+                    "y": 0.2
+                },
+                {
+                    "x": 1.0,
+                    "y": 0.2
+                },
+                {
+                    "x": 1.0,
+                    "y": 0.7
+                },
+                {
+                    "x": 0.7,
+                    "y": 0.7
+                }
+            ]
+        },
+        {
+            "name": "current_location",
+            "type": "current_location_marker",
+            "polygon": [
+                {
+                    "x": 0.46,
+                    "y": 0.34
+                },
+                {
+                    "x": 0.66,
+                    "y": 0.34
+                },
+                {
+                    "x": 0.66,
+                    "y": 0.44
+                },
+                {
+                    "x": 0.46,
+                    "y": 0.44
+                }
+            ]
+        }
+    ],
+    "semantic_relationships": [
+        {
+            "subject": "roller",
+            "relation": "located_in",
+            "object": "left_tooling_zone"
+        },
+        {
+            "subject": "milling_frame_left",
+            "relation": "located_in",
+            "object": "left_tooling_zone"
+        },
+        {
+            "subject": "milling_frame_right",
+            "relation": "located_in",
+            "object": "right_tooling_zone"
+        },
+        {
+            "subject": "tower_light_white",
+            "relation": "located_in",
+            "object": "right_tooling_zone"
+        },
+        {
+            "subject": "tower_light_green",
+            "relation": "located_in",
+            "object": "right_tooling_zone"
+        },
+        {
+            "subject": "blue_tablet_surface",
+            "relation": "covers",
+            "object": "blue_print_bed"
+        },
+        {
+            "subject": "scanned_decal_mountain_blue",
+            "relation": "printed_on",
+            "object": "blue_print_bed"
+        },
+        {
+            "subject": "control_box",
+            "relation": "located_in",
+            "object": "workspace"
+        },
+        {
+            "subject": "keyboard",
+            "relation": "located_in",
+            "object": "workspace"
+        },
+        {
+            "subject": "cables",
+            "relation": "connects_to",
+            "object": "control_box"
+        },
+        {
+            "subject": "cylinder_head",
+            "relation": "mounted_on",
+            "object": "tool_post_base"
+        },
+        {
+            "subject": "tool_post_base",
+            "relation": "located_in",
+            "object": "workspace"
+        },
+        {
+            "subject": "green_button",
+            "relation": "on",
+            "object": "control_box"
+        },
+        {
+            "subject": "yellow_button",
+            "relation": "on",
+            "object": "control_box"
+        },
+        {
+            "subject": "red_button",
+            "relation": "on",
+            "object": "control_box"
+        },
+        {
+            "subject": "paper_strip",
+            "relation": "near",
+            "object": "blue_print_bed"
+        },
+        {
+            "subject": "caddy_small_white",
+            "relation": "located_on",
+            "object": "blue_print_bed"
+        }
+    ],
+    "current_location": "current_location",
+    "plans": []
+}

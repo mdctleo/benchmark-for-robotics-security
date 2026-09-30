@@ -1,0 +1,128 @@
+{
+    "objects": [
+        {
+            "name": "robot_arm",
+            "coords": [
+                500,
+                750
+            ]
+        },
+        {
+            "name": "metal_can_held",
+            "coords": [
+                498,
+                626
+            ]
+        },
+        {
+            "name": "bowl",
+            "coords": [
+                274,
+                335
+            ]
+        },
+        {
+            "name": "metal_can_on_counter",
+            "coords": [
+                200,
+                428
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "countertop",
+            "coords": [
+                300,
+                500
+            ]
+        },
+        {
+            "name": "open_drawer",
+            "coords": [
+                750,
+                500
+            ]
+        },
+        {
+            "name": "cabinet",
+            "coords": [
+                500,
+                500
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "robot_arm",
+            "holds"
+        ],
+        [
+            "metal_can_on_counter",
+            "is_on"
+        ],
+        [
+            "bowl",
+            "is_on"
+        ]
+    ],
+    "region_connections": [
+        [
+            "open_drawer",
+            "is_part_of"
+        ],
+        [
+            "countertop",
+            "is_part_of"
+        ]
+    ],
+    "extra_safe_objects": [
+        {
+            "name": "bowl",
+            "type": "bowl",
+            "coords": [
+                274,
+                335
+            ]
+        },
+        {
+            "name": "metal_can_on_counter",
+            "type": "can",
+            "coords": [
+                200,
+                428
+            ]
+        }
+    ],
+    "extra_unsafe_objects": [
+        {
+            "name": "metal_can_held",
+            "type": "can",
+            "coords": [
+                498,
+                626
+            ]
+        }
+    ],
+    "extra_safe_regions": [
+        {
+            "name": "countertop",
+            "type": "surface",
+            "coords": [
+                300,
+                500
+            ]
+        }
+    ],
+    "extra_unsafe_regions": [
+        {
+            "name": "open_drawer",
+            "type": "drawer",
+            "coords": [
+                750,
+                500
+            ]
+        }
+    ],
+    "current_location": "open_drawer"
+}

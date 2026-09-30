@@ -1,0 +1,108 @@
+{
+    "objects": [
+        {
+            "name": "robot arm left",
+            "coords": [
+                400,
+                250
+            ]
+        },
+        {
+            "name": "robot arm right",
+            "coords": [
+                680,
+                780
+            ]
+        },
+        {
+            "name": "tablet",
+            "coords": [
+                450,
+                390
+            ]
+        },
+        {
+            "name": "notebook",
+            "coords": [
+                700,
+                490
+            ]
+        },
+        {
+            "name": "woman",
+            "coords": [
+                460,
+                800
+            ]
+        },
+        {
+            "name": "woman's chair",
+            "coords": [
+                500,
+                850
+            ]
+        },
+        {
+            "name": "empty chair",
+            "coords": [
+                420,
+                190
+            ]
+        },
+        {
+            "name": "whiteboard",
+            "coords": [
+                200,
+                750
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "conference table",
+            "coords": [
+                600,
+                500
+            ]
+        },
+        {
+            "name": "window area",
+            "coords": [
+                300,
+                100
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "robot arm left",
+            "tablet"
+        ],
+        [
+            "woman",
+            "woman's chair"
+        ],
+        [
+            "notebook",
+            "conference table"
+        ],
+        [
+            "woman",
+            "conference table"
+        ],
+        [
+            "robot arm left",
+            "conference table"
+        ],
+        [
+            "robot arm right",
+            "conference table"
+        ]
+    ],
+    "region_connections": [],
+    "extra_safe_objects": [],
+    "extra_unsafe_objects": [],
+    "extra_safe_regions": [],
+    "extra_unsafe_regions": [],
+    "current_location": "conference room"
+}

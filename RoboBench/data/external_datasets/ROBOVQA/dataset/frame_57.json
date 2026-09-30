@@ -1,0 +1,333 @@
+{
+    "regions": [
+        {
+            "name": "table_1",
+            "type": "surface",
+            "centroid": [
+                420,
+                280
+            ],
+            "bounding_box": [
+                80,
+                150,
+                760,
+                390
+            ]
+        },
+        {
+            "name": "floor_1",
+            "type": "background",
+            "centroid": [
+                400,
+                440
+            ],
+            "bounding_box": [
+                0,
+                390,
+                800,
+                200
+            ]
+        },
+        {
+            "name": "left_edge_workspace",
+            "type": "surface_area",
+            "centroid": [
+                110,
+                250
+            ],
+            "bounding_box": [
+                0,
+                170,
+                160,
+                250
+            ]
+        }
+    ],
+    "objects": [
+        {
+            "name": "syringe_soap_bottle_1",
+            "type": "container",
+            "centroid": [
+                405,
+                155
+            ],
+            "bounding_box": [
+                350,
+                110,
+                120,
+                150
+            ],
+            "in_region": "table_1"
+        },
+        {
+            "name": "bundle_of_blue_brushes_1",
+            "type": "brush_bundle",
+            "centroid": [
+                510,
+                170
+            ],
+            "bounding_box": [
+                470,
+                120,
+                110,
+                160
+            ],
+            "in_region": "table_1"
+        },
+        {
+            "name": "camera_control_card_1",
+            "type": "paper_card",
+            "centroid": [
+                470,
+                215
+            ],
+            "bounding_box": [
+                410,
+                185,
+                150,
+                120
+            ],
+            "in_region": "table_1"
+        },
+        {
+            "name": "cylindrical_black_container_1",
+            "type": "container",
+            "centroid": [
+                350,
+                255
+            ],
+            "bounding_box": [
+                310,
+                230,
+                130,
+                170
+            ],
+            "in_region": "table_1"
+        },
+        {
+            "name": "gloves_black_1",
+            "type": "glove",
+            "centroid": [
+                300,
+                270
+            ],
+            "bounding_box": [
+                260,
+                250,
+                120,
+                140
+            ],
+            "in_region": "table_1"
+        },
+        {
+            "name": "green_marker_1",
+            "type": "marker",
+            "centroid": [
+                560,
+                285
+            ],
+            "bounding_box": [
+                520,
+                270,
+                120,
+                40
+            ],
+            "in_region": "table_1"
+        },
+        {
+            "name": "blue_marker_1",
+            "type": "marker",
+            "centroid": [
+                500,
+                310
+            ],
+            "bounding_box": [
+                460,
+                290,
+                120,
+                70
+            ],
+            "in_region": "table_1"
+        },
+        {
+            "name": "yellow_marker_1",
+            "type": "marker",
+            "centroid": [
+                535,
+                330
+            ],
+            "bounding_box": [
+                500,
+                320,
+                110,
+                60
+            ],
+            "in_region": "table_1"
+        },
+        {
+            "name": "orange_tool_1",
+            "type": "tool",
+            "centroid": [
+                505,
+                345
+            ],
+            "bounding_box": [
+                455,
+                330,
+                120,
+                50
+            ],
+            "in_region": "table_1"
+        },
+        {
+            "name": "white_gel_tube_1",
+            "type": "tube",
+            "centroid": [
+                520,
+                390
+            ],
+            "bounding_box": [
+                480,
+                370,
+                120,
+                60
+            ],
+            "in_region": "table_1"
+        },
+        {
+            "name": "heat_gun_1",
+            "type": "power_tool",
+            "centroid": [
+                690,
+                260
+            ],
+            "bounding_box": [
+                560,
+                150,
+                240,
+                280
+            ],
+            "in_region": "table_1"
+        },
+        {
+            "name": "box_left_1",
+            "type": "packaging_box",
+            "centroid": [
+                80,
+                280
+            ],
+            "bounding_box": [
+                0,
+                210,
+                160,
+                220
+            ],
+            "in_region": "left_edge_workspace"
+        }
+    ],
+    "semantic_relationships": [
+        {
+            "type": "located_on",
+            "subject": "syringe_soap_bottle_1",
+            "object": "table_1"
+        },
+        {
+            "type": "located_on",
+            "subject": "bundle_of_blue_brushes_1",
+            "object": "table_1"
+        },
+        {
+            "type": "located_on",
+            "subject": "camera_control_card_1",
+            "object": "table_1"
+        },
+        {
+            "type": "located_on",
+            "subject": "cylindrical_black_container_1",
+            "object": "table_1"
+        },
+        {
+            "type": "located_on",
+            "subject": "gloves_black_1",
+            "object": "table_1"
+        },
+        {
+            "type": "located_on",
+            "subject": "green_marker_1",
+            "object": "table_1"
+        },
+        {
+            "type": "located_on",
+            "subject": "blue_marker_1",
+            "object": "table_1"
+        },
+        {
+            "type": "located_on",
+            "subject": "yellow_marker_1",
+            "object": "table_1"
+        },
+        {
+            "type": "located_on",
+            "subject": "orange_tool_1",
+            "object": "table_1"
+        },
+        {
+            "type": "located_on",
+            "subject": "white_gel_tube_1",
+            "object": "table_1"
+        },
+        {
+            "type": "located_on",
+            "subject": "heat_gun_1",
+            "object": "table_1"
+        },
+        {
+            "type": "located_on",
+            "subject": "box_left_1",
+            "object": "left_edge_workspace"
+        },
+        {
+            "type": "near",
+            "subject": "bundle_of_blue_brushes_1",
+            "object": "syringe_soap_bottle_1"
+        },
+        {
+            "type": "near",
+            "subject": "camera_control_card_1",
+            "object": "bundle_of_blue_brushes_1"
+        },
+        {
+            "type": "near",
+            "subject": "blue_marker_1",
+            "object": "green_marker_1"
+        },
+        {
+            "type": "near",
+            "subject": "orange_tool_1",
+            "object": "blue_marker_1"
+        },
+        {
+            "type": "near",
+            "subject": "heat_gun_1",
+            "object": "white_gel_tube_1"
+        }
+    ],
+    "current_location": {
+        "subject": "heat_gun_1",
+        "region": "table_1"
+    },
+    "plans": [
+        {
+            "name": "organize_tools_on_table",
+            "target_region": "table_1",
+            "involved_objects": [
+                "heat_gun_1",
+                "blue_marker_1",
+                "green_marker_1",
+                "orange_tool_1",
+                "white_gel_tube_1"
+            ],
+            "goal": "group the tools and markers together on the main work surface"
+        }
+    ]
+}

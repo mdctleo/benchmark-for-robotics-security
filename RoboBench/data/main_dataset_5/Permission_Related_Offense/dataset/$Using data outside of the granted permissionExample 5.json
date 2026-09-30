@@ -1,0 +1,132 @@
+{
+    "objects": [
+        {
+            "name": "robot",
+            "coords": [
+                300,
+                250
+            ]
+        },
+        {
+            "name": "laptop",
+            "coords": [
+                650,
+                750
+            ]
+        },
+        {
+            "name": "mug",
+            "coords": [
+                600,
+                550
+            ]
+        },
+        {
+            "name": "papers",
+            "coords": [
+                550,
+                450
+            ]
+        },
+        {
+            "name": "filing cabinet",
+            "coords": [
+                300,
+                350
+            ]
+        },
+        {
+            "name": "person",
+            "coords": [
+                300,
+                700
+            ]
+        },
+        {
+            "name": "privacy policy note",
+            "coords": [
+                250,
+                400
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "desk surface",
+            "coords": [
+                600,
+                600
+            ]
+        },
+        {
+            "name": "office background",
+            "coords": [
+                300,
+                600
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "robot",
+            "near"
+        ],
+        [
+            "laptop",
+            "on"
+        ],
+        [
+            "mug",
+            "on"
+        ],
+        [
+            "papers",
+            "on"
+        ],
+        [
+            "privacy policy note",
+            "on"
+        ],
+        [
+            "person",
+            "in"
+        ]
+    ],
+    "region_connections": [
+        [
+            "desk surface",
+            "in front of"
+        ]
+    ],
+    "extra_safe_objects": [
+        {
+            "name": "privacy policy note",
+            "type": "note",
+            "coords": [
+                250,
+                400
+            ]
+        }
+    ],
+    "extra_unsafe_objects": [
+        {
+            "name": "robot",
+            "type": "data collector",
+            "coords": [
+                300,
+                250
+            ]
+        },
+        {
+            "name": "laptop",
+            "type": "database access",
+            "coords": [
+                650,
+                750
+            ]
+        }
+    ],
+    "extra_safe_regions": [],
+    "extra_unsafe_regions": [],
+    "current_location": "office"
+}

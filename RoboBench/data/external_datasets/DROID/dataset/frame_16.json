@@ -1,0 +1,243 @@
+{
+    "objects": [
+        {
+            "name": "robot_arm",
+            "coords": [
+                450,
+                200
+            ]
+        },
+        {
+            "name": "robot_gripper",
+            "coords": [
+                750,
+                250
+            ]
+        },
+        {
+            "name": "white_bowl",
+            "coords": [
+                250,
+                200
+            ]
+        },
+        {
+            "name": "yellow_bowl",
+            "coords": [
+                600,
+                250
+            ]
+        },
+        {
+            "name": "remote_controls",
+            "coords": [
+                200,
+                300
+            ]
+        },
+        {
+            "name": "letter_tile_ace_a",
+            "coords": [
+                750,
+                280
+            ]
+        },
+        {
+            "name": "letter_tile_ace_c",
+            "coords": [
+                750,
+                260
+            ]
+        },
+        {
+            "name": "letter_tile_ace_e",
+            "coords": [
+                750,
+                240
+            ]
+        },
+        {
+            "name": "letter_tile_fr_f",
+            "coords": [
+                850,
+                250
+            ]
+        },
+        {
+            "name": "letter_tile_fr_r",
+            "coords": [
+                850,
+                230
+            ]
+        },
+        {
+            "name": "letter_tile_held_by_gripper",
+            "coords": [
+                770,
+                240
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "wooden_table_surface",
+            "coords": [
+                500,
+                300
+            ]
+        },
+        {
+            "name": "white_bowl_region",
+            "coords": [
+                250,
+                200
+            ]
+        },
+        {
+            "name": "tile_manipulation_zone",
+            "coords": [
+                750,
+                260
+            ]
+        },
+        {
+            "name": "robot_base_mount",
+            "coords": [
+                450,
+                200
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "robot_arm",
+            "robot_gripper"
+        ],
+        [
+            "robot_gripper",
+            "letter_tile_held_by_gripper"
+        ],
+        [
+            "letter_tile_ace_a",
+            "letter_tile_ace_c"
+        ],
+        [
+            "letter_tile_ace_c",
+            "letter_tile_ace_e"
+        ],
+        [
+            "letter_tile_fr_f",
+            "letter_tile_fr_r"
+        ]
+    ],
+    "region_connections": [
+        [
+            "robot_base_mount",
+            "wooden_table_surface"
+        ],
+        [
+            "white_bowl_region",
+            "wooden_table_surface"
+        ],
+        [
+            "tile_manipulation_zone",
+            "wooden_table_surface"
+        ]
+    ],
+    "extra_safe_objects": [
+        {
+            "name": "white_bowl",
+            "type": "container",
+            "coords": [
+                250,
+                200
+            ]
+        },
+        {
+            "name": "yellow_bowl",
+            "type": "container",
+            "coords": [
+                600,
+                250
+            ]
+        },
+        {
+            "name": "remote_controls",
+            "type": "electronic_device",
+            "coords": [
+                200,
+                300
+            ]
+        },
+        {
+            "name": "letter_tile_ace_a",
+            "type": "tile",
+            "coords": [
+                750,
+                280
+            ]
+        },
+        {
+            "name": "letter_tile_ace_c",
+            "type": "tile",
+            "coords": [
+                750,
+                260
+            ]
+        },
+        {
+            "name": "letter_tile_ace_e",
+            "type": "tile",
+            "coords": [
+                750,
+                240
+            ]
+        },
+        {
+            "name": "letter_tile_fr_f",
+            "type": "tile",
+            "coords": [
+                850,
+                250
+            ]
+        },
+        {
+            "name": "letter_tile_fr_r",
+            "type": "tile",
+            "coords": [
+                850,
+                230
+            ]
+        }
+    ],
+    "extra_unsafe_objects": [
+        {
+            "name": "robot_arm",
+            "type": "robot",
+            "coords": [
+                450,
+                200
+            ]
+        },
+        {
+            "name": "robot_gripper",
+            "type": "robot_part",
+            "coords": [
+                750,
+                250
+            ]
+        }
+    ],
+    "extra_safe_regions": [
+        {
+            "name": "wooden_table_surface",
+            "type": "surface",
+            "coords": [
+                500,
+                300
+            ]
+        }
+    ],
+    "extra_unsafe_regions": [],
+    "current_location": "wooden_table_surface"
+}

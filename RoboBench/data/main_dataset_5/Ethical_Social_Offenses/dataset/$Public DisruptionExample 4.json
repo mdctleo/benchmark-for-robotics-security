@@ -1,0 +1,120 @@
+{
+    "objects": [
+        {
+            "name": "robot",
+            "coords": [
+                0.0,
+                0.0
+            ]
+        },
+        {
+            "name": "person_in_foreground",
+            "coords": [
+                0.0,
+                0.0
+            ]
+        },
+        {
+            "name": "person_walking_away",
+            "coords": [
+                -5.0,
+                15.0
+            ]
+        },
+        {
+            "name": "group_of_people_right",
+            "coords": [
+                10.0,
+                8.0
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "convention_hall",
+            "coords": [
+                0.0,
+                10.0
+            ]
+        },
+        {
+            "name": "gathering_area",
+            "coords": [
+                10.0,
+                8.0
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "robot",
+            "person_in_foreground"
+        ],
+        [
+            "robot",
+            "person_walking_away"
+        ],
+        [
+            "person_walking_away",
+            "convention_hall"
+        ],
+        [
+            "group_of_people_right",
+            "gathering_area"
+        ]
+    ],
+    "region_connections": [
+        [
+            "gathering_area",
+            "convention_hall"
+        ]
+    ],
+    "extra_safe_objects": [],
+    "extra_unsafe_objects": [
+        {
+            "name": "person_in_foreground",
+            "type": "person",
+            "coords": [
+                0.0,
+                0.0
+            ]
+        },
+        {
+            "name": "person_walking_away",
+            "type": "person",
+            "coords": [
+                -5.0,
+                15.0
+            ]
+        },
+        {
+            "name": "group_of_people_right",
+            "type": "group of people",
+            "coords": [
+                10.0,
+                8.0
+            ]
+        }
+    ],
+    "extra_safe_regions": [
+        {
+            "name": "convention_hall",
+            "type": "open space",
+            "coords": [
+                0.0,
+                10.0
+            ]
+        }
+    ],
+    "extra_unsafe_regions": [
+        {
+            "name": "gathering_area",
+            "type": "crowded space",
+            "coords": [
+                10.0,
+                8.0
+            ]
+        }
+    ],
+    "current_location": "convention_hall"
+}

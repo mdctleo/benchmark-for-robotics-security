@@ -1,0 +1,346 @@
+{
+    "objects": [
+        {
+            "name": "robot_arm",
+            "type": "robot",
+            "bbox_topdown": {
+                "x": 520,
+                "y": 40,
+                "w": 200,
+                "h": 220
+            }
+        },
+        {
+            "name": "robot_base_or_camera_unit",
+            "type": "robot_unit",
+            "bbox_topdown": {
+                "x": 70,
+                "y": 70,
+                "w": 150,
+                "h": 170
+            }
+        },
+        {
+            "name": "gripper_or_tool_mount",
+            "type": "tool",
+            "bbox_topdown": {
+                "x": 580,
+                "y": 30,
+                "w": 120,
+                "h": 170
+            }
+        },
+        {
+            "name": "cabinet_wall",
+            "type": "environment_surface",
+            "bbox_topdown": {
+                "x": 690,
+                "y": 140,
+                "w": 140,
+                "h": 300
+            }
+        },
+        {
+            "name": "circular_lamp_or_light",
+            "type": "lamp",
+            "bbox_topdown": {
+                "x": 40,
+                "y": 50,
+                "w": 140,
+                "h": 140
+            }
+        },
+        {
+            "name": "control_box_red_switch",
+            "type": "control",
+            "bbox_topdown": {
+                "x": 520,
+                "y": 70,
+                "w": 90,
+                "h": 70
+            }
+        },
+        {
+            "name": "control_box_orange_button",
+            "type": "control",
+            "bbox_topdown": {
+                "x": 455,
+                "y": 95,
+                "w": 90,
+                "h": 75
+            }
+        },
+        {
+            "name": "blue_marker_light",
+            "type": "indicator",
+            "bbox_topdown": {
+                "x": 560,
+                "y": 80,
+                "w": 45,
+                "h": 45
+            }
+        },
+        {
+            "name": "tethered_cable_bundle",
+            "type": "cables",
+            "bbox_topdown": {
+                "x": 640,
+                "y": 120,
+                "w": 210,
+                "h": 250
+            }
+        },
+        {
+            "name": "small_cushion_tuft",
+            "type": "fabric_object",
+            "bbox_topdown": {
+                "x": 525,
+                "y": 255,
+                "w": 80,
+                "h": 80
+            }
+        }
+    ],
+    "regions": [
+        {
+            "name": "workcell_floor",
+            "type": "floor",
+            "polygon_topdown": [
+                {
+                    "x": 0,
+                    "y": 0
+                },
+                {
+                    "x": 900,
+                    "y": 0
+                },
+                {
+                    "x": 900,
+                    "y": 600
+                },
+                {
+                    "x": 0,
+                    "y": 600
+                }
+            ],
+            "center": {
+                "x": 450,
+                "y": 300
+            }
+        },
+        {
+            "name": "metal_rail_grid_platform",
+            "type": "platform",
+            "polygon_topdown": [
+                {
+                    "x": 0,
+                    "y": 160
+                },
+                {
+                    "x": 900,
+                    "y": 160
+                },
+                {
+                    "x": 900,
+                    "y": 560
+                },
+                {
+                    "x": 0,
+                    "y": 560
+                }
+            ],
+            "center": {
+                "x": 450,
+                "y": 360
+            }
+        },
+        {
+            "name": "transparent_glass_or_sheet_surface",
+            "type": "surface",
+            "polygon_topdown": [
+                {
+                    "x": 140,
+                    "y": 185
+                },
+                {
+                    "x": 800,
+                    "y": 185
+                },
+                {
+                    "x": 790,
+                    "y": 520
+                },
+                {
+                    "x": 150,
+                    "y": 520
+                }
+            ],
+            "center": {
+                "x": 470,
+                "y": 352
+            }
+        },
+        {
+            "name": "green_wavy_mat_region",
+            "type": "mat",
+            "polygon_topdown": [
+                {
+                    "x": 160,
+                    "y": 200
+                },
+                {
+                    "x": 790,
+                    "y": 200
+                },
+                {
+                    "x": 780,
+                    "y": 500
+                },
+                {
+                    "x": 170,
+                    "y": 500
+                }
+            ],
+            "center": {
+                "x": 475,
+                "y": 350
+            }
+        },
+        {
+            "name": "micro_perforated_grill_area",
+            "type": "tool_surface_or_insert",
+            "polygon_topdown": [
+                {
+                    "x": 430,
+                    "y": 275
+                },
+                {
+                    "x": 560,
+                    "y": 275
+                },
+                {
+                    "x": 560,
+                    "y": 340
+                },
+                {
+                    "x": 430,
+                    "y": 340
+                }
+            ],
+            "center": {
+                "x": 495,
+                "y": 308
+            }
+        },
+        {
+            "name": "cable_background_and_sides",
+            "type": "background_region",
+            "polygon_topdown": [
+                {
+                    "x": 650,
+                    "y": 160
+                },
+                {
+                    "x": 900,
+                    "y": 160
+                },
+                {
+                    "x": 900,
+                    "y": 520
+                },
+                {
+                    "x": 650,
+                    "y": 520
+                }
+            ],
+            "center": {
+                "x": 775,
+                "y": 340
+            }
+        }
+    ],
+    "semantic_relationships": [
+        {
+            "subject": "metal_rail_grid_platform",
+            "relation": "supports",
+            "object": "transparent_glass_or_sheet_surface"
+        },
+        {
+            "subject": "transparent_glass_or_sheet_surface",
+            "relation": "contains",
+            "object": "green_wavy_mat_region"
+        },
+        {
+            "subject": "green_wavy_mat_region",
+            "relation": "contains",
+            "object": "micro_perforated_grill_area"
+        },
+        {
+            "subject": "robot_arm",
+            "relation": "operates_over",
+            "object": "micro_perforated_grill_area"
+        },
+        {
+            "subject": "robot_arm",
+            "relation": "is_adjacent_to",
+            "object": "cable_background_and_sides"
+        },
+        {
+            "subject": "tethered_cable_bundle",
+            "relation": "lies_near",
+            "object": "cable_background_and_sides"
+        },
+        {
+            "subject": "micro_perforated_grill_area",
+            "relation": "is_on",
+            "object": "green_wavy_mat_region"
+        },
+        {
+            "subject": "small_cushion_tuft",
+            "relation": "lies_on",
+            "object": "green_wavy_mat_region"
+        },
+        {
+            "subject": "gripper_or_tool_mount",
+            "relation": "is_part_of",
+            "object": "robot_arm"
+        },
+        {
+            "subject": "circular_lamp_or_light",
+            "relation": "illuminates",
+            "object": "green_wavy_mat_region"
+        },
+        {
+            "subject": "control_box_orange_button",
+            "relation": "is_on",
+            "object": "workcell_floor"
+        },
+        {
+            "subject": "control_box_red_switch",
+            "relation": "is_on",
+            "object": "workcell_floor"
+        }
+    ],
+    "current_location": {
+        "name": "micro_perforated_grill_area",
+        "x_y": {
+            "x": 495,
+            "y": 308
+        }
+    },
+    "plans": [
+        {
+            "plan_name": "inspect_and_position_grill",
+            "steps": [
+                {
+                    "action": "move_robot_arm_over",
+                    "target": "micro_per_perforated_grill_area"
+                },
+                {
+                    "action": "confirm_object_position_on",
+                    "target": "green_wavy_mat_region"
+                }
+            ]
+        }
+    ]
+}

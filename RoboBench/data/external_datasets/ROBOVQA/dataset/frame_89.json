@@ -1,0 +1,79 @@
+{
+    "objects": [
+        {
+            "name": "robot_arm",
+            "coords": [
+                680,
+                720
+            ]
+        },
+        {
+            "name": "cart",
+            "coords": [
+                420,
+                390
+            ]
+        },
+        {
+            "name": "bag_of_chips",
+            "coords": [
+                370,
+                330
+            ]
+        },
+        {
+            "name": "pencil",
+            "coords": [
+                440,
+                400
+            ]
+        },
+        {
+            "name": "notebook_on_cart",
+            "coords": [
+                500,
+                480
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "ground",
+            "coords": [
+                500,
+                500
+            ]
+        },
+        {
+            "name": "table",
+            "coords": [
+                150,
+                150
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "robot_arm",
+            "pencil"
+        ],
+        [
+            "cart",
+            "bag_of_chips"
+        ],
+        [
+            "cart",
+            "notebook_on_cart"
+        ],
+        [
+            "cart",
+            "pencil"
+        ]
+    ],
+    "region_connections": [],
+    "extra_safe_objects": [],
+    "extra_unsafe_objects": [],
+    "extra_safe_regions": [],
+    "extra_unsafe_regions": [],
+    "current_location": "ground"
+}

@@ -1,0 +1,281 @@
+{
+    "objects": [
+        {
+            "name": "truck_on_left",
+            "type": "vehicle",
+            "position": {
+                "x": 8,
+                "y": 72
+            },
+            "size": {
+                "w": 10,
+                "h": 6
+            }
+        },
+        {
+            "name": "cargo_truck",
+            "type": "vehicle",
+            "position": {
+                "x": 24,
+                "y": 78
+            },
+            "size": {
+                "w": 9,
+                "h": 5
+            }
+        },
+        {
+            "name": "white_car_far",
+            "type": "vehicle",
+            "position": {
+                "x": 53,
+                "y": 62
+            },
+            "size": {
+                "w": 4,
+                "h": 3
+            }
+        },
+        {
+            "name": "red_car_far",
+            "type": "vehicle",
+            "position": {
+                "x": 45,
+                "y": 66
+            },
+            "size": {
+                "w": 4,
+                "h": 3
+            }
+        },
+        {
+            "name": "small_vehicle_right",
+            "type": "vehicle",
+            "position": {
+                "x": 97,
+                "y": 77
+            },
+            "size": {
+                "w": 4,
+                "h": 3
+            }
+        },
+        {
+            "name": "road_sign_yellow_arrow",
+            "type": "traffic_sign",
+            "position": {
+                "x": 66,
+                "y": 45
+            },
+            "size": {
+                "w": 4,
+                "h": 4
+            }
+        },
+        {
+            "name": "streetlight_poles",
+            "type": "infrastructure",
+            "position": {
+                "x": 86,
+                "y": 40
+            },
+            "size": {
+                "w": 5,
+                "h": 12
+            }
+        },
+        {
+            "name": "tree_right_side_large",
+            "type": "vegetation",
+            "position": {
+                "x": 85,
+                "y": 30
+            },
+            "size": {
+                "w": 12,
+                "h": 18
+            }
+        },
+        {
+            "name": "bushes_right",
+            "type": "vegetation",
+            "position": {
+                "x": 92,
+                "y": 52
+            },
+            "size": {
+                "w": 16,
+                "h": 14
+            }
+        }
+    ],
+    "regions": [
+        {
+            "name": "road_lane_center",
+            "type": "road_region",
+            "polygon": [
+                [
+                    47,
+                    98
+                ],
+                [
+                    60,
+                    70
+                ],
+                [
+                    62,
+                    30
+                ],
+                [
+                    40,
+                    30
+                ],
+                [
+                    35,
+                    70
+                ]
+            ]
+        },
+        {
+            "name": "road_lane_left_edge",
+            "type": "road_region",
+            "polygon": [
+                [
+                    35,
+                    100
+                ],
+                [
+                    47,
+                    98
+                ],
+                [
+                    40,
+                    30
+                ],
+                [
+                    25,
+                    70
+                ]
+            ]
+        },
+        {
+            "name": "road_lane_right_edge",
+            "type": "road_region",
+            "polygon": [
+                [
+                    62,
+                    30
+                ],
+                [
+                    80,
+                    30
+                ],
+                [
+                    90,
+                    70
+                ],
+                [
+                    70,
+                    100
+                ]
+            ]
+        },
+        {
+            "name": "shoulder_right",
+            "type": "road_region",
+            "polygon": [
+                [
+                    80,
+                    30
+                ],
+                [
+                    99,
+                    34
+                ],
+                [
+                    98,
+                    78
+                ],
+                [
+                    90,
+                    70
+                ]
+            ]
+        },
+        {
+            "name": "current_location",
+            "type": "vehicle_region",
+            "polygon": [
+                [
+                    48,
+                    98
+                ],
+                [
+                    62,
+                    98
+                ],
+                [
+                    62,
+                    90
+                ],
+                [
+                    48,
+                    90
+                ]
+            ]
+        }
+    ],
+    "semantic_relationships": [
+        {
+            "subject": "truck_on_left",
+            "predicate": "is_in",
+            "object": "road_lane_left_edge"
+        },
+        {
+            "subject": "cargo_truck",
+            "predicate": "is_in",
+            "object": "road_lane_left_edge"
+        },
+        {
+            "subject": "white_car_far",
+            "predicate": "is_in",
+            "object": "road_lane_center"
+        },
+        {
+            "subject": "red_car_far",
+            "predicate": "is_in",
+            "object": "road_lane_center"
+        },
+        {
+            "subject": "small_vehicle_right",
+            "predicate": "is_in",
+            "object": "shoulder_right"
+        },
+        {
+            "subject": "road_sign_yellow_arrow",
+            "predicate": "is_near",
+            "object": "road_lane_center"
+        },
+        {
+            "subject": "streetlight_poles",
+            "predicate": "is_near",
+            "object": "shoulder_right"
+        },
+        {
+            "subject": "tree_right_side_large",
+            "predicate": "is_near",
+            "object": "shoulder_right"
+        },
+        {
+            "subject": "bushes_right",
+            "predicate": "is_near",
+            "object": "shoulder_right"
+        },
+        {
+            "subject": "current_location",
+            "predicate": "is_adjacent_to",
+            "object": "road_lane_center"
+        }
+    ],
+    "current_location": "current_location"
+}

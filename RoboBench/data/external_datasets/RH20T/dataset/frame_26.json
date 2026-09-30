@@ -1,0 +1,196 @@
+{
+    "objects": [
+        {
+            "name": "robotic_system",
+            "type": "robot",
+            "coord": [
+                770,
+                200
+            ]
+        },
+        {
+            "name": "control_panel",
+            "type": "control_station",
+            "coord": [
+                670,
+                110
+            ]
+        },
+        {
+            "name": "blue_tarp",
+            "type": "fabric",
+            "coord": [
+                520,
+                340
+            ]
+        },
+        {
+            "name": "person_legs",
+            "type": "human_part",
+            "coord": [
+                980,
+                60
+            ]
+        },
+        {
+            "name": "mounted_camera",
+            "type": "camera",
+            "coord": [
+                100,
+                60
+            ]
+        },
+        {
+            "name": "blue_support_frame",
+            "type": "frame",
+            "coord": [
+                200,
+                220
+            ]
+        },
+        {
+            "name": "yellow_and_black_components",
+            "type": "electrical_components",
+            "coord": [
+                360,
+                60
+            ]
+        },
+        {
+            "name": "stack_of_cables",
+            "type": "cables",
+            "coord": [
+                360,
+                30
+            ]
+        },
+        {
+            "name": "small_square_piece",
+            "type": "small_object",
+            "coord": [
+                500,
+                290
+            ]
+        },
+        {
+            "name": "wall_outlet",
+            "type": "outlet",
+            "coord": [
+                610,
+                470
+            ]
+        },
+        {
+            "name": "probe_or_pointer",
+            "type": "tool",
+            "coord": [
+                570,
+                520
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "tarp_surface",
+            "type": "work_surface",
+            "coord": [
+                520,
+                360
+            ]
+        },
+        {
+            "name": "printed_area_on_tarp",
+            "type": "printed_region",
+            "coord": [
+                520,
+                360
+            ]
+        },
+        {
+            "name": "dark_stained_area",
+            "type": "stain_or_spill",
+            "coord": [
+                650,
+                420
+            ]
+        },
+        {
+            "name": "wood_floor",
+            "type": "floor_region",
+            "coord": [
+                80,
+                520
+            ]
+        },
+        {
+            "name": "background_area",
+            "type": "background",
+            "coord": [
+                500,
+                90
+            ]
+        }
+    ],
+    "semantic_relationships": [
+        {
+            "type": "supports",
+            "from": "tarp_surface",
+            "to": "blue_tarp"
+        },
+        {
+            "type": "contains",
+            "from": "tarp_surface",
+            "to": "printed_area_on_tarp"
+        },
+        {
+            "type": "overlaps",
+            "from": "dark_stained_area",
+            "to": "printed_area_on_tarp"
+        },
+        {
+            "type": "contains",
+            "from": "tarp_surface",
+            "to": "small_square_piece"
+        },
+        {
+            "type": "adjacent_to",
+            "from": "robotic_system",
+            "to": "tarp_surface"
+        },
+        {
+            "type": "positioned_near",
+            "from": "control_panel",
+            "to": "background_area"
+        },
+        {
+            "type": "mounted_on",
+            "from": "mounted_camera",
+            "to": "blue_support_frame"
+        },
+        {
+            "type": "associated_with",
+            "from": "stack_of_cables",
+            "to": "yellow_and_black_components"
+        },
+        {
+            "type": "mounted_near",
+            "from": "wall_outlet",
+            "to": "robotic_system"
+        },
+        {
+            "type": "located_on",
+            "from": "probe_or_pointer",
+            "to": "tarp_surface"
+        },
+        {
+            "type": "encloses_boundary_with",
+            "from": "blue_support_frame",
+            "to": "tarp_surface"
+        }
+    ],
+    "current_location": {
+        "entity": "robotic_system",
+        "region": "tarp_surface"
+    },
+    "plans": []
+}

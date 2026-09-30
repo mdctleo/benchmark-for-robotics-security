@@ -1,0 +1,236 @@
+{
+    "objects": [
+        {
+            "name": "robot_arm",
+            "coords": [
+                250,
+                450
+            ]
+        },
+        {
+            "name": "frying_pan",
+            "coords": [
+                300,
+                280
+            ]
+        },
+        {
+            "name": "white_bin",
+            "coords": [
+                300,
+                210
+            ]
+        },
+        {
+            "name": "chair_left",
+            "coords": [
+                340,
+                360
+            ]
+        },
+        {
+            "name": "cutlery_tray",
+            "coords": [
+                450,
+                500
+            ]
+        },
+        {
+            "name": "metal_bowl",
+            "coords": [
+                480,
+                600
+            ]
+        },
+        {
+            "name": "gray_towel",
+            "coords": [
+                550,
+                700
+            ]
+        },
+        {
+            "name": "water_bottle",
+            "coords": [
+                400,
+                350
+            ]
+        },
+        {
+            "name": "silverware_pile",
+            "coords": [
+                700,
+                700
+            ]
+        },
+        {
+            "name": "dish_rack",
+            "coords": [
+                450,
+                400
+            ]
+        },
+        {
+            "name": "kitchen_appliance",
+            "coords": [
+                350,
+                200
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "table_1",
+            "coords": [
+                500,
+                500
+            ]
+        },
+        {
+            "name": "counter_top",
+            "coords": [
+                400,
+                200
+            ]
+        },
+        {
+            "name": "floor",
+            "coords": [
+                500,
+                900
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "robot_arm",
+            "table_1"
+        ],
+        [
+            "frying_pan",
+            "table_1"
+        ],
+        [
+            "cutlery_tray",
+            "table_1"
+        ],
+        [
+            "metal_bowl",
+            "table_1"
+        ],
+        [
+            "gray_towel",
+            "table_1"
+        ],
+        [
+            "water_bottle",
+            "table_1"
+        ],
+        [
+            "silverware_pile",
+            "table_1"
+        ],
+        [
+            "dish_rack",
+            "table_1"
+        ],
+        [
+            "kitchen_appliance",
+            "counter_top"
+        ],
+        [
+            "chair_left",
+            "table_1"
+        ]
+    ],
+    "region_connections": [
+        [
+            "table_1",
+            "counter_top"
+        ],
+        [
+            "table_1",
+            "floor"
+        ]
+    ],
+    "extra_safe_objects": [
+        {
+            "name": "metal_bowl",
+            "type": "container",
+            "coords": [
+                480,
+                600
+            ]
+        },
+        {
+            "name": "gray_towel",
+            "type": "soft_object",
+            "coords": [
+                550,
+                700
+            ]
+        },
+        {
+            "name": "water_bottle",
+            "type": "container",
+            "coords": [
+                400,
+                350
+            ]
+        },
+        {
+            "name": "dish_rack",
+            "type": "container",
+            "coords": [
+                450,
+                400
+            ]
+        }
+    ],
+    "extra_unsafe_objects": [
+        {
+            "name": "frying_pan",
+            "type": "kitchenware",
+            "coords": [
+                300,
+                280
+            ]
+        },
+        {
+            "name": "silverware_pile",
+            "type": "sharp_objects",
+            "coords": [
+                700,
+                700
+            ]
+        }
+    ],
+    "extra_safe_regions": [
+        {
+            "name": "table_1",
+            "type": "furniture",
+            "coords": [
+                500,
+                500
+            ]
+        },
+        {
+            "name": "counter_top",
+            "type": "surface",
+            "coords": [
+                400,
+                200
+            ]
+        },
+        {
+            "name": "floor",
+            "type": "surface",
+            "coords": [
+                500,
+                900
+            ]
+        }
+    ],
+    "extra_unsafe_regions": [],
+    "current_location": "table_1"
+}

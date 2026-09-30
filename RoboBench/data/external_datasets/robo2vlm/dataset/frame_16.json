@@ -1,0 +1,53 @@
+{
+    "objects": [
+        {
+            "name": "robot_arm",
+            "coords": [
+                77,
+                85
+            ]
+        },
+        {
+            "name": "sponge",
+            "coords": [
+                52,
+                69
+            ]
+        },
+        {
+            "name": "bag_of_chips",
+            "coords": [
+                45,
+                41
+            ]
+        },
+        {
+            "name": "can",
+            "coords": [
+                30,
+                70
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "table",
+            "coords": [
+                50,
+                50
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "robot_arm",
+            "sponge"
+        ]
+    ],
+    "region_connections": [],
+    "extra_safe_objects": [],
+    "extra_unsafe_objects": [],
+    "extra_safe_regions": [],
+    "extra_unsafe_regions": [],
+    "current_location": "table"
+}

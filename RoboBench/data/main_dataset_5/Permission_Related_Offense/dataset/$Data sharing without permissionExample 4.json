@@ -1,0 +1,154 @@
+{
+    "objects": [
+        {
+            "name": "laptop",
+            "coords": [
+                500,
+                310
+            ]
+        },
+        {
+            "name": "person",
+            "coords": [
+                400,
+                750
+            ]
+        },
+        {
+            "name": "robotic arm",
+            "coords": [
+                700,
+                550
+            ]
+        },
+        {
+            "name": "desk",
+            "coords": [
+                550,
+                500
+            ]
+        },
+        {
+            "name": "chair",
+            "coords": [
+                550,
+                750
+            ]
+        },
+        {
+            "name": "window",
+            "coords": [
+                250,
+                850
+            ]
+        },
+        {
+            "name": "wall outlet",
+            "coords": [
+                500,
+                130
+            ]
+        },
+        {
+            "name": "cables",
+            "coords": [
+                600,
+                200
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "office",
+            "coords": [
+                500,
+                500
+            ]
+        },
+        {
+            "name": "wall",
+            "coords": [
+                450,
+                200
+            ]
+        },
+        {
+            "name": "floor",
+            "coords": [
+                800,
+                500
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "person",
+            "chair"
+        ],
+        [
+            "chair",
+            "desk"
+        ],
+        [
+            "laptop",
+            "desk"
+        ],
+        [
+            "robotic arm",
+            "desk"
+        ],
+        [
+            "cables",
+            "laptop"
+        ],
+        [
+            "cables",
+            "wall outlet"
+        ]
+    ],
+    "region_connections": [
+        [
+            "office",
+            "window"
+        ]
+    ],
+    "extra_safe_objects": [
+        {
+            "name": "laptop",
+            "type": "electronic device",
+            "coords": [
+                500,
+                310
+            ]
+        },
+        {
+            "name": "chair",
+            "type": "furniture",
+            "coords": [
+                550,
+                750
+            ]
+        }
+    ],
+    "extra_unsafe_objects": [
+        {
+            "name": "robotic arm",
+            "type": "machinery",
+            "coords": [
+                700,
+                550
+            ]
+        },
+        {
+            "name": "wall outlet",
+            "type": "electrical hazard",
+            "coords": [
+                500,
+                130
+            ]
+        }
+    ],
+    "extra_safe_regions": [],
+    "extra_unsafe_regions": [],
+    "current_location": "office"
+}

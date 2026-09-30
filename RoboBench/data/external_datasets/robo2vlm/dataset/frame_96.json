@@ -1,0 +1,121 @@
+{
+    "objects": [
+        {
+            "name": "robot_arm",
+            "coords": [
+                183,
+                199
+            ]
+        },
+        {
+            "name": "coffee_machine",
+            "coords": [
+                458,
+                659
+            ]
+        },
+        {
+            "name": "mug",
+            "coords": [
+                510,
+                570
+            ]
+        },
+        {
+            "name": "metal_container",
+            "coords": [
+                426,
+                819
+            ]
+        },
+        {
+            "name": "lazy_susan",
+            "coords": [
+                611,
+                238
+            ]
+        },
+        {
+            "name": "coffee_pod",
+            "coords": [
+                591,
+                161
+            ]
+        },
+        {
+            "name": "wooden_cup",
+            "coords": [
+                628,
+                93
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "table_surface",
+            "coords": [
+                614,
+                477
+            ]
+        },
+        {
+            "name": "drip_tray",
+            "coords": [
+                530,
+                608
+            ]
+        },
+        {
+            "name": "lazy_susan_surface",
+            "coords": [
+                611,
+                238
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "mug",
+            "drip_tray"
+        ],
+        [
+            "metal_container",
+            "coffee_machine"
+        ],
+        [
+            "coffee_pod",
+            "lazy_susan_surface"
+        ],
+        [
+            "wooden_cup",
+            "lazy_susan_surface"
+        ],
+        [
+            "coffee_machine",
+            "table_surface"
+        ],
+        [
+            "lazy_susan",
+            "table_surface"
+        ],
+        [
+            "robot_arm",
+            "table_surface"
+        ]
+    ],
+    "region_connections": [
+        [
+            "drip_tray",
+            "table_surface"
+        ],
+        [
+            "lazy_susan_surface",
+            "table_surface"
+        ]
+    ],
+    "extra_safe_objects": [],
+    "extra_unsafe_objects": [],
+    "extra_safe_regions": [],
+    "extra_unsafe_regions": [],
+    "current_location": "table_surface"
+}

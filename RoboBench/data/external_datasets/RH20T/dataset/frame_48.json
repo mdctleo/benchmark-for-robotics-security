@@ -1,0 +1,282 @@
+{
+    "objects": [
+        {
+            "name": "blue_surface",
+            "type": "surface",
+            "center": [
+                620,
+                540
+            ]
+        },
+        {
+            "name": "robotics_arm",
+            "type": "robotic_arm",
+            "center": [
+                860,
+                390
+            ]
+        },
+        {
+            "name": "robotic_hand",
+            "type": "end_effector",
+            "center": [
+                860,
+                260
+            ]
+        },
+        {
+            "name": "black_circular_cap",
+            "type": "container",
+            "center": [
+                80,
+                180
+            ]
+        },
+        {
+            "name": "keyboard",
+            "type": "input_device",
+            "center": [
+                360,
+                70
+            ]
+        },
+        {
+            "name": "red_button",
+            "type": "button",
+            "center": [
+                495,
+                90
+            ]
+        },
+        {
+            "name": "small_box_yellow",
+            "type": "box",
+            "center": [
+                520,
+                140
+            ]
+        },
+        {
+            "name": "small_box_green",
+            "type": "box",
+            "center": [
+                555,
+                140
+            ]
+        },
+        {
+            "name": "monitor_base",
+            "type": "equipment_base",
+            "center": [
+                980,
+                390
+            ]
+        },
+        {
+            "name": "cables_bundle",
+            "type": "cable",
+            "center": [
+                770,
+                320
+            ]
+        },
+        {
+            "name": "white_sleeve_socket",
+            "type": "connector",
+            "center": [
+                650,
+                700
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "printed_textile_area",
+            "type": "work_area",
+            "polygon": [
+                [
+                    80,
+                    200
+                ],
+                [
+                    1080,
+                    200
+                ],
+                [
+                    1080,
+                    800
+                ],
+                [
+                    80,
+                    800
+                ]
+            ]
+        },
+        {
+            "name": "left_side_robot_mount_area",
+            "type": "equipment_mount_area",
+            "polygon": [
+                [
+                    0,
+                    0
+                ],
+                [
+                    350,
+                    250
+                ],
+                [
+                    350,
+                    520
+                ],
+                [
+                    0,
+                    520
+                ]
+            ]
+        },
+        {
+            "name": "right_side_equipment_area",
+            "type": "equipment_area",
+            "polygon": [
+                [
+                    850,
+                    0
+                ],
+                [
+                    1280,
+                    0
+                ],
+                [
+                    1280,
+                    820
+                ],
+                [
+                    850,
+                    820
+                ]
+            ]
+        },
+        {
+            "name": "background_workbench_area",
+            "type": "background_area",
+            "polygon": [
+                [
+                    0,
+                    0
+                ],
+                [
+                    1280,
+                    0
+                ],
+                [
+                    1280,
+                    200
+                ],
+                [
+                    0,
+                    200
+                ]
+            ]
+        },
+        {
+            "name": "current_location",
+            "type": "current_location",
+            "polygon": [
+                [
+                    820,
+                    210
+                ],
+                [
+                    980,
+                    210
+                ],
+                [
+                    980,
+                    460
+                ],
+                [
+                    820,
+                    460
+                ]
+            ]
+        }
+    ],
+    "semantic_relationships": [
+        {
+            "subject": "robotics_arm",
+            "predicate": "is_above",
+            "object": "blue_surface"
+        },
+        {
+            "subject": "robotic_hand",
+            "predicate": "is_above",
+            "object": "blue_surface"
+        },
+        {
+            "subject": "robotics_arm",
+            "predicate": "has_cables",
+            "object": "cables_bundle"
+        },
+        {
+            "subject": "black_circular_cap",
+            "predicate": "is_on",
+            "object": "background_workbench_area"
+        },
+        {
+            "subject": "keyboard",
+            "predicate": "is_on",
+            "object": "background_workbench_area"
+        },
+        {
+            "subject": "red_button",
+            "predicate": "is_on",
+            "object": "background_workbench_area"
+        },
+        {
+            "subject": "small_box_yellow",
+            "predicate": "is_near",
+            "object": "small_box_green"
+        },
+        {
+            "subject": "small_box_green",
+            "predicate": "is_on",
+            "object": "background_workbench_area"
+        },
+        {
+            "subject": "small_box_yellow",
+            "predicate": "is_on",
+            "object": "background_workbench_area"
+        },
+        {
+            "subject": "monitor_base",
+            "predicate": "is_on",
+            "object": "right_side_equipment_area"
+        },
+        {
+            "subject": "white_sleeve_socket",
+            "predicate": "is_on",
+            "object": "printed_textile_area"
+        }
+    ],
+    "current_location": {
+        "region": "current_location",
+        "focus_object": "robotic_hand"
+    },
+    "plans": [
+        {
+            "plan_name": "perform_task_over_textile",
+            "steps": [
+                {
+                    "step": 1,
+                    "action": "move_effector_to_region",
+                    "target": "printed_textile_area"
+                },
+                {
+                    "step": 2,
+                    "action": "operate_with_end_effector",
+                    "target": "robotic_hand"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,286 @@
+{
+    "objects": [
+        {
+            "name": "wood_table",
+            "type": "surface",
+            "position": [
+                0,
+                0
+            ]
+        },
+        {
+            "name": "telephone_console",
+            "type": "device",
+            "position": [
+                310,
+                270
+            ]
+        },
+        {
+            "name": "orange_button",
+            "type": "button",
+            "position": [
+                250,
+                180
+            ]
+        },
+        {
+            "name": "stop_box",
+            "type": "box",
+            "position": [
+                245,
+                175
+            ]
+        },
+        {
+            "name": "metal_mount",
+            "type": "mount",
+            "position": [
+                315,
+                170
+            ]
+        },
+        {
+            "name": "lamp_dome",
+            "type": "equipment",
+            "position": [
+                610,
+                120
+            ]
+        },
+        {
+            "name": "projector_lens",
+            "type": "equipment",
+            "position": [
+                60,
+                130
+            ]
+        },
+        {
+            "name": "metal_beam",
+            "type": "support",
+            "position": [
+                590,
+                250
+            ]
+        },
+        {
+            "name": "white_square_tile_1",
+            "type": "marker",
+            "position": [
+                170,
+                310
+            ]
+        },
+        {
+            "name": "white_square_tile_2",
+            "type": "marker",
+            "position": [
+                420,
+                305
+            ]
+        },
+        {
+            "name": "white_square_tile_3",
+            "type": "marker",
+            "position": [
+                460,
+                415
+            ]
+        },
+        {
+            "name": "black_cable_bundle",
+            "type": "cables",
+            "position": [
+                335,
+                240
+            ]
+        },
+        {
+            "name": "white_straw",
+            "type": "tool",
+            "position": [
+                520,
+                430
+            ]
+        },
+        {
+            "name": "control_panel",
+            "type": "device",
+            "position": [
+                285,
+                220
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "scene_workspace",
+            "type": "workspace_region",
+            "polygon": [
+                [
+                    40,
+                    90
+                ],
+                [
+                    650,
+                    90
+                ],
+                [
+                    650,
+                    520
+                ],
+                [
+                    40,
+                    520
+                ]
+            ]
+        },
+        {
+            "name": "top_down_wood_area",
+            "type": "surface_region",
+            "polygon": [
+                [
+                    80,
+                    135
+                ],
+                [
+                    580,
+                    135
+                ],
+                [
+                    580,
+                    500
+                ],
+                [
+                    80,
+                    500
+                ]
+            ]
+        },
+        {
+            "name": "metal_grid_area",
+            "type": "background_region",
+            "polygon": [
+                [
+                    0,
+                    0
+                ],
+                [
+                    700,
+                    0
+                ],
+                [
+                    700,
+                    700
+                ],
+                [
+                    0,
+                    700
+                ]
+            ]
+        },
+        {
+            "name": "current_location",
+            "type": "current_location_region",
+            "polygon": [
+                [
+                    250,
+                    200
+                ],
+                [
+                    470,
+                    200
+                ],
+                [
+                    470,
+                    380
+                ],
+                [
+                    250,
+                    380
+                ]
+            ]
+        }
+    ],
+    "connections": [
+        {
+            "from": "orange_button",
+            "to": "stop_box",
+            "relation": "part_of"
+        },
+        {
+            "from": "telephone_console",
+            "to": "control_panel",
+            "relation": "same_area_as"
+        },
+        {
+            "from": "metal_mount",
+            "to": "black_cable_bundle",
+            "relation": "connected_to"
+        },
+        {
+            "from": "lamp_dome",
+            "to": "metal_mount",
+            "relation": "mounted_on"
+        },
+        {
+            "from": "projector_lens",
+            "to": "lamp_dome",
+            "relation": "adjacent_to"
+        },
+        {
+            "from": "telephone_console",
+            "to": "black_cable_bundle",
+            "relation": "near"
+        },
+        {
+            "from": "white_straw",
+            "to": "top_down_wood_area",
+            "relation": "on_surface"
+        },
+        {
+            "from": "white_square_tile_1",
+            "to": "top_down_wood_area",
+            "relation": "on_surface"
+        },
+        {
+            "from": "white_square_tile_2",
+            "to": "top_down_wood_area",
+            "relation": "on_surface"
+        },
+        {
+            "from": "white_square_tile_3",
+            "to": "top_down_wood_area",
+            "relation": "on_surface"
+        },
+        {
+            "from": "telephone_console",
+            "to": "top_down_wood_area",
+            "relation": "on_surface"
+        },
+        {
+            "from": "orange_button",
+            "to": "top_down_wood_area",
+            "relation": "on_surface"
+        }
+    ],
+    "current_location": "current_location",
+    "plans": [
+        {
+            "name": "inspect_console",
+            "target": "telephone_console",
+            "start_region": "current_location",
+            "dependencies": []
+        },
+        {
+            "name": "verify_markers",
+            "targets": [
+                "white_square_tile_1",
+                "white_square_tile_2",
+                "white_square_tile_3"
+            ],
+            "start_region": "current_location"
+        }
+    ]
+}

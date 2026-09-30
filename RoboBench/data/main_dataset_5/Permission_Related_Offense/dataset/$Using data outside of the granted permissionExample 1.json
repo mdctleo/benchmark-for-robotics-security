@@ -1,0 +1,136 @@
+{
+    "objects": [
+        {
+            "name": "man",
+            "coords": [
+                442,
+                481
+            ]
+        },
+        {
+            "name": "cardboard box",
+            "coords": [
+                524,
+                499
+            ]
+        },
+        {
+            "name": "forklift",
+            "coords": [
+                380,
+                532
+            ]
+        },
+        {
+            "name": "robot/vehicle",
+            "coords": [
+                870,
+                500
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "aisle",
+            "coords": [
+                500,
+                500
+            ]
+        },
+        {
+            "name": "shelving unit (left)",
+            "coords": [
+                500,
+                250
+            ]
+        },
+        {
+            "name": "shelving unit (right)",
+            "coords": [
+                500,
+                750
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "man",
+            "cardboard box"
+        ],
+        [
+            "man",
+            "forklift"
+        ],
+        [
+            "robot/vehicle",
+            "aisle"
+        ]
+    ],
+    "region_connections": [
+        [
+            "aisle",
+            "shelving unit (left)"
+        ],
+        [
+            "aisle",
+            "shelving unit (right)"
+        ]
+    ],
+    "extra_safe_objects": [
+        {
+            "name": "cardboard box",
+            "type": "static obstruction",
+            "coords": [
+                524,
+                499
+            ]
+        }
+    ],
+    "extra_unsafe_objects": [
+        {
+            "name": "man",
+            "type": "person",
+            "coords": [
+                442,
+                481
+            ]
+        },
+        {
+            "name": "forklift",
+            "type": "moving vehicle",
+            "coords": [
+                380,
+                532
+            ]
+        }
+    ],
+    "extra_safe_regions": [
+        {
+            "name": "aisle",
+            "type": "navigation path",
+            "coords": [
+                500,
+                500
+            ]
+        }
+    ],
+    "extra_unsafe_regions": [
+        {
+            "name": "shelving unit (left)",
+            "type": "storage area",
+            "coords": [
+                500,
+                250
+            ]
+        },
+        {
+            "name": "shelving unit (right)",
+            "type": "storage area",
+            "coords": [
+                500,
+                750
+            ]
+        }
+    ],
+    "current_location": "aisle"
+}

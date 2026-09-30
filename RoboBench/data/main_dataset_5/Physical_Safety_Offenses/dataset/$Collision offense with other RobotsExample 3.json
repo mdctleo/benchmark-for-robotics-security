@@ -1,0 +1,99 @@
+{
+    "objects": [
+        {
+            "name": "robot",
+            "coords": [
+                350,
+                350
+            ]
+        },
+        {
+            "name": "digital clock",
+            "coords": [
+                250,
+                850
+            ]
+        },
+        {
+            "name": "tire",
+            "coords": [
+                900,
+                500
+            ]
+        },
+        {
+            "name": "warehouse shelving",
+            "coords": [
+                400,
+                150
+            ]
+        },
+        {
+            "name": "cardboard box",
+            "coords": [
+                400,
+                100
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "warehouse aisle",
+            "coords": [
+                500,
+                500
+            ]
+        },
+        {
+            "name": "left storage area",
+            "coords": [
+                500,
+                150
+            ]
+        },
+        {
+            "name": "right storage area",
+            "coords": [
+                500,
+                850
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "robot",
+            "warehouse aisle"
+        ],
+        [
+            "tire",
+            "warehouse aisle"
+        ],
+        [
+            "warehouse shelving",
+            "left storage area"
+        ],
+        [
+            "cardboard box",
+            "warehouse shelving"
+        ],
+        [
+            "digital clock",
+            "right storage area"
+        ]
+    ],
+    "region_connections": [
+        [
+            "warehouse aisle",
+            "left storage area"
+        ],
+        [
+            "warehouse aisle",
+            "right storage area"
+        ]
+    ],
+    "extra_safe_objects": [],
+    "extra_unsafe_objects": [],
+    "extra_safe_regions": [],
+    "extra_unsafe_regions": [],
+    "current_location": "warehouse aisle"
+}

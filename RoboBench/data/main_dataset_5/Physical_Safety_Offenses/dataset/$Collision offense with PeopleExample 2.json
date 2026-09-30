@@ -1,0 +1,106 @@
+{
+    "objects": [
+        {
+            "name": "person",
+            "coords": [
+                1.5,
+                0.2
+            ]
+        },
+        {
+            "name": "autonomous vehicle",
+            "coords": [
+                0.0,
+                0.0
+            ]
+        },
+        {
+            "name": "warning sign",
+            "coords": [
+                1.8,
+                0.8
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "sidewalk",
+            "coords": [
+                1.0,
+                0.2
+            ]
+        },
+        {
+            "name": "grass area",
+            "coords": [
+                1.0,
+                0.8
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "person",
+            "on"
+        ],
+        [
+            "autonomous vehicle",
+            "on"
+        ],
+        [
+            "person",
+            "in front of"
+        ],
+        [
+            "warning sign",
+            "next to"
+        ]
+    ],
+    "region_connections": [
+        [
+            "sidewalk",
+            "borders"
+        ]
+    ],
+    "extra_safe_objects": [
+        {
+            "name": "warning sign",
+            "type": "static sign",
+            "coords": [
+                1.8,
+                0.8
+            ]
+        }
+    ],
+    "extra_unsafe_objects": [
+        {
+            "name": "person",
+            "type": "pedestrian",
+            "coords": [
+                1.5,
+                0.2
+            ]
+        }
+    ],
+    "extra_safe_regions": [
+        {
+            "name": "sidewalk",
+            "type": "path",
+            "coords": [
+                1.0,
+                0.2
+            ]
+        }
+    ],
+    "extra_unsafe_regions": [
+        {
+            "name": "grass area",
+            "type": "off-road terrain",
+            "coords": [
+                1.0,
+                0.8
+            ]
+        }
+    ],
+    "current_location": "sidewalk"
+}

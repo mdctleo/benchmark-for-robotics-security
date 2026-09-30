@@ -1,0 +1,327 @@
+{
+    "objects": [
+        {
+            "name": "keyboard",
+            "type": "device",
+            "center": [
+                735,
+                265
+            ]
+        },
+        {
+            "name": "monitor_base",
+            "type": "furniture",
+            "center": [
+                780,
+                170
+            ]
+        },
+        {
+            "name": "monitor_stand",
+            "type": "furniture",
+            "center": [
+                825,
+                225
+            ]
+        },
+        {
+            "name": "office_tray",
+            "type": "container",
+            "center": [
+                840,
+                290
+            ]
+        },
+        {
+            "name": "caution_box",
+            "type": "device",
+            "center": [
+                675,
+                70
+            ]
+        },
+        {
+            "name": "small_cube",
+            "type": "object",
+            "center": [
+                600,
+                185
+            ]
+        },
+        {
+            "name": "black_rim_object",
+            "type": "object",
+            "center": [
+                55,
+                90
+            ]
+        },
+        {
+            "name": "tool_cable_bundle",
+            "type": "cable",
+            "center": [
+                920,
+                60
+            ]
+        },
+        {
+            "name": "red_button",
+            "type": "control",
+            "center": [
+                640,
+                35
+            ]
+        },
+        {
+            "name": "green_yellow_switch",
+            "type": "control",
+            "center": [
+                615,
+                35
+            ]
+        },
+        {
+            "name": "wall_outlet",
+            "type": "facility",
+            "center": [
+                715,
+                300
+            ]
+        },
+        {
+            "name": "paper_tray",
+            "type": "surface",
+            "center": [
+                70,
+                260
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "blue_mat",
+            "type": "workspace",
+            "polygon": [
+                [
+                    150,
+                    40
+                ],
+                [
+                    940,
+                    40
+                ],
+                [
+                    940,
+                    310
+                ],
+                [
+                    150,
+                    310
+                ]
+            ]
+        },
+        {
+            "name": "desk_surface",
+            "type": "workspace",
+            "polygon": [
+                [
+                    0,
+                    0
+                ],
+                [
+                    1000,
+                    0
+                ],
+                [
+                    1000,
+                    420
+                ],
+                [
+                    0,
+                    420
+                ]
+            ]
+        },
+        {
+            "name": "mat_left_side",
+            "type": "workspace_area",
+            "polygon": [
+                [
+                    150,
+                    40
+                ],
+                [
+                    450,
+                    40
+                ],
+                [
+                    450,
+                    310
+                ],
+                [
+                    150,
+                    310
+                ]
+            ]
+        },
+        {
+            "name": "mat_center_area",
+            "type": "workspace_area",
+            "polygon": [
+                [
+                    450,
+                    40
+                ],
+                [
+                    700,
+                    40
+                ],
+                [
+                    700,
+                    310
+                ],
+                [
+                    450,
+                    310
+                ]
+            ]
+        },
+        {
+            "name": "mat_right_side",
+            "type": "workspace_area",
+            "polygon": [
+                [
+                    700,
+                    40
+                ],
+                [
+                    940,
+                    40
+                ],
+                [
+                    940,
+                    310
+                ],
+                [
+                    700,
+                    310
+                ]
+            ]
+        },
+        {
+            "name": "floor_or_cable_zone",
+            "type": "workspace_area",
+            "polygon": [
+                [
+                    0,
+                    310
+                ],
+                [
+                    1000,
+                    310
+                ],
+                [
+                    1000,
+                    420
+                ],
+                [
+                    0,
+                    420
+                ]
+            ]
+        },
+        {
+            "name": "current_location",
+            "type": "current_location",
+            "polygon": [
+                [
+                    150,
+                    40
+                ],
+                [
+                    940,
+                    40
+                ],
+                [
+                    940,
+                    310
+                ],
+                [
+                    150,
+                    310
+                ]
+            ]
+        }
+    ],
+    "semantic_relationships": [
+        {
+            "subject": "small_cube",
+            "relation": "located_on",
+            "object": "blue_mat"
+        },
+        {
+            "subject": "small_cube",
+            "relation": "located_in_area",
+            "object": "mat_center_area"
+        },
+        {
+            "subject": "keyboard",
+            "relation": "near",
+            "object": "blue_mat"
+        },
+        {
+            "subject": "wall_outlet",
+            "relation": "near",
+            "object": "blue_mat"
+        },
+        {
+            "subject": "tool_cable_bundle",
+            "relation": "runs_along",
+            "object": "desk_surface"
+        },
+        {
+            "subject": "black_rim_object",
+            "relation": "located_near",
+            "object": "paper_tray"
+        },
+        {
+            "subject": "caution_box",
+            "relation": "mounted_on",
+            "object": "desk_surface"
+        },
+        {
+            "subject": "red_button",
+            "relation": "part_of",
+            "object": "caution_box"
+        },
+        {
+            "subject": "green_yellow_switch",
+            "relation": "part_of",
+            "object": "caution_box"
+        },
+        {
+            "subject": "monitor_base",
+            "relation": "adjacent_to",
+            "object": "desk_surface"
+        },
+        {
+            "subject": "monitor_stand",
+            "relation": "supports",
+            "object": "monitor_base"
+        },
+        {
+            "subject": "paper_tray",
+            "relation": "located_on",
+            "object": "desk_surface"
+        },
+        {
+            "subject": "office_tray",
+            "relation": "located_on",
+            "object": "desk_surface"
+        }
+    ],
+    "spatial_state": {
+        "current_location": "current_location",
+        "notes": "The blue mat is the main workspace; the small cube is placed on the mat near the center."
+    }
+}

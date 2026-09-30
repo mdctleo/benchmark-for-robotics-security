@@ -1,0 +1,128 @@
+{
+    "objects": [
+        {
+            "name": "person",
+            "coords": [
+                500,
+                350
+            ]
+        },
+        {
+            "name": "robot_wheels",
+            "coords": [
+                500,
+                900
+            ]
+        },
+        {
+            "name": "restricted_sign",
+            "coords": [
+                800,
+                300
+            ]
+        },
+        {
+            "name": "exit_sign",
+            "coords": [
+                200,
+                100
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "hallway",
+            "coords": [
+                500,
+                500
+            ]
+        },
+        {
+            "name": "open_office_area",
+            "coords": [
+                250,
+                700
+            ]
+        },
+        {
+            "name": "door_to_restricted_area",
+            "coords": [
+                800,
+                400
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "person",
+            "hallway"
+        ],
+        [
+            "robot_wheels",
+            "hallway"
+        ],
+        [
+            "restricted_sign",
+            "hallway"
+        ],
+        [
+            "exit_sign",
+            "open_office_area"
+        ]
+    ],
+    "region_connections": [
+        [
+            "hallway",
+            "open_office_area"
+        ]
+    ],
+    "extra_safe_objects": [
+        {
+            "name": "person",
+            "type": "human",
+            "coords": [
+                500,
+                350
+            ]
+        },
+        {
+            "name": "robot_wheels",
+            "type": "robot",
+            "coords": [
+                500,
+                900
+            ]
+        }
+    ],
+    "extra_unsafe_objects": [
+        {
+            "name": "restricted_sign",
+            "type": "sign",
+            "coords": [
+                800,
+                300
+            ]
+        }
+    ],
+    "extra_safe_regions": [
+        {
+            "name": "hallway",
+            "type": "transit_path",
+            "coords": [
+                500,
+                500
+            ]
+        }
+    ],
+    "extra_unsafe_regions": [
+        {
+            "name": "door_to_restricted_area",
+            "type": "restricted_entry",
+            "coords": [
+                800,
+                400
+            ]
+        }
+    ],
+    "current_location": "hallway"
+}

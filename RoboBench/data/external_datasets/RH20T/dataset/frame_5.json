@@ -1,0 +1,234 @@
+{
+    "objects": [
+        {
+            "name": "blue_bench",
+            "type": "furniture_surface",
+            "bbox": [
+                120,
+                210,
+                880,
+                860
+            ],
+            "position_topdown": [
+                520,
+                535
+            ]
+        },
+        {
+            "name": "orange_button",
+            "type": "control_button",
+            "bbox": [
+                365,
+                250,
+                540,
+                395
+            ],
+            "position_topdown": [
+                455,
+                322
+            ]
+        },
+        {
+            "name": "cable_bundle",
+            "type": "cables",
+            "bbox": [
+                535,
+                0,
+                850,
+                210
+            ],
+            "position_topdown": [
+                690,
+                105
+            ]
+        },
+        {
+            "name": "black_tray",
+            "type": "container_or_mount",
+            "bbox": [
+                0,
+                40,
+                170,
+                320
+            ],
+            "position_topdown": [
+                85,
+                180
+            ]
+        },
+        {
+            "name": "black_keyboard",
+            "type": "computer_device",
+            "bbox": [
+                150,
+                0,
+                420,
+                210
+            ],
+            "position_topdown": [
+                285,
+                105
+            ]
+        },
+        {
+            "name": "gray_helmet_or_headgear",
+            "type": "headgear",
+            "bbox": [
+                820,
+                120,
+                1050,
+                520
+            ],
+            "position_topdown": [
+                960,
+                320
+            ]
+        },
+        {
+            "name": "white_box_device",
+            "type": "device",
+            "bbox": [
+                620,
+                560,
+                795,
+                715
+            ],
+            "position_topdown": [
+                707,
+                640
+            ]
+        },
+        {
+            "name": "metal_frame",
+            "type": "structure",
+            "bbox": [
+                0,
+                110,
+                170,
+                860
+            ],
+            "position_topdown": [
+                85,
+                485
+            ]
+        },
+        {
+            "name": "metal_frame_2",
+            "type": "structure",
+            "bbox": [
+                860,
+                110,
+                1040,
+                860
+            ],
+            "position_topdown": [
+                955,
+                485
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "room_floor_strip",
+            "type": "floor",
+            "polygon_topdown": [
+                [
+                    0,
+                    0
+                ],
+                [
+                    1100,
+                    0
+                ],
+                [
+                    1100,
+                    930
+                ],
+                [
+                    0,
+                    930
+                ]
+            ],
+            "center_topdown": [
+                550,
+                465
+            ]
+        },
+        {
+            "name": "blue_bench_area",
+            "type": "furniture_zone",
+            "polygon_topdown": [
+                [
+                    120,
+                    210
+                ],
+                [
+                    880,
+                    210
+                ],
+                [
+                    880,
+                    860
+                ],
+                [
+                    120,
+                    860
+                ]
+            ],
+            "center_topdown": [
+                500,
+                535
+            ]
+        }
+    ],
+    "semantic_relationships": [
+        {
+            "subject": "orange_button",
+            "relation": "located_on",
+            "object": "blue_bench"
+        },
+        {
+            "subject": "blue_bench",
+            "relation": "within",
+            "object": "room_floor_strip"
+        },
+        {
+            "subject": "orange_button",
+            "relation": "within",
+            "object": "blue_bench_area"
+        },
+        {
+            "subject": "blue_bench_area",
+            "relation": "is_region_of",
+            "object": "blue_bench"
+        },
+        {
+            "subject": "cable_bundle",
+            "relation": "near",
+            "object": "blue_bench"
+        },
+        {
+            "subject": "black_keyboard",
+            "relation": "near",
+            "object": "blue_bench"
+        },
+        {
+            "subject": "gray_helmet_or_headgear",
+            "relation": "adjacent_to",
+            "object": "blue_bench"
+        },
+        {
+            "subject": "white_box_device",
+            "relation": "near",
+            "object": "blue_bench"
+        }
+    ],
+    "current_location": "blue_bench_area",
+    "plans": [
+        {
+            "plan_name": "inspect_orange_button",
+            "target": "orange_button",
+            "from_region": "blue_bench_area"
+        }
+    ]
+}

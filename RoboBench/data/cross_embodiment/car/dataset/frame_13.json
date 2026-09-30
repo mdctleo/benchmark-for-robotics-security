@@ -1,0 +1,229 @@
+{
+    "objects": [
+        {
+            "name": "car_1",
+            "type": "vehicle",
+            "position": {
+                "x": 0.52,
+                "y": 0.58
+            },
+            "size": {
+                "w": 0.04,
+                "h": 0.02
+            }
+        },
+        {
+            "name": "car_2",
+            "type": "vehicle",
+            "position": {
+                "x": 0.7,
+                "y": 0.5
+            },
+            "size": {
+                "w": 0.04,
+                "h": 0.02
+            }
+        },
+        {
+            "name": "road_marker_k1",
+            "type": "road_sign",
+            "position": {
+                "x": 0.79,
+                "y": 0.56
+            },
+            "size": {
+                "w": 0.01,
+                "h": 0.01
+            }
+        },
+        {
+            "name": "road_marker_pole1",
+            "type": "pole",
+            "position": {
+                "x": 0.83,
+                "y": 0.52
+            },
+            "size": {
+                "w": 0.005,
+                "h": 0.02
+            }
+        },
+        {
+            "name": "parked_vehicles_cluster1",
+            "type": "vehicles",
+            "position": {
+                "x": 0.22,
+                "y": 0.47
+            },
+            "size": {
+                "w": 0.08,
+                "h": 0.03
+            }
+        },
+        {
+            "name": "small_buildings_cluster1",
+            "type": "buildings",
+            "position": {
+                "x": 0.2,
+                "y": 0.5
+            },
+            "size": {
+                "w": 0.08,
+                "h": 0.03
+            }
+        }
+    ],
+    "regions": [
+        {
+            "name": "mountain_road_region",
+            "type": "road_region",
+            "shape": "polygon",
+            "polygon": [
+                {
+                    "x": 0.05,
+                    "y": 0.95
+                },
+                {
+                    "x": 0.43,
+                    "y": 0.95
+                },
+                {
+                    "x": 0.62,
+                    "y": 0.55
+                },
+                {
+                    "x": 0.38,
+                    "y": 0.55
+                }
+            ]
+        },
+        {
+            "name": "right_hillside_region",
+            "type": "terrain",
+            "shape": "polygon",
+            "polygon": [
+                {
+                    "x": 0.48,
+                    "y": 0.55
+                },
+                {
+                    "x": 0.97,
+                    "y": 0.55
+                },
+                {
+                    "x": 0.9,
+                    "y": 0.15
+                },
+                {
+                    "x": 0.52,
+                    "y": 0.15
+                }
+            ]
+        },
+        {
+            "name": "left_hillside_region",
+            "type": "terrain",
+            "shape": "polygon",
+            "polygon": [
+                {
+                    "x": 0.03,
+                    "y": 0.55
+                },
+                {
+                    "x": 0.45,
+                    "y": 0.55
+                },
+                {
+                    "x": 0.4,
+                    "y": 0.15
+                },
+                {
+                    "x": 0.0,
+                    "y": 0.15
+                }
+            ]
+        },
+        {
+            "name": "sky_region",
+            "type": "sky",
+            "shape": "polygon",
+            "polygon": [
+                {
+                    "x": 0.0,
+                    "y": 0.15
+                },
+                {
+                    "x": 1.0,
+                    "y": 0.15
+                },
+                {
+                    "x": 1.0,
+                    "y": 0.0
+                },
+                {
+                    "x": 0.0,
+                    "y": 0.0
+                }
+            ]
+        },
+        {
+            "name": "current_location",
+            "type": "vehicle_position",
+            "shape": "point",
+            "point": {
+                "x": 0.5,
+                "y": 0.92
+            }
+        }
+    ],
+    "semantic_relationships": [
+        {
+            "subject": "car_1",
+            "relation": "is_on",
+            "object": "mountain_road_region"
+        },
+        {
+            "subject": "car_2",
+            "relation": "is_on",
+            "object": "mountain_road_region"
+        },
+        {
+            "subject": "parked_vehicles_cluster1",
+            "relation": "is_near",
+            "object": "small_buildings_cluster1"
+        },
+        {
+            "subject": "road_marker_k1",
+            "relation": "is_on_edge_of",
+            "object": "mountain_road_region"
+        },
+        {
+            "subject": "road_marker_pole1",
+            "relation": "is_near",
+            "object": "right_hillside_region"
+        },
+        {
+            "subject": "small_buildings_cluster1",
+            "relation": "is_near",
+            "object": "left_hillside_region"
+        },
+        {
+            "subject": "car_1",
+            "relation": "is_ahead_of",
+            "object": "current_location"
+        },
+        {
+            "subject": "car_2",
+            "relation": "is_ahead_of",
+            "object": "current_location"
+        }
+    ],
+    "current_location": "current_location",
+    "plans": [
+        {
+            "plan_name": "continue_along_road",
+            "target_region": "mountain_road_region",
+            "notes": "Follow the road as it curves through the mountain area."
+        }
+    ]
+}

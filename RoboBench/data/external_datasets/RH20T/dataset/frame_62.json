@@ -1,0 +1,251 @@
+{
+    "objects": [
+        {
+            "name": "robot_arm",
+            "type": "robotic_arm",
+            "coord": [
+                310,
+                70
+            ]
+        },
+        {
+            "name": "black_round_base_left",
+            "type": "equipment",
+            "coord": [
+                90,
+                90
+            ]
+        },
+        {
+            "name": "black_cylinder_device",
+            "type": "device",
+            "coord": [
+                120,
+                60
+            ]
+        },
+        {
+            "name": "yellow_tool_module",
+            "type": "tooling",
+            "coord": [
+                190,
+                40
+            ]
+        },
+        {
+            "name": "blue_mat_top",
+            "type": "mat",
+            "coord": [
+                230,
+                200
+            ]
+        },
+        {
+            "name": "cardboard_box",
+            "type": "container",
+            "coord": [
+                250,
+                185
+            ]
+        },
+        {
+            "name": "small_black_dot_on_board",
+            "type": "marker",
+            "coord": [
+                340,
+                185
+            ]
+        },
+        {
+            "name": "milling_or_tool_head",
+            "type": "tool_head",
+            "coord": [
+                270,
+                85
+            ]
+        },
+        {
+            "name": "cables",
+            "type": "cable",
+            "coord": [
+                120,
+                40
+            ]
+        },
+        {
+            "name": "leg_stand_right",
+            "type": "stand",
+            "coord": [
+                450,
+                190
+            ]
+        },
+        {
+            "name": "standing_tube_base_right",
+            "type": "structure",
+            "coord": [
+                470,
+                210
+            ]
+        },
+        {
+            "name": "desk_or_workbench_surface",
+            "type": "surface",
+            "coord": [
+                250,
+                330
+            ]
+        },
+        {
+            "name": "keyboard",
+            "type": "input_device",
+            "coord": [
+                40,
+                35
+            ]
+        },
+        {
+            "name": "monitor_or_screen",
+            "type": "display",
+            "coord": [
+                450,
+                20
+            ]
+        },
+        {
+            "name": "box_on_platform_left_top",
+            "type": "box",
+            "coord": [
+                280,
+                40
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "current_location",
+            "type": "working_area",
+            "coord": [
+                280,
+                200
+            ]
+        },
+        {
+            "name": "blue_mat_region",
+            "type": "mat_region",
+            "coord": [
+                250,
+                240
+            ]
+        },
+        {
+            "name": "robotic_workzone",
+            "type": "workzone",
+            "coord": [
+                270,
+                150
+            ]
+        },
+        {
+            "name": "background_workspace_floor",
+            "type": "background_area",
+            "coord": [
+                250,
+                330
+            ]
+        }
+    ],
+    "semantic_relationships": [
+        {
+            "subject": "robot_arm",
+            "predicate": "operates_in",
+            "object": "robotic_workzone"
+        },
+        {
+            "subject": "milling_or_tool_head",
+            "predicate": "is_part_of",
+            "object": "robot_arm"
+        },
+        {
+            "subject": "cardboard_box",
+            "predicate": "is_on",
+            "object": "blue_mat_region"
+        },
+        {
+            "subject": "small_black_dot_on_board",
+            "predicate": "is_on",
+            "object": "cardboard_box"
+        },
+        {
+            "subject": "yellow_tool_module",
+            "predicate": "is_mounted_near",
+            "object": "robot_arm"
+        },
+        {
+            "subject": "black_round_base_left",
+            "predicate": "is_near",
+            "object": "blue_mat_region"
+        },
+        {
+            "subject": "black_cylinder_device",
+            "predicate": "is_near",
+            "object": "robot_arm"
+        },
+        {
+            "subject": "blue_mat_top",
+            "predicate": "covers",
+            "object": "current_location"
+        },
+        {
+            "subject": "cardboard_box",
+            "predicate": "is_within",
+            "object": "robotic_workzone"
+        },
+        {
+            "subject": "cables",
+            "predicate": "are_near",
+            "object": "robot_arm"
+        },
+        {
+            "subject": "keyboard",
+            "predicate": "is_in",
+            "object": "background_workspace_floor"
+        },
+        {
+            "subject": "monitor_or_screen",
+            "predicate": "is_in",
+            "object": "background_workspace_floor"
+        },
+        {
+            "subject": "desk_or_workbench_surface",
+            "predicate": "contains",
+            "object": "current_location"
+        },
+        {
+            "subject": "standing_tube_base_right",
+            "predicate": "is_near",
+            "object": "current_location"
+        },
+        {
+            "subject": "leg_stand_right",
+            "predicate": "supports",
+            "object": "standing_tube_base_right"
+        },
+        {
+            "subject": "box_on_platform_left_top",
+            "predicate": "is_near",
+            "object": "robot_arm"
+        }
+    ],
+    "current_state": {
+        "current_location": "current_location"
+    },
+    "plans": [
+        {
+            "plan_name": "tool_interaction_over_box",
+            "target_object": "cardboard_box",
+            "start_region": "robotic_workzone",
+            "end_region": "current_location"
+        }
+    ]
+}

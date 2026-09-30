@@ -1,0 +1,233 @@
+{
+    "objects": [
+        {
+            "name": "blue_sedan",
+            "coords": [
+                73,
+                71
+            ]
+        },
+        {
+            "name": "white_suv",
+            "coords": [
+                89,
+                96
+            ]
+        },
+        {
+            "name": "red_car",
+            "coords": [
+                87,
+                89
+            ]
+        },
+        {
+            "name": "oncoming_car_1",
+            "coords": [
+                42,
+                40
+            ]
+        },
+        {
+            "name": "oncoming_car_2",
+            "coords": [
+                43,
+                41
+            ]
+        },
+        {
+            "name": "power_line_tower_1",
+            "coords": [
+                34,
+                18
+            ]
+        },
+        {
+            "name": "power_line_tower_2",
+            "coords": [
+                40,
+                28
+            ]
+        },
+        {
+            "name": "utility_pole_1",
+            "coords": [
+                29,
+                10
+            ]
+        },
+        {
+            "name": "utility_pole_2",
+            "coords": [
+                37,
+                21
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "road",
+            "coords": [
+                50,
+                50
+            ]
+        },
+        {
+            "name": "sidewalk",
+            "coords": [
+                65,
+                70
+            ]
+        },
+        {
+            "name": "parking_lot",
+            "coords": [
+                80,
+                85
+            ]
+        },
+        {
+            "name": "left_shoulder",
+            "coords": [
+                30,
+                30
+            ]
+        },
+        {
+            "name": "trees_area",
+            "coords": [
+                75,
+                55
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "blue_sedan",
+            "parking_lot"
+        ],
+        [
+            "white_suv",
+            "parking_lot"
+        ],
+        [
+            "red_car",
+            "parking_lot"
+        ],
+        [
+            "oncoming_car_1",
+            "road"
+        ],
+        [
+            "oncoming_car_2",
+            "road"
+        ],
+        [
+            "power_line_tower_1",
+            "left_shoulder"
+        ],
+        [
+            "utility_pole_1",
+            "left_shoulder"
+        ]
+    ],
+    "region_connections": [
+        [
+            "road",
+            "sidewalk"
+        ],
+        [
+            "sidewalk",
+            "parking_lot"
+        ],
+        [
+            "road",
+            "left_shoulder"
+        ],
+        [
+            "parking_lot",
+            "trees_area"
+        ]
+    ],
+    "extra_safe_objects": [
+        {
+            "name": "blue_sedan",
+            "type": "vehicle",
+            "coords": [
+                73,
+                71
+            ]
+        },
+        {
+            "name": "white_suv",
+            "type": "vehicle",
+            "coords": [
+                89,
+                96
+            ]
+        },
+        {
+            "name": "red_car",
+            "type": "vehicle",
+            "coords": [
+                87,
+                89
+            ]
+        }
+    ],
+    "extra_unsafe_objects": [
+        {
+            "name": "oncoming_car_1",
+            "type": "vehicle",
+            "coords": [
+                42,
+                40
+            ]
+        },
+        {
+            "name": "oncoming_car_2",
+            "type": "vehicle",
+            "coords": [
+                43,
+                41
+            ]
+        }
+    ],
+    "extra_safe_regions": [
+        {
+            "name": "sidewalk",
+            "type": "pavement",
+            "coords": [
+                65,
+                70
+            ]
+        },
+        {
+            "name": "parking_lot",
+            "type": "pavement",
+            "coords": [
+                80,
+                85
+            ]
+        },
+        {
+            "name": "left_shoulder",
+            "type": "ground",
+            "coords": [
+                30,
+                30
+            ]
+        }
+    ],
+    "extra_unsafe_regions": [
+        {
+            "name": "road",
+            "type": "pavement",
+            "coords": [
+                50,
+                50
+            ]
+        }
+    ],
+    "current_location": "road"
+}

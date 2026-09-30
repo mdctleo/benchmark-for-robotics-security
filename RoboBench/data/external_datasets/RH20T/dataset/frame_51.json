@@ -1,0 +1,276 @@
+{
+    "objects": [
+        {
+            "name": "monitor_1",
+            "type": "screen",
+            "coordinates": [
+                710,
+                120
+            ]
+        },
+        {
+            "name": "keyboard_1",
+            "type": "keyboard",
+            "coordinates": [
+                790,
+                85
+            ]
+        },
+        {
+            "name": "mouse_1",
+            "type": "mouse",
+            "coordinates": [
+                820,
+                205
+            ]
+        },
+        {
+            "name": "lamp_base_1",
+            "type": "base",
+            "coordinates": [
+                50,
+                170
+            ]
+        },
+        {
+            "name": "lamp_head_1",
+            "type": "lamp",
+            "coordinates": [
+                80,
+                145
+            ]
+        },
+        {
+            "name": "device_1",
+            "type": "device",
+            "coordinates": [
+                710,
+                215
+            ]
+        },
+        {
+            "name": "chair_1",
+            "type": "chair",
+            "coordinates": [
+                930,
+                245
+            ]
+        },
+        {
+            "name": "box_1",
+            "type": "small_box",
+            "coordinates": [
+                455,
+                260
+            ]
+        },
+        {
+            "name": "control_switch_1",
+            "type": "switch",
+            "coordinates": [
+                405,
+                70
+            ]
+        },
+        {
+            "name": "bottleneck_red_button_1",
+            "type": "button",
+            "coordinates": [
+                545,
+                40
+            ]
+        },
+        {
+            "name": "yellow_block_1",
+            "type": "block",
+            "coordinates": [
+                490,
+                95
+            ]
+        },
+        {
+            "name": "green_block_1",
+            "type": "block",
+            "coordinates": [
+                430,
+                95
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "table_surface_1",
+            "type": "surface",
+            "coordinates": [
+                470,
+                270
+            ]
+        },
+        {
+            "name": "blue_cloth_1",
+            "type": "fabric_region",
+            "coordinates": [
+                470,
+                325
+            ],
+            "contains": [
+                "painting_1"
+            ]
+        },
+        {
+            "name": "painting_1",
+            "type": "artwork",
+            "coordinates": [
+                515,
+                340
+            ]
+        },
+        {
+            "name": "floor_1",
+            "type": "ground",
+            "coordinates": [
+                40,
+                420
+            ]
+        }
+    ],
+    "semantic_relationships": [
+        {
+            "subject": "monitor_1",
+            "predicate": "sits_on",
+            "object": "table_surface_1"
+        },
+        {
+            "subject": "keyboard_1",
+            "predicate": "sits_on",
+            "object": "table_surface_1"
+        },
+        {
+            "subject": "mouse_1",
+            "predicate": "is_near",
+            "object": "keyboard_1"
+        },
+        {
+            "subject": "device_1",
+            "predicate": "sits_on",
+            "object": "table_surface_1"
+        },
+        {
+            "subject": "chair_1",
+            "predicate": "is_next_to",
+            "object": "table_surface_1"
+        },
+        {
+            "subject": "lamp_head_1",
+            "predicate": "is_attached_to",
+            "object": "lamp_base_1"
+        },
+        {
+            "subject": "lamp_base_1",
+            "predicate": "sits_on",
+            "object": "table_surface_1"
+        },
+        {
+            "subject": "box_1",
+            "predicate": "is_on",
+            "object": "blue_cloth_1"
+        },
+        {
+            "subject": "control_switch_1",
+            "predicate": "sits_on",
+            "object": "table_surface_1"
+        },
+        {
+            "subject": "bottleneck_red_button_1",
+            "predicate": "sits_on",
+            "object": "table_surface_1"
+        },
+        {
+            "subject": "yellow_block_1",
+            "predicate": "is_near",
+            "object": "green_block_1"
+        },
+        {
+            "subject": "green_block_1",
+            "predicate": "sits_on",
+            "object": "table_surface_1"
+        },
+        {
+            "subject": "table_surface_1",
+            "predicate": "covers",
+            "object": "blue_cloth_1"
+        },
+        {
+            "subject": "painting_1",
+            "predicate": "is_on",
+            "object": "blue_cloth_1"
+        }
+    ],
+    "current_location": [
+        {
+            "name": "monitor_1",
+            "region": "table_surface_1"
+        },
+        {
+            "name": "keyboard_1",
+            "region": "table_surface_1"
+        },
+        {
+            "name": "mouse_1",
+            "region": "table_surface_1"
+        },
+        {
+            "name": "lamp_head_1",
+            "region": "table_surface_1"
+        },
+        {
+            "name": "lamp_base_1",
+            "region": "table_surface_1"
+        },
+        {
+            "name": "device_1",
+            "region": "table_surface_1"
+        },
+        {
+            "name": "chair_1",
+            "region": "table_surface_1"
+        },
+        {
+            "name": "box_1",
+            "region": "blue_cloth_1"
+        },
+        {
+            "name": "control_switch_1",
+            "region": "table_surface_1"
+        },
+        {
+            "name": "bottleneck_red_button_1",
+            "region": "table_surface_1"
+        },
+        {
+            "name": "yellow_block_1",
+            "region": "table_surface_1"
+        },
+        {
+            "name": "green_block_1",
+            "region": "table_surface_1"
+        }
+    ],
+    "plans": [
+        {
+            "plan_name": "arrangement_context",
+            "steps": [
+                {
+                    "action": "place",
+                    "target_object": "box_1",
+                    "target_region": "blue_cloth_1"
+                },
+                {
+                    "action": "keep",
+                    "target_object": "painting_1",
+                    "target_region": "blue_cloth_1"
+                }
+            ]
+        }
+    ]
+}

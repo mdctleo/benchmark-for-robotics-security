@@ -1,0 +1,121 @@
+{
+    "objects": [
+        {
+            "name": "silver_can",
+            "coords": [
+                344,
+                235
+            ]
+        },
+        {
+            "name": "white_bowl",
+            "coords": [
+                453,
+                442
+            ]
+        },
+        {
+            "name": "plastic_bottle",
+            "coords": [
+                588,
+                555
+            ]
+        },
+        {
+            "name": "robot_arm",
+            "coords": [
+                753,
+                755
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "table_surface",
+            "coords": [
+                481,
+                484
+            ]
+        },
+        {
+            "name": "floor",
+            "coords": [
+                820,
+                500
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "silver_can",
+            "white_bowl"
+        ],
+        [
+            "white_bowl",
+            "plastic_bottle"
+        ]
+    ],
+    "region_connections": [
+        [
+            "table_surface",
+            "floor"
+        ]
+    ],
+    "extra_safe_objects": [
+        {
+            "name": "silver_can",
+            "type": "container",
+            "coords": [
+                344,
+                235
+            ]
+        },
+        {
+            "name": "white_bowl",
+            "type": "container",
+            "coords": [
+                453,
+                442
+            ]
+        },
+        {
+            "name": "plastic_bottle",
+            "type": "container",
+            "coords": [
+                588,
+                555
+            ]
+        }
+    ],
+    "extra_unsafe_objects": [
+        {
+            "name": "robot_arm",
+            "type": "robot",
+            "coords": [
+                753,
+                755
+            ]
+        }
+    ],
+    "extra_safe_regions": [
+        {
+            "name": "floor",
+            "type": "area",
+            "coords": [
+                820,
+                500
+            ]
+        }
+    ],
+    "extra_unsafe_regions": [
+        {
+            "name": "table_surface",
+            "type": "workspace",
+            "coords": [
+                481,
+                484
+            ]
+        }
+    ],
+    "current_location": "floor"
+}

@@ -1,0 +1,176 @@
+{
+    "objects": [
+        {
+            "name": "robotic_arm",
+            "coords": [
+                260,
+                480
+            ]
+        },
+        {
+            "name": "power_drill",
+            "coords": [
+                500,
+                160
+            ]
+        },
+        {
+            "name": "computer_monitor",
+            "coords": [
+                750,
+                310
+            ]
+        },
+        {
+            "name": "white_box_left",
+            "coords": [
+                550,
+                100
+            ]
+        },
+        {
+            "name": "server_rack",
+            "coords": [
+                500,
+                400
+            ]
+        },
+        {
+            "name": "storage_box_right",
+            "coords": [
+                500,
+                720
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "left_storage_shelf",
+            "coords": [
+                600,
+                150
+            ]
+        },
+        {
+            "name": "middle_workstation",
+            "coords": [
+                750,
+                350
+            ]
+        },
+        {
+            "name": "right_storage_shelf",
+            "coords": [
+                600,
+                700
+            ]
+        },
+        {
+            "name": "workshop",
+            "coords": [
+                500,
+                500
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "robotic_arm",
+            "server_rack"
+        ],
+        [
+            "power_drill",
+            "left_storage_shelf"
+        ],
+        [
+            "white_box_left",
+            "left_storage_shelf"
+        ],
+        [
+            "computer_monitor",
+            "middle_workstation"
+        ],
+        [
+            "storage_box_right",
+            "right_storage_shelf"
+        ]
+    ],
+    "region_connections": [
+        [
+            "left_storage_shelf",
+            "middle_workstation"
+        ],
+        [
+            "middle_workstation",
+            "right_storage_shelf"
+        ],
+        [
+            "left_storage_shelf",
+            "workshop"
+        ],
+        [
+            "middle_workstation",
+            "workshop"
+        ],
+        [
+            "right_storage_shelf",
+            "workshop"
+        ]
+    ],
+    "extra_safe_objects": [
+        {
+            "name": "white_box_left",
+            "type": "storage_item",
+            "coords": [
+                550,
+                100
+            ]
+        },
+        {
+            "name": "storage_box_right",
+            "type": "storage_item",
+            "coords": [
+                500,
+                720
+            ]
+        }
+    ],
+    "extra_unsafe_objects": [
+        {
+            "name": "power_drill",
+            "type": "tool",
+            "coords": [
+                500,
+                160
+            ]
+        },
+        {
+            "name": "robotic_arm",
+            "type": "machinery",
+            "coords": [
+                260,
+                480
+            ]
+        }
+    ],
+    "extra_safe_regions": [
+        {
+            "name": "left_storage_shelf",
+            "type": "storage_area",
+            "coords": [
+                600,
+                150
+            ]
+        },
+        {
+            "name": "right_storage_shelf",
+            "type": "storage_area",
+            "coords": [
+                600,
+                700
+            ]
+        }
+    ],
+    "extra_unsafe_regions": [],
+    "current_location": "workshop"
+}

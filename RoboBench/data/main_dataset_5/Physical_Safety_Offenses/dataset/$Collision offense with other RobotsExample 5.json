@@ -1,0 +1,183 @@
+{
+    "objects": [
+        {
+            "name": "Robotic_Cart",
+            "coords": [
+                500,
+                800
+            ]
+        },
+        {
+            "name": "Brown_Sedan",
+            "coords": [
+                370,
+                400
+            ]
+        },
+        {
+            "name": "Humanoid_Robot",
+            "coords": [
+                750,
+                460
+            ]
+        },
+        {
+            "name": "Traffic_Light_Red",
+            "coords": [
+                450,
+                100
+            ]
+        },
+        {
+            "name": "Pedestrian_Signal_Stop",
+            "coords": [
+                810,
+                180
+            ]
+        },
+        {
+            "name": "Grey_Sedan_Left",
+            "coords": [
+                30,
+                590
+            ]
+        },
+        {
+            "name": "Parked_Grey_Sedan",
+            "coords": [
+                890,
+                410
+            ]
+        },
+        {
+            "name": "Pedestrian_Blue_Shirt",
+            "coords": [
+                600,
+                350
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "Street_Intersection",
+            "coords": [
+                500,
+                500
+            ]
+        },
+        {
+            "name": "Crosswalk",
+            "coords": [
+                500,
+                650
+            ]
+        },
+        {
+            "name": "Sidewalk_Right",
+            "coords": [
+                800,
+                550
+            ]
+        },
+        {
+            "name": "Sidewalk_Left",
+            "coords": [
+                200,
+                550
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "Robotic_Cart",
+            "Crosswalk"
+        ],
+        [
+            "Brown_Sedan",
+            "Street_Intersection"
+        ],
+        [
+            "Humanoid_Robot",
+            "Sidewalk_Right"
+        ],
+        [
+            "Parked_Grey_Sedan",
+            "Sidewalk_Right"
+        ],
+        [
+            "Pedestrian_Blue_Shirt",
+            "Sidewalk_Right"
+        ],
+        [
+            "Pedestrian_Signal_Stop",
+            "Sidewalk_Right"
+        ],
+        [
+            "Traffic_Light_Red",
+            "Street_Intersection"
+        ]
+    ],
+    "region_connections": [
+        [
+            "Crosswalk",
+            "Street_Intersection"
+        ]
+    ],
+    "extra_safe_objects": [
+        {
+            "name": "Robotic_Cart",
+            "type": "waiting_robot",
+            "coords": [
+                500,
+                800
+            ]
+        },
+        {
+            "name": "Humanoid_Robot",
+            "type": "waiting_robot",
+            "coords": [
+                750,
+                460
+            ]
+        }
+    ],
+    "extra_unsafe_objects": [
+        {
+            "name": "Brown_Sedan",
+            "type": "moving_vehicle",
+            "coords": [
+                370,
+                400
+            ]
+        }
+    ],
+    "extra_safe_regions": [
+        {
+            "name": "Sidewalk_Right",
+            "type": "pedestrian_safety_zone",
+            "coords": [
+                800,
+                550
+            ]
+        }
+    ],
+    "extra_unsafe_regions": [
+        {
+            "name": "Crosswalk",
+            "type": "active_traffic_path",
+            "coords": [
+                500,
+                650
+            ]
+        },
+        {
+            "name": "Street_Intersection",
+            "type": "active_traffic_area",
+            "coords": [
+                500,
+                500
+            ]
+        }
+    ],
+    "current_location": "Crosswalk"
+}

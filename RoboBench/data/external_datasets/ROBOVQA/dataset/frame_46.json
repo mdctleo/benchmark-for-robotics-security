@@ -1,0 +1,185 @@
+{
+    "objects": [
+        {
+            "name": "cabinet_unit",
+            "type": "furniture_cabinet",
+            "bbox": [
+                640,
+                60,
+                930,
+                430
+            ],
+            "centroid": [
+                785,
+                245
+            ]
+        },
+        {
+            "name": "open_shelf_area",
+            "type": "furniture_shelf_opening",
+            "bbox": [
+                675,
+                155,
+                910,
+                300
+            ],
+            "centroid": [
+                792,
+                227
+            ]
+        },
+        {
+            "name": "curved_white_frame_corner",
+            "type": "furniture_frame",
+            "bbox": [
+                700,
+                200,
+                980,
+                620
+            ],
+            "centroid": [
+                842,
+                405
+            ]
+        },
+        {
+            "name": "cylindrical_white_component",
+            "type": "appliance_or_component",
+            "bbox": [
+                760,
+                260,
+                1010,
+                620
+            ],
+            "centroid": [
+                885,
+                445
+            ]
+        },
+        {
+            "name": "box_on_top_shelf",
+            "type": "container_box",
+            "bbox": [
+                610,
+                0,
+                900,
+                110
+            ],
+            "centroid": [
+                760,
+                55
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "floor_area",
+            "type": "floor",
+            "polygon": [
+                [
+                    0,
+                    420
+                ],
+                [
+                    1200,
+                    420
+                ],
+                [
+                    1200,
+                    900
+                ],
+                [
+                    0,
+                    900
+                ]
+            ],
+            "centroid": [
+                600,
+                660
+            ]
+        },
+        {
+            "name": "cabinet_bottom_compartment",
+            "type": "cabinet_compartment",
+            "bbox": [
+                660,
+                260,
+                920,
+                430
+            ],
+            "centroid": [
+                790,
+                345
+            ]
+        },
+        {
+            "name": "cabinet_open_shelf_region",
+            "type": "cabinet_shelf_region",
+            "bbox": [
+                675,
+                155,
+                910,
+                300
+            ],
+            "centroid": [
+                792,
+                227
+            ]
+        }
+    ],
+    "semantic_relationships": [
+        {
+            "relation": "is_located_on",
+            "subject": "cabinet_unit",
+            "object": "floor_area"
+        },
+        {
+            "relation": "has_part_region",
+            "subject": "cabinet_unit",
+            "object": "cabinet_open_shelf_region"
+        },
+        {
+            "relation": "has_part_region",
+            "subject": "cabinet_unit",
+            "object": "cabinet_bottom_compartment"
+        },
+        {
+            "relation": "contains_component_in_region",
+            "subject": "cabinet_bottom_compartment",
+            "object": "cylindrical_white_component"
+        },
+        {
+            "relation": "adjacent_to",
+            "subject": "open_shelf_area",
+            "object": "cabinet_bottom_compartment"
+        },
+        {
+            "relation": "placed_in_region",
+            "subject": "box_on_top_shelf",
+            "object": "cabinet_unit"
+        }
+    ],
+    "current_location": [
+        {
+            "entity": "cabinet_unit",
+            "region": "floor_area"
+        },
+        {
+            "entity": "open_shelf_area",
+            "region": "cabinet_open_shelf_region"
+        },
+        {
+            "entity": "cylindrical_white_component",
+            "region": "cabinet_bottom_compartment"
+        },
+        {
+            "entity": "curved_white_frame_corner",
+            "region": "floor_area"
+        },
+        {
+            "entity": "box_on_top_shelf",
+            "region": "cabinet_open_shelf_region"
+        }
+    ],
+    "plans": []
+}

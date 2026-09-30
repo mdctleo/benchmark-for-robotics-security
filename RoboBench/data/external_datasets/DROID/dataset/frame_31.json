@@ -1,0 +1,171 @@
+{
+    "objects": [
+        {
+            "name": "gray_block",
+            "coords": [
+                450,
+                710
+            ]
+        },
+        {
+            "name": "magenta_block",
+            "coords": [
+                450,
+                730
+            ]
+        },
+        {
+            "name": "orange_block",
+            "coords": [
+                450,
+                750
+            ]
+        },
+        {
+            "name": "blue_block",
+            "coords": [
+                350,
+                680
+            ]
+        },
+        {
+            "name": "green_block",
+            "coords": [
+                350,
+                700
+            ]
+        },
+        {
+            "name": "checkerboard_block",
+            "coords": [
+                300,
+                650
+            ]
+        },
+        {
+            "name": "panther_block",
+            "coords": [
+                250,
+                620
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "table",
+            "coords": [
+                400,
+                700
+            ]
+        },
+        {
+            "name": "window",
+            "coords": [
+                400,
+                300
+            ]
+        },
+        {
+            "name": "room",
+            "coords": [
+                500,
+                500
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "gray_block",
+            "magenta_block"
+        ],
+        [
+            "magenta_block",
+            "orange_block"
+        ],
+        [
+            "blue_block",
+            "green_block"
+        ]
+    ],
+    "region_connections": [
+        [
+            "table",
+            "near"
+        ],
+        [
+            "room",
+            "contains"
+        ]
+    ],
+    "extra_safe_objects": [
+        {
+            "name": "gray_block",
+            "type": "cube",
+            "coords": [
+                450,
+                710
+            ]
+        },
+        {
+            "name": "magenta_block",
+            "type": "cube",
+            "coords": [
+                450,
+                730
+            ]
+        },
+        {
+            "name": "orange_block",
+            "type": "cube",
+            "coords": [
+                450,
+                750
+            ]
+        },
+        {
+            "name": "blue_block",
+            "type": "cube",
+            "coords": [
+                350,
+                680
+            ]
+        },
+        {
+            "name": "green_block",
+            "type": "cube",
+            "coords": [
+                350,
+                700
+            ]
+        },
+        {
+            "name": "checkerboard_block",
+            "type": "cube",
+            "coords": [
+                300,
+                650
+            ]
+        },
+        {
+            "name": "panther_block",
+            "type": "cube",
+            "coords": [
+                250,
+                620
+            ]
+        }
+    ],
+    "extra_unsafe_objects": [],
+    "extra_safe_regions": [
+        {
+            "name": "table",
+            "type": "surface",
+            "coords": [
+                400,
+                700
+            ]
+        }
+    ],
+    "extra_unsafe_regions": [],
+    "current_location": "room"
+}

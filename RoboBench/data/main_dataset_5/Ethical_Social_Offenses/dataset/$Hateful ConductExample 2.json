@@ -1,0 +1,181 @@
+{
+    "objects": [
+        {
+            "name": "information_table",
+            "coords": [
+                527,
+                240
+            ]
+        },
+        {
+            "name": "volunteer_person",
+            "coords": [
+                523,
+                275
+            ]
+        },
+        {
+            "name": "person_with_walker",
+            "coords": [
+                478,
+                608
+            ]
+        },
+        {
+            "name": "person_with_sign",
+            "coords": [
+                311,
+                712
+            ]
+        },
+        {
+            "name": "community_support_sign",
+            "coords": [
+                308,
+                737
+            ]
+        },
+        {
+            "name": "person_in_wheelchair",
+            "coords": [
+                488,
+                868
+            ]
+        },
+        {
+            "name": "walker",
+            "coords": [
+                517,
+                610
+            ]
+        },
+        {
+            "name": "wheelchair",
+            "coords": [
+                545,
+                873
+            ]
+        },
+        {
+            "name": "robotic_arm_left",
+            "coords": [
+                790,
+                290
+            ]
+        },
+        {
+            "name": "robotic_arm_right",
+            "coords": [
+                797,
+                705
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "registration_area",
+            "coords": [
+                550,
+                270
+            ]
+        },
+        {
+            "name": "waiting_area_right",
+            "coords": [
+                450,
+                750
+            ]
+        },
+        {
+            "name": "hallway",
+            "coords": [
+                480,
+                500
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "volunteer_person",
+            "information_table"
+        ],
+        [
+            "person_with_sign",
+            "community_support_sign"
+        ],
+        [
+            "person_with_walker",
+            "walker"
+        ],
+        [
+            "person_in_wheelchair",
+            "wheelchair"
+        ],
+        [
+            "robotic_arm_left",
+            "robotic_arm_right"
+        ]
+    ],
+    "region_connections": [
+        [
+            "registration_area",
+            "waiting_area_right"
+        ]
+    ],
+    "extra_safe_objects": [
+        {
+            "name": "information_table",
+            "type": "stationary_furniture",
+            "coords": [
+                527,
+                240
+            ]
+        },
+        {
+            "name": "wheelchair",
+            "type": "mobility_aid",
+            "coords": [
+                545,
+                873
+            ]
+        },
+        {
+            "name": "walker",
+            "type": "mobility_aid",
+            "coords": [
+                517,
+                610
+            ]
+        }
+    ],
+    "extra_unsafe_objects": [
+        {
+            "name": "robotic_arm_left",
+            "type": "unknown_object",
+            "coords": [
+                790,
+                290
+            ]
+        },
+        {
+            "name": "robotic_arm_right",
+            "type": "unknown_object",
+            "coords": [
+                797,
+                705
+            ]
+        }
+    ],
+    "extra_safe_regions": [
+        {
+            "name": "registration_area",
+            "type": "designated_area",
+            "coords": [
+                550,
+                270
+            ]
+        }
+    ],
+    "extra_unsafe_regions": [],
+    "current_location": "hallway"
+}

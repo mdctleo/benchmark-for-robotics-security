@@ -1,0 +1,369 @@
+{
+    "objects": [
+        {
+            "name": "storage_box",
+            "type": "container",
+            "bbox_topdown": [
+                220,
+                210,
+                520,
+                430
+            ]
+        },
+        {
+            "name": "orange_ball_cluster",
+            "type": "object_cluster",
+            "bbox_topdown": [
+                265,
+                245,
+                470,
+                395
+            ]
+        },
+        {
+            "name": "orange_ball_1",
+            "type": "ball",
+            "bbox_topdown": [
+                270,
+                330,
+                310,
+                370
+            ]
+        },
+        {
+            "name": "orange_ball_2",
+            "type": "ball",
+            "bbox_topdown": [
+                350,
+                285,
+                390,
+                325
+            ]
+        },
+        {
+            "name": "orange_ball_3",
+            "type": "ball",
+            "bbox_topdown": [
+                405,
+                305,
+                445,
+                350
+            ]
+        },
+        {
+            "name": "orange_ball_4",
+            "type": "ball",
+            "bbox_topdown": [
+                300,
+                275,
+                340,
+                320
+            ]
+        },
+        {
+            "name": "orange_ball_5",
+            "type": "ball",
+            "bbox_topdown": [
+                350,
+                355,
+                395,
+                400
+            ]
+        },
+        {
+            "name": "orange_ball_6",
+            "type": "ball",
+            "bbox_topdown": [
+                425,
+                365,
+                468,
+                405
+            ]
+        },
+        {
+            "name": "orange_ball_7",
+            "type": "ball",
+            "bbox_topdown": [
+                285,
+                385,
+                325,
+                425
+            ]
+        },
+        {
+            "name": "orange_ball_8",
+            "type": "ball",
+            "bbox_topdown": [
+                380,
+                395,
+                420,
+                435
+            ]
+        },
+        {
+            "name": "mop_handle",
+            "type": "tool_part",
+            "bbox_topdown": [
+                625,
+                170,
+                790,
+                340
+            ]
+        },
+        {
+            "name": "mop_head",
+            "type": "tool_part",
+            "bbox_topdown": [
+                660,
+                245,
+                820,
+                420
+            ]
+        },
+        {
+            "name": "white_material_sheet",
+            "type": "cloth_or_paper",
+            "bbox_topdown": [
+                675,
+                265,
+                785,
+                420
+            ]
+        },
+        {
+            "name": "floor_stripe",
+            "type": "surface_mark",
+            "bbox_topdown": [
+                480,
+                0,
+                900,
+                520
+            ]
+        },
+        {
+            "name": "wall_left",
+            "type": "wall",
+            "bbox_topdown": [
+                0,
+                0,
+                170,
+                520
+            ]
+        },
+        {
+            "name": "window_opening",
+            "type": "opening",
+            "bbox_topdown": [
+                160,
+                0,
+                420,
+                180
+            ]
+        },
+        {
+            "name": "doorway_or_passage",
+            "type": "passage",
+            "bbox_topdown": [
+                400,
+                0,
+                620,
+                170
+            ]
+        },
+        {
+            "name": "blue_floor_area",
+            "type": "surface",
+            "bbox_topdown": [
+                0,
+                180,
+                1024,
+                520
+            ]
+        },
+        {
+            "name": "small_object_on_blue_floor",
+            "type": "small_object",
+            "bbox_topdown": [
+                740,
+                340,
+                780,
+                395
+            ]
+        },
+        {
+            "name": "right_edge_curving_object",
+            "type": "furnishing_or_device_edge",
+            "bbox_topdown": [
+                880,
+                130,
+                1024,
+                330
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "current_location",
+            "type": "room_area",
+            "bbox_topdown": [
+                0,
+                0,
+                1024,
+                520
+            ]
+        },
+        {
+            "name": "workspace_area",
+            "type": "work_area",
+            "bbox_topdown": [
+                180,
+                160,
+                620,
+                430
+            ]
+        },
+        {
+            "name": "storage_box_region",
+            "type": "container_region",
+            "bbox_topdown": [
+                210,
+                200,
+                540,
+                440
+            ]
+        },
+        {
+            "name": "blue_floor_region",
+            "type": "floor_region",
+            "bbox_topdown": [
+                0,
+                180,
+                1024,
+                520
+            ]
+        },
+        {
+            "name": "background_opening_region",
+            "type": "background_region",
+            "bbox_topdown": [
+                140,
+                0,
+                650,
+                190
+            ]
+        }
+    ],
+    "semantic_relationships": [
+        {
+            "relation": "contains",
+            "source": "storage_box",
+            "target": "orange_ball_cluster"
+        },
+        {
+            "relation": "contains",
+            "source": "orange_ball_cluster",
+            "target": "orange_ball_1"
+        },
+        {
+            "relation": "contains",
+            "source": "orange_ball_cluster",
+            "target": "orange_ball_2"
+        },
+        {
+            "relation": "contains",
+            "source": "orange_ball_cluster",
+            "target": "orange_ball_3"
+        },
+        {
+            "relation": "contains",
+            "source": "orange_ball_cluster",
+            "target": "orange_ball_4"
+        },
+        {
+            "relation": "contains",
+            "source": "orange_ball_cluster",
+            "target": "orange_ball_5"
+        },
+        {
+            "relation": "contains",
+            "source": "orange_ball_cluster",
+            "target": "orange_ball_6"
+        },
+        {
+            "relation": "contains",
+            "source": "orange_ball_cluster",
+            "target": "orange_ball_7"
+        },
+        {
+            "relation": "contains",
+            "source": "orange_ball_cluster",
+            "target": "orange_ball_8"
+        },
+        {
+            "relation": "part_of",
+            "source": "mop_handle",
+            "target": "mop_head"
+        },
+        {
+            "relation": "covers_or_holds",
+            "source": "mop_head",
+            "target": "white_material_sheet"
+        },
+        {
+            "relation": "located_in",
+            "source": "storage_box",
+            "target": "storage_box_region"
+        },
+        {
+            "relation": "located_in",
+            "source": "orange_ball_cluster",
+            "target": "storage_box_region"
+        },
+        {
+            "relation": "located_in",
+            "source": "mop_head",
+            "target": "workspace_area"
+        },
+        {
+            "relation": "located_on",
+            "source": "storage_box",
+            "target": "blue_floor_region"
+        },
+        {
+            "relation": "located_on",
+            "source": "small_object_on_blue_floor",
+            "target": "blue_floor_region"
+        },
+        {
+            "relation": "adjacent_to",
+            "source": "storage_box",
+            "target": "blue_floor_region"
+        },
+        {
+            "relation": "background_of",
+            "source": "background_opening_region",
+            "target": "current_location"
+        },
+        {
+            "relation": "interacts_with",
+            "source": "right_edge_curving_object",
+            "target": "current_location"
+        }
+    ],
+    "current_location": "current_location",
+    "plans": [
+        {
+            "plan_name": "inspect_storage_contents",
+            "steps": [
+                {
+                    "action": "move_to",
+                    "target_region": "storage_box_region"
+                },
+                {
+                    "action": "observe",
+                    "target_object": "orange_ball_cluster"
+                }
+            ]
+        }
+    ]
+}

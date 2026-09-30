@@ -1,0 +1,251 @@
+{
+    "objects": [
+        {
+            "name": "traffic_signal_left",
+            "type": "traffic_light",
+            "coord": [
+                505,
+                285
+            ]
+        },
+        {
+            "name": "traffic_signal_right",
+            "type": "traffic_light",
+            "coord": [
+                1185,
+                285
+            ]
+        },
+        {
+            "name": "vehicle_truck_a",
+            "type": "vehicle",
+            "coord": [
+                910,
+                375
+            ]
+        },
+        {
+            "name": "vehicle_bus_b",
+            "type": "vehicle",
+            "coord": [
+                1035,
+                420
+            ]
+        },
+        {
+            "name": "vehicle_white_van_c",
+            "type": "vehicle",
+            "coord": [
+                740,
+                455
+            ]
+        },
+        {
+            "name": "vehicle_distant_a",
+            "type": "vehicle",
+            "coord": [
+                690,
+                560
+            ]
+        },
+        {
+            "name": "ped_crossing_sign_left",
+            "type": "sign",
+            "coord": [
+                595,
+                340
+            ]
+        },
+        {
+            "name": "ped_crossing_sign_right",
+            "type": "sign",
+            "coord": [
+                1105,
+                345
+            ]
+        },
+        {
+            "name": "street_sign_taylor",
+            "type": "street_sign",
+            "coord": [
+                370,
+                210
+            ]
+        },
+        {
+            "name": "street_name_overlay_taylor_st",
+            "type": "street_label",
+            "coord": [
+                545,
+                250
+            ]
+        },
+        {
+            "name": "overhead_message_board",
+            "type": "sign",
+            "coord": [
+                660,
+                300
+            ]
+        },
+        {
+            "name": "lane_divider_green",
+            "type": "road_marking",
+            "coord": [
+                760,
+                720
+            ]
+        },
+        {
+            "name": "curb_corner_right",
+            "type": "street_feature",
+            "coord": [
+                1285,
+                690
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "current_location",
+            "type": "road_intersection_approach",
+            "coord": [
+                820,
+                740
+            ]
+        },
+        {
+            "name": "intersection_center",
+            "type": "intersection",
+            "coord": [
+                820,
+                520
+            ]
+        },
+        {
+            "name": "east_side_lane",
+            "type": "road_lane_area",
+            "coord": [
+                1100,
+                600
+            ]
+        },
+        {
+            "name": "west_side_lane",
+            "type": "road_lane_area",
+            "coord": [
+                560,
+                600
+            ]
+        },
+        {
+            "name": "north_side_crosswalk_approach",
+            "type": "crosswalk_area",
+            "coord": [
+                820,
+                350
+            ]
+        },
+        {
+            "name": "south_side_road_segment",
+            "type": "road_segment",
+            "coord": [
+                820,
+                820
+            ]
+        },
+        {
+            "name": "right_parking_side",
+            "type": "roadside_area",
+            "coord": [
+                1270,
+                520
+            ]
+        }
+    ],
+    "semantic_relationships": [
+        {
+            "subject": "vehicle_white_van_c",
+            "relation": "is_ahead_of",
+            "object": "current_location"
+        },
+        {
+            "subject": "vehicle_truck_a",
+            "relation": "is_in",
+            "object": "intersection_center"
+        },
+        {
+            "subject": "vehicle_bus_b",
+            "relation": "is_in",
+            "object": "east_side_lane"
+        },
+        {
+            "subject": "vehicle_distant_a",
+            "relation": "is_in",
+            "object": "intersection_center"
+        },
+        {
+            "subject": "traffic_signal_left",
+            "relation": "controls",
+            "object": "north_side_crosswalk_approach"
+        },
+        {
+            "subject": "traffic_signal_right",
+            "relation": "controls",
+            "object": "north_side_crosswalk_approach"
+        },
+        {
+            "subject": "overhead_message_board",
+            "relation": "overhangs",
+            "object": "intersection_center"
+        },
+        {
+            "subject": "street_sign_taylor",
+            "relation": "labels",
+            "object": "intersection_center"
+        },
+        {
+            "subject": "street_name_overlay_taylor_st",
+            "relation": "refers_to",
+            "object": "intersection_center"
+        },
+        {
+            "subject": "ped_crossing_sign_left",
+            "relation": "near",
+            "object": "north_side_crosswalk_approach"
+        },
+        {
+            "subject": "ped_crossing_sign_right",
+            "relation": "near",
+            "object": "north_side_crosswalk_approach"
+        },
+        {
+            "subject": "lane_divider_green",
+            "relation": "indicates",
+            "object": "south_side_road_segment"
+        },
+        {
+            "subject": "curb_corner_right",
+            "relation": "adjacent_to",
+            "object": "right_parking_side"
+        }
+    ],
+    "spatial_plans": [
+        {
+            "plan_name": "approach_and_continue_through_intersection",
+            "current_location": "current_location",
+            "goals": [
+                "intersection_center",
+                "east_side_lane",
+                "west_side_lane"
+            ]
+        },
+        {
+            "plan_name": "prepare_for_crossing_area",
+            "current_location": "current_location",
+            "goals": [
+                "north_side_crosswalk_approach"
+            ]
+        }
+    ]
+}

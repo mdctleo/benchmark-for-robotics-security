@@ -1,0 +1,284 @@
+{
+    "objects": [
+        {
+            "name": "vehicle_1",
+            "type": "car",
+            "bounding_box_top_down": [
+                [
+                    375,
+                    250
+                ],
+                [
+                    475,
+                    250
+                ],
+                [
+                    485,
+                    370
+                ],
+                [
+                    365,
+                    370
+                ]
+            ],
+            "attributes": {
+                "color": "gray"
+            }
+        },
+        {
+            "name": "vehicle_2",
+            "type": "car",
+            "bounding_box_top_down": [
+                [
+                    640,
+                    210
+                ],
+                [
+                    835,
+                    210
+                ],
+                [
+                    850,
+                    330
+                ],
+                [
+                    620,
+                    330
+                ]
+            ],
+            "attributes": {
+                "color": "blue"
+            }
+        },
+        {
+            "name": "traffic_light_group_1",
+            "type": "traffic_lights",
+            "bounding_box_top_down": [
+                [
+                    470,
+                    120
+                ],
+                [
+                    520,
+                    120
+                ],
+                [
+                    520,
+                    170
+                ],
+                [
+                    470,
+                    170
+                ]
+            ],
+            "attributes": {
+                "signal_state": "green_visible"
+            }
+        },
+        {
+            "name": "traffic_light_group_2",
+            "type": "traffic_lights",
+            "bounding_box_top_down": [
+                [
+                    560,
+                    120
+                ],
+                [
+                    610,
+                    120
+                ],
+                [
+                    610,
+                    170
+                ],
+                [
+                    560,
+                    170
+                ]
+            ],
+            "attributes": {
+                "signal_state": "green_visible"
+            }
+        }
+    ],
+    "regions": [
+        {
+            "name": "roadway_1",
+            "type": "road",
+            "polygon_top_down": [
+                [
+                    0,
+                    360
+                ],
+                [
+                    1024,
+                    360
+                ],
+                [
+                    1024,
+                    768
+                ],
+                [
+                    0,
+                    768
+                ]
+            ]
+        },
+        {
+            "name": "left_lane_1",
+            "type": "lane",
+            "polygon_top_down": [
+                [
+                    0,
+                    420
+                ],
+                [
+                    320,
+                    420
+                ],
+                [
+                    310,
+                    760
+                ],
+                [
+                    0,
+                    760
+                ]
+            ]
+        },
+        {
+            "name": "right_lane_1",
+            "type": "lane",
+            "polygon_top_down": [
+                [
+                    320,
+                    420
+                ],
+                [
+                    1024,
+                    420
+                ],
+                [
+                    1024,
+                    760
+                ],
+                [
+                    310,
+                    760
+                ]
+            ]
+        },
+        {
+            "name": "shoulder_1",
+            "type": "roadside",
+            "polygon_top_down": [
+                [
+                    1020,
+                    420
+                ],
+                [
+                    1024,
+                    760
+                ],
+                [
+                    820,
+                    760
+                ],
+                [
+                    860,
+                    420
+                ]
+            ]
+        },
+        {
+            "name": "crosswalk_area_1",
+            "type": "crosswalk",
+            "polygon_top_down": [
+                [
+                    455,
+                    660
+                ],
+                [
+                    575,
+                    660
+                ],
+                [
+                    585,
+                    710
+                ],
+                [
+                    445,
+                    710
+                ]
+            ]
+        },
+        {
+            "name": "intersection_ahead_1",
+            "type": "intersection",
+            "polygon_top_down": [
+                [
+                    380,
+                    170
+                ],
+                [
+                    720,
+                    170
+                ],
+                [
+                    790,
+                    360
+                ],
+                [
+                    310,
+                    360
+                ]
+            ]
+        }
+    ],
+    "semantic_relationships": [
+        {
+            "subject": "vehicle_1",
+            "relation": "is_in_lane",
+            "object": "right_lane_1"
+        },
+        {
+            "subject": "vehicle_2",
+            "relation": "is_in_lane",
+            "object": "shoulder_1"
+        },
+        {
+            "subject": "vehicle_1",
+            "relation": "is_on",
+            "object": "roadway_1"
+        },
+        {
+            "subject": "traffic_light_group_1",
+            "relation": "controls",
+            "object": "intersection_ahead_1"
+        },
+        {
+            "subject": "traffic_light_group_2",
+            "relation": "controls",
+            "object": "intersection_ahead_1"
+        },
+        {
+            "subject": "intersection_ahead_1",
+            "relation": "includes_area",
+            "object": "crosswalk_area_1"
+        },
+        {
+            "subject": "roadway_1",
+            "relation": "has_lane",
+            "object": "left_lane_1"
+        },
+        {
+            "subject": "roadway_1",
+            "relation": "has_lane",
+            "object": "right_lane_1"
+        }
+    ],
+    "current_location": {
+        "region": "roadway_1",
+        "note": "Camera vehicle is on the roadway approaching the intersection."
+    }
+}

@@ -1,0 +1,454 @@
+{
+    "objects": [
+        {
+            "name": "green_tray",
+            "type": "container",
+            "bbox_topdown": {
+                "top_left": [
+                    390,
+                    245
+                ],
+                "bottom_right": [
+                    760,
+                    520
+                ]
+            }
+        },
+        {
+            "name": "drawer_or_shelf_front",
+            "type": "furniture_part",
+            "bbox_topdown": {
+                "top_left": [
+                    0,
+                    520
+                ],
+                "bottom_right": [
+                    960,
+                    740
+                ]
+            }
+        },
+        {
+            "name": "white_popcorn_bag",
+            "type": "food_package",
+            "bbox_topdown": {
+                "top_left": [
+                    610,
+                    160
+                ],
+                "bottom_right": [
+                    760,
+                    320
+                ]
+            }
+        },
+        {
+            "name": "blue_chip_bags_pile",
+            "type": "food_package",
+            "bbox_topdown": {
+                "top_left": [
+                    250,
+                    105
+                ],
+                "bottom_right": [
+                    480,
+                    310
+                ]
+            }
+        },
+        {
+            "name": "bag_of_snacks_near_back_right",
+            "type": "food_package",
+            "bbox_topdown": {
+                "top_left": [
+                    445,
+                    20
+                ],
+                "bottom_right": [
+                    640,
+                    160
+                ]
+            }
+        },
+        {
+            "name": "orange_snack_bag_left",
+            "type": "food_package",
+            "bbox_topdown": {
+                "top_left": [
+                    250,
+                    160
+                ],
+                "bottom_right": [
+                    435,
+                    340
+                ]
+            }
+        },
+        {
+            "name": "orange_snack_bag_center",
+            "type": "food_package",
+            "bbox_topdown": {
+                "top_left": [
+                    405,
+                    145
+                ],
+                "bottom_right": [
+                    590,
+                    360
+                ]
+            }
+        },
+        {
+            "name": "orange_snack_bag_right",
+            "type": "food_package",
+            "bbox_topdown": {
+                "top_left": [
+                    510,
+                    165
+                ],
+                "bottom_right": [
+                    705,
+                    360
+                ]
+            }
+        },
+        {
+            "name": "orange_snack_bag_front",
+            "type": "food_package",
+            "bbox_topdown": {
+                "top_left": [
+                    330,
+                    305
+                ],
+                "bottom_right": [
+                    520,
+                    495
+                ]
+            }
+        },
+        {
+            "name": "orange_snack_bag_front_right",
+            "type": "food_package",
+            "bbox_topdown": {
+                "top_left": [
+                    500,
+                    300
+                ],
+                "bottom_right": [
+                    690,
+                    505
+                ]
+            }
+        },
+        {
+            "name": "white_top_bag_container",
+            "type": "food_package",
+            "bbox_topdown": {
+                "top_left": [
+                    320,
+                    0
+                ],
+                "bottom_right": [
+                    560,
+                    90
+                ]
+            }
+        },
+        {
+            "name": "popcorn_mixes_green_label_bag",
+            "type": "food_package",
+            "bbox_topdown": {
+                "top_left": [
+                    160,
+                    0
+                ],
+                "bottom_right": [
+                    310,
+                    95
+                ]
+            }
+        },
+        {
+            "name": "large_white_appliance_on_right",
+            "type": "appliance",
+            "bbox_topdown": {
+                "top_left": [
+                    760,
+                    70
+                ],
+                "bottom_right": [
+                    960,
+                    370
+                ]
+            }
+        },
+        {
+            "name": "clear_container_with_scoop",
+            "type": "food_container",
+            "bbox_topdown": {
+                "top_left": [
+                    700,
+                    0
+                ],
+                "bottom_right": [
+                    880,
+                    95
+                ]
+            }
+        },
+        {
+            "name": "clear_bowl_or_bag_of_snacks_center_back",
+            "type": "food_container",
+            "bbox_topdown": {
+                "top_left": [
+                    430,
+                    55
+                ],
+                "bottom_right": [
+                    645,
+                    170
+                ]
+            }
+        },
+        {
+            "name": "green_bag_of_snacks",
+            "type": "food_package",
+            "bbox_topdown": {
+                "top_left": [
+                    610,
+                    230
+                ],
+                "bottom_right": [
+                    705,
+                    405
+                ]
+            }
+        },
+        {
+            "name": "peppermint_like_snacks_or_small_pack",
+            "type": "food_package",
+            "bbox_topdown": {
+                "top_left": [
+                    120,
+                    180
+                ],
+                "bottom_right": [
+                    260,
+                    310
+                ]
+            }
+        },
+        {
+            "name": "stack_of_snacks_left_of_tray",
+            "type": "food_package",
+            "bbox_topdown": {
+                "top_left": [
+                    35,
+                    150
+                ],
+                "bottom_right": [
+                    235,
+                    310
+                ]
+            }
+        }
+    ],
+    "regions": [
+        {
+            "name": "current_location",
+            "type": "room_or_area",
+            "bbox_topdown": {
+                "top_left": [
+                    0,
+                    0
+                ],
+                "bottom_right": [
+                    960,
+                    740
+                ]
+            }
+        },
+        {
+            "name": "tray_area",
+            "type": "container_region",
+            "bbox_topdown": {
+                "top_left": [
+                    390,
+                    245
+                ],
+                "bottom_right": [
+                    760,
+                    520
+                ]
+            }
+        },
+        {
+            "name": "right_appliance_area",
+            "type": "container_region",
+            "bbox_topdown": {
+                "top_left": [
+                    740,
+                    50
+                ],
+                "bottom_right": [
+                    960,
+                    420
+                ]
+            }
+        },
+        {
+            "name": "left_back_snack_area",
+            "type": "container_region",
+            "bbox_topdown": {
+                "top_left": [
+                    0,
+                    70
+                ],
+                "bottom_right": [
+                    350,
+                    420
+                ]
+            }
+        }
+    ],
+    "semantic_relationships": [
+        {
+            "subject": "green_tray",
+            "relation": "is_in",
+            "object": "current_location"
+        },
+        {
+            "subject": "large_white_appliance_on_right",
+            "relation": "is_in",
+            "object": "current_location"
+        },
+        {
+            "subject": "white_popcorn_bag",
+            "relation": "is_in",
+            "object": "tray_area"
+        },
+        {
+            "subject": "blue_chip_bags_pile",
+            "relation": "is_in",
+            "object": "left_back_snack_area"
+        },
+        {
+            "subject": "bag_of_snacks_near_back_right",
+            "relation": "is_in",
+            "object": "left_back_snack_area"
+        },
+        {
+            "subject": "orange_snack_bag_left",
+            "relation": "is_in",
+            "object": "tray_area"
+        },
+        {
+            "subject": "orange_snack_bag_center",
+            "relation": "is_in",
+            "object": "tray_area"
+        },
+        {
+            "subject": "orange_snack_bag_right",
+            "relation": "is_in",
+            "object": "tray_area"
+        },
+        {
+            "subject": "orange_snack_bag_front",
+            "relation": "is_in",
+            "object": "tray_area"
+        },
+        {
+            "subject": "orange_snack_bag_front_right",
+            "relation": "is_in",
+            "object": "tray_area"
+        },
+        {
+            "subject": "popcorn_mixes_green_label_bag",
+            "relation": "is_in",
+            "object": "left_back_snack_area"
+        },
+        {
+            "subject": "white_top_bag_container",
+            "relation": "is_in",
+            "object": "left_back_snack_area"
+        },
+        {
+            "subject": "green_bag_of_snacks",
+            "relation": "is_in",
+            "object": "tray_area"
+        },
+        {
+            "subject": "clear_container_with_scoop",
+            "relation": "is_in",
+            "object": "left_back_snack_area"
+        },
+        {
+            "subject": "clear_bowl_or_bag_of_snacks_center_back",
+            "relation": "is_in",
+            "object": "left_back_snack_area"
+        },
+        {
+            "subject": "peppermint_like_snacks_or_small_pack",
+            "relation": "is_in",
+            "object": "left_back_snack_area"
+        },
+        {
+            "subject": "stack_of_snacks_left_of_tray",
+            "relation": "is_in",
+            "object": "left_back_snack_area"
+        },
+        {
+            "subject": "large_white_appliance_on_right",
+            "relation": "is_in",
+            "object": "right_appliance_area"
+        },
+        {
+            "subject": "green_tray",
+            "relation": "contains",
+            "object": "orange_snack_bag_left"
+        },
+        {
+            "subject": "green_tray",
+            "relation": "contains",
+            "object": "orange_snack_bag_center"
+        },
+        {
+            "subject": "green_tray",
+            "relation": "contains",
+            "object": "orange_snack_bag_right"
+        },
+        {
+            "subject": "green_tray",
+            "relation": "contains",
+            "object": "orange_snack_bag_front"
+        },
+        {
+            "subject": "green_tray",
+            "relation": "contains",
+            "object": "orange_snack_bag_front_right"
+        },
+        {
+            "subject": "green_tray",
+            "relation": "contains",
+            "object": "white_popcorn_bag"
+        },
+        {
+            "subject": "green_tray",
+            "relation": "contains",
+            "object": "green_bag_of_snacks"
+        },
+        {
+            "subject": "drawer_or_shelf_front",
+            "relation": "bounds_bottom_of",
+            "object": "current_location"
+        }
+    ],
+    "current_location": {
+        "name": "current_location",
+        "coord": [
+            480,
+            370
+        ]
+    },
+    "plans": []
+}

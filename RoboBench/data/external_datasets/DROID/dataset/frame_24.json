@@ -1,0 +1,207 @@
+{
+    "objects": [
+        {
+            "name": "robot_arm_base",
+            "coords": [
+                0.2,
+                0.5
+            ]
+        },
+        {
+            "name": "robot_arm_middle",
+            "coords": [
+                0.4,
+                0.5
+            ]
+        },
+        {
+            "name": "black_appliance",
+            "coords": [
+                0.6,
+                0.5
+            ]
+        },
+        {
+            "name": "toaster",
+            "coords": [
+                0.7,
+                0.5
+            ]
+        },
+        {
+            "name": "yellow_cup",
+            "coords": [
+                0.8,
+                0.6
+            ]
+        },
+        {
+            "name": "metal_bowl",
+            "coords": [
+                0.75,
+                0.7
+            ]
+        },
+        {
+            "name": "red_bowl",
+            "coords": [
+                0.85,
+                0.4
+            ]
+        },
+        {
+            "name": "robot_arm_end_effector",
+            "coords": [
+                0.9,
+                0.7
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "table_surface",
+            "coords": [
+                0.65,
+                0.6
+            ]
+        },
+        {
+            "name": "window/curtain",
+            "coords": [
+                0.5,
+                0.2
+            ]
+        },
+        {
+            "name": "background_wall",
+            "coords": [
+                0.5,
+                0.8
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "toaster",
+            "black_appliance"
+        ],
+        [
+            "yellow_cup",
+            "metal_bowl"
+        ],
+        [
+            "robot_arm_base",
+            "robot_arm_middle"
+        ],
+        [
+            "robot_arm_middle",
+            "robot_arm_end_effector"
+        ]
+    ],
+    "region_connections": [
+        [
+            "table_surface",
+            "background_wall"
+        ],
+        [
+            "background_wall",
+            "window/curtain"
+        ]
+    ],
+    "extra_safe_objects": [
+        {
+            "name": "yellow_cup",
+            "type": "container",
+            "coords": [
+                0.8,
+                0.6
+            ]
+        },
+        {
+            "name": "red_bowl",
+            "type": "container",
+            "coords": [
+                0.85,
+                0.4
+            ]
+        },
+        {
+            "name": "metal_bowl",
+            "type": "container",
+            "coords": [
+                0.75,
+                0.7
+            ]
+        }
+    ],
+    "extra_unsafe_objects": [
+        {
+            "name": "toaster",
+            "type": "appliance",
+            "coords": [
+                0.7,
+                0.5
+            ]
+        },
+        {
+            "name": "black_appliance",
+            "type": "appliance",
+            "coords": [
+                0.6,
+                0.5
+            ]
+        },
+        {
+            "name": "robot_arm_base",
+            "type": "robot_part",
+            "coords": [
+                0.2,
+                0.5
+            ]
+        },
+        {
+            "name": "robot_arm_middle",
+            "type": "robot_part",
+            "coords": [
+                0.4,
+                0.5
+            ]
+        },
+        {
+            "name": "robot_arm_end_effector",
+            "type": "robot_part",
+            "coords": [
+                0.9,
+                0.7
+            ]
+        }
+    ],
+    "extra_safe_regions": [
+        {
+            "name": "table_surface",
+            "type": "surface",
+            "coords": [
+                0.65,
+                0.6
+            ]
+        },
+        {
+            "name": "window/curtain",
+            "type": "background",
+            "coords": [
+                0.5,
+                0.2
+            ]
+        },
+        {
+            "name": "background_wall",
+            "type": "background",
+            "coords": [
+                0.5,
+                0.8
+            ]
+        }
+    ],
+    "extra_unsafe_regions": [],
+    "current_location": "table_surface"
+}

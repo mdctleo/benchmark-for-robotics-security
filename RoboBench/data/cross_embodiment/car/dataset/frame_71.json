@@ -1,0 +1,420 @@
+{
+    "regions": [
+        {
+            "name": "roadway_1",
+            "type": "road",
+            "description": "Main asphalt roadway under the overhang.",
+            "polygon": [
+                [
+                    260,
+                    890
+                ],
+                [
+                    1230,
+                    890
+                ],
+                [
+                    1380,
+                    610
+                ],
+                [
+                    1100,
+                    430
+                ],
+                [
+                    470,
+                    430
+                ],
+                [
+                    250,
+                    620
+                ]
+            ]
+        },
+        {
+            "name": "overhead_archway_1",
+            "type": "building_feature",
+            "description": "Large overhead arch/portico spanning the road with an elevated pedestrian/balcony railing.",
+            "polygon": [
+                [
+                    180,
+                    220
+                ],
+                [
+                    1450,
+                    220
+                ],
+                [
+                    1500,
+                    420
+                ],
+                [
+                    1400,
+                    500
+                ],
+                [
+                    230,
+                    500
+                ],
+                [
+                    130,
+                    420
+                ]
+            ]
+        },
+        {
+            "name": "building_columns_left_1",
+            "type": "support",
+            "description": "Left brick columns supporting the overhead structure.",
+            "polygon": [
+                [
+                    145,
+                    380
+                ],
+                [
+                    310,
+                    380
+                ],
+                [
+                    310,
+                    880
+                ],
+                [
+                    145,
+                    880
+                ]
+            ]
+        },
+        {
+            "name": "building_columns_right_1",
+            "type": "support",
+            "description": "Right brick columns supporting the overhead structure.",
+            "polygon": [
+                [
+                    1300,
+                    360
+                ],
+                [
+                    1460,
+                    360
+                ],
+                [
+                    1520,
+                    880
+                ],
+                [
+                    1360,
+                    880
+                ]
+            ]
+        },
+        {
+            "name": "sidewalk_left_1",
+            "type": "sidewalk",
+            "description": "Left sidewalk area with planters and street fixtures.",
+            "polygon": [
+                [
+                    0,
+                    650
+                ],
+                [
+                    230,
+                    610
+                ],
+                [
+                    320,
+                    900
+                ],
+                [
+                    0,
+                    900
+                ]
+            ]
+        },
+        {
+            "name": "sidewalk_right_1",
+            "type": "sidewalk",
+            "description": "Right sidewalk area with planters and building frontage.",
+            "polygon": [
+                [
+                    1230,
+                    600
+                ],
+                [
+                    1500,
+                    650
+                ],
+                [
+                    1660,
+                    900
+                ],
+                [
+                    1230,
+                    900
+                ]
+            ]
+        },
+        {
+            "name": "overhead_clearance_sign_region_1",
+            "type": "sign_area",
+            "description": "Area of the overhead clearance sign reading 'CLEARANCE 14'.",
+            "polygon": [
+                [
+                    660,
+                    295
+                ],
+                [
+                    920,
+                    295
+                ],
+                [
+                    945,
+                    330
+                ],
+                [
+                    635,
+                    330
+                ]
+            ]
+        },
+        {
+            "name": "storefront_sign_region_1",
+            "type": "sign_area",
+            "description": "Area containing the visible storefront/branding sign near the right side.",
+            "polygon": [
+                [
+                    1120,
+                    520
+                ],
+                [
+                    1560,
+                    520
+                ],
+                [
+                    1560,
+                    720
+                ],
+                [
+                    1120,
+                    720
+                ]
+            ]
+        },
+        {
+            "name": "stop_sign_region_1",
+            "type": "sign_area",
+            "description": "Area around the red STOP sign near the right side of the road.",
+            "polygon": [
+                [
+                    1110,
+                    600
+                ],
+                [
+                    1170,
+                    590
+                ],
+                [
+                    1185,
+                    660
+                ],
+                [
+                    1125,
+                    670
+                ]
+            ]
+        },
+        {
+            "name": "street_lamps_row_1",
+            "type": "street_furniture",
+            "description": "Row of streetlights/lamps lining the street corridor.",
+            "polygon": [
+                [
+                    420,
+                    430
+                ],
+                [
+                    930,
+                    430
+                ],
+                [
+                    1020,
+                    620
+                ],
+                [
+                    330,
+                    620
+                ]
+            ]
+        }
+    ],
+    "objects": [
+        {
+            "name": "purple_railing_upper_1",
+            "type": "railing",
+            "description": "Upper elevated railing/guardrail painted purple along the top of the arch.",
+            "center": [
+                810,
+                150
+            ]
+        },
+        {
+            "name": "overhang_structure_1",
+            "type": "overhang",
+            "description": "The main overhead overhang/beam spanning between the brick supports.",
+            "center": [
+                800,
+                380
+            ]
+        },
+        {
+            "name": "clearance_sign_text_1",
+            "type": "sign_text",
+            "description": "The visible text 'CLEARANCE 14' on the overhead sign.",
+            "center": [
+                790,
+                315
+            ]
+        },
+        {
+            "name": "stop_sign_1",
+            "type": "traffic_sign",
+            "description": "The red STOP traffic sign visible near the right side.",
+            "center": [
+                1148,
+                630
+            ]
+        },
+        {
+            "name": "planter_left_1",
+            "type": "planter",
+            "description": "Planter(s) along the left sidewalk under the overhang.",
+            "center": [
+                330,
+                760
+            ]
+        },
+        {
+            "name": "planter_right_1",
+            "type": "planter",
+            "description": "Planter(s) along the right sidewalk under the overhang.",
+            "center": [
+                1350,
+                790
+            ]
+        },
+        {
+            "name": "street_worker_or_pedestrian_1",
+            "type": "person",
+            "description": "A single person standing/walking in the roadway area near the right.",
+            "center": [
+                1188,
+                700
+            ]
+        },
+        {
+            "name": "street_lamp_1",
+            "type": "streetlight",
+            "description": "A representative streetlamp visible in the corridor.",
+            "center": [
+                560,
+                560
+            ]
+        },
+        {
+            "name": "vehicles_row_1",
+            "type": "vehicles",
+            "description": "Vehicles visible in the distance along the roadway.",
+            "center": [
+                860,
+                560
+            ]
+        },
+        {
+            "name": "storefront_sign_1",
+            "type": "sign",
+            "description": "Storefront/branding sign on the right building frontage area.",
+            "center": [
+                1310,
+                630
+            ]
+        }
+    ],
+    "semantic_relationships": [
+        {
+            "subject": "roadway_1",
+            "predicate": "under",
+            "object": "overhang_structure_1"
+        },
+        {
+            "subject": "overhang_structure_1",
+            "predicate": "supported_by",
+            "object": "building_columns_left_1"
+        },
+        {
+            "subject": "overhang_structure_1",
+            "predicate": "supported_by",
+            "object": "building_columns_right_1"
+        },
+        {
+            "subject": "purple_railing_upper_1",
+            "predicate": "attached_to",
+            "object": "overhead_archway_1"
+        },
+        {
+            "subject": "clearance_sign_text_1",
+            "predicate": "located_in",
+            "object": "overhead_clearance_sign_region_1"
+        },
+        {
+            "subject": "stop_sign_1",
+            "predicate": "located_in",
+            "object": "stop_sign_region_1"
+        },
+        {
+            "subject": "storefront_sign_1",
+            "predicate": "located_in",
+            "object": "storefront_sign_region_1"
+        },
+        {
+            "subject": "street_worker_or_pedestrian_1",
+            "predicate": "near",
+            "object": "roadway_1"
+        },
+        {
+            "subject": "planter_left_1",
+            "predicate": "on",
+            "object": "sidewalk_left_1"
+        },
+        {
+            "subject": "planter_right_1",
+            "predicate": "on",
+            "object": "sidewalk_right_1"
+        },
+        {
+            "subject": "street_lamp_1",
+            "predicate": "part_of",
+            "object": "street_lamps_row_1"
+        },
+        {
+            "subject": "vehicles_row_1",
+            "predicate": "traveling_on",
+            "object": "roadway_1"
+        }
+    ],
+    "current_location": "roadway_1",
+    "plans": [
+        {
+            "name": "approach_archway_along_road",
+            "steps": [
+                {
+                    "action": "move_towards",
+                    "target": "overhead_archway_1"
+                },
+                {
+                    "action": "stay_on",
+                    "target": "roadway_1"
+                }
+            ]
+        }
+    ]
+}

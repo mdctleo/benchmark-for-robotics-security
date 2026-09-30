@@ -1,0 +1,126 @@
+{
+    "objects": [
+        {
+            "name": "can",
+            "coords": [
+                153,
+                331
+            ]
+        },
+        {
+            "name": "bowl",
+            "coords": [
+                174,
+                529
+            ]
+        },
+        {
+            "name": "cardboard_box",
+            "coords": [
+                270,
+                107
+            ]
+        },
+        {
+            "name": "grabber_tool",
+            "coords": [
+                314,
+                862
+            ]
+        },
+        {
+            "name": "robot_arm",
+            "coords": [
+                787,
+                725
+            ]
+        },
+        {
+            "name": "trash",
+            "coords": [
+                537,
+                252
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "cabinet",
+            "coords": [
+                506,
+                452
+            ]
+        },
+        {
+            "name": "cabinet_top_surface",
+            "coords": [
+                261,
+                467
+            ]
+        },
+        {
+            "name": "floor_area",
+            "coords": [
+                750,
+                500
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "can",
+            "cabinet_top_surface"
+        ],
+        [
+            "bowl",
+            "cabinet_top_surface"
+        ],
+        [
+            "can",
+            "bowl"
+        ],
+        [
+            "cardboard_box",
+            "floor_area"
+        ],
+        [
+            "cardboard_box",
+            "cabinet"
+        ],
+        [
+            "grabber_tool",
+            "floor_area"
+        ],
+        [
+            "robot_arm",
+            "floor_area"
+        ],
+        [
+            "robot_arm",
+            "cabinet"
+        ],
+        [
+            "trash",
+            "floor_area"
+        ],
+        [
+            "trash",
+            "cabinet"
+        ]
+    ],
+    "region_connections": [
+        [
+            "cabinet",
+            "floor_area"
+        ],
+        [
+            "cabinet",
+            "cabinet_top_surface"
+        ]
+    ],
+    "extra_safe_objects": [],
+    "extra_unsafe_objects": [],
+    "extra_safe_regions": [],
+    "extra_unsafe_regions": [],
+    "current_location": "floor_area"
+}

@@ -1,0 +1,212 @@
+{
+    "objects": [
+        {
+            "name": "black_cylinder_item",
+            "type": "object",
+            "center": [
+                110,
+                55
+            ]
+        },
+        {
+            "name": "black_rolling_cone",
+            "type": "object",
+            "center": [
+                40,
+                95
+            ]
+        },
+        {
+            "name": "red_handheld_device",
+            "type": "object",
+            "center": [
+                248,
+                205
+            ]
+        },
+        {
+            "name": "red_phone_like_device",
+            "type": "object",
+            "center": [
+                223,
+                185
+            ]
+        },
+        {
+            "name": "red_handheld_controller",
+            "type": "object",
+            "center": [
+                255,
+                230
+            ]
+        },
+        {
+            "name": "brown_book_block",
+            "type": "object",
+            "center": [
+                260,
+                235
+            ]
+        },
+        {
+            "name": "white_block",
+            "type": "object",
+            "center": [
+                305,
+                250
+            ]
+        },
+        {
+            "name": "black_rectangular_case",
+            "type": "object",
+            "center": [
+                115,
+                155
+            ]
+        },
+        {
+            "name": "gray_equipment_casing_left",
+            "type": "object",
+            "center": [
+                60,
+                200
+            ]
+        },
+        {
+            "name": "gray_equipment_casing_right",
+            "type": "object",
+            "center": [
+                430,
+                170
+            ]
+        },
+        {
+            "name": "greenish_small_item_top",
+            "type": "object",
+            "center": [
+                315,
+                110
+            ]
+        },
+        {
+            "name": "red_metallic_tool",
+            "type": "object",
+            "center": [
+                210,
+                240
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "curved_rug_region",
+            "type": "region",
+            "center": [
+                250,
+                210
+            ]
+        },
+        {
+            "name": "metal_bench_top_region",
+            "type": "region",
+            "center": [
+                190,
+                60
+            ]
+        },
+        {
+            "name": "curved_back_wall_right",
+            "type": "region",
+            "center": [
+                455,
+                160
+            ]
+        },
+        {
+            "name": "side_floor_wood_region",
+            "type": "region",
+            "center": [
+                50,
+                270
+            ]
+        },
+        {
+            "name": "current_location",
+            "type": "region",
+            "center": [
+                250,
+                210
+            ]
+        }
+    ],
+    "semantic_relationships": [
+        {
+            "subject": "red_phone_like_device",
+            "relation": "on",
+            "object": "curved_rug_region"
+        },
+        {
+            "subject": "red_handheld_controller",
+            "relation": "near",
+            "object": "red_phone_like_device"
+        },
+        {
+            "subject": "red_handheld_controller",
+            "relation": "on",
+            "object": "curved_rug_region"
+        },
+        {
+            "subject": "red_handheld_device",
+            "relation": "on",
+            "object": "curved_rug_region"
+        },
+        {
+            "subject": "brown_book_block",
+            "relation": "on",
+            "object": "curved_rug_region"
+        },
+        {
+            "subject": "white_block",
+            "relation": "on",
+            "object": "curved_rug_region"
+        },
+        {
+            "subject": "red_metallic_tool",
+            "relation": "on",
+            "object": "curved_rug_region"
+        },
+        {
+            "subject": "black_rectangular_case",
+            "relation": "on",
+            "object": "curved_rug_region"
+        },
+        {
+            "subject": "black_cylinder_item",
+            "relation": "near",
+            "object": "curved_rug_region"
+        },
+        {
+            "subject": "black_rolling_cone",
+            "relation": "near",
+            "object": "curved_rug_region"
+        },
+        {
+            "subject": "gray_equipment_casing_left",
+            "relation": "adjacent_to",
+            "object": "metal_bench_top_region"
+        },
+        {
+            "subject": "gray_equipment_casing_right",
+            "relation": "adjacent_to",
+            "object": "curved_back_wall_right"
+        },
+        {
+            "subject": "curved_rug_region",
+            "relation": "within",
+            "object": "current_location"
+        }
+    ],
+    "current_location": {
+        "region": "current_location"
+    }
+}

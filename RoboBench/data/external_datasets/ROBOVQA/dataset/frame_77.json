@@ -1,0 +1,171 @@
+{
+    "objects": [
+        {
+            "name": "biodq_box_left",
+            "type": "box",
+            "bbox": {
+                "x": 0.06,
+                "y": 0.58,
+                "w": 0.22,
+                "h": 0.28
+            }
+        },
+        {
+            "name": "biodq_box_right",
+            "type": "box",
+            "bbox": {
+                "x": 0.23,
+                "y": 0.58,
+                "w": 0.22,
+                "h": 0.28
+            }
+        },
+        {
+            "name": "robot_arm",
+            "type": "robot_arm",
+            "bbox": {
+                "x": 0.47,
+                "y": 0.06,
+                "w": 0.48,
+                "h": 0.46
+            }
+        },
+        {
+            "name": "robot_gripper",
+            "type": "gripper",
+            "bbox": {
+                "x": 0.62,
+                "y": 0.08,
+                "w": 0.22,
+                "h": 0.22
+            }
+        },
+        {
+            "name": "tray",
+            "type": "tray",
+            "bbox": {
+                "x": 0.18,
+                "y": 0.55,
+                "w": 0.45,
+                "h": 0.34
+            }
+        },
+        {
+            "name": "table_right",
+            "type": "table_section",
+            "bbox": {
+                "x": 0.6,
+                "y": 0.5,
+                "w": 0.38,
+                "h": 0.35
+            }
+        }
+    ],
+    "regions": [
+        {
+            "name": "workspace_tray_area",
+            "type": "workspace_area",
+            "polygon": [
+                {
+                    "x": 0.18,
+                    "y": 0.55
+                },
+                {
+                    "x": 0.63,
+                    "y": 0.55
+                },
+                {
+                    "x": 0.63,
+                    "y": 0.89
+                },
+                {
+                    "x": 0.18,
+                    "y": 0.89
+                }
+            ]
+        },
+        {
+            "name": "robot_reach_zone",
+            "type": "reach_zone",
+            "polygon": [
+                {
+                    "x": 0.5,
+                    "y": 0.05
+                },
+                {
+                    "x": 0.98,
+                    "y": 0.05
+                },
+                {
+                    "x": 0.98,
+                    "y": 0.55
+                },
+                {
+                    "x": 0.5,
+                    "y": 0.55
+                }
+            ]
+        }
+    ],
+    "semantic_relationships": [
+        {
+            "subject": "biodq_box_left",
+            "predicate": "is_on",
+            "object": "tray"
+        },
+        {
+            "subject": "biodq_box_right",
+            "predicate": "is_on",
+            "object": "tray"
+        },
+        {
+            "subject": "robot_gripper",
+            "predicate": "is_above",
+            "object": "biodq_box_right"
+        },
+        {
+            "subject": "robot_arm",
+            "predicate": "is_in",
+            "object": "robot_reach_zone"
+        },
+        {
+            "subject": "biodq_box_left",
+            "predicate": "is_in",
+            "object": "workspace_tray_area"
+        },
+        {
+            "subject": "biodq_box_right",
+            "predicate": "is_in",
+            "object": "workspace_tray_area"
+        },
+        {
+            "subject": "tray",
+            "predicate": "is_in",
+            "object": "workspace_tray_area"
+        },
+        {
+            "subject": "table_right",
+            "predicate": "is_adjacent_to",
+            "object": "workspace_tray_area"
+        }
+    ],
+    "current_location": {
+        "entity": "robot_gripper",
+        "region": "robot_reach_zone"
+    },
+    "plans": [
+        {
+            "plan_name": "prepare_grasp_box_right",
+            "steps": [
+                {
+                    "action": "move_into_reach",
+                    "target_region": "robot_reach_zone"
+                },
+                {
+                    "action": "position_over",
+                    "target_object": "biodq_box_right"
+                }
+            ]
+        }
+    ]
+}

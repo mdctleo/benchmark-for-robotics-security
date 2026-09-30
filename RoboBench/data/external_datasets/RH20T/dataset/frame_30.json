@@ -1,0 +1,220 @@
+{
+    "objects": [
+        {
+            "name": "blue_fabric_surface",
+            "type": "surface",
+            "coordinates": [
+                140,
+                165
+            ]
+        },
+        {
+            "name": "black_surface_area",
+            "type": "surface",
+            "coordinates": [
+                440,
+                230
+            ]
+        },
+        {
+            "name": "map_print_on_fabric",
+            "type": "printed_graphic",
+            "coordinates": [
+                260,
+                210
+            ]
+        },
+        {
+            "name": "wood_block_support",
+            "type": "block",
+            "coordinates": [
+                265,
+                165
+            ]
+        },
+        {
+            "name": "robotic_torch_head",
+            "type": "device",
+            "coordinates": [
+                235,
+                65
+            ]
+        },
+        {
+            "name": "robot_mount_base",
+            "type": "equipment_base",
+            "coordinates": [
+                205,
+                30
+            ]
+        },
+        {
+            "name": "handleless_cylinder_component",
+            "type": "machine_component",
+            "coordinates": [
+                90,
+                85
+            ]
+        },
+        {
+            "name": "blue_cable_bundle",
+            "type": "cable",
+            "coordinates": [
+                340,
+                90
+            ]
+        },
+        {
+            "name": "black_cables",
+            "type": "cable",
+            "coordinates": [
+                420,
+                150
+            ]
+        },
+        {
+            "name": "white_power_strip",
+            "type": "power_accessory",
+            "coordinates": [
+                520,
+                300
+            ]
+        },
+        {
+            "name": "small_white_rectangular_block",
+            "type": "block",
+            "coordinates": [
+                300,
+                155
+            ]
+        },
+        {
+            "name": "small_handle_or_dowel",
+            "type": "tool",
+            "coordinates": [
+                600,
+                315
+            ]
+        },
+        {
+            "name": "control_buttons_assembly",
+            "type": "control_panel",
+            "coordinates": [
+                420,
+                55
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "work_area_on_blue_fabric",
+            "type": "work_region",
+            "coordinates": [
+                240,
+                190
+            ]
+        },
+        {
+            "name": "right_side_area_on_black_surface",
+            "type": "work_region",
+            "coordinates": [
+                520,
+                270
+            ]
+        },
+        {
+            "name": "background_right_boundary",
+            "type": "boundary_region",
+            "coordinates": [
+                675,
+                195
+            ]
+        }
+    ],
+    "semantic_relationships": [
+        {
+            "subject": "robotic_torch_head",
+            "relation": "is_over",
+            "object": "work_area_on_blue_fabric"
+        },
+        {
+            "subject": "robot_mount_base",
+            "relation": "supports",
+            "object": "robotic_torch_head"
+        },
+        {
+            "subject": "blue_fabric_surface",
+            "relation": "contains",
+            "object": "map_print_on_fabric"
+        },
+        {
+            "subject": "map_print_on_fabric",
+            "relation": "is_on",
+            "object": "blue_fabric_surface"
+        },
+        {
+            "subject": "wood_block_support",
+            "relation": "rests_on",
+            "object": "blue_fabric_surface"
+        },
+        {
+            "subject": "small_white_rectangular_block",
+            "relation": "rests_on",
+            "object": "blue_fabric_surface"
+        },
+        {
+            "subject": "black_surface_area",
+            "relation": "adjacent_to",
+            "object": "blue_fabric_surface"
+        },
+        {
+            "subject": "black_cables",
+            "relation": "run_across",
+            "object": "work_area_on_blue_fabric"
+        },
+        {
+            "subject": "blue_cable_bundle",
+            "relation": "connects_to",
+            "object": "robotic_torch_head"
+        },
+        {
+            "subject": "white_power_strip",
+            "relation": "placed_on",
+            "object": "right_side_area_on_black_surface"
+        },
+        {
+            "subject": "small_handle_or_dowel",
+            "relation": "lies_in",
+            "object": "right_side_area_on_black_surface"
+        },
+        {
+            "subject": "control_buttons_assembly",
+            "relation": "is_near",
+            "object": "robot_mount_base"
+        },
+        {
+            "subject": "handleless_cylinder_component",
+            "relation": "is_part_of",
+            "object": "robot_mount_base"
+        }
+    ],
+    "current_location": {
+        "region": "work_area_on_blue_fabric",
+        "coordinates": [
+            265,
+            165
+        ]
+    },
+    "plans": [
+        {
+            "name": "operate_over_work_area",
+            "target_region": "work_area_on_blue_fabric",
+            "notes": "Perform the primary action over the blue fabric work region where the printed map is located."
+        },
+        {
+            "name": "manage_cables_near_target",
+            "target_region": "work_area_on_blue_fabric",
+            "notes": "Ensure cables are not obstructing the work region around the torch head."
+        }
+    ]
+}

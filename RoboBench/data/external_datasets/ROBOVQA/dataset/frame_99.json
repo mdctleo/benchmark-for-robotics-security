@@ -1,0 +1,146 @@
+{
+    "objects": [
+        {
+            "name": "robotic_arm",
+            "coords": [
+                350,
+                700
+            ]
+        },
+        {
+            "name": "jar",
+            "coords": [
+                550,
+                450
+            ]
+        },
+        {
+            "name": "yellow_snack_item",
+            "coords": [
+                480,
+                580
+            ]
+        },
+        {
+            "name": "snack_packet_inside_jar_1",
+            "coords": [
+                520,
+                400
+            ]
+        },
+        {
+            "name": "snack_packet_inside_jar_2",
+            "coords": [
+                600,
+                420
+            ]
+        },
+        {
+            "name": "snack_packet_on_table_1",
+            "coords": [
+                700,
+                650
+            ]
+        },
+        {
+            "name": "snack_packet_on_table_2",
+            "coords": [
+                800,
+                800
+            ]
+        },
+        {
+            "name": "orange_pen",
+            "coords": [
+                880,
+                300
+            ]
+        },
+        {
+            "name": "black_pen",
+            "coords": [
+                920,
+                500
+            ]
+        },
+        {
+            "name": "blue_pen",
+            "coords": [
+                850,
+                680
+            ]
+        },
+        {
+            "name": "pencil_holder",
+            "coords": [
+                600,
+                880
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "tabletop",
+            "coords": [
+                500,
+                500
+            ]
+        },
+        {
+            "name": "inside_jar",
+            "coords": [
+                550,
+                450
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "robotic_arm",
+            "yellow_snack_item"
+        ],
+        [
+            "snack_packet_inside_jar_1",
+            "inside_jar"
+        ],
+        [
+            "snack_packet_inside_jar_2",
+            "inside_jar"
+        ],
+        [
+            "snack_packet_on_table_1",
+            "tabletop"
+        ],
+        [
+            "snack_packet_on_table_2",
+            "tabletop"
+        ],
+        [
+            "orange_pen",
+            "tabletop"
+        ],
+        [
+            "black_pen",
+            "tabletop"
+        ],
+        [
+            "blue_pen",
+            "tabletop"
+        ],
+        [
+            "pencil_holder",
+            "tabletop"
+        ]
+    ],
+    "region_connections": [
+        [
+            "inside_jar",
+            "tabletop"
+        ]
+    ],
+    "extra_safe_objects": [],
+    "extra_unsafe_objects": [],
+    "extra_safe_regions": [],
+    "extra_unsafe_regions": [],
+    "current_location": "tabletop"
+}

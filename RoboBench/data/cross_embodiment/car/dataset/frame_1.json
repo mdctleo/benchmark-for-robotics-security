@@ -1,0 +1,228 @@
+{
+    "regions": [
+        {
+            "name": "road_intersection",
+            "type": "road_segment",
+            "polygon": [
+                [
+                    160,
+                    460
+                ],
+                [
+                    620,
+                    460
+                ],
+                [
+                    900,
+                    620
+                ],
+                [
+                    140,
+                    620
+                ]
+            ]
+        },
+        {
+            "name": "stop_sign_zone",
+            "type": "traffic_control_area",
+            "polygon": [
+                [
+                    760,
+                    420
+                ],
+                [
+                    860,
+                    420
+                ],
+                [
+                    900,
+                    560
+                ],
+                [
+                    800,
+                    560
+                ]
+            ]
+        },
+        {
+            "name": "right_side_roadside",
+            "type": "sidewalk_or_roadside",
+            "polygon": [
+                [
+                    620,
+                    540
+                ],
+                [
+                    910,
+                    520
+                ],
+                [
+                    980,
+                    720
+                ],
+                [
+                    650,
+                    740
+                ]
+            ]
+        }
+    ],
+    "objects": [
+        {
+            "name": "stop_sign",
+            "type": "traffic_sign",
+            "bbox": [
+                [
+                    820,
+                    300
+                ],
+                [
+                    910,
+                    540
+                ]
+            ],
+            "center": [
+                865,
+                420
+            ]
+        },
+        {
+            "name": "no_left_turn_sign",
+            "type": "traffic_sign",
+            "bbox": [
+                [
+                    860,
+                    190
+                ],
+                [
+                    990,
+                    270
+                ]
+            ],
+            "center": [
+                925,
+                230
+            ]
+        },
+        {
+            "name": "street",
+            "type": "road",
+            "polygon": [
+                [
+                    120,
+                    470
+                ],
+                [
+                    640,
+                    470
+                ],
+                [
+                    980,
+                    610
+                ],
+                [
+                    120,
+                    610
+                ]
+            ],
+            "center": [
+                520,
+                540
+            ]
+        },
+        {
+            "name": "vehicles",
+            "type": "vehicle_group",
+            "note": "At least one car is visible in the lane ahead."
+        },
+        {
+            "name": "cars_parking_lane",
+            "type": "vehicle_group",
+            "note": "Vehicle(s) visible further down the roadway."
+        },
+        {
+            "name": "buildings",
+            "type": "building_group",
+            "note": "Residential/commercial buildings along the right side."
+        },
+        {
+            "name": "trees",
+            "type": "vegetation_group",
+            "note": "Tree line on both sides."
+        },
+        {
+            "name": "utility_poles",
+            "type": "infrastructure_group",
+            "note": "Utility poles and overhead wiring along the roadway."
+        },
+        {
+            "name": "fence_wall_right",
+            "type": "barrier",
+            "note": "Brown fence/wall on the right side."
+        }
+    ],
+    "connections": [
+        {
+            "from": "stop_sign",
+            "to": "stop_sign_zone",
+            "relation": "controls_intersection_movement_for"
+        },
+        {
+            "from": "stop_sign_zone",
+            "to": "road_intersection",
+            "relation": "located_on"
+        },
+        {
+            "from": "street",
+            "to": "road_intersection",
+            "relation": "overlaps_with"
+        },
+        {
+            "from": "vehicles",
+            "to": "road_intersection",
+            "relation": "occupies"
+        },
+        {
+            "from": "cars_parking_lane",
+            "to": "road_intersection",
+            "relation": "occupies_far_ahead_in_lane"
+        },
+        {
+            "from": "trees",
+            "to": "road_intersection",
+            "relation": "bordering"
+        },
+        {
+            "from": "utility_poles",
+            "to": "road_intersection",
+            "relation": "alongside"
+        },
+        {
+            "from": "fence_wall_right",
+            "to": "right_side_roadside",
+            "relation": "adjacent_to"
+        },
+        {
+            "from": "buildings",
+            "to": "right_side_roadside",
+            "relation": "behind"
+        },
+        {
+            "from": "no_left_turn_sign",
+            "to": "stop_sign",
+            "relation": "mounted_above_and_linked_to_same_control_post"
+        }
+    ],
+    "current_location": "road_intersection",
+    "plans": [
+        {
+            "name": "continue_forward_if_clear",
+            "start_region": "road_intersection",
+            "target_region": "road_intersection",
+            "constraints": [
+                "Yield/stop in accordance with stop_sign control when required.",
+                "Do not make prohibited maneuvers indicated by no_left_turn_sign."
+            ]
+        }
+    ]
+}

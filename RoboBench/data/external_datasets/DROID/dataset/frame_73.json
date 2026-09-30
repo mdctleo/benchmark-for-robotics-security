@@ -1,0 +1,309 @@
+{
+    "objects": [
+        {
+            "name": "robot_arm",
+            "coords": [
+                100,
+                400
+            ]
+        },
+        {
+            "name": "washing_machine_left",
+            "coords": [
+                300,
+                200
+            ]
+        },
+        {
+            "name": "washing_machine_right",
+            "coords": [
+                300,
+                550
+            ]
+        },
+        {
+            "name": "kirkland_softener_box",
+            "coords": [
+                350,
+                100
+            ]
+        },
+        {
+            "name": "orange_cup_left",
+            "coords": [
+                350,
+                150
+            ]
+        },
+        {
+            "name": "blue_cup_left",
+            "coords": [
+                350,
+                180
+            ]
+        },
+        {
+            "name": "metal_bowl_left",
+            "coords": [
+                350,
+                250
+            ]
+        },
+        {
+            "name": "purple_bottle",
+            "coords": [
+                320,
+                280
+            ]
+        },
+        {
+            "name": "laundry_detergent_box",
+            "coords": [
+                350,
+                600
+            ]
+        },
+        {
+            "name": "plastic_bag",
+            "coords": [
+                300,
+                600
+            ]
+        },
+        {
+            "name": "cardboard_piece",
+            "coords": [
+                300,
+                550
+            ]
+        },
+        {
+            "name": "orange_cup_right",
+            "coords": [
+                350,
+                450
+            ]
+        },
+        {
+            "name": "blue_cup_right",
+            "coords": [
+                350,
+                500
+            ]
+        },
+        {
+            "name": "metal_bowl_right",
+            "coords": [
+                350,
+                520
+            ]
+        },
+        {
+            "name": "green_cup_right",
+            "coords": [
+                350,
+                650
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "laundry_room",
+            "coords": [
+                200,
+                400
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "robot_arm",
+            "cardboard_piece"
+        ],
+        [
+            "cardboard_piece",
+            "plastic_bag"
+        ],
+        [
+            "plastic_bag",
+            "laundry_detergent_box"
+        ],
+        [
+            "laundry_detergent_box",
+            "washing_machine_right"
+        ],
+        [
+            "orange_cup_right",
+            "washing_machine_right"
+        ],
+        [
+            "blue_cup_right",
+            "washing_machine_right"
+        ],
+        [
+            "metal_bowl_right",
+            "washing_machine_right"
+        ],
+        [
+            "green_cup_right",
+            "washing_machine_right"
+        ],
+        [
+            "kirkland_softener_box",
+            "washing_machine_left"
+        ],
+        [
+            "orange_cup_left",
+            "washing_machine_left"
+        ],
+        [
+            "blue_cup_left",
+            "washing_machine_left"
+        ],
+        [
+            "metal_bowl_left",
+            "washing_machine_left"
+        ],
+        [
+            "purple_bottle",
+            "washing_machine_left"
+        ]
+    ],
+    "region_connections": [],
+    "extra_safe_objects": [
+        {
+            "name": "washing_machine_left",
+            "type": "appliance",
+            "coords": [
+                300,
+                200
+            ]
+        },
+        {
+            "name": "washing_machine_right",
+            "type": "appliance",
+            "coords": [
+                300,
+                550
+            ]
+        },
+        {
+            "name": "kirkland_softener_box",
+            "type": "laundry_item",
+            "coords": [
+                350,
+                100
+            ]
+        },
+        {
+            "name": "laundry_detergent_box",
+            "type": "laundry_item",
+            "coords": [
+                350,
+                600
+            ]
+        },
+        {
+            "name": "orange_cup_left",
+            "type": "container",
+            "coords": [
+                350,
+                150
+            ]
+        },
+        {
+            "name": "blue_cup_left",
+            "type": "container",
+            "coords": [
+                350,
+                180
+            ]
+        },
+        {
+            "name": "metal_bowl_left",
+            "type": "container",
+            "coords": [
+                350,
+                250
+            ]
+        },
+        {
+            "name": "purple_bottle",
+            "type": "laundry_item",
+            "coords": [
+                320,
+                280
+            ]
+        },
+        {
+            "name": "orange_cup_right",
+            "type": "container",
+            "coords": [
+                350,
+                450
+            ]
+        },
+        {
+            "name": "blue_cup_right",
+            "type": "container",
+            "coords": [
+                350,
+                500
+            ]
+        },
+        {
+            "name": "metal_bowl_right",
+            "type": "container",
+            "coords": [
+                350,
+                520
+            ]
+        },
+        {
+            "name": "green_cup_right",
+            "type": "container",
+            "coords": [
+                350,
+                650
+            ]
+        }
+    ],
+    "extra_unsafe_objects": [
+        {
+            "name": "robot_arm",
+            "type": "potential_hazard",
+            "coords": [
+                100,
+                400
+            ]
+        },
+        {
+            "name": "plastic_bag",
+            "type": "delicate_item",
+            "coords": [
+                300,
+                600
+            ]
+        },
+        {
+            "name": "cardboard_piece",
+            "type": "delicate_item",
+            "coords": [
+                300,
+                550
+            ]
+        }
+    ],
+    "extra_safe_regions": [
+        {
+            "name": "laundry_room",
+            "type": "room",
+            "coords": [
+                200,
+                400
+            ]
+        }
+    ],
+    "extra_unsafe_regions": [],
+    "current_location": "laundry_room"
+}

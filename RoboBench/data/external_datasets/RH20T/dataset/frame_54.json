@@ -1,0 +1,242 @@
+{
+    "objects": [
+        {
+            "name": "floor_wood",
+            "type": "surface",
+            "centroid": [
+                140,
+                360
+            ]
+        },
+        {
+            "name": "camera_camera",
+            "type": "device",
+            "centroid": [
+                420,
+                120
+            ]
+        },
+        {
+            "name": "red_bottle",
+            "type": "container",
+            "centroid": [
+                520,
+                40
+            ]
+        },
+        {
+            "name": "blue_stepper",
+            "type": "machine_part",
+            "centroid": [
+                430,
+                160
+            ]
+        },
+        {
+            "name": "black_circular_lens",
+            "type": "device",
+            "centroid": [
+                20,
+                120
+            ]
+        },
+        {
+            "name": "black_keyboard",
+            "type": "input_device",
+            "centroid": [
+                140,
+                20
+            ]
+        },
+        {
+            "name": "white_strip_frame",
+            "type": "structure",
+            "centroid": [
+                50,
+                220
+            ]
+        },
+        {
+            "name": "gray_device_upper_right",
+            "type": "device",
+            "centroid": [
+                780,
+                110
+            ]
+        },
+        {
+            "name": "white_device_on_right",
+            "type": "device",
+            "centroid": [
+                760,
+                170
+            ]
+        },
+        {
+            "name": "computer_screen_blue",
+            "type": "display",
+            "centroid": [
+                650,
+                60
+            ]
+        },
+        {
+            "name": "thin_cable_bundle",
+            "type": "cables",
+            "centroid": [
+                520,
+                120
+            ]
+        },
+        {
+            "name": "small_box_1",
+            "type": "object",
+            "centroid": [
+                430,
+                170
+            ]
+        },
+        {
+            "name": "small_box_2",
+            "type": "object",
+            "centroid": [
+                470,
+                180
+            ]
+        },
+        {
+            "name": "cardboard_block",
+            "type": "object",
+            "centroid": [
+                355,
+                120
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "blue_mat",
+            "type": "work_surface",
+            "polygon": [
+                [
+                    120,
+                    230
+                ],
+                [
+                    700,
+                    230
+                ],
+                [
+                    740,
+                    540
+                ],
+                [
+                    90,
+                    560
+                ]
+            ]
+        },
+        {
+            "name": "deck_area",
+            "type": "floor_area",
+            "polygon": [
+                [
+                    0,
+                    0
+                ],
+                [
+                    900,
+                    0
+                ],
+                [
+                    900,
+                    720
+                ],
+                [
+                    0,
+                    720
+                ]
+            ]
+        }
+    ],
+    "relationships": [
+        {
+            "subject": "blue_stepper",
+            "relation": "mounted_above",
+            "object": "blue_mat"
+        },
+        {
+            "subject": "thin_cable_bundle",
+            "relation": "lies_on",
+            "object": "blue_mat"
+        },
+        {
+            "subject": "cardboard_block",
+            "relation": "rests_on",
+            "object": "blue_mat"
+        },
+        {
+            "subject": "small_box_1",
+            "relation": "rests_on",
+            "object": "blue_mat"
+        },
+        {
+            "subject": "small_box_2",
+            "relation": "rests_on",
+            "object": "blue_mat"
+        },
+        {
+            "subject": "red_bottle",
+            "relation": "is_near",
+            "object": "blue_mat"
+        },
+        {
+            "subject": "black_keyboard",
+            "relation": "is_near",
+            "object": "deck_area"
+        },
+        {
+            "subject": "black_circular_lens",
+            "relation": "is_near",
+            "object": "deck_area"
+        },
+        {
+            "subject": "gray_device_upper_right",
+            "relation": "overlooks",
+            "object": "blue_mat"
+        },
+        {
+            "subject": "white_device_on_right",
+            "relation": "is_near",
+            "object": "blue_mat"
+        },
+        {
+            "subject": "blue_mat",
+            "relation": "is_on",
+            "object": "deck_area"
+        },
+        {
+            "subject": "floor_wood",
+            "relation": "is_part_of",
+            "object": "deck_area"
+        }
+    ],
+    "current_location": {
+        "agent": "blue_stepper",
+        "region": "blue_mat"
+    },
+    "plans": [
+        {
+            "plan_name": "operate_on_mat",
+            "agent": "blue_stepper",
+            "target_region": "blue_mat",
+            "steps": [
+                {
+                    "action": "move_over_surface",
+                    "from_region": "blue_mat",
+                    "to_region": "blue_mat"
+                }
+            ]
+        }
+    ]
+}

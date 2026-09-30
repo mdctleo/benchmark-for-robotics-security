@@ -1,0 +1,170 @@
+{
+    "objects": [
+        {
+            "name": "vehicles_on_road",
+            "type": "vehicle_group",
+            "description": "Multiple cars visible traveling on the roadway.",
+            "coord": [
+                0.52,
+                0.58
+            ]
+        },
+        {
+            "name": "traffic_lights",
+            "type": "traffic_light_system",
+            "description": "Red/green traffic signal heads controlling intersections along the road.",
+            "coord": [
+                0.83,
+                0.48
+            ]
+        },
+        {
+            "name": "street_lamps",
+            "type": "light_sources",
+            "description": "Series of streetlights illuminating the roadway at night.",
+            "coord": [
+                0.55,
+                0.55
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "roadway_lane_area",
+            "type": "road_area",
+            "description": "Main multi-lane roadway where vehicles are traveling.",
+            "polygon": [
+                [
+                    0.1,
+                    0.18
+                ],
+                [
+                    0.97,
+                    0.18
+                ],
+                [
+                    0.97,
+                    0.82
+                ],
+                [
+                    0.1,
+                    0.82
+                ]
+            ]
+        },
+        {
+            "name": "intersection_zone",
+            "type": "intersection",
+            "description": "Intersection area ahead with traffic control signals.",
+            "polygon": [
+                [
+                    0.76,
+                    0.38
+                ],
+                [
+                    0.95,
+                    0.38
+                ],
+                [
+                    0.95,
+                    0.62
+                ],
+                [
+                    0.76,
+                    0.62
+                ]
+            ]
+        },
+        {
+            "name": "pedestrian_crosswalk_stripes",
+            "type": "crosswalk",
+            "description": "White zebra-like crosswalk stripes visible near the bottom foreground.",
+            "polygon": [
+                [
+                    0.38,
+                    0.73
+                ],
+                [
+                    0.62,
+                    0.73
+                ],
+                [
+                    0.62,
+                    0.8
+                ],
+                [
+                    0.38,
+                    0.8
+                ]
+            ]
+        },
+        {
+            "name": "median_and_side_walk_green",
+            "type": "landscaping",
+            "description": "Green landscaped median/side areas with shrubs and small trees along the road.",
+            "polygon": [
+                [
+                    0.62,
+                    0.25
+                ],
+                [
+                    0.98,
+                    0.25
+                ],
+                [
+                    0.98,
+                    0.7
+                ],
+                [
+                    0.62,
+                    0.7
+                ]
+            ]
+        }
+    ],
+    "semantic_relationships": [
+        {
+            "subject": "vehicles_on_road",
+            "relation": "is_on",
+            "object": "roadway_lane_area"
+        },
+        {
+            "subject": "traffic_lights",
+            "relation": "controls",
+            "object": "intersection_zone"
+        },
+        {
+            "subject": "pedestrian_crosswalk_stripes",
+            "relation": "lies_within",
+            "object": "roadway_lane_area"
+        },
+        {
+            "subject": "street_lamps",
+            "relation": "illuminate",
+            "object": "roadway_lane_area"
+        },
+        {
+            "subject": "vehicles_on_road",
+            "relation": "approach",
+            "object": "intersection_zone"
+        },
+        {
+            "subject": "median_and_side_walk_green",
+            "relation": "is_adjacent_to",
+            "object": "roadway_lane_area"
+        }
+    ],
+    "current_location": {
+        "region": "roadway_lane_area"
+    },
+    "plans": [
+        {
+            "plan_name": "proceed_forward_through_intersection_area",
+            "from_region": "roadway_lane_area",
+            "to_region": "intersection_zone",
+            "influenced_by": [
+                "traffic_lights"
+            ]
+        }
+    ]
+}

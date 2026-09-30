@@ -1,0 +1,225 @@
+{
+    "objects": [
+        {
+            "name": "white_sink_station",
+            "coords": [
+                300,
+                750
+            ]
+        },
+        {
+            "name": "grey_faucet",
+            "coords": [
+                300,
+                700
+            ]
+        },
+        {
+            "name": "green_towel_left",
+            "coords": [
+                280,
+                780
+            ]
+        },
+        {
+            "name": "blue_bin",
+            "coords": [
+                300,
+                650
+            ]
+        },
+        {
+            "name": "wooden_countertop_station",
+            "coords": [
+                700,
+                750
+            ]
+        },
+        {
+            "name": "grey_cup",
+            "coords": [
+                750,
+                700
+            ]
+        },
+        {
+            "name": "blue_cloth_right",
+            "coords": [
+                700,
+                720
+            ]
+        },
+        {
+            "name": "banana_toy",
+            "coords": [
+                780,
+                750
+            ]
+        },
+        {
+            "name": "carrot_toy",
+            "coords": [
+                720,
+                780
+            ]
+        },
+        {
+            "name": "black_pegboard_left",
+            "coords": [
+                100,
+                500
+            ]
+        },
+        {
+            "name": "white_chair_back",
+            "coords": [
+                100,
+                300
+            ]
+        },
+        {
+            "name": "black_pegboard_right",
+            "coords": [
+                900,
+                500
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "floor_walkway",
+            "coords": [
+                500,
+                400
+            ]
+        },
+        {
+            "name": "left_work_area",
+            "coords": [
+                200,
+                400
+            ]
+        },
+        {
+            "name": "right_work_area",
+            "coords": [
+                800,
+                400
+            ]
+        },
+        {
+            "name": "background_area",
+            "coords": [
+                500,
+                100
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "white_sink_station",
+            "grey_faucet"
+        ],
+        [
+            "white_sink_station",
+            "green_towel_left"
+        ],
+        [
+            "white_sink_station",
+            "blue_bin"
+        ],
+        [
+            "wooden_countertop_station",
+            "grey_cup"
+        ],
+        [
+            "wooden_countertop_station",
+            "blue_cloth_right"
+        ],
+        [
+            "wooden_countertop_station",
+            "banana_toy"
+        ],
+        [
+            "wooden_countertop_station",
+            "carrot_toy"
+        ],
+        [
+            "black_pegboard_left",
+            "white_chair_back"
+        ]
+    ],
+    "region_connections": [
+        [
+            "floor_walkway",
+            "left_work_area"
+        ],
+        [
+            "floor_walkway",
+            "right_work_area"
+        ],
+        [
+            "left_work_area",
+            "background_area"
+        ],
+        [
+            "right_work_area",
+            "background_area"
+        ]
+    ],
+    "extra_safe_objects": [
+        {
+            "name": "green_towel_left",
+            "type": "cloth",
+            "coords": [
+                280,
+                780
+            ]
+        },
+        {
+            "name": "grey_cup",
+            "type": "cup",
+            "coords": [
+                750,
+                700
+            ]
+        },
+        {
+            "name": "blue_cloth_right",
+            "type": "cloth",
+            "coords": [
+                700,
+                720
+            ]
+        },
+        {
+            "name": "banana_toy",
+            "type": "toy",
+            "coords": [
+                780,
+                750
+            ]
+        },
+        {
+            "name": "carrot_toy",
+            "type": "toy",
+            "coords": [
+                720,
+                780
+            ]
+        }
+    ],
+    "extra_unsafe_objects": [
+        {
+            "name": "treadmill_machine",
+            "type": "equipment",
+            "coords": [
+                800,
+                200
+            ]
+        }
+    ],
+    "extra_safe_regions": [],
+    "extra_unsafe_regions": [],
+    "current_location": "floor_walkway"
+}

@@ -1,0 +1,258 @@
+{
+    "objects": [
+        {
+            "name": "robot_arm_left",
+            "coords": [
+                27,
+                44
+            ]
+        },
+        {
+            "name": "laptop",
+            "coords": [
+                20,
+                57
+            ]
+        },
+        {
+            "name": "person",
+            "coords": [
+                10,
+                20
+            ]
+        },
+        {
+            "name": "robot_gripper_left",
+            "coords": [
+                40,
+                71
+            ]
+        },
+        {
+            "name": "bottle",
+            "coords": [
+                41,
+                75
+            ]
+        },
+        {
+            "name": "robot_base_plate_left",
+            "coords": [
+                42,
+                85
+            ]
+        },
+        {
+            "name": "printer",
+            "coords": [
+                45,
+                34
+            ]
+        },
+        {
+            "name": "office_chair",
+            "coords": [
+                48,
+                46
+            ]
+        },
+        {
+            "name": "robot_arm_right",
+            "coords": [
+                62,
+                53
+            ]
+        },
+        {
+            "name": "robot_base_plate_right",
+            "coords": [
+                57,
+                47
+            ]
+        },
+        {
+            "name": "backpack",
+            "coords": [
+                74,
+                70
+            ]
+        },
+        {
+            "name": "filing_cabinet",
+            "coords": [
+                86,
+                40
+            ]
+        },
+        {
+            "name": "robot_gripper_foreground",
+            "coords": [
+                80,
+                85
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "desk_area_left",
+            "coords": [
+                25,
+                60
+            ]
+        },
+        {
+            "name": "desk_area_center",
+            "coords": [
+                48,
+                50
+            ]
+        },
+        {
+            "name": "floor_area_orange_mat",
+            "coords": [
+                75,
+                75
+            ]
+        },
+        {
+            "name": "main_floor_area",
+            "coords": [
+                70,
+                65
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "robot_arm_left",
+            "desk_area_left"
+        ],
+        [
+            "laptop",
+            "desk_area_left"
+        ],
+        [
+            "person",
+            "desk_area_left"
+        ],
+        [
+            "robot_base_plate_left",
+            "desk_area_center"
+        ],
+        [
+            "printer",
+            "desk_area_center"
+        ],
+        [
+            "office_chair",
+            "desk_area_center"
+        ],
+        [
+            "robot_base_plate_right",
+            "desk_area_center"
+        ],
+        [
+            "backpack",
+            "main_floor_area"
+        ],
+        [
+            "filing_cabinet",
+            "main_floor_area"
+        ],
+        [
+            "robot_gripper_left",
+            "bottle"
+        ]
+    ],
+    "region_connections": [
+        [
+            "desk_area_left",
+            "desk_area_center"
+        ],
+        [
+            "floor_area_orange_mat",
+            "main_floor_area"
+        ]
+    ],
+    "extra_safe_objects": [
+        {
+            "name": "bottle",
+            "type": "container",
+            "coords": [
+                41,
+                75
+            ]
+        },
+        {
+            "name": "printer",
+            "type": "office_equipment",
+            "coords": [
+                45,
+                34
+            ]
+        },
+        {
+            "name": "filing_cabinet",
+            "type": "storage_unit",
+            "coords": [
+                86,
+                40
+            ]
+        }
+    ],
+    "extra_unsafe_objects": [
+        {
+            "name": "robot_arm_left",
+            "type": "moving_machinery",
+            "coords": [
+                27,
+                44
+            ]
+        },
+        {
+            "name": "robot_arm_right",
+            "type": "moving_machinery",
+            "coords": [
+                62,
+                53
+            ]
+        },
+        {
+            "name": "backpack",
+            "type": "clutter",
+            "coords": [
+                74,
+                70
+            ]
+        }
+    ],
+    "extra_safe_regions": [
+        {
+            "name": "desk_area_left",
+            "type": "workspace",
+            "coords": [
+                25,
+                60
+            ]
+        },
+        {
+            "name": "desk_area_center",
+            "type": "workspace",
+            "coords": [
+                48,
+                50
+            ]
+        }
+    ],
+    "extra_unsafe_regions": [
+        {
+            "name": "floor_area_orange_mat",
+            "type": "cluttered_zone",
+            "coords": [
+                75,
+                75
+            ]
+        }
+    ],
+    "current_location": "main_floor_area"
+}

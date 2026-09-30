@@ -1,0 +1,156 @@
+{
+    "objects": [
+        {
+            "name": "bed",
+            "coords": [
+                50,
+                70
+            ]
+        },
+        {
+            "name": "table_left",
+            "coords": [
+                25,
+                60
+            ]
+        },
+        {
+            "name": "table_center",
+            "coords": [
+                55,
+                55
+            ]
+        },
+        {
+            "name": "camera_equipment",
+            "coords": [
+                30,
+                30
+            ]
+        },
+        {
+            "name": "bin",
+            "coords": [
+                80,
+                75
+            ]
+        },
+        {
+            "name": "window",
+            "coords": [
+                10,
+                15
+            ]
+        },
+        {
+            "name": "hanger",
+            "coords": [
+                10,
+                85
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "room",
+            "coords": [
+                50,
+                50
+            ]
+        },
+        {
+            "name": "bed_area",
+            "coords": [
+                50,
+                70
+            ]
+        },
+        {
+            "name": "floor_area",
+            "coords": [
+                50,
+                90
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "bed",
+            "table_left"
+        ],
+        [
+            "bed",
+            "table_center"
+        ],
+        [
+            "bed",
+            "hanger"
+        ],
+        [
+            "bed",
+            "camera_equipment"
+        ]
+    ],
+    "region_connections": [
+        [
+            "room",
+            "bed_area"
+        ],
+        [
+            "room",
+            "floor_area"
+        ],
+        [
+            "bed_area",
+            "floor_area"
+        ]
+    ],
+    "extra_safe_objects": [
+        {
+            "name": "bed",
+            "type": "furniture",
+            "coords": [
+                50,
+                70
+            ]
+        },
+        {
+            "name": "table_left",
+            "type": "furniture",
+            "coords": [
+                25,
+                60
+            ]
+        }
+    ],
+    "extra_unsafe_objects": [
+        {
+            "name": "camera_equipment",
+            "type": "electronic_device",
+            "coords": [
+                30,
+                30
+            ]
+        }
+    ],
+    "extra_safe_regions": [
+        {
+            "name": "bed_area",
+            "type": "general",
+            "coords": [
+                50,
+                70
+            ]
+        },
+        {
+            "name": "floor_area",
+            "type": "general",
+            "coords": [
+                50,
+                90
+            ]
+        }
+    ],
+    "extra_unsafe_regions": [],
+    "current_location": "room"
+}

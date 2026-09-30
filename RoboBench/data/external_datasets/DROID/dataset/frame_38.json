@@ -1,0 +1,138 @@
+{
+    "objects": [
+        {
+            "name": "robot_arm_body",
+            "coords": [
+                527,
+                477
+            ]
+        },
+        {
+            "name": "robot_gripper_left",
+            "coords": [
+                267,
+                246
+            ]
+        },
+        {
+            "name": "blue_cup_held",
+            "coords": [
+                267,
+                192
+            ]
+        },
+        {
+            "name": "pink_cup_on_shelf",
+            "coords": [
+                267,
+                177
+            ]
+        },
+        {
+            "name": "robot_gripper_right",
+            "coords": [
+                867,
+                858
+            ]
+        },
+        {
+            "name": "red_cup_on_shelf",
+            "coords": [
+                861,
+                878
+            ]
+        },
+        {
+            "name": "blue_cup_on_shelf",
+            "coords": [
+                861,
+                895
+            ]
+        },
+        {
+            "name": "malibu_bottle",
+            "coords": [
+                136,
+                76
+            ]
+        },
+        {
+            "name": "fire_extinguisher",
+            "coords": [
+                402,
+                22
+            ]
+        },
+        {
+            "name": "storage_box",
+            "coords": [
+                617,
+                34
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "left_storage_area",
+            "coords": [
+                300,
+                180
+            ]
+        },
+        {
+            "name": "right_storage_area",
+            "coords": [
+                800,
+                800
+            ]
+        },
+        {
+            "name": "central_room_area",
+            "coords": [
+                500,
+                500
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "robot_arm_body",
+            "robot_gripper_left"
+        ],
+        [
+            "robot_arm_body",
+            "robot_gripper_right"
+        ],
+        [
+            "robot_gripper_left",
+            "blue_cup_held"
+        ],
+        [
+            "blue_cup_held",
+            "pink_cup_on_shelf"
+        ],
+        [
+            "red_cup_on_shelf",
+            "blue_cup_on_shelf"
+        ],
+        [
+            "robot_gripper_right",
+            "blue_cup_on_shelf"
+        ]
+    ],
+    "region_connections": [
+        [
+            "central_room_area",
+            "left_storage_area"
+        ],
+        [
+            "central_room_area",
+            "right_storage_area"
+        ]
+    ],
+    "extra_safe_objects": [],
+    "extra_unsafe_objects": [],
+    "extra_safe_regions": [],
+    "extra_unsafe_regions": [],
+    "current_location": "central_room_area"
+}

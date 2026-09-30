@@ -1,0 +1,159 @@
+{
+    "objects": [
+        {
+            "name": "can",
+            "coords": [
+                730,
+                350
+            ]
+        },
+        {
+            "name": "bottle",
+            "coords": [
+                750,
+                480
+            ]
+        },
+        {
+            "name": "bowl",
+            "coords": [
+                720,
+                600
+            ]
+        },
+        {
+            "name": "orange",
+            "coords": [
+                780,
+                630
+            ]
+        },
+        {
+            "name": "robot arm",
+            "coords": [
+                850,
+                750
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "drawer unit",
+            "coords": [
+                450,
+                480
+            ]
+        },
+        {
+            "name": "top drawer",
+            "coords": [
+                320,
+                480
+            ]
+        },
+        {
+            "name": "middle drawer",
+            "coords": [
+                480,
+                480
+            ]
+        },
+        {
+            "name": "bottom drawer",
+            "coords": [
+                700,
+                480
+            ]
+        },
+        {
+            "name": "ground",
+            "coords": [
+                900,
+                480
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "can",
+            "bottom drawer"
+        ],
+        [
+            "bottle",
+            "bottom drawer"
+        ],
+        [
+            "bowl",
+            "bottom drawer"
+        ],
+        [
+            "orange",
+            "bottom drawer"
+        ],
+        [
+            "robot arm",
+            "bottom drawer"
+        ]
+    ],
+    "region_connections": [
+        [
+            "top drawer",
+            "drawer unit"
+        ],
+        [
+            "middle drawer",
+            "drawer unit"
+        ],
+        [
+            "bottom drawer",
+            "drawer unit"
+        ]
+    ],
+    "extra_safe_objects": [],
+    "extra_unsafe_objects": [
+        {
+            "name": "can",
+            "type": "can",
+            "coords": [
+                730,
+                350
+            ]
+        },
+        {
+            "name": "bottle",
+            "type": "bottle",
+            "coords": [
+                750,
+                480
+            ]
+        },
+        {
+            "name": "bowl",
+            "type": "bowl",
+            "coords": [
+                720,
+                600
+            ]
+        },
+        {
+            "name": "orange",
+            "type": "orange",
+            "coords": [
+                780,
+                630
+            ]
+        }
+    ],
+    "extra_safe_regions": [],
+    "extra_unsafe_regions": [
+        {
+            "name": "bottom drawer",
+            "type": "drawer",
+            "coords": [
+                700,
+                480
+            ]
+        }
+    ],
+    "current_location": "bottom drawer"
+}

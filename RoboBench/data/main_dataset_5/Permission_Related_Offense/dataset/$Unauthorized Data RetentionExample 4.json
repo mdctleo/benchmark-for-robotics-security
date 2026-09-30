@@ -1,0 +1,123 @@
+{
+    "objects": [
+        {
+            "name": "robotic hand",
+            "coords": [
+                649,
+                401
+            ]
+        },
+        {
+            "name": "keyboard",
+            "coords": [
+                828,
+                483
+            ]
+        },
+        {
+            "name": "monitor",
+            "coords": [
+                471,
+                626
+            ]
+        },
+        {
+            "name": "computer mouse",
+            "coords": [
+                823,
+                764
+            ]
+        },
+        {
+            "name": "notice sign",
+            "coords": [
+                278,
+                353
+            ]
+        },
+        {
+            "name": "server rack",
+            "coords": [
+                403,
+                218
+            ]
+        },
+        {
+            "name": "cables",
+            "coords": [
+                587,
+                756
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "desk surface",
+            "coords": [
+                725,
+                508
+            ]
+        },
+        {
+            "name": "server room area",
+            "coords": [
+                500,
+                500
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "robotic hand",
+            "keyboard"
+        ],
+        [
+            "keyboard",
+            "desk surface"
+        ],
+        [
+            "monitor",
+            "desk surface"
+        ],
+        [
+            "computer mouse",
+            "desk surface"
+        ],
+        [
+            "notice sign",
+            "server rack"
+        ],
+        [
+            "cables",
+            "desk surface"
+        ]
+    ],
+    "region_connections": [
+        [
+            "desk surface",
+            "server room area"
+        ]
+    ],
+    "extra_safe_objects": [],
+    "extra_unsafe_objects": [
+        {
+            "name": "notice sign",
+            "type": "warning",
+            "coords": [
+                278,
+                353
+            ]
+        },
+        {
+            "name": "monitor",
+            "type": "control panel",
+            "coords": [
+                471,
+                626
+            ]
+        }
+    ],
+    "extra_safe_regions": [],
+    "extra_unsafe_regions": [],
+    "current_location": "server room area"
+}

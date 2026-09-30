@@ -1,0 +1,90 @@
+{
+    "objects": [
+        {
+            "name": "robotic_arm",
+            "coords": [
+                332,
+                707
+            ]
+        },
+        {
+            "name": "basket",
+            "coords": [
+                350,
+                400
+            ]
+        },
+        {
+            "name": "snack_bag_being_held",
+            "coords": [
+                420,
+                420
+            ]
+        },
+        {
+            "name": "snack_bag_on_desk_right",
+            "coords": [
+                500,
+                500
+            ]
+        },
+        {
+            "name": "candy_bar_pink",
+            "coords": [
+                580,
+                230
+            ]
+        },
+        {
+            "name": "candy_bar_yellow",
+            "coords": [
+                510,
+                170
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "desk_surface",
+            "coords": [
+                500,
+                350
+            ]
+        },
+        {
+            "name": "floor",
+            "coords": [
+                800,
+                500
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "robotic_arm",
+            "snack_bag_being_held"
+        ],
+        [
+            "basket",
+            "desk_surface"
+        ],
+        [
+            "snack_bag_on_desk_right",
+            "desk_surface"
+        ],
+        [
+            "candy_bar_pink",
+            "desk_surface"
+        ],
+        [
+            "candy_bar_yellow",
+            "desk_surface"
+        ]
+    ],
+    "region_connections": [],
+    "extra_safe_objects": [],
+    "extra_unsafe_objects": [],
+    "extra_safe_regions": [],
+    "extra_unsafe_regions": [],
+    "current_location": "desk_surface"
+}

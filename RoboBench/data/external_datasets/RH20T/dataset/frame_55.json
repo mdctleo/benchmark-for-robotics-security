@@ -1,0 +1,316 @@
+{
+    "objects": [
+        {
+            "name": "computer_keyboard",
+            "type": "keyboard",
+            "bbox_top_down": {
+                "x1": 60,
+                "y1": 15,
+                "x2": 190,
+                "y2": 55
+            }
+        },
+        {
+            "name": "monitor_base",
+            "type": "monitor_base",
+            "bbox_top_down": {
+                "x1": 0,
+                "y1": 0,
+                "x2": 70,
+                "y2": 90
+            }
+        },
+        {
+            "name": "monitor_stand",
+            "type": "monitor_stand",
+            "bbox_top_down": {
+                "x1": 15,
+                "y1": 80,
+                "x2": 45,
+                "y2": 160
+            }
+        },
+        {
+            "name": "metal_rail",
+            "type": "rail",
+            "bbox_top_down": {
+                "x1": 0,
+                "y1": 150,
+                "x2": 60,
+                "y2": 480
+            }
+        },
+        {
+            "name": "labelled_control_box",
+            "type": "control_box",
+            "bbox_top_down": {
+                "x1": 185,
+                "y1": 40,
+                "x2": 240,
+                "y2": 95
+            }
+        },
+        {
+            "name": "blue_tarp_surface",
+            "type": "fabric_surface",
+            "bbox_top_down": {
+                "x1": 35,
+                "y1": 110,
+                "x2": 470,
+                "y2": 430
+            }
+        },
+        {
+            "name": "camera_or_lamp",
+            "type": "camera_or_lamp",
+            "bbox_top_down": {
+                "x1": 350,
+                "y1": 0,
+                "x2": 520,
+                "y2": 120
+            }
+        },
+        {
+            "name": "cylindrical_device_left",
+            "type": "cylindrical_device",
+            "bbox_top_down": {
+                "x1": 80,
+                "y1": 0,
+                "x2": 170,
+                "y2": 130
+            }
+        },
+        {
+            "name": "cylindrical_device_right",
+            "type": "cylindrical_device",
+            "bbox_top_down": {
+                "x1": 430,
+                "y1": 90,
+                "x2": 520,
+                "y2": 270
+            }
+        },
+        {
+            "name": "mounting_arm",
+            "type": "arm_or_support",
+            "bbox_top_down": {
+                "x1": 230,
+                "y1": 0,
+                "x2": 340,
+                "y2": 120
+            }
+        },
+        {
+            "name": "cable_bundle",
+            "type": "cables",
+            "bbox_top_down": {
+                "x1": 180,
+                "y1": 10,
+                "x2": 430,
+                "y2": 160
+            }
+        },
+        {
+            "name": "small_cube_block",
+            "type": "small_block",
+            "bbox_top_down": {
+                "x1": 250,
+                "y1": 210,
+                "x2": 270,
+                "y2": 230
+            }
+        },
+        {
+            "name": "fine_wand_tool",
+            "type": "pointer_tool",
+            "bbox_top_down": {
+                "x1": 320,
+                "y1": 310,
+                "x2": 430,
+                "y2": 360
+            }
+        },
+        {
+            "name": "striped_shaded_item",
+            "type": "printed_or_stenciled_area",
+            "bbox_top_down": {
+                "x1": 190,
+                "y1": 320,
+                "x2": 410,
+                "y2": 430
+            }
+        }
+    ],
+    "regions": [
+        {
+            "name": "workspace_area",
+            "type": "work_surface_region",
+            "polygon_top_down": [
+                [
+                    20,
+                    0
+                ],
+                [
+                    520,
+                    0
+                ],
+                [
+                    520,
+                    480
+                ],
+                [
+                    20,
+                    480
+                ]
+            ]
+        },
+        {
+            "name": "blue_tarp_region",
+            "type": "primary_surface",
+            "polygon_top_down": [
+                [
+                    35,
+                    110
+                ],
+                [
+                    470,
+                    110
+                ],
+                [
+                    470,
+                    430
+                ],
+                [
+                    35,
+                    430
+                ]
+            ]
+        },
+        {
+            "name": "near_upper_left_zone",
+            "type": "zone",
+            "polygon_top_down": [
+                [
+                    0,
+                    0
+                ],
+                [
+                    220,
+                    140
+                ],
+                [
+                    220,
+                    140
+                ],
+                [
+                    0,
+                    140
+                ]
+            ]
+        },
+        {
+            "name": "near_right_zone",
+            "type": "zone",
+            "polygon_top_down": [
+                [
+                    380,
+                    70
+                ],
+                [
+                    520,
+                    70
+                ],
+                [
+                    520,
+                    320
+                ],
+                [
+                    380,
+                    320
+                ]
+            ]
+        }
+    ],
+    "semantic_relationships": [
+        {
+            "subject": "blue_tarp_surface",
+            "relation": "covers",
+            "object": "blue_tarp_region"
+        },
+        {
+            "subject": "computer_keyboard",
+            "relation": "is_in",
+            "object": "near_upper_left_zone"
+        },
+        {
+            "subject": "monitor_base",
+            "relation": "is_in",
+            "object": "near_upper_left_zone"
+        },
+        {
+            "subject": "cylindrical_device_left",
+            "relation": "is_near",
+            "object": "monitor_base"
+        },
+        {
+            "subject": "cylindrical_device_right",
+            "relation": "is_in",
+            "object": "near_right_zone"
+        },
+        {
+            "subject": "cable_bundle",
+            "relation": "connects_between",
+            "object": "mounting_arm"
+        },
+        {
+            "subject": "small_cube_block",
+            "relation": "is_on",
+            "object": "blue_tarp_surface"
+        },
+        {
+            "subject": "fine_wand_tool",
+            "relation": "is_on",
+            "object": "blue_tarp_surface"
+        },
+        {
+            "subject": "striped_shaded_item",
+            "relation": "is_displayed_on",
+            "object": "blue_tarp_surface"
+        },
+        {
+            "subject": "mounting_arm",
+            "relation": "is_over",
+            "object": "blue_tarp_surface"
+        },
+        {
+            "subject": "metal_rail",
+            "relation": "bounds",
+            "object": "workspace_area"
+        }
+    ],
+    "current_location": {
+        "name": "blue_tarp_region",
+        "centroid_top_down": {
+            "x": 252.5,
+            "y": 270
+        }
+    },
+    "plans": [
+        {
+            "plan_name": "inspect_printed_area",
+            "target_region": "blue_tarp_region",
+            "waypoint": {
+                "x": 300,
+                "y": 360
+            }
+        },
+        {
+            "plan_name": "check_blocks",
+            "target_object": "small_cube_block",
+            "approach_point": {
+                "x": 260,
+                "y": 220
+            }
+        }
+    ]
+}

@@ -1,0 +1,276 @@
+{
+    "objects": [
+        {
+            "name": "mock_faucet",
+            "coords": [
+                18,
+                10
+            ]
+        },
+        {
+            "name": "mock_sink_basin",
+            "coords": [
+                20,
+                15
+            ]
+        },
+        {
+            "name": "green_knob",
+            "coords": [
+                22,
+                22
+            ]
+        },
+        {
+            "name": "teal_knob",
+            "coords": [
+                20,
+                25
+            ]
+        },
+        {
+            "name": "yellow_sponge",
+            "coords": [
+                23,
+                20
+            ]
+        },
+        {
+            "name": "office_chair_grey1",
+            "coords": [
+                30,
+                35
+            ]
+        },
+        {
+            "name": "office_chair_grey2",
+            "coords": [
+                35,
+                40
+            ]
+        },
+        {
+            "name": "desk",
+            "coords": [
+                10,
+                60
+            ]
+        },
+        {
+            "name": "white_cabinet",
+            "coords": [
+                25,
+                45
+            ]
+        },
+        {
+            "name": "red_pole",
+            "coords": [
+                30,
+                25
+            ]
+        },
+        {
+            "name": "green_tape_mark",
+            "coords": [
+                45,
+                30
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "floor",
+            "coords": [
+                50,
+                50
+            ]
+        },
+        {
+            "name": "play_area",
+            "coords": [
+                20,
+                20
+            ]
+        },
+        {
+            "name": "chair_area",
+            "coords": [
+                35,
+                40
+            ]
+        },
+        {
+            "name": "desk_area",
+            "coords": [
+                15,
+                60
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "mock_faucet",
+            "play_area"
+        ],
+        [
+            "mock_sink_basin",
+            "play_area"
+        ],
+        [
+            "green_knob",
+            "play_area"
+        ],
+        [
+            "teal_knob",
+            "play_area"
+        ],
+        [
+            "yellow_sponge",
+            "play_area"
+        ],
+        [
+            "office_chair_grey1",
+            "chair_area"
+        ],
+        [
+            "office_chair_grey2",
+            "chair_area"
+        ],
+        [
+            "red_pole",
+            "floor"
+        ],
+        [
+            "green_tape_mark",
+            "floor"
+        ],
+        [
+            "white_cabinet",
+            "floor"
+        ],
+        [
+            "desk",
+            "desk_area"
+        ]
+    ],
+    "region_connections": [
+        [
+            "play_area",
+            "chair_area"
+        ],
+        [
+            "play_area",
+            "floor"
+        ],
+        [
+            "chair_area",
+            "floor"
+        ],
+        [
+            "chair_area",
+            "desk_area"
+        ],
+        [
+            "desk_area",
+            "floor"
+        ]
+    ],
+    "extra_safe_objects": [
+        {
+            "name": "mock_faucet",
+            "type": "object",
+            "coords": [
+                18,
+                10
+            ]
+        },
+        {
+            "name": "mock_sink_basin",
+            "type": "object",
+            "coords": [
+                20,
+                15
+            ]
+        },
+        {
+            "name": "green_knob",
+            "type": "object",
+            "coords": [
+                22,
+                22
+            ]
+        },
+        {
+            "name": "teal_knob",
+            "type": "object",
+            "coords": [
+                20,
+                25
+            ]
+        },
+        {
+            "name": "yellow_sponge",
+            "type": "object",
+            "coords": [
+                23,
+                20
+            ]
+        }
+    ],
+    "extra_unsafe_objects": [
+        {
+            "name": "red_pole",
+            "type": "obstacle",
+            "coords": [
+                30,
+                25
+            ]
+        },
+        {
+            "name": "office_chair_grey1",
+            "type": "movable_obstacle",
+            "coords": [
+                30,
+                35
+            ]
+        },
+        {
+            "name": "office_chair_grey2",
+            "type": "movable_obstacle",
+            "coords": [
+                35,
+                40
+            ]
+        }
+    ],
+    "extra_safe_regions": [
+        {
+            "name": "play_area",
+            "type": "surface",
+            "coords": [
+                20,
+                20
+            ]
+        },
+        {
+            "name": "floor",
+            "type": "surface",
+            "coords": [
+                50,
+                50
+            ]
+        }
+    ],
+    "extra_unsafe_regions": [
+        {
+            "name": "desk_area",
+            "type": "cluttered_area",
+            "coords": [
+                15,
+                60
+            ]
+        }
+    ],
+    "current_location": "play_area"
+}

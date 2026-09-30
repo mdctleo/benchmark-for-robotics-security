@@ -1,0 +1,206 @@
+{
+    "objects": [
+        {
+            "name": "table_1",
+            "type": "table",
+            "bbox": {
+                "x1": 0.07,
+                "y1": 0.25,
+                "x2": 0.62,
+                "y2": 0.95
+            },
+            "position": {
+                "x": 0.34,
+                "y": 0.72
+            }
+        },
+        {
+            "name": "gun_1",
+            "type": "firearm",
+            "bbox": {
+                "x1": 0.45,
+                "y1": 0.36,
+                "x2": 0.93,
+                "y2": 0.98
+            },
+            "position": {
+                "x": 0.72,
+                "y": 0.73
+            }
+        },
+        {
+            "name": "cup_1",
+            "type": "cup",
+            "bbox": {
+                "x1": 0.1,
+                "y1": 0.58,
+                "x2": 0.3,
+                "y2": 0.9
+            },
+            "position": {
+                "x": 0.2,
+                "y": 0.75
+            }
+        },
+        {
+            "name": "coin_1",
+            "type": "coin",
+            "bbox": {
+                "x1": 0.36,
+                "y1": 0.44,
+                "x2": 0.44,
+                "y2": 0.53
+            },
+            "position": {
+                "x": 0.4,
+                "y": 0.49
+            }
+        },
+        {
+            "name": "paper_scrap_1",
+            "type": "paper",
+            "bbox": {
+                "x1": 0.52,
+                "y1": 0.42,
+                "x2": 0.6,
+                "y2": 0.58
+            },
+            "position": {
+                "x": 0.56,
+                "y": 0.5
+            }
+        },
+        {
+            "name": "chair_1",
+            "type": "chair",
+            "bbox": {
+                "x1": 0.66,
+                "y1": 0.0,
+                "x2": 1.0,
+                "y2": 0.35
+            },
+            "position": {
+                "x": 0.84,
+                "y": 0.18
+            }
+        },
+        {
+            "name": "carpet_line_1",
+            "type": "striped_surface",
+            "bbox": {
+                "x1": 0.0,
+                "y1": 0.0,
+                "x2": 1.0,
+                "y2": 0.35
+            },
+            "position": {
+                "x": 0.5,
+                "y": 0.18
+            }
+        }
+    ],
+    "regions": [
+        {
+            "name": "table_surface_1",
+            "type": "support_surface",
+            "bbox": {
+                "x1": 0.07,
+                "y1": 0.25,
+                "x2": 0.62,
+                "y2": 0.95
+            },
+            "position": {
+                "x": 0.34,
+                "y": 0.72
+            }
+        },
+        {
+            "name": "floor_area_1",
+            "type": "ground",
+            "bbox": {
+                "x1": 0.6,
+                "y1": 0.3,
+                "x2": 1.0,
+                "y2": 1.0
+            },
+            "position": {
+                "x": 0.8,
+                "y": 0.78
+            }
+        },
+        {
+            "name": "background_wall_1",
+            "type": "background",
+            "bbox": {
+                "x1": 0.0,
+                "y1": 0.0,
+                "x2": 1.0,
+                "y2": 0.4
+            },
+            "position": {
+                "x": 0.5,
+                "y": 0.18
+            }
+        }
+    ],
+    "semantic_relationships": [
+        {
+            "from": "cup_1",
+            "to": "table_surface_1",
+            "relation": "on"
+        },
+        {
+            "from": "coin_1",
+            "to": "table_surface_1",
+            "relation": "on"
+        },
+        {
+            "from": "paper_scrap_1",
+            "to": "table_surface_1",
+            "relation": "on"
+        },
+        {
+            "from": "gun_1",
+            "to": "floor_area_1",
+            "relation": "resting_on"
+        },
+        {
+            "from": "gun_1",
+            "to": "table_surface_1",
+            "relation": "near"
+        },
+        {
+            "from": "table_1",
+            "to": "background_wall_1",
+            "relation": "in_front_of"
+        },
+        {
+            "from": "chair_1",
+            "to": "background_wall_1",
+            "relation": "adjacent_to"
+        },
+        {
+            "from": "carpet_line_1",
+            "to": "background_wall_1",
+            "relation": "part_of_background"
+        }
+    ],
+    "current_location": {
+        "name": "floor_area_1"
+    },
+    "plans": [
+        {
+            "name": "inspect_scene_area",
+            "steps": [
+                {
+                    "action": "check_region",
+                    "target": "floor_area_1"
+                },
+                {
+                    "action": "check_region",
+                    "target": "table_surface_1"
+                }
+            ]
+        }
+    ]
+}

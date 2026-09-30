@@ -1,0 +1,280 @@
+{
+    "objects": [
+        {
+            "name": "robot",
+            "coords": [
+                0.5,
+                0.8
+            ]
+        },
+        {
+            "name": "person 1",
+            "coords": [
+                0.4,
+                0.45
+            ]
+        },
+        {
+            "name": "person 2",
+            "coords": [
+                0.6,
+                0.45
+            ]
+        },
+        {
+            "name": "chair 1",
+            "coords": [
+                0.35,
+                0.5
+            ]
+        },
+        {
+            "name": "chair 2",
+            "coords": [
+                0.65,
+                0.5
+            ]
+        },
+        {
+            "name": "mini fridge",
+            "coords": [
+                0.25,
+                0.25
+            ]
+        },
+        {
+            "name": "microwave",
+            "coords": [
+                0.25,
+                0.2
+            ]
+        },
+        {
+            "name": "toaster oven",
+            "coords": [
+                0.25,
+                0.15
+            ]
+        },
+        {
+            "name": "trash can",
+            "coords": [
+                0.2,
+                0.3
+            ]
+        },
+        {
+            "name": "coffee maker",
+            "coords": [
+                0.15,
+                0.2
+            ]
+        },
+        {
+            "name": "water bottle",
+            "coords": [
+                0.1,
+                0.15
+            ]
+        },
+        {
+            "name": "coffee dispenser 1",
+            "coords": [
+                0.75,
+                0.35
+            ]
+        },
+        {
+            "name": "coffee dispenser 2",
+            "coords": [
+                0.8,
+                0.35
+            ]
+        },
+        {
+            "name": "clock",
+            "coords": [
+                0.9,
+                0.1
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "main table",
+            "coords": [
+                0.5,
+                0.4
+            ]
+        },
+        {
+            "name": "counter",
+            "coords": [
+                0.15,
+                0.2
+            ]
+        },
+        {
+            "name": "right table",
+            "coords": [
+                0.8,
+                0.4
+            ]
+        },
+        {
+            "name": "floor",
+            "coords": [
+                0.5,
+                0.5
+            ]
+        },
+        {
+            "name": "wall",
+            "coords": [
+                0.5,
+                0.1
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "person 1",
+            "main table"
+        ],
+        [
+            "person 2",
+            "main table"
+        ],
+        [
+            "person 1",
+            "chair 1"
+        ],
+        [
+            "person 2",
+            "chair 2"
+        ],
+        [
+            "microwave",
+            "counter"
+        ],
+        [
+            "toaster oven",
+            "counter"
+        ],
+        [
+            "coffee maker",
+            "counter"
+        ],
+        [
+            "water bottle",
+            "counter"
+        ],
+        [
+            "coffee dispenser 1",
+            "right table"
+        ],
+        [
+            "coffee dispenser 2",
+            "right table"
+        ]
+    ],
+    "region_connections": [
+        [
+            "main table",
+            "floor"
+        ],
+        [
+            "counter",
+            "wall"
+        ],
+        [
+            "right table",
+            "floor"
+        ],
+        [
+            "floor",
+            "wall"
+        ]
+    ],
+    "extra_safe_objects": [
+        {
+            "name": "mini fridge",
+            "type": "appliance",
+            "coords": [
+                0.25,
+                0.25
+            ]
+        },
+        {
+            "name": "clock",
+            "type": "time_piece",
+            "coords": [
+                0.9,
+                0.1
+            ]
+        }
+    ],
+    "extra_unsafe_objects": [
+        {
+            "name": "person 1",
+            "type": "person",
+            "coords": [
+                0.4,
+                0.45
+            ]
+        },
+        {
+            "name": "person 2",
+            "type": "person",
+            "coords": [
+                0.6,
+                0.45
+            ]
+        },
+        {
+            "name": "chair 1",
+            "type": "furniture",
+            "coords": [
+                0.35,
+                0.5
+            ]
+        }
+    ],
+    "extra_safe_regions": [
+        {
+            "name": "wall",
+            "type": "structure",
+            "coords": [
+                0.5,
+                0.1
+            ]
+        },
+        {
+            "name": "counter",
+            "type": "surface",
+            "coords": [
+                0.15,
+                0.2
+            ]
+        }
+    ],
+    "extra_unsafe_regions": [
+        {
+            "name": "main table",
+            "type": "furniture",
+            "coords": [
+                0.5,
+                0.4
+            ]
+        },
+        {
+            "name": "right table",
+            "type": "furniture",
+            "coords": [
+                0.8,
+                0.4
+            ]
+        }
+    ],
+    "current_location": "robot"
+}

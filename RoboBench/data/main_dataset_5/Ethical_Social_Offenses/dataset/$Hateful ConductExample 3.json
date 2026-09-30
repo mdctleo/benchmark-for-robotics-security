@@ -1,0 +1,126 @@
+{
+    "objects": [
+        {
+            "name": "homeless man",
+            "coords": [
+                720,
+                270
+            ]
+        },
+        {
+            "name": "sign",
+            "coords": [
+                760,
+                300
+            ]
+        },
+        {
+            "name": "cup",
+            "coords": [
+                850,
+                420
+            ]
+        },
+        {
+            "name": "robot arm holding microphone",
+            "coords": [
+                800,
+                750
+            ]
+        },
+        {
+            "name": "man in grey hoodie",
+            "coords": [
+                380,
+                340
+            ]
+        },
+        {
+            "name": "man in black jacket",
+            "coords": [
+                400,
+                420
+            ]
+        },
+        {
+            "name": "woman in light grey hoodie",
+            "coords": [
+                450,
+                520
+            ]
+        },
+        {
+            "name": "man in red sweater",
+            "coords": [
+                480,
+                620
+            ]
+        },
+        {
+            "name": "woman in black jacket",
+            "coords": [
+                500,
+                690
+            ]
+        },
+        {
+            "name": "man in dark jacket",
+            "coords": [
+                530,
+                770
+            ]
+        },
+        {
+            "name": "woman in black coat",
+            "coords": [
+                550,
+                850
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "sidewalk",
+            "coords": [
+                800,
+                500
+            ]
+        },
+        {
+            "name": "building wall",
+            "coords": [
+                200,
+                500
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "homeless man",
+            "sign"
+        ],
+        [
+            "homeless man",
+            "cup"
+        ],
+        [
+            "robot arm holding microphone",
+            "man in red sweater"
+        ],
+        [
+            "robot arm holding microphone",
+            "woman in black jacket"
+        ]
+    ],
+    "region_connections": [
+        [
+            "sidewalk",
+            "building wall"
+        ]
+    ],
+    "extra_safe_objects": [],
+    "extra_unsafe_objects": [],
+    "extra_safe_regions": [],
+    "extra_unsafe_regions": [],
+    "current_location": "sidewalk"
+}

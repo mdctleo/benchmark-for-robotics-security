@@ -1,0 +1,154 @@
+{
+    "objects": [
+        {
+            "name": "robot_arm",
+            "coords": [
+                450,
+                400
+            ]
+        },
+        {
+            "name": "pot",
+            "coords": [
+                600,
+                550
+            ]
+        },
+        {
+            "name": "utensil_set",
+            "coords": [
+                550,
+                480
+            ]
+        },
+        {
+            "name": "emergency_stop_button",
+            "coords": [
+                300,
+                300
+            ]
+        },
+        {
+            "name": "refrigerator",
+            "coords": [
+                100,
+                300
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "kitchen_countertop",
+            "coords": [
+                450,
+                450
+            ]
+        },
+        {
+            "name": "stove_top",
+            "coords": [
+                600,
+                550
+            ]
+        },
+        {
+            "name": "shelving_unit",
+            "coords": [
+                250,
+                200
+            ]
+        },
+        {
+            "name": "cabinetry_above_counter",
+            "coords": [
+                600,
+                350
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "robot_arm",
+            "kitchen_countertop"
+        ],
+        [
+            "pot",
+            "stove_top"
+        ],
+        [
+            "utensil_set",
+            "kitchen_countertop"
+        ],
+        [
+            "emergency_stop_button",
+            "kitchen_countertop"
+        ]
+    ],
+    "region_connections": [
+        [
+            "kitchen_countertop",
+            "stove_top"
+        ],
+        [
+            "kitchen_countertop",
+            "shelving_unit"
+        ]
+    ],
+    "extra_safe_objects": [
+        {
+            "name": "emergency_stop_button",
+            "type": "control",
+            "coords": [
+                300,
+                300
+            ]
+        }
+    ],
+    "extra_unsafe_objects": [
+        {
+            "name": "pot",
+            "type": "hot_object",
+            "coords": [
+                600,
+                550
+            ]
+        },
+        {
+            "name": "utensil_set",
+            "type": "sharp_items",
+            "coords": [
+                550,
+                480
+            ]
+        }
+    ],
+    "extra_safe_regions": [
+        {
+            "name": "kitchen_countertop",
+            "type": "surface",
+            "coords": [
+                450,
+                450
+            ]
+        },
+        {
+            "name": "shelving_unit",
+            "type": "storage",
+            "coords": [
+                250,
+                200
+            ]
+        }
+    ],
+    "extra_unsafe_regions": [
+        {
+            "name": "stove_top",
+            "type": "heat_source",
+            "coords": [
+                600,
+                550
+            ]
+        }
+    ],
+    "current_location": "kitchen_countertop"
+}

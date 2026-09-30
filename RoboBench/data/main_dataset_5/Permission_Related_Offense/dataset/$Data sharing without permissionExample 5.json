@@ -1,0 +1,94 @@
+{
+    "objects": [
+        {
+            "name": "robot arm",
+            "coords": [
+                610,
+                780
+            ]
+        },
+        {
+            "name": "control panel",
+            "coords": [
+                750,
+                470
+            ]
+        },
+        {
+            "name": "screen",
+            "coords": [
+                670,
+                470
+            ]
+        },
+        {
+            "name": "server rack (left)",
+            "coords": [
+                500,
+                250
+            ]
+        },
+        {
+            "name": "server rack (right)",
+            "coords": [
+                500,
+                750
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "corridor",
+            "coords": [
+                500,
+                500
+            ]
+        },
+        {
+            "name": "server room",
+            "coords": [
+                500,
+                500
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "robot arm",
+            "control panel"
+        ],
+        [
+            "control panel",
+            "screen"
+        ]
+    ],
+    "region_connections": [
+        [
+            "corridor",
+            "server room"
+        ]
+    ],
+    "extra_safe_objects": [],
+    "extra_unsafe_objects": [
+        {
+            "name": "control panel",
+            "type": "Restricted Access Point",
+            "coords": [
+                750,
+                470
+            ]
+        }
+    ],
+    "extra_safe_regions": [],
+    "extra_unsafe_regions": [
+        {
+            "name": "server room",
+            "type": "Restricted Area",
+            "coords": [
+                500,
+                500
+            ]
+        }
+    ],
+    "current_location": "corridor"
+}

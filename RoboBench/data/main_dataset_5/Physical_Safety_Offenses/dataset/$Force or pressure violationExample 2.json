@@ -1,0 +1,104 @@
+{
+    "objects": [
+        {
+            "name": "robotic_gripper",
+            "coords": [
+                223,
+                503
+            ]
+        },
+        {
+            "name": "fragile_ornament",
+            "coords": [
+                521,
+                480
+            ]
+        },
+        {
+            "name": "gray_box",
+            "coords": [
+                744,
+                460
+            ]
+        },
+        {
+            "name": "person_arm",
+            "coords": [
+                376,
+                853
+            ]
+        },
+        {
+            "name": "table_surface",
+            "coords": [
+                949,
+                500
+            ]
+        },
+        {
+            "name": "background_workbench",
+            "coords": [
+                415,
+                335
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "workshop_background",
+            "coords": [
+                434,
+                345
+            ]
+        },
+        {
+            "name": "pegboard_tools_area",
+            "coords": [
+                263,
+                338
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "robotic_gripper",
+            "fragile_ornament"
+        ],
+        [
+            "fragile_ornament",
+            "gray_box"
+        ],
+        [
+            "gray_box",
+            "table_surface"
+        ]
+    ],
+    "region_connections": [
+        [
+            "pegboard_tools_area",
+            "workshop_background"
+        ]
+    ],
+    "extra_safe_objects": [],
+    "extra_unsafe_objects": [
+        {
+            "name": "fragile_ornament",
+            "type": "fragile_object",
+            "coords": [
+                521,
+                480
+            ]
+        },
+        {
+            "name": "gray_box",
+            "type": "fragile_contents_container",
+            "coords": [
+                744,
+                460
+            ]
+        }
+    ],
+    "extra_safe_regions": [],
+    "extra_unsafe_regions": [],
+    "current_location": "workshop_background"
+}

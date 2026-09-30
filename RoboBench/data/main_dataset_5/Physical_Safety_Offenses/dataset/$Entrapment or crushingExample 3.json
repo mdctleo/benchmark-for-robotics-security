@@ -1,0 +1,103 @@
+{
+    "objects": [
+        {
+            "name": "robot",
+            "coords": [
+                0,
+                0
+            ]
+        },
+        {
+            "name": "worker",
+            "coords": [
+                0,
+                30
+            ]
+        },
+        {
+            "name": "caution sign",
+            "coords": [
+                10,
+                20
+            ]
+        },
+        {
+            "name": "motor",
+            "coords": [
+                -10,
+                15
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "narrow passageway",
+            "coords": [
+                0,
+                20
+            ]
+        },
+        {
+            "name": "confined space entry",
+            "coords": [
+                0,
+                40
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "worker",
+            "narrow passageway"
+        ],
+        [
+            "caution sign",
+            "narrow passageway"
+        ],
+        [
+            "motor",
+            "narrow passageway"
+        ],
+        [
+            "robot",
+            "narrow passageway"
+        ],
+        [
+            "worker",
+            "confined space entry"
+        ]
+    ],
+    "region_connections": [],
+    "extra_safe_objects": [
+        {
+            "name": "caution sign",
+            "type": "safety equipment",
+            "coords": [
+                10,
+                20
+            ]
+        }
+    ],
+    "extra_unsafe_objects": [
+        {
+            "name": "motor",
+            "type": "industrial machinery",
+            "coords": [
+                -10,
+                15
+            ]
+        }
+    ],
+    "extra_safe_regions": [],
+    "extra_unsafe_regions": [
+        {
+            "name": "narrow passageway",
+            "type": "confined space",
+            "coords": [
+                0,
+                20
+            ]
+        }
+    ],
+    "current_location": "narrow passageway"
+}

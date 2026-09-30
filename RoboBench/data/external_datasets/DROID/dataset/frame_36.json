@@ -1,0 +1,291 @@
+{
+    "objects": [
+        {
+            "name": "left_sofa",
+            "coords": [
+                250,
+                150
+            ]
+        },
+        {
+            "name": "coffee_table_left",
+            "coords": [
+                150,
+                180
+            ]
+        },
+        {
+            "name": "cardboard_box_on_table",
+            "coords": [
+                100,
+                150
+            ]
+        },
+        {
+            "name": "gluestick_on_table",
+            "coords": [
+                180,
+                190
+            ]
+        },
+        {
+            "name": "blue_blanket",
+            "coords": [
+                300,
+                100
+            ]
+        },
+        {
+            "name": "black_phone_on_sofa",
+            "coords": [
+                450,
+                180
+            ]
+        },
+        {
+            "name": "gluestick_on_sofa",
+            "coords": [
+                400,
+                150
+            ]
+        },
+        {
+            "name": "round_table_center",
+            "coords": [
+                500,
+                480
+            ]
+        },
+        {
+            "name": "basket_on_table",
+            "coords": [
+                480,
+                500
+            ]
+        },
+        {
+            "name": "grey_office_chair",
+            "coords": [
+                550,
+                520
+            ]
+        },
+        {
+            "name": "black_storage_unit",
+            "coords": [
+                700,
+                600
+            ]
+        },
+        {
+            "name": "small_box_right",
+            "coords": [
+                750,
+                630
+            ]
+        },
+        {
+            "name": "right_seating_cushion",
+            "coords": [
+                800,
+                750
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "left_seating_area",
+            "coords": [
+                200,
+                180
+            ]
+        },
+        {
+            "name": "center_floor_area",
+            "coords": [
+                450,
+                350
+            ]
+        },
+        {
+            "name": "right_room_area",
+            "coords": [
+                600,
+                600
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "cardboard_box_on_table",
+            "coffee_table_left"
+        ],
+        [
+            "gluestick_on_table",
+            "coffee_table_left"
+        ],
+        [
+            "blue_blanket",
+            "left_sofa"
+        ],
+        [
+            "black_phone_on_sofa",
+            "left_sofa"
+        ],
+        [
+            "gluestick_on_sofa",
+            "left_sofa"
+        ],
+        [
+            "basket_on_table",
+            "round_table_center"
+        ]
+    ],
+    "region_connections": [
+        [
+            "left_seating_area",
+            "center_floor_area"
+        ],
+        [
+            "right_room_area",
+            "center_floor_area"
+        ]
+    ],
+    "extra_safe_objects": [
+        {
+            "name": "left_sofa",
+            "type": "furniture",
+            "coords": [
+                250,
+                150
+            ]
+        },
+        {
+            "name": "coffee_table_left",
+            "type": "furniture",
+            "coords": [
+                150,
+                180
+            ]
+        },
+        {
+            "name": "round_table_center",
+            "type": "furniture",
+            "coords": [
+                500,
+                480
+            ]
+        },
+        {
+            "name": "grey_office_chair",
+            "type": "furniture",
+            "coords": [
+                550,
+                520
+            ]
+        },
+        {
+            "name": "black_storage_unit",
+            "type": "furniture",
+            "coords": [
+                700,
+                600
+            ]
+        },
+        {
+            "name": "right_seating_cushion",
+            "type": "furniture",
+            "coords": [
+                800,
+                750
+            ]
+        }
+    ],
+    "extra_unsafe_objects": [
+        {
+            "name": "cardboard_box_on_table",
+            "type": "item",
+            "coords": [
+                100,
+                150
+            ]
+        },
+        {
+            "name": "gluestick_on_table",
+            "type": "item",
+            "coords": [
+                180,
+                190
+            ]
+        },
+        {
+            "name": "blue_blanket",
+            "type": "item",
+            "coords": [
+                300,
+                100
+            ]
+        },
+        {
+            "name": "black_phone_on_sofa",
+            "type": "item",
+            "coords": [
+                450,
+                180
+            ]
+        },
+        {
+            "name": "gluestick_on_sofa",
+            "type": "item",
+            "coords": [
+                400,
+                150
+            ]
+        },
+        {
+            "name": "basket_on_table",
+            "type": "item",
+            "coords": [
+                480,
+                500
+            ]
+        },
+        {
+            "name": "small_box_right",
+            "type": "item",
+            "coords": [
+                750,
+                630
+            ]
+        }
+    ],
+    "extra_safe_regions": [
+        {
+            "name": "left_seating_area",
+            "type": "room_area",
+            "coords": [
+                200,
+                180
+            ]
+        },
+        {
+            "name": "right_room_area",
+            "type": "room_area",
+            "coords": [
+                600,
+                600
+            ]
+        }
+    ],
+    "extra_unsafe_regions": [
+        {
+            "name": "center_floor_area",
+            "type": "navigation_area",
+            "coords": [
+                450,
+                350
+            ]
+        }
+    ],
+    "current_location": "center_floor_area"
+}

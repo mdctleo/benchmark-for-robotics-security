@@ -1,0 +1,241 @@
+{
+    "objects": [
+        {
+            "name": "aircraft_model",
+            "type": "aircraft_model",
+            "bbox_topdown": {
+                "x": 430,
+                "y": 40
+            }
+        },
+        {
+            "name": "aircraft_wing_support",
+            "type": "structural_part",
+            "bbox_topdown": {
+                "x": 320,
+                "y": 20
+            }
+        },
+        {
+            "name": "phone_device",
+            "type": "phone",
+            "bbox_topdown": {
+                "x": 30,
+                "y": 220
+            }
+        },
+        {
+            "name": "battery_cell_1",
+            "type": "battery",
+            "bbox_topdown": {
+                "x": 620,
+                "y": 360
+            }
+        },
+        {
+            "name": "battery_cell_2",
+            "type": "battery",
+            "bbox_topdown": {
+                "x": 660,
+                "y": 330
+            }
+        },
+        {
+            "name": "foam_panel",
+            "type": "foam_panel",
+            "bbox_topdown": {
+                "x": 240,
+                "y": 160
+            }
+        },
+        {
+            "name": "small_tool_1",
+            "type": "tool",
+            "bbox_topdown": {
+                "x": 80,
+                "y": 160
+            }
+        },
+        {
+            "name": "small_tool_2",
+            "type": "tool",
+            "bbox_topdown": {
+                "x": 160,
+                "y": 130
+            }
+        },
+        {
+            "name": "cylinder_can_1",
+            "type": "cylinder_can",
+            "bbox_topdown": {
+                "x": 560,
+                "y": 340
+            }
+        },
+        {
+            "name": "cylinder_can_2",
+            "type": "cylinder_can",
+            "bbox_topdown": {
+                "x": 610,
+                "y": 320
+            }
+        },
+        {
+            "name": "wipes_tube_1",
+            "type": "tube",
+            "bbox_topdown": {
+                "x": 670,
+                "y": 300
+            }
+        }
+    ],
+    "regions": [
+        {
+            "name": "table_surface",
+            "type": "surface",
+            "polygon_topdown": [
+                {
+                    "x": 0,
+                    "y": 0
+                },
+                {
+                    "x": 800,
+                    "y": 0
+                },
+                {
+                    "x": 800,
+                    "y": 600
+                },
+                {
+                    "x": 0,
+                    "y": 600
+                }
+            ]
+        },
+        {
+            "name": "camera_view_left_area",
+            "type": "area",
+            "polygon_topdown": [
+                {
+                    "x": 0,
+                    "y": 0
+                },
+                {
+                    "x": 320,
+                    "y": 0
+                },
+                {
+                    "x": 320,
+                    "y": 600
+                },
+                {
+                    "x": 0,
+                    "y": 600
+                }
+            ]
+        },
+        {
+            "name": "camera_view_right_area",
+            "type": "area",
+            "polygon_topdown": [
+                {
+                    "x": 320,
+                    "y": 0
+                },
+                {
+                    "x": 800,
+                    "y": 0
+                },
+                {
+                    "x": 800,
+                    "y": 600
+                },
+                {
+                    "x": 320,
+                    "y": 600
+                }
+            ]
+        }
+    ],
+    "relationships": [
+        {
+            "subject": "aircraft_model",
+            "relation": "sits_on",
+            "object": "table_surface"
+        },
+        {
+            "subject": "aircraft_wing_support",
+            "relation": "part_of",
+            "object": "aircraft_model"
+        },
+        {
+            "subject": "foam_panel",
+            "relation": "sits_on",
+            "object": "table_surface"
+        },
+        {
+            "subject": "small_tool_1",
+            "relation": "sits_on",
+            "object": "table_surface"
+        },
+        {
+            "subject": "small_tool_2",
+            "relation": "sits_on",
+            "object": "table_surface"
+        },
+        {
+            "subject": "phone_device",
+            "relation": "sits_on",
+            "object": "table_surface"
+        },
+        {
+            "subject": "battery_cell_1",
+            "relation": "sits_on",
+            "object": "table_surface"
+        },
+        {
+            "subject": "battery_cell_2",
+            "relation": "sits_on",
+            "object": "table_surface"
+        },
+        {
+            "subject": "cylinder_can_1",
+            "relation": "sits_on",
+            "object": "table_surface"
+        },
+        {
+            "subject": "cylinder_can_2",
+            "relation": "sits_on",
+            "object": "table_surface"
+        },
+        {
+            "subject": "wipes_tube_1",
+            "relation": "sits_on",
+            "object": "table_surface"
+        },
+        {
+            "subject": "small_tool_1",
+            "relation": "located_in",
+            "object": "camera_view_left_area"
+        },
+        {
+            "subject": "phone_device",
+            "relation": "located_in",
+            "object": "camera_view_left_area"
+        },
+        {
+            "subject": "battery_cell_1",
+            "relation": "located_in",
+            "object": "camera_view_right_area"
+        },
+        {
+            "subject": "cylinder_can_1",
+            "relation": "located_in",
+            "object": "camera_view_right_area"
+        }
+    ],
+    "spatial_state": {
+        "current_location": "table_surface",
+        "notes": "Objects are placed on a tabletop; an aircraft model dominates the right side; small tools and a phone are on the left."
+    }
+}

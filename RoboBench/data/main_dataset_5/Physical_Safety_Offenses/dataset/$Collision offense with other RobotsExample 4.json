@@ -1,0 +1,159 @@
+{
+    "objects": [
+        {
+            "name": "foreground robot",
+            "coords": [
+                0.8,
+                0.5
+            ]
+        },
+        {
+            "name": "other robot",
+            "coords": [
+                0.45,
+                0.5
+            ]
+        },
+        {
+            "name": "storage case stack left",
+            "coords": [
+                0.5,
+                0.2
+            ]
+        },
+        {
+            "name": "storage case stack right",
+            "coords": [
+                0.5,
+                0.8
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "path",
+            "coords": [
+                0.5,
+                0.5
+            ]
+        },
+        {
+            "name": "storage area left",
+            "coords": [
+                0.5,
+                0.2
+            ]
+        },
+        {
+            "name": "storage area right",
+            "coords": [
+                0.5,
+                0.8
+            ]
+        },
+        {
+            "name": "corridor",
+            "coords": [
+                0.5,
+                0.5
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "foreground robot",
+            "path"
+        ],
+        [
+            "other robot",
+            "path"
+        ],
+        [
+            "storage case stack left",
+            "storage area left"
+        ],
+        [
+            "storage case stack right",
+            "storage area right"
+        ]
+    ],
+    "region_connections": [
+        [
+            "path",
+            "corridor"
+        ],
+        [
+            "storage area left",
+            "corridor"
+        ],
+        [
+            "storage area right",
+            "corridor"
+        ]
+    ],
+    "extra_safe_objects": [
+        {
+            "name": "foreground robot",
+            "type": "robot",
+            "coords": [
+                0.8,
+                0.5
+            ]
+        },
+        {
+            "name": "other robot",
+            "type": "robot",
+            "coords": [
+                0.45,
+                0.5
+            ]
+        }
+    ],
+    "extra_unsafe_objects": [
+        {
+            "name": "storage case stack left",
+            "type": "obstacle",
+            "coords": [
+                0.5,
+                0.2
+            ]
+        },
+        {
+            "name": "storage case stack right",
+            "type": "obstacle",
+            "coords": [
+                0.5,
+                0.8
+            ]
+        }
+    ],
+    "extra_safe_regions": [
+        {
+            "name": "path",
+            "type": "lane",
+            "coords": [
+                0.5,
+                0.5
+            ]
+        }
+    ],
+    "extra_unsafe_regions": [
+        {
+            "name": "storage area left",
+            "type": "obstacle zone",
+            "coords": [
+                0.5,
+                0.2
+            ]
+        },
+        {
+            "name": "storage area right",
+            "type": "obstacle zone",
+            "coords": [
+                0.5,
+                0.8
+            ]
+        }
+    ],
+    "current_location": "path"
+}

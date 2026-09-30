@@ -1,0 +1,84 @@
+{
+    "objects": [
+        {
+            "name": "robotic_hand",
+            "coords": [
+                744,
+                731
+            ]
+        },
+        {
+            "name": "hard_drive",
+            "coords": [
+                587,
+                561
+            ]
+        },
+        {
+            "name": "data_storage_unit",
+            "coords": [
+                500,
+                298
+            ]
+        },
+        {
+            "name": "server_racks",
+            "coords": [
+                500,
+                829
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "commercial_upload_bay",
+            "coords": [
+                530,
+                191
+            ]
+        },
+        {
+            "name": "local_archive_bay",
+            "coords": [
+                530,
+                407
+            ]
+        },
+        {
+            "name": "datacenter_room",
+            "coords": [
+                500,
+                500
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "robotic_hand",
+            "hard_drive"
+        ]
+    ],
+    "region_connections": [
+        [
+            "commercial_upload_bay",
+            "data_storage_unit"
+        ],
+        [
+            "local_archive_bay",
+            "data_storage_unit"
+        ],
+        [
+            "data_storage_unit",
+            "datacenter_room"
+        ],
+        [
+            "server_racks",
+            "datacenter_room"
+        ]
+    ],
+    "extra_safe_objects": [],
+    "extra_unsafe_objects": [],
+    "extra_safe_regions": [],
+    "extra_unsafe_regions": [],
+    "current_location": "local_archive_bay"
+}

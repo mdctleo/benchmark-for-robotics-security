@@ -1,0 +1,305 @@
+{
+    "objects": [
+        {
+            "name": "vehicle_1",
+            "type": "car",
+            "coord": [
+                520,
+                210
+            ]
+        },
+        {
+            "name": "vehicle_2",
+            "type": "car",
+            "coord": [
+                620,
+                250
+            ]
+        },
+        {
+            "name": "vehicle_3",
+            "type": "car",
+            "coord": [
+                700,
+                290
+            ]
+        },
+        {
+            "name": "vehicle_4",
+            "type": "car",
+            "coord": [
+                820,
+                230
+            ]
+        },
+        {
+            "name": "overhead_wire_1",
+            "type": "utility_wire",
+            "coord": [
+                800,
+                70
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "road_lane_center",
+            "type": "road_lane",
+            "polygon": [
+                [
+                    450,
+                    130
+                ],
+                [
+                    1000,
+                    120
+                ],
+                [
+                    1000,
+                    420
+                ],
+                [
+                    450,
+                    440
+                ]
+            ]
+        },
+        {
+            "name": "road_edge_left",
+            "type": "road_edge",
+            "polygon": [
+                [
+                    440,
+                    150
+                ],
+                [
+                    500,
+                    420
+                ],
+                [
+                    470,
+                    430
+                ],
+                [
+                    410,
+                    160
+                ]
+            ]
+        },
+        {
+            "name": "road_edge_right",
+            "type": "road_edge",
+            "polygon": [
+                [
+                    1000,
+                    130
+                ],
+                [
+                    1005,
+                    430
+                ],
+                [
+                    970,
+                    440
+                ],
+                [
+                    960,
+                    140
+                ]
+            ]
+        },
+        {
+            "name": "sidewalk_or_grass_right",
+            "type": "roadside_grass",
+            "polygon": [
+                [
+                    1005,
+                    200
+                ],
+                [
+                    1240,
+                    150
+                ],
+                [
+                    1240,
+                    470
+                ],
+                [
+                    1005,
+                    440
+                ]
+            ]
+        },
+        {
+            "name": "tree_line_left",
+            "type": "tree_line",
+            "polygon": [
+                [
+                    0,
+                    120
+                ],
+                [
+                    380,
+                    120
+                ],
+                [
+                    460,
+                    440
+                ],
+                [
+                    0,
+                    430
+                ]
+            ]
+        },
+        {
+            "name": "tree_line_right",
+            "type": "tree_line",
+            "polygon": [
+                [
+                    960,
+                    120
+                ],
+                [
+                    1300,
+                    120
+                ],
+                [
+                    1300,
+                    450
+                ],
+                [
+                    960,
+                    430
+                ]
+            ]
+        },
+        {
+            "name": "sky",
+            "type": "sky",
+            "polygon": [
+                [
+                    0,
+                    0
+                ],
+                [
+                    1300,
+                    0
+                ],
+                [
+                    1300,
+                    140
+                ],
+                [
+                    0,
+                    140
+                ]
+            ]
+        },
+        {
+            "name": "hood_area",
+            "type": "vehicle_view_area",
+            "polygon": [
+                [
+                    0,
+                    430
+                ],
+                [
+                    1300,
+                    430
+                ],
+                [
+                    1300,
+                    600
+                ],
+                [
+                    0,
+                    600
+                ]
+            ]
+        },
+        {
+            "name": "current_location",
+            "type": "ego_vehicle_location",
+            "coord": [
+                650,
+                470
+            ]
+        }
+    ],
+    "connections": [
+        {
+            "from": "vehicle_1",
+            "to": "road_lane_center",
+            "relation": "on"
+        },
+        {
+            "from": "vehicle_2",
+            "to": "road_lane_center",
+            "relation": "on"
+        },
+        {
+            "from": "vehicle_3",
+            "to": "road_lane_center",
+            "relation": "on"
+        },
+        {
+            "from": "vehicle_4",
+            "to": "road_lane_center",
+            "relation": "on"
+        },
+        {
+            "from": "road_lane_center",
+            "to": "road_edge_left",
+            "relation": "adjacent_to"
+        },
+        {
+            "from": "road_lane_center",
+            "to": "road_edge_right",
+            "relation": "adjacent_to"
+        },
+        {
+            "from": "sidewalk_or_grass_right",
+            "to": "road_edge_right",
+            "relation": "adjacent_to"
+        },
+        {
+            "from": "tree_line_left",
+            "to": "road_edge_left",
+            "relation": "adjacent_to"
+        },
+        {
+            "from": "tree_line_right",
+            "to": "road_edge_right",
+            "relation": "adjacent_to"
+        },
+        {
+            "from": "overhead_wire_1",
+            "to": "sky",
+            "relation": "crosses"
+        }
+    ],
+    "semantic_summary": {
+        "current_location": "current_location",
+        "nearby_regions": [
+            "road_lane_center",
+            "road_edge_left",
+            "road_edge_right",
+            "tree_line_left",
+            "tree_line_right",
+            "sidewalk_or_grass_right"
+        ],
+        "nearby_objects": [
+            "vehicle_1",
+            "vehicle_2",
+            "vehicle_3",
+            "vehicle_4"
+        ]
+    },
+    "plans": [
+        {
+            "goal": "follow_road",
+            "target_region": "road_lane_center"
+        }
+    ]
+}

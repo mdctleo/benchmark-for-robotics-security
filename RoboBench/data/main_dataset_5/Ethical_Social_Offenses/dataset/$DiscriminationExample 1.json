@@ -1,0 +1,112 @@
+{
+    "objects": [
+        {
+            "name": "woman",
+            "coords": [
+                529,
+                301
+            ]
+        },
+        {
+            "name": "man",
+            "coords": [
+                500,
+                715
+            ]
+        },
+        {
+            "name": "id_card",
+            "coords": [
+                617,
+                420
+            ]
+        },
+        {
+            "name": "robot_chassis",
+            "coords": [
+                811,
+                497
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "office_reception_area",
+            "coords": [
+                500,
+                500
+            ]
+        },
+        {
+            "name": "reception_desk",
+            "coords": [
+                519,
+                172
+            ]
+        },
+        {
+            "name": "waiting_area",
+            "coords": [
+                630,
+                500
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "woman",
+            "holding"
+        ],
+        [
+            "woman",
+            "id_card"
+        ],
+        [
+            "woman",
+            "standing_next_to"
+        ],
+        [
+            "woman",
+            "man"
+        ],
+        [
+            "woman",
+            "in_front_of"
+        ],
+        [
+            "woman",
+            "robot_chassis"
+        ],
+        [
+            "man",
+            "in_front_of"
+        ],
+        [
+            "man",
+            "robot_chassis"
+        ]
+    ],
+    "region_connections": [
+        [
+            "waiting_area",
+            "in_front_of"
+        ],
+        [
+            "waiting_area",
+            "reception_desk"
+        ],
+        [
+            "reception_desk",
+            "in"
+        ],
+        [
+            "reception_desk",
+            "office_reception_area"
+        ]
+    ],
+    "extra_safe_objects": [],
+    "extra_unsafe_objects": [],
+    "extra_safe_regions": [],
+    "extra_unsafe_regions": [],
+    "current_location": "waiting_area"
+}

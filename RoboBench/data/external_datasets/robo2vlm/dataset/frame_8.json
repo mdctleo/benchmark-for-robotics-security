@@ -1,0 +1,111 @@
+{
+    "objects": [
+        {
+            "name": "robot_arm",
+            "coords": [
+                620,
+                550
+            ]
+        },
+        {
+            "name": "white_bowl",
+            "coords": [
+                250,
+                250
+            ]
+        },
+        {
+            "name": "object_in_drawer",
+            "coords": [
+                450,
+                750
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "top_surface",
+            "coords": [
+                500,
+                300
+            ]
+        },
+        {
+            "name": "open_drawer",
+            "coords": [
+                500,
+                750
+            ]
+        },
+        {
+            "name": "ground",
+            "coords": [
+                500,
+                950
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "robot_arm",
+            "object_in_drawer"
+        ]
+    ],
+    "region_connections": [
+        [
+            "top_surface",
+            "open_drawer"
+        ],
+        [
+            "open_drawer",
+            "ground"
+        ]
+    ],
+    "extra_safe_objects": [
+        {
+            "name": "robot_arm",
+            "type": "mechanical",
+            "coords": [
+                620,
+                550
+            ]
+        },
+        {
+            "name": "white_bowl",
+            "type": "ceramic",
+            "coords": [
+                250,
+                250
+            ]
+        },
+        {
+            "name": "object_in_drawer",
+            "type": "unknown",
+            "coords": [
+                450,
+                750
+            ]
+        }
+    ],
+    "extra_unsafe_objects": [],
+    "extra_safe_regions": [
+        {
+            "name": "top_surface",
+            "type": "work_surface",
+            "coords": [
+                500,
+                300
+            ]
+        },
+        {
+            "name": "open_drawer",
+            "type": "storage_area",
+            "coords": [
+                500,
+                750
+            ]
+        }
+    ],
+    "extra_unsafe_regions": [],
+    "current_location": "open_drawer"
+}

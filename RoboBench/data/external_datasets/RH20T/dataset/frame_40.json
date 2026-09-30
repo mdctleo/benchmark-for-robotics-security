@@ -1,0 +1,111 @@
+{
+    "objects": [
+        {
+            "name": "blue_tablecloth",
+            "type": "textile",
+            "coordinates": {
+                "x": 410,
+                "y": 255
+            }
+        },
+        {
+            "name": "wood_block",
+            "type": "block",
+            "coordinates": {
+                "x": 380,
+                "y": 135
+            }
+        },
+        {
+            "name": "controller_box",
+            "type": "electronic_device",
+            "coordinates": {
+                "x": 445,
+                "y": 60
+            }
+        },
+        {
+            "name": "white_bed_tray",
+            "type": "platform",
+            "coordinates": {
+                "x": 610,
+                "y": 275
+            }
+        },
+        {
+            "name": "black_surface_pad",
+            "type": "surface",
+            "coordinates": {
+                "x": 635,
+                "y": 335
+            }
+        }
+    ],
+    "regions": [
+        {
+            "name": "workspace_top_view",
+            "type": "workspace",
+            "coordinates": {
+                "x": 455,
+                "y": 250
+            }
+        },
+        {
+            "name": "current_location_blue_tablecloth",
+            "type": "current_location",
+            "coordinates": {
+                "x": 405,
+                "y": 250
+            }
+        },
+        {
+            "name": "printed_art_region",
+            "type": "printed_region",
+            "coordinates": {
+                "x": 445,
+                "y": 250
+            }
+        }
+    ],
+    "semantic_relationships": [
+        {
+            "subject": "wood_block",
+            "relation": "is_on",
+            "object": "blue_tablecloth"
+        },
+        {
+            "subject": "blue_tablecloth",
+            "relation": "covers_region",
+            "object": "workspace_top_view"
+        },
+        {
+            "subject": "printed_art_region",
+            "relation": "is_part_of",
+            "object": "blue_tablecloth"
+        },
+        {
+            "subject": "current_location_blue_tablecloth",
+            "relation": "corresponds_to",
+            "object": "blue_tablecloth"
+        },
+        {
+            "subject": "controller_box",
+            "relation": "is_adjacent_to",
+            "object": "blue_tablecloth"
+        },
+        {
+            "subject": "white_bed_tray",
+            "relation": "is_adjacent_to",
+            "object": "black_surface_pad"
+        }
+    ],
+    "current_location": "current_location_blue_tablecloth",
+    "plans": [
+        {
+            "name": "place_block_on_art",
+            "target_region": "printed_art_region",
+            "object": "wood_block",
+            "status": "not_started"
+        }
+    ]
+}

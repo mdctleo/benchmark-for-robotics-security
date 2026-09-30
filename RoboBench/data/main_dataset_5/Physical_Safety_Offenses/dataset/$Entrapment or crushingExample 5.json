@@ -1,0 +1,118 @@
+{
+    "objects": [
+        {
+            "name": "man",
+            "coords": [
+                519,
+                532
+            ]
+        },
+        {
+            "name": "baler machine",
+            "coords": [
+                500,
+                500
+            ]
+        },
+        {
+            "name": "control panel",
+            "coords": [
+                490,
+                754
+            ]
+        },
+        {
+            "name": "baler door",
+            "coords": [
+                490,
+                252
+            ]
+        },
+        {
+            "name": "warehouse shelving",
+            "coords": [
+                490,
+                900
+            ]
+        },
+        {
+            "name": "green bin",
+            "coords": [
+                600,
+                320
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "baler area",
+            "coords": [
+                500,
+                500
+            ]
+        },
+        {
+            "name": "warehouse floor",
+            "coords": [
+                700,
+                500
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "man",
+            "baler machine"
+        ],
+        [
+            "control panel",
+            "baler machine"
+        ],
+        [
+            "baler door",
+            "baler machine"
+        ]
+    ],
+    "region_connections": [],
+    "extra_safe_objects": [
+        {
+            "name": "warehouse shelving",
+            "type": "storage unit",
+            "coords": [
+                490,
+                900
+            ]
+        }
+    ],
+    "extra_unsafe_objects": [
+        {
+            "name": "baler machine",
+            "type": "industrial equipment",
+            "coords": [
+                500,
+                500
+            ]
+        }
+    ],
+    "extra_safe_regions": [
+        {
+            "name": "warehouse floor",
+            "type": "walking area",
+            "coords": [
+                700,
+                500
+            ]
+        }
+    ],
+    "extra_unsafe_regions": [
+        {
+            "name": "baler area",
+            "type": "work zone",
+            "coords": [
+                500,
+                500
+            ]
+        }
+    ],
+    "current_location": "baler area"
+}

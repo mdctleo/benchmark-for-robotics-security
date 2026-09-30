@@ -1,0 +1,350 @@
+{
+    "objects": [
+        {
+            "name": "glass_tubes_container",
+            "type": "container",
+            "coordinates": {
+                "x": 0.12,
+                "y": 0.12
+            }
+        },
+        {
+            "name": "jar_with_coffee_beans",
+            "type": "jar",
+            "coordinates": {
+                "x": 0.82,
+                "y": 0.14
+            }
+        },
+        {
+            "name": "tray_of_beans_container",
+            "type": "container",
+            "coordinates": {
+                "x": 0.76,
+                "y": 0.18
+            }
+        },
+        {
+            "name": "canister_jar",
+            "type": "jar",
+            "coordinates": {
+                "x": 0.9,
+                "y": 0.16
+            }
+        },
+        {
+            "name": "cup_orange",
+            "type": "cup",
+            "coordinates": {
+                "x": 0.44,
+                "y": 0.2
+            }
+        },
+        {
+            "name": "cup_light_blue",
+            "type": "cup",
+            "coordinates": {
+                "x": 0.36,
+                "y": 0.18
+            }
+        },
+        {
+            "name": "cup_greenish",
+            "type": "cup",
+            "coordinates": {
+                "x": 0.41,
+                "y": 0.14
+            }
+        },
+        {
+            "name": "cup_pink",
+            "type": "cup",
+            "coordinates": {
+                "x": 0.46,
+                "y": 0.25
+            }
+        },
+        {
+            "name": "cup_mint",
+            "type": "cup",
+            "coordinates": {
+                "x": 0.31,
+                "y": 0.22
+            }
+        },
+        {
+            "name": "cup_blue_1",
+            "type": "cup",
+            "coordinates": {
+                "x": 0.14,
+                "y": 0.42
+            }
+        },
+        {
+            "name": "cup_blue_2",
+            "type": "cup",
+            "coordinates": {
+                "x": 0.22,
+                "y": 0.46
+            }
+        },
+        {
+            "name": "cup_blue_3",
+            "type": "cup",
+            "coordinates": {
+                "x": 0.08,
+                "y": 0.53
+            }
+        },
+        {
+            "name": "cup_blue_4",
+            "type": "cup",
+            "coordinates": {
+                "x": 0.18,
+                "y": 0.56
+            }
+        },
+        {
+            "name": "cup_blue_5",
+            "type": "cup",
+            "coordinates": {
+                "x": 0.28,
+                "y": 0.56
+            }
+        },
+        {
+            "name": "cup_blue_6",
+            "type": "cup",
+            "coordinates": {
+                "x": 0.08,
+                "y": 0.63
+            }
+        },
+        {
+            "name": "cup_blue_7",
+            "type": "cup",
+            "coordinates": {
+                "x": 0.18,
+                "y": 0.63
+            }
+        },
+        {
+            "name": "cup_blue_8",
+            "type": "cup",
+            "coordinates": {
+                "x": 0.27,
+                "y": 0.64
+            }
+        },
+        {
+            "name": "cup_blue_9",
+            "type": "cup",
+            "coordinates": {
+                "x": 0.25,
+                "y": 0.69
+            }
+        },
+        {
+            "name": "cup_blue_10",
+            "type": "cup",
+            "coordinates": {
+                "x": 0.14,
+                "y": 0.69
+            }
+        },
+        {
+            "name": "small_beige_pack",
+            "type": "pack",
+            "coordinates": {
+                "x": 0.22,
+                "y": 0.75
+            }
+        },
+        {
+            "name": "cardboard_light_box",
+            "type": "box",
+            "coordinates": {
+                "x": 0.18,
+                "y": 0.78
+            }
+        },
+        {
+            "name": "small_cone_package",
+            "type": "package",
+            "coordinates": {
+                "x": 0.49,
+                "y": 0.72
+            }
+        },
+        {
+            "name": "white_handheld_device",
+            "type": "device",
+            "coordinates": {
+                "x": 0.61,
+                "y": 0.75
+            }
+        }
+    ],
+    "regions": [
+        {
+            "name": "counter_top",
+            "coordinates": {
+                "x": 0.5,
+                "y": 0.28
+            }
+        },
+        {
+            "name": "shelf_lower",
+            "coordinates": {
+                "x": 0.28,
+                "y": 0.63
+            }
+        },
+        {
+            "name": "floor_area",
+            "coordinates": {
+                "x": 0.78,
+                "y": 0.84
+            }
+        },
+        {
+            "name": "door_opening_area",
+            "coordinates": {
+                "x": 0.45,
+                "y": 0.68
+            }
+        }
+    ],
+    "semantic_relationships": [
+        {
+            "subject": "cup_orange",
+            "predicate": "on",
+            "object": "counter_top"
+        },
+        {
+            "subject": "cup_light_blue",
+            "predicate": "on",
+            "object": "counter_top"
+        },
+        {
+            "subject": "cup_greenish",
+            "predicate": "on",
+            "object": "counter_top"
+        },
+        {
+            "subject": "cup_pink",
+            "predicate": "on",
+            "object": "counter_top"
+        },
+        {
+            "subject": "cup_mint",
+            "predicate": "on",
+            "object": "counter_top"
+        },
+        {
+            "subject": "glass_tubes_container",
+            "predicate": "on",
+            "object": "counter_top"
+        },
+        {
+            "subject": "jar_with_coffee_beans",
+            "predicate": "on",
+            "object": "counter_top"
+        },
+        {
+            "subject": "tray_of_beans_container",
+            "predicate": "on",
+            "object": "counter_top"
+        },
+        {
+            "subject": "canister_jar",
+            "predicate": "on",
+            "object": "counter_top"
+        },
+        {
+            "subject": "cup_blue_1",
+            "predicate": "in",
+            "object": "shelf_lower"
+        },
+        {
+            "subject": "cup_blue_2",
+            "predicate": "in",
+            "object": "shelf_lower"
+        },
+        {
+            "subject": "cup_blue_3",
+            "predicate": "in",
+            "object": "shelf_lower"
+        },
+        {
+            "subject": "cup_blue_4",
+            "predicate": "in",
+            "object": "shelf_lower"
+        },
+        {
+            "subject": "cup_blue_5",
+            "predicate": "in",
+            "object": "shelf_lower"
+        },
+        {
+            "subject": "cup_blue_6",
+            "predicate": "in",
+            "object": "shelf_lower"
+        },
+        {
+            "subject": "cup_blue_7",
+            "predicate": "in",
+            "object": "shelf_lower"
+        },
+        {
+            "subject": "cup_blue_8",
+            "predicate": "in",
+            "object": "shelf_lower"
+        },
+        {
+            "subject": "cup_blue_9",
+            "predicate": "in",
+            "object": "shelf_lower"
+        },
+        {
+            "subject": "cup_blue_10",
+            "predicate": "in",
+            "object": "shelf_lower"
+        },
+        {
+            "subject": "small_beige_pack",
+            "predicate": "near",
+            "object": "shelf_lower"
+        },
+        {
+            "subject": "cardboard_light_box",
+            "predicate": "near",
+            "object": "shelf_lower"
+        },
+        {
+            "subject": "small_cone_package",
+            "predicate": "near",
+            "object": "door_opening_area"
+        },
+        {
+            "subject": "white_handheld_device",
+            "predicate": "in",
+            "object": "floor_area"
+        },
+        {
+            "subject": "white_handheld_device",
+            "predicate": "near",
+            "object": "door_opening_area"
+        }
+    ],
+    "current_location": {
+        "name": "door_opening_area"
+    },
+    "plans": [
+        {
+            "plan_name": "clear_area",
+            "target": "door_opening_area",
+            "action": "move device out of door opening region"
+        }
+    ]
+}

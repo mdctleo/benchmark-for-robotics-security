@@ -1,0 +1,227 @@
+{
+    "objects": [
+        {
+            "name": "door_frame",
+            "type": "door_frame",
+            "bbox": {
+                "x": 455,
+                "y": 40,
+                "w": 105,
+                "h": 505
+            },
+            "center": {
+                "x": 507,
+                "y": 292
+            }
+        },
+        {
+            "name": "door_window",
+            "type": "window",
+            "bbox": {
+                "x": 466,
+                "y": 115,
+                "w": 180,
+                "h": 290
+            },
+            "center": {
+                "x": 556,
+                "y": 260
+            }
+        },
+        {
+            "name": "door_hinge_area",
+            "type": "hinge",
+            "bbox": {
+                "x": 640,
+                "y": 135,
+                "w": 65,
+                "h": 115
+            },
+            "center": {
+                "x": 673,
+                "y": 192
+            }
+        },
+        {
+            "name": "handle",
+            "type": "handle",
+            "bbox": {
+                "x": 596,
+                "y": 145,
+                "w": 95,
+                "h": 70
+            },
+            "center": {
+                "x": 644,
+                "y": 180
+            }
+        },
+        {
+            "name": "floor_near_door",
+            "type": "floor_surface",
+            "bbox": {
+                "x": 0,
+                "y": 365,
+                "w": 760,
+                "h": 420
+            },
+            "center": {
+                "x": 380,
+                "y": 575
+            }
+        },
+        {
+            "name": "cylinder_object",
+            "type": "cylinder",
+            "bbox": {
+                "x": 585,
+                "y": 430,
+                "w": 210,
+                "h": 260
+            },
+            "center": {
+                "x": 690,
+                "y": 560
+            }
+        }
+    ],
+    "regions": [
+        {
+            "name": "room_floor",
+            "type": "floor_region",
+            "polygon": [
+                {
+                    "x": 0,
+                    "y": 365
+                },
+                {
+                    "x": 760,
+                    "y": 365
+                },
+                {
+                    "x": 760,
+                    "y": 790
+                },
+                {
+                    "x": 0,
+                    "y": 790
+                }
+            ],
+            "center": {
+                "x": 380,
+                "y": 578
+            }
+        },
+        {
+            "name": "door_area",
+            "type": "door_region",
+            "polygon": [
+                {
+                    "x": 455,
+                    "y": 40
+                },
+                {
+                    "x": 560,
+                    "y": 40
+                },
+                {
+                    "x": 560,
+                    "y": 545
+                },
+                {
+                    "x": 455,
+                    "y": 545
+                }
+            ],
+            "center": {
+                "x": 508,
+                "y": 292
+            }
+        },
+        {
+            "name": "window_clear_region",
+            "type": "window_region",
+            "polygon": [
+                {
+                    "x": 470,
+                    "y": 110
+                },
+                {
+                    "x": 650,
+                    "y": 110
+                },
+                {
+                    "x": 650,
+                    "y": 405
+                },
+                {
+                    "x": 470,
+                    "y": 405
+                }
+            ],
+            "center": {
+                "x": 560,
+                "y": 258
+            }
+        }
+    ],
+    "semantic_relationships": [
+        {
+            "subject": "door_frame",
+            "predicate": "contains",
+            "object": "door_window"
+        },
+        {
+            "subject": "door_frame",
+            "predicate": "has_handle",
+            "object": "handle"
+        },
+        {
+            "subject": "door_frame",
+            "predicate": "has_hinge_area",
+            "object": "door_hinge_area"
+        },
+        {
+            "subject": "door_window",
+            "predicate": "occupies_region",
+            "object": "window_clear_region"
+        },
+        {
+            "subject": "door_frame",
+            "predicate": "occupies_region",
+            "object": "door_area"
+        },
+        {
+            "subject": "cylinder_object",
+            "predicate": "sits_on",
+            "object": "room_floor"
+        },
+        {
+            "subject": "handle",
+            "predicate": "is_near",
+            "object": "door_hinge_area"
+        },
+        {
+            "subject": "door_frame",
+            "predicate": "stands_over",
+            "object": "room_floor"
+        },
+        {
+            "subject": "floor_near_door",
+            "predicate": "is_part_of",
+            "object": "room_floor"
+        }
+    ],
+    "current_location": {
+        "agent": "cylinder_object",
+        "region": "room_floor"
+    },
+    "plans": [
+        {
+            "name": "inspect_door_window",
+            "target_object": "door_window",
+            "from_region": "room_floor",
+            "preferred_region": "door_area"
+        }
+    ]
+}

@@ -1,0 +1,256 @@
+{
+    "objects": [
+        {
+            "name": "conference_phone",
+            "type": "phone",
+            "description": "Black desk phone-like device with keypad and display.",
+            "center": [
+                500,
+                520
+            ]
+        },
+        {
+            "name": "robot_arm_base",
+            "type": "robot",
+            "description": "Silver cylindrical base/module holding an end-effector mount.",
+            "center": [
+                390,
+                260
+            ]
+        },
+        {
+            "name": "robot_end_effector",
+            "type": "robot_tool",
+            "description": "Dark end-effector/tool assembly above the base.",
+            "center": [
+                415,
+                205
+            ]
+        },
+        {
+            "name": "rubber_ball",
+            "type": "object",
+            "description": "Black rubber ball-like object on the left side of the scene.",
+            "center": [
+                125,
+                145
+            ]
+        },
+        {
+            "name": "tool_head_assembly",
+            "type": "equipment",
+            "description": "Metallic tool/head assembly with cables around the robot area.",
+            "center": [
+                360,
+                235
+            ]
+        },
+        {
+            "name": "cables_bundle",
+            "type": "cables",
+            "description": "Loose black cables running across the table and around the robot area.",
+            "center": [
+                640,
+                310
+            ]
+        },
+        {
+            "name": "small_black_box",
+            "type": "electronics",
+            "description": "Small black rectangular electronics box near the phone/center foreground.",
+            "center": [
+                540,
+                430
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "wood_table",
+            "type": "surface",
+            "description": "Main wooden tabletop with visible grain.",
+            "polygon": [
+                [
+                    30,
+                    60
+                ],
+                [
+                    980,
+                    90
+                ],
+                [
+                    1020,
+                    760
+                ],
+                [
+                    0,
+                    780
+                ]
+            ]
+        },
+        {
+            "name": "floor_grid_area",
+            "type": "floor",
+            "description": "Metal grid floor area visible around the edges of the tabletop.",
+            "polygon": [
+                [
+                    0,
+                    0
+                ],
+                [
+                    1020,
+                    0
+                ],
+                [
+                    1020,
+                    820
+                ],
+                [
+                    0,
+                    820
+                ]
+            ]
+        },
+        {
+            "name": "left_edge_region",
+            "type": "edge_region",
+            "description": "Left side area above the floor grid where the rubber ball is located.",
+            "polygon": [
+                [
+                    0,
+                    0
+                ],
+                [
+                    260,
+                    0
+                ],
+                [
+                    260,
+                    360
+                ],
+                [
+                    0,
+                    360
+                ]
+            ]
+        },
+        {
+            "name": "center_robot_region",
+            "type": "workspace",
+            "description": "Central area of the tabletop containing the robot base and tool assembly.",
+            "polygon": [
+                [
+                    220,
+                    110
+                ],
+                [
+                    720,
+                    520
+                ],
+                [
+                    540,
+                    650
+                ],
+                [
+                    180,
+                    520
+                ]
+            ]
+        },
+        {
+            "name": "foreground_phone_region",
+            "type": "workspace",
+            "description": "Lower/foreground tabletop region where the phone and small electronics appear.",
+            "polygon": [
+                [
+                    300,
+                    380
+                ],
+                [
+                    760,
+                    750
+                ],
+                [
+                    220,
+                    820
+                ],
+                [
+                    140,
+                    460
+                ]
+            ]
+        }
+    ],
+    "semantic_relationships": [
+        {
+            "subject": "robot_arm_base",
+            "relation": "located_on",
+            "object": "wood_table"
+        },
+        {
+            "subject": "robot_end_effector",
+            "relation": "above",
+            "object": "robot_arm_base"
+        },
+        {
+            "subject": "tool_head_assembly",
+            "relation": "located_on",
+            "object": "wood_table"
+        },
+        {
+            "subject": "cables_bundle",
+            "relation": "sprawls_across",
+            "object": "wood_table"
+        },
+        {
+            "subject": "conference_phone",
+            "relation": "located_on",
+            "object": "wood_table"
+        },
+        {
+            "subject": "small_black_box",
+            "relation": "located_on",
+            "object": "wood_table"
+        },
+        {
+            "subject": "rubber_ball",
+            "relation": "located_in",
+            "object": "left_edge_region"
+        },
+        {
+            "subject": "robot_arm_base",
+            "relation": "located_in",
+            "object": "center_robot_region"
+        },
+        {
+            "subject": "robot_end_effector",
+            "relation": "located_in",
+            "object": "center_robot_region"
+        },
+        {
+            "subject": "conference_phone",
+            "relation": "located_in",
+            "object": "foreground_phone_region"
+        },
+        {
+            "subject": "small_black_box",
+            "relation": "located_in",
+            "object": "foreground_phone_region"
+        },
+        {
+            "subject": "wood_table",
+            "relation": "surrounded_by",
+            "object": "floor_grid_area"
+        }
+    ],
+    "current_location": {
+        "name": "center_robot_region"
+    },
+    "plans": [
+        {
+            "name": "inspect_phone_area",
+            "target_region": "foreground_phone_region",
+            "reason": "Phone and nearby electronics are in the foreground region."
+        }
+    ]
+}

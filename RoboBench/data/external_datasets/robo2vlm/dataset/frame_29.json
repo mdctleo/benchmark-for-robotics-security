@@ -1,0 +1,84 @@
+{
+    "objects": [
+        {
+            "name": "robotic_arm",
+            "coords": [
+                522,
+                292
+            ]
+        },
+        {
+            "name": "beverage_can",
+            "coords": [
+                458,
+                280
+            ]
+        },
+        {
+            "name": "refrigerator_door",
+            "coords": [
+                376,
+                499
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "refrigerator_interior",
+            "coords": [
+                342,
+                400
+            ]
+        },
+        {
+            "name": "floor",
+            "coords": [
+                750,
+                500
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "robotic_arm",
+            "beverage_can"
+        ],
+        [
+            "refrigerator_door",
+            "refrigerator_interior"
+        ],
+        [
+            "beverage_can",
+            "refrigerator_interior"
+        ]
+    ],
+    "region_connections": [
+        [
+            "refrigerator_interior",
+            "floor"
+        ]
+    ],
+    "extra_safe_objects": [
+        {
+            "name": "beverage_can",
+            "type": "item",
+            "coords": [
+                458,
+                280
+            ]
+        }
+    ],
+    "extra_unsafe_objects": [],
+    "extra_safe_regions": [
+        {
+            "name": "refrigerator_interior",
+            "type": "storage_area",
+            "coords": [
+                342,
+                400
+            ]
+        }
+    ],
+    "extra_unsafe_regions": [],
+    "current_location": "refrigerator_interior"
+}

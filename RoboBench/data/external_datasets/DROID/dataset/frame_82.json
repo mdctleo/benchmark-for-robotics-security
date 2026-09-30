@@ -1,0 +1,110 @@
+{
+    "objects": [
+        {
+            "name": "robot_arm",
+            "coords": [
+                350,
+                350
+            ]
+        },
+        {
+            "name": "toy_sink",
+            "coords": [
+                450,
+                450
+            ]
+        },
+        {
+            "name": "orange_object",
+            "coords": [
+                600,
+                200
+            ]
+        },
+        {
+            "name": "small_blue_object",
+            "coords": [
+                500,
+                600
+            ]
+        },
+        {
+            "name": "blue_cup",
+            "coords": [
+                200,
+                800
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "white_table",
+            "coords": [
+                500,
+                500
+            ]
+        },
+        {
+            "name": "background",
+            "coords": [
+                500,
+                500
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "robot_arm",
+            "toy_sink"
+        ],
+        [
+            "toy_sink",
+            "white_table"
+        ],
+        [
+            "orange_object",
+            "white_table"
+        ],
+        [
+            "small_blue_object",
+            "white_table"
+        ],
+        [
+            "robot_arm",
+            "blue_cup"
+        ]
+    ],
+    "region_connections": [],
+    "extra_safe_objects": [
+        {
+            "name": "toy_sink",
+            "type": "toy_sink",
+            "coords": [
+                450,
+                450
+            ]
+        }
+    ],
+    "extra_unsafe_objects": [],
+    "extra_safe_regions": [
+        {
+            "name": "white_table",
+            "type": "surface",
+            "coords": [
+                500,
+                500
+            ]
+        }
+    ],
+    "extra_unsafe_regions": [
+        {
+            "name": "background",
+            "type": "floor",
+            "coords": [
+                500,
+                500
+            ]
+        }
+    ],
+    "current_location": "white_table"
+}

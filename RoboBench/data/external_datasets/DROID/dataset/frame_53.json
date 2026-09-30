@@ -1,0 +1,102 @@
+{
+    "objects": [
+        {
+            "name": "robot_arm_left",
+            "coords": [
+                400,
+                150
+            ]
+        },
+        {
+            "name": "robot_arm_right",
+            "coords": [
+                850,
+                850
+            ]
+        },
+        {
+            "name": "green_marker",
+            "coords": [
+                800,
+                850
+            ]
+        },
+        {
+            "name": "white_table_1",
+            "coords": [
+                600,
+                180
+            ]
+        },
+        {
+            "name": "white_table_2",
+            "coords": [
+                600,
+                500
+            ]
+        },
+        {
+            "name": "office_chair_1",
+            "coords": [
+                350,
+                300
+            ]
+        },
+        {
+            "name": "office_chair_2",
+            "coords": [
+                350,
+                700
+            ]
+        },
+        {
+            "name": "desk_left",
+            "coords": [
+                200,
+                100
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "office_floor",
+            "coords": [
+                500,
+                500
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "green_marker",
+            "robot_arm_right"
+        ]
+    ],
+    "region_connections": [
+        [
+            "white_table_1",
+            "office_floor"
+        ],
+        [
+            "white_table_2",
+            "office_floor"
+        ],
+        [
+            "office_chair_1",
+            "office_floor"
+        ],
+        [
+            "office_chair_2",
+            "office_floor"
+        ],
+        [
+            "desk_left",
+            "office_floor"
+        ]
+    ],
+    "extra_safe_objects": [],
+    "extra_unsafe_objects": [],
+    "extra_safe_regions": [],
+    "extra_unsafe_regions": [],
+    "current_location": "office_floor"
+}

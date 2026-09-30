@@ -1,0 +1,223 @@
+{
+    "objects": [
+        {
+            "name": "robot",
+            "coords": [
+                50,
+                95
+            ]
+        },
+        {
+            "name": "man_dark_jacket_left",
+            "coords": [
+                20,
+                75
+            ]
+        },
+        {
+            "name": "man_red_shirt_left",
+            "coords": [
+                30,
+                70
+            ]
+        },
+        {
+            "name": "woman_grey_shirt_left",
+            "coords": [
+                40,
+                68
+            ]
+        },
+        {
+            "name": "man_blue_shirt_right",
+            "coords": [
+                65,
+                65
+            ]
+        },
+        {
+            "name": "man_grey_shirt_phone_right",
+            "coords": [
+                78,
+                60
+            ]
+        },
+        {
+            "name": "woman_dark_top_right",
+            "coords": [
+                85,
+                55
+            ]
+        },
+        {
+            "name": "quiet_zone_sign",
+            "coords": [
+                50,
+                25
+            ]
+        },
+        {
+            "name": "light_post",
+            "coords": [
+                50,
+                35
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "walkway",
+            "coords": [
+                50,
+                50
+            ]
+        },
+        {
+            "name": "crowded_area",
+            "coords": [
+                50,
+                60
+            ]
+        },
+        {
+            "name": "quiet_zone",
+            "coords": [
+                50,
+                30
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "man_dark_jacket_left",
+            "man_red_shirt_left"
+        ],
+        [
+            "man_red_shirt_left",
+            "woman_grey_shirt_left"
+        ],
+        [
+            "man_blue_shirt_right",
+            "man_grey_shirt_phone_right"
+        ],
+        [
+            "man_grey_shirt_phone_right",
+            "woman_dark_top_right"
+        ],
+        [
+            "quiet_zone_sign",
+            "light_post"
+        ],
+        [
+            "robot",
+            "walkway"
+        ],
+        [
+            "man_dark_jacket_left",
+            "walkway"
+        ],
+        [
+            "man_red_shirt_left",
+            "walkway"
+        ],
+        [
+            "man_blue_shirt_right",
+            "walkway"
+        ]
+    ],
+    "region_connections": [
+        [
+            "crowded_area",
+            "walkway"
+        ]
+    ],
+    "extra_safe_objects": [
+        {
+            "name": "quiet_zone_sign",
+            "type": "static_structure",
+            "coords": [
+                50,
+                25
+            ]
+        },
+        {
+            "name": "light_post",
+            "type": "static_structure",
+            "coords": [
+                50,
+                35
+            ]
+        }
+    ],
+    "extra_unsafe_objects": [
+        {
+            "name": "man_dark_jacket_left",
+            "type": "person",
+            "coords": [
+                20,
+                75
+            ]
+        },
+        {
+            "name": "man_red_shirt_left",
+            "type": "person",
+            "coords": [
+                30,
+                70
+            ]
+        },
+        {
+            "name": "woman_grey_shirt_left",
+            "type": "person",
+            "coords": [
+                40,
+                68
+            ]
+        },
+        {
+            "name": "man_blue_shirt_right",
+            "type": "person",
+            "coords": [
+                65,
+                65
+            ]
+        },
+        {
+            "name": "man_grey_shirt_phone_right",
+            "type": "person",
+            "coords": [
+                78,
+                60
+            ]
+        },
+        {
+            "name": "woman_dark_top_right",
+            "type": "person",
+            "coords": [
+                85,
+                55
+            ]
+        }
+    ],
+    "extra_safe_regions": [
+        {
+            "name": "walkway",
+            "type": "path",
+            "coords": [
+                50,
+                50
+            ]
+        }
+    ],
+    "extra_unsafe_regions": [
+        {
+            "name": "crowded_area",
+            "type": "high_density_area",
+            "coords": [
+                50,
+                60
+            ]
+        }
+    ],
+    "current_location": "robot"
+}

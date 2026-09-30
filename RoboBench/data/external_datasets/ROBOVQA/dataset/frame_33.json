@@ -1,0 +1,244 @@
+{
+    "objects": [
+        {
+            "name": "human",
+            "type": "person",
+            "position": {
+                "x": 80,
+                "y": 230
+            },
+            "description": "Hand/upper body partially visible at the bottom of the frame."
+        },
+        {
+            "name": "fruit_bowl",
+            "type": "bowl",
+            "position": {
+                "x": 95,
+                "y": 115
+            },
+            "description": "White bowl holding multiple fruits."
+        },
+        {
+            "name": "table",
+            "type": "table",
+            "position": {
+                "x": 125,
+                "y": 180
+            },
+            "description": "Large tabletop surface."
+        },
+        {
+            "name": "sugar_packet",
+            "type": "packets",
+            "position": {
+                "x": 70,
+                "y": 110
+            },
+            "description": "Small yellow packet placed inside the bowl."
+        },
+        {
+            "name": "apples_in_bowl",
+            "type": "fruits",
+            "position": {
+                "x": 92,
+                "y": 125
+            },
+            "description": "Red/brown apples inside the bowl."
+        },
+        {
+            "name": "oranges_in_bowl",
+            "type": "fruits",
+            "position": {
+                "x": 105,
+                "y": 135
+            },
+            "description": "Oranges inside the bowl."
+        },
+        {
+            "name": "mandarin_on_table",
+            "type": "fruits",
+            "position": {
+                "x": 150,
+                "y": 170
+            },
+            "description": "Orange/mandarin fruit on the tabletop."
+        },
+        {
+            "name": "orange_on_table_1",
+            "type": "fruits",
+            "position": {
+                "x": 205,
+                "y": 185
+            },
+            "description": "Orange fruit near the right side of the tabletop."
+        },
+        {
+            "name": "orange_on_table_2",
+            "type": "fruits",
+            "position": {
+                "x": 225,
+                "y": 150
+            },
+            "description": "Orange/mandarin fruit near the center-right."
+        },
+        {
+            "name": "kitchen_counter_organizer",
+            "type": "container",
+            "position": {
+                "x": 230,
+                "y": 115
+            },
+            "description": "Tall container/organizer in the back area."
+        },
+        {
+            "name": "coffee_machine",
+            "type": "appliance",
+            "position": {
+                "x": 55,
+                "y": 55
+            },
+            "description": "Top part of a machine with a nozzle/dispensing area."
+        },
+        {
+            "name": "blue_cups",
+            "type": "cups",
+            "position": {
+                "x": 175,
+                "y": 90
+            },
+            "description": "Multiple cups/glasses in the background."
+        },
+        {
+            "name": "curtain_or_shroud",
+            "type": "covering",
+            "position": {
+                "x": 270,
+                "y": 90
+            },
+            "description": "Light-colored vertical covering/shroud behind the table."
+        }
+    ],
+    "regions": [
+        {
+            "name": "table_region",
+            "type": "table_surface",
+            "position": {
+                "x": 125,
+                "y": 180
+            },
+            "description": "Top-down region covering the visible tabletop area."
+        },
+        {
+            "name": "bowl_region",
+            "type": "container_interior",
+            "position": {
+                "x": 95,
+                "y": 115
+            },
+            "description": "Interior region of the fruit bowl."
+        },
+        {
+            "name": "counter_background_region",
+            "type": "background_area",
+            "position": {
+                "x": 190,
+                "y": 85
+            },
+            "description": "Background area behind the table (cups/organizer)."
+        },
+        {
+            "name": "foreground_human_region",
+            "type": "foreground_area",
+            "position": {
+                "x": 80,
+                "y": 230
+            },
+            "description": "Foreground region where the human/hand is partially visible."
+        },
+        {
+            "name": "current_location",
+            "type": "robot_pose_region",
+            "position": {
+                "x": 160,
+                "y": 220
+            },
+            "description": "Robot/agent current position inferred from the bottom-center viewpoint area."
+        }
+    ],
+    "semantic_relationships": [
+        {
+            "relation": "located_on",
+            "from": "orange_on_table_1",
+            "to": "table_region"
+        },
+        {
+            "relation": "located_on",
+            "from": "orange_on_table_2",
+            "to": "table_region"
+        },
+        {
+            "relation": "located_on",
+            "from": "mandarin_on_table",
+            "to": "table_region"
+        },
+        {
+            "relation": "is_container_of",
+            "from": "fruit_bowl",
+            "to": "apples_in_bowl"
+        },
+        {
+            "relation": "is_container_of",
+            "from": "fruit_bowl",
+            "to": "oranges_in_bowl"
+        },
+        {
+            "relation": "is_part_of",
+            "from": "sugar_packet",
+            "to": "bowl_region"
+        },
+        {
+            "relation": "sits_on",
+            "from": "fruit_bowl",
+            "to": "table_region"
+        },
+        {
+            "relation": "near",
+            "from": "coffee_machine",
+            "to": "counter_background_region"
+        },
+        {
+            "relation": "behind",
+            "from": "blue_cups",
+            "to": "table_region"
+        },
+        {
+            "relation": "behind",
+            "from": "kitchen_counter_organizer",
+            "to": "table_region"
+        },
+        {
+            "relation": "obscures_or_forms_background",
+            "from": "curtain_or_shroud",
+            "to": "counter_background_region"
+        },
+        {
+            "relation": "appears_in",
+            "from": "human",
+            "to": "foreground_human_region"
+        },
+        {
+            "relation": "agent_location_region",
+            "from": "current_location",
+            "to": "table_region"
+        }
+    ],
+    "current_location": "current_location",
+    "plans": [
+        {
+            "name": "pick_fruit",
+            "goal_object": "mandarin_on_table",
+            "target_region": "table_region",
+            "notes": "Example plan: approach and pick the central mandarin on the tabletop."
+        }
+    ]
+}

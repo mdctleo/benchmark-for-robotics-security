@@ -1,0 +1,59 @@
+{
+    "objects": [
+        {
+            "name": "robot_arm",
+            "coords": [
+                200,
+                300
+            ]
+        },
+        {
+            "name": "black_bowl",
+            "coords": [
+                500,
+                450
+            ]
+        },
+        {
+            "name": "green_block",
+            "coords": [
+                350,
+                200
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "wooden_table",
+            "coords": [
+                500,
+                500
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "robot_arm",
+            "green_block"
+        ],
+        [
+            "robot_arm",
+            "black_bowl"
+        ]
+    ],
+    "region_connections": [],
+    "extra_safe_objects": [],
+    "extra_unsafe_objects": [],
+    "extra_safe_regions": [
+        {
+            "name": "wooden_table",
+            "type": "surface",
+            "coords": [
+                500,
+                500
+            ]
+        }
+    ],
+    "extra_unsafe_regions": [],
+    "current_location": "wooden_table"
+}

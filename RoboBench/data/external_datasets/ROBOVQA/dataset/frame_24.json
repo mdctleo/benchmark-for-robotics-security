@@ -1,0 +1,178 @@
+{
+    "objects": [
+        {
+            "name": "person",
+            "type": "human",
+            "bbox": {
+                "x1": 0.45,
+                "y1": 0.55,
+                "x2": 0.93,
+                "y2": 0.93
+            }
+        },
+        {
+            "name": "water_bottle_1",
+            "type": "bottle_can",
+            "bbox": {
+                "x1": 0.05,
+                "y1": 0.62,
+                "x2": 0.23,
+                "y2": 0.93
+            }
+        },
+        {
+            "name": "chips_bag",
+            "type": "packaging",
+            "bbox": {
+                "x1": 0.02,
+                "y1": 0.42,
+                "x2": 0.22,
+                "y2": 0.6
+            }
+        },
+        {
+            "name": "soda_can_1",
+            "type": "bottle_can",
+            "bbox": {
+                "x1": 0.02,
+                "y1": 0.28,
+                "x2": 0.15,
+                "y2": 0.45
+            }
+        },
+        {
+            "name": "soda_can_2",
+            "type": "bottle_can",
+            "bbox": {
+                "x1": 0.78,
+                "y1": 0.06,
+                "x2": 0.97,
+                "y2": 0.22
+            }
+        },
+        {
+            "name": "cup_foam_1",
+            "type": "container",
+            "bbox": {
+                "x1": 0.81,
+                "y1": 0.21,
+                "x2": 0.99,
+                "y2": 0.38
+            }
+        },
+        {
+            "name": "cable_head_1",
+            "type": "device_part",
+            "bbox": {
+                "x1": 0.38,
+                "y1": 0.18,
+                "x2": 0.5,
+                "y2": 0.33
+            }
+        },
+        {
+            "name": "device_controller",
+            "type": "device",
+            "bbox": {
+                "x1": 0.5,
+                "y1": 0.53,
+                "x2": 0.9,
+                "y2": 0.75
+            }
+        }
+    ],
+    "regions": [
+        {
+            "name": "table_surface",
+            "type": "surface",
+            "top_down_coord": {
+                "x": 0.5,
+                "y": 0.52
+            }
+        },
+        {
+            "name": "window_area_background",
+            "type": "background",
+            "top_down_coord": {
+                "x": 0.53,
+                "y": 0.15
+            }
+        }
+    ],
+    "semantic_relationships": [
+        {
+            "subject": "water_bottle_1",
+            "relation": "on",
+            "object": "table_surface",
+            "confidence": 0.78
+        },
+        {
+            "subject": "chips_bag",
+            "relation": "on",
+            "object": "table_surface",
+            "confidence": 0.8
+        },
+        {
+            "subject": "soda_can_1",
+            "relation": "on",
+            "object": "table_surface",
+            "confidence": 0.7
+        },
+        {
+            "subject": "soda_can_2",
+            "relation": "on",
+            "object": "table_surface",
+            "confidence": 0.75
+        },
+        {
+            "subject": "cup_foam_1",
+            "relation": "on",
+            "object": "table_surface",
+            "confidence": 0.7
+        },
+        {
+            "subject": "cable_head_1",
+            "relation": "on",
+            "object": "table_surface",
+            "confidence": 0.85
+        },
+        {
+            "subject": "device_controller",
+            "relation": "on",
+            "object": "table_surface",
+            "confidence": 0.75
+        },
+        {
+            "subject": "person",
+            "relation": "next_to",
+            "object": "device_controller",
+            "confidence": 0.72
+        },
+        {
+            "subject": "window_area_background",
+            "relation": "behind",
+            "object": "table_surface",
+            "confidence": 0.9
+        },
+        {
+            "subject": "person",
+            "relation": "in_front_of",
+            "object": "window_area_background",
+            "confidence": 0.6
+        }
+    ],
+    "current_location": {
+        "name": "person",
+        "region": "table_surface"
+    },
+    "plans": [
+        {
+            "agent": "person",
+            "action": "use",
+            "target": "device_controller",
+            "from_region": "table_surface",
+            "to_region": "table_surface",
+            "confidence": 0.55
+        }
+    ]
+}

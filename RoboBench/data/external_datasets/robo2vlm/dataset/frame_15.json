@@ -1,0 +1,142 @@
+{
+    "objects": [
+        {
+            "name": "robot_arm",
+            "coords": [
+                620,
+                550
+            ]
+        },
+        {
+            "name": "sponge",
+            "coords": [
+                450,
+                380
+            ]
+        },
+        {
+            "name": "can",
+            "coords": [
+                300,
+                290
+            ]
+        },
+        {
+            "name": "orange",
+            "coords": [
+                420,
+                450
+            ]
+        },
+        {
+            "name": "work_table",
+            "coords": [
+                500,
+                500
+            ]
+        },
+        {
+            "name": "background_elements",
+            "coords": [
+                500,
+                150
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "table_surface_region",
+            "coords": [
+                500,
+                500
+            ]
+        },
+        {
+            "name": "background_region",
+            "coords": [
+                500,
+                150
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "robot_arm",
+            "holding_onto_sponge"
+        ],
+        [
+            "can",
+            "on_table_surface_region"
+        ],
+        [
+            "orange",
+            "on_table_surface_region"
+        ]
+    ],
+    "region_connections": [],
+    "extra_safe_objects": [
+        {
+            "name": "can",
+            "type": "container",
+            "coords": [
+                300,
+                290
+            ]
+        },
+        {
+            "name": "orange",
+            "type": "food",
+            "coords": [
+                420,
+                450
+            ]
+        },
+        {
+            "name": "sponge",
+            "type": "cleaning_supply",
+            "coords": [
+                450,
+                380
+            ]
+        },
+        {
+            "name": "work_table",
+            "type": "furniture",
+            "coords": [
+                500,
+                500
+            ]
+        }
+    ],
+    "extra_unsafe_objects": [
+        {
+            "name": "robot_arm",
+            "type": "machinery",
+            "coords": [
+                620,
+                550
+            ]
+        }
+    ],
+    "extra_safe_regions": [
+        {
+            "name": "table_surface_region",
+            "type": "workspace",
+            "coords": [
+                500,
+                500
+            ]
+        }
+    ],
+    "extra_unsafe_regions": [
+        {
+            "name": "background_region",
+            "type": "off_limits",
+            "coords": [
+                500,
+                150
+            ]
+        }
+    ],
+    "current_location": "table_surface_region"
+}

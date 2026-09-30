@@ -1,0 +1,113 @@
+{
+    "objects": [
+        {
+            "name": "robot_arm",
+            "coords": [
+                374,
+                399
+            ]
+        },
+        {
+            "name": "robot_base",
+            "coords": [
+                648,
+                335
+            ]
+        },
+        {
+            "name": "cardboard_box_left",
+            "coords": [
+                603,
+                161
+            ]
+        },
+        {
+            "name": "cardboard_box_right",
+            "coords": [
+                583,
+                506
+            ]
+        },
+        {
+            "name": "spray_bottle_left",
+            "coords": [
+                807,
+                137
+            ]
+        },
+        {
+            "name": "spray_bottle_right",
+            "coords": [
+                763,
+                427
+            ]
+        },
+        {
+            "name": "plastic_bag_left",
+            "coords": [
+                790,
+                209
+            ]
+        },
+        {
+            "name": "plastic_bag_right",
+            "coords": [
+                847,
+                529
+            ]
+        },
+        {
+            "name": "black_gripper",
+            "coords": [
+                624,
+                434
+            ]
+        },
+        {
+            "name": "orange_tool",
+            "coords": [
+                702,
+                305
+            ]
+        },
+        {
+            "name": "monitor",
+            "coords": [
+                300,
+                808
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "table_surface",
+            "coords": [
+                650,
+                450
+            ]
+        },
+        {
+            "name": "office_background",
+            "coords": [
+                250,
+                500
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "robot_arm",
+            "robot_base"
+        ],
+        [
+            "black_gripper",
+            "robot_arm"
+        ]
+    ],
+    "region_connections": [],
+    "extra_safe_objects": [],
+    "extra_unsafe_objects": [],
+    "extra_safe_regions": [],
+    "extra_unsafe_regions": [],
+    "current_location": "table_surface"
+}

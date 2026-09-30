@@ -1,0 +1,261 @@
+{
+    "objects": [
+        {
+            "name": "chair_back_left",
+            "type": "furniture",
+            "approx_center_xy": [
+                40,
+                40
+            ],
+            "notes": "Left-side vertical element resembling a chair back."
+        },
+        {
+            "name": "desk_keyboard",
+            "type": "computer_accessory",
+            "approx_center_xy": [
+                160,
+                35
+            ],
+            "notes": "Keyboard in upper area."
+        },
+        {
+            "name": "small_boxes_stack",
+            "type": "object_group",
+            "approx_center_xy": [
+                220,
+                70
+            ],
+            "notes": "Small stacked blocks/components near top-center."
+        },
+        {
+            "name": "red_button",
+            "type": "control",
+            "approx_center_xy": [
+                255,
+                25
+            ],
+            "notes": "Red circular button near top area."
+        },
+        {
+            "name": "blue_tablecloth",
+            "type": "surface",
+            "approx_center_xy": [
+                210,
+                180
+            ],
+            "notes": "Large blue cloth covering most of the scene; contains printed artwork."
+        },
+        {
+            "name": "white_card",
+            "type": "paper",
+            "approx_center_xy": [
+                330,
+                165
+            ],
+            "notes": "White card near right-middle on top of the cloth area."
+        },
+        {
+            "name": "tower_support_left",
+            "type": "machine_support",
+            "approx_center_xy": [
+                55,
+                105
+            ],
+            "notes": "Metal support structure on the left."
+        },
+        {
+            "name": "tower_support_center",
+            "type": "machine_support",
+            "approx_center_xy": [
+                210,
+                85
+            ],
+            "notes": "Central vertical metal component."
+        },
+        {
+            "name": "tower_support_right",
+            "type": "machine_support",
+            "approx_center_xy": [
+                405,
+                115
+            ],
+            "notes": "Right-side vertical metal component."
+        },
+        {
+            "name": "cylindrical_bin",
+            "type": "container",
+            "approx_center_xy": [
+                30,
+                110
+            ],
+            "notes": "Dark cylindrical container at left."
+        },
+        {
+            "name": "cable_bundle",
+            "type": "cable",
+            "approx_center_xy": [
+                300,
+                70
+            ],
+            "notes": "Black cable bundle along the top/right."
+        },
+        {
+            "name": "tool_or_stand_bracket",
+            "type": "hardware",
+            "approx_center_xy": [
+                250,
+                95
+            ],
+            "notes": "Small hardware/fixture on the cloth near top center."
+        },
+        {
+            "name": "long_stick_or_rod",
+            "type": "tool",
+            "approx_center_xy": [
+                355,
+                305
+            ],
+            "notes": "Thin long white line/rod-like element near bottom-right."
+        }
+    ],
+    "regions": [
+        {
+            "name": "floor_grid_background",
+            "type": "environment",
+            "approx_center_xy": [
+                215,
+                250
+            ],
+            "notes": "Metal grating floor/background visible around the cloth."
+        },
+        {
+            "name": "blue_cloth_region",
+            "type": "surface_region",
+            "approx_center_xy": [
+                215,
+                170
+            ],
+            "notes": "Region covered by the blue tablecloth artwork."
+        },
+        {
+            "name": "left_open_area",
+            "type": "free_space",
+            "approx_center_xy": [
+                90,
+                200
+            ],
+            "notes": "Left side space around the large objects."
+        },
+        {
+            "name": "right_open_area",
+            "type": "free_space",
+            "approx_center_xy": [
+                350,
+                200
+            ],
+            "notes": "Right side space around the right vertical component."
+        },
+        {
+            "name": "top_area_near_cables",
+            "type": "workspace_area",
+            "approx_center_xy": [
+                245,
+                70
+            ],
+            "notes": "Upper workspace zone containing keyboard, cables, and small components."
+        }
+    ],
+    "semantic_relationships": [
+        {
+            "subject": "desk_keyboard",
+            "relation": "located_near",
+            "object": "top_area_near_cables"
+        },
+        {
+            "subject": "small_boxes_stack",
+            "relation": "located_near",
+            "object": "top_area_near_cables"
+        },
+        {
+            "subject": "red_button",
+            "relation": "located_near",
+            "object": "top_area_near_cables"
+        },
+        {
+            "subject": "cable_bundle",
+            "relation": "located_near",
+            "object": "top_area_near_cables"
+        },
+        {
+            "subject": "tower_support_left",
+            "relation": "adjacent_to",
+            "object": "left_open_area"
+        },
+        {
+            "subject": "tower_support_right",
+            "relation": "adjacent_to",
+            "object": "right_open_area"
+        },
+        {
+            "subject": "cylindrical_bin",
+            "relation": "located_in",
+            "object": "left_open_area"
+        },
+        {
+            "subject": "blue_tablecloth",
+            "relation": "covers",
+            "object": "blue_cloth_region"
+        },
+        {
+            "subject": "white_card",
+            "relation": "located_on",
+            "object": "blue_cloth_region"
+        },
+        {
+            "subject": "tool_or_stand_bracket",
+            "relation": "located_on",
+            "object": "blue_cloth_region"
+        },
+        {
+            "subject": "long_stick_or_rod",
+            "relation": "located_near",
+            "object": "blue_cloth_region"
+        },
+        {
+            "subject": "floor_grid_background",
+            "relation": "contains",
+            "object": "blue_cloth_region"
+        }
+    ],
+    "current_location": {
+        "name": "blue_cloth_region"
+    },
+    "plans": [
+        {
+            "plan_name": "inspect_paper_on_cloth",
+            "steps": [
+                {
+                    "action": "move_to_region",
+                    "target": "blue_cloth_region"
+                },
+                {
+                    "action": "check_object",
+                    "target": "white_card"
+                }
+            ]
+        },
+        {
+            "plan_name": "check_upper_workspace",
+            "steps": [
+                {
+                    "action": "move_to_region",
+                    "target": "top_area_near_cables"
+                },
+                {
+                    "action": "check_object",
+                    "target": "cable_bundle"
+                }
+            ]
+        }
+    ]
+}

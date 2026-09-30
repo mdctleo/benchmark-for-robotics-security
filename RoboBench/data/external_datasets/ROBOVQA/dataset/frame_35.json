@@ -1,0 +1,248 @@
+{
+    "objects": [
+        {
+            "name": "table_1",
+            "label": "side_table",
+            "bounding_box": {
+                "x1": 80,
+                "y1": 170,
+                "x2": 470,
+                "y2": 420
+            },
+            "center": {
+                "x": 275,
+                "y": 295
+            }
+        },
+        {
+            "name": "shelf_1",
+            "label": "open_shelf",
+            "bounding_box": {
+                "x1": 60,
+                "y1": 365,
+                "x2": 430,
+                "y2": 520
+            },
+            "center": {
+                "x": 245,
+                "y": 442
+            }
+        },
+        {
+            "name": "shelf_contents_1",
+            "label": "small_items_on_shelf",
+            "bounding_box": {
+                "x1": 170,
+                "y1": 380,
+                "x2": 410,
+                "y2": 510
+            },
+            "center": {
+                "x": 290,
+                "y": 450
+            }
+        },
+        {
+            "name": "monitor_1",
+            "label": "device",
+            "bounding_box": {
+                "x1": 20,
+                "y1": 200,
+                "x2": 110,
+                "y2": 420
+            },
+            "center": {
+                "x": 65,
+                "y": 310
+            }
+        },
+        {
+            "name": "chair_seat_1",
+            "label": "seat",
+            "bounding_box": {
+                "x1": 40,
+                "y1": 260,
+                "x2": 135,
+                "y2": 430
+            },
+            "center": {
+                "x": 88,
+                "y": 345
+            }
+        },
+        {
+            "name": "person_1",
+            "label": "person",
+            "bounding_box": {
+                "x1": 0,
+                "y1": 240,
+                "x2": 120,
+                "y2": 500
+            },
+            "center": {
+                "x": 60,
+                "y": 370
+            }
+        },
+        {
+            "name": "robot_arm_1",
+            "label": "robot_arm",
+            "bounding_box": {
+                "x1": 280,
+                "y1": 210,
+                "x2": 630,
+                "y2": 580
+            },
+            "center": {
+                "x": 455,
+                "y": 395
+            }
+        },
+        {
+            "name": "robot_wrist_gripper_1",
+            "label": "gripper",
+            "bounding_box": {
+                "x1": 260,
+                "y1": 310,
+                "x2": 430,
+                "y2": 520
+            },
+            "center": {
+                "x": 345,
+                "y": 415
+            }
+        },
+        {
+            "name": "products_rack_1",
+            "label": "display_rack",
+            "bounding_box": {
+                "x1": 220,
+                "y1": 0,
+                "x2": 585,
+                "y2": 220
+            },
+            "center": {
+                "x": 402,
+                "y": 110
+            }
+        },
+        {
+            "name": "boxes_on_rack_1",
+            "label": "box_packages",
+            "bounding_box": {
+                "x1": 235,
+                "y1": 10,
+                "x2": 605,
+                "y2": 220
+            },
+            "center": {
+                "x": 420,
+                "y": 115
+            }
+        }
+    ],
+    "regions": [
+        {
+            "name": "floor_1",
+            "label": "floor_area",
+            "bounding_box": {
+                "x1": 0,
+                "y1": 420,
+                "x2": 640,
+                "y2": 720
+            },
+            "center": {
+                "x": 320,
+                "y": 570
+            }
+        },
+        {
+            "name": "work_surface_1",
+            "label": "top_surface_above_table",
+            "bounding_box": {
+                "x1": 60,
+                "y1": 120,
+                "x2": 570,
+                "y2": 210
+            },
+            "center": {
+                "x": 315,
+                "y": 165
+            }
+        },
+        {
+            "name": "open_shelf_region_1",
+            "label": "inside_shelf_area",
+            "bounding_box": {
+                "x1": 145,
+                "y1": 360,
+                "x2": 440,
+                "y2": 520
+            },
+            "center": {
+                "x": 292,
+                "y": 440
+            }
+        },
+        {
+            "name": "robot_work_area_1",
+            "label": "area_near_robot_gripper",
+            "bounding_box": {
+                "x1": 240,
+                "y1": 250,
+                "x2": 500,
+                "y2": 560
+            },
+            "center": {
+                "x": 370,
+                "y": 405
+            }
+        }
+    ],
+    "semantic_relationships": [
+        {
+            "type": "located_on",
+            "from": "boxes_on_rack_1",
+            "to": "work_surface_1"
+        },
+        {
+            "type": "held_in",
+            "from": "boxes_on_rack_1",
+            "to": "products_rack_1"
+        },
+        {
+            "type": "located_on",
+            "from": "products_rack_1",
+            "to": "work_surface_1"
+        },
+        {
+            "type": "table_contains",
+            "from": "shelf_1",
+            "to": "table_1"
+        },
+        {
+            "type": "located_in",
+            "from": "shelf_contents_1",
+            "to": "open_shelf_region_1"
+        },
+        {
+            "type": "robot_in",
+            "from": "robot_arm_1",
+            "to": "robot_work_area_1"
+        },
+        {
+            "type": "gripper_part_of",
+            "from": "robot_wrist_gripper_1",
+            "to": "robot_arm_1"
+        },
+        {
+            "type": "person_interacts_with",
+            "from": "person_1",
+            "to": "robot_arm_1"
+        }
+    ],
+    "current_location": {
+        "robot_arm_1": "robot_work_area_1"
+    },
+    "plans": []
+}

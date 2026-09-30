@@ -1,0 +1,114 @@
+{
+    "objects": [
+        {
+            "name": "pot",
+            "coords": [
+                200,
+                250
+            ]
+        },
+        {
+            "name": "yellow bell pepper toy",
+            "coords": [
+                210,
+                320
+            ]
+        },
+        {
+            "name": "yellow corn cob toy",
+            "coords": [
+                210,
+                400
+            ]
+        },
+        {
+            "name": "orange object toy",
+            "coords": [
+                210,
+                480
+            ]
+        },
+        {
+            "name": "robot gripper",
+            "coords": [
+                200,
+                250
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "wooden table",
+            "coords": [
+                250,
+                350
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "robot gripper",
+            "pot"
+        ],
+        [
+            "pot",
+            "yellow bell pepper toy"
+        ],
+        [
+            "yellow bell pepper toy",
+            "yellow corn cob toy"
+        ],
+        [
+            "yellow corn cob toy",
+            "orange object toy"
+        ]
+    ],
+    "region_connections": [],
+    "extra_safe_objects": [
+        {
+            "name": "pot",
+            "type": "container",
+            "coords": [
+                200,
+                250
+            ]
+        },
+        {
+            "name": "yellow bell pepper toy",
+            "type": "toy food",
+            "coords": [
+                210,
+                320
+            ]
+        },
+        {
+            "name": "yellow corn cob toy",
+            "type": "toy food",
+            "coords": [
+                210,
+                400
+            ]
+        },
+        {
+            "name": "orange object toy",
+            "type": "toy food",
+            "coords": [
+                210,
+                480
+            ]
+        }
+    ],
+    "extra_unsafe_objects": [],
+    "extra_safe_regions": [
+        {
+            "name": "wooden table",
+            "type": "surface",
+            "coords": [
+                250,
+                350
+            ]
+        }
+    ],
+    "extra_unsafe_regions": [],
+    "current_location": "wooden table"
+}

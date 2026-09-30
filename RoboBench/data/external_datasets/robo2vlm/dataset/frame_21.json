@@ -1,0 +1,112 @@
+{
+    "objects": [
+        {
+            "name": "soda_can",
+            "coords": [
+                351,
+                237
+            ]
+        },
+        {
+            "name": "tan_chips",
+            "coords": [
+                295,
+                545
+            ]
+        },
+        {
+            "name": "kettle_chips",
+            "coords": [
+                703,
+                467
+            ]
+        },
+        {
+            "name": "robot_arm",
+            "coords": [
+                457,
+                858
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "table_top",
+            "coords": [
+                500,
+                500
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "soda_can",
+            "table_top"
+        ],
+        [
+            "tan_chips",
+            "table_top"
+        ],
+        [
+            "kettle_chips",
+            "table_top"
+        ],
+        [
+            "soda_can",
+            "tan_chips"
+        ],
+        [
+            "tan_chips",
+            "kettle_chips"
+        ]
+    ],
+    "region_connections": [],
+    "extra_safe_objects": [
+        {
+            "name": "soda_can",
+            "type": "beverage",
+            "coords": [
+                351,
+                237
+            ]
+        },
+        {
+            "name": "tan_chips",
+            "type": "bag of chips",
+            "coords": [
+                295,
+                545
+            ]
+        },
+        {
+            "name": "kettle_chips",
+            "type": "bag of chips",
+            "coords": [
+                703,
+                467
+            ]
+        }
+    ],
+    "extra_unsafe_objects": [
+        {
+            "name": "robot_arm",
+            "type": "robotic manipulator",
+            "coords": [
+                457,
+                858
+            ]
+        }
+    ],
+    "extra_safe_regions": [
+        {
+            "name": "table_top",
+            "type": "surface",
+            "coords": [
+                500,
+                500
+            ]
+        }
+    ],
+    "extra_unsafe_regions": [],
+    "current_location": "table_top"
+}

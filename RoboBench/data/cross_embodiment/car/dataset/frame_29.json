@@ -1,0 +1,528 @@
+{
+    "objects": [
+        {
+            "name": "white_van",
+            "type": "vehicle",
+            "bbox_topdown": [
+                [
+                    40,
+                    520
+                ],
+                [
+                    180,
+                    520
+                ],
+                [
+                    180,
+                    690
+                ],
+                [
+                    40,
+                    690
+                ]
+            ]
+        },
+        {
+            "name": "truck_behind",
+            "type": "vehicle",
+            "bbox_topdown": [
+                [
+                    240,
+                    520
+                ],
+                [
+                    360,
+                    520
+                ],
+                [
+                    360,
+                    655
+                ],
+                [
+                    240,
+                    655
+                ]
+            ]
+        },
+        {
+            "name": "car_in_right_lane",
+            "type": "vehicle",
+            "bbox_topdown": [
+                [
+                    900,
+                    520
+                ],
+                [
+                    1035,
+                    520
+                ],
+                [
+                    1035,
+                    680
+                ],
+                [
+                    900,
+                    680
+                ]
+            ]
+        },
+        {
+            "name": "pedestrian_left",
+            "type": "person",
+            "bbox_topdown": [
+                [
+                    360,
+                    660
+                ],
+                [
+                    440,
+                    660
+                ],
+                [
+                    440,
+                    820
+                ],
+                [
+                    360,
+                    820
+                ]
+            ]
+        },
+        {
+            "name": "pedestrian_center",
+            "type": "person",
+            "bbox_topdown": [
+                [
+                    560,
+                    660
+                ],
+                [
+                    640,
+                    660
+                ],
+                [
+                    640,
+                    820
+                ],
+                [
+                    560,
+                    820
+                ]
+            ]
+        },
+        {
+            "name": "pedestrian_right",
+            "type": "person",
+            "bbox_topdown": [
+                [
+                    980,
+                    650
+                ],
+                [
+                    1075,
+                    650
+                ],
+                [
+                    1075,
+                    820
+                ],
+                [
+                    980,
+                    820
+                ]
+            ]
+        },
+        {
+            "name": "construction_workers_bundle",
+            "type": "group",
+            "bbox_topdown": [
+                [
+                    350,
+                    650
+                ],
+                [
+                    1080,
+                    650
+                ],
+                [
+                    1080,
+                    830
+                ],
+                [
+                    350,
+                    830
+                ]
+            ]
+        },
+        {
+            "name": "traffic_light_left",
+            "type": "traffic_light",
+            "bbox_topdown": [
+                [
+                    520,
+                    500
+                ],
+                [
+                    575,
+                    500
+                ],
+                [
+                    575,
+                    575
+                ],
+                [
+                    520,
+                    575
+                ]
+            ]
+        },
+        {
+            "name": "traffic_light_center",
+            "type": "traffic_light",
+            "bbox_topdown": [
+                [
+                    650,
+                    500
+                ],
+                [
+                    705,
+                    500
+                ],
+                [
+                    705,
+                    575
+                ],
+                [
+                    650,
+                    575
+                ]
+            ]
+        },
+        {
+            "name": "traffic_light_right",
+            "type": "traffic_light",
+            "bbox_topdown": [
+                [
+                    800,
+                    500
+                ],
+                [
+                    855,
+                    500
+                ],
+                [
+                    855,
+                    575
+                ],
+                [
+                    800,
+                    575
+                ]
+            ]
+        },
+        {
+            "name": "crosswalk_stripe_left",
+            "type": "road_marking",
+            "bbox_topdown": [
+                [
+                    490,
+                    770
+                ],
+                [
+                    650,
+                    770
+                ],
+                [
+                    650,
+                    815
+                ],
+                [
+                    490,
+                    815
+                ]
+            ]
+        },
+        {
+            "name": "crosswalk_stripe_right",
+            "type": "road_marking",
+            "bbox_topdown": [
+                [
+                    650,
+                    770
+                ],
+                [
+                    820,
+                    770
+                ],
+                [
+                    820,
+                    815
+                ],
+                [
+                    650,
+                    815
+                ]
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "current_location",
+            "type": "intersection_area",
+            "bbox_topdown": [
+                [
+                    0,
+                    430
+                ],
+                [
+                    1280,
+                    430
+                ],
+                [
+                    1280,
+                    900
+                ],
+                [
+                    0,
+                    900
+                ]
+            ]
+        },
+        {
+            "name": "road_surface",
+            "type": "road",
+            "bbox_topdown": [
+                [
+                    0,
+                    470
+                ],
+                [
+                    1280,
+                    470
+                ],
+                [
+                    1280,
+                    900
+                ],
+                [
+                    0,
+                    900
+                ]
+            ]
+        },
+        {
+            "name": "sidewalk_left",
+            "type": "sidewalk",
+            "bbox_topdown": [
+                [
+                    0,
+                    430
+                ],
+                [
+                    380,
+                    430
+                ],
+                [
+                    380,
+                    900
+                ],
+                [
+                    0,
+                    900
+                ]
+            ]
+        },
+        {
+            "name": "sidewalk_right",
+            "type": "sidewalk",
+            "bbox_topdown": [
+                [
+                    900,
+                    430
+                ],
+                [
+                    1280,
+                    430
+                ],
+                [
+                    1280,
+                    900
+                ],
+                [
+                    900,
+                    900
+                ]
+            ]
+        },
+        {
+            "name": "crosswalk_area",
+            "type": "crosswalk",
+            "bbox_topdown": [
+                [
+                    470,
+                    720
+                ],
+                [
+                    860,
+                    720
+                ],
+                [
+                    860,
+                    840
+                ],
+                [
+                    470,
+                    840
+                ]
+            ]
+        },
+        {
+            "name": "construction_zone",
+            "type": "work_zone",
+            "bbox_topdown": [
+                [
+                    350,
+                    600
+                ],
+                [
+                    1080,
+                    600
+                ],
+                [
+                    1080,
+                    860
+                ],
+                [
+                    350,
+                    860
+                ]
+            ]
+        },
+        {
+            "name": "tree_line_right",
+            "type": "vegetation",
+            "bbox_topdown": [
+                [
+                    880,
+                    430
+                ],
+                [
+                    1280,
+                    430
+                ],
+                [
+                    1280,
+                    650
+                ],
+                [
+                    880,
+                    650
+                ]
+            ]
+        }
+    ],
+    "semantic_relationships": [
+        {
+            "relation": "located_in",
+            "subject": "white_van",
+            "object": "road_surface"
+        },
+        {
+            "relation": "located_in",
+            "subject": "truck_behind",
+            "object": "road_surface"
+        },
+        {
+            "relation": "located_in",
+            "subject": "car_in_right_lane",
+            "object": "road_surface"
+        },
+        {
+            "relation": "located_in",
+            "subject": "pedestrian_left",
+            "object": "construction_zone"
+        },
+        {
+            "relation": "located_in",
+            "subject": "pedestrian_center",
+            "object": "crosswalk_area"
+        },
+        {
+            "relation": "located_in",
+            "subject": "pedestrian_right",
+            "object": "construction_zone"
+        },
+        {
+            "relation": "member_of",
+            "subject": "pedestrian_left",
+            "object": "construction_workers_bundle"
+        },
+        {
+            "relation": "member_of",
+            "subject": "pedestrian_center",
+            "object": "construction_workers_bundle"
+        },
+        {
+            "relation": "member_of",
+            "subject": "pedestrian_right",
+            "object": "construction_workers_bundle"
+        },
+        {
+            "relation": "near",
+            "subject": "pedestrian_center",
+            "object": "crosswalk_stripe_left"
+        },
+        {
+            "relation": "near",
+            "subject": "pedestrian_center",
+            "object": "crosswalk_stripe_right"
+        },
+        {
+            "relation": "faces",
+            "subject": "traffic_light_left",
+            "object": "road_surface"
+        },
+        {
+            "relation": "faces",
+            "subject": "traffic_light_center",
+            "object": "road_surface"
+        },
+        {
+            "relation": "faces",
+            "subject": "traffic_light_right",
+            "object": "road_surface"
+        },
+        {
+            "relation": "aligned_with",
+            "subject": "crosswalk_area",
+            "object": "road_surface"
+        },
+        {
+            "relation": "adjacent_to",
+            "subject": "sidewalk_left",
+            "object": "road_surface"
+        },
+        {
+            "relation": "adjacent_to",
+            "subject": "sidewalk_right",
+            "object": "road_surface"
+        },
+        {
+            "relation": "background_region",
+            "subject": "tree_line_right",
+            "object": "current_location"
+        }
+    ],
+    "current_location": "current_location",
+    "plans": [
+        {
+            "plan_name": "proceed_through_intersection",
+            "target_region": "crosswalk_area",
+            "avoid_entities": [
+                "traffic_light_left",
+                "traffic_light_center",
+                "traffic_light_right"
+            ]
+        }
+    ]
+}

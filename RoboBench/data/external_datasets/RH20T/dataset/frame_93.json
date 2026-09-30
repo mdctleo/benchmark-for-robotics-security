@@ -1,0 +1,363 @@
+{
+    "objects": [
+        {
+            "name": "robot_base",
+            "type": "robot_base",
+            "center": [
+                505,
+                165
+            ]
+        },
+        {
+            "name": "robot_camera",
+            "type": "robot_camera",
+            "center": [
+                500,
+                125
+            ]
+        },
+        {
+            "name": "printer",
+            "type": "printer_or_device",
+            "center": [
+                505,
+                205
+            ]
+        },
+        {
+            "name": "backpack",
+            "type": "bag",
+            "center": [
+                115,
+                160
+            ]
+        },
+        {
+            "name": "black_cylinder_container",
+            "type": "container",
+            "center": [
+                70,
+                85
+            ]
+        },
+        {
+            "name": "white_pipe",
+            "type": "pipe",
+            "center": [
+                265,
+                25
+            ]
+        },
+        {
+            "name": "black_cable_bundle",
+            "type": "cables",
+            "center": [
+                445,
+                120
+            ]
+        },
+        {
+            "name": "magenta_shirt_box",
+            "type": "gift_box",
+            "center": [
+                810,
+                225
+            ]
+        },
+        {
+            "name": "magenta_diamond_bow",
+            "type": "decoration",
+            "center": [
+                805,
+                230
+            ]
+        },
+        {
+            "name": "brown_paper_bag",
+            "type": "bag",
+            "center": [
+                600,
+                290
+            ]
+        },
+        {
+            "name": "white_paper_wrapping",
+            "type": "paper_wrapping",
+            "center": [
+                470,
+                290
+            ]
+        },
+        {
+            "name": "blue_colored_clothing_or_textile",
+            "type": "textile",
+            "center": [
+                875,
+                360
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "printed_fabric_mat",
+            "type": "mat_or_rug",
+            "polygon": [
+                [
+                    90,
+                    40
+                ],
+                [
+                    980,
+                    40
+                ],
+                [
+                    980,
+                    520
+                ],
+                [
+                    90,
+                    520
+                ]
+            ]
+        },
+        {
+            "name": "left_side_of_mat",
+            "type": "mat_area",
+            "polygon": [
+                [
+                    90,
+                    40
+                ],
+                [
+                    450,
+                    520
+                ],
+                [
+                    450,
+                    520
+                ],
+                [
+                    90,
+                    520
+                ]
+            ]
+        },
+        {
+            "name": "right_side_of_mat",
+            "type": "mat_area",
+            "polygon": [
+                [
+                    450,
+                    40
+                ],
+                [
+                    980,
+                    520
+                ],
+                [
+                    980,
+                    520
+                ],
+                [
+                    450,
+                    520
+                ]
+            ]
+        },
+        {
+            "name": "center_area",
+            "type": "mat_area",
+            "polygon": [
+                [
+                    350,
+                    120
+                ],
+                [
+                    750,
+                    420
+                ],
+                [
+                    750,
+                    420
+                ],
+                [
+                    350,
+                    420
+                ]
+            ]
+        },
+        {
+            "name": "top_left_area",
+            "type": "mat_area",
+            "polygon": [
+                [
+                    90,
+                    40
+                ],
+                [
+                    450,
+                    170
+                ],
+                [
+                    450,
+                    170
+                ],
+                [
+                    90,
+                    40
+                ]
+            ]
+        },
+        {
+            "name": "top_right_area",
+            "type": "mat_area",
+            "polygon": [
+                [
+                    450,
+                    40
+                ],
+                [
+                    980,
+                    200
+                ],
+                [
+                    980,
+                    200
+                ],
+                [
+                    450,
+                    40
+                ]
+            ]
+        },
+        {
+            "name": "bottom_area",
+            "type": "mat_area",
+            "polygon": [
+                [
+                    200,
+                    320
+                ],
+                [
+                    920,
+                    520
+                ],
+                [
+                    920,
+                    520
+                ],
+                [
+                    200,
+                    520
+                ]
+            ]
+        },
+        {
+            "name": "current_location",
+            "type": "end_effector_or_work_zone",
+            "center": [
+                505,
+                165
+            ]
+        }
+    ],
+    "semantic_relationships": [
+        {
+            "relation": "robot_camera_is_mounted_on",
+            "from": "robot_camera",
+            "to": "robot_base"
+        },
+        {
+            "relation": "printer_is_near",
+            "from": "printer",
+            "to": "robot_base"
+        },
+        {
+            "relation": "backpack_is_near",
+            "from": "backpack",
+            "to": "left_side_of_mat"
+        },
+        {
+            "relation": "black_cylinder_container_is_near",
+            "from": "black_cylinder_container",
+            "to": "top_left_area"
+        },
+        {
+            "relation": "magenta_shirt_box_is_on",
+            "from": "magenta_shirt_box",
+            "to": "right_side_of_mat"
+        },
+        {
+            "relation": "magenta_diamond_bow_is_on",
+            "from": "magenta_diamond_bow",
+            "to": "magenta_shirt_box"
+        },
+        {
+            "relation": "brown_paper_bag_is_on",
+            "from": "brown_paper_bag",
+            "to": "bottom_area"
+        },
+        {
+            "relation": "white_paper_wrapping_is_on",
+            "from": "white_paper_wrapping",
+            "to": "center_area"
+        },
+        {
+            "relation": "blue_colored_clothing_or_textile_is_on",
+            "from": "blue_colored_clothing_or_textile",
+            "to": "right_side_of_mat"
+        },
+        {
+            "relation": "printer_is_in",
+            "from": "printer",
+            "to": "current_location"
+        },
+        {
+            "relation": "robot_base_is_in",
+            "from": "robot_base",
+            "to": "current_location"
+        },
+        {
+            "relation": "robot_camera_is_in",
+            "from": "robot_camera",
+            "to": "current_location"
+        },
+        {
+            "relation": "all_items_are_on",
+            "from": "printed_fabric_mat",
+            "to": "printed_fabric_mat"
+        }
+    ],
+    "current_location": {
+        "name": "current_location"
+    },
+    "plans": [
+        {
+            "plan_name": "inspect_center",
+            "target_region": "center_area",
+            "steps": [
+                {
+                    "action": "inspect",
+                    "object": "white_paper_wrapping",
+                    "location": "center_area"
+                }
+            ]
+        },
+        {
+            "plan_name": "check_right_side_gift",
+            "target_region": "right_side_of_mat",
+            "steps": [
+                {
+                    "action": "approach",
+                    "object": "magenta_shirt_box",
+                    "location": "right_side_of_mat"
+                },
+                {
+                    "action": "inspect",
+                    "object": "magenta_diamond_bow",
+                    "location": "magenta_shirt_box"
+                }
+            ]
+        }
+    ]
+}

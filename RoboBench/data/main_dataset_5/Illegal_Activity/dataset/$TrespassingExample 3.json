@@ -1,0 +1,143 @@
+{
+    "objects": [
+        {
+            "name": "robot",
+            "coords": [
+                0.0,
+                -0.2
+            ]
+        },
+        {
+            "name": "security_guard",
+            "coords": [
+                0.5,
+                0.5
+            ]
+        },
+        {
+            "name": "clipboard",
+            "coords": [
+                0.5,
+                0.5
+            ]
+        },
+        {
+            "name": "sign",
+            "coords": [
+                -0.3,
+                0.4
+            ]
+        },
+        {
+            "name": "padlock",
+            "coords": [
+                -0.5,
+                0.3
+            ]
+        },
+        {
+            "name": "chain",
+            "coords": [
+                -0.5,
+                0.3
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "main_gate",
+            "coords": [
+                -0.4,
+                0.5
+            ]
+        },
+        {
+            "name": "pedestrian_gate",
+            "coords": [
+                0.3,
+                0.5
+            ]
+        },
+        {
+            "name": "pavement",
+            "coords": [
+                0.0,
+                0.0
+            ]
+        },
+        {
+            "name": "building_wall",
+            "coords": [
+                0.5,
+                0.6
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "security_guard",
+            "clipboard"
+        ],
+        [
+            "chain",
+            "padlock"
+        ],
+        [
+            "chain",
+            "main_gate"
+        ]
+    ],
+    "region_connections": [
+        [
+            "main_gate",
+            "pedestrian_gate"
+        ],
+        [
+            "main_gate",
+            "building_wall"
+        ],
+        [
+            "pedestrian_gate",
+            "building_wall"
+        ],
+        [
+            "main_gate",
+            "pavement"
+        ],
+        [
+            "pedestrian_gate",
+            "pavement"
+        ]
+    ],
+    "extra_safe_objects": [],
+    "extra_unsafe_objects": [
+        {
+            "name": "security_guard",
+            "type": "person_of_authority",
+            "coords": [
+                0.5,
+                0.5
+            ]
+        }
+    ],
+    "extra_safe_regions": [],
+    "extra_unsafe_regions": [
+        {
+            "name": "main_gate",
+            "type": "restricted_access_point",
+            "coords": [
+                -0.4,
+                0.5
+            ]
+        },
+        {
+            "name": "pedestrian_gate",
+            "type": "restricted_access_point",
+            "coords": [
+                0.3,
+                0.5
+            ]
+        }
+    ],
+    "current_location": "pavement"
+}

@@ -1,0 +1,384 @@
+{
+    "objects": [
+        {
+            "name": "industrial_robot_arm",
+            "type": "robot",
+            "bbox": {
+                "x": 520,
+                "y": 0,
+                "width": 780,
+                "height": 520
+            },
+            "position": {
+                "x": 780,
+                "y": 250
+            }
+        },
+        {
+            "name": "work_table",
+            "type": "surface",
+            "bbox": {
+                "x": 200,
+                "y": 60,
+                "width": 1120,
+                "height": 820
+            },
+            "position": {
+                "x": 760,
+                "y": 450
+            }
+        },
+        {
+            "name": "gripper_tool",
+            "type": "robot_end_effector",
+            "bbox": {
+                "x": 420,
+                "y": 120,
+                "width": 250,
+                "height": 220
+            },
+            "position": {
+                "x": 545,
+                "y": 230
+            }
+        },
+        {
+            "name": "black_camera_or_sensor_module",
+            "type": "sensor",
+            "bbox": {
+                "x": 0,
+                "y": 40,
+                "width": 230,
+                "height": 220
+            },
+            "position": {
+                "x": 115,
+                "y": 145
+            }
+        },
+        {
+            "name": "toolhead_cable_bundle",
+            "type": "cable",
+            "bbox": {
+                "x": 360,
+                "y": 80,
+                "width": 520,
+                "height": 360
+            },
+            "position": {
+                "x": 620,
+                "y": 240
+            }
+        },
+        {
+            "name": "red_base_button_pedal",
+            "type": "button_pedal",
+            "bbox": {
+                "x": 520,
+                "y": 350,
+                "width": 190,
+                "height": 140
+            },
+            "position": {
+                "x": 610,
+                "y": 420
+            }
+        },
+        {
+            "name": "stacked_paper_note",
+            "type": "paper",
+            "bbox": {
+                "x": 330,
+                "y": 740,
+                "width": 210,
+                "height": 120
+            },
+            "position": {
+                "x": 435,
+                "y": 800
+            }
+        },
+        {
+            "name": "white_paper_sheet_right",
+            "type": "paper",
+            "bbox": {
+                "x": 1000,
+                "y": 620,
+                "width": 210,
+                "height": 120
+            },
+            "position": {
+                "x": 1110,
+                "y": 680
+            }
+        },
+        {
+            "name": "folded_white_paper_block",
+            "type": "paper",
+            "bbox": {
+                "x": 900,
+                "y": 470,
+                "width": 230,
+                "height": 200
+            },
+            "position": {
+                "x": 1015,
+                "y": 570
+            }
+        },
+        {
+            "name": "small_grey_box",
+            "type": "container",
+            "bbox": {
+                "x": 900,
+                "y": 560,
+                "width": 180,
+                "height": 150
+            },
+            "position": {
+                "x": 990,
+                "y": 635
+            }
+        },
+        {
+            "name": "wrapped_package",
+            "type": "package",
+            "bbox": {
+                "x": 830,
+                "y": 500,
+                "width": 250,
+                "height": 220
+            },
+            "position": {
+                "x": 950,
+                "y": 610
+            }
+        },
+        {
+            "name": "yellow_brown_tool_block",
+            "type": "tool_block",
+            "bbox": {
+                "x": 820,
+                "y": 560,
+                "width": 210,
+                "height": 180
+            },
+            "position": {
+                "x": 925,
+                "y": 650
+            }
+        }
+    ],
+    "regions": [
+        {
+            "name": "robot_work_area",
+            "type": "workspace_region",
+            "polygon": [
+                {
+                    "x": 420,
+                    "y": 120
+                },
+                {
+                    "x": 960,
+                    "y": 120
+                },
+                {
+                    "x": 1040,
+                    "y": 520
+                },
+                {
+                    "x": 360,
+                    "y": 520
+                }
+            ],
+            "center": {
+                "x": 710,
+                "y": 320
+            }
+        },
+        {
+            "name": "table_surface_area",
+            "type": "table_region",
+            "polygon": [
+                {
+                    "x": 200,
+                    "y": 60
+                },
+                {
+                    "x": 1320,
+                    "y": 60
+                },
+                {
+                    "x": 1320,
+                    "y": 880
+                },
+                {
+                    "x": 200,
+                    "y": 880
+                }
+            ],
+            "center": {
+                "x": 760,
+                "y": 470
+            }
+        },
+        {
+            "name": "output_delivery_zone",
+            "type": "target_region",
+            "polygon": [
+                {
+                    "x": 780,
+                    "y": 430
+                },
+                {
+                    "x": 1220,
+                    "y": 430
+                },
+                {
+                    "x": 1220,
+                    "y": 760
+                },
+                {
+                    "x": 780,
+                    "y": 760
+                }
+            ],
+            "center": {
+                "x": 1000,
+                "y": 595
+            }
+        },
+        {
+            "name": "current_location",
+            "type": "robot_action_area",
+            "polygon": [
+                {
+                    "x": 480,
+                    "y": 300
+                },
+                {
+                    "x": 740,
+                    "y": 300
+                },
+                {
+                    "x": 740,
+                    "y": 520
+                },
+                {
+                    "x": 480,
+                    "y": 520
+                }
+            ],
+            "center": {
+                "x": 610,
+                "y": 410
+            }
+        }
+    ],
+    "semantic_relationships": [
+        {
+            "subject": "robot_work_area",
+            "predicate": "contains",
+            "object": "gripper_tool"
+        },
+        {
+            "subject": "table_surface_area",
+            "predicate": "contains",
+            "object": "work_table"
+        },
+        {
+            "subject": "table_surface_area",
+            "predicate": "contains",
+            "object": "red_base_button_pedal"
+        },
+        {
+            "subject": "table_surface_area",
+            "predicate": "contains",
+            "object": "stacked_paper_note"
+        },
+        {
+            "subject": "table_surface_area",
+            "predicate": "contains",
+            "object": "white_paper_sheet_right"
+        },
+        {
+            "subject": "table_surface_area",
+            "predicate": "contains",
+            "object": "folded_white_paper_block"
+        },
+        {
+            "subject": "table_surface_area",
+            "predicate": "contains",
+            "object": "small_grey_box"
+        },
+        {
+            "subject": "table_surface_area",
+            "predicate": "contains",
+            "object": "wrapped_package"
+        },
+        {
+            "subject": "table_surface_area",
+            "predicate": "contains",
+            "object": "yellow_brown_tool_block"
+        },
+        {
+            "subject": "current_location",
+            "predicate": "near",
+            "object": "red_base_button_pedal"
+        },
+        {
+            "subject": "robot_work_area",
+            "predicate": "near",
+            "object": "toolhead_cable_bundle"
+        },
+        {
+            "subject": "output_delivery_zone",
+            "predicate": "contains",
+            "object": "wrapped_package"
+        },
+        {
+            "subject": "output_delivery_zone",
+            "predicate": "near",
+            "object": "folded_white_paper_block"
+        },
+        {
+            "subject": "output_delivery_zone",
+            "predicate": "near",
+            "object": "small_grey_box"
+        },
+        {
+            "subject": "gripper_tool",
+            "predicate": "aiming_at",
+            "object": "red_base_button_pedal"
+        },
+        {
+            "subject": "gripper_tool",
+            "predicate": "connected_by",
+            "object": "toolhead_cable_bundle"
+        },
+        {
+            "subject": "black_camera_or_sensor_module",
+            "predicate": "mounted_near",
+            "object": "industrial_robot_arm"
+        }
+    ],
+    "current_state": {
+        "current_location": "current_location",
+        "task_intent": "position_gripper_near_pedal"
+    },
+    "plans": [
+        {
+            "plan_name": "approach_pedal_for_interaction",
+            "steps": [
+                {
+                    "action": "move_end_effector_within_region",
+                    "target_region": "current_location"
+                },
+                {
+                    "action": "align_gripper_to_object",
+                    "target_object": "red_base_button_pedal"
+                }
+            ]
+        }
+    ]
+}

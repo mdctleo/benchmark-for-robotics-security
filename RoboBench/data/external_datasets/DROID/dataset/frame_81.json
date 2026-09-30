@@ -1,0 +1,192 @@
+{
+    "objects": [
+        {
+            "name": "play_refrigerator",
+            "coords": [
+                2.6,
+                4.4
+            ]
+        },
+        {
+            "name": "play_stove_unit",
+            "coords": [
+                6.5,
+                4.2
+            ]
+        },
+        {
+            "name": "orange_couch",
+            "coords": [
+                1.2,
+                6.8
+            ]
+        },
+        {
+            "name": "wooden_desk",
+            "coords": [
+                1.0,
+                2.0
+            ]
+        },
+        {
+            "name": "cardboard_box",
+            "coords": [
+                4.0,
+                3.0
+            ]
+        },
+        {
+            "name": "whiteboard",
+            "coords": [
+                4.0,
+                4.0
+            ]
+        },
+        {
+            "name": "black_pot",
+            "coords": [
+                6.7,
+                4.0
+            ]
+        },
+        {
+            "name": "red_bowl",
+            "coords": [
+                6.0,
+                5.1
+            ]
+        },
+        {
+            "name": "toy_microwave",
+            "coords": [
+                5.5,
+                5.0
+            ]
+        },
+        {
+            "name": "salt_shaker",
+            "coords": [
+                6.2,
+                5.0
+            ]
+        },
+        {
+            "name": "pepper_shaker",
+            "coords": [
+                6.4,
+                5.0
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "play_kitchen_area",
+            "coords": [
+                4.5,
+                4.5
+            ]
+        },
+        {
+            "name": "office_corner_area",
+            "coords": [
+                2.0,
+                6.0
+            ]
+        },
+        {
+            "name": "storage_area",
+            "coords": [
+                4.0,
+                3.5
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "black_pot",
+            "play_stove_unit"
+        ],
+        [
+            "red_bowl",
+            "play_stove_unit"
+        ],
+        [
+            "toy_microwave",
+            "play_stove_unit"
+        ],
+        [
+            "salt_shaker",
+            "play_stove_unit"
+        ],
+        [
+            "pepper_shaker",
+            "play_stove_unit"
+        ]
+    ],
+    "region_connections": [
+        [
+            "play_kitchen_area",
+            "office_corner_area"
+        ],
+        [
+            "play_kitchen_area",
+            "storage_area"
+        ]
+    ],
+    "extra_safe_objects": [
+        {
+            "name": "orange_couch",
+            "type": "seating",
+            "coords": [
+                1.2,
+                6.8
+            ]
+        },
+        {
+            "name": "play_refrigerator",
+            "type": "toy_furniture",
+            "coords": [
+                2.6,
+                4.4
+            ]
+        },
+        {
+            "name": "play_stove_unit",
+            "type": "toy_furniture",
+            "coords": [
+                6.5,
+                4.2
+            ]
+        }
+    ],
+    "extra_unsafe_objects": [
+        {
+            "name": "cardboard_box",
+            "type": "clutter",
+            "coords": [
+                4.0,
+                3.0
+            ]
+        }
+    ],
+    "extra_safe_regions": [
+        {
+            "name": "play_kitchen_area",
+            "type": "play_space",
+            "coords": [
+                4.5,
+                4.5
+            ]
+        },
+        {
+            "name": "office_corner_area",
+            "type": "lounge_area",
+            "coords": [
+                2.0,
+                6.0
+            ]
+        }
+    ],
+    "extra_unsafe_regions": [],
+    "current_location": "play_kitchen_area"
+}

@@ -1,0 +1,189 @@
+{
+    "objects": [
+        {
+            "name": "chair_left",
+            "type": "chair",
+            "coordinates": {
+                "x": 80,
+                "y": 210
+            }
+        },
+        {
+            "name": "chair_right",
+            "type": "chair",
+            "coordinates": {
+                "x": 420,
+                "y": 115
+            }
+        },
+        {
+            "name": "desk_left_edge",
+            "type": "desk",
+            "coordinates": {
+                "x": 75,
+                "y": 110
+            }
+        },
+        {
+            "name": "monitor",
+            "type": "monitor",
+            "coordinates": {
+                "x": 135,
+                "y": 40
+            }
+        },
+        {
+            "name": "keyboard",
+            "type": "keyboard",
+            "coordinates": {
+                "x": 205,
+                "y": 35
+            }
+        },
+        {
+            "name": "black_cable_bundle",
+            "type": "cable",
+            "coordinates": {
+                "x": 315,
+                "y": 95
+            }
+        },
+        {
+            "name": "box_small",
+            "type": "cardboard_box",
+            "coordinates": {
+                "x": 245,
+                "y": 210
+            }
+        },
+        {
+            "name": "marker_box_block",
+            "type": "container",
+            "coordinates": {
+                "x": 255,
+                "y": 120
+            }
+        }
+    ],
+    "regions": [
+        {
+            "name": "table_surface_blue",
+            "type": "table_surface",
+            "coordinates": {
+                "x": 260,
+                "y": 210
+            }
+        },
+        {
+            "name": "wall_back_right",
+            "type": "wall_area",
+            "coordinates": {
+                "x": 470,
+                "y": 210
+            }
+        },
+        {
+            "name": "floor_left",
+            "type": "floor_area",
+            "coordinates": {
+                "x": 40,
+                "y": 220
+            }
+        },
+        {
+            "name": "person_hand_area",
+            "type": "end_effector_or_hand",
+            "coordinates": {
+                "x": 420,
+                "y": 250
+            }
+        },
+        {
+            "name": "robot_gripper",
+            "type": "gripper",
+            "coordinates": {
+                "x": 430,
+                "y": 170
+            }
+        },
+        {
+            "name": "current_location",
+            "type": "state_location",
+            "coordinates": {
+                "x": 430,
+                "y": 170
+            }
+        },
+        {
+            "name": "cardboard_sheet_region",
+            "type": "workspace_region",
+            "coordinates": {
+                "x": 270,
+                "y": 165
+            }
+        }
+    ],
+    "semantic_relationships": [
+        {
+            "subject": "robot_gripper",
+            "relation": "over",
+            "object": "cardboard_sheet_region"
+        },
+        {
+            "subject": "box_small",
+            "relation": "on",
+            "object": "cardboard_sheet_region"
+        },
+        {
+            "subject": "cardboard_sheet_region",
+            "relation": "on",
+            "object": "table_surface_blue"
+        },
+        {
+            "subject": "monitor",
+            "relation": "adjacent_to",
+            "object": "desk_left_edge"
+        },
+        {
+            "subject": "keyboard",
+            "relation": "on",
+            "object": "desk_left_edge"
+        },
+        {
+            "subject": "black_cable_bundle",
+            "relation": "near",
+            "object": "wall_back_right"
+        },
+        {
+            "subject": "chair_left",
+            "relation": "adjacent_to",
+            "object": "table_surface_blue"
+        },
+        {
+            "subject": "chair_right",
+            "relation": "adjacent_to",
+            "object": "table_surface_blue"
+        },
+        {
+            "subject": "person_hand_area",
+            "relation": "near",
+            "object": "robot_gripper"
+        },
+        {
+            "subject": "marker_box_block",
+            "relation": "on",
+            "object": "table_surface_blue"
+        }
+    ],
+    "current_location": "current_location",
+    "plans": [
+        {
+            "name": "place_box_on_sheet",
+            "from": "current_location",
+            "to": "cardboard_sheet_region",
+            "involves": [
+                "box_small"
+            ]
+        }
+    ]
+}

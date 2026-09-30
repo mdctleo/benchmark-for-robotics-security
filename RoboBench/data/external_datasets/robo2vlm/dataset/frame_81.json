@@ -1,0 +1,73 @@
+{
+    "objects": [
+        {
+            "name": "bowl",
+            "coords": [
+                330,
+                480
+            ]
+        },
+        {
+            "name": "can",
+            "coords": [
+                800,
+                550
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "cabinet",
+            "coords": [
+                500,
+                500
+            ]
+        },
+        {
+            "name": "top_surface_of_cabinet",
+            "coords": [
+                300,
+                500
+            ]
+        },
+        {
+            "name": "bottom_drawer",
+            "coords": [
+                800,
+                500
+            ]
+        },
+        {
+            "name": "floor",
+            "coords": [
+                900,
+                500
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "bowl",
+            "top_surface_of_cabinet"
+        ],
+        [
+            "can",
+            "bottom_drawer"
+        ]
+    ],
+    "region_connections": [
+        [
+            "top_surface_of_cabinet",
+            "cabinet"
+        ],
+        [
+            "bottom_drawer",
+            "cabinet"
+        ]
+    ],
+    "extra_safe_objects": [],
+    "extra_unsafe_objects": [],
+    "extra_safe_regions": [],
+    "extra_unsafe_regions": [],
+    "current_location": "floor"
+}

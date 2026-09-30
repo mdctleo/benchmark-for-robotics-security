@@ -1,0 +1,340 @@
+{
+    "objects": [
+        {
+            "name": "car_left",
+            "type": "vehicle",
+            "bbox_topdown": [
+                [
+                    120,
+                    420
+                ],
+                [
+                    240,
+                    420
+                ],
+                [
+                    255,
+                    560
+                ],
+                [
+                    95,
+                    560
+                ]
+            ]
+        },
+        {
+            "name": "road_surface",
+            "type": "road",
+            "bbox_topdown": [
+                [
+                    0,
+                    430
+                ],
+                [
+                    1020,
+                    430
+                ],
+                [
+                    1020,
+                    720
+                ],
+                [
+                    0,
+                    720
+                ]
+            ]
+        },
+        {
+            "name": "center_lane_marker",
+            "type": "road_marking",
+            "bbox_topdown": [
+                [
+                    510,
+                    520
+                ],
+                [
+                    530,
+                    520
+                ],
+                [
+                    585,
+                    700
+                ],
+                [
+                    565,
+                    700
+                ]
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "intersection_area",
+            "type": "intersection",
+            "bbox_topdown": [
+                [
+                    380,
+                    430
+                ],
+                [
+                    650,
+                    430
+                ],
+                [
+                    760,
+                    710
+                ],
+                [
+                    260,
+                    710
+                ]
+            ]
+        },
+        {
+            "name": "traffic_light_stop_line",
+            "type": "stop_line_region",
+            "bbox_topdown": [
+                [
+                    495,
+                    485
+                ],
+                [
+                    525,
+                    485
+                ],
+                [
+                    535,
+                    510
+                ],
+                [
+                    505,
+                    510
+                ]
+            ]
+        },
+        {
+            "name": "sidewalk_right",
+            "type": "pedestrian_area",
+            "bbox_topdown": [
+                [
+                    760,
+                    490
+                ],
+                [
+                    1020,
+                    490
+                ],
+                [
+                    1020,
+                    720
+                ],
+                [
+                    820,
+                    720
+                ]
+            ]
+        },
+        {
+            "name": "sidewalk_left",
+            "type": "pedestrian_area",
+            "bbox_topdown": [
+                [
+                    0,
+                    490
+                ],
+                [
+                    260,
+                    490
+                ],
+                [
+                    205,
+                    720
+                ],
+                [
+                    0,
+                    720
+                ]
+            ]
+        },
+        {
+            "name": "grass_right",
+            "type": "vegetation_area",
+            "bbox_topdown": [
+                [
+                    820,
+                    510
+                ],
+                [
+                    1020,
+                    510
+                ],
+                [
+                    1020,
+                    720
+                ],
+                [
+                    880,
+                    720
+                ]
+            ]
+        },
+        {
+            "name": "grass_left",
+            "type": "vegetation_area",
+            "bbox_topdown": [
+                [
+                    0,
+                    510
+                ],
+                [
+                    210,
+                    510
+                ],
+                [
+                    210,
+                    720
+                ],
+                [
+                    0,
+                    720
+                ]
+            ]
+        },
+        {
+            "name": "forest_background",
+            "type": "background_environment",
+            "bbox_topdown": [
+                [
+                    0,
+                    0
+                ],
+                [
+                    1020,
+                    0
+                ],
+                [
+                    1020,
+                    430
+                ],
+                [
+                    0,
+                    430
+                ]
+            ]
+        },
+        {
+            "name": "road_ahead",
+            "type": "drivable_region",
+            "bbox_topdown": [
+                [
+                    330,
+                    430
+                ],
+                [
+                    690,
+                    430
+                ],
+                [
+                    760,
+                    710
+                ],
+                [
+                    260,
+                    710
+                ]
+            ]
+        },
+        {
+            "name": "lane_position_left_of_center",
+            "type": "lane_position_region",
+            "bbox_topdown": [
+                [
+                    360,
+                    500
+                ],
+                [
+                    470,
+                    500
+                ],
+                [
+                    520,
+                    705
+                ],
+                [
+                    410,
+                    705
+                ]
+            ]
+        }
+    ],
+    "semantic_relationships": [
+        {
+            "subject": "car_left",
+            "relation": "is_on",
+            "object": "road_surface"
+        },
+        {
+            "subject": "car_left",
+            "relation": "is_left_of",
+            "object": "road_ahead"
+        },
+        {
+            "subject": "road_ahead",
+            "relation": "leads_to",
+            "object": "intersection_area"
+        },
+        {
+            "subject": "intersection_area",
+            "relation": "contains",
+            "object": "traffic_light_stop_line"
+        },
+        {
+            "subject": "road_surface",
+            "relation": "divides",
+            "object": "sidewalk_left"
+        },
+        {
+            "subject": "road_surface",
+            "relation": "divides",
+            "object": "sidewalk_right"
+        },
+        {
+            "subject": "sidewalk_right",
+            "relation": "adjacent_to",
+            "object": "grass_right"
+        },
+        {
+            "subject": "sidewalk_left",
+            "relation": "adjacent_to",
+            "object": "grass_left"
+        },
+        {
+            "subject": "forest_background",
+            "relation": "surrounds_road_environment_of",
+            "object": "road_surface"
+        },
+        {
+            "subject": "center_lane_marker",
+            "relation": "is_within",
+            "object": "road_ahead"
+        }
+    ],
+    "current_location": "lane_position_left_of_center",
+    "plans": [
+        {
+            "plan_name": "approach_intersection",
+            "target_region": "intersection_area",
+            "expected_semantics": [
+                "road_ahead leads_to intersection_area",
+                "intersection_area contains traffic_light_stop_line"
+            ]
+        },
+        {
+            "plan_name": "stop_at_signal_line",
+            "target_region": "traffic_light_stop_line",
+            "expected_semantics": [
+                "intersection_area contains traffic_light_stop_line"
+            ]
+        }
+    ]
+}

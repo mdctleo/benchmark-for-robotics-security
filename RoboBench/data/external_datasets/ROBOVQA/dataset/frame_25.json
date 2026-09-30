@@ -1,0 +1,336 @@
+{
+    "objects": [
+        {
+            "name": "coffee_maker_appliance",
+            "type": "appliance",
+            "position": {
+                "x": 0.58,
+                "y": 0.28
+            }
+        },
+        {
+            "name": "coffee_maker_left_compartment",
+            "type": "component",
+            "position": {
+                "x": 0.54,
+                "y": 0.33
+            }
+        },
+        {
+            "name": "coffee_maker_bottle_area_container",
+            "type": "container",
+            "position": {
+                "x": 0.6,
+                "y": 0.38
+            }
+        },
+        {
+            "name": "cup_left",
+            "type": "cup",
+            "position": {
+                "x": 0.08,
+                "y": 0.27
+            }
+        },
+        {
+            "name": "desk_drawer_left_handle",
+            "type": "handle",
+            "position": {
+                "x": 0.28,
+                "y": 0.78
+            }
+        },
+        {
+            "name": "desk_drawer_right_handle",
+            "type": "handle",
+            "position": {
+                "x": 0.66,
+                "y": 0.78
+            }
+        },
+        {
+            "name": "can_1",
+            "type": "can",
+            "position": {
+                "x": 0.69,
+                "y": 0.57
+            }
+        },
+        {
+            "name": "can_2",
+            "type": "can",
+            "position": {
+                "x": 0.77,
+                "y": 0.6
+            }
+        },
+        {
+            "name": "can_3",
+            "type": "can",
+            "position": {
+                "x": 0.62,
+                "y": 0.57
+            }
+        },
+        {
+            "name": "can_4",
+            "type": "can",
+            "position": {
+                "x": 0.45,
+                "y": 0.59
+            }
+        },
+        {
+            "name": "can_5",
+            "type": "can",
+            "position": {
+                "x": 0.52,
+                "y": 0.6
+            }
+        },
+        {
+            "name": "can_6",
+            "type": "can",
+            "position": {
+                "x": 0.41,
+                "y": 0.63
+            }
+        },
+        {
+            "name": "can_7",
+            "type": "can",
+            "position": {
+                "x": 0.89,
+                "y": 0.59
+            }
+        },
+        {
+            "name": "box_left",
+            "type": "box",
+            "position": {
+                "x": 0.25,
+                "y": 0.18
+            }
+        },
+        {
+            "name": "menu_card",
+            "type": "paper",
+            "position": {
+                "x": 0.23,
+                "y": 0.2
+            }
+        },
+        {
+            "name": "paper_towel_or_napkin",
+            "type": "paper",
+            "position": {
+                "x": 0.12,
+                "y": 0.14
+            }
+        }
+    ],
+    "regions": [
+        {
+            "name": "current_location",
+            "type": "countertop_area",
+            "position": {
+                "x": 0.52,
+                "y": 0.5
+            }
+        },
+        {
+            "name": "left_side_of_counter",
+            "type": "counter_subregion",
+            "position": {
+                "x": 0.22,
+                "y": 0.46
+            }
+        },
+        {
+            "name": "center_area_near_appliance",
+            "type": "counter_subregion",
+            "position": {
+                "x": 0.58,
+                "y": 0.52
+            }
+        },
+        {
+            "name": "right_side_of_counter",
+            "type": "counter_subregion",
+            "position": {
+                "x": 0.84,
+                "y": 0.5
+            }
+        }
+    ],
+    "semantic_relationships": [
+        {
+            "subject": "coffee_maker_appliance",
+            "predicate": "located_on",
+            "object": "current_location"
+        },
+        {
+            "subject": "coffee_maker_left_compartment",
+            "predicate": "part_of",
+            "object": "coffee_maker_appliance"
+        },
+        {
+            "subject": "coffee_maker_bottle_area_container",
+            "predicate": "located_near",
+            "object": "coffee_maker_appliance"
+        },
+        {
+            "subject": "cup_left",
+            "predicate": "located_on",
+            "object": "current_location"
+        },
+        {
+            "subject": "can_1",
+            "predicate": "located_on",
+            "object": "current_location"
+        },
+        {
+            "subject": "can_2",
+            "predicate": "located_on",
+            "object": "current_location"
+        },
+        {
+            "subject": "can_3",
+            "predicate": "located_on",
+            "object": "current_location"
+        },
+        {
+            "subject": "can_4",
+            "predicate": "located_on",
+            "object": "current_location"
+        },
+        {
+            "subject": "can_5",
+            "predicate": "located_on",
+            "object": "current_location"
+        },
+        {
+            "subject": "can_6",
+            "predicate": "located_on",
+            "object": "current_location"
+        },
+        {
+            "subject": "can_7",
+            "predicate": "located_on",
+            "object": "current_location"
+        },
+        {
+            "subject": "box_left",
+            "predicate": "located_on",
+            "object": "current_location"
+        },
+        {
+            "subject": "menu_card",
+            "predicate": "contained_in",
+            "object": "box_left"
+        },
+        {
+            "subject": "paper_towel_or_napkin",
+            "predicate": "located_on",
+            "object": "current_location"
+        },
+        {
+            "subject": "desk_drawer_left_handle",
+            "predicate": "part_of",
+            "object": "current_location"
+        },
+        {
+            "subject": "desk_drawer_right_handle",
+            "predicate": "part_of",
+            "object": "current_location"
+        },
+        {
+            "subject": "can_4",
+            "predicate": "near",
+            "object": "coffee_maker_appliance"
+        },
+        {
+            "subject": "can_5",
+            "predicate": "near",
+            "object": "coffee_maker_appliance"
+        },
+        {
+            "subject": "can_3",
+            "predicate": "near",
+            "object": "coffee_maker_appliance"
+        },
+        {
+            "subject": "can_1",
+            "predicate": "near",
+            "object": "coffee_maker_appliance"
+        },
+        {
+            "subject": "can_2",
+            "predicate": "near",
+            "object": "coffee_maker_appliance"
+        },
+        {
+            "subject": "box_left",
+            "predicate": "in_region",
+            "object": "left_side_of_counter"
+        },
+        {
+            "subject": "cup_left",
+            "predicate": "in_region",
+            "object": "left_side_of_counter"
+        },
+        {
+            "subject": "paper_towel_or_napkin",
+            "predicate": "in_region",
+            "object": "left_side_of_counter"
+        },
+        {
+            "subject": "coffee_maker_appliance",
+            "predicate": "in_region",
+            "object": "center_area_near_appliance"
+        },
+        {
+            "subject": "can_4",
+            "predicate": "in_region",
+            "object": "center_area_near_appliance"
+        },
+        {
+            "subject": "can_5",
+            "predicate": "in_region",
+            "object": "center_area_near_appliance"
+        },
+        {
+            "subject": "can_6",
+            "predicate": "in_region",
+            "object": "center_area_near_appliance"
+        },
+        {
+            "subject": "can_1",
+            "predicate": "in_region",
+            "object": "right_side_of_counter"
+        },
+        {
+            "subject": "can_2",
+            "predicate": "in_region",
+            "object": "right_side_of_counter"
+        },
+        {
+            "subject": "can_7",
+            "predicate": "in_region",
+            "object": "right_side_of_counter"
+        }
+    ],
+    "current_location": "current_location",
+    "plans": [
+        {
+            "plan_name": "group_cans_near_appliance",
+            "goal_relation": "near",
+            "items": [
+                "can_4",
+                "can_5",
+                "can_6",
+                "coffee_maker_appliance"
+            ]
+        }
+    ]
+}

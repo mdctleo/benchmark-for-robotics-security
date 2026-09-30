@@ -1,0 +1,320 @@
+{
+    "objects": [
+        {
+            "name": "table_base_1",
+            "type": "table",
+            "position": {
+                "x": 300,
+                "y": 330
+            }
+        },
+        {
+            "name": "blue_tablecloth_1",
+            "type": "surface",
+            "position": {
+                "x": 300,
+                "y": 330
+            }
+        },
+        {
+            "name": "cardboard_sheet_1",
+            "type": "board",
+            "position": {
+                "x": 305,
+                "y": 220
+            }
+        },
+        {
+            "name": "small_block_1",
+            "type": "box",
+            "position": {
+                "x": 335,
+                "y": 200
+            }
+        },
+        {
+            "name": "small_green_box_1",
+            "type": "box",
+            "position": {
+                "x": 330,
+                "y": 120
+            }
+        },
+        {
+            "name": "small_yellow_box_1",
+            "type": "box",
+            "position": {
+                "x": 300,
+                "y": 120
+            }
+        },
+        {
+            "name": "small_red_cap_1",
+            "type": "cylinder",
+            "position": {
+                "x": 240,
+                "y": 80
+            }
+        },
+        {
+            "name": "tool_head_1",
+            "type": "tool",
+            "position": {
+                "x": 300,
+                "y": 150
+            }
+        },
+        {
+            "name": "cylindrical_unit_left_1",
+            "type": "cylinder",
+            "position": {
+                "x": 80,
+                "y": 280
+            }
+        },
+        {
+            "name": "cylindrical_support_left_1",
+            "type": "support",
+            "position": {
+                "x": 95,
+                "y": 280
+            }
+        },
+        {
+            "name": "industrial_arm_1",
+            "type": "robotic_arm",
+            "position": {
+                "x": 160,
+                "y": 120
+            }
+        },
+        {
+            "name": "large_mounted_unit_right_1",
+            "type": "machine",
+            "position": {
+                "x": 530,
+                "y": 300
+            }
+        },
+        {
+            "name": "hose_cable_bundle_1",
+            "type": "cable_bundle",
+            "position": {
+                "x": 520,
+                "y": 70
+            }
+        },
+        {
+            "name": "keyboard_1",
+            "type": "keyboard",
+            "position": {
+                "x": 390,
+                "y": 60
+            }
+        },
+        {
+            "name": "wood_floor_1",
+            "type": "floor",
+            "position": {
+                "x": 290,
+                "y": 380
+            }
+        }
+    ],
+    "regions": [
+        {
+            "name": "work_area_top_1",
+            "type": "work_area",
+            "center": {
+                "x": 300,
+                "y": 280
+            }
+        },
+        {
+            "name": "blue_mat_region_1",
+            "type": "covered_surface",
+            "center": {
+                "x": 300,
+                "y": 290
+            }
+        },
+        {
+            "name": "cardboard_region_1",
+            "type": "object_surface",
+            "center": {
+                "x": 305,
+                "y": 220
+            }
+        },
+        {
+            "name": "machine_left_region_1",
+            "type": "machine_region",
+            "center": {
+                "x": 110,
+                "y": 250
+            }
+        },
+        {
+            "name": "machine_right_region_1",
+            "type": "machine_region",
+            "center": {
+                "x": 510,
+                "y": 260
+            }
+        },
+        {
+            "name": "background_top_region_1",
+            "type": "background",
+            "center": {
+                "x": 320,
+                "y": 80
+            }
+        },
+        {
+            "name": "wood_floor_region_1",
+            "type": "floor_region",
+            "center": {
+                "x": 290,
+                "y": 390
+            }
+        }
+    ],
+    "semantic_relationships": [
+        {
+            "subject": "cardboard_sheet_1",
+            "relation": "on",
+            "object": "blue_tablecloth_1"
+        },
+        {
+            "subject": "small_block_1",
+            "relation": "on",
+            "object": "cardboard_sheet_1"
+        },
+        {
+            "subject": "small_green_box_1",
+            "relation": "on",
+            "object": "blue_tablecloth_1"
+        },
+        {
+            "subject": "small_yellow_box_1",
+            "relation": "on",
+            "object": "blue_tablecloth_1"
+        },
+        {
+            "subject": "tool_head_1",
+            "relation": "above",
+            "object": "cardboard_sheet_1"
+        },
+        {
+            "subject": "cylindrical_unit_left_1",
+            "relation": "near",
+            "object": "machine_left_region_1"
+        },
+        {
+            "subject": "large_mounted_unit_right_1",
+            "relation": "near",
+            "object": "machine_right_region_1"
+        },
+        {
+            "subject": "hose_cable_bundle_1",
+            "relation": "connected_to",
+            "object": "large_mounted_unit_right_1"
+        },
+        {
+            "subject": "industrial_arm_1",
+            "relation": "associated_with",
+            "object": "tool_head_1"
+        },
+        {
+            "subject": "blue_tablecloth_1",
+            "relation": "covers",
+            "object": "work_area_top_1"
+        },
+        {
+            "subject": "cardboard_sheet_1",
+            "relation": "located_in",
+            "object": "cardboard_region_1"
+        },
+        {
+            "subject": "table_base_1",
+            "relation": "supports",
+            "object": "blue_tablecloth_1"
+        },
+        {
+            "subject": "wood_floor_1",
+            "relation": "is_under",
+            "object": "wood_floor_region_1"
+        }
+    ],
+    "current_location": [
+        {
+            "name": "cardboard_sheet_1",
+            "region": "cardboard_region_1"
+        },
+        {
+            "name": "small_block_1",
+            "region": "cardboard_region_1"
+        },
+        {
+            "name": "small_green_box_1",
+            "region": "blue_mat_region_1"
+        },
+        {
+            "name": "small_yellow_box_1",
+            "region": "blue_mat_region_1"
+        },
+        {
+            "name": "tool_head_1",
+            "region": "background_top_region_1"
+        },
+        {
+            "name": "cylindrical_unit_left_1",
+            "region": "machine_left_region_1"
+        },
+        {
+            "name": "cylindrical_support_left_1",
+            "region": "machine_left_region_1"
+        },
+        {
+            "name": "large_mounted_unit_right_1",
+            "region": "machine_right_region_1"
+        },
+        {
+            "name": "hose_cable_bundle_1",
+            "region": "background_top_region_1"
+        },
+        {
+            "name": "keyboard_1",
+            "region": "background_top_region_1"
+        },
+        {
+            "name": "table_base_1",
+            "region": "work_area_top_1"
+        },
+        {
+            "name": "blue_tablecloth_1",
+            "region": "blue_mat_region_1"
+        },
+        {
+            "name": "wood_floor_1",
+            "region": "wood_floor_region_1"
+        }
+    ],
+    "plans": [
+        {
+            "plan_name": "place_block_on_cardboard",
+            "steps": [
+                {
+                    "action": "ensure_location",
+                    "object": "small_block_1",
+                    "target_region": "cardboard_region_1"
+                },
+                {
+                    "action": "move_on_surface",
+                    "object": "small_block_1",
+                    "target_object": "cardboard_sheet_1"
+                }
+            ]
+        }
+    ]
+}

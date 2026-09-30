@@ -1,0 +1,284 @@
+{
+    "objects": [
+        {
+            "name": "dining_table",
+            "type": "furniture",
+            "center": [
+                430,
+                420
+            ],
+            "bbox": [
+                280,
+                260,
+                590,
+                560
+            ]
+        },
+        {
+            "name": "fork_on_table_left",
+            "type": "utensil",
+            "center": [
+                440,
+                510
+            ],
+            "bbox": [
+                420,
+                495,
+                470,
+                540
+            ]
+        },
+        {
+            "name": "fork_on_table_middle",
+            "type": "utensil",
+            "center": [
+                490,
+                445
+            ],
+            "bbox": [
+                470,
+                430,
+                520,
+                480
+            ]
+        },
+        {
+            "name": "fork_on_table_right",
+            "type": "utensil",
+            "center": [
+                545,
+                390
+            ],
+            "bbox": [
+                520,
+                370,
+                570,
+                420
+            ]
+        },
+        {
+            "name": "cup_on_table",
+            "type": "dishware",
+            "center": [
+                585,
+                370
+            ],
+            "bbox": [
+                565,
+                330,
+                610,
+                415
+            ]
+        },
+        {
+            "name": "chair_seat_left",
+            "type": "furniture",
+            "center": [
+                860,
+                340
+            ],
+            "bbox": [
+                770,
+                220,
+                980,
+                520
+            ]
+        },
+        {
+            "name": "chair_back_right",
+            "type": "furniture",
+            "center": [
+                940,
+                230
+            ],
+            "bbox": [
+                860,
+                60,
+                1030,
+                320
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "floor_left_region",
+            "type": "floor",
+            "polygon": [
+                [
+                    0,
+                    0
+                ],
+                [
+                    880,
+                    0
+                ],
+                [
+                    880,
+                    900
+                ],
+                [
+                    0,
+                    900
+                ]
+            ]
+        },
+        {
+            "name": "table_surface_region",
+            "type": "surface",
+            "polygon": [
+                [
+                    280,
+                    260
+                ],
+                [
+                    590,
+                    260
+                ],
+                [
+                    590,
+                    560
+                ],
+                [
+                    280,
+                    560
+                ]
+            ]
+        },
+        {
+            "name": "door_entry_region",
+            "type": "wall_area",
+            "polygon": [
+                [
+                    0,
+                    140
+                ],
+                [
+                    280,
+                    140
+                ],
+                [
+                    280,
+                    360
+                ],
+                [
+                    0,
+                    360
+                ]
+            ]
+        },
+        {
+            "name": "bathroom_wall_right_region",
+            "type": "wall_area",
+            "polygon": [
+                [
+                    740,
+                    0
+                ],
+                [
+                    1280,
+                    0
+                ],
+                [
+                    1280,
+                    900
+                ],
+                [
+                    740,
+                    900
+                ]
+            ]
+        }
+    ],
+    "semantic_relationships": [
+        {
+            "relation": "on",
+            "subject": "fork_on_table_left",
+            "object": "dining_table"
+        },
+        {
+            "relation": "on",
+            "subject": "fork_on_table_middle",
+            "object": "dining_table"
+        },
+        {
+            "relation": "on",
+            "subject": "fork_on_table_right",
+            "object": "dining_table"
+        },
+        {
+            "relation": "on",
+            "subject": "cup_on_table",
+            "object": "dining_table"
+        },
+        {
+            "relation": "surface_of",
+            "subject": "dining_table",
+            "object": "table_surface_region"
+        },
+        {
+            "relation": "in_region",
+            "subject": "fork_on_table_left",
+            "object": "table_surface_region"
+        },
+        {
+            "relation": "in_region",
+            "subject": "fork_on_table_middle",
+            "object": "table_surface_region"
+        },
+        {
+            "relation": "in_region",
+            "subject": "fork_on_table_right",
+            "object": "table_surface_region"
+        },
+        {
+            "relation": "in_region",
+            "subject": "cup_on_table",
+            "object": "table_surface_region"
+        },
+        {
+            "relation": "near",
+            "subject": "chair_seat_left",
+            "object": "dining_table"
+        },
+        {
+            "relation": "near",
+            "subject": "chair_back_right",
+            "object": "dining_table"
+        },
+        {
+            "relation": "stands_on",
+            "subject": "dining_table",
+            "object": "floor_left_region"
+        },
+        {
+            "relation": "background_wall_area",
+            "subject": "bathroom_wall_right_region",
+            "object": "chair_back_right"
+        },
+        {
+            "relation": "adjacent_to",
+            "subject": "door_entry_region",
+            "object": "floor_left_region"
+        }
+    ],
+    "current_location": "table_surface_region",
+    "plans": [
+        {
+            "action": "arrange",
+            "target": "fork_on_table_left"
+        },
+        {
+            "action": "arrange",
+            "target": "fork_on_table_middle"
+        },
+        {
+            "action": "arrange",
+            "target": "fork_on_table_right"
+        },
+        {
+            "action": "place",
+            "target": "cup_on_table",
+            "reference_region": "table_surface_region"
+        }
+    ]
+}

@@ -1,0 +1,104 @@
+{
+    "objects": [
+        {
+            "name": "silver car",
+            "coords": [
+                447,
+                459
+            ]
+        },
+        {
+            "name": "white car",
+            "coords": [
+                506,
+                517
+            ]
+        },
+        {
+            "name": "street light",
+            "coords": [
+                238,
+                683
+            ]
+        },
+        {
+            "name": "palm tree",
+            "coords": [
+                278,
+                646
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "road",
+            "coords": [
+                500,
+                500
+            ]
+        },
+        {
+            "name": "sidewalk_shoulder",
+            "coords": [
+                500,
+                750
+            ]
+        },
+        {
+            "name": "building_complex",
+            "coords": [
+                460,
+                850
+            ]
+        },
+        {
+            "name": "apartment_building",
+            "coords": [
+                350,
+                200
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "silver car",
+            "white car"
+        ]
+    ],
+    "region_connections": [
+        [
+            "road",
+            "sidewalk_shoulder"
+        ],
+        [
+            "sidewalk_shoulder",
+            "building_complex"
+        ],
+        [
+            "road",
+            "apartment_building"
+        ]
+    ],
+    "extra_safe_objects": [],
+    "extra_unsafe_objects": [
+        {
+            "name": "silver car",
+            "type": "vehicle",
+            "coords": [
+                447,
+                459
+            ]
+        },
+        {
+            "name": "white car",
+            "type": "vehicle",
+            "coords": [
+                506,
+                517
+            ]
+        }
+    ],
+    "extra_safe_regions": [],
+    "extra_unsafe_regions": [],
+    "current_location": "road"
+}

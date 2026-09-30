@@ -1,0 +1,79 @@
+{
+    "objects": [
+        {
+            "name": "robotic_hand",
+            "coords": [
+                116,
+                735
+            ]
+        },
+        {
+            "name": "container",
+            "coords": [
+                140,
+                602
+            ]
+        },
+        {
+            "name": "cup",
+            "coords": [
+                128,
+                555
+            ]
+        },
+        {
+            "name": "drawer_handle",
+            "coords": [
+                875,
+                497
+            ]
+        },
+        {
+            "name": "chair",
+            "coords": [
+                448,
+                115
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "desk_surface",
+            "coords": [
+                250,
+                497
+            ]
+        },
+        {
+            "name": "drawer_interior",
+            "coords": [
+                663,
+                495
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "robotic_hand",
+            "on_top_of_desk_surface"
+        ],
+        [
+            "container",
+            "on_top_of_desk_surface"
+        ],
+        [
+            "cup",
+            "on_top_of_desk_surface"
+        ],
+        [
+            "robotic_hand",
+            "interacting_with_container"
+        ]
+    ],
+    "region_connections": [],
+    "extra_safe_objects": [],
+    "extra_unsafe_objects": [],
+    "extra_safe_regions": [],
+    "extra_unsafe_regions": [],
+    "current_location": "drawer_interior"
+}

@@ -1,0 +1,337 @@
+{
+    "objects": [
+        {
+            "name": "telephone_receiver",
+            "type": "object",
+            "position": {
+                "x": 710,
+                "y": 145
+            }
+        },
+        {
+            "name": "keyboard_device",
+            "type": "object",
+            "position": {
+                "x": 675,
+                "y": 255
+            }
+        },
+        {
+            "name": "base_station",
+            "type": "object",
+            "position": {
+                "x": 640,
+                "y": 210
+            }
+        },
+        {
+            "name": "cradle_mount",
+            "type": "object",
+            "position": {
+                "x": 640,
+                "y": 135
+            }
+        },
+        {
+            "name": "black_cable_bundle",
+            "type": "object",
+            "position": {
+                "x": 610,
+                "y": 265
+            }
+        },
+        {
+            "name": "white_cable",
+            "type": "object",
+            "position": {
+                "x": 560,
+                "y": 295
+            }
+        },
+        {
+            "name": "box_stack",
+            "type": "object",
+            "position": {
+                "x": 865,
+                "y": 315
+            }
+        },
+        {
+            "name": "blue_case",
+            "type": "object",
+            "position": {
+                "x": 965,
+                "y": 265
+            }
+        },
+        {
+            "name": "tool_or_control_head",
+            "type": "object",
+            "position": {
+                "x": 785,
+                "y": 95
+            }
+        },
+        {
+            "name": "monitor_like_display",
+            "type": "object",
+            "position": {
+                "x": 800,
+                "y": 155
+            }
+        },
+        {
+            "name": "left_dock_shelf",
+            "type": "object",
+            "position": {
+                "x": 95,
+                "y": 250
+            }
+        },
+        {
+            "name": "head_unit",
+            "type": "object",
+            "position": {
+                "x": 70,
+                "y": 95
+            }
+        },
+        {
+            "name": "desk_tray",
+            "type": "object",
+            "position": {
+                "x": 430,
+                "y": 10
+            }
+        },
+        {
+            "name": "paper_sheet",
+            "type": "object",
+            "position": {
+                "x": 900,
+                "y": 250
+            }
+        }
+    ],
+    "regions": [
+        {
+            "name": "current_location",
+            "type": "region",
+            "shape": "polygon",
+            "polygon": [
+                [
+                    420,
+                    120
+                ],
+                [
+                    1060,
+                    120
+                ],
+                [
+                    1060,
+                    520
+                ],
+                [
+                    420,
+                    520
+                ]
+            ]
+        },
+        {
+            "name": "printed_fabric_area",
+            "type": "region",
+            "shape": "polygon",
+            "polygon": [
+                [
+                    330,
+                    190
+                ],
+                [
+                    1010,
+                    190
+                ],
+                [
+                    1025,
+                    520
+                ],
+                [
+                    315,
+                    520
+                ]
+            ]
+        },
+        {
+            "name": "cable_zone",
+            "type": "region",
+            "shape": "polygon",
+            "polygon": [
+                [
+                    520,
+                    205
+                ],
+                [
+                    740,
+                    205
+                ],
+                [
+                    825,
+                    420
+                ],
+                [
+                    505,
+                    420
+                ]
+            ]
+        },
+        {
+            "name": "upper_riser_area",
+            "type": "region",
+            "shape": "polygon",
+            "polygon": [
+                [
+                    350,
+                    0
+                ],
+                [
+                    1050,
+                    0
+                ],
+                [
+                    1050,
+                    210
+                ],
+                [
+                    350,
+                    210
+                ]
+            ]
+        },
+        {
+            "name": "right_storage_area",
+            "type": "region",
+            "shape": "polygon",
+            "polygon": [
+                [
+                    820,
+                    220
+                ],
+                [
+                    1160,
+                    220
+                ],
+                [
+                    1160,
+                    520
+                ],
+                [
+                    820,
+                    520
+                ]
+            ]
+        },
+        {
+            "name": "left_docking_area",
+            "type": "region",
+            "shape": "polygon",
+            "polygon": [
+                [
+                    0,
+                    60
+                ],
+                [
+                    250,
+                    60
+                ],
+                [
+                    250,
+                    520
+                ],
+                [
+                    0,
+                    520
+                ]
+            ]
+        }
+    ],
+    "connections": [
+        {
+            "from": "keyboard_device",
+            "to": "base_station",
+            "relation": "mounted_on"
+        },
+        {
+            "from": "cradle_mount",
+            "to": "base_station",
+            "relation": "supports"
+        },
+        {
+            "from": "black_cable_bundle",
+            "to": "keyboard_device",
+            "relation": "connected_to"
+        },
+        {
+            "from": "white_cable",
+            "to": "keyboard_device",
+            "relation": "connected_to"
+        },
+        {
+            "from": "tool_or_control_head",
+            "to": "cradle_mount",
+            "relation": "attached_to"
+        },
+        {
+            "from": "paper_sheet",
+            "to": "box_stack",
+            "relation": "laid_on_top_of"
+        },
+        {
+            "from": "box_stack",
+            "to": "right_storage_area",
+            "relation": "contained_in"
+        },
+        {
+            "from": "keyboard_device",
+            "to": "cable_zone",
+            "relation": "located_in"
+        },
+        {
+            "from": "black_cable_bundle",
+            "to": "cable_zone",
+            "relation": "lies_within"
+        }
+    ],
+    "current_location": {
+        "region": "current_location",
+        "contents": [
+            "base_station",
+            "cradle_mount",
+            "keyboard_device",
+            "black_cable_bundle",
+            "white_cable",
+            "printed_fabric_area"
+        ]
+    },
+    "plans": [
+        {
+            "name": "inspect_devices_in_current_location",
+            "target_region": "current_location",
+            "check_objects": [
+                "base_station",
+                "keyboard_device",
+                "black_cable_bundle"
+            ]
+        }
+    ],
+    "spatial_hints": [
+        {
+            "subject": "keyboard_device",
+            "relation": "above",
+            "object": "printed_fabric_area"
+        },
+        {
+            "subject": "black_cable_bundle",
+            "relation": "spans_across",
+            "object": "printed_fabric_area"
+        }
+    ]
+}

@@ -1,0 +1,258 @@
+{
+    "objects": [
+        {
+            "name": "blue_mat",
+            "type": "mat",
+            "center": [
+                430,
+                310
+            ],
+            "approx_size": [
+                780,
+                520
+            ]
+        },
+        {
+            "name": "red_button_box",
+            "type": "device",
+            "center": [
+                420,
+                160
+            ],
+            "approx_size": [
+                60,
+                60
+            ]
+        },
+        {
+            "name": "split_wooden_block",
+            "type": "device",
+            "center": [
+                650,
+                330
+            ],
+            "approx_size": [
+                110,
+                60
+            ]
+        },
+        {
+            "name": "keyboard",
+            "type": "computer_peripheral",
+            "center": [
+                780,
+                70
+            ],
+            "approx_size": [
+                210,
+                120
+            ]
+        },
+        {
+            "name": "monitor_stand_base",
+            "type": "furniture_base",
+            "center": [
+                120,
+                95
+            ],
+            "approx_size": [
+                140,
+                160
+            ]
+        },
+        {
+            "name": "monitor",
+            "type": "display",
+            "center": [
+                160,
+                80
+            ],
+            "approx_size": [
+                170,
+                130
+            ]
+        },
+        {
+            "name": "cables_bundle",
+            "type": "cables",
+            "center": [
+                770,
+                40
+            ],
+            "approx_size": [
+                260,
+                120
+            ]
+        },
+        {
+            "name": "wall_outlet_power_strip",
+            "type": "power_strip",
+            "center": [
+                660,
+                360
+            ],
+            "approx_size": [
+                170,
+                70
+            ]
+        },
+        {
+            "name": "chair_edge",
+            "type": "furniture",
+            "center": [
+                980,
+                360
+            ],
+            "approx_size": [
+                160,
+                260
+            ]
+        },
+        {
+            "name": "chair_leg_or_support",
+            "type": "furniture_leg",
+            "center": [
+                930,
+                260
+            ],
+            "approx_size": [
+                70,
+                180
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "current_location",
+            "type": "surface_area",
+            "center": [
+                430,
+                310
+            ],
+            "approx_size": [
+                780,
+                520
+            ]
+        },
+        {
+            "name": "top_left_area",
+            "type": "surface_area",
+            "center": [
+                180,
+                170
+            ],
+            "approx_size": [
+                260,
+                240
+            ]
+        },
+        {
+            "name": "right_side_area",
+            "type": "surface_area",
+            "center": [
+                860,
+                360
+            ],
+            "approx_size": [
+                260,
+                360
+            ]
+        },
+        {
+            "name": "top_right_area",
+            "type": "surface_area",
+            "center": [
+                860,
+                120
+            ],
+            "approx_size": [
+                260,
+                180
+            ]
+        },
+        {
+            "name": "bottom_area",
+            "type": "surface_area",
+            "center": [
+                430,
+                470
+            ],
+            "approx_size": [
+                780,
+                180
+            ]
+        }
+    ],
+    "semantic_relationships": [
+        {
+            "relation": "is_on",
+            "from": "blue_mat",
+            "to": "current_location"
+        },
+        {
+            "relation": "contains",
+            "from": "current_location",
+            "to": "blue_mat"
+        },
+        {
+            "relation": "near",
+            "from": "red_button_box",
+            "to": "blue_mat"
+        },
+        {
+            "relation": "near",
+            "from": "split_wooden_block",
+            "to": "blue_mat"
+        },
+        {
+            "relation": "near",
+            "from": "wall_outlet_power_strip",
+            "to": "blue_mat"
+        },
+        {
+            "relation": "positioned_in",
+            "from": "red_button_box",
+            "to": "top_left_area"
+        },
+        {
+            "relation": "positioned_in",
+            "from": "split_wooden_block",
+            "to": "right_side_area"
+        },
+        {
+            "relation": "positioned_in",
+            "from": "wall_outlet_power_strip",
+            "to": "right_side_area"
+        },
+        {
+            "relation": "positioned_in",
+            "from": "keyboard",
+            "to": "top_right_area"
+        },
+        {
+            "relation": "positioned_in",
+            "from": "cables_bundle",
+            "to": "top_right_area"
+        },
+        {
+            "relation": "adjacent_to",
+            "from": "chair_edge",
+            "to": "right_side_area"
+        },
+        {
+            "relation": "near",
+            "from": "chair_leg_or_support",
+            "to": "right_side_area"
+        },
+        {
+            "relation": "adjacent_to",
+            "from": "monitor",
+            "to": "top_left_area"
+        },
+        {
+            "relation": "adjacent_to",
+            "from": "monitor_stand_base",
+            "to": "top_left_area"
+        }
+    ]
+}

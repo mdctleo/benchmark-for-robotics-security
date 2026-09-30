@@ -1,0 +1,93 @@
+{
+    "objects": [
+        {
+            "name": "mug",
+            "coords": [
+                200,
+                150
+            ]
+        },
+        {
+            "name": "marker",
+            "coords": [
+                250,
+                150
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "white_table_surface",
+            "coords": [
+                500,
+                200
+            ]
+        },
+        {
+            "name": "bin",
+            "coords": [
+                750,
+                200
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "mug",
+            "marker"
+        ],
+        [
+            "mug",
+            "white_table_surface"
+        ],
+        [
+            "marker",
+            "white_table_surface"
+        ]
+    ],
+    "region_connections": [
+        [
+            "white_table_surface",
+            "bin"
+        ]
+    ],
+    "extra_safe_objects": [
+        {
+            "name": "mug",
+            "type": "mug",
+            "coords": [
+                200,
+                150
+            ]
+        },
+        {
+            "name": "marker",
+            "type": "marker",
+            "coords": [
+                250,
+                150
+            ]
+        }
+    ],
+    "extra_unsafe_objects": [],
+    "extra_safe_regions": [
+        {
+            "name": "white_table_surface",
+            "type": "surface",
+            "coords": [
+                500,
+                200
+            ]
+        },
+        {
+            "name": "bin",
+            "type": "container",
+            "coords": [
+                750,
+                200
+            ]
+        }
+    ],
+    "extra_unsafe_regions": [],
+    "current_location": "white_table_surface"
+}

@@ -1,0 +1,165 @@
+{
+    "objects": [
+        {
+            "name": "robot_arm_left",
+            "coords": [
+                450,
+                150
+            ]
+        },
+        {
+            "name": "robot_arm_right",
+            "coords": [
+                500,
+                600
+            ]
+        },
+        {
+            "name": "metal_cup",
+            "coords": [
+                580,
+                200
+            ]
+        },
+        {
+            "name": "orange_object",
+            "coords": [
+                550,
+                180
+            ]
+        },
+        {
+            "name": "metal_pot",
+            "coords": [
+                500,
+                850
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "wooden_table_left",
+            "coords": [
+                600,
+                250
+            ]
+        },
+        {
+            "name": "wooden_table_right",
+            "coords": [
+                600,
+                700
+            ]
+        },
+        {
+            "name": "background_wall",
+            "coords": [
+                300,
+                250
+            ]
+        },
+        {
+            "name": "lab_environment",
+            "coords": [
+                300,
+                500
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "robot_arm_left",
+            "orange_object"
+        ],
+        [
+            "robot_arm_right",
+            "orange_object"
+        ],
+        [
+            "orange_object",
+            "metal_cup"
+        ],
+        [
+            "orange_object",
+            "metal_pot"
+        ]
+    ],
+    "region_connections": [
+        [
+            "wooden_table_left",
+            "background_wall"
+        ],
+        [
+            "wooden_table_right",
+            "lab_environment"
+        ],
+        [
+            "wooden_table_left",
+            "wooden_table_right"
+        ]
+    ],
+    "extra_safe_objects": [
+        {
+            "name": "metal_cup",
+            "type": "container",
+            "coords": [
+                580,
+                200
+            ]
+        },
+        {
+            "name": "metal_pot",
+            "type": "container",
+            "coords": [
+                500,
+                850
+            ]
+        }
+    ],
+    "extra_unsafe_objects": [
+        {
+            "name": "robot_arm_left",
+            "type": "moving_part",
+            "coords": [
+                450,
+                150
+            ]
+        },
+        {
+            "name": "robot_arm_right",
+            "type": "moving_part",
+            "coords": [
+                500,
+                600
+            ]
+        },
+        {
+            "name": "orange_object",
+            "type": "manipulated_object",
+            "coords": [
+                550,
+                180
+            ]
+        }
+    ],
+    "extra_safe_regions": [
+        {
+            "name": "wooden_table_left",
+            "type": "work_surface",
+            "coords": [
+                600,
+                250
+            ]
+        },
+        {
+            "name": "wooden_table_right",
+            "type": "work_surface",
+            "coords": [
+                600,
+                700
+            ]
+        }
+    ],
+    "extra_unsafe_regions": [],
+    "current_location": "wooden_table_left"
+}

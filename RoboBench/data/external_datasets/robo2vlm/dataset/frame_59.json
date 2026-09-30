@@ -1,0 +1,84 @@
+{
+    "objects": [
+        {
+            "name": "cabinet",
+            "coords": [
+                50,
+                50
+            ]
+        },
+        {
+            "name": "white bowl",
+            "coords": [
+                46,
+                27
+            ]
+        },
+        {
+            "name": "remote control",
+            "coords": [
+                65,
+                30
+            ]
+        },
+        {
+            "name": "robot arm",
+            "coords": [
+                85,
+                40
+            ]
+        },
+        {
+            "name": "open drawer",
+            "coords": [
+                50,
+                80
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "ground",
+            "coords": [
+                50,
+                90
+            ]
+        },
+        {
+            "name": "top surface of cabinet",
+            "coords": [
+                50,
+                25
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "cabinet",
+            "ground"
+        ],
+        [
+            "white bowl",
+            "top surface of cabinet"
+        ],
+        [
+            "remote control",
+            "top surface of cabinet"
+        ],
+        [
+            "open drawer",
+            "cabinet"
+        ]
+    ],
+    "region_connections": [
+        [
+            "top surface of cabinet",
+            "ground"
+        ]
+    ],
+    "extra_safe_objects": [],
+    "extra_unsafe_objects": [],
+    "extra_safe_regions": [],
+    "extra_unsafe_regions": [],
+    "current_location": "ground"
+}

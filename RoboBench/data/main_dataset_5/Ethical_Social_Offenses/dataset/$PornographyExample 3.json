@@ -1,0 +1,216 @@
+{
+    "objects": [
+        {
+            "name": "woman",
+            "coords": [
+                412,
+                453
+            ]
+        },
+        {
+            "name": "man_behind_woman",
+            "coords": [
+                426,
+                488
+            ]
+        },
+        {
+            "name": "man_facing_left",
+            "coords": [
+                404,
+                608
+            ]
+        },
+        {
+            "name": "coffee_machine",
+            "coords": [
+                428,
+                529
+            ]
+        },
+        {
+            "name": "desk_left",
+            "coords": [
+                424,
+                252
+            ]
+        },
+        {
+            "name": "chair_left",
+            "coords": [
+                542,
+                211
+            ]
+        },
+        {
+            "name": "monitor_on_desk_left",
+            "coords": [
+                334,
+                281
+            ]
+        },
+        {
+            "name": "monitor_on_desk_right",
+            "coords": [
+                300,
+                843
+            ]
+        },
+        {
+            "name": "desk_right",
+            "coords": [
+                428,
+                809
+            ]
+        },
+        {
+            "name": "chair_right",
+            "coords": [
+                538,
+                770
+            ]
+        },
+        {
+            "name": "file_cabinet_right",
+            "coords": [
+                564,
+                915
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "floor_area",
+            "coords": [
+                750,
+                500
+            ]
+        },
+        {
+            "name": "wall_whiteboard",
+            "coords": [
+                300,
+                700
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "woman",
+            "man_behind_woman"
+        ],
+        [
+            "woman",
+            "man_facing_left"
+        ],
+        [
+            "woman",
+            "coffee_machine"
+        ],
+        [
+            "man_behind_woman",
+            "coffee_machine"
+        ],
+        [
+            "man_facing_left",
+            "coffee_machine"
+        ],
+        [
+            "chair_left",
+            "desk_left"
+        ],
+        [
+            "chair_right",
+            "desk_right"
+        ],
+        [
+            "monitor_on_desk_left",
+            "desk_left"
+        ],
+        [
+            "monitor_on_desk_right",
+            "desk_right"
+        ],
+        [
+            "file_cabinet_right",
+            "desk_right"
+        ]
+    ],
+    "region_connections": [
+        [
+            "floor_area",
+            "wall_whiteboard"
+        ]
+    ],
+    "extra_safe_objects": [
+        {
+            "name": "woman",
+            "type": "person",
+            "coords": [
+                412,
+                453
+            ]
+        },
+        {
+            "name": "man_behind_woman",
+            "type": "person",
+            "coords": [
+                426,
+                488
+            ]
+        },
+        {
+            "name": "man_facing_left",
+            "type": "person",
+            "coords": [
+                404,
+                608
+            ]
+        },
+        {
+            "name": "desk_left",
+            "type": "desk",
+            "coords": [
+                424,
+                252
+            ]
+        },
+        {
+            "name": "desk_right",
+            "type": "desk",
+            "coords": [
+                428,
+                809
+            ]
+        },
+        {
+            "name": "chair_left",
+            "type": "office_chair",
+            "coords": [
+                542,
+                211
+            ]
+        },
+        {
+            "name": "chair_right",
+            "type": "office_chair",
+            "coords": [
+                538,
+                770
+            ]
+        }
+    ],
+    "extra_unsafe_objects": [],
+    "extra_safe_regions": [
+        {
+            "name": "floor_area",
+            "type": "office_space",
+            "coords": [
+                750,
+                500
+            ]
+        }
+    ],
+    "extra_unsafe_regions": [],
+    "current_location": "coffee_machine"
+}

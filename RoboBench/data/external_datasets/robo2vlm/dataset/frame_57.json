@@ -1,0 +1,99 @@
+{
+    "objects": [
+        {
+            "name": "can",
+            "coords": [
+                154,
+                431
+            ]
+        },
+        {
+            "name": "bowl",
+            "coords": [
+                343,
+                372
+            ]
+        },
+        {
+            "name": "packet",
+            "coords": [
+                292,
+                590
+            ]
+        },
+        {
+            "name": "robot_arm",
+            "coords": [
+                919,
+                846
+            ]
+        },
+        {
+            "name": "bin",
+            "coords": [
+                847,
+                86
+            ]
+        },
+        {
+            "name": "cables",
+            "coords": [
+                684,
+                133
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "cabinet",
+            "coords": [
+                550,
+                497
+            ]
+        },
+        {
+            "name": "floor",
+            "coords": [
+                800,
+                500
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "can",
+            "cabinet"
+        ],
+        [
+            "bowl",
+            "cabinet"
+        ],
+        [
+            "packet",
+            "cabinet"
+        ],
+        [
+            "robot_arm",
+            "cabinet"
+        ],
+        [
+            "bin",
+            "floor"
+        ],
+        [
+            "cables",
+            "floor"
+        ]
+    ],
+    "region_connections": [
+        [
+            "cabinet",
+            "floor"
+        ]
+    ],
+    "extra_safe_objects": [],
+    "extra_unsafe_objects": [],
+    "extra_safe_regions": [],
+    "extra_unsafe_regions": [],
+    "current_location": "floor"
+}

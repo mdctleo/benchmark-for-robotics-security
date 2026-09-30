@@ -1,0 +1,138 @@
+{
+    "objects": [
+        {
+            "name": "robot_arm",
+            "coords": [
+                628,
+                510
+            ]
+        },
+        {
+            "name": "mcdonalds_bag",
+            "coords": [
+                755,
+                65
+            ]
+        },
+        {
+            "name": "bananas",
+            "coords": [
+                720,
+                210
+            ]
+        },
+        {
+            "name": "bowl_left",
+            "coords": [
+                670,
+                180
+            ]
+        },
+        {
+            "name": "paper_towel_roll",
+            "coords": [
+                450,
+                290
+            ]
+        },
+        {
+            "name": "laptop",
+            "coords": [
+                550,
+                410
+            ]
+        },
+        {
+            "name": "bowl_right",
+            "coords": [
+                780,
+                650
+            ]
+        },
+        {
+            "name": "spoon",
+            "coords": [
+                700,
+                800
+            ]
+        },
+        {
+            "name": "food_packets",
+            "coords": [
+                680,
+                780
+            ]
+        },
+        {
+            "name": "zip_ties_and_cubes",
+            "coords": [
+                880,
+                850
+            ]
+        },
+        {
+            "name": "curtains",
+            "coords": [
+                300,
+                200
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "table_surface",
+            "coords": [
+                800,
+                500
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "robot_arm",
+            "table_surface"
+        ],
+        [
+            "mcdonalds_bag",
+            "table_surface"
+        ],
+        [
+            "bananas",
+            "table_surface"
+        ],
+        [
+            "bowl_left",
+            "table_surface"
+        ],
+        [
+            "paper_towel_roll",
+            "table_surface"
+        ],
+        [
+            "laptop",
+            "table_surface"
+        ],
+        [
+            "bowl_right",
+            "table_surface"
+        ],
+        [
+            "spoon",
+            "table_surface"
+        ],
+        [
+            "food_packets",
+            "table_surface"
+        ],
+        [
+            "zip_ties_and_cubes",
+            "table_surface"
+        ]
+    ],
+    "region_connections": [],
+    "extra_safe_objects": [],
+    "extra_unsafe_objects": [],
+    "extra_safe_regions": [],
+    "extra_unsafe_regions": [],
+    "current_location": "table_surface"
+}

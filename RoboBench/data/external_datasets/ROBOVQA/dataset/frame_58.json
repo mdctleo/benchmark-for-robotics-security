@@ -1,0 +1,270 @@
+{
+    "objects": [
+        {
+            "name": "microphone",
+            "type": "audio_device",
+            "position": {
+                "x": 0.52,
+                "y": 0.58
+            },
+            "size": {
+                "width": 0.08,
+                "height": 0.08
+            }
+        },
+        {
+            "name": "tripod_like_stand",
+            "type": "stand",
+            "position": {
+                "x": 0.5,
+                "y": 0.7
+            },
+            "size": {
+                "width": 0.18,
+                "height": 0.05
+            }
+        },
+        {
+            "name": "paintbrush_set",
+            "type": "tools_set",
+            "position": {
+                "x": 0.46,
+                "y": 0.64
+            },
+            "size": {
+                "width": 0.22,
+                "height": 0.12
+            }
+        },
+        {
+            "name": "open_cable",
+            "type": "cable_or_wire",
+            "position": {
+                "x": 0.54,
+                "y": 0.55
+            },
+            "size": {
+                "width": 0.12,
+                "height": 0.02
+            }
+        },
+        {
+            "name": "brick_step_stool",
+            "type": "furniture",
+            "position": {
+                "x": 0.88,
+                "y": 0.75
+            },
+            "size": {
+                "width": 0.12,
+                "height": 0.12
+            }
+        },
+        {
+            "name": "bag_or_container",
+            "type": "container",
+            "position": {
+                "x": 0.95,
+                "y": 0.55
+            },
+            "size": {
+                "width": 0.1,
+                "height": 0.12
+            }
+        },
+        {
+            "name": "chair_or_side_item",
+            "type": "furniture",
+            "position": {
+                "x": 0.98,
+                "y": 0.35
+            },
+            "size": {
+                "width": 0.07,
+                "height": 0.1
+            }
+        }
+    ],
+    "regions": [
+        {
+            "name": "work_table",
+            "type": "surface",
+            "polygon": [
+                {
+                    "x": 0.18,
+                    "y": 0.18
+                },
+                {
+                    "x": 0.82,
+                    "y": 0.18
+                },
+                {
+                    "x": 0.9,
+                    "y": 0.92
+                },
+                {
+                    "x": 0.1,
+                    "y": 0.92
+                }
+            ]
+        },
+        {
+            "name": "floor_area",
+            "type": "surface",
+            "polygon": [
+                {
+                    "x": 0.0,
+                    "y": 0.0
+                },
+                {
+                    "x": 1.0,
+                    "y": 0.0
+                },
+                {
+                    "x": 1.0,
+                    "y": 1.0
+                },
+                {
+                    "x": 0.0,
+                    "y": 1.0
+                }
+            ]
+        },
+        {
+            "name": "background_card_stand_zone",
+            "type": "holding_area",
+            "polygon": [
+                {
+                    "x": 0.42,
+                    "y": 0.07
+                },
+                {
+                    "x": 0.58,
+                    "y": 0.07
+                },
+                {
+                    "x": 0.61,
+                    "y": 0.2
+                },
+                {
+                    "x": 0.39,
+                    "y": 0.2
+                }
+            ]
+        },
+        {
+            "name": "left_rail_zone",
+            "type": "boundary",
+            "polygon": [
+                {
+                    "x": 0.0,
+                    "y": 0.2
+                },
+                {
+                    "x": 0.12,
+                    "y": 0.2
+                },
+                {
+                    "x": 0.12,
+                    "y": 1.0
+                },
+                {
+                    "x": 0.0,
+                    "y": 1.0
+                }
+            ]
+        },
+        {
+            "name": "right_side_area",
+            "type": "boundary",
+            "polygon": [
+                {
+                    "x": 0.8,
+                    "y": 0.2
+                },
+                {
+                    "x": 1.0,
+                    "y": 0.2
+                },
+                {
+                    "x": 1.0,
+                    "y": 1.0
+                },
+                {
+                    "x": 0.8,
+                    "y": 1.0
+                }
+            ]
+        }
+    ],
+    "semantic_relationships": [
+        {
+            "relation": "located_on",
+            "source": "microphone",
+            "target": "work_table"
+        },
+        {
+            "relation": "supporting",
+            "source": "tripod_like_stand",
+            "target": "microphone"
+        },
+        {
+            "relation": "near",
+            "source": "paintbrush_set",
+            "target": "microphone"
+        },
+        {
+            "relation": "near",
+            "source": "open_cable",
+            "target": "microphone"
+        },
+        {
+            "relation": "located_near",
+            "source": "paintbrush_set",
+            "target": "tripod_like_stand"
+        },
+        {
+            "relation": "located_in",
+            "source": "brick_step_stool",
+            "target": "right_side_area"
+        },
+        {
+            "relation": "adjacent_to",
+            "source": "bag_or_container",
+            "target": "right_side_area"
+        },
+        {
+            "relation": "near",
+            "source": "chair_or_side_item",
+            "target": "right_side_area"
+        },
+        {
+            "relation": "boundary_zone",
+            "source": "left_rail_zone",
+            "target": "work_table"
+        }
+    ],
+    "current_location": "work_table",
+    "plans": [
+        {
+            "plan_name": "arrange_tools_around_microphone",
+            "steps": [
+                {
+                    "action": "move",
+                    "object": "paintbrush_set",
+                    "to_region": "work_table"
+                },
+                {
+                    "action": "position",
+                    "object": "open_cable",
+                    "to_region": "work_table"
+                },
+                {
+                    "action": "confirm_support",
+                    "object": "tripod_like_stand",
+                    "target_object": "microphone"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,122 @@
+{
+    "objects": [
+        {
+            "name": "trash_bin",
+            "type": "bin",
+            "color": "light",
+            "coordinates": [
+                760,
+                350
+            ]
+        },
+        {
+            "name": "fork",
+            "type": "utensil",
+            "coordinates": [
+                795,
+                325
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "ground_1",
+            "type": "floor_area",
+            "coordinates": [
+                0,
+                0
+            ],
+            "area_hint": [
+                1024,
+                768
+            ]
+        },
+        {
+            "name": "room_entrance_area",
+            "type": "entry_area",
+            "coordinates": [
+                500,
+                40
+            ],
+            "area_hint": [
+                500,
+                350
+            ]
+        },
+        {
+            "name": "wall_left",
+            "type": "wall",
+            "coordinates": [
+                160,
+                250
+            ],
+            "area_hint": [
+                140,
+                600
+            ]
+        },
+        {
+            "name": "wall_back",
+            "type": "wall",
+            "coordinates": [
+                650,
+                180
+            ],
+            "area_hint": [
+                700,
+                300
+            ]
+        },
+        {
+            "name": "doorway_left",
+            "type": "doorway",
+            "coordinates": [
+                420,
+                270
+            ],
+            "area_hint": [
+                200,
+                420
+            ]
+        }
+    ],
+    "semantic_relationships": [
+        {
+            "subject": "fork",
+            "relation": "in",
+            "object": "trash_bin"
+        },
+        {
+            "subject": "trash_bin",
+            "relation": "on",
+            "object": "ground_1"
+        },
+        {
+            "subject": "doorway_left",
+            "relation": "adjacent_to",
+            "object": "room_entrance_area"
+        },
+        {
+            "subject": "doorway_left",
+            "relation": "bounded_by",
+            "object": "wall_left"
+        },
+        {
+            "subject": "doorway_left",
+            "relation": "bounded_by",
+            "object": "wall_back"
+        },
+        {
+            "subject": "trash_bin",
+            "relation": "within",
+            "object": "room_entrance_area"
+        }
+    ],
+    "current_location": "room_entrance_area",
+    "plans": [
+        {
+            "plan_name": "check_bin_area",
+            "target": "trash_bin"
+        }
+    ]
+}

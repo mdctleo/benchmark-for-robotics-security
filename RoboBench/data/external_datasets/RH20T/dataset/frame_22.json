@@ -1,0 +1,246 @@
+{
+    "objects": [
+        {
+            "name": "mixer_head",
+            "type": "tool",
+            "coord": [
+                520,
+                120
+            ]
+        },
+        {
+            "name": "printer_control_panel",
+            "type": "equipment",
+            "coord": [
+                980,
+                320
+            ]
+        },
+        {
+            "name": "red_button",
+            "type": "control",
+            "coord": [
+                760,
+                120
+            ]
+        },
+        {
+            "name": "yellow_button",
+            "type": "control",
+            "coord": [
+                715,
+                140
+            ]
+        },
+        {
+            "name": "green_button",
+            "type": "control",
+            "coord": [
+                680,
+                140
+            ]
+        },
+        {
+            "name": "switch_box",
+            "type": "equipment",
+            "coord": [
+                640,
+                90
+            ]
+        },
+        {
+            "name": "black_housing",
+            "type": "equipment",
+            "coord": [
+                70,
+                90
+            ]
+        },
+        {
+            "name": "cables_bundle",
+            "type": "cable",
+            "coord": [
+                820,
+                10
+            ]
+        },
+        {
+            "name": "cabinet_wall",
+            "type": "structure",
+            "coord": [
+                1070,
+                250
+            ]
+        },
+        {
+            "name": "paper_or_mat",
+            "type": "surface",
+            "coord": [
+                520,
+                280
+            ]
+        },
+        {
+            "name": "small_block",
+            "type": "object",
+            "coord": [
+                610,
+                250
+            ]
+        },
+        {
+            "name": "thin_white_screwdriver_like_tool",
+            "type": "tool",
+            "coord": [
+                500,
+                520
+            ]
+        },
+        {
+            "name": "electrical_outlet_strip",
+            "type": "outlet",
+            "coord": [
+                820,
+                360
+            ]
+        },
+        {
+            "name": "cable_on_right",
+            "type": "cable",
+            "coord": [
+                940,
+                220
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "work_surface",
+            "type": "workspace",
+            "coord": [
+                520,
+                360
+            ]
+        },
+        {
+            "name": "blue_print_area",
+            "type": "printed_area",
+            "coord": [
+                520,
+                320
+            ]
+        },
+        {
+            "name": "left_side_machine_area",
+            "type": "workspace_zone",
+            "coord": [
+                120,
+                240
+            ]
+        },
+        {
+            "name": "right_side_machine_area",
+            "type": "workspace_zone",
+            "coord": [
+                1020,
+                260
+            ]
+        },
+        {
+            "name": "top_control_area",
+            "type": "workspace_zone",
+            "coord": [
+                690,
+                120
+            ]
+        }
+    ],
+    "semantic_relationships": [
+        {
+            "subject": "mixer_head",
+            "relation": "located_above",
+            "object": "blue_print_area"
+        },
+        {
+            "subject": "printer_control_panel",
+            "relation": "located_on",
+            "object": "right_side_machine_area"
+        },
+        {
+            "subject": "electrical_outlet_strip",
+            "relation": "located_on",
+            "object": "right_side_machine_area"
+        },
+        {
+            "subject": "black_housing",
+            "relation": "located_on",
+            "object": "left_side_machine_area"
+        },
+        {
+            "subject": "switch_box",
+            "relation": "located_on",
+            "object": "top_control_area"
+        },
+        {
+            "subject": "red_button",
+            "relation": "located_on",
+            "object": "top_control_area"
+        },
+        {
+            "subject": "yellow_button",
+            "relation": "located_on",
+            "object": "top_control_area"
+        },
+        {
+            "subject": "green_button",
+            "relation": "located_on",
+            "object": "top_control_area"
+        },
+        {
+            "subject": "cables_bundle",
+            "relation": "connects_to",
+            "object": "mixer_head"
+        },
+        {
+            "subject": "cable_on_right",
+            "relation": "connects_to",
+            "object": "printer_control_panel"
+        },
+        {
+            "subject": "small_block",
+            "relation": "placed_on",
+            "object": "blue_print_area"
+        },
+        {
+            "subject": "thin_white_screwdriver_like_tool",
+            "relation": "resting_on",
+            "object": "work_surface"
+        },
+        {
+            "subject": "paper_or_mat",
+            "relation": "covers",
+            "object": "work_surface"
+        }
+    ],
+    "current_location": {
+        "entity": "small_block",
+        "region": "blue_print_area"
+    },
+    "plans": [
+        {
+            "name": "place_block_for_printing",
+            "steps": [
+                {
+                    "action": "confirm_location",
+                    "target": "small_block",
+                    "at_region": "blue_print_area"
+                },
+                {
+                    "action": "align_tool_head",
+                    "target": "mixer_head",
+                    "towards_region": "blue_print_area"
+                }
+            ]
+        }
+    ]
+}

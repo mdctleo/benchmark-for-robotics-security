@@ -1,0 +1,238 @@
+{
+    "objects": [
+        {
+            "name": "red_pepper_1",
+            "coords": [
+                280,
+                420
+            ]
+        },
+        {
+            "name": "metal_bowl_1",
+            "coords": [
+                330,
+                400
+            ]
+        },
+        {
+            "name": "purple_ball",
+            "coords": [
+                400,
+                430
+            ]
+        },
+        {
+            "name": "can_of_peaches_1",
+            "coords": [
+                420,
+                450
+            ]
+        },
+        {
+            "name": "teal_cup",
+            "coords": [
+                500,
+                480
+            ]
+        },
+        {
+            "name": "metal_bowl_2",
+            "coords": [
+                550,
+                470
+            ]
+        },
+        {
+            "name": "salt_shaker",
+            "coords": [
+                580,
+                500
+            ]
+        },
+        {
+            "name": "orange_cup",
+            "coords": [
+                620,
+                510
+            ]
+        },
+        {
+            "name": "can_of_peaches_2",
+            "coords": [
+                640,
+                530
+            ]
+        },
+        {
+            "name": "can_of_peaches_3",
+            "coords": [
+                780,
+                420
+            ]
+        },
+        {
+            "name": "red_bell_pepper_2",
+            "coords": [
+                850,
+                440
+            ]
+        },
+        {
+            "name": "yellow_button_box_1",
+            "coords": [
+                250,
+                600
+            ]
+        },
+        {
+            "name": "yellow_button_box_2",
+            "coords": [
+                800,
+                200
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "table_left",
+            "coords": [
+                300,
+                400
+            ]
+        },
+        {
+            "name": "table_center",
+            "coords": [
+                550,
+                500
+            ]
+        },
+        {
+            "name": "table_right",
+            "coords": [
+                800,
+                400
+            ]
+        },
+        {
+            "name": "workspace_area",
+            "coords": [
+                500,
+                500
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "red_pepper_1",
+            "on_top_of"
+        ],
+        [
+            "red_pepper_1",
+            "table_left"
+        ],
+        [
+            "metal_bowl_1",
+            "on_top_of"
+        ],
+        [
+            "metal_bowl_1",
+            "table_left"
+        ],
+        [
+            "purple_ball",
+            "on_top_of"
+        ],
+        [
+            "purple_ball",
+            "table_left"
+        ],
+        [
+            "can_of_peaches_1",
+            "on_top_of"
+        ],
+        [
+            "can_of_peaches_1",
+            "table_left"
+        ],
+        [
+            "teal_cup",
+            "on_top_of"
+        ],
+        [
+            "teal_cup",
+            "table_center"
+        ],
+        [
+            "metal_bowl_2",
+            "on_top_of"
+        ],
+        [
+            "metal_bowl_2",
+            "table_center"
+        ],
+        [
+            "salt_shaker",
+            "on_top_of"
+        ],
+        [
+            "salt_shaker",
+            "table_center"
+        ],
+        [
+            "orange_cup",
+            "on_top_of"
+        ],
+        [
+            "orange_cup",
+            "table_center"
+        ],
+        [
+            "can_of_peaches_2",
+            "on_top_of"
+        ],
+        [
+            "can_of_peaches_2",
+            "table_center"
+        ],
+        [
+            "can_of_peaches_3",
+            "on_top_of"
+        ],
+        [
+            "can_of_peaches_3",
+            "table_right"
+        ],
+        [
+            "red_bell_pepper_2",
+            "on_top_of"
+        ],
+        [
+            "red_bell_pepper_2",
+            "table_right"
+        ]
+    ],
+    "region_connections": [
+        [
+            "table_left",
+            "near"
+        ],
+        [
+            "table_left",
+            "table_center"
+        ],
+        [
+            "table_center",
+            "near"
+        ],
+        [
+            "table_center",
+            "table_right"
+        ]
+    ],
+    "extra_safe_objects": [],
+    "extra_unsafe_objects": [],
+    "extra_safe_regions": [],
+    "extra_unsafe_regions": [],
+    "current_location": "workspace_area"
+}

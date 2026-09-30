@@ -1,0 +1,278 @@
+{
+    "objects": [
+        {
+            "name": "robot_arm_left",
+            "type": "robot_arm",
+            "position": {
+                "x": 6,
+                "y": 140
+            }
+        },
+        {
+            "name": "robot_arm_right",
+            "type": "robot_arm",
+            "position": {
+                "x": 600,
+                "y": 90
+            }
+        },
+        {
+            "name": "control_unit",
+            "type": "control_unit",
+            "position": {
+                "x": 650,
+                "y": 70
+            }
+        },
+        {
+            "name": "tool_head",
+            "type": "tool_head",
+            "position": {
+                "x": 410,
+                "y": 65
+            }
+        },
+        {
+            "name": "blue_work_surface",
+            "type": "work_surface",
+            "position": {
+                "x": 310,
+                "y": 210
+            }
+        },
+        {
+            "name": "paint_splatter_pattern",
+            "type": "printed_pattern",
+            "position": {
+                "x": 320,
+                "y": 250
+            }
+        },
+        {
+            "name": "power_strip",
+            "type": "power_strip",
+            "position": {
+                "x": 465,
+                "y": 430
+            }
+        },
+        {
+            "name": "cable_cluster_left",
+            "type": "cables",
+            "position": {
+                "x": 70,
+                "y": 85
+            }
+        },
+        {
+            "name": "cable_cluster_right",
+            "type": "cables",
+            "position": {
+                "x": 515,
+                "y": 80
+            }
+        },
+        {
+            "name": "tilt_handle_left",
+            "type": "hardware",
+            "position": {
+                "x": 45,
+                "y": 170
+            }
+        },
+        {
+            "name": "side_controls",
+            "type": "switches",
+            "position": {
+                "x": 200,
+                "y": 60
+            }
+        },
+        {
+            "name": "emergency_stop",
+            "type": "emergency_stop",
+            "position": {
+                "x": 220,
+                "y": 40
+            }
+        },
+        {
+            "name": "yellow_green_buttons",
+            "type": "buttons",
+            "position": {
+                "x": 160,
+                "y": 60
+            }
+        }
+    ],
+    "regions": [
+        {
+            "name": "workspace",
+            "type": "workspace_region",
+            "polygon": [
+                {
+                    "x": 0,
+                    "y": 0
+                },
+                {
+                    "x": 760,
+                    "y": 0
+                },
+                {
+                    "x": 760,
+                    "y": 520
+                },
+                {
+                    "x": 0,
+                    "y": 520
+                }
+            ]
+        },
+        {
+            "name": "blue_mat_area",
+            "type": "fabric_or_mat",
+            "polygon": [
+                {
+                    "x": 70,
+                    "y": 120
+                },
+                {
+                    "x": 720,
+                    "y": 120
+                },
+                {
+                    "x": 720,
+                    "y": 500
+                },
+                {
+                    "x": 70,
+                    "y": 500
+                }
+            ]
+        },
+        {
+            "name": "printed_artwork_area",
+            "type": "printed_region",
+            "polygon": [
+                {
+                    "x": 135,
+                    "y": 220
+                },
+                {
+                    "x": 660,
+                    "y": 220
+                },
+                {
+                    "x": 680,
+                    "y": 460
+                },
+                {
+                    "x": 150,
+                    "y": 460
+                }
+            ]
+        },
+        {
+            "name": "tool_path_zone",
+            "type": "action_zone",
+            "polygon": [
+                {
+                    "x": 350,
+                    "y": 180
+                },
+                {
+                    "x": 520,
+                    "y": 180
+                },
+                {
+                    "x": 520,
+                    "y": 310
+                },
+                {
+                    "x": 350,
+                    "y": 310
+                }
+            ]
+        }
+    ],
+    "current_location": "tool_path_zone",
+    "connections": [
+        {
+            "from": "robot_arm_left",
+            "to": "blue_work_surface",
+            "relation": "mounted_over"
+        },
+        {
+            "from": "robot_arm_right",
+            "to": "tool_head",
+            "relation": "carries"
+        },
+        {
+            "from": "tool_head",
+            "to": "paint_splatter_pattern",
+            "relation": "applies_to"
+        },
+        {
+            "from": "paint_splatter_pattern",
+            "to": "printed_artwork_area",
+            "relation": "lies_within"
+        },
+        {
+            "from": "blue_work_surface",
+            "to": "blue_mat_area",
+            "relation": "covers"
+        },
+        {
+            "from": "power_strip",
+            "to": "workspace",
+            "relation": "located_within"
+        },
+        {
+            "from": "side_controls",
+            "to": "workspace",
+            "relation": "located_within"
+        },
+        {
+            "from": "cable_cluster_left",
+            "to": "robot_arm_left",
+            "relation": "connected_to"
+        },
+        {
+            "from": "cable_cluster_right",
+            "to": "tool_head",
+            "relation": "routes_to"
+        }
+    ],
+    "plans": [
+        {
+            "name": "apply_artwork_in_tool_zone",
+            "steps": [
+                {
+                    "action": "position_tool_head",
+                    "target_region": "tool_path_zone"
+                },
+                {
+                    "action": "apply_or_adjust_paint_effect",
+                    "target_object": "paint_splatter_pattern"
+                }
+            ]
+        }
+    ],
+    "semantic_relationships_summary": [
+        {
+            "subject": "tool_head",
+            "predicate": "operates_in",
+            "object": "tool_path_zone"
+        },
+        {
+            "subject": "paint_splatter_pattern",
+            "predicate": "is_within",
+            "object": "printed_artwork_area"
+        },
+        {
+            "subject": "blue_work_surface",
+            "predicate": "is_covering",
+            "object": "blue_mat_area"
+        }
+    ]
+}

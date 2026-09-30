@@ -1,0 +1,113 @@
+{
+    "objects": [
+        {
+            "name": "robot_arm",
+            "coords": [
+                478,
+                477
+            ]
+        },
+        {
+            "name": "sink",
+            "coords": [
+                748,
+                547
+            ]
+        },
+        {
+            "name": "faucet",
+            "coords": [
+                689,
+                548
+            ]
+        },
+        {
+            "name": "cup",
+            "coords": [
+                642,
+                493
+            ]
+        },
+        {
+            "name": "protein_bar_1",
+            "coords": [
+                794,
+                517
+            ]
+        },
+        {
+            "name": "protein_bar_2",
+            "coords": [
+                376,
+                856
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "counter",
+            "coords": [
+                735,
+                500
+            ]
+        },
+        {
+            "name": "sink_basin",
+            "coords": [
+                780,
+                560
+            ]
+        },
+        {
+            "name": "shelf",
+            "coords": [
+                330,
+                550
+            ]
+        },
+        {
+            "name": "wall_background",
+            "coords": [
+                300,
+                500
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "faucet",
+            "sink"
+        ],
+        [
+            "cup",
+            "counter"
+        ],
+        [
+            "protein_bar_1",
+            "counter"
+        ],
+        [
+            "robot_arm",
+            "counter"
+        ]
+    ],
+    "region_connections": [
+        [
+            "sink_basin",
+            "sink"
+        ],
+        [
+            "counter",
+            "wall_background"
+        ],
+        [
+            "shelf",
+            "wall_background"
+        ]
+    ],
+    "extra_safe_objects": [],
+    "extra_unsafe_objects": [],
+    "extra_safe_regions": [],
+    "extra_unsafe_regions": [],
+    "current_location": "counter"
+}

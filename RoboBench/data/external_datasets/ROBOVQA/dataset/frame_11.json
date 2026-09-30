@@ -1,0 +1,135 @@
+{
+    "objects": [
+        {
+            "name": "cardboard_box",
+            "type": "box",
+            "attributes": {
+                "color": "brown",
+                "has_label": true
+            },
+            "coordinates": {
+                "x": 390,
+                "y": 240
+            }
+        },
+        {
+            "name": "shipping_label",
+            "type": "label",
+            "attributes": {},
+            "coordinates": {
+                "x": 345,
+                "y": 165
+            }
+        },
+        {
+            "name": "barcode_sticker",
+            "type": "barcode",
+            "attributes": {},
+            "coordinates": {
+                "x": 300,
+                "y": 235
+            }
+        },
+        {
+            "name": "black_filler_block",
+            "type": "packing_material",
+            "attributes": {
+                "color": "black"
+            },
+            "coordinates": {
+                "x": 515,
+                "y": 325
+            }
+        },
+        {
+            "name": "air_pouch_mailer",
+            "type": "plastic_mailer",
+            "attributes": {
+                "color": "clear"
+            },
+            "coordinates": {
+                "x": 850,
+                "y": 220
+            }
+        },
+        {
+            "name": "sticker_or_logo_mark",
+            "type": "sticker",
+            "attributes": {},
+            "coordinates": {
+                "x": 560,
+                "y": 360
+            }
+        }
+    ],
+    "regions": [
+        {
+            "name": "desk_surface",
+            "type": "surface",
+            "attributes": {
+                "material": "wood"
+            },
+            "coordinates": {
+                "x": 520,
+                "y": 420
+            }
+        },
+        {
+            "name": "box_opening_area",
+            "type": "opening",
+            "attributes": {},
+            "coordinates": {
+                "x": 455,
+                "y": 280
+            }
+        }
+    ],
+    "current_location": "box_opening_area",
+    "semantic_relationships": [
+        {
+            "subject": "cardboard_box",
+            "relation": "is_on",
+            "object": "desk_surface"
+        },
+        {
+            "subject": "shipping_label",
+            "relation": "is_on",
+            "object": "cardboard_box"
+        },
+        {
+            "subject": "barcode_sticker",
+            "relation": "is_on",
+            "object": "cardboard_box"
+        },
+        {
+            "subject": "black_filler_block",
+            "relation": "is_in",
+            "object": "box_opening_area"
+        },
+        {
+            "subject": "air_pouch_mailer",
+            "relation": "is_near",
+            "object": "box_opening_area"
+        },
+        {
+            "subject": "sticker_or_logo_mark",
+            "relation": "is_on",
+            "object": "black_filler_block"
+        }
+    ],
+    "plans": [
+        {
+            "name": "unpack_contents",
+            "steps": [
+                {
+                    "action": "open_packaging",
+                    "target": "box_opening_area"
+                },
+                {
+                    "action": "remove_filler",
+                    "target": "black_filler_block"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,62 @@
+{
+    "objects": [
+        {
+            "name": "white_bowl",
+            "coords": [
+                233,
+                405
+            ]
+        },
+        {
+            "name": "green_bag",
+            "coords": [
+                156,
+                564
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "grey_cabinet",
+            "coords": [
+                460,
+                500
+            ]
+        },
+        {
+            "name": "cabinet_top_surface",
+            "coords": [
+                212,
+                497
+            ]
+        },
+        {
+            "name": "floor",
+            "coords": [
+                780,
+                500
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "white_bowl",
+            "cabinet_top_surface"
+        ],
+        [
+            "green_bag",
+            "cabinet_top_surface"
+        ]
+    ],
+    "region_connections": [
+        [
+            "cabinet_top_surface",
+            "grey_cabinet"
+        ]
+    ],
+    "extra_safe_objects": [],
+    "extra_unsafe_objects": [],
+    "extra_safe_regions": [],
+    "extra_unsafe_regions": [],
+    "current_location": "floor"
+}

@@ -1,0 +1,380 @@
+{
+    "objects": [
+        {
+            "name": "red_stop_sign",
+            "type": "traffic_sign",
+            "coord": [
+                1540,
+                420
+            ],
+            "size": [
+                150,
+                110
+            ]
+        },
+        {
+            "name": "stop_sign_plate_text",
+            "type": "text_label",
+            "coord": [
+                1550,
+                435
+            ],
+            "size": [
+                90,
+                30
+            ]
+        },
+        {
+            "name": "stop_sign_stem",
+            "type": "sign_support",
+            "coord": [
+                1510,
+                350
+            ],
+            "size": [
+                20,
+                160
+            ]
+        },
+        {
+            "name": "street_sign_pole",
+            "type": "sign_support",
+            "coord": [
+                1410,
+                520
+            ],
+            "size": [
+                20,
+                160
+            ]
+        },
+        {
+            "name": "street_name_sign",
+            "type": "street_sign",
+            "coord": [
+                1430,
+                500
+            ],
+            "size": [
+                90,
+                50
+            ]
+        },
+        {
+            "name": "stop_ahead_sign_small",
+            "type": "traffic_control_device",
+            "coord": [
+                1460,
+                500
+            ],
+            "size": [
+                90,
+                40
+            ]
+        },
+        {
+            "name": "street_lamp_left",
+            "type": "street_lamp",
+            "coord": [
+                1130,
+                640
+            ],
+            "size": [
+                40,
+                160
+            ]
+        },
+        {
+            "name": "palm_tree_left",
+            "type": "tree",
+            "coord": [
+                970,
+                650
+            ],
+            "size": [
+                120,
+                180
+            ]
+        },
+        {
+            "name": "palm_tree_right",
+            "type": "tree",
+            "coord": [
+                1760,
+                680
+            ],
+            "size": [
+                120,
+                180
+            ]
+        },
+        {
+            "name": "bushes_center",
+            "type": "vegetation",
+            "coord": [
+                1470,
+                710
+            ],
+            "size": [
+                180,
+                120
+            ]
+        },
+        {
+            "name": "parked_black_suv_left",
+            "type": "vehicle",
+            "coord": [
+                820,
+                910
+            ],
+            "size": [
+                190,
+                95
+            ]
+        },
+        {
+            "name": "parked_grey_honda_left",
+            "type": "vehicle",
+            "coord": [
+                720,
+                980
+            ],
+            "size": [
+                210,
+                100
+            ]
+        },
+        {
+            "name": "parked_white_suv_right",
+            "type": "vehicle",
+            "coord": [
+                1980,
+                980
+            ],
+            "size": [
+                200,
+                100
+            ]
+        },
+        {
+            "name": "building_left_house",
+            "type": "building",
+            "coord": [
+                900,
+                620
+            ],
+            "size": [
+                420,
+                260
+            ]
+        },
+        {
+            "name": "building_right_apartment",
+            "type": "building",
+            "coord": [
+                1600,
+                620
+            ],
+            "size": [
+                520,
+                280
+            ]
+        },
+        {
+            "name": "crosswalk_markings",
+            "type": "road_marking",
+            "coord": [
+                1280,
+                980
+            ],
+            "size": [
+                420,
+                120
+            ]
+        },
+        {
+            "name": "road_intersection_area",
+            "type": "road",
+            "coord": [
+                1320,
+                980
+            ],
+            "size": [
+                900,
+                420
+            ]
+        },
+        {
+            "name": "sky",
+            "type": "environment",
+            "coord": [
+                1320,
+                180
+            ],
+            "size": [
+                1400,
+                400
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "intersection_crosswalk_region",
+            "type": "road_area",
+            "coord": [
+                1320,
+                980
+            ],
+            "size": [
+                420,
+                120
+            ]
+        },
+        {
+            "name": "stop_sign_corner_region",
+            "type": "corner_area",
+            "coord": [
+                1540,
+                520
+            ],
+            "size": [
+                320,
+                220
+            ]
+        },
+        {
+            "name": "left_residential_region",
+            "type": "neighborhood_area",
+            "coord": [
+                1000,
+                680
+            ],
+            "size": [
+                520,
+                360
+            ]
+        },
+        {
+            "name": "right_residential_region",
+            "type": "neighborhood_area",
+            "coord": [
+                1680,
+                690
+            ],
+            "size": [
+                620,
+                380
+            ]
+        },
+        {
+            "name": "sky_region",
+            "type": "environment_region",
+            "coord": [
+                1320,
+                180
+            ],
+            "size": [
+                1400,
+                400
+            ]
+        }
+    ],
+    "semantic_relationships": [
+        {
+            "from": "red_stop_sign",
+            "relation": "is_on",
+            "to": "stop_sign_corner_region"
+        },
+        {
+            "from": "stop_sign_plate_text",
+            "relation": "is_imprinted_on",
+            "to": "red_stop_sign"
+        },
+        {
+            "from": "stop_sign_stem",
+            "relation": "supports",
+            "to": "red_stop_sign"
+        },
+        {
+            "from": "street_name_sign",
+            "relation": "is_near",
+            "to": "red_stop_sign"
+        },
+        {
+            "from": "stop_ahead_sign_small",
+            "relation": "is_under",
+            "to": "street_name_sign"
+        },
+        {
+            "from": "palm_tree_right",
+            "relation": "is_near",
+            "to": "right_residential_region"
+        },
+        {
+            "from": "palm_tree_left",
+            "relation": "is_near",
+            "to": "left_residential_region"
+        },
+        {
+            "from": "bushes_center",
+            "relation": "is_adjacent_to",
+            "to": "right_residential_region"
+        },
+        {
+            "from": "parked_black_suv_left",
+            "relation": "is_in",
+            "to": "left_residential_region"
+        },
+        {
+            "from": "parked_grey_honda_left",
+            "relation": "is_in",
+            "to": "intersection_crosswalk_region"
+        },
+        {
+            "from": "parked_white_suv_right",
+            "relation": "is_near",
+            "to": "right_residential_region"
+        },
+        {
+            "from": "building_left_house",
+            "relation": "faces",
+            "to": "intersection_crosswalk_region"
+        },
+        {
+            "from": "building_right_apartment",
+            "relation": "faces",
+            "to": "intersection_crosswalk_region"
+        },
+        {
+            "from": "crosswalk_markings",
+            "relation": "lies_within",
+            "to": "intersection_crosswalk_region"
+        },
+        {
+            "from": "road_intersection_area",
+            "relation": "contains",
+            "to": "intersection_crosswalk_region"
+        },
+        {
+            "from": "sky",
+            "relation": "covers",
+            "to": "sky_region"
+        },
+        {
+            "from": "street_lamp_left",
+            "relation": "is_near",
+            "to": "left_residential_region"
+        }
+    ],
+    "current_location": "intersection_crosswalk_region",
+    "plans": [
+        {
+            "action": "approach",
+            "target": "intersection_crosswalk_region"
+        },
+        {
+            "action": "yield_to",
+            "target": "red_stop_sign"
+        }
+    ]
+}

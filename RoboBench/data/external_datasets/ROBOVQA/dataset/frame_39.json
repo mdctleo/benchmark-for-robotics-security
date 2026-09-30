@@ -1,0 +1,301 @@
+{
+    "regions": [
+        {
+            "name": "kitchen_floor",
+            "type": "floor",
+            "coordinates": [
+                [
+                    0,
+                    0
+                ],
+                [
+                    960,
+                    0
+                ],
+                [
+                    960,
+                    540
+                ],
+                [
+                    0,
+                    540
+                ]
+            ],
+            "contains": [
+                "floor_speckles",
+                "drawer_area",
+                "open_locker_area"
+            ]
+        },
+        {
+            "name": "drawer_area",
+            "type": "table_cabinet_front",
+            "coordinates": [
+                [
+                    80,
+                    205
+                ],
+                [
+                    960,
+                    205
+                ],
+                [
+                    960,
+                    390
+                ],
+                [
+                    80,
+                    390
+                ]
+            ]
+        },
+        {
+            "name": "open_locker_area",
+            "type": "drawer_opening",
+            "coordinates": [
+                [
+                    140,
+                    160
+                ],
+                [
+                    960,
+                    160
+                ],
+                [
+                    960,
+                    330
+                ],
+                [
+                    140,
+                    330
+                ]
+            ],
+            "contains": [
+                "inside_cabinet_surface"
+            ]
+        },
+        {
+            "name": "inside_cabinet_surface",
+            "type": "surface_inside_open_drawer",
+            "coordinates": [
+                [
+                    170,
+                    185
+                ],
+                [
+                    930,
+                    185
+                ],
+                [
+                    930,
+                    310
+                ],
+                [
+                    170,
+                    310
+                ]
+            ]
+        },
+        {
+            "name": "counter_top",
+            "type": "countertop",
+            "coordinates": [
+                [
+                    0,
+                    90
+                ],
+                [
+                    960,
+                    90
+                ],
+                [
+                    960,
+                    220
+                ],
+                [
+                    0,
+                    220
+                ]
+            ],
+            "contains": [
+                "left_open_tray_area"
+            ]
+        },
+        {
+            "name": "left_open_tray_area",
+            "type": "tray_area",
+            "coordinates": [
+                [
+                    60,
+                    60
+                ],
+                [
+                    430,
+                    220
+                ],
+                [
+                    430,
+                    220
+                ],
+                [
+                    60,
+                    60
+                ]
+            ]
+        },
+        {
+            "name": "floor_speckles",
+            "type": "floor_debris_region",
+            "coordinates": [
+                [
+                    240,
+                    320
+                ],
+                [
+                    720,
+                    320
+                ],
+                [
+                    720,
+                    540
+                ],
+                [
+                    240,
+                    540
+                ]
+            ]
+        }
+    ],
+    "objects": [
+        {
+            "name": "robot_arm",
+            "type": "robot",
+            "coordinates": [
+                740,
+                260
+            ]
+        },
+        {
+            "name": "basket",
+            "type": "wire_basket",
+            "coordinates": [
+                255,
+                140
+            ]
+        },
+        {
+            "name": "open_drawer",
+            "type": "drawer",
+            "coordinates": [
+                520,
+                240
+            ]
+        },
+        {
+            "name": "inside_items",
+            "type": "assorted_items",
+            "coordinates": [
+                300,
+                150
+            ]
+        },
+        {
+            "name": "floor",
+            "type": "floor_region_reference",
+            "coordinates": [
+                480,
+                420
+            ]
+        }
+    ],
+    "semantic_relationships": [
+        {
+            "subject": "robot_arm",
+            "predicate": "is_on_or_over",
+            "object": "drawer_area"
+        },
+        {
+            "subject": "robot_arm",
+            "predicate": "is_near",
+            "object": "open_drawer"
+        },
+        {
+            "subject": "open_drawer",
+            "predicate": "is_within",
+            "object": "kitchen_floor"
+        },
+        {
+            "subject": "open_drawer",
+            "predicate": "contains",
+            "object": "inside_cabinet_surface"
+        },
+        {
+            "subject": "basket",
+            "predicate": "is_on_or_over",
+            "object": "counter_top"
+        },
+        {
+            "subject": "basket",
+            "predicate": "contains",
+            "object": "inside_items"
+        },
+        {
+            "subject": "inside_items",
+            "predicate": "is_within",
+            "object": "left_open_tray_area"
+        },
+        {
+            "subject": "drawer_area",
+            "predicate": "is_within",
+            "object": "kitchen_floor"
+        },
+        {
+            "subject": "floor",
+            "predicate": "covers",
+            "object": "kitchen_floor"
+        },
+        {
+            "subject": "floor_speckles",
+            "predicate": "is_on",
+            "object": "kitchen_floor"
+        }
+    ],
+    "current_location": {
+        "name": "robot_arm",
+        "region": "open_locker_area",
+        "coordinates": [
+            740,
+            260
+        ]
+    },
+    "plans": [
+        {
+            "plan_name": "inspect_open_drawer_area",
+            "target_object": "open_drawer",
+            "target_region": "inside_cabinet_surface",
+            "suggested_path": [
+                {
+                    "waypoint_region": "drawer_area",
+                    "coordinates": [
+                        650,
+                        300
+                    ]
+                },
+                {
+                    "waypoint_region": "open_locker_area",
+                    "coordinates": [
+                        520,
+                        240
+                    ]
+                },
+                {
+                    "waypoint_region": "inside_cabinet_surface",
+                    "coordinates": [
+                        520,
+                        250
+                    ]
+                }
+            ]
+        }
+    ]
+}

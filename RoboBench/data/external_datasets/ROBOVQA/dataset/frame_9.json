@@ -1,0 +1,200 @@
+{
+    "objects": [
+        {
+            "name": "batteries_pack_blue",
+            "type": "object",
+            "attributes": {
+                "label_visible": "blue cans",
+                "quantity_estimate": 8
+            },
+            "position": {
+                "x": 600,
+                "y": 250
+            }
+        },
+        {
+            "name": "batteries_pack_black",
+            "type": "object",
+            "attributes": {
+                "label_visible": "black/blue cans",
+                "quantity_estimate": 3
+            },
+            "position": {
+                "x": 470,
+                "y": 205
+            }
+        },
+        {
+            "name": "plastic_case_tray",
+            "type": "object",
+            "attributes": {
+                "material": "plastic",
+                "purpose": "holds cans"
+            },
+            "position": {
+                "x": 440,
+                "y": 225
+            }
+        },
+        {
+            "name": "extension_battery_bar",
+            "type": "object",
+            "attributes": {
+                "label_visible": "none",
+                "purpose": "row/rail of small cylindrical units"
+            },
+            "position": {
+                "x": 290,
+                "y": 250
+            }
+        },
+        {
+            "name": "small_bags_or_pouch",
+            "type": "object",
+            "attributes": {
+                "label_visible": "none",
+                "purpose": "small packed items"
+            },
+            "position": {
+                "x": 520,
+                "y": 60
+            }
+        },
+        {
+            "name": "apples_bowl",
+            "type": "object",
+            "attributes": {
+                "content": "potatoes/apples-like produce",
+                "quantity_estimate": 8
+            },
+            "position": {
+                "x": 70,
+                "y": 60
+            }
+        },
+        {
+            "name": "oranges_basket",
+            "type": "object",
+            "attributes": {
+                "content": "eggs/oranges-like produce"
+            },
+            "position": {
+                "x": 500,
+                "y": 55
+            }
+        },
+        {
+            "name": "eggs_bunch",
+            "type": "object",
+            "attributes": {
+                "content": "eggs",
+                "quantity_estimate": 3
+            },
+            "position": {
+                "x": 445,
+                "y": 55
+            }
+        },
+        {
+            "name": "countertop",
+            "type": "object",
+            "attributes": {
+                "material": "wood/laminate",
+                "surface": "main work surface"
+            },
+            "position": {
+                "x": 360,
+                "y": 420
+            }
+        }
+    ],
+    "regions": [
+        {
+            "name": "kitchen_counter_area",
+            "type": "region",
+            "topdown_polygon": [
+                {
+                    "x": 0,
+                    "y": 150
+                },
+                {
+                    "x": 920,
+                    "y": 150
+                },
+                {
+                    "x": 920,
+                    "y": 620
+                },
+                {
+                    "x": 0,
+                    "y": 620
+                }
+            ],
+            "center": {
+                "x": 460,
+                "y": 385
+            }
+        }
+    ],
+    "semantic_relationships": [
+        {
+            "relation": "located_on",
+            "subject": "batteries_pack_blue",
+            "object": "kitchen_counter_area"
+        },
+        {
+            "relation": "located_on",
+            "subject": "batteries_pack_black",
+            "object": "kitchen_counter_area"
+        },
+        {
+            "relation": "supports",
+            "subject": "plastic_case_tray",
+            "object": "batteries_pack_black"
+        },
+        {
+            "relation": "supports",
+            "subject": "plastic_case_tray",
+            "object": "batteries_pack_blue"
+        },
+        {
+            "relation": "adjacent_to",
+            "subject": "extension_battery_bar",
+            "object": "plastic_case_tray"
+        },
+        {
+            "relation": "located_on",
+            "subject": "extension_battery_bar",
+            "object": "kitchen_counter_area"
+        },
+        {
+            "relation": "located_on",
+            "subject": "small_bags_or_pouch",
+            "object": "kitchen_counter_area"
+        },
+        {
+            "relation": "located_on",
+            "subject": "apples_bowl",
+            "object": "kitchen_counter_area"
+        },
+        {
+            "relation": "located_on",
+            "subject": "oranges_basket",
+            "object": "kitchen_counter_area"
+        },
+        {
+            "relation": "located_on",
+            "subject": "eggs_bunch",
+            "object": "kitchen_counter_area"
+        },
+        {
+            "relation": "surface_region",
+            "subject": "countertop",
+            "object": "kitchen_counter_area"
+        }
+    ],
+    "agents_and_state": {
+        "current_location": "kitchen_counter_area",
+        "plans": []
+    }
+}

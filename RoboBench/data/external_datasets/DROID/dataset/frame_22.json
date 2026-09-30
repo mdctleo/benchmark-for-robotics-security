@@ -1,0 +1,217 @@
+{
+    "objects": [
+        {
+            "name": "large_orange_bowl_with_food",
+            "coords": [
+                770,
+                700
+            ]
+        },
+        {
+            "name": "popcorn_container",
+            "coords": [
+                880,
+                780
+            ]
+        },
+        {
+            "name": "black_ladle",
+            "coords": [
+                790,
+                800
+            ]
+        },
+        {
+            "name": "orange_pumpkin",
+            "coords": [
+                470,
+                500
+            ]
+        },
+        {
+            "name": "red_plate",
+            "coords": [
+                470,
+                500
+            ]
+        },
+        {
+            "name": "small_purple_bowl",
+            "coords": [
+                310,
+                660
+            ]
+        },
+        {
+            "name": "small_orange_bowl",
+            "coords": [
+                560,
+                530
+            ]
+        },
+        {
+            "name": "black_pan_or_scoop",
+            "coords": [
+                300,
+                820
+            ]
+        },
+        {
+            "name": "white_robot",
+            "coords": [
+                200,
+                480
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "long_wooden_table",
+            "coords": [
+                500,
+                700
+            ]
+        },
+        {
+            "name": "kitchen_background_area",
+            "coords": [
+                400,
+                350
+            ]
+        },
+        {
+            "name": "floor_area",
+            "coords": [
+                300,
+                900
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "large_orange_bowl_with_food",
+            "black_ladle"
+        ],
+        [
+            "large_orange_bowl_with_food",
+            "popcorn_container"
+        ],
+        [
+            "orange_pumpkin",
+            "red_plate"
+        ]
+    ],
+    "region_connections": [
+        [
+            "long_wooden_table",
+            "kitchen_background_area"
+        ],
+        [
+            "long_wooden_table",
+            "floor_area"
+        ]
+    ],
+    "extra_safe_objects": [
+        {
+            "name": "large_orange_bowl_with_food",
+            "type": "bowl",
+            "coords": [
+                770,
+                700
+            ]
+        },
+        {
+            "name": "popcorn_container",
+            "type": "container",
+            "coords": [
+                880,
+                780
+            ]
+        },
+        {
+            "name": "black_ladle",
+            "type": "utensil",
+            "coords": [
+                790,
+                800
+            ]
+        },
+        {
+            "name": "orange_pumpkin",
+            "type": "decorative_item",
+            "coords": [
+                470,
+                500
+            ]
+        },
+        {
+            "name": "red_plate",
+            "type": "plate",
+            "coords": [
+                470,
+                500
+            ]
+        },
+        {
+            "name": "small_purple_bowl",
+            "type": "bowl",
+            "coords": [
+                310,
+                660
+            ]
+        },
+        {
+            "name": "small_orange_bowl",
+            "type": "bowl",
+            "coords": [
+                560,
+                530
+            ]
+        },
+        {
+            "name": "black_pan_or_scoop",
+            "type": "kitchenware",
+            "coords": [
+                300,
+                820
+            ]
+        },
+        {
+            "name": "white_robot",
+            "type": "robot",
+            "coords": [
+                200,
+                480
+            ]
+        }
+    ],
+    "extra_unsafe_objects": [],
+    "extra_safe_regions": [
+        {
+            "name": "long_wooden_table",
+            "type": "surface",
+            "coords": [
+                500,
+                700
+            ]
+        },
+        {
+            "name": "kitchen_background_area",
+            "type": "background",
+            "coords": [
+                400,
+                350
+            ]
+        },
+        {
+            "name": "floor_area",
+            "type": "ground",
+            "coords": [
+                300,
+                900
+            ]
+        }
+    ],
+    "extra_unsafe_regions": [],
+    "current_location": "long_wooden_table"
+}

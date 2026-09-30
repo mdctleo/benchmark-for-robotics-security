@@ -1,0 +1,338 @@
+{
+    "objects": [
+        {
+            "name": "cars",
+            "type": "vehicle",
+            "bounding_polygon": [
+                [
+                    0.0,
+                    0.0
+                ],
+                [
+                    0.0,
+                    0.0
+                ],
+                [
+                    0.0,
+                    0.0
+                ],
+                [
+                    0.0,
+                    0.0
+                ]
+            ],
+            "attributes": {
+                "count_estimate": "several"
+            }
+        },
+        {
+            "name": "building_left",
+            "type": "building",
+            "bounding_polygon": [
+                [
+                    0.0,
+                    0.05
+                ],
+                [
+                    0.34,
+                    0.05
+                ],
+                [
+                    0.34,
+                    0.98
+                ],
+                [
+                    0.0,
+                    0.98
+                ]
+            ],
+            "attributes": {
+                "floors_estimate": "several"
+            }
+        },
+        {
+            "name": "building_right",
+            "type": "building",
+            "bounding_polygon": [
+                [
+                    0.62,
+                    0.06
+                ],
+                [
+                    1.0,
+                    0.06
+                ],
+                [
+                    1.0,
+                    0.98
+                ],
+                [
+                    0.62,
+                    0.98
+                ]
+            ],
+            "attributes": {
+                "floors_estimate": "several",
+                "style": "arched facade"
+            }
+        },
+        {
+            "name": "street_lamp",
+            "type": "street_light",
+            "bounding_polygon": [
+                [
+                    0.86,
+                    0.0
+                ],
+                [
+                    0.9,
+                    0.0
+                ],
+                [
+                    0.9,
+                    0.25
+                ],
+                [
+                    0.86,
+                    0.25
+                ]
+            ]
+        },
+        {
+            "name": "trees",
+            "type": "vegetation",
+            "bounding_polygon": [
+                [
+                    0.0,
+                    0.0
+                ],
+                [
+                    0.15,
+                    0.0
+                ],
+                [
+                    0.48,
+                    0.4
+                ],
+                [
+                    0.35,
+                    0.55
+                ]
+            ],
+            "attributes": {
+                "count_estimate": "many"
+            }
+        },
+        {
+            "name": "crosswalk_signals",
+            "type": "traffic_signal",
+            "bounding_polygon": [
+                [
+                    0.62,
+                    0.36
+                ],
+                [
+                    0.66,
+                    0.36
+                ],
+                [
+                    0.66,
+                    0.47
+                ],
+                [
+                    0.62,
+                    0.47
+                ]
+            ]
+        },
+        {
+            "name": "street_sign",
+            "type": "signage",
+            "bounding_polygon": [
+                [
+                    0.51,
+                    0.34
+                ],
+                [
+                    0.53,
+                    0.34
+                ],
+                [
+                    0.53,
+                    0.38
+                ],
+                [
+                    0.51,
+                    0.38
+                ]
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "roadway",
+            "type": "road",
+            "polygon": [
+                [
+                    0.0,
+                    0.5
+                ],
+                [
+                    1.0,
+                    0.5
+                ],
+                [
+                    1.0,
+                    1.0
+                ],
+                [
+                    0.0,
+                    1.0
+                ]
+            ]
+        },
+        {
+            "name": "sidewalk_left",
+            "type": "sidewalk",
+            "polygon": [
+                [
+                    0.0,
+                    0.4
+                ],
+                [
+                    0.18,
+                    0.4
+                ],
+                [
+                    0.18,
+                    1.0
+                ],
+                [
+                    0.0,
+                    1.0
+                ]
+            ]
+        },
+        {
+            "name": "sidewalk_right",
+            "type": "sidewalk",
+            "polygon": [
+                [
+                    0.82,
+                    0.4
+                ],
+                [
+                    1.0,
+                    0.4
+                ],
+                [
+                    1.0,
+                    1.0
+                ],
+                [
+                    0.82,
+                    1.0
+                ]
+            ]
+        },
+        {
+            "name": "plaza_left",
+            "type": "urban_open_area",
+            "polygon": [
+                [
+                    0.18,
+                    0.4
+                ],
+                [
+                    0.33,
+                    0.4
+                ],
+                [
+                    0.33,
+                    0.72
+                ],
+                [
+                    0.18,
+                    0.72
+                ]
+            ]
+        },
+        {
+            "name": "plaza_right",
+            "type": "urban_open_area",
+            "polygon": [
+                [
+                    0.67,
+                    0.4
+                ],
+                [
+                    0.82,
+                    0.4
+                ],
+                [
+                    0.82,
+                    0.72
+                ],
+                [
+                    0.67,
+                    0.72
+                ]
+            ]
+        }
+    ],
+    "semantic_relationships": [
+        {
+            "subject": "building_left",
+            "relation": "adjacent_to",
+            "object": "sidewalk_left"
+        },
+        {
+            "subject": "building_right",
+            "relation": "adjacent_to",
+            "object": "sidewalk_right"
+        },
+        {
+            "subject": "trees",
+            "relation": "line_along",
+            "object": "sidewalk_left"
+        },
+        {
+            "subject": "trees",
+            "relation": "line_along",
+            "object": "sidewalk_right"
+        },
+        {
+            "subject": "street_lamp",
+            "relation": "located_near",
+            "object": "sidewalk_right"
+        },
+        {
+            "subject": "crosswalk_signals",
+            "relation": "controls",
+            "object": "roadway"
+        },
+        {
+            "subject": "street_sign",
+            "relation": "mounted_near",
+            "object": "roadway"
+        },
+        {
+            "subject": "cars",
+            "relation": "occupy",
+            "object": "roadway"
+        },
+        {
+            "subject": "cars",
+            "relation": "move_on",
+            "object": "roadway"
+        }
+    ],
+    "current_location": "roadway",
+    "plans": [
+        {
+            "from": "roadway",
+            "to": "sidewalk_right",
+            "action": "vehicle_navigation_possible"
+        }
+    ]
+}

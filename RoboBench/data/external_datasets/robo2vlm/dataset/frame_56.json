@@ -1,0 +1,117 @@
+{
+    "objects": [
+        {
+            "name": "can",
+            "coords": [
+                410,
+                160
+            ]
+        },
+        {
+            "name": "bag_of_chips",
+            "coords": [
+                640,
+                150
+            ]
+        },
+        {
+            "name": "pastry",
+            "coords": [
+                630,
+                220
+            ]
+        },
+        {
+            "name": "plate",
+            "coords": [
+                360,
+                175
+            ]
+        },
+        {
+            "name": "robot_arm",
+            "coords": [
+                750,
+                650
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "cabinet_top_surface",
+            "coords": [
+                500,
+                200
+            ]
+        },
+        {
+            "name": "top_drawer",
+            "coords": [
+                500,
+                310
+            ]
+        },
+        {
+            "name": "middle_drawer",
+            "coords": [
+                500,
+                410
+            ]
+        },
+        {
+            "name": "bottom_drawer",
+            "coords": [
+                500,
+                520
+            ]
+        },
+        {
+            "name": "floor",
+            "coords": [
+                500,
+                800
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "can",
+            "on top of entity with name from list of regions: cabinet_top_surface"
+        ],
+        [
+            "bag_of_chips",
+            "on top of entity with name from list of regions: cabinet_top_surface"
+        ],
+        [
+            "pastry",
+            "on top of entity with name from list of regions: cabinet_top_surface"
+        ],
+        [
+            "plate",
+            "on top of entity with name from list of regions: cabinet_top_surface"
+        ],
+        [
+            "robot_arm",
+            "near entity with name from list of regions: bottom_drawer"
+        ]
+    ],
+    "region_connections": [
+        [
+            "cabinet_top_surface",
+            "above entity with name from list of regions: top_drawer"
+        ],
+        [
+            "top_drawer",
+            "above entity with name from list of regions: middle_drawer"
+        ],
+        [
+            "middle_drawer",
+            "above entity with name from list of regions: bottom_drawer"
+        ]
+    ],
+    "extra_safe_objects": [],
+    "extra_unsafe_objects": [],
+    "extra_safe_regions": [],
+    "extra_unsafe_regions": [],
+    "current_location": "bottom_drawer"
+}

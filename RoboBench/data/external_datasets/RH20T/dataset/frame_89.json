@@ -1,0 +1,243 @@
+{
+    "objects": [
+        {
+            "name": "helmet",
+            "type": "object",
+            "center": [
+                110,
+                95
+            ]
+        },
+        {
+            "name": "control_arm",
+            "type": "object",
+            "center": [
+                150,
+                70
+            ]
+        },
+        {
+            "name": "base_mount",
+            "type": "object",
+            "center": [
+                175,
+                110
+            ]
+        },
+        {
+            "name": "wrist_joint",
+            "type": "object",
+            "center": [
+                190,
+                85
+            ]
+        },
+        {
+            "name": "hose_bundle",
+            "type": "object",
+            "center": [
+                225,
+                150
+            ]
+        },
+        {
+            "name": "red_cable",
+            "type": "object",
+            "center": [
+                240,
+                150
+            ]
+        },
+        {
+            "name": "black_handle",
+            "type": "object",
+            "center": [
+                205,
+                145
+            ]
+        },
+        {
+            "name": "cardboard_block",
+            "type": "object",
+            "center": [
+                150,
+                170
+            ]
+        },
+        {
+            "name": "black_mouse_like_device",
+            "type": "object",
+            "center": [
+                115,
+                160
+            ]
+        },
+        {
+            "name": "circular_motor_cover",
+            "type": "object",
+            "center": [
+                60,
+                120
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "workspace_mat",
+            "type": "region",
+            "polygon": [
+                [
+                    20,
+                    130
+                ],
+                [
+                    320,
+                    130
+                ],
+                [
+                    320,
+                    280
+                ],
+                [
+                    20,
+                    280
+                ]
+            ]
+        },
+        {
+            "name": "robot_arm_area",
+            "type": "region",
+            "polygon": [
+                [
+                    0,
+                    0
+                ],
+                [
+                    340,
+                    220
+                ],
+                [
+                    340,
+                    220
+                ],
+                [
+                    0,
+                    220
+                ]
+            ]
+        },
+        {
+            "name": "current_location",
+            "type": "region",
+            "polygon": [
+                [
+                    130,
+                    140
+                ],
+                [
+                    250,
+                    220
+                ],
+                [
+                    250,
+                    260
+                ],
+                [
+                    130,
+                    180
+                ]
+            ]
+        },
+        {
+            "name": "floor_left",
+            "type": "region",
+            "polygon": [
+                [
+                    0,
+                    220
+                ],
+                [
+                    140,
+                    350
+                ],
+                [
+                    0,
+                    350
+                ],
+                [
+                    0,
+                    220
+                ]
+            ]
+        }
+    ],
+    "semantic_relationships": [
+        {
+            "subject": "helmet",
+            "predicate": "is_part_of",
+            "object": "robot_arm_area"
+        },
+        {
+            "subject": "control_arm",
+            "predicate": "is_part_of",
+            "object": "robot_arm_area"
+        },
+        {
+            "subject": "base_mount",
+            "predicate": "located_in",
+            "object": "robot_arm_area"
+        },
+        {
+            "subject": "wrist_joint",
+            "predicate": "located_in",
+            "object": "robot_arm_area"
+        },
+        {
+            "subject": "hose_bundle",
+            "predicate": "lies_on",
+            "object": "workspace_mat"
+        },
+        {
+            "subject": "red_cable",
+            "predicate": "lies_on",
+            "object": "workspace_mat"
+        },
+        {
+            "subject": "black_handle",
+            "predicate": "lies_on",
+            "object": "workspace_mat"
+        },
+        {
+            "subject": "cardboard_block",
+            "predicate": "is_on_top_of",
+            "object": "workspace_mat"
+        },
+        {
+            "subject": "black_mouse_like_device",
+            "predicate": "is_on_top_of",
+            "object": "workspace_mat"
+        },
+        {
+            "subject": "circular_motor_cover",
+            "predicate": "is_part_of",
+            "object": "robot_arm_area"
+        },
+        {
+            "subject": "workspace_mat",
+            "predicate": "contains",
+            "object": "current_location"
+        }
+    ],
+    "agents": [
+        {
+            "name": "control_arm",
+            "current_location": "current_location",
+            "plans": [
+                {
+                    "action": "move_within",
+                    "target": "current_location"
+                }
+            ]
+        }
+    ]
+}

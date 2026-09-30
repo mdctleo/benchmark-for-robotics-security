@@ -1,0 +1,125 @@
+{
+    "objects": [
+        {
+            "name": "forklift",
+            "coords": [
+                300,
+                500
+            ]
+        },
+        {
+            "name": "person",
+            "coords": [
+                350,
+                480
+            ]
+        },
+        {
+            "name": "pallet",
+            "coords": [
+                330,
+                500
+            ]
+        },
+        {
+            "name": "safety_pole_left",
+            "coords": [
+                400,
+                150
+            ]
+        },
+        {
+            "name": "safety_pole_right",
+            "coords": [
+                400,
+                850
+            ]
+        },
+        {
+            "name": "warning_sign",
+            "coords": [
+                600,
+                500
+            ]
+        },
+        {
+            "name": "dock_ramp_base",
+            "coords": [
+                850,
+                500
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "warehouse_floor",
+            "coords": [
+                400,
+                500
+            ]
+        },
+        {
+            "name": "loading_dock_area",
+            "coords": [
+                700,
+                500
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "person",
+            "forklift"
+        ],
+        [
+            "forklift",
+            "pallet"
+        ]
+    ],
+    "region_connections": [
+        [
+            "loading_dock_area",
+            "warehouse_floor"
+        ]
+    ],
+    "extra_safe_objects": [
+        {
+            "name": "safety_pole_left",
+            "type": "barrier",
+            "coords": [
+                400,
+                150
+            ]
+        },
+        {
+            "name": "safety_pole_right",
+            "type": "barrier",
+            "coords": [
+                400,
+                850
+            ]
+        }
+    ],
+    "extra_unsafe_objects": [
+        {
+            "name": "forklift",
+            "type": "vehicle",
+            "coords": [
+                300,
+                500
+            ]
+        }
+    ],
+    "extra_safe_regions": [],
+    "extra_unsafe_regions": [
+        {
+            "name": "loading_dock_area",
+            "type": "hazard_zone",
+            "coords": [
+                700,
+                500
+            ]
+        }
+    ],
+    "current_location": "loading_dock_area"
+}

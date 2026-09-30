@@ -1,0 +1,252 @@
+{
+    "regions": [
+        {
+            "name": "roadway",
+            "polygon": [
+                [
+                    450,
+                    310
+                ],
+                [
+                    1040,
+                    310
+                ],
+                [
+                    1120,
+                    760
+                ],
+                [
+                    370,
+                    760
+                ]
+            ]
+        },
+        {
+            "name": "left_sidewalk",
+            "polygon": [
+                [
+                    250,
+                    320
+                ],
+                [
+                    450,
+                    310
+                ],
+                [
+                    370,
+                    760
+                ],
+                [
+                    190,
+                    770
+                ]
+            ]
+        },
+        {
+            "name": "right_sidewalk",
+            "polygon": [
+                [
+                    1040,
+                    310
+                ],
+                [
+                    1240,
+                    360
+                ],
+                [
+                    1120,
+                    760
+                ],
+                [
+                    1120,
+                    760
+                ]
+            ]
+        },
+        {
+            "name": "left_buildings_area",
+            "polygon": [
+                [
+                    0,
+                    260
+                ],
+                [
+                    250,
+                    320
+                ],
+                [
+                    190,
+                    770
+                ],
+                [
+                    0,
+                    740
+                ]
+            ]
+        },
+        {
+            "name": "right_buildings_area",
+            "polygon": [
+                [
+                    1240,
+                    260
+                ],
+                [
+                    1040,
+                    310
+                ],
+                [
+                    1120,
+                    760
+                ],
+                [
+                    1240,
+                    740
+                ]
+            ]
+        },
+        {
+            "name": "current_location",
+            "polygon": [
+                [
+                    520,
+                    360
+                ],
+                [
+                    970,
+                    360
+                ],
+                [
+                    1010,
+                    700
+                ],
+                [
+                    490,
+                    700
+                ]
+            ]
+        }
+    ],
+    "objects": [
+        {
+            "name": "cars_ahead",
+            "type": "vehicle",
+            "position": [
+                820,
+                570
+            ]
+        },
+        {
+            "name": "street_sign",
+            "type": "sign",
+            "position": [
+                955,
+                605
+            ]
+        },
+        {
+            "name": "utility_poles",
+            "type": "infrastructure",
+            "position": [
+                545,
+                420
+            ]
+        },
+        {
+            "name": "trees_left",
+            "type": "vegetation",
+            "position": [
+                760,
+                540
+            ]
+        },
+        {
+            "name": "trees_right",
+            "type": "vegetation",
+            "position": [
+                1140,
+                520
+            ]
+        },
+        {
+            "name": "left_buildings",
+            "type": "building",
+            "position": [
+                180,
+                520
+            ]
+        },
+        {
+            "name": "right_buildings",
+            "type": "building",
+            "position": [
+                1160,
+                520
+            ]
+        }
+    ],
+    "semantic_relationships": [
+        {
+            "subject": "current_location",
+            "relation": "contains",
+            "object": "cars_ahead"
+        },
+        {
+            "subject": "roadway",
+            "relation": "adjacent_to",
+            "object": "left_sidewalk"
+        },
+        {
+            "subject": "roadway",
+            "relation": "adjacent_to",
+            "object": "right_sidewalk"
+        },
+        {
+            "subject": "left_sidewalk",
+            "relation": "adjacent_to",
+            "object": "left_buildings_area"
+        },
+        {
+            "subject": "right_sidewalk",
+            "relation": "adjacent_to",
+            "object": "right_buildings_area"
+        },
+        {
+            "subject": "left_buildings_area",
+            "relation": "contains",
+            "object": "left_buildings"
+        },
+        {
+            "subject": "right_buildings_area",
+            "relation": "contains",
+            "object": "right_buildings"
+        },
+        {
+            "subject": "roadway",
+            "relation": "has_object",
+            "object": "cars_ahead"
+        },
+        {
+            "subject": "right_sidewalk",
+            "relation": "has_object",
+            "object": "street_sign"
+        },
+        {
+            "subject": "roadway",
+            "relation": "has_object",
+            "object": "utility_poles"
+        },
+        {
+            "subject": "right_sidewalk",
+            "relation": "has_object",
+            "object": "trees_right"
+        },
+        {
+            "subject": "left_sidewalk",
+            "relation": "has_object",
+            "object": "trees_left"
+        }
+    ],
+    "current_location": "current_location",
+    "plans": []
+}

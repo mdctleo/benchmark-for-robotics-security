@@ -1,0 +1,239 @@
+{
+    "objects": [
+        {
+            "name": "machine_base_left",
+            "type": "machine",
+            "coordinates": {
+                "x": 55,
+                "y": 120
+            }
+        },
+        {
+            "name": "machine_base_right",
+            "type": "machine",
+            "coordinates": {
+                "x": 1060,
+                "y": 95
+            }
+        },
+        {
+            "name": "cylindrical_unit_left",
+            "type": "cylinder",
+            "coordinates": {
+                "x": 60,
+                "y": 70
+            }
+        },
+        {
+            "name": "cylindrical_unit_right",
+            "type": "cylinder",
+            "coordinates": {
+                "x": 1030,
+                "y": 35
+            }
+        },
+        {
+            "name": "control_box_center",
+            "type": "control_box",
+            "coordinates": {
+                "x": 620,
+                "y": 90
+            }
+        },
+        {
+            "name": "red_button_1",
+            "type": "button",
+            "coordinates": {
+                "x": 595,
+                "y": 80
+            }
+        },
+        {
+            "name": "yellow_button_1",
+            "type": "button",
+            "coordinates": {
+                "x": 610,
+                "y": 70
+            }
+        },
+        {
+            "name": "green_button_1",
+            "type": "button",
+            "coordinates": {
+                "x": 635,
+                "y": 70
+            }
+        },
+        {
+            "name": "white_box",
+            "type": "electrical_box",
+            "coordinates": {
+                "x": 850,
+                "y": 230
+            }
+        },
+        {
+            "name": "cable_bundle",
+            "type": "cables",
+            "coordinates": {
+                "x": 745,
+                "y": 55
+            }
+        },
+        {
+            "name": "stand_post_left",
+            "type": "stand",
+            "coordinates": {
+                "x": 15,
+                "y": 160
+            }
+        },
+        {
+            "name": "stand_post_right",
+            "type": "stand",
+            "coordinates": {
+                "x": 1120,
+                "y": 220
+            }
+        },
+        {
+            "name": "metal_frame",
+            "type": "structure",
+            "coordinates": {
+                "x": 580,
+                "y": 35
+            }
+        },
+        {
+            "name": "flooring_edge_left",
+            "type": "flooring",
+            "coordinates": {
+                "x": 35,
+                "y": 300
+            }
+        },
+        {
+            "name": "flooring_edge_right",
+            "type": "flooring",
+            "coordinates": {
+                "x": 1085,
+                "y": 315
+            }
+        }
+    ],
+    "regions": [
+        {
+            "name": "blue_mat",
+            "type": "workspace_region",
+            "coordinates": {
+                "x": 560,
+                "y": 235
+            }
+        },
+        {
+            "name": "left_background_floor",
+            "type": "background_region",
+            "coordinates": {
+                "x": 90,
+                "y": 305
+            }
+        },
+        {
+            "name": "right_background_floor",
+            "type": "background_region",
+            "coordinates": {
+                "x": 1040,
+                "y": 300
+            }
+        }
+    ],
+    "semantic_relationships": [
+        {
+            "subject": "control_box_center",
+            "relation": "mounted_on",
+            "object": "metal_frame"
+        },
+        {
+            "subject": "red_button_1",
+            "relation": "part_of",
+            "object": "control_box_center"
+        },
+        {
+            "subject": "yellow_button_1",
+            "relation": "part_of",
+            "object": "control_box_center"
+        },
+        {
+            "subject": "green_button_1",
+            "relation": "part_of",
+            "object": "control_box_center"
+        },
+        {
+            "subject": "cable_bundle",
+            "relation": "connected_to",
+            "object": "control_box_center"
+        },
+        {
+            "subject": "cylindrical_unit_left",
+            "relation": "attached_to",
+            "object": "machine_base_left"
+        },
+        {
+            "subject": "cylindrical_unit_right",
+            "relation": "attached_to",
+            "object": "machine_base_right"
+        },
+        {
+            "subject": "machine_base_left",
+            "relation": "near",
+            "object": "blue_mat"
+        },
+        {
+            "subject": "machine_base_right",
+            "relation": "near",
+            "object": "blue_mat"
+        },
+        {
+            "subject": "stand_post_left",
+            "relation": "supports",
+            "object": "metal_frame"
+        },
+        {
+            "subject": "stand_post_right",
+            "relation": "supports",
+            "object": "metal_frame"
+        },
+        {
+            "subject": "white_box",
+            "relation": "placed_near",
+            "object": "blue_mat"
+        },
+        {
+            "subject": "blue_mat",
+            "relation": "covers",
+            "object": "left_background_floor"
+        },
+        {
+            "subject": "blue_mat",
+            "relation": "covers",
+            "object": "right_background_floor"
+        }
+    ],
+    "current_location": "blue_mat",
+    "plans": [
+        {
+            "plan_name": "operate_on_mat",
+            "target_region": "blue_mat",
+            "next_actions": [
+                {
+                    "action": "check_controls",
+                    "controls_on": "control_box_center"
+                },
+                {
+                    "action": "ensure_cables_ordered",
+                    "cables_related_to": "cable_bundle"
+                }
+            ]
+        }
+    ]
+}

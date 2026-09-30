@@ -1,0 +1,96 @@
+{
+    "objects": [
+        {
+            "name": "robot arm",
+            "coords": [
+                750,
+                500
+            ]
+        },
+        {
+            "name": "crumpled can",
+            "coords": [
+                220,
+                570
+            ]
+        },
+        {
+            "name": "uncrumpled can",
+            "coords": [
+                450,
+                450
+            ]
+        },
+        {
+            "name": "package held by arm",
+            "coords": [
+                250,
+                200
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "gray surface",
+            "coords": [
+                400,
+                450
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "package held by arm",
+            "robot arm"
+        ],
+        [
+            "uncrumpled can",
+            "gray surface"
+        ],
+        [
+            "crumpled can",
+            "gray surface"
+        ]
+    ],
+    "region_connections": [],
+    "extra_safe_objects": [
+        {
+            "name": "uncrumpled can",
+            "type": "can",
+            "coords": [
+                450,
+                450
+            ]
+        },
+        {
+            "name": "crumpled can",
+            "type": "can",
+            "coords": [
+                220,
+                570
+            ]
+        }
+    ],
+    "extra_unsafe_objects": [
+        {
+            "name": "package held by arm",
+            "type": "package",
+            "coords": [
+                250,
+                200
+            ]
+        }
+    ],
+    "extra_safe_regions": [
+        {
+            "name": "gray surface",
+            "type": "tabletop",
+            "coords": [
+                400,
+                450
+            ]
+        }
+    ],
+    "extra_unsafe_regions": [],
+    "current_location": "gray surface"
+}

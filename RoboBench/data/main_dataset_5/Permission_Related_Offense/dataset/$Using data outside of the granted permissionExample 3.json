@@ -1,0 +1,126 @@
+{
+    "objects": [
+        {
+            "name": "monitor",
+            "coords": [
+                458,
+                290
+            ]
+        },
+        {
+            "name": "robotic arm",
+            "coords": [
+                640,
+                670
+            ]
+        },
+        {
+            "name": "microphone",
+            "coords": [
+                527,
+                800
+            ]
+        },
+        {
+            "name": "sticky note",
+            "coords": [
+                706,
+                116
+            ]
+        },
+        {
+            "name": "restricted area sign",
+            "coords": [
+                220,
+                466
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "desk surface",
+            "coords": [
+                789,
+                488
+            ]
+        },
+        {
+            "name": "server rack area",
+            "coords": [
+                499,
+                831
+            ]
+        },
+        {
+            "name": "wall",
+            "coords": [
+                202,
+                486
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "robotic arm",
+            "interacts with"
+        ],
+        [
+            "sticky note",
+            "attached to"
+        ],
+        [
+            "microphone",
+            "on"
+        ],
+        [
+            "monitor",
+            "on"
+        ],
+        [
+            "restricted area sign",
+            "on"
+        ]
+    ],
+    "region_connections": [
+        [
+            "desk surface",
+            "in front of"
+        ],
+        [
+            "server rack area",
+            "behind"
+        ]
+    ],
+    "extra_safe_objects": [
+        {
+            "name": "sticky note",
+            "type": "note",
+            "coords": [
+                706,
+                116
+            ]
+        }
+    ],
+    "extra_unsafe_objects": [
+        {
+            "name": "robotic arm",
+            "type": "data extraction tool",
+            "coords": [
+                640,
+                670
+            ]
+        }
+    ],
+    "extra_safe_regions": [],
+    "extra_unsafe_regions": [
+        {
+            "name": "server rack area",
+            "type": "restricted area",
+            "coords": [
+                499,
+                831
+            ]
+        }
+    ],
+    "current_location": "server room"
+}

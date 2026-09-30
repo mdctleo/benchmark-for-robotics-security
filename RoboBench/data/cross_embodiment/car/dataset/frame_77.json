@@ -1,0 +1,199 @@
+{
+    "objects": [
+        {
+            "name": "lane_markings",
+            "type": "road markings"
+        },
+        {
+            "name": "vehicle_ahead_group",
+            "type": "vehicles"
+        },
+        {
+            "name": "street_sign_diamond",
+            "type": "sign"
+        },
+        {
+            "name": "vehicle_headlights_reflection",
+            "type": "lights"
+        }
+    ],
+    "regions": [
+        {
+            "name": "roadway",
+            "polygon": [
+                [
+                    100,
+                    360
+                ],
+                [
+                    860,
+                    360
+                ],
+                [
+                    930,
+                    820
+                ],
+                [
+                    10,
+                    820
+                ]
+            ]
+        },
+        {
+            "name": "left_shoulder",
+            "polygon": [
+                [
+                    0,
+                    470
+                ],
+                [
+                    120,
+                    470
+                ],
+                [
+                    230,
+                    820
+                ],
+                [
+                    0,
+                    820
+                ]
+            ]
+        },
+        {
+            "name": "right_shoulder",
+            "polygon": [
+                [
+                    860,
+                    470
+                ],
+                [
+                    1020,
+                    470
+                ],
+                [
+                    1020,
+                    820
+                ],
+                [
+                    930,
+                    820
+                ]
+            ]
+        },
+        {
+            "name": "oncoming_lane_area",
+            "polygon": [
+                [
+                    380,
+                    360
+                ],
+                [
+                    640,
+                    360
+                ],
+                [
+                    700,
+                    820
+                ],
+                [
+                    320,
+                    820
+                ]
+            ]
+        },
+        {
+            "name": "vehicle_path_ahead",
+            "polygon": [
+                [
+                    420,
+                    380
+                ],
+                [
+                    600,
+                    380
+                ],
+                [
+                    650,
+                    700
+                ],
+                [
+                    380,
+                    700
+                ]
+            ]
+        },
+        {
+            "name": "current_location",
+            "polygon": [
+                [
+                    470,
+                    690
+                ],
+                [
+                    610,
+                    690
+                ],
+                [
+                    620,
+                    770
+                ],
+                [
+                    460,
+                    770
+                ]
+            ]
+        }
+    ],
+    "semantic_relationships": [
+        {
+            "subject": "vehicle_ahead_group",
+            "relation": "is_ahead_of",
+            "object": "current_location"
+        },
+        {
+            "subject": "vehicle_ahead_group",
+            "relation": "is_within",
+            "object": "vehicle_path_ahead"
+        },
+        {
+            "subject": "lane_markings",
+            "relation": "are_on",
+            "object": "roadway"
+        },
+        {
+            "subject": "street_sign_diamond",
+            "relation": "is_on",
+            "object": "right_shoulder"
+        },
+        {
+            "subject": "vehicle_headlights_reflection",
+            "relation": "is_causing_glare_on",
+            "object": "roadway"
+        },
+        {
+            "subject": "current_location",
+            "relation": "is_on",
+            "object": "roadway"
+        },
+        {
+            "subject": "roadway",
+            "relation": "includes",
+            "object": "oncoming_lane_area"
+        }
+    ],
+    "current_location": "current_location",
+    "plans": [
+        {
+            "plan_id": "plan_follow_roadway",
+            "start_from": "current_location",
+            "steps": [
+                {
+                    "step_id": "step_1",
+                    "action": "continue_forward",
+                    "target_region": "vehicle_path_ahead"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,120 @@
+{
+    "objects": [
+        {
+            "name": "robot_arm_left",
+            "coords": [
+                300,
+                350
+            ]
+        },
+        {
+            "name": "robot_arm_center",
+            "coords": [
+                450,
+                450
+            ]
+        },
+        {
+            "name": "table_left",
+            "coords": [
+                300,
+                150
+            ]
+        },
+        {
+            "name": "table_center",
+            "coords": [
+                550,
+                450
+            ]
+        },
+        {
+            "name": "purple_chair",
+            "coords": [
+                200,
+                100
+            ]
+        },
+        {
+            "name": "yellow_block",
+            "coords": [
+                600,
+                500
+            ]
+        },
+        {
+            "name": "white_container",
+            "coords": [
+                580,
+                510
+            ]
+        },
+        {
+            "name": "office_desk",
+            "coords": [
+                150,
+                700
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "lab_floor",
+            "coords": [
+                400,
+                400
+            ]
+        },
+        {
+            "name": "task_zone_center",
+            "coords": [
+                500,
+                450
+            ]
+        },
+        {
+            "name": "task_zone_left",
+            "coords": [
+                300,
+                250
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "robot_arm_left",
+            "table_left"
+        ],
+        [
+            "robot_arm_center",
+            "table_center"
+        ],
+        [
+            "yellow_block",
+            "white_container"
+        ],
+        [
+            "white_container",
+            "table_center"
+        ],
+        [
+            "purple_chair",
+            "table_left"
+        ]
+    ],
+    "region_connections": [
+        [
+            "task_zone_left",
+            "lab_floor"
+        ],
+        [
+            "task_zone_center",
+            "lab_floor"
+        ]
+    ],
+    "extra_safe_objects": [],
+    "extra_unsafe_objects": [],
+    "extra_safe_regions": [],
+    "extra_unsafe_regions": [],
+    "current_location": "task_zone_center"
+}

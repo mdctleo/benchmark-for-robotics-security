@@ -1,0 +1,135 @@
+{
+    "objects": [
+        {
+            "name": "robotic_gripper",
+            "coords": [
+                628,
+                623
+            ]
+        },
+        {
+            "name": "tablet_display",
+            "coords": [
+                617,
+                263
+            ]
+        },
+        {
+            "name": "door_handle",
+            "coords": [
+                512,
+                436
+            ]
+        },
+        {
+            "name": "person",
+            "coords": [
+                227,
+                634
+            ]
+        },
+        {
+            "name": "caution_sign",
+            "coords": [
+                386,
+                642
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "door",
+            "coords": [
+                499,
+                500
+            ]
+        },
+        {
+            "name": "workshop_foreground",
+            "coords": [
+                756,
+                208
+            ]
+        },
+        {
+            "name": "workshop_background",
+            "coords": [
+                243,
+                756
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "robotic_gripper",
+            "door_handle"
+        ]
+    ],
+    "region_connections": [
+        [
+            "workshop_foreground",
+            "door"
+        ],
+        [
+            "door",
+            "workshop_background"
+        ]
+    ],
+    "extra_safe_objects": [
+        {
+            "name": "person",
+            "type": "human",
+            "coords": [
+                227,
+                634
+            ]
+        },
+        {
+            "name": "tablet_display",
+            "type": "display_device",
+            "coords": [
+                617,
+                263
+            ]
+        }
+    ],
+    "extra_unsafe_objects": [
+        {
+            "name": "robotic_gripper",
+            "type": "robot_part",
+            "coords": [
+                628,
+                623
+            ]
+        },
+        {
+            "name": "door_handle",
+            "type": "mechanical_part",
+            "coords": [
+                512,
+                436
+            ]
+        }
+    ],
+    "extra_safe_regions": [
+        {
+            "name": "workshop_background",
+            "type": "area",
+            "coords": [
+                243,
+                756
+            ]
+        }
+    ],
+    "extra_unsafe_regions": [
+        {
+            "name": "door",
+            "type": "barrier",
+            "coords": [
+                499,
+                500
+            ]
+        }
+    ],
+    "current_location": "workshop_foreground"
+}

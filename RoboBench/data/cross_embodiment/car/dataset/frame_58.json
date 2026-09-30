@@ -1,0 +1,235 @@
+{
+    "objects": [
+        {
+            "name": "road_1",
+            "type": "road",
+            "coord": {
+                "x": 640,
+                "y": 760
+            },
+            "description": "The main paved roadway running through the scene."
+        },
+        {
+            "name": "building_row_1",
+            "type": "building",
+            "coord": {
+                "x": 1160,
+                "y": 620
+            },
+            "description": "The long row of institutional-looking buildings along the right side."
+        },
+        {
+            "name": "building_entrance_1",
+            "type": "entrance",
+            "coord": {
+                "x": 1200,
+                "y": 690
+            },
+            "description": "Approximate entrance area on the right-side building row."
+        },
+        {
+            "name": "vehicle_1_car_left",
+            "type": "vehicle",
+            "coord": {
+                "x": 560,
+                "y": 900
+            },
+            "description": "A car parked/positioned on the left side near the middle-left distance."
+        },
+        {
+            "name": "vehicle_2_car_right",
+            "type": "vehicle",
+            "coord": {
+                "x": 980,
+                "y": 980
+            },
+            "description": "A car on the right side of the road closer to the camera."
+        },
+        {
+            "name": "vehicle_3_truck_far_right",
+            "type": "vehicle",
+            "coord": {
+                "x": 1400,
+                "y": 1020
+            },
+            "description": "A larger dark vehicle parked near the right curb."
+        },
+        {
+            "name": "utility_pole_left_1",
+            "type": "utility_pole",
+            "coord": {
+                "x": 650,
+                "y": 610
+            },
+            "description": "Tall utility pole on the left side with overhead lines."
+        },
+        {
+            "name": "utility_pole_right_1",
+            "type": "utility_pole",
+            "coord": {
+                "x": 1420,
+                "y": 680
+            },
+            "description": "Utility pole on the right side with overhead lines."
+        },
+        {
+            "name": "overhead_power_lines_1",
+            "type": "overhead_lines",
+            "coord": {
+                "x": 1080,
+                "y": 450
+            },
+            "description": "Overhead cables spanning across the street."
+        },
+        {
+            "name": "sidewalk_1",
+            "type": "sidewalk",
+            "coord": {
+                "x": 1200,
+                "y": 860
+            },
+            "description": "Sidewalk/edge pedestrian area along the right side of the road."
+        },
+        {
+            "name": "street_sign_1",
+            "type": "street_sign",
+            "coord": {
+                "x": 1225,
+                "y": 715
+            },
+            "description": "A small sign mounted near the building row (not fully legible)."
+        },
+        {
+            "name": "trees_left_1",
+            "type": "tree",
+            "coord": {
+                "x": 210,
+                "y": 460
+            },
+            "description": "Trees along the left side near the fencing."
+        },
+        {
+            "name": "fence_left_1",
+            "type": "fence",
+            "coord": {
+                "x": 280,
+                "y": 660
+            },
+            "description": "A fence on the left side adjacent to the trees."
+        }
+    ],
+    "regions": [
+        {
+            "name": "ground_1",
+            "type": "ground",
+            "coord": {
+                "x": 860,
+                "y": 920
+            },
+            "description": "General drivable ground/road area and immediate surroundings."
+        },
+        {
+            "name": "intersection_area_1",
+            "type": "intersection",
+            "coord": {
+                "x": 900,
+                "y": 980
+            },
+            "description": "Marked crossing/intersection zone near the bottom-right portion."
+        },
+        {
+            "name": "right_building_zone_1",
+            "type": "building_zone",
+            "coord": {
+                "x": 1260,
+                "y": 760
+            },
+            "description": "Region along the right where buildings and sidewalk are located."
+        },
+        {
+            "name": "left_tree_fence_zone_1",
+            "type": "yard_zone",
+            "coord": {
+                "x": 340,
+                "y": 760
+            },
+            "description": "Left side region with trees and fence."
+        }
+    ],
+    "semantic_relationships": [
+        {
+            "subject": "vehicle_2_car_right",
+            "predicate": "is_on",
+            "object": "road_1"
+        },
+        {
+            "subject": "vehicle_1_car_left",
+            "predicate": "is_on",
+            "object": "road_1"
+        },
+        {
+            "subject": "vehicle_3_truck_far_right",
+            "predicate": "is_near",
+            "object": "sidewalk_1"
+        },
+        {
+            "subject": "building_row_1",
+            "predicate": "adjacent_to",
+            "object": "road_1"
+        },
+        {
+            "subject": "building_entrance_1",
+            "predicate": "part_of",
+            "object": "building_row_1"
+        },
+        {
+            "subject": "sidewalk_1",
+            "predicate": "runs_along",
+            "object": "building_row_1"
+        },
+        {
+            "subject": "utility_pole_left_1",
+            "predicate": "supports",
+            "object": "overhead_power_lines_1"
+        },
+        {
+            "subject": "utility_pole_right_1",
+            "predicate": "supports",
+            "object": "overhead_power_lines_1"
+        },
+        {
+            "subject": "overhead_power_lines_1",
+            "predicate": "crosses_above",
+            "object": "road_1"
+        },
+        {
+            "subject": "trees_left_1",
+            "predicate": "located_in",
+            "object": "left_tree_fence_zone_1"
+        },
+        {
+            "subject": "fence_left_1",
+            "predicate": "located_in",
+            "object": "left_tree_fence_zone_1"
+        },
+        {
+            "subject": "building_row_1",
+            "predicate": "located_in",
+            "object": "right_building_zone_1"
+        },
+        {
+            "subject": "sidewalk_1",
+            "predicate": "located_in",
+            "object": "right_building_zone_1"
+        }
+    ],
+    "current_location": "ground_1",
+    "plans": [
+        {
+            "name": "follow_road_toward_building_row",
+            "current_location": "ground_1",
+            "next_target": "right_building_zone_1",
+            "description": "Proceed along the roadway toward the right-side building zone."
+        }
+    ]
+}

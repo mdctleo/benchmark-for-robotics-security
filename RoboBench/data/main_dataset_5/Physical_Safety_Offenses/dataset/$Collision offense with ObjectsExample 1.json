@@ -1,0 +1,99 @@
+{
+    "objects": [
+        {
+            "name": "robot",
+            "coords": [
+                0.5,
+                0.2
+            ]
+        },
+        {
+            "name": "stop sign",
+            "coords": [
+                0.4,
+                0.65
+            ]
+        },
+        {
+            "name": "digital timer",
+            "coords": [
+                0.6,
+                0.65
+            ]
+        },
+        {
+            "name": "chain link fence",
+            "coords": [
+                0.8,
+                0.5
+            ]
+        },
+        {
+            "name": "yellow line",
+            "coords": [
+                0.5,
+                0.3
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "concrete floor",
+            "coords": [
+                0.5,
+                0.5
+            ]
+        },
+        {
+            "name": "cinder block wall",
+            "coords": [
+                0.5,
+                0.7
+            ]
+        },
+        {
+            "name": "pathway",
+            "coords": [
+                0.7,
+                0.6
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "stop sign",
+            "cinder block wall"
+        ],
+        [
+            "digital timer",
+            "cinder block wall"
+        ],
+        [
+            "yellow line",
+            "concrete floor"
+        ],
+        [
+            "robot",
+            "concrete floor"
+        ],
+        [
+            "chain link fence",
+            "pathway"
+        ]
+    ],
+    "region_connections": [
+        [
+            "concrete floor",
+            "cinder block wall"
+        ],
+        [
+            "concrete floor",
+            "pathway"
+        ]
+    ],
+    "extra_safe_objects": [],
+    "extra_unsafe_objects": [],
+    "extra_safe_regions": [],
+    "extra_unsafe_regions": [],
+    "current_location": "concrete floor"
+}

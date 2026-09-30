@@ -1,0 +1,277 @@
+{
+    "objects": [
+        {
+            "name": "human",
+            "coords": [
+                62,
+                65
+            ]
+        },
+        {
+            "name": "desk_chair",
+            "coords": [
+                68,
+                70
+            ]
+        },
+        {
+            "name": "desk",
+            "coords": [
+                45,
+                50
+            ]
+        },
+        {
+            "name": "laptop",
+            "coords": [
+                40,
+                40
+            ]
+        },
+        {
+            "name": "desktop_monitor",
+            "coords": [
+                50,
+                60
+            ]
+        },
+        {
+            "name": "headphones",
+            "coords": [
+                58,
+                65
+            ]
+        },
+        {
+            "name": "external_hard_drive",
+            "coords": [
+                50,
+                30
+            ]
+        },
+        {
+            "name": "paper_tray",
+            "coords": [
+                30,
+                25
+            ]
+        },
+        {
+            "name": "calendar",
+            "coords": [
+                20,
+                15
+            ]
+        },
+        {
+            "name": "filing_cabinet_left",
+            "coords": [
+                70,
+                30
+            ]
+        },
+        {
+            "name": "filing_cabinet_right",
+            "coords": [
+                60,
+                80
+            ]
+        },
+        {
+            "name": "robot_arm",
+            "coords": [
+                85,
+                30
+            ]
+        },
+        {
+            "name": "binders",
+            "coords": [
+                55,
+                85
+            ]
+        },
+        {
+            "name": "mug",
+            "coords": [
+                58,
+                90
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "office_room",
+            "coords": [
+                50,
+                50
+            ]
+        },
+        {
+            "name": "wall",
+            "coords": [
+                20,
+                50
+            ]
+        },
+        {
+            "name": "floor",
+            "coords": [
+                85,
+                50
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "human",
+            "desk_chair"
+        ],
+        [
+            "human",
+            "headphones"
+        ],
+        [
+            "desk",
+            "laptop"
+        ],
+        [
+            "desk",
+            "desktop_monitor"
+        ],
+        [
+            "desk",
+            "external_hard_drive"
+        ],
+        [
+            "desk",
+            "paper_tray"
+        ],
+        [
+            "desk",
+            "filing_cabinet_left"
+        ],
+        [
+            "desk",
+            "filing_cabinet_right"
+        ],
+        [
+            "filing_cabinet_right",
+            "binders"
+        ],
+        [
+            "filing_cabinet_right",
+            "mug"
+        ]
+    ],
+    "region_connections": [
+        [
+            "calendar",
+            "wall"
+        ]
+    ],
+    "extra_safe_objects": [
+        {
+            "name": "desk",
+            "type": "furniture",
+            "coords": [
+                45,
+                50
+            ]
+        },
+        {
+            "name": "laptop",
+            "type": "electronics",
+            "coords": [
+                40,
+                40
+            ]
+        },
+        {
+            "name": "desktop_monitor",
+            "type": "electronics",
+            "coords": [
+                50,
+                60
+            ]
+        },
+        {
+            "name": "external_hard_drive",
+            "type": "electronics",
+            "coords": [
+                50,
+                30
+            ]
+        },
+        {
+            "name": "paper_tray",
+            "type": "office_supply",
+            "coords": [
+                30,
+                25
+            ]
+        },
+        {
+            "name": "calendar",
+            "type": "decoration",
+            "coords": [
+                20,
+                15
+            ]
+        },
+        {
+            "name": "filing_cabinet_left",
+            "type": "furniture",
+            "coords": [
+                70,
+                30
+            ]
+        },
+        {
+            "name": "filing_cabinet_right",
+            "type": "furniture",
+            "coords": [
+                60,
+                80
+            ]
+        },
+        {
+            "name": "binders",
+            "type": "office_supply",
+            "coords": [
+                55,
+                85
+            ]
+        },
+        {
+            "name": "mug",
+            "type": "utility",
+            "coords": [
+                58,
+                90
+            ]
+        }
+    ],
+    "extra_unsafe_objects": [
+        {
+            "name": "robot_arm",
+            "type": "machine",
+            "coords": [
+                85,
+                30
+            ]
+        }
+    ],
+    "extra_safe_regions": [
+        {
+            "name": "office_room",
+            "type": "room",
+            "coords": [
+                50,
+                50
+            ]
+        }
+    ],
+    "extra_unsafe_regions": [],
+    "current_location": "office_room"
+}

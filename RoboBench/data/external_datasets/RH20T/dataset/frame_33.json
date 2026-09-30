@@ -1,0 +1,232 @@
+{
+    "objects": [
+        {
+            "name": "printer_machine",
+            "type": "machine",
+            "coordinate": [
+                60,
+                35
+            ]
+        },
+        {
+            "name": "blue_cloth_cover",
+            "type": "surface",
+            "coordinate": [
+                170,
+                140
+            ]
+        },
+        {
+            "name": "control_panel",
+            "type": "electronics",
+            "coordinate": [
+                130,
+                45
+            ]
+        },
+        {
+            "name": "red_button",
+            "type": "button",
+            "coordinate": [
+                135,
+                20
+            ]
+        },
+        {
+            "name": "yellow_button",
+            "type": "button",
+            "coordinate": [
+                110,
+                25
+            ]
+        },
+        {
+            "name": "green_button",
+            "type": "button",
+            "coordinate": [
+                95,
+                25
+            ]
+        },
+        {
+            "name": "small_box",
+            "type": "object",
+            "coordinate": [
+                215,
+                90
+            ]
+        },
+        {
+            "name": "cable_bundle",
+            "type": "cables",
+            "coordinate": [
+                330,
+                35
+            ]
+        },
+        {
+            "name": "wires_bundle_left",
+            "type": "cables",
+            "coordinate": [
+                70,
+                85
+            ]
+        },
+        {
+            "name": "wires_bundle_right",
+            "type": "cables",
+            "coordinate": [
+                350,
+                125
+            ]
+        },
+        {
+            "name": "stand_or_frame",
+            "type": "structure",
+            "coordinate": [
+                40,
+                130
+            ]
+        },
+        {
+            "name": "white_device",
+            "type": "electronics",
+            "coordinate": [
+                340,
+                160
+            ]
+        },
+        {
+            "name": "white_strips_device",
+            "type": "accessory",
+            "coordinate": [
+                345,
+                165
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "workspace_area",
+            "type": "workspace",
+            "coordinate": [
+                250,
+                160
+            ]
+        },
+        {
+            "name": "blue_printed_region",
+            "type": "printed_surface",
+            "coordinate": [
+                240,
+                155
+            ]
+        },
+        {
+            "name": "current_location",
+            "type": "current_location",
+            "coordinate": [
+                245,
+                190
+            ]
+        }
+    ],
+    "semantic_relationships": [
+        {
+            "subject": "printer_machine",
+            "relation": "is_part_of",
+            "object": "stand_or_frame"
+        },
+        {
+            "subject": "stand_or_frame",
+            "relation": "supports",
+            "object": "blue_cloth_cover"
+        },
+        {
+            "subject": "control_panel",
+            "relation": "is_on",
+            "object": "printer_machine"
+        },
+        {
+            "subject": "red_button",
+            "relation": "is_on",
+            "object": "control_panel"
+        },
+        {
+            "subject": "yellow_button",
+            "relation": "is_on",
+            "object": "control_panel"
+        },
+        {
+            "subject": "green_button",
+            "relation": "is_on",
+            "object": "control_panel"
+        },
+        {
+            "subject": "blue_cloth_cover",
+            "relation": "covers",
+            "object": "workspace_area"
+        },
+        {
+            "subject": "small_box",
+            "relation": "is_on",
+            "object": "blue_cloth_cover"
+        },
+        {
+            "subject": "cable_bundle",
+            "relation": "is_connected_to",
+            "object": "printer_machine"
+        },
+        {
+            "subject": "wires_bundle_left",
+            "relation": "is_connected_to",
+            "object": "printer_machine"
+        },
+        {
+            "subject": "wires_bundle_right",
+            "relation": "is_connected_to",
+            "object": "printer_machine"
+        },
+        {
+            "subject": "white_device",
+            "relation": "is_on",
+            "object": "workspace_area"
+        },
+        {
+            "subject": "white_strips_device",
+            "relation": "is_part_of",
+            "object": "white_device"
+        },
+        {
+            "subject": "blue_printed_region",
+            "relation": "is_within",
+            "object": "workspace_area"
+        },
+        {
+            "subject": "small_box",
+            "relation": "is_near",
+            "object": "blue_printed_region"
+        },
+        {
+            "subject": "current_location",
+            "relation": "is_within",
+            "object": "workspace_area"
+        }
+    ],
+    "current_location": {
+        "name": "current_location"
+    },
+    "plans": [
+        {
+            "plan_name": "inspect_printed_area",
+            "from": "current_location",
+            "to": "blue_printed_region",
+            "actions": [
+                {
+                    "action": "inspect",
+                    "target": "blue_printed_region"
+                }
+            ]
+        }
+    ]
+}

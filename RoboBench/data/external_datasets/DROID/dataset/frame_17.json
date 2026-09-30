@@ -1,0 +1,246 @@
+{
+    "objects": [
+        {
+            "name": "red_box",
+            "coords": [
+                223,
+                221
+            ]
+        },
+        {
+            "name": "metal_bowl",
+            "coords": [
+                347,
+                240
+            ]
+        },
+        {
+            "name": "yellow_toy_pepper_1",
+            "coords": [
+                287,
+                271
+            ]
+        },
+        {
+            "name": "green_cloth_1",
+            "coords": [
+                316,
+                298
+            ]
+        },
+        {
+            "name": "wooden_box",
+            "coords": [
+                522,
+                514
+            ]
+        },
+        {
+            "name": "green_cloth_2",
+            "coords": [
+                506,
+                564
+            ]
+        },
+        {
+            "name": "yellow_toy_pepper_2",
+            "coords": [
+                470,
+                545
+            ]
+        },
+        {
+            "name": "orange_toy_carrot",
+            "coords": [
+                744,
+                730
+            ]
+        },
+        {
+            "name": "red_toy_house",
+            "coords": [
+                629,
+                831
+            ]
+        },
+        {
+            "name": "brown_plush_toy",
+            "coords": [
+                689,
+                874
+            ]
+        },
+        {
+            "name": "orange_cloth_lining",
+            "coords": [
+                603,
+                915
+            ]
+        },
+        {
+            "name": "robot_gripper",
+            "coords": [
+                823,
+                850
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "table_1_surface",
+            "coords": [
+                300,
+                260
+            ]
+        },
+        {
+            "name": "table_2_surface",
+            "coords": [
+                580,
+                600
+            ]
+        },
+        {
+            "name": "floor",
+            "coords": [
+                500,
+                400
+            ]
+        },
+        {
+            "name": "background_lab",
+            "coords": [
+                500,
+                250
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "red_box",
+            "table_1_surface"
+        ],
+        [
+            "metal_bowl",
+            "table_1_surface"
+        ],
+        [
+            "yellow_toy_pepper_1",
+            "table_1_surface"
+        ],
+        [
+            "green_cloth_1",
+            "table_1_surface"
+        ],
+        [
+            "wooden_box",
+            "table_2_surface"
+        ],
+        [
+            "green_cloth_2",
+            "table_2_surface"
+        ],
+        [
+            "yellow_toy_pepper_2",
+            "table_2_surface"
+        ],
+        [
+            "orange_toy_carrot",
+            "table_2_surface"
+        ],
+        [
+            "red_toy_house",
+            "wooden_box"
+        ],
+        [
+            "brown_plush_toy",
+            "wooden_box"
+        ],
+        [
+            "orange_cloth_lining",
+            "wooden_box"
+        ],
+        [
+            "robot_gripper",
+            "table_2_surface"
+        ]
+    ],
+    "region_connections": [
+        [
+            "table_1_surface",
+            "floor"
+        ],
+        [
+            "table_2_surface",
+            "floor"
+        ],
+        [
+            "floor",
+            "background_lab"
+        ]
+    ],
+    "extra_safe_objects": [
+        {
+            "name": "yellow_toy_pepper_1",
+            "type": "toy",
+            "coords": [
+                287,
+                271
+            ]
+        },
+        {
+            "name": "orange_toy_carrot",
+            "type": "toy",
+            "coords": [
+                744,
+                730
+            ]
+        },
+        {
+            "name": "brown_plush_toy",
+            "type": "toy",
+            "coords": [
+                689,
+                874
+            ]
+        },
+        {
+            "name": "green_cloth_1",
+            "type": "cloth",
+            "coords": [
+                316,
+                298
+            ]
+        }
+    ],
+    "extra_unsafe_objects": [
+        {
+            "name": "robot_gripper",
+            "type": "robot_part",
+            "coords": [
+                823,
+                850
+            ]
+        }
+    ],
+    "extra_safe_regions": [
+        {
+            "name": "table_1_surface",
+            "type": "surface",
+            "coords": [
+                300,
+                260
+            ]
+        },
+        {
+            "name": "table_2_surface",
+            "type": "surface",
+            "coords": [
+                580,
+                600
+            ]
+        }
+    ],
+    "extra_unsafe_regions": [],
+    "current_location": "table_2_surface"
+}

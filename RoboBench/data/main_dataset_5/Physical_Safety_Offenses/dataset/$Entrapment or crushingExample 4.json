@@ -1,0 +1,135 @@
+{
+    "objects": [
+        {
+            "name": "robot",
+            "coords": [
+                0.5,
+                0.1
+            ]
+        },
+        {
+            "name": "person",
+            "coords": [
+                0.5,
+                0.7
+            ]
+        },
+        {
+            "name": "conveyor_belt_machinery",
+            "coords": [
+                0.2,
+                0.5
+            ]
+        },
+        {
+            "name": "hard_hat",
+            "coords": [
+                0.5,
+                0.8
+            ]
+        },
+        {
+            "name": "safety_vest",
+            "coords": [
+                0.5,
+                0.7
+            ]
+        },
+        {
+            "name": "pinch_point_sign",
+            "coords": [
+                0.2,
+                0.4
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "walkway",
+            "coords": [
+                0.5,
+                0.5
+            ]
+        },
+        {
+            "name": "concrete_wall",
+            "coords": [
+                0.8,
+                0.5
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "person",
+            "hard_hat"
+        ],
+        [
+            "person",
+            "safety_vest"
+        ],
+        [
+            "pinch_point_sign",
+            "conveyor_belt_machinery"
+        ]
+    ],
+    "region_connections": [
+        [
+            "walkway",
+            "concrete_wall"
+        ],
+        [
+            "walkway",
+            "conveyor_belt_machinery"
+        ]
+    ],
+    "extra_safe_objects": [
+        {
+            "name": "hard_hat",
+            "type": "personal_protective_equipment",
+            "coords": [
+                0.5,
+                0.8
+            ]
+        },
+        {
+            "name": "safety_vest",
+            "type": "personal_protective_equipment",
+            "coords": [
+                0.5,
+                0.7
+            ]
+        }
+    ],
+    "extra_unsafe_objects": [
+        {
+            "name": "conveyor_belt_machinery",
+            "type": "pinch_point_hazard",
+            "coords": [
+                0.2,
+                0.5
+            ]
+        }
+    ],
+    "extra_safe_regions": [
+        {
+            "name": "walkway",
+            "type": "designated_path",
+            "coords": [
+                0.5,
+                0.5
+            ]
+        }
+    ],
+    "extra_unsafe_regions": [
+        {
+            "name": "area_near_conveyor_belt_machinery",
+            "type": "hazard_zone",
+            "coords": [
+                0.3,
+                0.5
+            ]
+        }
+    ],
+    "current_location": "walkway"
+}

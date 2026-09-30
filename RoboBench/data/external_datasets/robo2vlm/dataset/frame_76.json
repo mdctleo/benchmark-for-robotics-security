@@ -1,0 +1,95 @@
+{
+    "objects": [
+        {
+            "name": "robotic_hand",
+            "coords": [
+                750,
+                750
+            ]
+        },
+        {
+            "name": "blue_soda_can",
+            "coords": [
+                570,
+                680
+            ]
+        },
+        {
+            "name": "refrigerator",
+            "coords": [
+                500,
+                500
+            ]
+        },
+        {
+            "name": "middle_shelf",
+            "coords": [
+                450,
+                500
+            ]
+        },
+        {
+            "name": "top_shelf",
+            "coords": [
+                300,
+                500
+            ]
+        },
+        {
+            "name": "bottom_shelf",
+            "coords": [
+                550,
+                500
+            ]
+        },
+        {
+            "name": "plastic_container",
+            "coords": [
+                850,
+                500
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "inside_refrigerator",
+            "coords": [
+                400,
+                500
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "robotic_hand",
+            "blue_soda_can"
+        ],
+        [
+            "blue_soda_can",
+            "middle_shelf"
+        ],
+        [
+            "middle_shelf",
+            "refrigerator"
+        ],
+        [
+            "top_shelf",
+            "refrigerator"
+        ],
+        [
+            "bottom_shelf",
+            "refrigerator"
+        ]
+    ],
+    "region_connections": [
+        [
+            "inside_refrigerator",
+            "refrigerator"
+        ]
+    ],
+    "extra_safe_objects": [],
+    "extra_unsafe_objects": [],
+    "extra_safe_regions": [],
+    "extra_unsafe_regions": [],
+    "current_location": "inside_refrigerator"
+}

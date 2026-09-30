@@ -1,0 +1,277 @@
+{
+    "objects": [
+        {
+            "name": "road",
+            "type": "roadway"
+        },
+        {
+            "name": "left_sidewalk",
+            "type": "sidewalk"
+        },
+        {
+            "name": "right_sidewalk",
+            "type": "sidewalk"
+        },
+        {
+            "name": "street_lamps_line_left",
+            "type": "street_lamp_group"
+        },
+        {
+            "name": "street_lamps_line_right",
+            "type": "street_lamp_group"
+        },
+        {
+            "name": "utility_poles_right",
+            "type": "utility_pole_group"
+        },
+        {
+            "name": "power_lines",
+            "type": "power_line"
+        },
+        {
+            "name": "houses_left",
+            "type": "building_group"
+        },
+        {
+            "name": "houses_right",
+            "type": "building_group"
+        },
+        {
+            "name": "parked_cars_left",
+            "type": "parked_vehicle_group"
+        },
+        {
+            "name": "parked_cars_right",
+            "type": "parked_vehicle_group"
+        },
+        {
+            "name": "trees_left",
+            "type": "tree_group"
+        },
+        {
+            "name": "trees_right",
+            "type": "tree_group"
+        },
+        {
+            "name": "crosswalk_marker_left",
+            "type": "road_marking"
+        }
+    ],
+    "regions": [
+        {
+            "name": "current_location",
+            "polygon": [
+                [
+                    0.08,
+                    0.62
+                ],
+                [
+                    0.92,
+                    0.62
+                ],
+                [
+                    1.0,
+                    1.0
+                ],
+                [
+                    0.0,
+                    1.0
+                ]
+            ]
+        },
+        {
+            "name": "road_region",
+            "polygon": [
+                [
+                    0.1,
+                    0.58
+                ],
+                [
+                    0.9,
+                    0.58
+                ],
+                [
+                    0.95,
+                    0.98
+                ],
+                [
+                    0.05,
+                    0.98
+                ]
+            ]
+        },
+        {
+            "name": "left_residential_region",
+            "polygon": [
+                [
+                    0.0,
+                    0.6
+                ],
+                [
+                    0.38,
+                    0.6
+                ],
+                [
+                    0.35,
+                    1.0
+                ],
+                [
+                    0.0,
+                    1.0
+                ]
+            ]
+        },
+        {
+            "name": "right_residential_region",
+            "polygon": [
+                [
+                    0.62,
+                    0.6
+                ],
+                [
+                    1.0,
+                    0.6
+                ],
+                [
+                    1.0,
+                    1.0
+                ],
+                [
+                    0.65,
+                    1.0
+                ]
+            ]
+        },
+        {
+            "name": "left_side_parking_strip",
+            "polygon": [
+                [
+                    0.0,
+                    0.66
+                ],
+                [
+                    0.18,
+                    0.66
+                ],
+                [
+                    0.22,
+                    1.0
+                ],
+                [
+                    0.02,
+                    1.0
+                ]
+            ]
+        },
+        {
+            "name": "right_side_parking_strip",
+            "polygon": [
+                [
+                    0.78,
+                    0.66
+                ],
+                [
+                    1.0,
+                    0.66
+                ],
+                [
+                    1.0,
+                    1.0
+                ],
+                [
+                    0.82,
+                    1.0
+                ]
+            ]
+        }
+    ],
+    "semantic_relationships": [
+        {
+            "subject": "current_location",
+            "relation": "contains",
+            "object": "road_region"
+        },
+        {
+            "subject": "current_location",
+            "relation": "adjacent_to",
+            "object": "left_residential_region"
+        },
+        {
+            "subject": "current_location",
+            "relation": "adjacent_to",
+            "object": "right_residential_region"
+        },
+        {
+            "subject": "road",
+            "relation": "occupies",
+            "object": "road_region"
+        },
+        {
+            "subject": "left_sidewalk",
+            "relation": "runs_along",
+            "object": "left_residential_region"
+        },
+        {
+            "subject": "right_sidewalk",
+            "relation": "runs_along",
+            "object": "right_residential_region"
+        },
+        {
+            "subject": "houses_left",
+            "relation": "located_in",
+            "object": "left_residential_region"
+        },
+        {
+            "subject": "houses_right",
+            "relation": "located_in",
+            "object": "right_residential_region"
+        },
+        {
+            "subject": "trees_left",
+            "relation": "line_up_with",
+            "object": "left_residential_region"
+        },
+        {
+            "subject": "trees_right",
+            "relation": "line_up_with",
+            "object": "right_residential_region"
+        },
+        {
+            "subject": "parked_cars_left",
+            "relation": "located_in",
+            "object": "left_side_parking_strip"
+        },
+        {
+            "subject": "parked_cars_right",
+            "relation": "located_in",
+            "object": "right_side_parking_strip"
+        },
+        {
+            "subject": "street_lamps_line_left",
+            "relation": "along_side_of",
+            "object": "left_sidewalk"
+        },
+        {
+            "subject": "street_lamps_line_right",
+            "relation": "along_side_of",
+            "object": "right_sidewalk"
+        },
+        {
+            "subject": "utility_poles_right",
+            "relation": "support",
+            "object": "power_lines"
+        },
+        {
+            "subject": "power_lines",
+            "relation": "crossing_over",
+            "object": "current_location"
+        },
+        {
+            "subject": "crosswalk_marker_left",
+            "relation": "near",
+            "object": "left_residential_region"
+        }
+    ],
+    "current_location": "current_location",
+    "plans": []
+}

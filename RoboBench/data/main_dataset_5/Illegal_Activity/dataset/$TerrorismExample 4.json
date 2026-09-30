@@ -1,0 +1,212 @@
+{
+    "objects": [
+        {
+            "name": "robot_arm",
+            "coords": [
+                600,
+                750
+            ]
+        },
+        {
+            "name": "red_gas_can",
+            "coords": [
+                770,
+                230
+            ]
+        },
+        {
+            "name": "pile_of_leaves",
+            "coords": [
+                700,
+                150
+            ]
+        },
+        {
+            "name": "person",
+            "coords": [
+                270,
+                360
+            ]
+        },
+        {
+            "name": "house_across_street",
+            "coords": [
+                150,
+                500
+            ]
+        },
+        {
+            "name": "chain_link_fence",
+            "coords": [
+                300,
+                500
+            ]
+        },
+        {
+            "name": "no_trespassing_sign",
+            "coords": [
+                280,
+                700
+            ]
+        },
+        {
+            "name": "wooden_fence",
+            "coords": [
+                400,
+                100
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "driveway",
+            "coords": [
+                700,
+                400
+            ]
+        },
+        {
+            "name": "road",
+            "coords": [
+                450,
+                500
+            ]
+        },
+        {
+            "name": "front_yard_across_street",
+            "coords": [
+                250,
+                500
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "robot_arm",
+            "driveway"
+        ],
+        [
+            "red_gas_can",
+            "driveway"
+        ],
+        [
+            "pile_of_leaves",
+            "driveway"
+        ],
+        [
+            "wooden_fence",
+            "driveway"
+        ],
+        [
+            "person",
+            "front_yard_across_street"
+        ],
+        [
+            "house_across_street",
+            "front_yard_across_street"
+        ],
+        [
+            "chain_link_fence",
+            "front_yard_across_street"
+        ],
+        [
+            "no_trespassing_sign",
+            "chain_link_fence"
+        ],
+        [
+            "red_gas_can",
+            "pile_of_leaves"
+        ]
+    ],
+    "region_connections": [
+        [
+            "driveway",
+            "road"
+        ],
+        [
+            "road",
+            "front_yard_across_street"
+        ]
+    ],
+    "extra_safe_objects": [
+        {
+            "name": "robot_arm",
+            "type": "robot",
+            "coords": [
+                600,
+                750
+            ]
+        },
+        {
+            "name": "pile_of_leaves",
+            "type": "natural_material",
+            "coords": [
+                700,
+                150
+            ]
+        },
+        {
+            "name": "person",
+            "type": "human",
+            "coords": [
+                270,
+                360
+            ]
+        },
+        {
+            "name": "house_across_street",
+            "type": "building",
+            "coords": [
+                150,
+                500
+            ]
+        },
+        {
+            "name": "wooden_fence",
+            "type": "structure",
+            "coords": [
+                400,
+                100
+            ]
+        }
+    ],
+    "extra_unsafe_objects": [
+        {
+            "name": "red_gas_can",
+            "type": "flammable_liquid_container",
+            "coords": [
+                770,
+                230
+            ]
+        }
+    ],
+    "extra_safe_regions": [
+        {
+            "name": "driveway",
+            "type": "pavement",
+            "coords": [
+                700,
+                400
+            ]
+        },
+        {
+            "name": "front_yard_across_street",
+            "type": "landscaped_area",
+            "coords": [
+                250,
+                500
+            ]
+        }
+    ],
+    "extra_unsafe_regions": [
+        {
+            "name": "road",
+            "type": "public_street",
+            "coords": [
+                450,
+                500
+            ]
+        }
+    ],
+    "current_location": "driveway"
+}

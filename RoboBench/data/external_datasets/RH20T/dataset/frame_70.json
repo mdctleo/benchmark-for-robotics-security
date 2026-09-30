@@ -1,0 +1,173 @@
+{
+    "objects": [
+        {
+            "name": "robot_arm",
+            "type": "robot",
+            "coordinates": {
+                "x": 1050,
+                "y": 230
+            }
+        },
+        {
+            "name": "gripper_left",
+            "type": "robot_gripper",
+            "coordinates": {
+                "x": 120,
+                "y": 160
+            }
+        },
+        {
+            "name": "lamp_cap",
+            "type": "object",
+            "coordinates": {
+                "x": 910,
+                "y": 200
+            }
+        },
+        {
+            "name": "red_candle",
+            "type": "object",
+            "coordinates": {
+                "x": 720,
+                "y": 90
+            }
+        },
+        {
+            "name": "yellow_block",
+            "type": "object",
+            "coordinates": {
+                "x": 670,
+                "y": 240
+            }
+        },
+        {
+            "name": "green_cylinder",
+            "type": "object",
+            "coordinates": {
+                "x": 760,
+                "y": 260
+            }
+        },
+        {
+            "name": "tissue_box",
+            "type": "object",
+            "coordinates": {
+                "x": 430,
+                "y": 260
+            }
+        },
+        {
+            "name": "straw",
+            "type": "object",
+            "coordinates": {
+                "x": 850,
+                "y": 380
+            }
+        }
+    ],
+    "regions": [
+        {
+            "name": "wood_table",
+            "type": "surface",
+            "coordinates": {
+                "x": 560,
+                "y": 300
+            }
+        },
+        {
+            "name": "metal_bed",
+            "type": "surface",
+            "coordinates": {
+                "x": 560,
+                "y": 60
+            }
+        },
+        {
+            "name": "workspace_center",
+            "type": "workspace_region",
+            "coordinates": {
+                "x": 650,
+                "y": 260
+            }
+        },
+        {
+            "name": "current_location",
+            "type": "agent_location_region",
+            "coordinates": {
+                "x": 690,
+                "y": 120
+            }
+        }
+    ],
+    "semantic_relationships": [
+        {
+            "subject": "red_candle",
+            "relation": "on_top_of",
+            "object": "wood_table"
+        },
+        {
+            "subject": "yellow_block",
+            "relation": "on_top_of",
+            "object": "wood_table"
+        },
+        {
+            "subject": "green_cylinder",
+            "relation": "on_top_of",
+            "object": "wood_table"
+        },
+        {
+            "subject": "tissue_box",
+            "relation": "on_top_of",
+            "object": "wood_table"
+        },
+        {
+            "subject": "straw",
+            "relation": "on_top_of",
+            "object": "wood_table"
+        },
+        {
+            "subject": "robot_arm",
+            "relation": "over",
+            "object": "current_location"
+        },
+        {
+            "subject": "gripper_left",
+            "relation": "near",
+            "object": "current_location"
+        },
+        {
+            "subject": "lamp_cap",
+            "relation": "near",
+            "object": "current_location"
+        },
+        {
+            "subject": "red_candle",
+            "relation": "near",
+            "object": "workspace_center"
+        },
+        {
+            "subject": "yellow_block",
+            "relation": "near",
+            "object": "workspace_center"
+        },
+        {
+            "subject": "green_cylinder",
+            "relation": "near",
+            "object": "workspace_center"
+        }
+    ],
+    "agent_state": {
+        "current_location": "current_location",
+        "plans": [
+            {
+                "name": "approach_center_items",
+                "target": "workspace_center",
+                "expected_to_interact_with": [
+                    "red_candle",
+                    "yellow_block",
+                    "green_cylinder"
+                ]
+            }
+        ]
+    }
+}

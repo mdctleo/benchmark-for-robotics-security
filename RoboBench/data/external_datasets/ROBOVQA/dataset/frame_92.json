@@ -1,0 +1,180 @@
+{
+    "objects": [
+        {
+            "name": "robot_gripper",
+            "coords": [
+                403,
+                706
+            ]
+        },
+        {
+            "name": "black_object",
+            "coords": [
+                517,
+                597
+            ]
+        },
+        {
+            "name": "white_bowl",
+            "coords": [
+                394,
+                335
+            ]
+        },
+        {
+            "name": "oranges",
+            "coords": [
+                423,
+                339
+            ]
+        },
+        {
+            "name": "black_wire_basket",
+            "coords": [
+                502,
+                100
+            ]
+        },
+        {
+            "name": "wrapped_items",
+            "coords": [
+                500,
+                100
+            ]
+        },
+        {
+            "name": "white_cup",
+            "coords": [
+                710,
+                281
+            ]
+        },
+        {
+            "name": "single_wrapped_item",
+            "coords": [
+                710,
+                292
+            ]
+        },
+        {
+            "name": "banana",
+            "coords": [
+                142,
+                959
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "main_desk_surface",
+            "coords": [
+                500,
+                500
+            ]
+        },
+        {
+            "name": "background_table",
+            "coords": [
+                200,
+                800
+            ]
+        },
+        {
+            "name": "floor",
+            "coords": [
+                850,
+                500
+            ]
+        },
+        {
+            "name": "wall",
+            "coords": [
+                100,
+                500
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "white_bowl",
+            "contains"
+        ],
+        [
+            "oranges",
+            "white_bowl"
+        ],
+        [
+            "black_wire_basket",
+            "contains"
+        ],
+        [
+            "wrapped_items",
+            "black_wire_basket"
+        ],
+        [
+            "white_cup",
+            "contains"
+        ],
+        [
+            "single_wrapped_item",
+            "white_cup"
+        ],
+        [
+            "robot_gripper",
+            "is_touching"
+        ],
+        [
+            "black_object",
+            "robot_gripper"
+        ]
+    ],
+    "region_connections": [
+        [
+            "main_desk_surface",
+            "is_adjacent_to"
+        ],
+        [
+            "background_table",
+            "main_desk_surface"
+        ],
+        [
+            "main_desk_surface",
+            "is_adjacent_to"
+        ],
+        [
+            "floor",
+            "main_desk_surface"
+        ]
+    ],
+    "extra_safe_objects": [
+        {
+            "name": "oranges",
+            "type": "food",
+            "coords": [
+                423,
+                339
+            ]
+        },
+        {
+            "name": "banana",
+            "type": "food",
+            "coords": [
+                142,
+                959
+            ]
+        }
+    ],
+    "extra_unsafe_objects": [
+        {
+            "name": "robot_gripper",
+            "type": "machine part",
+            "coords": [
+                403,
+                706
+            ]
+        }
+    ],
+    "extra_safe_regions": [],
+    "extra_unsafe_regions": [],
+    "current_location": "main_desk_surface"
+}

@@ -1,0 +1,148 @@
+{
+    "objects": [
+        {
+            "name": "robot_arm",
+            "type": "robot",
+            "coord": [
+                430,
+                190
+            ]
+        },
+        {
+            "name": "red_device",
+            "type": "device",
+            "coord": [
+                330,
+                420
+            ]
+        },
+        {
+            "name": "remote_controller_screen",
+            "type": "screen",
+            "coord": [
+                360,
+                445
+            ]
+        },
+        {
+            "name": "table_wood",
+            "type": "surface",
+            "coord": [
+                410,
+                430
+            ]
+        },
+        {
+            "name": "cables",
+            "type": "cable_bundle",
+            "coord": [
+                610,
+                240
+            ]
+        },
+        {
+            "name": "camera_lens",
+            "type": "camera",
+            "coord": [
+                80,
+                160
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "grid_floor",
+            "type": "floor_region",
+            "coord": [
+                470,
+                220
+            ]
+        },
+        {
+            "name": "wood_table_region",
+            "type": "table_region",
+            "coord": [
+                430,
+                430
+            ]
+        },
+        {
+            "name": "robot_work_area",
+            "type": "work_area",
+            "coord": [
+                500,
+                220
+            ]
+        },
+        {
+            "name": "device_placement_area",
+            "type": "placement_area",
+            "coord": [
+                320,
+                420
+            ]
+        }
+    ],
+    "semantic_relationships": [
+        {
+            "subject": "red_device",
+            "relation": "is_on",
+            "object": "wood_table_region"
+        },
+        {
+            "subject": "remote_controller_screen",
+            "relation": "is_part_of",
+            "object": "red_device"
+        },
+        {
+            "subject": "robot_arm",
+            "relation": "operates_within",
+            "object": "robot_work_area"
+        },
+        {
+            "subject": "robot_arm",
+            "relation": "is_adjacent_to",
+            "object": "wood_table_region"
+        },
+        {
+            "subject": "cables",
+            "relation": "are_near",
+            "object": "robot_arm"
+        },
+        {
+            "subject": "camera_lens",
+            "relation": "faces",
+            "object": "robot_work_area"
+        },
+        {
+            "subject": "red_device",
+            "relation": "is_within",
+            "object": "device_placement_area"
+        },
+        {
+            "subject": "wood_table_region",
+            "relation": "is_on",
+            "object": "grid_floor"
+        }
+    ],
+    "current_location": {
+        "entity": "red_device",
+        "region": "device_placement_area"
+    },
+    "plans": [
+        {
+            "name": "pick_and_place",
+            "actor": "robot_arm",
+            "target": "red_device",
+            "from_region": "robot_work_area",
+            "to_region": "device_placement_area"
+        }
+    ],
+    "connections": [
+        {
+            "from": "robot_arm",
+            "to": "red_device",
+            "type": "potential_interaction"
+        }
+    ]
+}

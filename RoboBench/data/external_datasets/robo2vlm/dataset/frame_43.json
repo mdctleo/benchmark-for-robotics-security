@@ -1,0 +1,41 @@
+{
+    "objects": [
+        {
+            "name": "sea_salt_chips",
+            "coords": [
+                617,
+                600
+            ]
+        },
+        {
+            "name": "small_blue_chips",
+            "coords": [
+                267,
+                285
+            ]
+        },
+        {
+            "name": "beverage_can",
+            "coords": [
+                284,
+                690
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "table_top",
+            "coords": [
+                500,
+                500
+            ]
+        }
+    ],
+    "object_connections": [],
+    "region_connections": [],
+    "extra_safe_objects": [],
+    "extra_unsafe_objects": [],
+    "extra_safe_regions": [],
+    "extra_unsafe_regions": [],
+    "current_location": "table_top"
+}

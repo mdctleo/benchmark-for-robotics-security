@@ -1,0 +1,113 @@
+{
+    "objects": [
+        {
+            "name": "robotic_arm",
+            "coords": [
+                452,
+                497
+            ]
+        },
+        {
+            "name": "human_arm",
+            "coords": [
+                570,
+                452
+            ]
+        },
+        {
+            "name": "vise",
+            "coords": [
+                193,
+                114
+            ]
+        },
+        {
+            "name": "warning_sign",
+            "coords": [
+                168,
+                819
+            ]
+        },
+        {
+            "name": "tool_rack",
+            "coords": [
+                107,
+                269
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "workbench",
+            "coords": [
+                178,
+                496
+            ]
+        },
+        {
+            "name": "bench",
+            "coords": [
+                676,
+                493
+            ]
+        },
+        {
+            "name": "workshop",
+            "coords": [
+                500,
+                500
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "robotic_arm",
+            "human_arm"
+        ],
+        [
+            "vise",
+            "workbench"
+        ],
+        [
+            "tool_rack",
+            "workbench"
+        ],
+        [
+            "warning_sign",
+            "workshop"
+        ]
+    ],
+    "region_connections": [
+        [
+            "bench",
+            "workshop"
+        ],
+        [
+            "workbench",
+            "workshop"
+        ]
+    ],
+    "extra_safe_objects": [],
+    "extra_unsafe_objects": [
+        {
+            "name": "robotic_arm",
+            "type": "equipment",
+            "coords": [
+                452,
+                497
+            ]
+        }
+    ],
+    "extra_safe_regions": [],
+    "extra_unsafe_regions": [
+        {
+            "name": "workshop",
+            "type": "hazardous_area",
+            "coords": [
+                500,
+                500
+            ]
+        }
+    ],
+    "current_location": "workshop"
+}

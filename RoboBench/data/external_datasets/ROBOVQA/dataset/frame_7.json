@@ -1,0 +1,155 @@
+{
+    "regions": [
+        {
+            "name": "ground_1",
+            "type": "floor",
+            "polygon": [
+                [
+                    0,
+                    0
+                ],
+                [
+                    1,
+                    0
+                ],
+                [
+                    1,
+                    1
+                ],
+                [
+                    0,
+                    1
+                ]
+            ],
+            "center": [
+                0.5,
+                0.55
+            ]
+        },
+        {
+            "name": "drone_area_1",
+            "type": "work_area",
+            "polygon": [
+                [
+                    0.62,
+                    0.42
+                ],
+                [
+                    0.98,
+                    0.42
+                ],
+                [
+                    0.98,
+                    0.82
+                ],
+                [
+                    0.62,
+                    0.82
+                ]
+            ],
+            "center": [
+                0.8,
+                0.62
+            ]
+        },
+        {
+            "name": "paper_tray_area_1",
+            "type": "object_area",
+            "polygon": [
+                [
+                    0.55,
+                    0.48
+                ],
+                [
+                    0.8,
+                    0.48
+                ],
+                [
+                    0.8,
+                    0.65
+                ],
+                [
+                    0.55,
+                    0.65
+                ]
+            ],
+            "center": [
+                0.67,
+                0.56
+            ]
+        }
+    ],
+    "objects": [
+        {
+            "name": "robot_vacuum_1",
+            "type": "robot_device",
+            "bounding_box": {
+                "min": [
+                    0.62,
+                    0.36
+                ],
+                "max": [
+                    0.98,
+                    0.78
+                ]
+            },
+            "center": [
+                0.8,
+                0.58
+            ]
+        },
+        {
+            "name": "tray_1",
+            "type": "paper_tray_or_pad",
+            "bounding_box": {
+                "min": [
+                    0.53,
+                    0.46
+                ],
+                "max": [
+                    0.81,
+                    0.66
+                ]
+            },
+            "center": [
+                0.68,
+                0.56
+            ]
+        }
+    ],
+    "semantic_relationships": [
+        {
+            "subject": "robot_vacuum_1",
+            "relation": "is_on",
+            "object": "ground_1"
+        },
+        {
+            "subject": "tray_1",
+            "relation": "is_on",
+            "object": "ground_1"
+        },
+        {
+            "subject": "robot_vacuum_1",
+            "relation": "is_adjacent_to",
+            "object": "tray_1"
+        },
+        {
+            "subject": "robot_vacuum_1",
+            "relation": "operates_within",
+            "object": "drone_area_1"
+        },
+        {
+            "subject": "tray_1",
+            "relation": "located_in",
+            "object": "paper_tray_area_1"
+        }
+    ],
+    "current_location": "drone_area_1",
+    "plans": [
+        {
+            "plan_name": "inspect_and_position",
+            "target": "tray_1",
+            "action": "move_near_and align_to"
+        }
+    ]
+}

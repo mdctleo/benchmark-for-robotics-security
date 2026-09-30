@@ -1,0 +1,206 @@
+{
+    "objects": [
+        {
+            "name": "blue_mat",
+            "type": "surface",
+            "position": {
+                "x": 320,
+                "y": 220
+            }
+        },
+        {
+            "name": "red_push_button",
+            "type": "button",
+            "position": {
+                "x": 310,
+                "y": 180
+            }
+        },
+        {
+            "name": "green_push_button",
+            "type": "button",
+            "position": {
+                "x": 390,
+                "y": 150
+            }
+        },
+        {
+            "name": "yellow_emergency_stop",
+            "type": "button",
+            "position": {
+                "x": 420,
+                "y": 145
+            }
+        },
+        {
+            "name": "white_switch_box",
+            "type": "control_box",
+            "position": {
+                "x": 530,
+                "y": 205
+            }
+        },
+        {
+            "name": "cable_bundle",
+            "type": "cables",
+            "position": {
+                "x": 595,
+                "y": 70
+            }
+        },
+        {
+            "name": "black_rim_circular_unit",
+            "type": "equipment",
+            "position": {
+                "x": 120,
+                "y": 110
+            }
+        },
+        {
+            "name": "cylindrical_device",
+            "type": "equipment",
+            "position": {
+                "x": 610,
+                "y": 20
+            }
+        },
+        {
+            "name": "gray_device_base",
+            "type": "equipment",
+            "position": {
+                "x": 680,
+                "y": 180
+            }
+        },
+        {
+            "name": "metal_support_stanchion_left",
+            "type": "structure",
+            "position": {
+                "x": 50,
+                "y": 130
+            }
+        },
+        {
+            "name": "metal_support_stanchion_right",
+            "type": "structure",
+            "position": {
+                "x": 90,
+                "y": 250
+            }
+        }
+    ],
+    "regions": [
+        {
+            "name": "work_area_mat",
+            "position": {
+                "x": 320,
+                "y": 230
+            },
+            "shape": "rectangle"
+        },
+        {
+            "name": "left_edge_of_work_area",
+            "position": {
+                "x": 110,
+                "y": 230
+            },
+            "shape": "strip"
+        },
+        {
+            "name": "right_edge_of_work_area",
+            "position": {
+                "x": 550,
+                "y": 230
+            },
+            "shape": "strip"
+        },
+        {
+            "name": "rear_edge_of_work_area",
+            "position": {
+                "x": 360,
+                "y": 70
+            },
+            "shape": "strip"
+        },
+        {
+            "name": "front_edge_of_work_area",
+            "position": {
+                "x": 500,
+                "y": 350
+            },
+            "shape": "strip"
+        }
+    ],
+    "semantic_relationships": [
+        {
+            "subject": "red_push_button",
+            "predicate": "located_on",
+            "object": "blue_mat"
+        },
+        {
+            "subject": "green_push_button",
+            "predicate": "located_on",
+            "object": "blue_mat"
+        },
+        {
+            "subject": "yellow_emergency_stop",
+            "predicate": "located_on",
+            "object": "blue_mat"
+        },
+        {
+            "subject": "white_switch_box",
+            "predicate": "located_near",
+            "object": "work_area_mat"
+        },
+        {
+            "subject": "cable_bundle",
+            "predicate": "runs_across",
+            "object": "work_area_mat"
+        },
+        {
+            "subject": "black_rim_circular_unit",
+            "predicate": "near",
+            "object": "left_edge_of_work_area"
+        },
+        {
+            "subject": "cylindrical_device",
+            "predicate": "near",
+            "object": "rear_edge_of_work_area"
+        },
+        {
+            "subject": "gray_device_base",
+            "predicate": "near",
+            "object": "right_edge_of_work_area"
+        },
+        {
+            "subject": "metal_support_stanchion_left",
+            "predicate": "supports",
+            "object": "work_area_mat"
+        },
+        {
+            "subject": "metal_support_stanchion_right",
+            "predicate": "supports",
+            "object": "work_area_mat"
+        }
+    ],
+    "current_location": "work_area_mat",
+    "plans": [
+        {
+            "name": "operate_controls",
+            "steps": [
+                {
+                    "target": "red_push_button",
+                    "action": "press"
+                },
+                {
+                    "target": "green_push_button",
+                    "action": "press"
+                },
+                {
+                    "target": "yellow_emergency_stop",
+                    "action": "press_or_check"
+                }
+            ]
+        }
+    ]
+}

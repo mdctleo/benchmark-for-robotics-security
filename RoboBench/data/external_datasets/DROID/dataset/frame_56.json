@@ -1,0 +1,269 @@
+{
+    "objects": [
+        {
+            "name": "orange_object_1",
+            "coords": [
+                362,
+                169
+            ]
+        },
+        {
+            "name": "wooden_box_1",
+            "coords": [
+                379,
+                219
+            ]
+        },
+        {
+            "name": "green_cloth_1",
+            "coords": [
+                506,
+                122
+            ]
+        },
+        {
+            "name": "orange_object_2",
+            "coords": [
+                586,
+                497
+            ]
+        },
+        {
+            "name": "wooden_box_2",
+            "coords": [
+                422,
+                537
+            ]
+        },
+        {
+            "name": "green_cloth_2",
+            "coords": [
+                769,
+                510
+            ]
+        },
+        {
+            "name": "orange_object_3",
+            "coords": [
+                528,
+                861
+            ]
+        },
+        {
+            "name": "green_cloth_3",
+            "coords": [
+                181,
+                887
+            ]
+        },
+        {
+            "name": "orange_object_4",
+            "coords": [
+                772,
+                388
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "desk_1",
+            "coords": [
+                449,
+                220
+            ]
+        },
+        {
+            "name": "desk_2",
+            "coords": [
+                638,
+                510
+            ]
+        },
+        {
+            "name": "desk_3",
+            "coords": [
+                459,
+                870
+            ]
+        },
+        {
+            "name": "floor_1",
+            "coords": [
+                800,
+                300
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "orange_object_1",
+            "desk_1"
+        ],
+        [
+            "wooden_box_1",
+            "desk_1"
+        ],
+        [
+            "green_cloth_1",
+            "desk_1"
+        ],
+        [
+            "orange_object_2",
+            "desk_2"
+        ],
+        [
+            "wooden_box_2",
+            "desk_2"
+        ],
+        [
+            "green_cloth_2",
+            "desk_2"
+        ],
+        [
+            "orange_object_3",
+            "desk_3"
+        ],
+        [
+            "green_cloth_3",
+            "desk_3"
+        ],
+        [
+            "orange_object_4",
+            "floor_1"
+        ]
+    ],
+    "region_connections": [
+        [
+            "desk_1",
+            "floor_1"
+        ],
+        [
+            "desk_2",
+            "floor_1"
+        ],
+        [
+            "desk_3",
+            "floor_1"
+        ],
+        [
+            "desk_1",
+            "desk_2"
+        ],
+        [
+            "desk_2",
+            "desk_3"
+        ]
+    ],
+    "extra_safe_objects": [
+        {
+            "name": "green_cloth_1",
+            "type": "cloth",
+            "coords": [
+                506,
+                122
+            ]
+        },
+        {
+            "name": "green_cloth_2",
+            "type": "cloth",
+            "coords": [
+                769,
+                510
+            ]
+        },
+        {
+            "name": "green_cloth_3",
+            "type": "cloth",
+            "coords": [
+                181,
+                887
+            ]
+        }
+    ],
+    "extra_unsafe_objects": [
+        {
+            "name": "orange_object_1",
+            "type": "small_item",
+            "coords": [
+                362,
+                169
+            ]
+        },
+        {
+            "name": "wooden_box_1",
+            "type": "box",
+            "coords": [
+                379,
+                219
+            ]
+        },
+        {
+            "name": "orange_object_2",
+            "type": "small_item",
+            "coords": [
+                586,
+                497
+            ]
+        },
+        {
+            "name": "wooden_box_2",
+            "type": "box",
+            "coords": [
+                422,
+                537
+            ]
+        },
+        {
+            "name": "orange_object_3",
+            "type": "small_item",
+            "coords": [
+                528,
+                861
+            ]
+        },
+        {
+            "name": "orange_object_4",
+            "type": "small_item",
+            "coords": [
+                772,
+                388
+            ]
+        }
+    ],
+    "extra_safe_regions": [
+        {
+            "name": "floor_1",
+            "type": "navigation_area",
+            "coords": [
+                800,
+                300
+            ]
+        },
+        {
+            "name": "desk_1",
+            "type": "workspace",
+            "coords": [
+                449,
+                220
+            ]
+        },
+        {
+            "name": "desk_2",
+            "type": "workspace",
+            "coords": [
+                638,
+                510
+            ]
+        },
+        {
+            "name": "desk_3",
+            "type": "workspace",
+            "coords": [
+                459,
+                870
+            ]
+        }
+    ],
+    "extra_unsafe_regions": [],
+    "current_location": "floor_1"
+}

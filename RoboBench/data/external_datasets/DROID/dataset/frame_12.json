@@ -1,0 +1,139 @@
+{
+    "objects": [
+        {
+            "name": "robot_arm",
+            "coords": [
+                0.2,
+                0.05
+            ]
+        },
+        {
+            "name": "sink",
+            "coords": [
+                -0.4,
+                0.05
+            ]
+        },
+        {
+            "name": "faucet",
+            "coords": [
+                -0.35,
+                0.1
+            ]
+        },
+        {
+            "name": "tablet_stand",
+            "coords": [
+                0.45,
+                0.05
+            ]
+        },
+        {
+            "name": "coffee_machine",
+            "coords": [
+                0.65,
+                0.05
+            ]
+        },
+        {
+            "name": "green_box",
+            "coords": [
+                -0.8,
+                0.05
+            ]
+        },
+        {
+            "name": "paper_towel_roll",
+            "coords": [
+                -0.7,
+                0.05
+            ]
+        },
+        {
+            "name": "robot_gripper",
+            "coords": [
+                0.2,
+                0.1
+            ]
+        },
+        {
+            "name": "paper_towel_piece",
+            "coords": [
+                0.2,
+                0.15
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "countertop",
+            "coords": [
+                0.0,
+                0.0
+            ]
+        },
+        {
+            "name": "floor",
+            "coords": [
+                0.0,
+                -0.5
+            ]
+        },
+        {
+            "name": "cabinetry",
+            "coords": [
+                0.0,
+                -0.1
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "faucet",
+            "sink"
+        ],
+        [
+            "robot_gripper",
+            "robot_arm"
+        ],
+        [
+            "paper_towel_piece",
+            "robot_gripper"
+        ]
+    ],
+    "region_connections": [
+        [
+            "robot_arm",
+            "countertop"
+        ],
+        [
+            "sink",
+            "countertop"
+        ],
+        [
+            "tablet_stand",
+            "countertop"
+        ],
+        [
+            "coffee_machine",
+            "countertop"
+        ],
+        [
+            "green_box",
+            "countertop"
+        ],
+        [
+            "paper_towel_roll",
+            "countertop"
+        ],
+        [
+            "cabinetry",
+            "floor"
+        ]
+    ],
+    "extra_safe_objects": [],
+    "extra_unsafe_objects": [],
+    "extra_safe_regions": [],
+    "extra_unsafe_regions": [],
+    "current_location": "countertop"
+}

@@ -1,0 +1,207 @@
+{
+    "objects": [
+        {
+            "name": "robot_arm",
+            "coords": [
+                35,
+                30
+            ]
+        },
+        {
+            "name": "frying_pan_left",
+            "coords": [
+                25,
+                75
+            ]
+        },
+        {
+            "name": "frying_pan_right",
+            "coords": [
+                85,
+                80
+            ]
+        },
+        {
+            "name": "gas_range",
+            "coords": [
+                50,
+                75
+            ]
+        },
+        {
+            "name": "potholder_left",
+            "coords": [
+                65,
+                80
+            ]
+        },
+        {
+            "name": "potholder_right",
+            "coords": [
+                90,
+                90
+            ]
+        },
+        {
+            "name": "kitchen_door",
+            "coords": [
+                10,
+                20
+            ]
+        },
+        {
+            "name": "cabinet_drawers",
+            "coords": [
+                45,
+                40
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "stovetop_region",
+            "coords": [
+                50,
+                75
+            ]
+        },
+        {
+            "name": "counter_left",
+            "coords": [
+                20,
+                60
+            ]
+        },
+        {
+            "name": "counter_right",
+            "coords": [
+                80,
+                60
+            ]
+        },
+        {
+            "name": "kitchen_background",
+            "coords": [
+                50,
+                20
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "robot_arm",
+            "frying_pan_left"
+        ],
+        [
+            "frying_pan_left",
+            "gas_range"
+        ],
+        [
+            "potholder_left",
+            "gas_range"
+        ],
+        [
+            "potholder_right",
+            "gas_range"
+        ],
+        [
+            "frying_pan_right",
+            "counter_right"
+        ]
+    ],
+    "region_connections": [
+        [
+            "counter_left",
+            "stovetop_region"
+        ],
+        [
+            "stovetop_region",
+            "counter_right"
+        ],
+        [
+            "kitchen_background",
+            "stovetop_region"
+        ]
+    ],
+    "extra_safe_objects": [
+        {
+            "name": "potholder_left",
+            "type": "potholder",
+            "coords": [
+                65,
+                80
+            ]
+        },
+        {
+            "name": "potholder_right",
+            "type": "potholder",
+            "coords": [
+                90,
+                90
+            ]
+        },
+        {
+            "name": "robot_arm",
+            "type": "robot",
+            "coords": [
+                35,
+                30
+            ]
+        }
+    ],
+    "extra_unsafe_objects": [
+        {
+            "name": "gas_range",
+            "type": "appliance",
+            "coords": [
+                50,
+                75
+            ]
+        },
+        {
+            "name": "frying_pan_left",
+            "type": "kitchenware",
+            "coords": [
+                25,
+                75
+            ]
+        },
+        {
+            "name": "frying_pan_right",
+            "type": "kitchenware",
+            "coords": [
+                85,
+                80
+            ]
+        }
+    ],
+    "extra_safe_regions": [
+        {
+            "name": "counter_left",
+            "type": "surface",
+            "coords": [
+                20,
+                60
+            ]
+        },
+        {
+            "name": "counter_right",
+            "type": "surface",
+            "coords": [
+                80,
+                60
+            ]
+        }
+    ],
+    "extra_unsafe_regions": [
+        {
+            "name": "stovetop_region",
+            "type": "cooking_area",
+            "coords": [
+                50,
+                75
+            ]
+        }
+    ],
+    "current_location": "stovetop_region"
+}

@@ -1,0 +1,88 @@
+{
+    "objects": [
+        {
+            "name": "red telephone",
+            "coords": [
+                408,
+                489
+            ]
+        },
+        {
+            "name": "wooden block",
+            "coords": [
+                619,
+                439
+            ]
+        },
+        {
+            "name": "robotic arm",
+            "coords": [
+                412,
+                876
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "patterned cloth",
+            "coords": [
+                550,
+                490
+            ]
+        },
+        {
+            "name": "background area",
+            "coords": [
+                200,
+                200
+            ]
+        }
+    ],
+    "object_connections": [],
+    "region_connections": [
+        [
+            "patterned cloth",
+            "background area"
+        ]
+    ],
+    "extra_safe_objects": [
+        {
+            "name": "red telephone",
+            "type": "electronic device",
+            "coords": [
+                408,
+                489
+            ]
+        },
+        {
+            "name": "wooden block",
+            "type": "toy",
+            "coords": [
+                619,
+                439
+            ]
+        }
+    ],
+    "extra_unsafe_objects": [
+        {
+            "name": "robotic arm",
+            "type": "machinery",
+            "coords": [
+                412,
+                876
+            ]
+        }
+    ],
+    "extra_safe_regions": [
+        {
+            "name": "patterned cloth",
+            "type": "surface",
+            "coords": [
+                550,
+                490
+            ]
+        }
+    ],
+    "extra_unsafe_regions": [],
+    "current_location": "patterned cloth"
+}

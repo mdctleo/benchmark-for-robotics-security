@@ -1,0 +1,361 @@
+{
+    "objects": [
+        {
+            "name": "table_1",
+            "type": "furniture",
+            "bounding_box": {
+                "x": 0,
+                "y": 0.05,
+                "w": 0.55,
+                "h": 0.75
+            }
+        },
+        {
+            "name": "round_table_1",
+            "type": "furniture",
+            "bounding_box": {
+                "x": 0.0,
+                "y": 0.1,
+                "w": 0.45,
+                "h": 0.7
+            }
+        },
+        {
+            "name": "paper_or_bag_1",
+            "type": "paper_goods",
+            "bounding_box": {
+                "x": 0.42,
+                "y": 0.02,
+                "w": 0.1,
+                "h": 0.08
+            }
+        },
+        {
+            "name": "tray_cart_1",
+            "type": "furniture",
+            "bounding_box": {
+                "x": 0.58,
+                "y": 0.33,
+                "w": 0.37,
+                "h": 0.33
+            }
+        },
+        {
+            "name": "drawer_cart_1",
+            "type": "furniture",
+            "bounding_box": {
+                "x": 0.6,
+                "y": 0.58,
+                "w": 0.33,
+                "h": 0.22
+            }
+        },
+        {
+            "name": "portable_lab_device_1",
+            "type": "equipment",
+            "bounding_box": {
+                "x": 0.66,
+                "y": 0.18,
+                "w": 0.28,
+                "h": 0.18
+            }
+        },
+        {
+            "name": "tube_device_1",
+            "type": "equipment",
+            "bounding_box": {
+                "x": 0.62,
+                "y": 0.13,
+                "w": 0.26,
+                "h": 0.35
+            }
+        },
+        {
+            "name": "tube_device_2",
+            "type": "equipment",
+            "bounding_box": {
+                "x": 0.86,
+                "y": 0.09,
+                "w": 0.08,
+                "h": 0.25
+            }
+        },
+        {
+            "name": "tray_contents_bottle_1",
+            "type": "container",
+            "bounding_box": {
+                "x": 0.65,
+                "y": 0.42,
+                "w": 0.08,
+                "h": 0.08
+            }
+        },
+        {
+            "name": "tray_contents_bottle_2",
+            "type": "container",
+            "bounding_box": {
+                "x": 0.74,
+                "y": 0.36,
+                "w": 0.08,
+                "h": 0.08
+            }
+        },
+        {
+            "name": "tray_contents_tool_1",
+            "type": "tool",
+            "bounding_box": {
+                "x": 0.79,
+                "y": 0.33,
+                "w": 0.11,
+                "h": 0.1
+            }
+        },
+        {
+            "name": "paper_sheet_1",
+            "type": "paper_goods",
+            "bounding_box": {
+                "x": 0.61,
+                "y": 0.52,
+                "w": 0.12,
+                "h": 0.08
+            }
+        },
+        {
+            "name": "packet_1",
+            "type": "packaged_item",
+            "bounding_box": {
+                "x": 0.78,
+                "y": 0.52,
+                "w": 0.18,
+                "h": 0.13
+            }
+        },
+        {
+            "name": "packet_2",
+            "type": "packaged_item",
+            "bounding_box": {
+                "x": 0.7,
+                "y": 0.46,
+                "w": 0.13,
+                "h": 0.08
+            }
+        },
+        {
+            "name": "booklet_or_box_1",
+            "type": "printed_material",
+            "bounding_box": {
+                "x": 0.63,
+                "y": 0.38,
+                "w": 0.18,
+                "h": 0.08
+            }
+        },
+        {
+            "name": "small_card_stack_1",
+            "type": "paper_goods",
+            "bounding_box": {
+                "x": 0.76,
+                "y": 0.4,
+                "w": 0.09,
+                "h": 0.06
+            }
+        }
+    ],
+    "regions": [
+        {
+            "name": "floor_1",
+            "type": "ground",
+            "polygon": [
+                {
+                    "x": 0.0,
+                    "y": 0.95
+                },
+                {
+                    "x": 1.0,
+                    "y": 0.95
+                },
+                {
+                    "x": 1.0,
+                    "y": 0.0
+                },
+                {
+                    "x": 0.0,
+                    "y": 0.0
+                }
+            ]
+        },
+        {
+            "name": "wall_corner_1",
+            "type": "wall",
+            "bounding_box": {
+                "x": 0.43,
+                "y": 0.0,
+                "w": 0.57,
+                "h": 0.25
+            }
+        },
+        {
+            "name": "workspace_area_1",
+            "type": "work_area",
+            "bounding_box": {
+                "x": 0.55,
+                "y": 0.1,
+                "w": 0.42,
+                "h": 0.85
+            }
+        }
+    ],
+    "semantic_relationships": [
+        {
+            "relation": "on",
+            "subject": "round_table_1",
+            "object": "table_1"
+        },
+        {
+            "relation": "contains",
+            "subject": "tray_cart_1",
+            "object": "tray_contents_bottle_1"
+        },
+        {
+            "relation": "contains",
+            "subject": "tray_cart_1",
+            "object": "tray_contents_bottle_2"
+        },
+        {
+            "relation": "contains",
+            "subject": "tray_cart_1",
+            "object": "tray_contents_tool_1"
+        },
+        {
+            "relation": "contains",
+            "subject": "tray_cart_1",
+            "object": "paper_sheet_1"
+        },
+        {
+            "relation": "contains",
+            "subject": "tray_cart_1",
+            "object": "packet_1"
+        },
+        {
+            "relation": "contains",
+            "subject": "tray_cart_1",
+            "object": "packet_2"
+        },
+        {
+            "relation": "contains",
+            "subject": "tray_cart_1",
+            "object": "booklet_or_box_1"
+        },
+        {
+            "relation": "contains",
+            "subject": "tray_cart_1",
+            "object": "small_card_stack_1"
+        },
+        {
+            "relation": "supports",
+            "subject": "tray_cart_1",
+            "object": "drawer_cart_1"
+        },
+        {
+            "relation": "sits_on",
+            "subject": "portable_lab_device_1",
+            "object": "tray_cart_1"
+        },
+        {
+            "relation": "mounted_on",
+            "subject": "tube_device_1",
+            "object": "portable_lab_device_1"
+        },
+        {
+            "relation": "mounted_on",
+            "subject": "tube_device_2",
+            "object": "portable_lab_device_1"
+        },
+        {
+            "relation": "current_location",
+            "subject": "tray_cart_1",
+            "object": "workspace_area_1"
+        },
+        {
+            "relation": "current_location",
+            "subject": "round_table_1",
+            "object": "floor_1"
+        },
+        {
+            "relation": "current_location",
+            "subject": "paper_or_bag_1",
+            "object": "table_1"
+        },
+        {
+            "relation": "adjacent_to",
+            "subject": "tray_cart_1",
+            "object": "wall_corner_1"
+        }
+    ],
+    "current_locations": [
+        {
+            "name": "tray_cart_1",
+            "current_location": "workspace_area_1"
+        },
+        {
+            "name": "portable_lab_device_1",
+            "current_location": "workspace_area_1"
+        },
+        {
+            "name": "tube_device_1",
+            "current_location": "workspace_area_1"
+        },
+        {
+            "name": "tube_device_2",
+            "current_location": "workspace_area_1"
+        },
+        {
+            "name": "paper_sheet_1",
+            "current_location": "workspace_area_1"
+        },
+        {
+            "name": "packet_1",
+            "current_location": "workspace_area_1"
+        },
+        {
+            "name": "packet_2",
+            "current_location": "workspace_area_1"
+        },
+        {
+            "name": "booklet_or_box_1",
+            "current_location": "workspace_area_1"
+        },
+        {
+            "name": "small_card_stack_1",
+            "current_location": "workspace_area_1"
+        },
+        {
+            "name": "tray_contents_bottle_1",
+            "current_location": "workspace_area_1"
+        },
+        {
+            "name": "tray_contents_bottle_2",
+            "current_location": "workspace_area_1"
+        },
+        {
+            "name": "tray_contents_tool_1",
+            "current_location": "workspace_area_1"
+        },
+        {
+            "name": "table_1",
+            "current_location": "floor_1"
+        },
+        {
+            "name": "round_table_1",
+            "current_location": "floor_1"
+        },
+        {
+            "name": "paper_or_bag_1",
+            "current_location": "table_1"
+        },
+        {
+            "name": "drawer_cart_1",
+            "current_location": "workspace_area_1"
+        }
+    ]
+}

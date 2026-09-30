@@ -1,0 +1,128 @@
+{
+    "objects": [
+        {
+            "name": "robot_arm",
+            "coords": [
+                776,
+                730
+            ]
+        },
+        {
+            "name": "cheese_block",
+            "coords": [
+                676,
+                680
+            ]
+        },
+        {
+            "name": "beverages_on_top_shelf",
+            "coords": [
+                458,
+                300
+            ]
+        },
+        {
+            "name": "beverages_on_middle_shelf",
+            "coords": [
+                461,
+                460
+            ]
+        },
+        {
+            "name": "beverages_on_bottom_shelf",
+            "coords": [
+                450,
+                620
+            ]
+        },
+        {
+            "name": "plastic_container",
+            "coords": [
+                400,
+                900
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "refrigerator_interior",
+            "coords": [
+                450,
+                450
+            ]
+        },
+        {
+            "name": "top_shelf",
+            "coords": [
+                450,
+                300
+            ]
+        },
+        {
+            "name": "middle_shelf",
+            "coords": [
+                450,
+                460
+            ]
+        },
+        {
+            "name": "bottom_shelf",
+            "coords": [
+                450,
+                620
+            ]
+        },
+        {
+            "name": "floor_area",
+            "coords": [
+                450,
+                900
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "robot_arm",
+            "cheese_block"
+        ],
+        [
+            "robot_arm",
+            "bottom_shelf"
+        ],
+        [
+            "beverages_on_top_shelf",
+            "top_shelf"
+        ],
+        [
+            "beverages_on_middle_shelf",
+            "middle_shelf"
+        ],
+        [
+            "beverages_on_bottom_shelf",
+            "bottom_shelf"
+        ],
+        [
+            "plastic_container",
+            "floor_area"
+        ]
+    ],
+    "region_connections": [
+        [
+            "top_shelf",
+            "refrigerator_interior"
+        ],
+        [
+            "middle_shelf",
+            "refrigerator_interior"
+        ],
+        [
+            "bottom_shelf",
+            "refrigerator_interior"
+        ]
+    ],
+    "extra_safe_objects": [],
+    "extra_unsafe_objects": [],
+    "extra_safe_regions": [],
+    "extra_unsafe_regions": [],
+    "current_location": "bottom_shelf"
+}

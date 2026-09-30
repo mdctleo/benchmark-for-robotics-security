@@ -1,0 +1,241 @@
+{
+    "objects": [
+        {
+            "name": "bowl_container",
+            "type": "container",
+            "description": "Black bowl-like container on the table.",
+            "coordinates": [
+                320,
+                55
+            ],
+            "size": {
+                "width": 45,
+                "height": 45
+            }
+        },
+        {
+            "name": "stacked_coins_jar",
+            "type": "jar",
+            "description": "Clear jar with stacked coins/round items.",
+            "coordinates": [
+                425,
+                65
+            ],
+            "size": {
+                "width": 40,
+                "height": 40
+            }
+        },
+        {
+            "name": "cup_container",
+            "type": "container",
+            "description": "Black cup-like container near the back.",
+            "coordinates": [
+                390,
+                55
+            ],
+            "size": {
+                "width": 40,
+                "height": 40
+            }
+        },
+        {
+            "name": "roll_boxes_left",
+            "type": "packaging",
+            "description": "Row of boxed items on the left side.",
+            "coordinates": [
+                55,
+                115
+            ],
+            "size": {
+                "width": 90,
+                "height": 120
+            }
+        },
+        {
+            "name": "small_table_box",
+            "type": "box",
+            "description": "White rectangular tray/box holding small items.",
+            "coordinates": [
+                355,
+                150
+            ],
+            "size": {
+                "width": 120,
+                "height": 35
+            }
+        },
+        {
+            "name": "plastic_item_row",
+            "type": "toy_like_items",
+            "description": "Green small molded items arranged in/near the tray and on the table.",
+            "coordinates": [
+                430,
+                215
+            ],
+            "size": {
+                "width": 70,
+                "height": 25
+            }
+        },
+        {
+            "name": "white_tube_appliance",
+            "type": "appliance",
+            "description": "Large white cylindrical/duct-like appliance on the right side.",
+            "coordinates": [
+                710,
+                120
+            ],
+            "size": {
+                "width": 140,
+                "height": 220
+            }
+        },
+        {
+            "name": "green_items_center_cluster",
+            "type": "toy_like_items",
+            "description": "Cluster of green small items in the middle of the table.",
+            "coordinates": [
+                420,
+                230
+            ],
+            "size": {
+                "width": 65,
+                "height": 35
+            }
+        }
+    ],
+    "regions": [
+        {
+            "name": "table_surface",
+            "type": "surface",
+            "description": "Main tabletop surface where items are placed.",
+            "polygon": [
+                [
+                    20,
+                    120
+                ],
+                [
+                    950,
+                    120
+                ],
+                [
+                    950,
+                    630
+                ],
+                [
+                    20,
+                    630
+                ]
+            ]
+        },
+        {
+            "name": "tray_area",
+            "type": "surface",
+            "description": "Area on the table corresponding to the white rectangular tray/box location.",
+            "polygon": [
+                [
+                    290,
+                    135
+                ],
+                [
+                    470,
+                    135
+                ],
+                [
+                    470,
+                    185
+                ],
+                [
+                    290,
+                    185
+                ]
+            ]
+        },
+        {
+            "name": "right_appliance_area",
+            "type": "blocked_area",
+            "description": "Area occupied by the large white cylindrical/duct-like appliance.",
+            "polygon": [
+                [
+                    620,
+                    40
+                ],
+                [
+                    910,
+                    40
+                ],
+                [
+                    910,
+                    320
+                ],
+                [
+                    620,
+                    320
+                ]
+            ]
+        }
+    ],
+    "semantic_relationships": [
+        {
+            "subject": "small_table_box",
+            "relation": "is_on",
+            "object": "table_surface"
+        },
+        {
+            "subject": "plastic_item_row",
+            "relation": "is_on",
+            "object": "tray_area"
+        },
+        {
+            "subject": "green_items_center_cluster",
+            "relation": "is_on",
+            "object": "table_surface"
+        },
+        {
+            "subject": "bowl_container",
+            "relation": "is_on",
+            "object": "table_surface"
+        },
+        {
+            "subject": "cup_container",
+            "relation": "is_on",
+            "object": "table_surface"
+        },
+        {
+            "subject": "stacked_coins_jar",
+            "relation": "is_on",
+            "object": "table_surface"
+        },
+        {
+            "subject": "roll_boxes_left",
+            "relation": "is_on",
+            "object": "table_surface"
+        },
+        {
+            "subject": "white_tube_appliance",
+            "relation": "occupies",
+            "object": "right_appliance_area"
+        }
+    ],
+    "current_location": {
+        "name": "green_items_center_cluster",
+        "region": "table_surface",
+        "coordinates": [
+            420,
+            230
+        ]
+    },
+    "plans": [
+        {
+            "plan_name": "pick_and_move_green_items",
+            "target": "green_items_center_cluster",
+            "from_region": "table_surface",
+            "to_region": "tray_area",
+            "constraints": [
+                "target_must_be_still",
+                "tray_area_is_valid_destination"
+            ]
+        }
+    ]
+}

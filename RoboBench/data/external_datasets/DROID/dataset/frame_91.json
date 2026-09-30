@@ -1,0 +1,289 @@
+{
+    "objects": [
+        {
+            "name": "microwave",
+            "coords": [
+                591,
+                107
+            ]
+        },
+        {
+            "name": "black_bowl",
+            "coords": [
+                443,
+                115
+            ]
+        },
+        {
+            "name": "stove",
+            "coords": [
+                674,
+                285
+            ]
+        },
+        {
+            "name": "pot_with_lid",
+            "coords": [
+                715,
+                305
+            ]
+        },
+        {
+            "name": "plastic_bottle_1",
+            "coords": [
+                653,
+                208
+            ]
+        },
+        {
+            "name": "robot_arm",
+            "coords": [
+                300,
+                400
+            ]
+        },
+        {
+            "name": "canister",
+            "coords": [
+                615,
+                510
+            ]
+        },
+        {
+            "name": "plastic_bottle_2",
+            "coords": [
+                670,
+                480
+            ]
+        },
+        {
+            "name": "milk_tea_bag",
+            "coords": [
+                456,
+                882
+            ]
+        },
+        {
+            "name": "robot_gripper",
+            "coords": [
+                763,
+                884
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "countertop",
+            "coords": [
+                750,
+                450
+            ]
+        },
+        {
+            "name": "microwave_area",
+            "coords": [
+                700,
+                100
+            ]
+        },
+        {
+            "name": "stove_area",
+            "coords": [
+                700,
+                400
+            ]
+        },
+        {
+            "name": "milk_tea_area",
+            "coords": [
+                700,
+                850
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "microwave",
+            "microwave_area"
+        ],
+        [
+            "black_bowl",
+            "microwave"
+        ],
+        [
+            "stove",
+            "stove_area"
+        ],
+        [
+            "pot_with_lid",
+            "stove"
+        ],
+        [
+            "plastic_bottle_1",
+            "stove_area"
+        ],
+        [
+            "canister",
+            "stove_area"
+        ],
+        [
+            "plastic_bottle_2",
+            "stove_area"
+        ],
+        [
+            "milk_tea_bag",
+            "milk_tea_area"
+        ],
+        [
+            "robot_gripper",
+            "milk_tea_bag"
+        ],
+        [
+            "robot_arm",
+            "countertop"
+        ]
+    ],
+    "region_connections": [
+        [
+            "microwave_area",
+            "countertop"
+        ],
+        [
+            "stove_area",
+            "countertop"
+        ],
+        [
+            "milk_tea_area",
+            "countertop"
+        ],
+        [
+            "microwave_area",
+            "stove_area"
+        ],
+        [
+            "stove_area",
+            "milk_tea_area"
+        ]
+    ],
+    "extra_safe_objects": [
+        {
+            "name": "microwave",
+            "type": "kitchen_appliance",
+            "coords": [
+                591,
+                107
+            ]
+        },
+        {
+            "name": "black_bowl",
+            "type": "kitchen_utensil",
+            "coords": [
+                443,
+                115
+            ]
+        },
+        {
+            "name": "plastic_bottle_1",
+            "type": "container",
+            "coords": [
+                653,
+                208
+            ]
+        },
+        {
+            "name": "canister",
+            "type": "kitchen_appliance",
+            "coords": [
+                615,
+                510
+            ]
+        },
+        {
+            "name": "plastic_bottle_2",
+            "type": "container",
+            "coords": [
+                670,
+                480
+            ]
+        },
+        {
+            "name": "milk_tea_bag",
+            "type": "food_packaging",
+            "coords": [
+                456,
+                882
+            ]
+        }
+    ],
+    "extra_unsafe_objects": [
+        {
+            "name": "stove",
+            "type": "kitchen_appliance",
+            "coords": [
+                674,
+                285
+            ]
+        },
+        {
+            "name": "pot_with_lid",
+            "type": "kitchen_utensil",
+            "coords": [
+                715,
+                305
+            ]
+        },
+        {
+            "name": "robot_arm",
+            "type": "robot",
+            "coords": [
+                300,
+                400
+            ]
+        },
+        {
+            "name": "robot_gripper",
+            "type": "robot_part",
+            "coords": [
+                763,
+                884
+            ]
+        }
+    ],
+    "extra_safe_regions": [
+        {
+            "name": "countertop",
+            "type": "surface",
+            "coords": [
+                750,
+                450
+            ]
+        },
+        {
+            "name": "microwave_area",
+            "type": "kitchen_space",
+            "coords": [
+                700,
+                100
+            ]
+        },
+        {
+            "name": "milk_tea_area",
+            "type": "kitchen_space",
+            "coords": [
+                700,
+                850
+            ]
+        }
+    ],
+    "extra_unsafe_regions": [
+        {
+            "name": "stove_area",
+            "type": "kitchen_space",
+            "coords": [
+                700,
+                400
+            ]
+        }
+    ],
+    "current_location": "stove_area"
+}

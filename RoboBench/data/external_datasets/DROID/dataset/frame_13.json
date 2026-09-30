@@ -1,0 +1,109 @@
+{
+    "objects": [
+        {
+            "name": "robot_arm",
+            "coords": [
+                500,
+                450
+            ]
+        },
+        {
+            "name": "white_desk",
+            "coords": [
+                700,
+                300
+            ]
+        },
+        {
+            "name": "purple_mat",
+            "coords": [
+                650,
+                200
+            ]
+        },
+        {
+            "name": "power_strip",
+            "coords": [
+                600,
+                300
+            ]
+        },
+        {
+            "name": "plastic_container",
+            "coords": [
+                500,
+                850
+            ]
+        },
+        {
+            "name": "small_vial_1",
+            "coords": [
+                480,
+                860
+            ]
+        },
+        {
+            "name": "small_vial_2",
+            "coords": [
+                520,
+                840
+            ]
+        },
+        {
+            "name": "person",
+            "coords": [
+                300,
+                100
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "office_environment",
+            "coords": [
+                500,
+                500
+            ]
+        },
+        {
+            "name": "desk_area",
+            "coords": [
+                650,
+                350
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "robot_arm",
+            "near_surface_of_interest"
+        ],
+        [
+            "robot_arm",
+            "holding"
+        ],
+        [
+            "plastic_container",
+            "contains"
+        ],
+        [
+            "purple_mat",
+            "on"
+        ],
+        [
+            "power_strip",
+            "on"
+        ]
+    ],
+    "region_connections": [
+        [
+            "desk_area",
+            "part_of"
+        ]
+    ],
+    "extra_safe_objects": [],
+    "extra_unsafe_objects": [],
+    "extra_safe_regions": [],
+    "extra_unsafe_regions": [],
+    "current_location": "desk_area"
+}

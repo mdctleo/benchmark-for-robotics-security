@@ -1,0 +1,367 @@
+{
+    "regions": [
+        {
+            "name": "table_top",
+            "type": "surface",
+            "polygon": [
+                [
+                    40,
+                    140
+                ],
+                [
+                    430,
+                    140
+                ],
+                [
+                    480,
+                    330
+                ],
+                [
+                    20,
+                    330
+                ]
+            ],
+            "centroid": [
+                235,
+                235
+            ]
+        },
+        {
+            "name": "blue_cloth_area",
+            "type": "fabric_region",
+            "polygon": [
+                [
+                    55,
+                    165
+                ],
+                [
+                    420,
+                    165
+                ],
+                [
+                    455,
+                    320
+                ],
+                [
+                    70,
+                    320
+                ]
+            ],
+            "centroid": [
+                238,
+                242
+            ]
+        },
+        {
+            "name": "printed_artwork_region",
+            "type": "image_region",
+            "polygon": [
+                [
+                    85,
+                    200
+                ],
+                [
+                    410,
+                    200
+                ],
+                [
+                    435,
+                    305
+                ],
+                [
+                    105,
+                    305
+                ]
+            ],
+            "centroid": [
+                260,
+                252
+            ]
+        },
+        {
+            "name": "cable_area",
+            "type": "area_with_cables",
+            "polygon": [
+                [
+                    0,
+                    140
+                ],
+                [
+                    620,
+                    140
+                ],
+                [
+                    620,
+                    430
+                ],
+                [
+                    0,
+                    430
+                ]
+            ],
+            "centroid": [
+                310,
+                285
+            ]
+        },
+        {
+            "name": "background_rack_area",
+            "type": "background",
+            "polygon": [
+                [
+                    0,
+                    0
+                ],
+                [
+                    620,
+                    0
+                ],
+                [
+                    620,
+                    140
+                ],
+                [
+                    0,
+                    140
+                ]
+            ],
+            "centroid": [
+                310,
+                70
+            ]
+        }
+    ],
+    "objects": [
+        {
+            "name": "lamp_base_left",
+            "type": "lamp_base",
+            "position": [
+                80,
+                230
+            ],
+            "size": [
+                70,
+                90
+            ]
+        },
+        {
+            "name": "lamp_head_left",
+            "type": "lamp_head",
+            "position": [
+                82,
+                130
+            ],
+            "size": [
+                60,
+                60
+            ]
+        },
+        {
+            "name": "lamp_base_right",
+            "type": "lamp_base",
+            "position": [
+                465,
+                250
+            ],
+            "size": [
+                90,
+                110
+            ]
+        },
+        {
+            "name": "lamp_head_right",
+            "type": "lamp_head",
+            "position": [
+                520,
+                170
+            ],
+            "size": [
+                70,
+                70
+            ]
+        },
+        {
+            "name": "rope_or_thin_stand_left",
+            "type": "support_or_cable_group",
+            "position": [
+                40,
+                250
+            ],
+            "size": [
+                30,
+                120
+            ]
+        },
+        {
+            "name": "rope_or_thin_stand_right",
+            "type": "support_or_cable_group",
+            "position": [
+                565,
+                250
+            ],
+            "size": [
+                40,
+                140
+            ]
+        },
+        {
+            "name": "blue_cloth",
+            "type": "fabric",
+            "position": [
+                240,
+                245
+            ],
+            "size": [
+                390,
+                170
+            ]
+        },
+        {
+            "name": "small_cube",
+            "type": "small_object",
+            "position": [
+                235,
+                150
+            ],
+            "size": [
+                18,
+                18
+            ]
+        },
+        {
+            "name": "printed_artwork",
+            "type": "printed_image_on_fabric",
+            "position": [
+                255,
+                252
+            ],
+            "size": [
+                330,
+                150
+            ]
+        },
+        {
+            "name": "device_mount_white",
+            "type": "electronics_device",
+            "position": [
+                420,
+                310
+            ],
+            "size": [
+                110,
+                50
+            ]
+        },
+        {
+            "name": "power_strip_or_socket_block",
+            "type": "power_accessory",
+            "position": [
+                470,
+                275
+            ],
+            "size": [
+                60,
+                35
+            ]
+        },
+        {
+            "name": "cables_black_bundle",
+            "type": "cable_bundle",
+            "position": [
+                470,
+                210
+            ],
+            "size": [
+                220,
+                120
+            ]
+        }
+    ],
+    "semantic_relationships": [
+        {
+            "relation": "object_on",
+            "source": "small_cube",
+            "target": "blue_cloth_area"
+        },
+        {
+            "relation": "object_part_of",
+            "source": "printed_artwork",
+            "target": "printed_artwork_region"
+        },
+        {
+            "relation": "printed_on",
+            "source": "printed_artwork",
+            "target": "blue_cloth_area"
+        },
+        {
+            "relation": "object_on",
+            "source": "device_mount_white",
+            "target": "table_top"
+        },
+        {
+            "relation": "object_connected_to",
+            "source": "device_mount_white",
+            "target": "cables_black_bundle"
+        },
+        {
+            "relation": "cables_in_area",
+            "source": "cables_black_bundle",
+            "target": "cable_area"
+        },
+        {
+            "relation": "object_on",
+            "source": "lamp_base_left",
+            "target": "table_top"
+        },
+        {
+            "relation": "object_on",
+            "source": "lamp_base_right",
+            "target": "table_top"
+        },
+        {
+            "relation": "part_of",
+            "source": "lamp_head_left",
+            "target": "lamp_base_left"
+        },
+        {
+            "relation": "part_of",
+            "source": "lamp_head_right",
+            "target": "lamp_base_right"
+        },
+        {
+            "relation": "stabilizes_or_supports",
+            "source": "rope_or_thin_stand_left",
+            "target": "lamp_base_left"
+        },
+        {
+            "relation": "stabilizes_or_supports",
+            "source": "rope_or_thin_stand_right",
+            "target": "lamp_base_right"
+        },
+        {
+            "relation": "fabric_covers",
+            "source": "blue_cloth",
+            "target": "table_top"
+        },
+        {
+            "relation": "background_adjacent_to",
+            "source": "cables_black_bundle",
+            "target": "background_rack_area"
+        }
+    ],
+    "current_location": {
+        "name": "blue_cloth_area",
+        "reason": "The small cube and printed artwork are placed on the blue cloth on the table."
+    },
+    "plans": [
+        {
+            "plan_name": "inspect_printed_artwork",
+            "steps": [
+                {
+                    "action": "move_focus_to",
+                    "target_region": "printed_artwork_region"
+                }
+            ]
+        }
+    ]
+}

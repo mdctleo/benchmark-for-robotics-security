@@ -1,0 +1,222 @@
+{
+    "objects": [
+        {
+            "name": "table",
+            "type": "furniture",
+            "bbox": {
+                "x1": 230,
+                "y1": 360,
+                "x2": 880,
+                "y2": 1050
+            }
+        },
+        {
+            "name": "glass_case",
+            "type": "display_furniture",
+            "bbox": {
+                "x1": 700,
+                "y1": 120,
+                "x2": 1130,
+                "y2": 520
+            }
+        },
+        {
+            "name": "bookshelf_shelves",
+            "type": "shelving",
+            "bbox": {
+                "x1": 0,
+                "y1": 0,
+                "x2": 260,
+                "y2": 520
+            }
+        },
+        {
+            "name": "paper_stack",
+            "type": "paper_item",
+            "bbox": {
+                "x1": 250,
+                "y1": 120,
+                "x2": 500,
+                "y2": 250
+            }
+        },
+        {
+            "name": "documents_in_case",
+            "type": "documents",
+            "bbox": {
+                "x1": 760,
+                "y1": 200,
+                "x2": 1110,
+                "y2": 500
+            }
+        },
+        {
+            "name": "monitor_left",
+            "type": "electronics",
+            "bbox": {
+                "x1": 0,
+                "y1": 80,
+                "x2": 250,
+                "y2": 360
+            }
+        },
+        {
+            "name": "cables",
+            "type": "cables",
+            "bbox": {
+                "x1": 0,
+                "y1": 300,
+                "x2": 360,
+                "y2": 650
+            }
+        },
+        {
+            "name": "small_object_near_left",
+            "type": "unknown_item",
+            "bbox": {
+                "x1": 0,
+                "y1": 420,
+                "x2": 150,
+                "y2": 620
+            }
+        }
+    ],
+    "regions": [
+        {
+            "name": "desk_surface",
+            "polygon": [
+                {
+                    "x": 150,
+                    "y": 260
+                },
+                {
+                    "x": 930,
+                    "y": 260
+                },
+                {
+                    "x": 930,
+                    "y": 760
+                },
+                {
+                    "x": 150,
+                    "y": 760
+                }
+            ]
+        },
+        {
+            "name": "left_side_area",
+            "polygon": [
+                {
+                    "x": 0,
+                    "y": 0
+                },
+                {
+                    "x": 420,
+                    "y": 0
+                },
+                {
+                    "x": 420,
+                    "y": 800
+                },
+                {
+                    "x": 0,
+                    "y": 800
+                }
+            ]
+        },
+        {
+            "name": "right_side_area",
+            "polygon": [
+                {
+                    "x": 420,
+                    "y": 0
+                },
+                {
+                    "x": 1280,
+                    "y": 0
+                },
+                {
+                    "x": 1280,
+                    "y": 800
+                },
+                {
+                    "x": 420,
+                    "y": 800
+                }
+            ]
+        },
+        {
+            "name": "glass_case_region",
+            "polygon": [
+                {
+                    "x": 660,
+                    "y": 80
+                },
+                {
+                    "x": 1160,
+                    "y": 80
+                },
+                {
+                    "x": 1160,
+                    "y": 560
+                },
+                {
+                    "x": 660,
+                    "y": 560
+                }
+            ]
+        }
+    ],
+    "semantic_relationships": [
+        {
+            "relation": "on_top_of",
+            "source": "monitor_left",
+            "target": "desk_surface"
+        },
+        {
+            "relation": "on_top_of",
+            "source": "paper_stack",
+            "target": "desk_surface"
+        },
+        {
+            "relation": "on_top_of",
+            "source": "glass_case",
+            "target": "desk_surface"
+        },
+        {
+            "relation": "contains",
+            "source": "glass_case",
+            "target": "documents_in_case"
+        },
+        {
+            "relation": "located_in",
+            "source": "monitor_left",
+            "target": "left_side_area"
+        },
+        {
+            "relation": "located_in",
+            "source": "cables",
+            "target": "left_side_area"
+        },
+        {
+            "relation": "located_in",
+            "source": "small_object_near_left",
+            "target": "left_side_area"
+        },
+        {
+            "relation": "located_in",
+            "source": "glass_case",
+            "target": "right_side_area"
+        },
+        {
+            "relation": "located_in",
+            "source": "documents_in_case",
+            "target": "glass_case_region"
+        }
+    ],
+    "current_location": {
+        "name": "glass_case_region",
+        "note": "Top-down reference region containing the glass display case contents."
+    },
+    "plans": []
+}

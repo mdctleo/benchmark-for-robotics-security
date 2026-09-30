@@ -1,0 +1,276 @@
+{
+    "regions": [
+        {
+            "name": "table_1",
+            "type": "surface",
+            "polygon": [
+                [
+                    0,
+                    0
+                ],
+                [
+                    1280,
+                    0
+                ],
+                [
+                    1280,
+                    720
+                ],
+                [
+                    0,
+                    720
+                ]
+            ],
+            "center": [
+                640,
+                360
+            ]
+        }
+    ],
+    "objects": [
+        {
+            "name": "table_edge_1",
+            "type": "edge",
+            "center": [
+                980,
+                630
+            ],
+            "bbox": [
+                900,
+                560,
+                1100,
+                700
+            ]
+        },
+        {
+            "name": "vacuum_nozzle_1",
+            "type": "appliance_part",
+            "center": [
+                980,
+                460
+            ],
+            "bbox": [
+                860,
+                360,
+                1140,
+                600
+            ]
+        },
+        {
+            "name": "wrapper_piece_1",
+            "type": "food_wrapping",
+            "center": [
+                350,
+                360
+            ],
+            "bbox": [
+                300,
+                330,
+                420,
+                420
+            ]
+        },
+        {
+            "name": "wrapper_piece_2",
+            "type": "food_wrapping",
+            "center": [
+                470,
+                420
+            ],
+            "bbox": [
+                440,
+                390,
+                510,
+                470
+            ]
+        },
+        {
+            "name": "wrapper_piece_3",
+            "type": "food_wrapping",
+            "center": [
+                650,
+                470
+            ],
+            "bbox": [
+                620,
+                430,
+                740,
+                520
+            ]
+        },
+        {
+            "name": "wrapper_piece_4",
+            "type": "food_wrapping",
+            "center": [
+                550,
+                520
+            ],
+            "bbox": [
+                520,
+                500,
+                600,
+                560
+            ]
+        },
+        {
+            "name": "wrapper_piece_5",
+            "type": "food_wrapping",
+            "center": [
+                300,
+                520
+            ],
+            "bbox": [
+                250,
+                480,
+                360,
+                610
+            ]
+        },
+        {
+            "name": "wrapper_piece_6",
+            "type": "food_wrapping",
+            "center": [
+                600,
+                600
+            ],
+            "bbox": [
+                560,
+                570,
+                680,
+                660
+            ]
+        },
+        {
+            "name": "cup_1",
+            "type": "container",
+            "center": [
+                835,
+                305
+            ],
+            "bbox": [
+                800,
+                250,
+                910,
+                355
+            ]
+        },
+        {
+            "name": "paper_1",
+            "type": "paper",
+            "center": [
+                980,
+                170
+            ],
+            "bbox": [
+                880,
+                110,
+                1100,
+                250
+            ]
+        },
+        {
+            "name": "shelf_1",
+            "type": "structure",
+            "center": [
+                120,
+                60
+            ],
+            "bbox": [
+                0,
+                0,
+                1280,
+                140
+            ]
+        },
+        {
+            "name": "window_opening_1",
+            "type": "window",
+            "center": [
+                120,
+                0
+            ],
+            "bbox": [
+                0,
+                0,
+                250,
+                120
+            ]
+        }
+    ],
+    "connections": [
+        {
+            "from": "wrapper_piece_1",
+            "to": "table_1",
+            "relation": "on"
+        },
+        {
+            "from": "wrapper_piece_2",
+            "to": "table_1",
+            "relation": "on"
+        },
+        {
+            "from": "wrapper_piece_3",
+            "to": "table_1",
+            "relation": "on"
+        },
+        {
+            "from": "wrapper_piece_4",
+            "to": "table_1",
+            "relation": "on"
+        },
+        {
+            "from": "wrapper_piece_5",
+            "to": "table_1",
+            "relation": "on"
+        },
+        {
+            "from": "wrapper_piece_6",
+            "to": "table_1",
+            "relation": "on"
+        },
+        {
+            "from": "cup_1",
+            "to": "table_1",
+            "relation": "near"
+        },
+        {
+            "from": "paper_1",
+            "to": "table_1",
+            "relation": "on"
+        },
+        {
+            "from": "vacuum_nozzle_1",
+            "to": "table_1",
+            "relation": "above"
+        },
+        {
+            "from": "table_edge_1",
+            "to": "table_1",
+            "relation": "edge_of"
+        }
+    ],
+    "current_location": {
+        "object": "vacuum_nozzle_1",
+        "region": "table_1"
+    },
+    "plans": [
+        {
+            "plan_name": "clean_table",
+            "actor": "vacuum_nozzle_1",
+            "steps": [
+                {
+                    "action": "pick_up_or_collect",
+                    "target": "wrapper_piece_1"
+                },
+                {
+                    "action": "pick_up_or_collect",
+                    "target": "wrapper_piece_2"
+                },
+                {
+                    "action": "pick_up_or_collect",
+                    "target": "wrapper_piece_5"
+                }
+            ]
+        }
+    ]
+}

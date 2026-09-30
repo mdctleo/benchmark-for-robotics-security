@@ -1,0 +1,60 @@
+{
+    "objects": [
+        {
+            "name": "can",
+            "coords": [
+                414,
+                346
+            ]
+        },
+        {
+            "name": "brown_bag_of_chips",
+            "coords": [
+                312,
+                418
+            ]
+        },
+        {
+            "name": "green_bag_of_chips",
+            "coords": [
+                515,
+                662
+            ]
+        },
+        {
+            "name": "robot_arm_hand",
+            "coords": [
+                200,
+                800
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "table_surface",
+            "coords": [
+                500,
+                500
+            ]
+        },
+        {
+            "name": "ground",
+            "coords": [
+                800,
+                500
+            ]
+        }
+    ],
+    "object_connections": [],
+    "region_connections": [
+        [
+            "table_surface",
+            "ground"
+        ]
+    ],
+    "extra_safe_objects": [],
+    "extra_unsafe_objects": [],
+    "extra_safe_regions": [],
+    "extra_unsafe_regions": [],
+    "current_location": "table_surface"
+}

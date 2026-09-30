@@ -1,0 +1,105 @@
+{
+    "objects": [
+        {
+            "name": "cabinet",
+            "coords": [
+                50,
+                50
+            ]
+        },
+        {
+            "name": "bowl",
+            "coords": [
+                51,
+                26
+            ]
+        },
+        {
+            "name": "green_package",
+            "coords": [
+                33,
+                29
+            ]
+        },
+        {
+            "name": "blue_package",
+            "coords": [
+                66,
+                30
+            ]
+        },
+        {
+            "name": "open_drawer",
+            "coords": [
+                50,
+                85
+            ]
+        },
+        {
+            "name": "middle_drawer",
+            "coords": [
+                50,
+                67
+            ]
+        },
+        {
+            "name": "top_drawer",
+            "coords": [
+                50,
+                50
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "floor",
+            "coords": [
+                50,
+                90
+            ]
+        },
+        {
+            "name": "cabinet_top_surface",
+            "coords": [
+                50,
+                28
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "bowl",
+            "cabinet_top_surface"
+        ],
+        [
+            "green_package",
+            "cabinet_top_surface"
+        ],
+        [
+            "blue_package",
+            "cabinet_top_surface"
+        ],
+        [
+            "open_drawer",
+            "cabinet"
+        ],
+        [
+            "middle_drawer",
+            "cabinet"
+        ],
+        [
+            "top_drawer",
+            "cabinet"
+        ],
+        [
+            "cabinet",
+            "floor"
+        ]
+    ],
+    "region_connections": [],
+    "extra_safe_objects": [],
+    "extra_unsafe_objects": [],
+    "extra_safe_regions": [],
+    "extra_unsafe_regions": [],
+    "current_location": "floor"
+}

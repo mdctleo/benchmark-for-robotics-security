@@ -1,0 +1,238 @@
+{
+    "objects": [
+        {
+            "name": "table",
+            "type": "furniture",
+            "centroid": {
+                "x": 0.52,
+                "y": 0.58
+            }
+        },
+        {
+            "name": "handsfree_lamp",
+            "type": "device",
+            "centroid": {
+                "x": 0.62,
+                "y": 0.4
+            }
+        },
+        {
+            "name": "lid_container",
+            "type": "container",
+            "centroid": {
+                "x": 0.59,
+                "y": 0.47
+            }
+        },
+        {
+            "name": "small_card",
+            "type": "paper_item",
+            "centroid": {
+                "x": 0.45,
+                "y": 0.47
+            }
+        },
+        {
+            "name": "cable",
+            "type": "cable",
+            "centroid": {
+                "x": 0.68,
+                "y": 0.42
+            }
+        }
+    ],
+    "regions": [
+        {
+            "name": "room_area",
+            "type": "scene_region",
+            "polygon": [
+                {
+                    "x": 0.0,
+                    "y": 0.1
+                },
+                {
+                    "x": 1.0,
+                    "y": 0.1
+                },
+                {
+                    "x": 1.0,
+                    "y": 1.0
+                },
+                {
+                    "x": 0.0,
+                    "y": 1.0
+                }
+            ]
+        },
+        {
+            "name": "table_top",
+            "type": "surface",
+            "polygon": [
+                {
+                    "x": 0.1,
+                    "y": 0.3
+                },
+                {
+                    "x": 0.95,
+                    "y": 0.3
+                },
+                {
+                    "x": 0.95,
+                    "y": 0.72
+                },
+                {
+                    "x": 0.1,
+                    "y": 0.72
+                }
+            ]
+        },
+        {
+            "name": "table_left_edge",
+            "type": "surface_edge_area",
+            "polygon": [
+                {
+                    "x": 0.1,
+                    "y": 0.45
+                },
+                {
+                    "x": 0.35,
+                    "y": 0.45
+                },
+                {
+                    "x": 0.35,
+                    "y": 0.72
+                },
+                {
+                    "x": 0.1,
+                    "y": 0.72
+                }
+            ]
+        },
+        {
+            "name": "table_center_area",
+            "type": "surface_area",
+            "polygon": [
+                {
+                    "x": 0.35,
+                    "y": 0.34
+                },
+                {
+                    "x": 0.82,
+                    "y": 0.34
+                },
+                {
+                    "x": 0.82,
+                    "y": 0.66
+                },
+                {
+                    "x": 0.35,
+                    "y": 0.66
+                }
+            ]
+        },
+        {
+            "name": "table_front_area",
+            "type": "surface_area",
+            "polygon": [
+                {
+                    "x": 0.15,
+                    "y": 0.62
+                },
+                {
+                    "x": 0.95,
+                    "y": 0.62
+                },
+                {
+                    "x": 0.95,
+                    "y": 0.72
+                },
+                {
+                    "x": 0.15,
+                    "y": 0.72
+                }
+            ]
+        },
+        {
+            "name": "current_location",
+            "type": "status_region",
+            "polygon": [
+                {
+                    "x": 0.54,
+                    "y": 0.44
+                },
+                {
+                    "x": 0.8,
+                    "y": 0.44
+                },
+                {
+                    "x": 0.8,
+                    "y": 0.58
+                },
+                {
+                    "x": 0.54,
+                    "y": 0.58
+                }
+            ]
+        }
+    ],
+    "semantic_relationships": [
+        {
+            "subject": "handsfree_lamp",
+            "relation": "sits_on",
+            "object": "table"
+        },
+        {
+            "subject": "lid_container",
+            "relation": "sits_on",
+            "object": "table"
+        },
+        {
+            "subject": "small_card",
+            "relation": "sits_on",
+            "object": "table"
+        },
+        {
+            "subject": "cable",
+            "relation": "lies_on",
+            "object": "table"
+        },
+        {
+            "subject": "table_top",
+            "relation": "contains",
+            "object": "handsfree_lamp"
+        },
+        {
+            "subject": "table_center_area",
+            "relation": "contains",
+            "object": "lid_container"
+        },
+        {
+            "subject": "table_left_edge",
+            "relation": "contains",
+            "object": "small_card"
+        },
+        {
+            "subject": "table_front_area",
+            "relation": "contains",
+            "object": "cable"
+        },
+        {
+            "subject": "current_location",
+            "relation": "focus_region_for",
+            "object": "handsfree_lamp"
+        },
+        {
+            "subject": "room_area",
+            "relation": "contains",
+            "object": "table"
+        }
+    ],
+    "current_location": "current_location",
+    "plans": [
+        {
+            "plan_name": "inspect_near_device",
+            "target": "handsfree_lamp",
+            "from": "current_location"
+        }
+    ]
+}

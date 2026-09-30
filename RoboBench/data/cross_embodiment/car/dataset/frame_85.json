@@ -1,0 +1,217 @@
+{
+    "objects": [
+        {
+            "name": "car_1",
+            "type": "vehicle",
+            "coordinates": {
+                "x": 0.52,
+                "y": 0.74
+            }
+        }
+    ],
+    "regions": [
+        {
+            "name": "road_lane_left",
+            "type": "road_lane",
+            "polygon": [
+                {
+                    "x": 0.38,
+                    "y": 0.98
+                },
+                {
+                    "x": 0.45,
+                    "y": 0.6
+                },
+                {
+                    "x": 0.48,
+                    "y": 0.6
+                },
+                {
+                    "x": 0.42,
+                    "y": 0.98
+                }
+            ]
+        },
+        {
+            "name": "road_lane_right",
+            "type": "road_lane",
+            "polygon": [
+                {
+                    "x": 0.52,
+                    "y": 0.98
+                },
+                {
+                    "x": 0.58,
+                    "y": 0.6
+                },
+                {
+                    "x": 0.62,
+                    "y": 0.6
+                },
+                {
+                    "x": 0.55,
+                    "y": 0.98
+                }
+            ]
+        },
+        {
+            "name": "road_center_divider",
+            "type": "road_divider",
+            "polygon": [
+                {
+                    "x": 0.49,
+                    "y": 0.98
+                },
+                {
+                    "x": 0.51,
+                    "y": 0.6
+                },
+                {
+                    "x": 0.505,
+                    "y": 0.6
+                },
+                {
+                    "x": 0.495,
+                    "y": 0.98
+                }
+            ]
+        },
+        {
+            "name": "shoulder_left",
+            "type": "road_shoulder",
+            "polygon": [
+                {
+                    "x": 0.3,
+                    "y": 0.98
+                },
+                {
+                    "x": 0.38,
+                    "y": 0.6
+                },
+                {
+                    "x": 0.45,
+                    "y": 0.6
+                },
+                {
+                    "x": 0.36,
+                    "y": 0.98
+                }
+            ]
+        },
+        {
+            "name": "shoulder_right",
+            "type": "road_shoulder",
+            "polygon": [
+                {
+                    "x": 0.55,
+                    "y": 0.6
+                },
+                {
+                    "x": 0.62,
+                    "y": 0.6
+                },
+                {
+                    "x": 0.7,
+                    "y": 0.98
+                },
+                {
+                    "x": 0.6,
+                    "y": 0.98
+                }
+            ]
+        },
+        {
+            "name": "tree_line_left",
+            "type": "tree_line",
+            "polygon": [
+                {
+                    "x": 0.08,
+                    "y": 0.98
+                },
+                {
+                    "x": 0.3,
+                    "y": 0.6
+                },
+                {
+                    "x": 0.38,
+                    "y": 0.6
+                },
+                {
+                    "x": 0.13,
+                    "y": 0.98
+                }
+            ]
+        },
+        {
+            "name": "tree_line_right",
+            "type": "tree_line",
+            "polygon": [
+                {
+                    "x": 0.62,
+                    "y": 0.6
+                },
+                {
+                    "x": 0.92,
+                    "y": 0.98
+                },
+                {
+                    "x": 0.87,
+                    "y": 0.98
+                },
+                {
+                    "x": 0.7,
+                    "y": 0.6
+                }
+            ]
+        }
+    ],
+    "semantic_relationships": [
+        {
+            "subject": "car_1",
+            "relation": "is_on",
+            "object": "road_lane_right"
+        },
+        {
+            "subject": "road_center_divider",
+            "relation": "separates",
+            "object": "road_lane_left"
+        },
+        {
+            "subject": "road_center_divider",
+            "relation": "separates",
+            "object": "road_lane_right"
+        },
+        {
+            "subject": "shoulder_left",
+            "relation": "adjacent_to",
+            "object": "road_lane_left"
+        },
+        {
+            "subject": "shoulder_right",
+            "relation": "adjacent_to",
+            "object": "road_lane_right"
+        },
+        {
+            "subject": "tree_line_left",
+            "relation": "flanks",
+            "object": "shoulder_left"
+        },
+        {
+            "subject": "tree_line_right",
+            "relation": "flanks",
+            "object": "shoulder_right"
+        },
+        {
+            "subject": "road_lane_left",
+            "relation": "contains",
+            "object": "road_center_divider"
+        }
+    ],
+    "current_location": "road_lane_right",
+    "plans": [
+        {
+            "plan_name": "continue_forward",
+            "target_region": "road_lane_right"
+        }
+    ]
+}

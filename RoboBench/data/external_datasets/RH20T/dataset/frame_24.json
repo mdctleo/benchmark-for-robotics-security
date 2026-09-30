@@ -1,0 +1,192 @@
+{
+    "objects": [
+        {
+            "name": "black_circular_device",
+            "type": "machine",
+            "position": {
+                "x": 40,
+                "y": 65
+            }
+        },
+        {
+            "name": "metal_armature",
+            "type": "machine_structure",
+            "position": {
+                "x": 15,
+                "y": 60
+            }
+        },
+        {
+            "name": "multi_color_buttons_block",
+            "type": "control_box",
+            "position": {
+                "x": 185,
+                "y": 30
+            }
+        },
+        {
+            "name": "yellow_red_green_buttons",
+            "type": "control_buttons",
+            "position": {
+                "x": 195,
+                "y": 20
+            }
+        },
+        {
+            "name": "blue_fabric_printing_surface",
+            "type": "surface",
+            "position": {
+                "x": 210,
+                "y": 210
+            }
+        },
+        {
+            "name": "printed_blue_horizon_landscape",
+            "type": "printed_artwork",
+            "position": {
+                "x": 215,
+                "y": 240
+            }
+        },
+        {
+            "name": "small_cube_object",
+            "type": "object",
+            "position": {
+                "x": 235,
+                "y": 145
+            }
+        },
+        {
+            "name": "white_cable_cluster",
+            "type": "cables",
+            "position": {
+                "x": 285,
+                "y": 35
+            }
+        },
+        {
+            "name": "gray_machine_body",
+            "type": "machine",
+            "position": {
+                "x": 320,
+                "y": 145
+            }
+        },
+        {
+            "name": "white_keypad_panel",
+            "type": "control_panel",
+            "position": {
+                "x": 335,
+                "y": 215
+            }
+        }
+    ],
+    "regions": [
+        {
+            "name": "current_location",
+            "type": "work_area",
+            "position": {
+                "x": 210,
+                "y": 210
+            },
+            "area_hint": {
+                "w": 380,
+                "h": 260
+            }
+        },
+        {
+            "name": "blue_fabric_area",
+            "type": "surface_region",
+            "position": {
+                "x": 215,
+                "y": 210
+            },
+            "area_hint": {
+                "w": 360,
+                "h": 220
+            }
+        },
+        {
+            "name": "printed_artwork_area",
+            "type": "artwork_region",
+            "position": {
+                "x": 230,
+                "y": 245
+            },
+            "area_hint": {
+                "w": 330,
+                "h": 120
+            }
+        }
+    ],
+    "semantic_relationships": [
+        {
+            "subject": "small_cube_object",
+            "relation": "is_on",
+            "object": "blue_fabric_printing_surface"
+        },
+        {
+            "subject": "small_cube_object",
+            "relation": "located_in",
+            "object": "blue_fabric_area"
+        },
+        {
+            "subject": "printed_blue_horizon_landscape",
+            "relation": "is_printed_on",
+            "object": "blue_fabric_printing_surface"
+        },
+        {
+            "subject": "printed_blue_horizon_landscape",
+            "relation": "located_in",
+            "object": "printed_artwork_area"
+        },
+        {
+            "subject": "blue_fabric_printing_surface",
+            "relation": "located_in",
+            "object": "current_location"
+        },
+        {
+            "subject": "white_keypad_panel",
+            "relation": "mounted_on",
+            "object": "gray_machine_body"
+        },
+        {
+            "subject": "yellow_red_green_buttons",
+            "relation": "part_of",
+            "object": "multi_color_buttons_block"
+        },
+        {
+            "subject": "multi_color_buttons_block",
+            "relation": "controls",
+            "object": "gray_machine_body"
+        },
+        {
+            "subject": "white_cable_cluster",
+            "relation": "connected_to",
+            "object": "gray_machine_body"
+        },
+        {
+            "subject": "metal_armature",
+            "relation": "supports",
+            "object": "black_circular_device"
+        }
+    ],
+    "current_location": "current_location",
+    "plans": [
+        {
+            "plan_name": "handle_cube_on_fabric",
+            "steps": [
+                {
+                    "step": 1,
+                    "action": "move_robot_to_location",
+                    "target": "current_location"
+                },
+                {
+                    "step": 2,
+                    "action": "pick_up_object",
+                    "target": "small_cube_object"
+                }
+            ]
+        }
+    ]
+}

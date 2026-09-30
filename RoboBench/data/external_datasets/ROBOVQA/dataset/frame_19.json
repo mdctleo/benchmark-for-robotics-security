@@ -1,0 +1,166 @@
+{
+    "regions": [
+        {
+            "name": "table_surface",
+            "type": "table",
+            "polygon": [
+                [
+                    120,
+                    60
+                ],
+                [
+                    830,
+                    60
+                ],
+                [
+                    830,
+                    520
+                ],
+                [
+                    120,
+                    520
+                ]
+            ]
+        },
+        {
+            "name": "workspace_floor_area",
+            "type": "floor",
+            "polygon": [
+                [
+                    0,
+                    520
+                ],
+                [
+                    1080,
+                    520
+                ],
+                [
+                    1080,
+                    720
+                ],
+                [
+                    0,
+                    720
+                ]
+            ]
+        }
+    ],
+    "objects": [
+        {
+            "name": "robot_arm_tool",
+            "type": "robot_tool",
+            "center": [
+                355,
+                125
+            ]
+        },
+        {
+            "name": "orange_cable_cylinder",
+            "type": "cylinder_container",
+            "center": [
+                980,
+                470
+            ]
+        },
+        {
+            "name": "small_pink_block",
+            "type": "block",
+            "center": [
+                575,
+                190
+            ]
+        },
+        {
+            "name": "black_block",
+            "type": "block",
+            "center": [
+                610,
+                255
+            ]
+        },
+        {
+            "name": "orange_block",
+            "type": "block",
+            "center": [
+                455,
+                360
+            ]
+        },
+        {
+            "name": "white_circular_spool",
+            "type": "spool",
+            "center": [
+                645,
+                420
+            ]
+        },
+        {
+            "name": "white_box",
+            "type": "container",
+            "center": [
+                210,
+                260
+            ]
+        },
+        {
+            "name": "box_opening",
+            "type": "container_opening",
+            "center": [
+                250,
+                150
+            ]
+        }
+    ],
+    "semantic_relationships": [
+        {
+            "type": "on",
+            "subject": "robot_arm_tool",
+            "object": "table_surface"
+        },
+        {
+            "type": "on",
+            "subject": "small_pink_block",
+            "object": "table_surface"
+        },
+        {
+            "type": "on",
+            "subject": "black_block",
+            "object": "table_surface"
+        },
+        {
+            "type": "on",
+            "subject": "orange_block",
+            "object": "table_surface"
+        },
+        {
+            "type": "on",
+            "subject": "white_circular_spool",
+            "object": "table_surface"
+        },
+        {
+            "type": "on",
+            "subject": "orange_cable_cylinder",
+            "object": "workspace_floor_area"
+        },
+        {
+            "type": "on",
+            "subject": "white_box",
+            "object": "table_surface"
+        },
+        {
+            "type": "opening_of",
+            "subject": "box_opening",
+            "object": "white_box"
+        }
+    ],
+    "current_location": {
+        "robot_arm_tool": "table_surface",
+        "small_pink_block": "table_surface",
+        "black_block": "table_surface",
+        "orange_block": "table_surface",
+        "white_circular_spool": "table_surface",
+        "white_box": "table_surface",
+        "box_opening": "white_box",
+        "orange_cable_cylinder": "workspace_floor_area"
+    }
+}

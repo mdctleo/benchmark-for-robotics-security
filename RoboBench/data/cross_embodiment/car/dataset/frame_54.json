@@ -1,0 +1,237 @@
+{
+    "objects": [
+        {
+            "name": "parked_vehicle_left_lane",
+            "type": "vehicle",
+            "bbox_topdown": [
+                0.27,
+                0.52,
+                0.49,
+                0.92
+            ]
+        },
+        {
+            "name": "parked_vehicle_right_lane",
+            "type": "vehicle",
+            "bbox_topdown": [
+                0.56,
+                0.52,
+                0.99,
+                0.92
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "street_curb_to_curb",
+            "type": "street",
+            "polygon_topdown": [
+                [
+                    0.08,
+                    0.4
+                ],
+                [
+                    0.96,
+                    0.4
+                ],
+                [
+                    0.99,
+                    0.93
+                ],
+                [
+                    0.05,
+                    0.93
+                ]
+            ]
+        },
+        {
+            "name": "left_sidewalk_wall_side",
+            "type": "sidewalk_or_wall_side",
+            "polygon_topdown": [
+                [
+                    0.0,
+                    0.4
+                ],
+                [
+                    0.18,
+                    0.4
+                ],
+                [
+                    0.22,
+                    0.93
+                ],
+                [
+                    0.0,
+                    0.93
+                ]
+            ]
+        },
+        {
+            "name": "right_sidewalk_wall_side",
+            "type": "sidewalk_or_wall_side",
+            "polygon_topdown": [
+                [
+                    0.8,
+                    0.4
+                ],
+                [
+                    1.0,
+                    0.4
+                ],
+                [
+                    1.0,
+                    0.93
+                ],
+                [
+                    0.84,
+                    0.93
+                ]
+            ]
+        },
+        {
+            "name": "building_left_facade",
+            "type": "building",
+            "polygon_topdown": [
+                [
+                    0.0,
+                    0.45
+                ],
+                [
+                    0.17,
+                    0.45
+                ],
+                [
+                    0.17,
+                    0.9
+                ],
+                [
+                    0.0,
+                    0.9
+                ]
+            ]
+        },
+        {
+            "name": "building_right_facade",
+            "type": "building",
+            "polygon_topdown": [
+                [
+                    0.84,
+                    0.45
+                ],
+                [
+                    1.0,
+                    0.45
+                ],
+                [
+                    1.0,
+                    0.9
+                ],
+                [
+                    0.84,
+                    0.9
+                ]
+            ]
+        },
+        {
+            "name": "road_lane_center",
+            "type": "lane",
+            "polygon_topdown": [
+                [
+                    0.18,
+                    0.48
+                ],
+                [
+                    0.8,
+                    0.48
+                ],
+                [
+                    0.86,
+                    0.93
+                ],
+                [
+                    0.12,
+                    0.93
+                ]
+            ]
+        },
+        {
+            "name": "current_location",
+            "type": "vehicle_pose_region",
+            "polygon_topdown": [
+                [
+                    0.45,
+                    0.86
+                ],
+                [
+                    0.55,
+                    0.86
+                ],
+                [
+                    0.57,
+                    0.93
+                ],
+                [
+                    0.43,
+                    0.93
+                ]
+            ]
+        }
+    ],
+    "semantic_relationships": [
+        {
+            "subject": "parked_vehicle_left_lane",
+            "relation": "located_along",
+            "object": "street_curb_to_curb"
+        },
+        {
+            "subject": "parked_vehicle_right_lane",
+            "relation": "located_along",
+            "object": "street_curb_to_curb"
+        },
+        {
+            "subject": "parked_vehicle_left_lane",
+            "relation": "near",
+            "object": "left_sidewalk_wall_side"
+        },
+        {
+            "subject": "parked_vehicle_right_lane",
+            "relation": "near",
+            "object": "right_sidewalk_wall_side"
+        },
+        {
+            "subject": "building_left_facade",
+            "relation": "adjacent_to",
+            "object": "street_curb_to_curb"
+        },
+        {
+            "subject": "building_right_facade",
+            "relation": "adjacent_to",
+            "object": "street_curb_to_curb"
+        },
+        {
+            "subject": "road_lane_center",
+            "relation": "within",
+            "object": "street_curb_to_curb"
+        },
+        {
+            "subject": "current_location",
+            "relation": "is_on",
+            "object": "road_lane_center"
+        }
+    ],
+    "current_location": "current_location",
+    "plans": [
+        {
+            "plan_name": "continue_forward",
+            "from": "current_location",
+            "to": "road_lane_center",
+            "connections": [
+                {
+                    "from_region": "current_location",
+                    "to_region": "road_lane_center",
+                    "relation": "forward_movement_possible"
+                }
+            ]
+        }
+    ]
+}

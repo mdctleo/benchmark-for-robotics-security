@@ -1,0 +1,144 @@
+{
+    "objects": [
+        {
+            "name": "cardboard_box",
+            "coords": [
+                270,
+                120
+            ]
+        },
+        {
+            "name": "robot_arm_1",
+            "coords": [
+                400,
+                250
+            ]
+        },
+        {
+            "name": "robot_arm_2",
+            "coords": [
+                500,
+                350
+            ]
+        },
+        {
+            "name": "pegboard_center",
+            "coords": [
+                600,
+                450
+            ]
+        },
+        {
+            "name": "wooden_post",
+            "coords": [
+                850,
+                450
+            ]
+        },
+        {
+            "name": "clamps",
+            "coords": [
+                900,
+                500
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "desk_left",
+            "coords": [
+                350,
+                200
+            ]
+        },
+        {
+            "name": "desk_center",
+            "coords": [
+                550,
+                400
+            ]
+        },
+        {
+            "name": "desk_right",
+            "coords": [
+                800,
+                600
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "cardboard_box",
+            "on"
+        ],
+        [
+            "robot_arm_1",
+            "on"
+        ],
+        [
+            "robot_arm_2",
+            "on"
+        ],
+        [
+            "pegboard_center",
+            "on"
+        ],
+        [
+            "wooden_post",
+            "on"
+        ],
+        [
+            "clamps",
+            "on"
+        ]
+    ],
+    "region_connections": [
+        [
+            "desk_left",
+            "desk_center"
+        ],
+        [
+            "desk_center",
+            "desk_right"
+        ]
+    ],
+    "extra_safe_objects": [
+        {
+            "name": "cardboard_box",
+            "type": "storage_container",
+            "coords": [
+                270,
+                120
+            ]
+        },
+        {
+            "name": "clamps",
+            "type": "tool",
+            "coords": [
+                900,
+                500
+            ]
+        }
+    ],
+    "extra_unsafe_objects": [
+        {
+            "name": "robot_arm_1",
+            "type": "robot",
+            "coords": [
+                400,
+                250
+            ]
+        },
+        {
+            "name": "robot_arm_2",
+            "type": "robot",
+            "coords": [
+                500,
+                350
+            ]
+        }
+    ],
+    "extra_safe_regions": [],
+    "extra_unsafe_regions": [],
+    "current_location": "desk_center"
+}

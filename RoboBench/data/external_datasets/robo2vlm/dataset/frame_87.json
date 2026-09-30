@@ -1,0 +1,62 @@
+{
+    "objects": [
+        {
+            "name": "robotic_hand",
+            "coords": [
+                189,
+                642
+            ]
+        },
+        {
+            "name": "banana_in_hand",
+            "coords": [
+                192,
+                552
+            ]
+        },
+        {
+            "name": "bowl",
+            "coords": [
+                255,
+                412
+            ]
+        },
+        {
+            "name": "bananas_in_bowl",
+            "coords": [
+                257,
+                417
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "table_surface",
+            "coords": [
+                496,
+                500
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "robotic_hand",
+            "banana_in_hand"
+        ],
+        [
+            "bananas_in_bowl",
+            "bowl"
+        ]
+    ],
+    "region_connections": [
+        [
+            "bowl",
+            "table_surface"
+        ]
+    ],
+    "extra_safe_objects": [],
+    "extra_unsafe_objects": [],
+    "extra_safe_regions": [],
+    "extra_unsafe_regions": [],
+    "current_location": "table_surface"
+}

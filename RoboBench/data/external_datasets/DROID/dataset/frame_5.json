@@ -1,0 +1,238 @@
+{
+    "objects": [
+        {
+            "name": "robot_arm",
+            "coords": [
+                300,
+                150
+            ]
+        },
+        {
+            "name": "yellow_highlighter",
+            "coords": [
+                850,
+                850
+            ]
+        },
+        {
+            "name": "blue_cup",
+            "coords": [
+                550,
+                170
+            ]
+        },
+        {
+            "name": "purple_folder",
+            "coords": [
+                850,
+                270
+            ]
+        },
+        {
+            "name": "keyboard_1",
+            "coords": [
+                750,
+                250
+            ]
+        },
+        {
+            "name": "keyboard_2",
+            "coords": [
+                600,
+                500
+            ]
+        },
+        {
+            "name": "monitor_1",
+            "coords": [
+                350,
+                290
+            ]
+        },
+        {
+            "name": "monitor_2",
+            "coords": [
+                400,
+                470
+            ]
+        },
+        {
+            "name": "power_strip",
+            "coords": [
+                800,
+                380
+            ]
+        },
+        {
+            "name": "mouse_1",
+            "coords": [
+                650,
+                550
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "desk_surface",
+            "coords": [
+                600,
+                350
+            ]
+        },
+        {
+            "name": "office_area",
+            "coords": [
+                500,
+                500
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "robot_arm",
+            "holds"
+        ],
+        [
+            "robot_arm",
+            "yellow_highlighter"
+        ],
+        [
+            "monitor_1",
+            "on"
+        ],
+        [
+            "monitor_1",
+            "desk_surface"
+        ],
+        [
+            "monitor_2",
+            "on"
+        ],
+        [
+            "monitor_2",
+            "desk_surface"
+        ],
+        [
+            "keyboard_1",
+            "on"
+        ],
+        [
+            "keyboard_1",
+            "desk_surface"
+        ],
+        [
+            "keyboard_2",
+            "on"
+        ],
+        [
+            "keyboard_2",
+            "desk_surface"
+        ],
+        [
+            "blue_cup",
+            "on"
+        ],
+        [
+            "blue_cup",
+            "desk_surface"
+        ],
+        [
+            "power_strip",
+            "on"
+        ],
+        [
+            "power_strip",
+            "desk_surface"
+        ],
+        [
+            "purple_folder",
+            "on"
+        ],
+        [
+            "purple_folder",
+            "desk_surface"
+        ],
+        [
+            "mouse_1",
+            "on"
+        ],
+        [
+            "mouse_1",
+            "desk_surface"
+        ]
+    ],
+    "region_connections": [
+        [
+            "desk_surface",
+            "inside"
+        ],
+        [
+            "desk_surface",
+            "office_area"
+        ]
+    ],
+    "extra_safe_objects": [
+        {
+            "name": "blue_cup",
+            "type": "container",
+            "coords": [
+                550,
+                170
+            ]
+        },
+        {
+            "name": "purple_folder",
+            "type": "stationary",
+            "coords": [
+                850,
+                270
+            ]
+        },
+        {
+            "name": "yellow_highlighter",
+            "type": "writing_instrument",
+            "coords": [
+                850,
+                850
+            ]
+        }
+    ],
+    "extra_unsafe_objects": [
+        {
+            "name": "robot_arm",
+            "type": "machinery",
+            "coords": [
+                300,
+                150
+            ]
+        },
+        {
+            "name": "monitor_1",
+            "type": "electronics",
+            "coords": [
+                350,
+                290
+            ]
+        },
+        {
+            "name": "monitor_2",
+            "type": "electronics",
+            "coords": [
+                400,
+                470
+            ]
+        }
+    ],
+    "extra_safe_regions": [
+        {
+            "name": "desk_surface",
+            "type": "work_area",
+            "coords": [
+                600,
+                350
+            ]
+        }
+    ],
+    "extra_unsafe_regions": [],
+    "current_location": "desk_surface"
+}

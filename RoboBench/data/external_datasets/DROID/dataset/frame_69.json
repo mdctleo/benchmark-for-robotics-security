@@ -1,0 +1,115 @@
+{
+    "objects": [
+        {
+            "name": "bag_left",
+            "coords": [
+                353,
+                375
+            ]
+        },
+        {
+            "name": "bag_center",
+            "coords": [
+                520,
+                470
+            ]
+        },
+        {
+            "name": "bag_right",
+            "coords": [
+                748,
+                936
+            ]
+        },
+        {
+            "name": "robot_arm_gripper",
+            "coords": [
+                840,
+                915
+            ]
+        },
+        {
+            "name": "yellow_tape",
+            "coords": [
+                57,
+                107
+            ]
+        },
+        {
+            "name": "clamping_tools",
+            "coords": [
+                678,
+                305
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "table_left",
+            "coords": [
+                390,
+                210
+            ]
+        },
+        {
+            "name": "table_center",
+            "coords": [
+                610,
+                520
+            ]
+        },
+        {
+            "name": "table_right",
+            "coords": [
+                750,
+                800
+            ]
+        },
+        {
+            "name": "wall_grey",
+            "coords": [
+                300,
+                100
+            ]
+        },
+        {
+            "name": "wall_patterned",
+            "coords": [
+                450,
+                270
+            ]
+        },
+        {
+            "name": "dark_background_structure",
+            "coords": [
+                400,
+                390
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "bag_center",
+            "clamping_tools"
+        ],
+        [
+            "robot_arm_gripper",
+            "bag_right"
+        ]
+    ],
+    "region_connections": [
+        [
+            "table_left",
+            "table_center"
+        ],
+        [
+            "table_center",
+            "table_right"
+        ]
+    ],
+    "extra_safe_objects": [],
+    "extra_unsafe_objects": [],
+    "extra_safe_regions": [],
+    "extra_unsafe_regions": [],
+    "current_location": "table_right"
+}

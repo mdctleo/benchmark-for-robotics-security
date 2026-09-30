@@ -1,0 +1,76 @@
+{
+    "objects": [
+        {
+            "name": "robot_hand",
+            "coords": [
+                180,
+                750
+            ]
+        },
+        {
+            "name": "chip_bag",
+            "coords": [
+                300,
+                500
+            ]
+        },
+        {
+            "name": "can",
+            "coords": [
+                150,
+                520
+            ]
+        },
+        {
+            "name": "egg",
+            "coords": [
+                280,
+                250
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "table_surface",
+            "coords": [
+                400,
+                400
+            ]
+        },
+        {
+            "name": "background",
+            "coords": [
+                100,
+                500
+            ]
+        },
+        {
+            "name": "floor",
+            "coords": [
+                800,
+                500
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "robot_hand",
+            "chip_bag"
+        ]
+    ],
+    "region_connections": [
+        [
+            "table_surface",
+            "floor"
+        ],
+        [
+            "table_surface",
+            "background"
+        ]
+    ],
+    "extra_safe_objects": [],
+    "extra_unsafe_objects": [],
+    "extra_safe_regions": [],
+    "extra_unsafe_regions": [],
+    "current_location": "table_surface"
+}

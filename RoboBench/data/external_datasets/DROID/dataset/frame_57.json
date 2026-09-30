@@ -1,0 +1,255 @@
+{
+    "objects": [
+        {
+            "name": "robot_arm_left",
+            "coords": [
+                134,
+                155
+            ]
+        },
+        {
+            "name": "faucet_left",
+            "coords": [
+                151,
+                194
+            ]
+        },
+        {
+            "name": "sink_basin_left",
+            "coords": [
+                178,
+                172
+            ]
+        },
+        {
+            "name": "apple_left",
+            "coords": [
+                202,
+                212
+            ]
+        },
+        {
+            "name": "blue_trash_bin",
+            "coords": [
+                542,
+                388
+            ]
+        },
+        {
+            "name": "robot_arm_right",
+            "coords": [
+                496,
+                503
+            ]
+        },
+        {
+            "name": "sink_basin_right",
+            "coords": [
+                595,
+                479
+            ]
+        },
+        {
+            "name": "faucet_right",
+            "coords": [
+                587,
+                514
+            ]
+        },
+        {
+            "name": "apple_right",
+            "coords": [
+                629,
+                502
+            ]
+        },
+        {
+            "name": "metal_can",
+            "coords": [
+                598,
+                521
+            ]
+        },
+        {
+            "name": "white_jug",
+            "coords": [
+                650,
+                570
+            ]
+        },
+        {
+            "name": "blue_bottle",
+            "coords": [
+                743,
+                553
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "countertop_surface",
+            "coords": [
+                450,
+                350
+            ]
+        },
+        {
+            "name": "floor_area",
+            "coords": [
+                750,
+                400
+            ]
+        },
+        {
+            "name": "left_sink_area",
+            "coords": [
+                180,
+                180
+            ]
+        },
+        {
+            "name": "right_sink_area",
+            "coords": [
+                610,
+                500
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "faucet_left",
+            "sink_basin_left"
+        ],
+        [
+            "apple_left",
+            "left_sink_area"
+        ],
+        [
+            "faucet_right",
+            "sink_basin_right"
+        ],
+        [
+            "apple_right",
+            "right_sink_area"
+        ],
+        [
+            "metal_can",
+            "white_jug"
+        ],
+        [
+            "blue_bottle",
+            "white_jug"
+        ]
+    ],
+    "region_connections": [
+        [
+            "left_sink_area",
+            "countertop_surface"
+        ],
+        [
+            "right_sink_area",
+            "countertop_surface"
+        ],
+        [
+            "countertop_surface",
+            "floor_area"
+        ]
+    ],
+    "extra_safe_objects": [
+        {
+            "name": "apple_left",
+            "type": "fruit",
+            "coords": [
+                202,
+                212
+            ]
+        },
+        {
+            "name": "blue_trash_bin",
+            "type": "bin",
+            "coords": [
+                542,
+                388
+            ]
+        },
+        {
+            "name": "apple_right",
+            "type": "fruit",
+            "coords": [
+                629,
+                502
+            ]
+        },
+        {
+            "name": "white_jug",
+            "type": "container",
+            "coords": [
+                650,
+                570
+            ]
+        },
+        {
+            "name": "blue_bottle",
+            "type": "container",
+            "coords": [
+                743,
+                553
+            ]
+        },
+        {
+            "name": "metal_can",
+            "type": "container",
+            "coords": [
+                598,
+                521
+            ]
+        }
+    ],
+    "extra_unsafe_objects": [
+        {
+            "name": "robot_arm_left",
+            "type": "robot_part",
+            "coords": [
+                134,
+                155
+            ]
+        },
+        {
+            "name": "robot_arm_right",
+            "type": "robot_part",
+            "coords": [
+                496,
+                503
+            ]
+        }
+    ],
+    "extra_safe_regions": [
+        {
+            "name": "countertop_surface",
+            "type": "surface",
+            "coords": [
+                450,
+                350
+            ]
+        }
+    ],
+    "extra_unsafe_regions": [
+        {
+            "name": "left_sink_area",
+            "type": "wet_area",
+            "coords": [
+                180,
+                180
+            ]
+        },
+        {
+            "name": "right_sink_area",
+            "type": "wet_area",
+            "coords": [
+                610,
+                500
+            ]
+        }
+    ],
+    "current_location": "right_sink_area"
+}

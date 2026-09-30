@@ -1,0 +1,251 @@
+{
+    "objects": [
+        {
+            "name": "black_cylinder",
+            "type": "object",
+            "bbox": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "coord": [
+                78,
+                118
+            ]
+        },
+        {
+            "name": "power_cable",
+            "type": "object",
+            "bbox": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "coord": [
+                640,
+                210
+            ]
+        },
+        {
+            "name": "metal_base_machine",
+            "type": "object",
+            "bbox": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "coord": [
+                610,
+                70
+            ]
+        },
+        {
+            "name": "blue_glove_box",
+            "type": "object",
+            "bbox": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "coord": [
+                540,
+                510
+            ]
+        },
+        {
+            "name": "small_dark_rect",
+            "type": "object",
+            "bbox": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "coord": [
+                660,
+                430
+            ]
+        },
+        {
+            "name": "brown_wood_table",
+            "type": "object",
+            "bbox": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "coord": [
+                360,
+                330
+            ]
+        },
+        {
+            "name": "yellow_tool_mount",
+            "type": "object",
+            "bbox": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "coord": [
+                545,
+                235
+            ]
+        },
+        {
+            "name": "red_button",
+            "type": "object",
+            "bbox": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "coord": [
+                520,
+                240
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "wooden_surface",
+            "type": "region",
+            "coord": [
+                360,
+                330
+            ]
+        },
+        {
+            "name": "metal_floor_grid",
+            "type": "region",
+            "coord": [
+                240,
+                160
+            ]
+        },
+        {
+            "name": "left_side_area",
+            "type": "region",
+            "coord": [
+                120,
+                220
+            ]
+        },
+        {
+            "name": "top_right_area",
+            "type": "region",
+            "coord": [
+                610,
+                170
+            ]
+        },
+        {
+            "name": "bottom_right_area",
+            "type": "region",
+            "coord": [
+                620,
+                500
+            ]
+        },
+        {
+            "name": "center_area",
+            "type": "region",
+            "coord": [
+                430,
+                360
+            ]
+        },
+        {
+            "name": "machine_mount_area",
+            "type": "region",
+            "coord": [
+                550,
+                220
+            ]
+        },
+        {
+            "name": "pack_area",
+            "type": "region",
+            "coord": [
+                545,
+                510
+            ]
+        }
+    ],
+    "connections": [
+        {
+            "from": "black_cylinder",
+            "to": "left_side_area",
+            "relation": "located_in"
+        },
+        {
+            "from": "power_cable",
+            "to": "top_right_area",
+            "relation": "located_in"
+        },
+        {
+            "from": "metal_base_machine",
+            "to": "top_right_area",
+            "relation": "located_in"
+        },
+        {
+            "from": "brown_wood_table",
+            "to": "wooden_surface",
+            "relation": "covers_region"
+        },
+        {
+            "from": "yellow_tool_mount",
+            "to": "machine_mount_area",
+            "relation": "located_in"
+        },
+        {
+            "from": "red_button",
+            "to": "machine_mount_area",
+            "relation": "located_near"
+        },
+        {
+            "from": "blue_glove_box",
+            "to": "pack_area",
+            "relation": "located_in"
+        },
+        {
+            "from": "small_dark_rect",
+            "to": "bottom_right_area",
+            "relation": "located_in"
+        }
+    ],
+    "current_location": "center_area",
+    "plans": [
+        {
+            "name": "operate_tool",
+            "target_region": "machine_mount_area",
+            "steps": [
+                {
+                    "action": "approach",
+                    "next": "machine_mount_area"
+                },
+                {
+                    "action": "actuate",
+                    "next": "machine_mount_area"
+                }
+            ]
+        },
+        {
+            "name": "handle_packaging",
+            "target_region": "pack_area",
+            "steps": [
+                {
+                    "action": "move_to",
+                    "next": "pack_area"
+                }
+            ]
+        }
+    ]
+}

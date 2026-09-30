@@ -1,0 +1,243 @@
+{
+    "objects": [
+        {
+            "name": "black_rail_camera",
+            "type": "camera",
+            "coordinates": [
+                70,
+                80
+            ],
+            "size": [
+                120,
+                90
+            ]
+        },
+        {
+            "name": "orange_button_remote",
+            "type": "button",
+            "coordinates": [
+                290,
+                205
+            ],
+            "size": [
+                55,
+                40
+            ]
+        },
+        {
+            "name": "handheld_device",
+            "type": "device",
+            "coordinates": [
+                410,
+                245
+            ],
+            "size": [
+                140,
+                95
+            ]
+        },
+        {
+            "name": "laptop_device",
+            "type": "device",
+            "coordinates": [
+                760,
+                420
+            ],
+            "size": [
+                110,
+                75
+            ]
+        },
+        {
+            "name": "white_paper_square_A",
+            "type": "paper",
+            "coordinates": [
+                510,
+                320
+            ],
+            "size": [
+                60,
+                60
+            ]
+        },
+        {
+            "name": "white_paper_square_B",
+            "type": "paper",
+            "coordinates": [
+                675,
+                535
+            ],
+            "size": [
+                60,
+                60
+            ]
+        },
+        {
+            "name": "wood_table",
+            "type": "table",
+            "coordinates": [
+                560,
+                345
+            ],
+            "size": [
+                620,
+                480
+            ]
+        },
+        {
+            "name": "black_cylindrical_object",
+            "type": "cylinder",
+            "coordinates": [
+                90,
+                140
+            ],
+            "size": [
+                90,
+                90
+            ]
+        },
+        {
+            "name": "metal_base_stand",
+            "type": "stand",
+            "coordinates": [
+                745,
+                120
+            ],
+            "size": [
+                220,
+                160
+            ]
+        },
+        {
+            "name": "red_button_box",
+            "type": "box",
+            "coordinates": [
+                910,
+                60
+            ],
+            "size": [
+                120,
+                90
+            ]
+        },
+        {
+            "name": "power_cable_bundle",
+            "type": "cables",
+            "coordinates": [
+                880,
+                240
+            ],
+            "size": [
+                260,
+                220
+            ]
+        },
+        {
+            "name": "paper_strip_mark_left",
+            "type": "paper_strip",
+            "coordinates": [
+                515,
+                470
+            ],
+            "size": [
+                80,
+                30
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "work_surface_bench_top",
+            "coordinates": [
+                560,
+                360
+            ],
+            "size": [
+                1000,
+                700
+            ]
+        }
+    ],
+    "semantic_relationships": [
+        {
+            "subject": "wood_table",
+            "relation": "located_on",
+            "object": "work_surface_bench_top"
+        },
+        {
+            "subject": "black_rail_camera",
+            "relation": "mounted_near",
+            "object": "work_surface_bench_top"
+        },
+        {
+            "subject": "black_cylindrical_object",
+            "relation": "mounted_near",
+            "object": "work_surface_bench_top"
+        },
+        {
+            "subject": "orange_button_remote",
+            "relation": "on",
+            "object": "wood_table"
+        },
+        {
+            "subject": "handheld_device",
+            "relation": "on",
+            "object": "wood_table"
+        },
+        {
+            "subject": "white_paper_square_A",
+            "relation": "on",
+            "object": "wood_table"
+        },
+        {
+            "subject": "white_paper_square_B",
+            "relation": "on",
+            "object": "wood_table"
+        },
+        {
+            "subject": "paper_strip_mark_left",
+            "relation": "on",
+            "object": "wood_table"
+        },
+        {
+            "subject": "laptop_device",
+            "relation": "on",
+            "object": "work_surface_bench_top"
+        },
+        {
+            "subject": "metal_base_stand",
+            "relation": "near",
+            "object": "work_surface_bench_top"
+        },
+        {
+            "subject": "red_button_box",
+            "relation": "near",
+            "object": "metal_base_stand"
+        },
+        {
+            "subject": "power_cable_bundle",
+            "relation": "near",
+            "object": "metal_base_stand"
+        }
+    ],
+    "current_location": {
+        "name": "work_surface_bench_top"
+    },
+    "plans": [
+        {
+            "plan_name": "inspect_devices",
+            "actor": "handheld_device",
+            "target_region": "work_surface_bench_top",
+            "steps": [
+                {
+                    "action": "inspect",
+                    "target": "orange_button_remote"
+                },
+                {
+                    "action": "inspect",
+                    "target": "handheld_device"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,355 @@
+{
+    "objects": [
+        {
+            "name": "vehicle_car_front_left",
+            "type": "vehicle",
+            "category": "car",
+            "bbox_xyxy_topdown": [
+                80,
+                265,
+                140,
+                340
+            ],
+            "center_xy": [
+                110,
+                302
+            ],
+            "attributes": {
+                "motion": "unknown"
+            }
+        },
+        {
+            "name": "vehicle_car_front_right",
+            "type": "vehicle",
+            "category": "car",
+            "bbox_xyxy_topdown": [
+                360,
+                360,
+                430,
+                445
+            ],
+            "center_xy": [
+                395,
+                402
+            ],
+            "attributes": {
+                "motion": "unknown"
+            }
+        },
+        {
+            "name": "pedestrian",
+            "type": "person",
+            "category": "pedestrian",
+            "bbox_xyxy_topdown": [
+                470,
+                270,
+                500,
+                330
+            ],
+            "center_xy": [
+                485,
+                300
+            ],
+            "attributes": {
+                "motion": "unknown"
+            }
+        },
+        {
+            "name": "traffic_signal_light_near_center",
+            "type": "traffic_light",
+            "category": "signal",
+            "bbox_xyxy_topdown": [
+                330,
+                250,
+                360,
+                295
+            ],
+            "center_xy": [
+                345,
+                272
+            ],
+            "attributes": {
+                "state": "green_visible"
+            }
+        },
+        {
+            "name": "traffic_signal_light_far_center",
+            "type": "traffic_light",
+            "category": "signal",
+            "bbox_xyxy_topdown": [
+                320,
+                210,
+                350,
+                250
+            ],
+            "center_xy": [
+                335,
+                230
+            ],
+            "attributes": {
+                "state": "unknown"
+            }
+        },
+        {
+            "name": "street_sign_vertical",
+            "type": "sign",
+            "category": "road_sign",
+            "bbox_xyxy_topdown": [
+                310,
+                230,
+                340,
+                270
+            ],
+            "center_xy": [
+                325,
+                250
+            ],
+            "attributes": {
+                "text": "unknown"
+            }
+        },
+        {
+            "name": "streetlight_post_left",
+            "type": "street_light",
+            "category": "post",
+            "bbox_xyxy_topdown": [
+                120,
+                140,
+                165,
+                240
+            ],
+            "center_xy": [
+                142,
+                190
+            ],
+            "attributes": {
+                "illumination": "on"
+            }
+        },
+        {
+            "name": "streetlight_post_right",
+            "type": "street_light",
+            "category": "post",
+            "bbox_xyxy_topdown": [
+                620,
+                170,
+                665,
+                260
+            ],
+            "center_xy": [
+                642,
+                215
+            ],
+            "attributes": {
+                "illumination": "on"
+            }
+        }
+    ],
+    "regions": [
+        {
+            "name": "ground_1",
+            "type": "road_intersection_area",
+            "category": "road",
+            "polygon_xy": [
+                [
+                    40,
+                    470
+                ],
+                [
+                    170,
+                    380
+                ],
+                [
+                    520,
+                    380
+                ],
+                [
+                    720,
+                    520
+                ],
+                [
+                    760,
+                    470
+                ],
+                [
+                    520,
+                    350
+                ],
+                [
+                    160,
+                    320
+                ],
+                [
+                    40,
+                    360
+                ]
+            ],
+            "attributes": {
+                "time": "night",
+                "surface": "asphalt"
+            }
+        },
+        {
+            "name": "crosswalk_1",
+            "type": "marking",
+            "category": "crosswalk",
+            "polygon_xy": [
+                [
+                    340,
+                    380
+                ],
+                [
+                    520,
+                    380
+                ],
+                [
+                    580,
+                    470
+                ],
+                [
+                    400,
+                    470
+                ]
+            ],
+            "attributes": {
+                "visibility": "painted_visible"
+            }
+        },
+        {
+            "name": "lanes_roadway_1",
+            "type": "lane_area",
+            "category": "lanes",
+            "polygon_xy": [
+                [
+                    50,
+                    380
+                ],
+                [
+                    560,
+                    340
+                ],
+                [
+                    740,
+                    470
+                ],
+                [
+                    240,
+                    520
+                ]
+            ],
+            "attributes": {
+                "lane_markings": "striped_visible"
+            }
+        },
+        {
+            "name": "sidewalk_right_1",
+            "type": "pedestrian_space",
+            "category": "sidewalk",
+            "polygon_xy": [
+                [
+                    520,
+                    360
+                ],
+                [
+                    740,
+                    470
+                ],
+                [
+                    740,
+                    520
+                ],
+                [
+                    520,
+                    470
+                ]
+            ],
+            "attributes": {
+                "pedestrian_access": "present"
+            }
+        },
+        {
+            "name": "building_right_1",
+            "type": "structure",
+            "category": "building_wall",
+            "polygon_xy": [
+                [
+                    520,
+                    250
+                ],
+                [
+                    770,
+                    330
+                ],
+                [
+                    770,
+                    420
+                ],
+                [
+                    520,
+                    340
+                ]
+            ],
+            "attributes": {
+                "illumination": "dim"
+            }
+        }
+    ],
+    "semantic_relationships": [
+        {
+            "relation": "located_on",
+            "subject": "vehicle_car_front_left",
+            "object": "ground_1"
+        },
+        {
+            "relation": "located_on",
+            "subject": "vehicle_car_front_right",
+            "object": "ground_1"
+        },
+        {
+            "relation": "stands_on",
+            "subject": "pedestrian",
+            "object": "sidewalk_right_1"
+        },
+        {
+            "relation": "near",
+            "subject": "pedestrian",
+            "object": "crosswalk_1"
+        },
+        {
+            "relation": "controls",
+            "subject": "traffic_signal_light_near_center",
+            "object": "lanes_roadway_1"
+        },
+        {
+            "relation": "located_near",
+            "subject": "traffic_signal_light_near_center",
+            "object": "crosswalk_1"
+        },
+        {
+            "relation": "located_near",
+            "subject": "street_sign_vertical",
+            "object": "ground_1"
+        },
+        {
+            "relation": "adjacent_to",
+            "subject": "building_right_1",
+            "object": "sidewalk_right_1"
+        },
+        {
+            "relation": "painted_on",
+            "subject": "crosswalk_1",
+            "object": "ground_1"
+        }
+    ],
+    "current_location": {
+        "name": "ground_1"
+    },
+    "plans": [
+        {
+            "plan_name": "proceed_through_intersection",
+            "from": "ground_1",
+            "to": "lanes_roadway_1",
+            "intent": "drive_forward_safely"
+        }
+    ]
+}

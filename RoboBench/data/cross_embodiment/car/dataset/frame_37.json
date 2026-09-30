@@ -1,0 +1,265 @@
+{
+    "objects": [
+        {
+            "name": "roadway",
+            "type": "road",
+            "centroid": [
+                0.52,
+                0.7
+            ]
+        },
+        {
+            "name": "lane_markings",
+            "type": "lane_markings",
+            "centroid": [
+                0.54,
+                0.71
+            ]
+        },
+        {
+            "name": "guardrail_right",
+            "type": "guardrail",
+            "centroid": [
+                0.83,
+                0.74
+            ]
+        },
+        {
+            "name": "road_signs",
+            "type": "sign",
+            "centroid": [
+                0.78,
+                0.7
+            ]
+        },
+        {
+            "name": "trees_right",
+            "type": "trees",
+            "centroid": [
+                0.88,
+                0.64
+            ]
+        },
+        {
+            "name": "trees_far_left",
+            "type": "trees",
+            "centroid": [
+                0.18,
+                0.6
+            ]
+        },
+        {
+            "name": "houses_far",
+            "type": "buildings",
+            "centroid": [
+                0.42,
+                0.57
+            ]
+        },
+        {
+            "name": "poles_left",
+            "type": "utility_poles",
+            "centroid": [
+                0.22,
+                0.62
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "current_location",
+            "type": "drivable_area_view",
+            "polygon": [
+                [
+                    0.2,
+                    1.0
+                ],
+                [
+                    0.48,
+                    0.58
+                ],
+                [
+                    0.6,
+                    0.58
+                ],
+                [
+                    0.8,
+                    1.0
+                ]
+            ]
+        },
+        {
+            "name": "road_left_of_view",
+            "type": "road_edge_region",
+            "polygon": [
+                [
+                    0.0,
+                    0.75
+                ],
+                [
+                    0.3,
+                    0.6
+                ],
+                [
+                    0.48,
+                    0.58
+                ],
+                [
+                    0.32,
+                    0.98
+                ]
+            ]
+        },
+        {
+            "name": "road_center",
+            "type": "road_lane_region",
+            "polygon": [
+                [
+                    0.3,
+                    0.6
+                ],
+                [
+                    0.48,
+                    0.58
+                ],
+                [
+                    0.6,
+                    0.58
+                ],
+                [
+                    0.48,
+                    0.98
+                ]
+            ]
+        },
+        {
+            "name": "road_right_of_view",
+            "type": "road_edge_region",
+            "polygon": [
+                [
+                    0.48,
+                    0.58
+                ],
+                [
+                    0.6,
+                    0.58
+                ],
+                [
+                    1.0,
+                    0.78
+                ],
+                [
+                    0.78,
+                    1.0
+                ]
+            ]
+        },
+        {
+            "name": "right_shoulder_and_grass",
+            "type": "shoulder_region",
+            "polygon": [
+                [
+                    0.6,
+                    0.58
+                ],
+                [
+                    1.0,
+                    0.78
+                ],
+                [
+                    0.96,
+                    1.0
+                ],
+                [
+                    0.78,
+                    1.0
+                ]
+            ]
+        },
+        {
+            "name": "left_field_area",
+            "type": "side_area_region",
+            "polygon": [
+                [
+                    0.0,
+                    0.98
+                ],
+                [
+                    0.32,
+                    0.98
+                ],
+                [
+                    0.48,
+                    0.58
+                ],
+                [
+                    0.3,
+                    0.6
+                ],
+                [
+                    0.0,
+                    0.75
+                ]
+            ]
+        }
+    ],
+    "semantic_relationships": [
+        {
+            "subject": "current_location",
+            "relation": "contains",
+            "object": "road_center"
+        },
+        {
+            "subject": "roadway",
+            "relation": "occupies",
+            "object": "road_center"
+        },
+        {
+            "subject": "lane_markings",
+            "relation": "marking_on",
+            "object": "roadway"
+        },
+        {
+            "subject": "guardrail_right",
+            "relation": "runs_along",
+            "object": "road_right_of_view"
+        },
+        {
+            "subject": "trees_right",
+            "relation": "bordering_side_of",
+            "object": "right_shoulder_and_grass"
+        },
+        {
+            "subject": "houses_far",
+            "relation": "in_distance_along",
+            "object": "roadway"
+        },
+        {
+            "subject": "poles_left",
+            "relation": "along_side_of",
+            "object": "road_left_of_view"
+        },
+        {
+            "subject": "road_signs",
+            "relation": "located_near",
+            "object": "road_right_of_view"
+        },
+        {
+            "subject": "trees_far_left",
+            "relation": "bordering_side_of",
+            "object": "left_field_area"
+        }
+    ],
+    "current_location": {
+        "name": "current_location",
+        "notes": "View from inside a vehicle looking forward along a curved road."
+    },
+    "plans": [
+        {
+            "plan_name": "continue_forward",
+            "from": "current_location",
+            "to": "road_center",
+            "via": "roadway"
+        }
+    ]
+}

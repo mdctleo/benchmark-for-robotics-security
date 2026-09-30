@@ -1,0 +1,378 @@
+{
+    "objects": [
+        {
+            "name": "counter_top_1",
+            "type": "surface",
+            "coord": [
+                220,
+                220
+            ]
+        },
+        {
+            "name": "black_counter_zone",
+            "type": "surface",
+            "coord": [
+                60,
+                230
+            ]
+        },
+        {
+            "name": "cup_1",
+            "type": "container",
+            "coord": [
+                30,
+                265
+            ]
+        },
+        {
+            "name": "white_cups_1",
+            "type": "container",
+            "coord": [
+                40,
+                300
+            ]
+        },
+        {
+            "name": "clear_cup_1",
+            "type": "container",
+            "coord": [
+                190,
+                160
+            ]
+        },
+        {
+            "name": "clear_cup_2",
+            "type": "container",
+            "coord": [
+                260,
+                145
+            ]
+        },
+        {
+            "name": "white_powder_1",
+            "type": "ingredient",
+            "coord": [
+                345,
+                305
+            ]
+        },
+        {
+            "name": "butter_block_1",
+            "type": "food",
+            "coord": [
+                400,
+                245
+            ]
+        },
+        {
+            "name": "bag_of_chips_1",
+            "type": "packaging",
+            "coord": [
+                190,
+                255
+            ]
+        },
+        {
+            "name": "bag_of_chips_2",
+            "type": "packaging",
+            "coord": [
+                240,
+                265
+            ]
+        },
+        {
+            "name": "bag_of_chips_3",
+            "type": "packaging",
+            "coord": [
+                275,
+                255
+            ]
+        },
+        {
+            "name": "bag_of_chips_4",
+            "type": "packaging",
+            "coord": [
+                225,
+                295
+            ]
+        },
+        {
+            "name": "tall_cups_stack_1",
+            "type": "container",
+            "coord": [
+                510,
+                120
+            ]
+        },
+        {
+            "name": "napkins_stack_1",
+            "type": "packaging",
+            "coord": [
+                505,
+                205
+            ]
+        },
+        {
+            "name": "bottle_or_caddy_1",
+            "type": "container",
+            "coord": [
+                520,
+                145
+            ]
+        },
+        {
+            "name": "cutlery_bin_1",
+            "type": "container",
+            "coord": [
+                470,
+                120
+            ]
+        },
+        {
+            "name": "small_pot_plant_1",
+            "type": "plant",
+            "coord": [
+                35,
+                80
+            ]
+        },
+        {
+            "name": "cups_dispensers_area_1",
+            "type": "appliance",
+            "coord": [
+                460,
+                90
+            ]
+        },
+        {
+            "name": "orange_sponge_1",
+            "type": "tool",
+            "coord": [
+                60,
+                140
+            ]
+        },
+        {
+            "name": "green_scotch_pad_1",
+            "type": "tool",
+            "coord": [
+                90,
+                140
+            ]
+        },
+        {
+            "name": "utensil_set_1",
+            "type": "utensils",
+            "coord": [
+                110,
+                175
+            ]
+        },
+        {
+            "name": "red_shoes_1",
+            "type": "person_item",
+            "coord": [
+                115,
+                440
+            ]
+        },
+        {
+            "name": "dark_slat_basket_1",
+            "type": "container",
+            "coord": [
+                280,
+                270
+            ]
+        },
+        {
+            "name": "glass_of_water_1",
+            "type": "container",
+            "coord": [
+                175,
+                155
+            ]
+        },
+        {
+            "name": "glass_of_water_2",
+            "type": "container",
+            "coord": [
+                240,
+                135
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "counter_region_1",
+            "type": "counter",
+            "coord": [
+                220,
+                220
+            ]
+        },
+        {
+            "name": "basket_region_1",
+            "type": "container_region",
+            "coord": [
+                280,
+                270
+            ]
+        },
+        {
+            "name": "left_counter_storage_region_1",
+            "type": "storage_zone",
+            "coord": [
+                80,
+                210
+            ]
+        },
+        {
+            "name": "right_counter_storage_region_1",
+            "type": "storage_zone",
+            "coord": [
+                510,
+                180
+            ]
+        },
+        {
+            "name": "floor_region_1",
+            "type": "floor",
+            "coord": [
+                160,
+                470
+            ]
+        }
+    ],
+    "semantic_relationships": [
+        {
+            "relation": "contains",
+            "from": "counter_region_1",
+            "to": "basket_region_1"
+        },
+        {
+            "relation": "contains",
+            "from": "basket_region_1",
+            "to": "dark_slat_basket_1"
+        },
+        {
+            "relation": "has_item",
+            "from": "basket_region_1",
+            "to": "bag_of_chips_1"
+        },
+        {
+            "relation": "has_item",
+            "from": "basket_region_1",
+            "to": "bag_of_chips_2"
+        },
+        {
+            "relation": "has_item",
+            "from": "basket_region_1",
+            "to": "bag_of_chips_3"
+        },
+        {
+            "relation": "has_item",
+            "from": "basket_region_1",
+            "to": "bag_of_chips_4"
+        },
+        {
+            "relation": "located_on",
+            "from": "counter_region_1",
+            "to": "dark_slat_basket_1"
+        },
+        {
+            "relation": "located_on",
+            "from": "counter_region_1",
+            "to": "butter_block_1"
+        },
+        {
+            "relation": "located_on",
+            "from": "counter_region_1",
+            "to": "white_powder_1"
+        },
+        {
+            "relation": "located_on",
+            "from": "counter_region_1",
+            "to": "clear_cup_1"
+        },
+        {
+            "relation": "located_on",
+            "from": "counter_region_1",
+            "to": "clear_cup_2"
+        },
+        {
+            "relation": "located_on",
+            "from": "left_counter_storage_region_1",
+            "to": "small_pot_plant_1"
+        },
+        {
+            "relation": "located_on",
+            "from": "left_counter_storage_region_1",
+            "to": "orange_sponge_1"
+        },
+        {
+            "relation": "located_on",
+            "from": "left_counter_storage_region_1",
+            "to": "green_scotch_pad_1"
+        },
+        {
+            "relation": "located_on",
+            "from": "left_counter_storage_region_1",
+            "to": "utensil_set_1"
+        },
+        {
+            "relation": "located_on",
+            "from": "left_counter_storage_region_1",
+            "to": "white_cups_1"
+        },
+        {
+            "relation": "located_on",
+            "from": "left_counter_storage_region_1",
+            "to": "cup_1"
+        },
+        {
+            "relation": "located_on",
+            "from": "right_counter_storage_region_1",
+            "to": "tall_cups_stack_1"
+        },
+        {
+            "relation": "located_on",
+            "from": "right_counter_storage_region_1",
+            "to": "napkins_stack_1"
+        },
+        {
+            "relation": "located_on",
+            "from": "right_counter_storage_region_1",
+            "to": "bottle_or_caddy_1"
+        },
+        {
+            "relation": "located_on",
+            "from": "right_counter_storage_region_1",
+            "to": "cutlery_bin_1"
+        },
+        {
+            "relation": "located_on",
+            "from": "right_counter_storage_region_1",
+            "to": "cups_dispensers_area_1"
+        },
+        {
+            "relation": "located_on",
+            "from": "floor_region_1",
+            "to": "red_shoes_1"
+        }
+    ],
+    "current_location": {
+        "name": "counter_region_1"
+    },
+    "plans": [
+        {
+            "plan_name": "serve_items",
+            "target_region": "basket_region_1",
+            "targets": [
+                "bag_of_chips_1",
+                "bag_of_chips_2",
+                "bag_of_chips_3",
+                "bag_of_chips_4"
+            ]
+        }
+    ]
+}

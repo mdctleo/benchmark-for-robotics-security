@@ -1,0 +1,217 @@
+{
+    "objects": [
+        {
+            "name": "apartment_buildings",
+            "type": "building",
+            "bbox_topdown": {
+                "x": 20,
+                "y": 260,
+                "w": 360,
+                "h": 280
+            }
+        },
+        {
+            "name": "cars",
+            "type": "vehicle",
+            "bbox_topdown": {
+                "x": 240,
+                "y": 300,
+                "w": 240,
+                "h": 220
+            }
+        },
+        {
+            "name": "traffic_lights",
+            "type": "traffic_light",
+            "bbox_topdown": {
+                "x": 710,
+                "y": 420,
+                "w": 80,
+                "h": 130
+            }
+        },
+        {
+            "name": "lampposts",
+            "type": "street_furniture",
+            "bbox_topdown": {
+                "x": 650,
+                "y": 390,
+                "w": 220,
+                "h": 220
+            }
+        },
+        {
+            "name": "trees",
+            "type": "vegetation",
+            "bbox_topdown": {
+                "x": 620,
+                "y": 130,
+                "w": 220,
+                "h": 260
+            }
+        },
+        {
+            "name": "palm_trees",
+            "type": "vegetation",
+            "bbox_topdown": {
+                "x": 820,
+                "y": 240,
+                "w": 160,
+                "h": 260
+            }
+        },
+        {
+            "name": "grass_lawn",
+            "type": "ground_cover",
+            "bbox_topdown": {
+                "x": 860,
+                "y": 280,
+                "w": 360,
+                "h": 260
+            }
+        },
+        {
+            "name": "traffic_cones",
+            "type": "barrier",
+            "bbox_topdown": {
+                "x": 780,
+                "y": 540,
+                "w": 40,
+                "h": 40
+            }
+        },
+        {
+            "name": "road_signboards",
+            "type": "sign",
+            "bbox_topdown": {
+                "x": 980,
+                "y": 120,
+                "w": 150,
+                "h": 80
+            }
+        },
+        {
+            "name": "fences_or_rails",
+            "type": "barrier",
+            "bbox_topdown": {
+                "x": 900,
+                "y": 360,
+                "w": 220,
+                "h": 220
+            }
+        }
+    ],
+    "regions": [
+        {
+            "name": "roadway",
+            "type": "road",
+            "bbox_topdown": {
+                "x": 120,
+                "y": 300,
+                "w": 620,
+                "h": 340
+            }
+        },
+        {
+            "name": "sidewalk",
+            "type": "pedestrian_path",
+            "bbox_topdown": {
+                "x": 120,
+                "y": 210,
+                "w": 650,
+                "h": 190
+            }
+        },
+        {
+            "name": "median_green_strip",
+            "type": "green_space",
+            "bbox_topdown": {
+                "x": 690,
+                "y": 260,
+                "w": 220,
+                "h": 240
+            }
+        },
+        {
+            "name": "park_edge_grass",
+            "type": "green_space",
+            "bbox_topdown": {
+                "x": 880,
+                "y": 240,
+                "w": 420,
+                "h": 320
+            }
+        },
+        {
+            "name": "current_location",
+            "type": "capture_region",
+            "bbox_topdown": {
+                "x": 240,
+                "y": 520,
+                "w": 260,
+                "h": 140
+            }
+        }
+    ],
+    "semantic_relationships": [
+        {
+            "subject": "cars",
+            "relation": "located_on",
+            "object": "roadway"
+        },
+        {
+            "subject": "traffic_lights",
+            "relation": "controls",
+            "object": "roadway"
+        },
+        {
+            "subject": "trees",
+            "relation": "adjacent_to",
+            "object": "roadway"
+        },
+        {
+            "subject": "palm_trees",
+            "relation": "adjacent_to",
+            "object": "park_edge_grass"
+        },
+        {
+            "subject": "grass_lawn",
+            "relation": "covered_by",
+            "object": "park_edge_grass"
+        },
+        {
+            "subject": "traffic_cones",
+            "relation": "on_edge_of",
+            "object": "roadway"
+        },
+        {
+            "subject": "apartment_buildings",
+            "relation": "bordering",
+            "object": "sidewalk"
+        },
+        {
+            "subject": "lampposts",
+            "relation": "along",
+            "object": "sidewalk"
+        },
+        {
+            "subject": "road_signboards",
+            "relation": "near",
+            "object": "park_edge_grass"
+        },
+        {
+            "subject": "fences_or_rails",
+            "relation": "separates",
+            "object": "park_edge_grass"
+        }
+    ],
+    "current_location": "current_location",
+    "plans": [
+        {
+            "name": "drive_forward",
+            "from": "current_location",
+            "through": "roadway",
+            "goal": "traffic_lights"
+        }
+    ]
+}

@@ -1,0 +1,199 @@
+{
+    "objects": [
+        {
+            "name": "cable_roller",
+            "type": "equipment",
+            "center": [
+                40,
+                110
+            ],
+            "size": [
+                120,
+                80
+            ]
+        },
+        {
+            "name": "yellow_controls",
+            "type": "control_panel",
+            "center": [
+                215,
+                40
+            ],
+            "size": [
+                90,
+                70
+            ]
+        },
+        {
+            "name": "mount_left",
+            "type": "machine_mount",
+            "center": [
+                10,
+                140
+            ],
+            "size": [
+                40,
+                200
+            ]
+        },
+        {
+            "name": "mount_right",
+            "type": "machine_mount",
+            "center": [
+                610,
+                170
+            ],
+            "size": [
+                60,
+                260
+            ]
+        },
+        {
+            "name": "power_box",
+            "type": "electrical_box",
+            "center": [
+                585,
+                90
+            ],
+            "size": [
+                120,
+                130
+            ]
+        },
+        {
+            "name": "camera_head",
+            "type": "sensor_head",
+            "center": [
+                575,
+                25
+            ],
+            "size": [
+                70,
+                70
+            ]
+        },
+        {
+            "name": "device_right_shaft",
+            "type": "robotic_component",
+            "center": [
+                560,
+                150
+            ],
+            "size": [
+                60,
+                180
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "blue_surface",
+            "type": "workspace_surface",
+            "center": [
+                320,
+                185
+            ],
+            "size": [
+                560,
+                340
+            ]
+        },
+        {
+            "name": "left_cable_area",
+            "type": "workspace_area",
+            "center": [
+                120,
+                210
+            ],
+            "size": [
+                180,
+                260
+            ]
+        },
+        {
+            "name": "right_cable_area",
+            "type": "workspace_area",
+            "center": [
+                520,
+                220
+            ],
+            "size": [
+                200,
+                260
+            ]
+        },
+        {
+            "name": "mounting_top_zone",
+            "type": "workspace_area",
+            "center": [
+                320,
+                60
+            ],
+            "size": [
+                500,
+                120
+            ]
+        }
+    ],
+    "current_location": "blue_surface",
+    "relationships": [
+        {
+            "subject": "cable_roller",
+            "relation": "mounted_near",
+            "object": "left_cable_area"
+        },
+        {
+            "subject": "yellow_controls",
+            "relation": "located_on",
+            "object": "mounting_top_zone"
+        },
+        {
+            "subject": "power_box",
+            "relation": "located_near",
+            "object": "right_cable_area"
+        },
+        {
+            "subject": "camera_head",
+            "relation": "mounted_near",
+            "object": "mounting_top_zone"
+        },
+        {
+            "subject": "device_right_shaft",
+            "relation": "occupies",
+            "object": "right_cable_area"
+        },
+        {
+            "subject": "mount_left",
+            "relation": "frames",
+            "object": "blue_surface"
+        },
+        {
+            "subject": "mount_right",
+            "relation": "frames",
+            "object": "blue_surface"
+        },
+        {
+            "subject": "blue_surface",
+            "relation": "spans_between",
+            "object": "left_cable_area"
+        },
+        {
+            "subject": "blue_surface",
+            "relation": "spans_between",
+            "object": "right_cable_area"
+        }
+    ],
+    "plans": [
+        {
+            "name": "operate_on_workspace",
+            "from": "current_location",
+            "target": "blue_surface",
+            "actions": [
+                {
+                    "action": "perform_task_on",
+                    "where": "blue_surface"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,160 @@
+{
+    "objects": [
+        {
+            "name": "space_deck_top",
+            "type": "surface",
+            "bbox": {
+                "x": 90,
+                "y": 60,
+                "w": 520,
+                "h": 290
+            },
+            "center": {
+                "x": 350,
+                "y": 205
+            }
+        },
+        {
+            "name": "robot_base",
+            "type": "robot_component",
+            "bbox": {
+                "x": 255,
+                "y": 120,
+                "w": 125,
+                "h": 165
+            },
+            "center": {
+                "x": 317,
+                "y": 202
+            }
+        },
+        {
+            "name": "robot_nozzle",
+            "type": "tool",
+            "bbox": {
+                "x": 282,
+                "y": 105,
+                "w": 85,
+                "h": 80
+            },
+            "center": {
+                "x": 325,
+                "y": 145
+            }
+        },
+        {
+            "name": "metal_tube",
+            "type": "tube",
+            "bbox": {
+                "x": 390,
+                "y": 130,
+                "w": 110,
+                "h": 190
+            },
+            "center": {
+                "x": 445,
+                "y": 225
+            }
+        },
+        {
+            "name": "small_pellets",
+            "type": "small_objects_cluster",
+            "bbox": {
+                "x": 125,
+                "y": 175,
+                "w": 160,
+                "h": 95
+            },
+            "center": {
+                "x": 205,
+                "y": 222
+            }
+        },
+        {
+            "name": "cylinder_cup",
+            "type": "container",
+            "bbox": {
+                "x": 405,
+                "y": 150,
+                "w": 90,
+                "h": 85
+            },
+            "center": {
+                "x": 450,
+                "y": 192
+            }
+        },
+        {
+            "name": "shadow_region_floor",
+            "type": "shadow",
+            "bbox": {
+                "x": 0,
+                "y": 300,
+                "w": 720,
+                "h": 160
+            },
+            "center": {
+                "x": 360,
+                "y": 380
+            }
+        }
+    ],
+    "regions": [
+        {
+            "name": "current_location",
+            "type": "workspace_area",
+            "bbox": {
+                "x": 0,
+                "y": 0,
+                "w": 720,
+                "h": 460
+            },
+            "center": {
+                "x": 360,
+                "y": 230
+            }
+        }
+    ],
+    "relationships": [
+        {
+            "from": "robot_base",
+            "to": "current_location",
+            "relation": "located_in"
+        },
+        {
+            "from": "robot_nozzle",
+            "to": "robot_base",
+            "relation": "mounted_on"
+        },
+        {
+            "from": "metal_tube",
+            "to": "current_location",
+            "relation": "located_in"
+        },
+        {
+            "from": "metal_tube",
+            "to": "robot_base",
+            "relation": "connected_to"
+        },
+        {
+            "from": "cylinder_cup",
+            "to": "metal_tube",
+            "relation": "sits_on"
+        },
+        {
+            "from": "small_pellets",
+            "to": "current_location",
+            "relation": "scattered_on"
+        },
+        {
+            "from": "shadow_region_floor",
+            "to": "current_location",
+            "relation": "casts_over"
+        }
+    ],
+    "agent_state": {
+        "name": "current_location",
+        "status": "active_scene_area",
+        "current_location": "current_location"
+    }
+}

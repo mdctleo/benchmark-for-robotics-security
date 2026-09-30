@@ -1,0 +1,442 @@
+{
+    "objects": [
+        {
+            "name": "signal_crosswalk_markings",
+            "type": "road_markings",
+            "coordinates": {
+                "top_down": {
+                    "x": 530,
+                    "y": 980
+                }
+            }
+        },
+        {
+            "name": "stop_sign_1",
+            "type": "traffic_sign",
+            "coordinates": {
+                "top_down": {
+                    "x": 835,
+                    "y": 715
+                }
+            }
+        },
+        {
+            "name": "streetlight_1",
+            "type": "streetlight",
+            "coordinates": {
+                "top_down": {
+                    "x": 640,
+                    "y": 770
+                }
+            }
+        },
+        {
+            "name": "streetlight_2",
+            "type": "streetlight",
+            "coordinates": {
+                "top_down": {
+                    "x": 1500,
+                    "y": 745
+                }
+            }
+        },
+        {
+            "name": "streetlight_3",
+            "type": "streetlight",
+            "coordinates": {
+                "top_down": {
+                    "x": 1700,
+                    "y": 735
+                }
+            }
+        },
+        {
+            "name": "house_left_1",
+            "type": "building",
+            "coordinates": {
+                "top_down": {
+                    "x": 360,
+                    "y": 610
+                }
+            }
+        },
+        {
+            "name": "garage_left_1",
+            "type": "building_feature",
+            "coordinates": {
+                "top_down": {
+                    "x": 420,
+                    "y": 650
+                }
+            }
+        },
+        {
+            "name": "driveway_left_1",
+            "type": "driveway",
+            "coordinates": {
+                "top_down": {
+                    "x": 485,
+                    "y": 690
+                }
+            }
+        },
+        {
+            "name": "house_right_1",
+            "type": "building",
+            "coordinates": {
+                "top_down": {
+                    "x": 1460,
+                    "y": 610
+                }
+            }
+        },
+        {
+            "name": "sidewalk_right_1",
+            "type": "sidewalk",
+            "coordinates": {
+                "top_down": {
+                    "x": 1470,
+                    "y": 850
+                }
+            }
+        },
+        {
+            "name": "curb_right_1",
+            "type": "curb",
+            "coordinates": {
+                "top_down": {
+                    "x": 1425,
+                    "y": 860
+                }
+            }
+        },
+        {
+            "name": "person_walking_1",
+            "type": "person",
+            "coordinates": {
+                "top_down": {
+                    "x": 1600,
+                    "y": 720
+                }
+            }
+        },
+        {
+            "name": "person_walking_shoes_1",
+            "type": "body_detail",
+            "coordinates": {
+                "top_down": {
+                    "x": 1605,
+                    "y": 760
+                }
+            }
+        },
+        {
+            "name": "car_left_1",
+            "type": "vehicle",
+            "coordinates": {
+                "top_down": {
+                    "x": 520,
+                    "y": 710
+                }
+            }
+        },
+        {
+            "name": "car_center_1",
+            "type": "vehicle",
+            "coordinates": {
+                "top_down": {
+                    "x": 980,
+                    "y": 760
+                }
+            }
+        },
+        {
+            "name": "car_center_2",
+            "type": "vehicle",
+            "coordinates": {
+                "top_down": {
+                    "x": 1120,
+                    "y": 780
+                }
+            }
+        },
+        {
+            "name": "car_right_1",
+            "type": "vehicle",
+            "coordinates": {
+                "top_down": {
+                    "x": 1310,
+                    "y": 790
+                }
+            }
+        },
+        {
+            "name": "green_utility_bin_1",
+            "type": "utility_container",
+            "coordinates": {
+                "top_down": {
+                    "x": 1525,
+                    "y": 830
+                }
+            }
+        },
+        {
+            "name": "trash_bin_1",
+            "type": "trash_bin",
+            "coordinates": {
+                "top_down": {
+                    "x": 1520,
+                    "y": 880
+                }
+            }
+        },
+        {
+            "name": "potted_plant_1",
+            "type": "planter",
+            "coordinates": {
+                "top_down": {
+                    "x": 1700,
+                    "y": 820
+                }
+            }
+        },
+        {
+            "name": "potted_plant_2",
+            "type": "planter",
+            "coordinates": {
+                "top_down": {
+                    "x": 1750,
+                    "y": 840
+                }
+            }
+        }
+    ],
+    "regions": [
+        {
+            "name": "roadway_1",
+            "type": "road_area",
+            "coordinates": {
+                "top_down": {
+                    "x": 1000,
+                    "y": 880
+                }
+            }
+        },
+        {
+            "name": "crosswalk_region_1",
+            "type": "crosswalk_area",
+            "coordinates": {
+                "top_down": {
+                    "x": 930,
+                    "y": 990
+                }
+            }
+        },
+        {
+            "name": "left_side_area_1",
+            "type": "side_area",
+            "coordinates": {
+                "top_down": {
+                    "x": 520,
+                    "y": 760
+                }
+            }
+        },
+        {
+            "name": "right_side_area_1",
+            "type": "side_area",
+            "coordinates": {
+                "top_down": {
+                    "x": 1560,
+                    "y": 780
+                }
+            }
+        },
+        {
+            "name": "tree_cluster_left_1",
+            "type": "vegetation_cluster",
+            "coordinates": {
+                "top_down": {
+                    "x": 590,
+                    "y": 560
+                }
+            }
+        },
+        {
+            "name": "tree_cluster_right_1",
+            "type": "vegetation_cluster",
+            "coordinates": {
+                "top_down": {
+                    "x": 1425,
+                    "y": 560
+                }
+            }
+        },
+        {
+            "name": "palm_tree_area_1",
+            "type": "vegetation_area",
+            "coordinates": {
+                "top_down": {
+                    "x": 1540,
+                    "y": 565
+                }
+            }
+        },
+        {
+            "name": "building_row_left_1",
+            "type": "building_row",
+            "coordinates": {
+                "top_down": {
+                    "x": 450,
+                    "y": 630
+                }
+            }
+        },
+        {
+            "name": "building_row_right_1",
+            "type": "building_row",
+            "coordinates": {
+                "top_down": {
+                    "x": 1480,
+                    "y": 630
+                }
+            }
+        }
+    ],
+    "relationships": [
+        {
+            "subject": "car_left_1",
+            "relation": "on",
+            "object": "roadway_1"
+        },
+        {
+            "subject": "car_center_1",
+            "relation": "on",
+            "object": "roadway_1"
+        },
+        {
+            "subject": "car_center_2",
+            "relation": "on",
+            "object": "roadway_1"
+        },
+        {
+            "subject": "car_right_1",
+            "relation": "on",
+            "object": "roadway_1"
+        },
+        {
+            "subject": "person_walking_1",
+            "relation": "on",
+            "object": "right_side_area_1"
+        },
+        {
+            "subject": "person_walking_shoes_1",
+            "relation": "near",
+            "object": "sidewalk_right_1"
+        },
+        {
+            "subject": "sidewalk_right_1",
+            "relation": "adjacent_to",
+            "object": "curb_right_1"
+        },
+        {
+            "subject": "house_left_1",
+            "relation": "in",
+            "object": "building_row_left_1"
+        },
+        {
+            "subject": "garage_left_1",
+            "relation": "part_of",
+            "object": "house_left_1"
+        },
+        {
+            "subject": "driveway_left_1",
+            "relation": "adjacent_to",
+            "object": "house_left_1"
+        },
+        {
+            "subject": "house_right_1",
+            "relation": "in",
+            "object": "building_row_right_1"
+        },
+        {
+            "subject": "green_utility_bin_1",
+            "relation": "near",
+            "object": "right_side_area_1"
+        },
+        {
+            "subject": "trash_bin_1",
+            "relation": "near",
+            "object": "right_side_area_1"
+        },
+        {
+            "subject": "potted_plant_1",
+            "relation": "near",
+            "object": "right_side_area_1"
+        },
+        {
+            "subject": "potted_plant_2",
+            "relation": "near",
+            "object": "right_side_area_1"
+        },
+        {
+            "subject": "signal_crosswalk_markings",
+            "relation": "marks",
+            "object": "crosswalk_region_1"
+        },
+        {
+            "subject": "streetlight_1",
+            "relation": "located_near",
+            "object": "left_side_area_1"
+        },
+        {
+            "subject": "streetlight_2",
+            "relation": "located_near",
+            "object": "right_side_area_1"
+        },
+        {
+            "subject": "streetlight_3",
+            "relation": "located_near",
+            "object": "right_side_area_1"
+        },
+        {
+            "subject": "stop_sign_1",
+            "relation": "located_near",
+            "object": "right_side_area_1"
+        },
+        {
+            "subject": "tree_cluster_left_1",
+            "relation": "along",
+            "object": "left_side_area_1"
+        },
+        {
+            "subject": "tree_cluster_right_1",
+            "relation": "along",
+            "object": "right_side_area_1"
+        },
+        {
+            "subject": "palm_tree_area_1",
+            "relation": "within",
+            "object": "tree_cluster_right_1"
+        },
+        {
+            "subject": "crosswalk_region_1",
+            "relation": "overlaps",
+            "object": "roadway_1"
+        }
+    ],
+    "current_location": "right_side_area_1",
+    "plans": [
+        {
+            "plan_name": "walk_forward_along_side",
+            "from": "right_side_area_1",
+            "to": "building_row_right_1",
+            "constraints": [
+                {
+                    "type": "avoid",
+                    "entity": "roadway_1"
+                }
+            ]
+        }
+    ]
+}

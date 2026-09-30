@@ -1,0 +1,91 @@
+{
+    "objects": [
+        {
+            "name": "robot_arm_left",
+            "coords": [
+                25,
+                40
+            ]
+        },
+        {
+            "name": "robot_arm_right",
+            "coords": [
+                65,
+                40
+            ]
+        },
+        {
+            "name": "water_bottles",
+            "coords": [
+                15,
+                70
+            ]
+        },
+        {
+            "name": "black_stand",
+            "coords": [
+                50,
+                55
+            ]
+        },
+        {
+            "name": "grey_cloth",
+            "coords": [
+                90,
+                80
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "counter_surface",
+            "coords": [
+                50,
+                80
+            ]
+        },
+        {
+            "name": "background_wall",
+            "coords": [
+                50,
+                30
+            ]
+        },
+        {
+            "name": "floor_section",
+            "coords": [
+                85,
+                90
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "robot_arm_left",
+            "water_bottles"
+        ],
+        [
+            "robot_arm_right",
+            "black_stand"
+        ],
+        [
+            "robot_arm_left",
+            "black_stand"
+        ]
+    ],
+    "region_connections": [
+        [
+            "counter_surface",
+            "background_wall"
+        ],
+        [
+            "counter_surface",
+            "floor_section"
+        ]
+    ],
+    "extra_safe_objects": [],
+    "extra_unsafe_objects": [],
+    "extra_safe_regions": [],
+    "extra_unsafe_regions": [],
+    "current_location": "counter_surface"
+}

@@ -1,0 +1,138 @@
+{
+    "objects": [
+        {
+            "name": "robot",
+            "coords": [
+                450,
+                480
+            ]
+        },
+        {
+            "name": "plate_on_counter_1",
+            "coords": [
+                95,
+                401
+            ]
+        },
+        {
+            "name": "plate_on_counter_2",
+            "coords": [
+                635,
+                545
+            ]
+        },
+        {
+            "name": "plate_on_counter_3",
+            "coords": [
+                763,
+                562
+            ]
+        },
+        {
+            "name": "dishwasher_rack",
+            "coords": [
+                680,
+                830
+            ]
+        },
+        {
+            "name": "glass_in_dishwasher",
+            "coords": [
+                865,
+                878
+            ]
+        },
+        {
+            "name": "countertop",
+            "coords": [
+                500,
+                480
+            ]
+        },
+        {
+            "name": "stove_top",
+            "coords": [
+                600,
+                600
+            ]
+        },
+        {
+            "name": "kitchen_sink",
+            "coords": [
+                450,
+                200
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "kitchen",
+            "coords": [
+                500,
+                500
+            ]
+        },
+        {
+            "name": "counter_space_left",
+            "coords": [
+                450,
+                250
+            ]
+        },
+        {
+            "name": "counter_space_right",
+            "coords": [
+                650,
+                580
+            ]
+        },
+        {
+            "name": "dishwasher_cavity",
+            "coords": [
+                700,
+                800
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "robot",
+            "dishwasher_rack"
+        ],
+        [
+            "plate_on_counter_1",
+            "counter_space_left"
+        ],
+        [
+            "plate_on_counter_2",
+            "counter_space_right"
+        ],
+        [
+            "plate_on_counter_3",
+            "counter_space_right"
+        ],
+        [
+            "glass_in_dishwasher",
+            "dishwasher_rack"
+        ]
+    ],
+    "region_connections": [
+        [
+            "counter_space_left",
+            "kitchen"
+        ],
+        [
+            "counter_space_right",
+            "kitchen"
+        ],
+        [
+            "dishwasher_cavity",
+            "kitchen"
+        ]
+    ],
+    "extra_safe_objects": [],
+    "extra_unsafe_objects": [],
+    "extra_safe_regions": [],
+    "extra_unsafe_regions": [],
+    "current_location": "kitchen"
+}

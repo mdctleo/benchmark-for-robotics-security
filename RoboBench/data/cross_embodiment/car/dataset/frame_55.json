@@ -1,0 +1,188 @@
+{
+    "regions": [
+        {
+            "name": "road_main",
+            "type": "road",
+            "polygon": [
+                [
+                    540,
+                    410
+                ],
+                [
+                    1735,
+                    410
+                ],
+                [
+                    1735,
+                    1010
+                ],
+                [
+                    540,
+                    1010
+                ]
+            ],
+            "center": [
+                1138,
+                710
+            ]
+        },
+        {
+            "name": "shoulder_left",
+            "type": "road_edge",
+            "polygon": [
+                [
+                    520,
+                    410
+                ],
+                [
+                    620,
+                    410
+                ],
+                [
+                    620,
+                    1010
+                ],
+                [
+                    520,
+                    1010
+                ]
+            ],
+            "center": [
+                570,
+                710
+            ]
+        },
+        {
+            "name": "shoulder_right",
+            "type": "road_edge",
+            "polygon": [
+                [
+                    1725,
+                    410
+                ],
+                [
+                    1830,
+                    410
+                ],
+                [
+                    1830,
+                    1010
+                ],
+                [
+                    1725,
+                    1010
+                ]
+            ],
+            "center": [
+                1778,
+                710
+            ]
+        }
+    ],
+    "objects": [
+        {
+            "name": "traffic_vehicle_mixed",
+            "type": "vehicle_queue",
+            "bbox": [
+                950,
+                520,
+                1450,
+                980
+            ],
+            "center": [
+                1200,
+                760
+            ]
+        },
+        {
+            "name": "box_truck_right_lane",
+            "type": "truck",
+            "bbox": [
+                1230,
+                570,
+                1545,
+                920
+            ],
+            "center": [
+                1388,
+                745
+            ]
+        },
+        {
+            "name": "white_box_truck_left",
+            "type": "truck",
+            "bbox": [
+                420,
+                550,
+                650,
+                740
+            ],
+            "center": [
+                535,
+                645
+            ]
+        },
+        {
+            "name": "white_van_left",
+            "type": "van",
+            "bbox": [
+                300,
+                580,
+                460,
+                680
+            ],
+            "center": [
+                380,
+                630
+            ]
+        },
+        {
+            "name": "white_car_right",
+            "type": "car",
+            "bbox": [
+                1600,
+                740,
+                1750,
+                910
+            ],
+            "center": [
+                1675,
+                825
+            ]
+        }
+    ],
+    "semantic_relationships": [
+        {
+            "subject": "white_van_left",
+            "relation": "is_on",
+            "object": "road_main"
+        },
+        {
+            "subject": "white_box_truck_left",
+            "relation": "is_on",
+            "object": "road_main"
+        },
+        {
+            "subject": "box_truck_right_lane",
+            "relation": "is_on",
+            "object": "road_main"
+        },
+        {
+            "subject": "white_car_right",
+            "relation": "is_on",
+            "object": "road_main"
+        },
+        {
+            "subject": "traffic_vehicle_mixed",
+            "relation": "is_in",
+            "object": "road_main"
+        }
+    ],
+    "current_location": "road_main",
+    "plans": [
+        {
+            "location": "road_main",
+            "action": "continue_forward"
+        }
+    ]
+}

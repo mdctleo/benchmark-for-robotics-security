@@ -1,0 +1,88 @@
+{
+    "objects": [
+        {
+            "name": "robot_arm",
+            "coords": [
+                750,
+                400
+            ]
+        },
+        {
+            "name": "green_bag_of_chips",
+            "coords": [
+                450,
+                450
+            ]
+        },
+        {
+            "name": "soda_can",
+            "coords": [
+                600,
+                200
+            ]
+        },
+        {
+            "name": "blue_bar",
+            "coords": [
+                650,
+                600
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "tabletop",
+            "coords": [
+                500,
+                500
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "robot_arm",
+            "green_bag_of_chips"
+        ]
+    ],
+    "region_connections": [],
+    "extra_safe_objects": [
+        {
+            "name": "soda_can",
+            "type": "stationary",
+            "coords": [
+                600,
+                200
+            ]
+        },
+        {
+            "name": "blue_bar",
+            "type": "stationary",
+            "coords": [
+                650,
+                600
+            ]
+        }
+    ],
+    "extra_unsafe_objects": [
+        {
+            "name": "green_bag_of_chips",
+            "type": "manipulated_object",
+            "coords": [
+                450,
+                450
+            ]
+        }
+    ],
+    "extra_safe_regions": [
+        {
+            "name": "tabletop",
+            "type": "stable_surface",
+            "coords": [
+                500,
+                500
+            ]
+        }
+    ],
+    "extra_unsafe_regions": [],
+    "current_location": "tabletop"
+}

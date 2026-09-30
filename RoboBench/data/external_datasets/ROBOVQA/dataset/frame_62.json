@@ -1,0 +1,188 @@
+{
+    "regions": [
+        {
+            "name": "table_surface",
+            "type": "surface",
+            "polygon": [
+                {
+                    "x": 0.05,
+                    "y": 0.85
+                },
+                {
+                    "x": 0.95,
+                    "y": 0.85
+                },
+                {
+                    "x": 0.95,
+                    "y": 0.35
+                },
+                {
+                    "x": 0.05,
+                    "y": 0.35
+                }
+            ]
+        }
+    ],
+    "objects": [
+        {
+            "name": "robot_arm_end_effector",
+            "type": "end_effector",
+            "center": {
+                "x": 0.58,
+                "y": 0.33
+            },
+            "bbox": {
+                "w": 0.16,
+                "h": 0.12
+            }
+        },
+        {
+            "name": "metal_cup",
+            "type": "container",
+            "center": {
+                "x": 0.49,
+                "y": 0.58
+            },
+            "bbox": {
+                "w": 0.16,
+                "h": 0.18
+            }
+        },
+        {
+            "name": "cup_reservoir_contents",
+            "type": "liquid_or_foam",
+            "center": {
+                "x": 0.49,
+                "y": 0.62
+            },
+            "bbox": {
+                "w": 0.11,
+                "h": 0.1
+            }
+        },
+        {
+            "name": "small_pouch_1",
+            "type": "packaging",
+            "center": {
+                "x": 0.46,
+                "y": 0.72
+            },
+            "bbox": {
+                "w": 0.06,
+                "h": 0.05
+            }
+        },
+        {
+            "name": "small_pouch_2",
+            "type": "packaging",
+            "center": {
+                "x": 0.76,
+                "y": 0.63
+            },
+            "bbox": {
+                "w": 0.08,
+                "h": 0.06
+            }
+        },
+        {
+            "name": "small_pouch_3",
+            "type": "packaging",
+            "center": {
+                "x": 0.83,
+                "y": 0.69
+            },
+            "bbox": {
+                "w": 0.08,
+                "h": 0.06
+            }
+        },
+        {
+            "name": "shot_glass_like_object",
+            "type": "container",
+            "center": {
+                "x": 0.64,
+                "y": 0.6
+            },
+            "bbox": {
+                "w": 0.06,
+                "h": 0.1
+            }
+        }
+    ],
+    "relationships": [
+        {
+            "subject": "robot_arm_end_effector",
+            "relation": "above",
+            "object": "metal_cup"
+        },
+        {
+            "subject": "metal_cup",
+            "relation": "on",
+            "object": "table_surface"
+        },
+        {
+            "subject": "cup_reservoir_contents",
+            "relation": "inside",
+            "object": "metal_cup"
+        },
+        {
+            "subject": "small_pouch_1",
+            "relation": "on",
+            "object": "table_surface"
+        },
+        {
+            "subject": "small_pouch_2",
+            "relation": "on",
+            "object": "table_surface"
+        },
+        {
+            "subject": "small_pouch_3",
+            "relation": "on",
+            "object": "table_surface"
+        },
+        {
+            "subject": "shot_glass_like_object",
+            "relation": "near",
+            "object": "metal_cup"
+        }
+    ],
+    "current_location": [
+        {
+            "name": "metal_cup",
+            "region": "table_surface"
+        },
+        {
+            "name": "small_pouch_1",
+            "region": "table_surface"
+        },
+        {
+            "name": "small_pouch_2",
+            "region": "table_surface"
+        },
+        {
+            "name": "small_pouch_3",
+            "region": "table_surface"
+        },
+        {
+            "name": "shot_glass_like_object",
+            "region": "table_surface"
+        }
+    ],
+    "plans": [
+        {
+            "plan_name": "place_or_align_end_effector_over_cup",
+            "actions": [
+                {
+                    "action": "move",
+                    "from": "table_surface",
+                    "to": "table_surface",
+                    "focus_on": "robot_arm_end_effector"
+                },
+                {
+                    "action": "align",
+                    "target": "metal_cup"
+                }
+            ]
+        }
+    ]
+}

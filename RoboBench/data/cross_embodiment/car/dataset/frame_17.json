@@ -1,0 +1,264 @@
+{
+    "objects": [
+        {
+            "name": "car_1",
+            "type": "vehicle",
+            "position": {
+                "x": 520,
+                "y": 690
+            }
+        },
+        {
+            "name": "car_2",
+            "type": "vehicle",
+            "position": {
+                "x": 610,
+                "y": 690
+            }
+        },
+        {
+            "name": "car_3",
+            "type": "vehicle",
+            "position": {
+                "x": 910,
+                "y": 630
+            }
+        },
+        {
+            "name": "car_4",
+            "type": "vehicle",
+            "position": {
+                "x": 1040,
+                "y": 630
+            }
+        },
+        {
+            "name": "traffic_light_1",
+            "type": "traffic_light",
+            "position": {
+                "x": 1240,
+                "y": 470
+            }
+        },
+        {
+            "name": "traffic_sign_1",
+            "type": "traffic_sign",
+            "position": {
+                "x": 1430,
+                "y": 520
+            }
+        },
+        {
+            "name": "pole_1",
+            "type": "utility_pole",
+            "position": {
+                "x": 1345,
+                "y": 560
+            }
+        },
+        {
+            "name": "building_left",
+            "type": "building",
+            "position": {
+                "x": 220,
+                "y": 470
+            }
+        },
+        {
+            "name": "building_right",
+            "type": "building",
+            "position": {
+                "x": 1560,
+                "y": 590
+            }
+        },
+        {
+            "name": "tree_group_left",
+            "type": "trees",
+            "position": {
+                "x": 420,
+                "y": 520
+            }
+        },
+        {
+            "name": "tree_group_right",
+            "type": "trees",
+            "position": {
+                "x": 1180,
+                "y": 520
+            }
+        }
+    ],
+    "regions": [
+        {
+            "name": "road_1",
+            "type": "road",
+            "polygon": [
+                {
+                    "x": 330,
+                    "y": 930
+                },
+                {
+                    "x": 740,
+                    "y": 915
+                },
+                {
+                    "x": 1190,
+                    "y": 920
+                },
+                {
+                    "x": 1480,
+                    "y": 860
+                },
+                {
+                    "x": 1480,
+                    "y": 360
+                },
+                {
+                    "x": 1180,
+                    "y": 410
+                },
+                {
+                    "x": 740,
+                    "y": 420
+                },
+                {
+                    "x": 330,
+                    "y": 380
+                }
+            ]
+        },
+        {
+            "name": "sidewalk_left",
+            "type": "sidewalk",
+            "polygon": [
+                {
+                    "x": 330,
+                    "y": 930
+                },
+                {
+                    "x": 740,
+                    "y": 915
+                },
+                {
+                    "x": 690,
+                    "y": 420
+                },
+                {
+                    "x": 330,
+                    "y": 380
+                }
+            ]
+        },
+        {
+            "name": "sidewalk_right",
+            "type": "sidewalk",
+            "polygon": [
+                {
+                    "x": 1190,
+                    "y": 920
+                },
+                {
+                    "x": 1480,
+                    "y": 860
+                },
+                {
+                    "x": 1480,
+                    "y": 360
+                },
+                {
+                    "x": 1180,
+                    "y": 410
+                }
+            ]
+        },
+        {
+            "name": "crosswalk_or_apron_area",
+            "type": "crosswalk_or_apron",
+            "polygon": [
+                {
+                    "x": 610,
+                    "y": 865
+                },
+                {
+                    "x": 915,
+                    "y": 865
+                },
+                {
+                    "x": 905,
+                    "y": 950
+                },
+                {
+                    "x": 600,
+                    "y": 950
+                }
+            ]
+        }
+    ],
+    "current_location": "road_1",
+    "connections": [
+        {
+            "from": "car_1",
+            "to": "road_1",
+            "relation": "on"
+        },
+        {
+            "from": "car_2",
+            "to": "road_1",
+            "relation": "on"
+        },
+        {
+            "from": "car_3",
+            "to": "road_1",
+            "relation": "on"
+        },
+        {
+            "from": "car_4",
+            "to": "road_1",
+            "relation": "on"
+        },
+        {
+            "from": "tree_group_left",
+            "to": "sidewalk_left",
+            "relation": "adjacent_to"
+        },
+        {
+            "from": "tree_group_right",
+            "to": "sidewalk_right",
+            "relation": "adjacent_to"
+        },
+        {
+            "from": "building_left",
+            "to": "sidewalk_left",
+            "relation": "adjacent_to"
+        },
+        {
+            "from": "building_right",
+            "to": "sidewalk_right",
+            "relation": "adjacent_to"
+        },
+        {
+            "from": "traffic_light_1",
+            "to": "road_1",
+            "relation": "near_intersection"
+        },
+        {
+            "from": "traffic_sign_1",
+            "to": "sidewalk_right",
+            "relation": "adjacent_to"
+        },
+        {
+            "from": "pole_1",
+            "to": "sidewalk_right",
+            "relation": "near"
+        }
+    ],
+    "plans": [
+        {
+            "plan_name": "proceed_forward",
+            "start_region": "road_1",
+            "action": "drive_forward",
+            "target_region": "road_1"
+        }
+    ]
+}

@@ -1,0 +1,199 @@
+{
+    "objects": [
+        {
+            "name": "control_panel_red_button",
+            "type": "button",
+            "bbox": {
+                "x": 287,
+                "y": 72,
+                "w": 28,
+                "h": 28
+            }
+        },
+        {
+            "name": "control_panel_green_button",
+            "type": "button",
+            "bbox": {
+                "x": 354,
+                "y": 52,
+                "w": 26,
+                "h": 26
+            }
+        },
+        {
+            "name": "control_panel_yellow_switch",
+            "type": "switch",
+            "bbox": {
+                "x": 385,
+                "y": 86,
+                "w": 30,
+                "h": 28
+            }
+        },
+        {
+            "name": "control_panel_white_switch",
+            "type": "switch",
+            "bbox": {
+                "x": 335,
+                "y": 84,
+                "w": 30,
+                "h": 30
+            }
+        },
+        {
+            "name": "blue_tabletop",
+            "type": "surface",
+            "bbox": {
+                "x": 55,
+                "y": 70,
+                "w": 455,
+                "h": 260
+            }
+        },
+        {
+            "name": "left_mirror",
+            "type": "mirror",
+            "bbox": {
+                "x": 36,
+                "y": 82,
+                "w": 55,
+                "h": 120
+            }
+        },
+        {
+            "name": "right_front_wheel",
+            "type": "wheel",
+            "bbox": {
+                "x": 468,
+                "y": 292,
+                "w": 52,
+                "h": 52
+            }
+        }
+    ],
+    "regions": [
+        {
+            "name": "deck_area",
+            "type": "navigation_region",
+            "polygon": [
+                [
+                    55,
+                    70
+                ],
+                [
+                    510,
+                    70
+                ],
+                [
+                    510,
+                    330
+                ],
+                [
+                    55,
+                    330
+                ]
+            ]
+        },
+        {
+            "name": "banner_map_region",
+            "type": "printed_map_region",
+            "polygon": [
+                [
+                    90,
+                    120
+                ],
+                [
+                    470,
+                    120
+                ],
+                [
+                    485,
+                    310
+                ],
+                [
+                    110,
+                    310
+                ]
+            ]
+        },
+        {
+            "name": "current_location_start",
+            "type": "robot_position",
+            "center": [
+                430,
+                250
+            ],
+            "radius": 18
+        }
+    ],
+    "semantic_relationships": [
+        {
+            "relation": "on_top_of",
+            "from": "control_panel_red_button",
+            "to": "blue_tabletop"
+        },
+        {
+            "relation": "on_top_of",
+            "from": "control_panel_green_button",
+            "to": "blue_tabletop"
+        },
+        {
+            "relation": "on_top_of",
+            "from": "control_panel_yellow_switch",
+            "to": "blue_tabletop"
+        },
+        {
+            "relation": "on_top_of",
+            "from": "control_panel_white_switch",
+            "to": "blue_tabletop"
+        },
+        {
+            "relation": "contains",
+            "from": "banner_map_region",
+            "to": "blue_tabletop"
+        },
+        {
+            "relation": "in_region",
+            "from": "control_panel_red_button",
+            "to": "banner_map_region"
+        },
+        {
+            "relation": "in_region",
+            "from": "control_panel_green_button",
+            "to": "banner_map_region"
+        },
+        {
+            "relation": "in_region",
+            "from": "control_panel_yellow_switch",
+            "to": "banner_map_region"
+        },
+        {
+            "relation": "in_region",
+            "from": "control_panel_white_switch",
+            "to": "banner_map_region"
+        },
+        {
+            "relation": "adjacent_to",
+            "from": "current_location_start",
+            "to": "right_front_wheel"
+        },
+        {
+            "relation": "reachable_in",
+            "from": "current_location_start",
+            "to": "deck_area"
+        }
+    ],
+    "current_location": "current_location_start",
+    "plans": [
+        {
+            "plan_name": "approach_control_panel_area",
+            "target_region": "deck_area",
+            "target_objects": [
+                "control_panel_red_button",
+                "control_panel_green_button",
+                "control_panel_yellow_switch",
+                "control_panel_white_switch"
+            ]
+        }
+    ]
+}

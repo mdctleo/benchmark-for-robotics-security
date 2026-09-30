@@ -1,0 +1,495 @@
+{
+    "objects": [
+        {
+            "name": "red_car",
+            "type": "vehicle",
+            "bbox_topdown": [
+                [
+                    80,
+                    300
+                ],
+                [
+                    140,
+                    300
+                ],
+                [
+                    140,
+                    360
+                ],
+                [
+                    80,
+                    360
+                ]
+            ]
+        },
+        {
+            "name": "pickup_truck",
+            "type": "vehicle",
+            "bbox_topdown": [
+                [
+                    160,
+                    300
+                ],
+                [
+                    240,
+                    300
+                ],
+                [
+                    245,
+                    370
+                ],
+                [
+                    165,
+                    370
+                ]
+            ]
+        },
+        {
+            "name": "white_sedan",
+            "type": "vehicle",
+            "bbox_topdown": [
+                [
+                    260,
+                    300
+                ],
+                [
+                    335,
+                    300
+                ],
+                [
+                    340,
+                    370
+                ],
+                [
+                    265,
+                    370
+                ]
+            ]
+        },
+        {
+            "name": "dark_suv",
+            "type": "vehicle",
+            "bbox_topdown": [
+                [
+                    355,
+                    300
+                ],
+                [
+                    430,
+                    300
+                ],
+                [
+                    435,
+                    370
+                ],
+                [
+                    360,
+                    370
+                ]
+            ]
+        },
+        {
+            "name": "maroon_car",
+            "type": "vehicle",
+            "bbox_topdown": [
+                [
+                    450,
+                    305
+                ],
+                [
+                    520,
+                    305
+                ],
+                [
+                    525,
+                    370
+                ],
+                [
+                    455,
+                    370
+                ]
+            ]
+        },
+        {
+            "name": "gray_car_far_right",
+            "type": "vehicle",
+            "bbox_topdown": [
+                [
+                    705,
+                    310
+                ],
+                [
+                    785,
+                    310
+                ],
+                [
+                    800,
+                    385
+                ],
+                [
+                    720,
+                    385
+                ]
+            ]
+        },
+        {
+            "name": "building_usbank",
+            "type": "building",
+            "bbox_topdown": [
+                [
+                    650,
+                    140
+                ],
+                [
+                    1040,
+                    140
+                ],
+                [
+                    1040,
+                    340
+                ],
+                [
+                    650,
+                    340
+                ]
+            ]
+        },
+        {
+            "name": "sidewalk_right",
+            "type": "sidewalk",
+            "bbox_topdown": [
+                [
+                    615,
+                    340
+                ],
+                [
+                    1040,
+                    340
+                ],
+                [
+                    1040,
+                    460
+                ],
+                [
+                    615,
+                    460
+                ]
+            ]
+        },
+        {
+            "name": "tree_cluster_left",
+            "type": "vegetation",
+            "bbox_topdown": [
+                [
+                    40,
+                    100
+                ],
+                [
+                    330,
+                    100
+                ],
+                [
+                    350,
+                    340
+                ],
+                [
+                    60,
+                    340
+                ]
+            ]
+        },
+        {
+            "name": "tree_cluster_right",
+            "type": "vegetation",
+            "bbox_topdown": [
+                [
+                    820,
+                    60
+                ],
+                [
+                    1180,
+                    60
+                ],
+                [
+                    1220,
+                    330
+                ],
+                [
+                    860,
+                    330
+                ]
+            ]
+        },
+        {
+            "name": "green_sign",
+            "type": "sign",
+            "bbox_topdown": [
+                [
+                    560,
+                    300
+                ],
+                [
+                    605,
+                    300
+                ],
+                [
+                    610,
+                    360
+                ],
+                [
+                    565,
+                    360
+                ]
+            ]
+        },
+        {
+            "name": "yellow_sign",
+            "type": "sign",
+            "bbox_topdown": [
+                [
+                    585,
+                    335
+                ],
+                [
+                    625,
+                    335
+                ],
+                [
+                    630,
+                    365
+                ],
+                [
+                    590,
+                    365
+                ]
+            ]
+        },
+        {
+            "name": "banner_board",
+            "type": "sign",
+            "bbox_topdown": [
+                [
+                    520,
+                    255
+                ],
+                [
+                    560,
+                    255
+                ],
+                [
+                    565,
+                    285
+                ],
+                [
+                    525,
+                    285
+                ]
+            ]
+        },
+        {
+            "name": "person_gardening",
+            "type": "person",
+            "bbox_topdown": [
+                [
+                    1010,
+                    365
+                ],
+                [
+                    1085,
+                    365
+                ],
+                [
+                    1095,
+                    430
+                ],
+                [
+                    1020,
+                    430
+                ]
+            ]
+        },
+        {
+            "name": "cars_waiting_right_edge",
+            "type": "vehicle_group",
+            "bbox_topdown": [
+                [
+                    630,
+                    300
+                ],
+                [
+                    900,
+                    300
+                ],
+                [
+                    910,
+                    420
+                ],
+                [
+                    640,
+                    420
+                ]
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "road",
+            "type": "roadway",
+            "bbox_topdown": [
+                [
+                    0,
+                    260
+                ],
+                [
+                    1200,
+                    260
+                ],
+                [
+                    1200,
+                    480
+                ],
+                [
+                    0,
+                    480
+                ]
+            ]
+        },
+        {
+            "name": "grass_strip_right",
+            "type": "yard",
+            "bbox_topdown": [
+                [
+                    615,
+                    460
+                ],
+                [
+                    1040,
+                    460
+                ],
+                [
+                    1040,
+                    560
+                ],
+                [
+                    615,
+                    560
+                ]
+            ]
+        },
+        {
+            "name": "ground_1",
+            "type": "ground",
+            "bbox_topdown": [
+                [
+                    0,
+                    480
+                ],
+                [
+                    1200,
+                    480
+                ],
+                [
+                    1200,
+                    650
+                ],
+                [
+                    0,
+                    650
+                ]
+            ]
+        }
+    ],
+    "semantic_relationships": [
+        {
+            "relation": "vehicles_on",
+            "subject": "red_car",
+            "object": "road"
+        },
+        {
+            "relation": "vehicles_on",
+            "subject": "pickup_truck",
+            "object": "road"
+        },
+        {
+            "relation": "vehicles_on",
+            "subject": "white_sedan",
+            "object": "road"
+        },
+        {
+            "relation": "vehicles_on",
+            "subject": "dark_suv",
+            "object": "road"
+        },
+        {
+            "relation": "vehicles_on",
+            "subject": "maroon_car",
+            "object": "road"
+        },
+        {
+            "relation": "vehicles_on",
+            "subject": "gray_car_far_right",
+            "object": "road"
+        },
+        {
+            "relation": "vehicle_group_on",
+            "subject": "cars_waiting_right_edge",
+            "object": "road"
+        },
+        {
+            "relation": "building_adjacent_to",
+            "subject": "building_usbank",
+            "object": "sidewalk_right"
+        },
+        {
+            "relation": "sidewalk_adjacent_to",
+            "subject": "sidewalk_right",
+            "object": "road"
+        },
+        {
+            "relation": "person_on",
+            "subject": "person_gardening",
+            "object": "grass_strip_right"
+        },
+        {
+            "relation": "person_in_proximity_to",
+            "subject": "person_gardening",
+            "object": "building_usbank"
+        },
+        {
+            "relation": "sign_near",
+            "subject": "green_sign",
+            "object": "road"
+        },
+        {
+            "relation": "sign_near",
+            "subject": "yellow_sign",
+            "object": "road"
+        },
+        {
+            "relation": "sign_near",
+            "subject": "banner_board",
+            "object": "road"
+        },
+        {
+            "relation": "vegetation_lines",
+            "subject": "tree_cluster_left",
+            "object": "road"
+        },
+        {
+            "relation": "vegetation_lines",
+            "subject": "tree_cluster_right",
+            "object": "road"
+        }
+    ],
+    "current_location": {
+        "entity": "person_gardening",
+        "region": "ground_1"
+    },
+    "plans": [
+        {
+            "agent": "person_gardening",
+            "action": "work_in_vegetation_area",
+            "target_region": "grass_strip_right"
+        }
+    ]
+}

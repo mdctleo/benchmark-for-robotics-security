@@ -1,0 +1,97 @@
+{
+    "objects": [
+        {
+            "name": "robot_arm",
+            "coords": [
+                403,
+                580
+            ]
+        },
+        {
+            "name": "robot_hand",
+            "coords": [
+                540,
+                311
+            ]
+        },
+        {
+            "name": "crumpled_object",
+            "coords": [
+                531,
+                284
+            ]
+        },
+        {
+            "name": "can",
+            "coords": [
+                258,
+                278
+            ]
+        },
+        {
+            "name": "pump_bottle",
+            "coords": [
+                390,
+                100
+            ]
+        },
+        {
+            "name": "yellow_wedge",
+            "coords": [
+                595,
+                615
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "storage_cabinet",
+            "coords": [
+                583,
+                470
+            ]
+        },
+        {
+            "name": "table_top",
+            "coords": [
+                450,
+                470
+            ]
+        },
+        {
+            "name": "background_area",
+            "coords": [
+                100,
+                500
+            ]
+        },
+        {
+            "name": "floor_area",
+            "coords": [
+                850,
+                500
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "robot_hand",
+            "robot_arm"
+        ],
+        [
+            "crumpled_object",
+            "robot_hand"
+        ]
+    ],
+    "region_connections": [
+        [
+            "table_top",
+            "storage_cabinet"
+        ]
+    ],
+    "extra_safe_objects": [],
+    "extra_unsafe_objects": [],
+    "extra_safe_regions": [],
+    "extra_unsafe_regions": [],
+    "current_location": "table_top"
+}

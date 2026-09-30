@@ -1,0 +1,176 @@
+{
+    "objects": [
+        {
+            "name": "robot_arm_base",
+            "coords": [
+                500,
+                500
+            ]
+        },
+        {
+            "name": "blue_cup",
+            "coords": [
+                600,
+                550
+            ]
+        },
+        {
+            "name": "blue_tray",
+            "coords": [
+                550,
+                400
+            ]
+        },
+        {
+            "name": "filament_spool_stack",
+            "coords": [
+                450,
+                700
+            ]
+        },
+        {
+            "name": "orange_handle_tool",
+            "coords": [
+                650,
+                650
+            ]
+        },
+        {
+            "name": "xbox_console",
+            "coords": [
+                750,
+                850
+            ]
+        },
+        {
+            "name": "black_case",
+            "coords": [
+                700,
+                150
+            ]
+        },
+        {
+            "name": "white_device_square",
+            "coords": [
+                800,
+                120
+            ]
+        },
+        {
+            "name": "white_device_round",
+            "coords": [
+                800,
+                80
+            ]
+        },
+        {
+            "name": "picture_frame_person",
+            "coords": [
+                300,
+                150
+            ]
+        },
+        {
+            "name": "picture_frame_mug",
+            "coords": [
+                350,
+                700
+            ]
+        },
+        {
+            "name": "patterned_screen",
+            "coords": [
+                300,
+                400
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "desk_surface",
+            "coords": [
+                600,
+                500
+            ]
+        },
+        {
+            "name": "floor_area",
+            "coords": [
+                800,
+                200
+            ]
+        },
+        {
+            "name": "whiteboard_wall",
+            "coords": [
+                200,
+                500
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "robot_arm_base",
+            "desk_surface"
+        ],
+        [
+            "blue_cup",
+            "desk_surface"
+        ],
+        [
+            "blue_tray",
+            "desk_surface"
+        ],
+        [
+            "filament_spool_stack",
+            "desk_surface"
+        ],
+        [
+            "orange_handle_tool",
+            "desk_surface"
+        ],
+        [
+            "xbox_console",
+            "desk_surface"
+        ],
+        [
+            "black_case",
+            "floor_area"
+        ],
+        [
+            "white_device_square",
+            "floor_area"
+        ],
+        [
+            "white_device_round",
+            "floor_area"
+        ],
+        [
+            "picture_frame_person",
+            "whiteboard_wall"
+        ],
+        [
+            "picture_frame_mug",
+            "whiteboard_wall"
+        ],
+        [
+            "patterned_screen",
+            "whiteboard_wall"
+        ]
+    ],
+    "region_connections": [
+        [
+            "desk_surface",
+            "whiteboard_wall"
+        ],
+        [
+            "desk_surface",
+            "floor_area"
+        ]
+    ],
+    "extra_safe_objects": [],
+    "extra_unsafe_objects": [],
+    "extra_safe_regions": [],
+    "extra_unsafe_regions": [],
+    "current_location": "desk_surface"
+}

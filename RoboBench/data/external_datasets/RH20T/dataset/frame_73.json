@@ -1,0 +1,292 @@
+{
+    "regions": [
+        {
+            "name": "floor_platform",
+            "label": "Wooden workbench surface",
+            "type": "surface",
+            "polygon": [
+                [
+                    0,
+                    0
+                ],
+                [
+                    1000,
+                    0
+                ],
+                [
+                    1000,
+                    650
+                ],
+                [
+                    0,
+                    650
+                ]
+            ],
+            "center": [
+                500,
+                325
+            ]
+        },
+        {
+            "name": "robot_base_area",
+            "label": "Robot base area",
+            "type": "workspace_area",
+            "polygon": [
+                [
+                    80,
+                    40
+                ],
+                [
+                    520,
+                    40
+                ],
+                [
+                    520,
+                    280
+                ],
+                [
+                    80,
+                    280
+                ]
+            ],
+            "center": [
+                300,
+                160
+            ]
+        },
+        {
+            "name": "left_workspace",
+            "label": "Left side workspace",
+            "type": "workspace_area",
+            "polygon": [
+                [
+                    0,
+                    220
+                ],
+                [
+                    320,
+                    220
+                ],
+                [
+                    320,
+                    650
+                ],
+                [
+                    0,
+                    650
+                ]
+            ],
+            "center": [
+                160,
+                435
+            ]
+        },
+        {
+            "name": "right_workspace",
+            "label": "Right side workspace",
+            "type": "workspace_area",
+            "polygon": [
+                [
+                    320,
+                    220
+                ],
+                [
+                    1000,
+                    220
+                ],
+                [
+                    1000,
+                    650
+                ],
+                [
+                    320,
+                    650
+                ]
+            ],
+            "center": [
+                660,
+                435
+            ]
+        },
+        {
+            "name": "current_location",
+            "label": "Robot target/interaction zone (near the robot)",
+            "type": "target_zone",
+            "polygon": [
+                [
+                    200,
+                    170
+                ],
+                [
+                    430,
+                    170
+                ],
+                [
+                    430,
+                    300
+                ],
+                [
+                    200,
+                    300
+                ]
+            ],
+            "center": [
+                315,
+                235
+            ]
+        }
+    ],
+    "objects": [
+        {
+            "name": "robot_arm",
+            "label": "Robot arm",
+            "type": "robot",
+            "position": [
+                340,
+                120
+            ]
+        },
+        {
+            "name": "robot_tool",
+            "label": "Robot tool/head",
+            "type": "end_effector",
+            "position": [
+                300,
+                95
+            ]
+        },
+        {
+            "name": "cable_bundle",
+            "label": "Cables bundle",
+            "type": "cables",
+            "position": [
+                490,
+                220
+            ]
+        },
+        {
+            "name": "red_button_stack",
+            "label": "Red button stack",
+            "type": "control_device",
+            "position": [
+                260,
+                440
+            ]
+        },
+        {
+            "name": "small_grey_cuboid_1",
+            "label": "Small grey cuboid (near center-right)",
+            "type": "box",
+            "position": [
+                700,
+                430
+            ]
+        },
+        {
+            "name": "blue_package",
+            "label": "Blue package/box (bottom-right)",
+            "type": "container",
+            "position": [
+                650,
+                560
+            ]
+        },
+        {
+            "name": "large_cylindrical_robot_base",
+            "label": "Large cylindrical robot base",
+            "type": "robot_base",
+            "position": [
+                160,
+                140
+            ]
+        },
+        {
+            "name": "metal_track_rails",
+            "label": "Metal track/rails under the workcell",
+            "type": "infrastructure",
+            "position": [
+                520,
+                630
+            ]
+        }
+    ],
+    "semantic_relationships": [
+        {
+            "type": "located_on",
+            "from": "red_button_stack",
+            "to": "floor_platform"
+        },
+        {
+            "type": "located_on",
+            "from": "small_grey_cuboid_1",
+            "to": "floor_platform"
+        },
+        {
+            "type": "located_on",
+            "from": "blue_package",
+            "to": "floor_platform"
+        },
+        {
+            "type": "mounted_near",
+            "from": "robot_arm",
+            "to": "robot_base_area"
+        },
+        {
+            "type": "mounted_near",
+            "from": "large_cylindrical_robot_base",
+            "to": "robot_base_area"
+        },
+        {
+            "type": "near",
+            "from": "robot_tool",
+            "to": "current_location"
+        },
+        {
+            "type": "cables_go_over",
+            "from": "cable_bundle",
+            "to": "floor_platform"
+        },
+        {
+            "type": "left_of",
+            "from": "red_button_stack",
+            "to": "small_grey_cuboid_1"
+        },
+        {
+            "type": "right_of",
+            "from": "small_grey_cuboid_1",
+            "to": "red_button_stack"
+        },
+        {
+            "type": "near",
+            "from": "small_grey_cuboid_1",
+            "to": "blue_package"
+        },
+        {
+            "type": "workspace_area",
+            "from": "red_button_stack",
+            "to": "left_workspace"
+        },
+        {
+            "type": "workspace_area",
+            "from": "small_grey_cuboid_1",
+            "to": "right_workspace"
+        },
+        {
+            "type": "workspace_area",
+            "from": "blue_package",
+            "to": "right_workspace"
+        }
+    ],
+    "task_state": {
+        "current_location": "current_location",
+        "plans": [
+            {
+                "plan_name": "approach_interaction_zone",
+                "target": "current_location",
+                "expected_objects_involved": [
+                    "robot_tool"
+                ]
+            }
+        ]
+    }
+}

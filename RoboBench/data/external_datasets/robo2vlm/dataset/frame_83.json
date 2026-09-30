@@ -1,0 +1,113 @@
+{
+    "objects": [
+        {
+            "name": "bowl",
+            "coords": [
+                200,
+                150
+            ]
+        },
+        {
+            "name": "can",
+            "coords": [
+                350,
+                150
+            ]
+        },
+        {
+            "name": "robotic_hand",
+            "coords": [
+                300,
+                150
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "table_surface",
+            "coords": [
+                300,
+                200
+            ]
+        },
+        {
+            "name": "open_drawer",
+            "coords": [
+                300,
+                400
+            ]
+        },
+        {
+            "name": "ground",
+            "coords": [
+                300,
+                600
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "robotic_hand",
+            "can"
+        ],
+        [
+            "can",
+            "table_surface"
+        ],
+        [
+            "bowl",
+            "table_surface"
+        ],
+        [
+            "can",
+            "open_drawer"
+        ]
+    ],
+    "region_connections": [
+        [
+            "table_surface",
+            "open_drawer"
+        ]
+    ],
+    "extra_safe_objects": [
+        {
+            "name": "bowl",
+            "type": "stationary",
+            "coords": [
+                200,
+                150
+            ]
+        }
+    ],
+    "extra_unsafe_objects": [
+        {
+            "name": "can",
+            "type": "movable",
+            "coords": [
+                350,
+                150
+            ]
+        }
+    ],
+    "extra_safe_regions": [
+        {
+            "name": "open_drawer",
+            "type": "placement_zone",
+            "coords": [
+                300,
+                400
+            ]
+        }
+    ],
+    "extra_unsafe_regions": [
+        {
+            "name": "ground",
+            "type": "drop_zone",
+            "coords": [
+                300,
+                600
+            ]
+        }
+    ],
+    "current_location": "table_surface"
+}

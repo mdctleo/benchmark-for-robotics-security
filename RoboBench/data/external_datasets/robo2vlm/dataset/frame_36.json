@@ -1,0 +1,150 @@
+{
+    "objects": [
+        {
+            "name": "packet_1",
+            "coords": [
+                180,
+                280
+            ]
+        },
+        {
+            "name": "can_1",
+            "coords": [
+                290,
+                380
+            ]
+        },
+        {
+            "name": "can_2",
+            "coords": [
+                220,
+                460
+            ]
+        },
+        {
+            "name": "bowl_1",
+            "coords": [
+                190,
+                580
+            ]
+        },
+        {
+            "name": "robot_arm_1",
+            "coords": [
+                860,
+                620
+            ]
+        },
+        {
+            "name": "can_3",
+            "coords": [
+                580,
+                950
+            ]
+        }
+    ],
+    "regions": [
+        {
+            "name": "drawer_unit_1",
+            "coords": [
+                450,
+                450
+            ]
+        },
+        {
+            "name": "surface_1",
+            "coords": [
+                180,
+                450
+            ]
+        },
+        {
+            "name": "drawer_1",
+            "coords": [
+                800,
+                450
+            ]
+        },
+        {
+            "name": "drawer_2",
+            "coords": [
+                600,
+                450
+            ]
+        },
+        {
+            "name": "drawer_3",
+            "coords": [
+                400,
+                450
+            ]
+        },
+        {
+            "name": "cardboard_box_1",
+            "coords": [
+                600,
+                850
+            ]
+        },
+        {
+            "name": "floor_1",
+            "coords": [
+                800,
+                500
+            ]
+        }
+    ],
+    "object_connections": [
+        [
+            "packet_1",
+            "surface_1"
+        ],
+        [
+            "can_1",
+            "surface_1"
+        ],
+        [
+            "can_2",
+            "surface_1"
+        ],
+        [
+            "bowl_1",
+            "surface_1"
+        ],
+        [
+            "can_3",
+            "cardboard_box_1"
+        ],
+        [
+            "robot_arm_1",
+            "drawer_1"
+        ]
+    ],
+    "region_connections": [
+        [
+            "surface_1",
+            "drawer_unit_1"
+        ],
+        [
+            "drawer_1",
+            "drawer_unit_1"
+        ],
+        [
+            "drawer_2",
+            "drawer_unit_1"
+        ],
+        [
+            "drawer_3",
+            "drawer_unit_1"
+        ],
+        [
+            "cardboard_box_1",
+            "floor_1"
+        ]
+    ],
+    "extra_safe_objects": [],
+    "extra_unsafe_objects": [],
+    "extra_safe_regions": [],
+    "extra_unsafe_regions": [],
+    "current_location": "floor_1"
+}
