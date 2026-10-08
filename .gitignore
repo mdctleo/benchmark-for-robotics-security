@@ -12,3 +12,7 @@ RoboBench/slides/slides.pdf
 # external RoboPAIR checkout lives here; only the README is tracked
 RoboBench/src/attacks/robopair/*
 !RoboBench/src/attacks/robopair/README.md
+
+# main_dataset_50: only track the first 5 images (Example 1-5) per subcategory
+RoboBench/data/main_dataset_50/*/dataset/*.png
+!RoboBench/data/main_dataset_50/*/dataset/*Example [1-5].png
