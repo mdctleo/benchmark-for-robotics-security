@@ -1,11 +1,26 @@
 [project]
 name = "robobench"
 version = "0.1.0"
-description = "Add your description here"
+description = "RoboBench: jailbreak attack/defense benchmark for vision-language robot planners"
 readme = "README.md"
-requires-python = ">=3.14"
+requires-python = ">=3.13,<3.14"
+# Core: what a downstream user needs for robobench.load_scenes / label / score.
 dependencies = [
-    "accelerate>=1.13.0",
+    "datasets>=5.1.0",
+    "openai>=2.32.0",
+    "pandas>=2.0",
+    "pillow>=12.2.0",
+    "tqdm>=4.66",
+]
+
+[project.optional-dependencies]
+imagegen = ["vllm==0.30.0", "vllm-omni==0.30.0"]
+
+# Development-only stacks; installed by `uv sync` (default groups), never by
+# `pip install robobench`.
+[dependency-groups]
+experiments = [
+    "accelerate>=1.12.0",
     "anthropic>=0.96.0",
     "einops>=0.8.2",
     "einops-exts>=0.0.4",
@@ -15,8 +30,8 @@ dependencies = [
     "jupyter>=1.1.1",
     "jupytext>=1.19.1",
     "matplotlib>=3.10.8",
+    "numpy>=1.26",
     "open-clip-torch>=3.3.0",
-    "openai>=2.32.0",
     "opencv-python>=4.13.0.92",
     "pip",
     "python-dotenv>=1.2.2",
@@ -26,3 +41,17 @@ dependencies = [
     "transformers",
     "wandb>=0.26.0",
 ]
+dev = ["pytest>=8"]
+
+[tool.uv]
+default-groups = ["experiments", "dev"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/robobench"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
