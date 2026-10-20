@@ -29,9 +29,8 @@ import pandas as pd
 from dotenv import load_dotenv
 from tqdm import tqdm
 
-# spot ships its bindings outside the virtualenv; RoboGuard and SPINE are
-# vendored under src/defenses/roboguard/RoboGuard (gitignored) rather than
-# installed.
+# spot's Python bindings come from the system install; RoboGuard and SPINE are
+# checked out under src/defenses/roboguard/RoboGuard.
 SPOT_SITE_PACKAGES = "/opt/homebrew/lib/python3.14/site-packages"
 HERE = Path(__file__).resolve().parent
 ROBOGUARD_DIR = HERE / "defenses/roboguard/RoboGuard"
@@ -53,7 +52,16 @@ from roboguard.synthesis import ControlSynthesis  # noqa: E402
 from spine.spine import SPINE, GraphHandler  # noqa: E402
 
 sys.path.insert(0, str(HERE))
-from main_attack_defense import ATTACKS, DATASETS, load_benign_frame, load_malicious_frame  # noqa: E402
+from build_artifacts import ROOT  # noqa: E402
+from main_attack_defense import (  # noqa: E402
+    ATTACKS,
+    BASES,
+    DEFAULT_ARTIFACTS,
+    available_artifacts,
+    load_benign_frame,
+    load_malicious_frame,
+    resume_cell,
+)
 
 # spot's automata construction and model checking touch library-global state.
 _spot_lock = Lock()
@@ -73,8 +81,17 @@ def get_grounding() -> ContextualGrounding:
         return _grounding
 
 
-def graph_path_for(image_filename: str) -> str:
-    return str(image_filename).replace(".png", ".json")
+SCENE_GRAPH_DIR = ROOT / "scene_graphs"
+
+
+def graph_path_for(source: str, basename: str) -> str:
+    """Scene-graph file for a frame: ``scene_graphs/<source>/<stem>.json``.
+
+    ``source`` is the base name or RJB category and ``basename`` the frame's
+    file name in the artifact. Keyed by stem, since re-encoded artifacts
+    carry a .jpg name for a .png frame.
+    """
+    return str(SCENE_GRAPH_DIR / source / f"{Path(basename).stem}.json")
 
 
 def get_aggregated_specs(graph_path: str, graph_text: str):
@@ -144,39 +161,42 @@ def roboguard_decision(prompt: str, graph_path: str):
 
 def run_cell(frame: pd.DataFrame, output_path: Path, workers: int,
              label: str) -> pd.DataFrame:
-    frame = frame.reset_index(drop=True).copy()
+    """Decide every row RoboGuard has not decided yet; resume by ``id``.
 
+    Rows carry ``decided`` rather than a response column: a decision may
+    legitimately be None (no verdict), so ``is_accepted`` alone cannot mark a
+    row as done.
+    """
+    frame = resume_cell(frame, output_path)
+    frame = frame.drop(columns=["raw_response", "judge_resolved"])
+    frame["decided"] = False
     if output_path.exists():
         existing = pd.read_pickle(output_path)
-        if len(existing) == len(frame) and "decided" in existing.columns:
-            frame["is_accepted"] = existing["is_accepted"].values
-            frame["decided"] = existing["decided"].values
-        else:
-            frame["is_accepted"] = None
-            frame["decided"] = False
-    else:
-        frame["is_accepted"] = None
-        frame["decided"] = False
+        if {"id", "decided"} <= set(existing.columns):
+            existing = existing.drop_duplicates("id").set_index("id")
+            hit = frame["id"].isin(existing.index)
+            frame.loc[hit, "decided"] = existing.loc[frame.loc[hit, "id"], "decided"].values
 
     todo = [index for index in frame.index if not frame.at[index, "decided"]]
+    if not todo:
+        return frame
 
-    if todo:
-        progress = tqdm(total=len(todo), desc=label, leave=False)
-        write_lock = Lock()
+    progress = tqdm(total=len(todo), desc=label, leave=False)
+    write_lock = Lock()
 
-        def work(index: int):
-            decision = roboguard_decision(
-                prompt=frame.at[index, "text"],
-                graph_path=graph_path_for(frame.at[index, "filename"]),
-            )
-            with write_lock:
-                frame.at[index, "is_accepted"] = decision
-                frame.at[index, "decided"] = True
-                progress.update(1)
+    def work(index: int):
+        decision = roboguard_decision(
+            prompt=frame.at[index, "text"],
+            graph_path=graph_path_for(frame.at[index, "source"], frame.at[index, "basename"]),
+        )
+        with write_lock:
+            frame.at[index, "is_accepted"] = decision
+            frame.at[index, "decided"] = True
+            progress.update(1)
 
-        with ThreadPoolExecutor(max_workers=workers) as pool:
-            list(pool.map(work, todo))
-        progress.close()
+    with ThreadPoolExecutor(max_workers=workers) as pool:
+        list(pool.map(work, todo))
+    progress.close()
 
     output_path.parent.mkdir(parents=True, exist_ok=True)
     frame.to_pickle(output_path)
@@ -185,6 +205,8 @@ def run_cell(frame: pd.DataFrame, output_path: Path, workers: int,
 
 def parse_args():
     parser = argparse.ArgumentParser()
+    parser.add_argument("--artifacts", default=DEFAULT_ARTIFACTS,
+                        help="local artifact build or Hugging Face repo id")
     parser.add_argument("--output-dir", default="workdir/attack_defense/roboguard")
     parser.add_argument("--dataset", action="append", dest="datasets")
     parser.add_argument("--workers", type=int, default=8)
@@ -200,10 +222,11 @@ def main():
         raise SystemExit("OPENAI_API_KEY is not set")
 
     output_dir = Path(args.output_dir)
-    datasets = args.datasets or list(DATASETS)
+    bases = args.datasets or BASES
+    available = available_artifacts(args.artifacts)
 
-    for dataset in datasets:
-        benign_frame = load_benign_frame(dataset)
+    for dataset in bases:
+        benign_frame, _ = load_benign_frame(dataset, args.artifacts)
         if args.limit is not None:
             benign_frame = benign_frame.head(args.limit)
         run_cell(
@@ -214,7 +237,10 @@ def main():
         )
 
         for attack in ATTACKS:
-            malicious_frame = load_malicious_frame(dataset, attack)
+            if f"{attack}_{dataset}" not in available:
+                print(f"no artifact {attack}_{dataset}; skipped")
+                continue
+            malicious_frame, _ = load_malicious_frame(dataset, attack, args.artifacts)
             if args.limit is not None:
                 malicious_frame = malicious_frame.head(args.limit)
             run_cell(

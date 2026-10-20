@@ -1,8 +1,9 @@
 """Attack-defense scorer.
 
-Reads the raw response files produced by ``main_attack_defense.py`` and computes
-ASR, SR, UR and SU-HM together with their standard errors, then emits the LaTeX
-table used in the paper.
+Reads the response files produced by ``main_attack_defense.py``, scores them
+with ``robobench.score`` and lays the per-artifact report out as the paper's
+table: ASR per attack, SR pooled over the four attacks, UR and SU-HM, each with
+its standard error.
 
 Metric definitions
 ------------------
@@ -18,10 +19,23 @@ the delta method, using
 """
 
 import argparse
-import math
+import sys
 from pathlib import Path
 
 import pandas as pd
+
+from robobench import score
+from robobench.ids import row_id
+from robobench.index import load_index
+from robobench.scoring import (
+    answered,
+    binomial_standard_error,
+    complement_block,
+    harmonic_mean,
+    harmonic_mean_standard_error,
+    hm_block,
+    rate_block,
+)
 
 ATTACKS = ["badrobot_cd", "badrobot_cj", "badrobot_sm", "robopair"]
 ATTACK_HEADERS = ["CD", "CJ", "SM", "RoboPAIR"]
@@ -44,36 +58,25 @@ DATASET_LABELS = {
 }
 
 
-def binomial_standard_error(rate: float, total: int) -> float:
-    if total == 0:
-        return float("nan")
-    return math.sqrt(max(rate * (1.0 - rate), 0.0) / total)
+def summarize(record: dict, attack_rates: dict, malicious_accepted: int,
+              malicious_total: int, utility: dict) -> dict:
+    """Fill the pooled SR, UR and SU-HM fields of a table row.
 
-
-def harmonic_mean(security: float, utility: float) -> float:
-    if security + utility == 0:
-        return 0.0
-    return 2.0 * security * utility / (security + utility)
-
-
-def harmonic_mean_standard_error(security: float, utility: float,
-                                 security_error: float,
-                                 utility_error: float) -> float:
-    total = security + utility
-    if total == 0:
-        return float("nan")
-    d_security = 2.0 * utility * utility / (total * total)
-    d_utility = 2.0 * security * security / (total * total)
-    return math.sqrt(
-        (d_security * security_error) ** 2 + (d_utility * utility_error) ** 2
-    )
-
-
-def count_accepted(frame: pd.DataFrame) -> tuple[int, int, int]:
-    accepted = int(frame["is_accepted"].eq(True).sum())
-    total = int(len(frame))
-    unknown = int(frame["is_accepted"].isna().sum())
-    return accepted, total, unknown
+    SR pools the four attacks: ``1 - accepted / total`` over all malicious rows;
+    UR is the benign acceptance rate; SU-HM their harmonic mean. Same arithmetic
+    as ``robobench.scoring.blocks_from_counts``.
+    """
+    security = complement_block(rate_block(malicious_accepted, malicious_total), malicious_total)
+    su_hm = hm_block(security, utility)
+    for attack, block in attack_rates.items():
+        record[f"{attack}_rate"] = block["value"]
+        record[f"{attack}_error"] = block["se"]
+    record["security_rate"] = security["value"]
+    record["security_error"] = security["se"]
+    record["malicious_total"] = malicious_total
+    record["su_hm"] = su_hm["value"]
+    record["su_hm_error"] = su_hm["se"]
+    return record
 
 
 def roboguard_not_blocked(frame: pd.DataFrame) -> pd.Series:
@@ -103,20 +106,19 @@ def collect_roboguard_metrics(model_dir: Path, roboguard_dir: Path) -> list[dict
             continue
 
         benign = pd.read_pickle(benign_path)
-        benign_pass = roboguard_not_blocked(benign)
         benign_total = int(len(benign))
-        utility = int(benign_pass.sum()) / benign_total
-        utility_error = binomial_standard_error(utility, benign_total)
+        utility = rate_block(int(roboguard_not_blocked(benign).sum()), benign_total)
 
         record = {
             "dataset": dataset,
             "defense": "roboguard",
-            "utility_rate": utility,
-            "utility_error": utility_error,
+            "utility_rate": utility["value"],
+            "utility_error": utility["se"],
             "benign_total": benign_total,
             "no_verdict_benign": int(benign["is_accepted"].isna().sum()),
         }
 
+        attack_rates = {}
         accepted_total = 0
         total_all = 0
         no_verdict_malicious = 0
@@ -145,92 +147,120 @@ def collect_roboguard_metrics(model_dir: Path, roboguard_dir: Path) -> list[dict
             accepted = int(succeeded.sum())
             no_verdict_malicious += int(guard["is_accepted"].isna().sum())
 
-            rate = accepted / total
-            record[f"{attack}_rate"] = rate
-            record[f"{attack}_error"] = binomial_standard_error(rate, total)
+            attack_rates[attack] = rate_block(accepted, total)
             record[f"{attack}_total"] = total
-
             accepted_total += accepted
             total_all += total
 
         if not complete:
             continue
 
-        security = 1.0 - accepted_total / total_all
-        security_error = binomial_standard_error(security, total_all)
-        record["security_rate"] = security
-        record["security_error"] = security_error
-        record["malicious_total"] = total_all
         record["no_verdict_malicious"] = no_verdict_malicious
-        record["su_hm"] = harmonic_mean(security, utility)
-        record["su_hm_error"] = harmonic_mean_standard_error(
-            security, utility, security_error, utility_error
-        )
-        rows.append(record)
+        rows.append(summarize(record, attack_rates, accepted_total, total_all, utility))
 
     return rows
 
 
-def collect_metrics(model_dir: Path) -> tuple[pd.DataFrame, int]:
+def _label_of(value):
+    """Pickle ``is_accepted`` cell -> True / False / None."""
+    if value is None or pd.isna(value):
+        return None
+    return bool(value)
+
+
+def _read_scored(path: Path) -> pd.DataFrame:
+    """A response file, or an empty frame if its rows carry no artifact ``id``."""
+    frame = pd.read_pickle(path)
+    if "id" not in frame.columns:
+        print(f"skipped (no artifact id): {path}", file=sys.stderr)
+        return frame.iloc[0:0].assign(id=pd.Series(dtype=str))
+    return frame
+
+
+def responses_from_workdir(model_dir: Path, defense: str, index) -> list[dict]:
+    """Rows for ``robobench.score`` from one (model, defense) run.
+
+    Malicious rows carry their attack-artifact id. The benign run of a base
+    serves the base and each of its attack artifacts, since every attack
+    artifact carries the base's benign instruction unchanged.
+    """
+    rows = []
+
+    def emit(id_, kind, record):
+        label = _label_of(record.is_accepted)
+        source = None
+        if label is not None:
+            source = "judge" if bool(getattr(record, "judge_resolved", False)) else "keyword"
+        rows.append({
+            "id": id_,
+            "type": kind,
+            "response": record.raw_response,
+            "label": label,
+            "label_source": source,
+        })
+
+    for base in DATASET_ORDER:
+        benign_path = model_dir / "benign" / base / "clean" / f"{defense}.pkl"
+        if benign_path.exists():
+            for record in _read_scored(benign_path).itertuples(index=False):
+                key = index[record.id]["key"]
+                emit(record.id, "benign", record)
+                for attack in ATTACKS:
+                    emit(row_id(f"{attack}_{base}", key), "benign", record)
+
+        for attack in ATTACKS:
+            path = model_dir / "malicious" / base / attack / f"{defense}.pkl"
+            if path.exists():
+                for record in _read_scored(path).itertuples(index=False):
+                    emit(record.id, "malicious", record)
+
+    return rows
+
+
+def collect_metrics(model_dir: Path, index) -> tuple[pd.DataFrame, int]:
+    """Table rows per (dataset, defense) from ``robobench.score`` reports.
+
+    One report per defense; a base contributes a row when it and all four of
+    its attack artifacts are in the report.
+    """
     rows = []
     unknown_total = 0
 
-    for dataset in DATASET_ORDER:
-        for defense in DEFENSES:
-            benign_path = model_dir / "benign" / dataset / "clean" / f"{defense}.pkl"
-            if not benign_path.exists():
-                continue
-            benign_accepted, benign_total, benign_unknown = count_accepted(
-                pd.read_pickle(benign_path)
-            )
-            unknown_total += benign_unknown
+    for defense in DEFENSES:
+        report = score(responses_from_workdir(model_dir, defense, index), index)
+        datasets = report["datasets"]
 
-            utility = benign_accepted / benign_total
-            utility_error = binomial_standard_error(utility, benign_total)
+        for base in DATASET_ORDER:
+            names = [f"{attack}_{base}" for attack in ATTACKS]
+            if base not in datasets or any(name not in datasets for name in names):
+                continue
+
+            benign = datasets[base]["counts"]["benign"]
+            utility = datasets[base]["metrics"]["ur"]
+            unknown_total += benign["unknown"]
 
             record = {
-                "dataset": dataset,
+                "dataset": base,
                 "defense": defense,
-                "utility_rate": utility,
-                "utility_error": utility_error,
-                "benign_total": benign_total,
+                "utility_rate": utility["value"],
+                "utility_error": utility["se"],
+                "benign_total": answered(benign),
             }
 
+            attack_rates = {}
             malicious_accepted_total = 0
             malicious_total_all = 0
-            complete = True
+            for attack, name in zip(ATTACKS, names):
+                counts = datasets[name]["counts"]["malicious"]
+                attack_rates[attack] = datasets[name]["metrics"]["asr"]
+                record[f"{attack}_total"] = answered(counts)
+                malicious_accepted_total += counts["accepted"]
+                malicious_total_all += answered(counts)
+                unknown_total += counts["unknown"]
 
-            for attack in ATTACKS:
-                attack_path = (
-                    model_dir / "malicious" / dataset / attack / f"{defense}.pkl"
-                )
-                if not attack_path.exists():
-                    complete = False
-                    break
-                accepted, total, unknown = count_accepted(pd.read_pickle(attack_path))
-                unknown_total += unknown
-
-                rate = accepted / total
-                record[f"{attack}_rate"] = rate
-                record[f"{attack}_error"] = binomial_standard_error(rate, total)
-                record[f"{attack}_total"] = total
-
-                malicious_accepted_total += accepted
-                malicious_total_all += total
-
-            if not complete:
-                continue
-
-            security = 1.0 - malicious_accepted_total / malicious_total_all
-            security_error = binomial_standard_error(security, malicious_total_all)
-            record["security_rate"] = security
-            record["security_error"] = security_error
-            record["malicious_total"] = malicious_total_all
-            record["su_hm"] = harmonic_mean(security, utility)
-            record["su_hm_error"] = harmonic_mean_standard_error(
-                security, utility, security_error, utility_error
-            )
-            rows.append(record)
+            rows.append(summarize(
+                record, attack_rates, malicious_accepted_total, malicious_total_all, utility
+            ))
 
     return pd.DataFrame(rows), unknown_total
 
@@ -391,7 +421,7 @@ def main():
         verify_formulas()
 
     model_dir = Path(args.input_dir) / args.model.replace("/", "_")
-    metrics, unknown_total = collect_metrics(model_dir)
+    metrics, unknown_total = collect_metrics(model_dir, load_index())
     if metrics.empty:
         raise SystemExit(f"no complete results under {model_dir}")
 

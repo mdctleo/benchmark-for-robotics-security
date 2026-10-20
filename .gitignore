@@ -12,3 +12,12 @@ RoboBench/slides/slides.pdf
 # external RoboPAIR checkout lives here; only the README is tracked
 RoboBench/src/attacks/robopair/*
 !RoboBench/src/attacks/robopair/README.md
+
+# local HF-layout artifact build (see src/build_artifacts.py)
+RoboBench/artifacts/
+
+# raw frames are not versioned here; they ship inside the artifacts on
+# Hugging Face and the originals stay on disk for src/build_artifacts.py
+RoboBench/data/**/*.png
+RoboBench/data/**/*.jpg
+RoboBench/data/**/*.jpeg
