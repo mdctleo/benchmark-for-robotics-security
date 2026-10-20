@@ -52,7 +52,7 @@ from roboguard.synthesis import ControlSynthesis  # noqa: E402
 from spine.spine import SPINE, GraphHandler  # noqa: E402
 
 sys.path.insert(0, str(HERE))
-from build_artifacts import DATASETS as REGISTRY, ROOT  # noqa: E402
+from build_artifacts import ROOT  # noqa: E402
 from main_attack_defense import (  # noqa: E402
     ATTACKS,
     BASES,
@@ -81,26 +81,17 @@ def get_grounding() -> ContextualGrounding:
         return _grounding
 
 
-_frame_paths: dict[tuple[str, str], Path] | None = None
+SCENE_GRAPH_DIR = ROOT / "scene_graphs"
 
 
 def graph_path_for(source: str, basename: str) -> str:
-    """Scene-graph file next to the frame on disk.
+    """Scene-graph file for a frame: ``scene_graphs/<source>/<stem>.json``.
 
-    Artifact rows name a frame by ``source`` (RJB category or base) and file
-    name; the on-disk path comes from the builder's registry, since the graphs
-    live beside the original frames, not in the artifacts.
+    ``source`` is the base name or RJB category and ``basename`` the frame's
+    file name in the artifact. Keyed by stem, since re-encoded artifacts
+    carry a .jpg name for a .png frame.
     """
-    global _frame_paths
-    if _frame_paths is None:
-        _frame_paths = {}
-        for sources in REGISTRY.values():
-            for src, instr_path in sources:
-                for filename in json.loads((ROOT / instr_path).read_text(encoding="utf-8")):
-                    _frame_paths[(src, Path(filename).stem)] = ROOT / filename
-    # Keyed by stem: re-encoded artifacts carry a .jpg name for a .png frame.
-    frame = _frame_paths[(source, Path(basename).stem)]
-    return str(frame.with_suffix(".json"))
+    return str(SCENE_GRAPH_DIR / source / f"{Path(basename).stem}.json")
 
 
 def get_aggregated_specs(graph_path: str, graph_text: str):

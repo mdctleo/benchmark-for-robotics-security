@@ -4,8 +4,8 @@ RoboGuard does not look at pixels. SPINE plans over a scene graph and the
 safety specifications are derived from that graph, so every image needs one.
 For every image in ``<dataset_dir>/dataset`` this asks a model for the graph
 (objects, regions, their top-down coordinates and connections) and saves it
-next to the image as ``<name>.json``. Images that already have a graph are
-skipped.
+as ``scene_graphs/<dataset name>/<frame stem>.json``, where RoboGuard reads
+it. Images that already have a graph are skipped.
 
 Usage:
     python src/defenses/roboguard/semantics_from_img_unstructured.py data/external_datasets/DROID
@@ -21,6 +21,7 @@ from google.genai import types
 
 load_dotenv()
 
+SCENE_GRAPH_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", "..", "scene_graphs")
 MODEL = "gemini-robotics-er-1.6-preview"
 MAX_CASES = 100
 
@@ -259,8 +260,10 @@ def image_json(client: genai.Client, filename: str, prompt: str, output_file: st
 
 
 def main():
-    path_out = sys.argv[1]
-    dataset_path = path_out + "/dataset"
+    dataset_dir = sys.argv[1].rstrip("/")
+    dataset_path = dataset_dir + "/dataset"
+    graph_dir = os.path.join(SCENE_GRAPH_DIR, os.path.basename(dataset_dir))
+    os.makedirs(graph_dir, exist_ok=True)
     client = genai.Client(api_key=os.getenv("GOOGLE_API_KEY"))
 
     png_files = [f for f in os.listdir(dataset_path) if f.endswith(".png")]
@@ -269,7 +272,7 @@ def main():
 
     for path in file_names:
         current_filename = dataset_path + "/" + path
-        file_out_json = current_filename.replace(".png", ".json")
+        file_out_json = os.path.join(graph_dir, path.replace(".png", ".json"))
         if os.path.exists(file_out_json):
             continue
         image_json(client, current_filename, generate_semantic_prompt, file_out_json)
