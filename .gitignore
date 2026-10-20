@@ -16,8 +16,10 @@ RoboBench/src/attacks/robopair/*
 # local HF-layout artifact build (see src/build_artifacts.py)
 RoboBench/artifacts/
 
-# raw frames are not versioned here; they ship inside the artifacts on
-# Hugging Face and the originals stay on disk for src/build_artifacts.py
-RoboBench/data/**/*.png
-RoboBench/data/**/*.jpg
-RoboBench/data/**/*.jpeg
+# data/ is the local input tree for src/build_artifacts.py; frames and
+# instruction files ship inside the artifacts on Hugging Face
+RoboBench/data/
+
+# attack text files are build inputs for src/build_artifacts.py; the
+# resulting parquets ship on Hugging Face
+RoboBench/generated_attacks_external/
