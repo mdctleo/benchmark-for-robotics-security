@@ -1,13 +1,13 @@
 """Load one artifact.
 
-    scenes = robobench.load_scenes("robopair_DROID")
+    scenes = robobench.load_scenes("robopair_DROID", "mdctleo/RoboJailBench")
     scenes.rows      # sequence of dicts, keys as in the schema; images are PIL
     scenes[id]       # one row by id
     scenes.name      # the artifact name
 
 Text columns are read when the artifact is loaded; an image is decoded only
-when its row is accessed. ``repo_or_path`` is the Hugging Face repo id or a
-local directory in the same layout (the output of ``build_artifacts.py``).
+when its row is accessed. ``repo`` is the Hugging Face dataset the artifacts
+are published in; ``datasets`` downloads it once and reads its cache after.
 """
 
 from datasets import Image, load_dataset
@@ -16,10 +16,6 @@ try:  # datasets >= 4 names the list feature ``List``; older versions ``Sequence
     from datasets import List as ListFeature
 except ImportError:  # pragma: no cover
     from datasets import Sequence as ListFeature
-
-# Set to the hub repo id at upload time.
-DEFAULT_REPO = "robobench/RoboBench"
-
 
 class _Rows:
     """Sequence view over the dataset; decodes images per accessed row."""
@@ -65,5 +61,5 @@ class Scenes:
         return self._raw[self._position[id_]]["images"]
 
 
-def load_scenes(name: str, repo_or_path: str = DEFAULT_REPO) -> Scenes:
-    return Scenes(name, load_dataset(repo_or_path, name, split="train"))
+def load_scenes(name: str, repo: str) -> Scenes:
+    return Scenes(name, load_dataset(repo, name, split="train"))
