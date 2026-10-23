@@ -91,12 +91,25 @@ def test_roboguard_generates_and_saves_missing_graph(guard, monkeypatch, tmp_pat
     generated = {"current_location": "ground_1", "objects": [{"name": "bowl_1"}], "regions": []}
     calls = []
     monkeypatch.setattr(roboguard_module, "generate_scene_graph",
-                        lambda image: calls.append(image) or generated)
+                        lambda images: calls.append(images) or generated)
 
     assert rg.resolve_graph(key="DROID/frame_1.png", images=[b"\x89PNG"]) == generated
     assert json.loads((tmp_path / "DROID" / "frame_1.json").read_text()) == generated
     assert rg.resolve_graph(images=[b"\x89PNG"]) == generated   # cached by image hash
-    assert len(calls) == 1
+    assert calls == [[b"\x89PNG"]]
+
+
+def test_roboguard_generates_from_every_frame(guard, monkeypatch):
+    rg, _ = guard
+    calls = []
+    monkeypatch.setattr(roboguard_module, "generate_scene_graph",
+                        lambda images: calls.append(images) or {"regions": []})
+
+    frames = [b"\x89PNG1", b"\x89PNG2"]
+    rg.resolve_graph(images=frames)
+    rg.resolve_graph(images=frames)                 # same sequence: cached
+    rg.resolve_graph(images=[b"\x89PNG1"])         # one frame of it: a different scene
+    assert calls == [frames, [b"\x89PNG1"]]
 
 
 def test_roboguard_respond_returns_verdict(guard, monkeypatch):
@@ -159,3 +172,41 @@ def test_roboguard_model_reaches_grounding_and_planner(monkeypatch, tmp_path):
 
     assert outcome == Outcome(accepted=True)
     assert seen == {"grounding": "gpt-5.4-mini", "planner": "gpt-5.4-mini"}
+
+
+# -- scene-graph generator --------------------------------------------------
+
+class _GraphClient:
+    """Records the request and answers with a fixed graph."""
+
+    def __init__(self):
+        self.requests = []
+        self.models = SimpleNamespace(generate_content=self._generate)
+
+    def _generate(self, **kwargs):
+        self.requests.append(kwargs)
+        return SimpleNamespace(text='{"regions": [], "objects": []}')
+
+
+@pytest.mark.parametrize("count", [1, 3])
+def test_generate_scene_graph_sends_one_part_per_frame(count):
+    from robobench.defenses.roboguard import scene_graph
+
+    pytest.importorskip("google.genai")
+    client = _GraphClient()
+    frames = [b"\x89PNG\r\n\x1a\n" + bytes([i]) for i in range(count)]
+
+    assert scene_graph.generate_scene_graph(frames, client=client) == {"regions": [], "objects": []}
+    contents = client.requests[0]["contents"]
+    assert len(contents) == count + 1
+    assert all(part.inline_data.data == raw for part, raw in zip(contents, frames))
+    prompt = contents[-1]
+    assert prompt.startswith(scene_graph.generate_semantic_prompt)
+    assert (scene_graph.sequence_note in prompt) == (count > 1)
+
+
+def test_generate_scene_graph_rejects_no_frames():
+    from robobench.defenses.roboguard import scene_graph
+
+    with pytest.raises(ValueError):
+        scene_graph.generate_scene_graph([], client=_GraphClient())

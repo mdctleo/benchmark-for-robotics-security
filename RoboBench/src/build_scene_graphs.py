@@ -1,13 +1,14 @@
 """Build the scene graphs RoboGuard needs.
 
 RoboGuard does not look at pixels. SPINE plans over a scene graph and the
-safety specifications are derived from that graph, so every frame needs one.
-For every frame of the vanilla artifacts this asks a model for the graph
-(``robobench.defenses.roboguard.scene_graph.generate_scene_graph``) and saves
-it as ``<scene-graphs>/<source>/<frame stem>.json``, where the runner's
-RoboGuard reads it. Frames that already have a graph are skipped.
+safety specifications are derived from that graph, so every scene needs one.
+For every scene of the vanilla artifacts this asks a model for the graph
+(``robobench.defenses.roboguard.scene_graph.generate_scene_graph``), passing
+all of the scene's frames, and saves it as
+``<scene-graphs>/<source>/<stem of the first frame>.json``, where the runner's
+RoboGuard reads it. Scenes that already have a graph are skipped.
 
-Frames come from the Hugging Face dataset ``main_attack_defense.ARTIFACTS``;
+Scenes come from the Hugging Face dataset ``main_attack_defense.ARTIFACTS``;
 ``source`` and ``basename`` are the runner's, so the graphs land where it looks.
 
 Usage:
@@ -26,10 +27,10 @@ from main_attack_defense import ARTIFACTS, BASES, scene_frame
 from robobench.defenses.roboguard.scene_graph import generate_scene_graph, make_client
 
 
-def build_graph(client, image: bytes, output: Path) -> None:
+def build_graph(client, images: list[bytes], output: Path) -> None:
     while True:
         try:
-            graph = generate_scene_graph(image, client=client)
+            graph = generate_scene_graph(images, client=client)
             break
         except Exception as e:  # noqa: BLE001 - retry on any API failure
             print(f"failed, retrying: {e}")
@@ -56,7 +57,7 @@ def main():
             output = graph_dir / row.source / (Path(row.basename).stem + ".json")
             if output.exists():
                 continue
-            build_graph(client, scenes.image_bytes(row.id)[0]["bytes"], output)
+            build_graph(client, [image["bytes"] for image in scenes.image_bytes(row.id)], output)
 
     print(f"scene graphs under {graph_dir}")
 

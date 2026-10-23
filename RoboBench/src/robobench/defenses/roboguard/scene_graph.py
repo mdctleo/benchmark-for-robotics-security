@@ -1,9 +1,11 @@
-"""Scene graphs for RoboGuard, generated from an image.
+"""Scene graphs for RoboGuard, generated from a scene's images.
 
 RoboGuard does not look at pixels. SPINE plans over a scene graph and the
-safety specifications are derived from that graph, so every image needs one.
+safety specifications are derived from that graph, so every scene needs one.
 ``generate_scene_graph`` asks a model for the graph (objects, regions, their
-top-down coordinates and connections) and returns it as a dict.
+top-down coordinates and connections) and returns it as a dict. A scene is
+one or more frames; all of them go into the one request, and the graph
+describes the scene they show together.
 """
 
 import json
@@ -220,22 +222,28 @@ generate_semantic_prompt = ("generate a json file of the semantic relationships 
 "IMPORTANT: current_location MUST APPEAR IN THE regions section. In the example, ground_1 appears in the"
 "list of regions. MUST ENSURE THESE RULES")
 
+sequence_note = (" The images are frames of the same scene; produce one json describing that scene,"
+" including everything seen in any of the frames.")
+
 
 def make_client():
     from google import genai
     return genai.Client(api_key=os.getenv("GOOGLE_API_KEY"))
 
 
-def generate_scene_graph(image_bytes: bytes, client=None, model: str = MODEL) -> dict:
-    """One model call: the image plus the prompt, constrained to the schema."""
+def generate_scene_graph(images: list[bytes], client=None, model: str = MODEL) -> dict:
+    """One model call: every frame of the scene, then the prompt, constrained to the schema."""
     from google.genai import types
 
+    if not images:
+        raise ValueError("generate_scene_graph needs at least one image")
+    prompt = generate_semantic_prompt + (sequence_note if len(images) > 1 else "")
     client = client if client is not None else make_client()
     response = client.models.generate_content(
         model=model,
         contents=[
-            types.Part.from_bytes(data=image_bytes, mime_type=detect_media_type(image_bytes)),
-            generate_semantic_prompt,
+            *(types.Part.from_bytes(data=raw, mime_type=detect_media_type(raw)) for raw in images),
+            prompt,
         ],
         config={
             "response_mime_type": "application/json",

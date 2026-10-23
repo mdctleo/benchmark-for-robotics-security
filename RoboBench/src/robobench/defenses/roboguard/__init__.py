@@ -8,7 +8,7 @@ model, so its verdict is the outcome: True admits the plan, False blocks it,
 None means no usable verdict (no plan, or synthesis failed).
 
 The scene graph can be passed directly, looked up under ``graph_dir`` by the
-frame's key, or generated from the image (see :mod:`.scene_graph`). ``model``
+frame's key, or generated from the scene's images (see :mod:`.scene_graph`). ``model``
 is the OpenAI model behind both the planner and the specification generator;
 the default is the one used in the RoboBench experiments.
 
@@ -98,11 +98,11 @@ class RoboGuard:
         return self.graph_dir / source / f"{Path(basename).stem}.json"
 
     def _generate(self, images: list[bytes]) -> dict:
-        digest = hashlib.sha256(images[0]).hexdigest()
+        digest = hashlib.sha256(b"".join(images)).hexdigest()
         with self._graph_lock:
             graph = self._graph_cache.get(digest)
         if graph is None:
-            graph = generate_scene_graph(images[0])
+            graph = generate_scene_graph(images)
             with self._graph_lock:
                 self._graph_cache[digest] = graph
         return graph
