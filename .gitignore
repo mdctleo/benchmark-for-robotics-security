@@ -5,14 +5,6 @@ __pycache__/
 wandb
 .devcontainer/
 
-# external RoboGuard + SPINE checkout
-RoboBench/src/defenses/roboguard/RoboGuard/
-RoboBench/slides/slides.pdf
-
-# external RoboPAIR checkout lives here; only the README is tracked
-RoboBench/src/attacks/robopair/*
-!RoboBench/src/attacks/robopair/README.md
-
 # local HF-layout artifact build (see src/build_artifacts.py)
 RoboBench/artifacts/
 
@@ -20,6 +12,6 @@ RoboBench/artifacts/
 # instruction files ship inside the artifacts on Hugging Face
 RoboBench/data/
 
-# attack text files are build inputs for src/build_artifacts.py; the
-# resulting parquets ship on Hugging Face
-RoboBench/generated_attacks_external/
+# attack trees written by src/build_attacks.py, reviewed and then built
+# into artifacts by src/build_artifacts.py; the parquets ship on Hugging Face
+RoboBench/generated_attacks/

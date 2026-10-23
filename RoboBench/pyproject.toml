@@ -14,6 +14,14 @@ dependencies = [
 ]
 
 [project.optional-dependencies]
+# Claude target models (robobench.models.AnthropicModel).
+anthropic = ["anthropic>=0.96.0"]
+# Gemini target models (robobench.models.GeminiModel).
+gemini = ["google-genai>=1.73.1"]
+# RoboGuard defense; spot itself is a system install (src/robobench/_vendor/README.md).
+roboguard = ["ipython", "networkx", "numpy", "scipy", "tiktoken"]
+# Scene-graph generation for RoboGuard (robobench.defenses.roboguard.scene_graph).
+scenegraph = ["google-genai>=1.73.1"]
 imagegen = ["vllm==0.30.0", "vllm-omni==0.30.0"]
 
 # Development-only stacks; installed by `uv sync` (default groups), never by

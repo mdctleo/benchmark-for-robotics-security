@@ -1,6 +1,6 @@
 """RoboBench downstream evaluation API.
 
-    scenes = robobench.load_scenes("robopair_DROID")
+    scenes = robobench.load_scenes("robopair_DROID", "mdctleo/RoboJailBench")
     labeled = robobench.label(responses)
     report = robobench.score(labeled)
 """
