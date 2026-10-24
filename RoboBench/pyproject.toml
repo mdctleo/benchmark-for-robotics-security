@@ -23,6 +23,10 @@ roboguard = ["ipython", "networkx", "numpy", "scipy", "tiktoken"]
 # Scene-graph generation for RoboGuard (robobench.defenses.roboguard.scene_graph).
 scenegraph = ["google-genai>=1.73.1"]
 imagegen = ["vllm==0.30.0", "vllm-omni==0.30.0"]
+# Shawshank visual attack (robobench.attacks.shawshank). cv2 + numpy for the
+# overlay; gensim for the word2vec example ranking (the 1.6 GB GoogleNews binary
+# is a separate download).
+shawshank = ["opencv-python-headless>=4.13.0.92", "numpy>=1.26", "gensim>=4.3"]
 
 # Development-only stacks; installed by `uv sync` (default groups), never by
 # `pip install robobench`.
@@ -40,7 +44,7 @@ experiments = [
     "matplotlib>=3.10.8",
     "numpy>=1.26",
     "open-clip-torch>=3.3.0",
-    "opencv-python>=4.13.0.92",
+    "opencv-python-headless>=4.13.0.92",
     "pip",
     "python-dotenv>=1.2.2",
     "scipy>=1.17.1",

@@ -63,7 +63,7 @@ PACKAGE_INDEX = ROOT / "src/robobench/index.json"
 
 # Bases whose frames are re-encoded to JPEG when written. Only data that no
 # model has been queried on yet may go here.
-REENCODE_JPEG = {"RJB-Instructions"}
+REENCODE_JPEG = set()
 # JPEG settings for re-encoded frames. Every frame must stay at or above
 # PSNR_FLOOR_DB against its original; the build aborts otherwise.
 JPEG_QUALITY = 97

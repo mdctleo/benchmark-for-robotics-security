@@ -1300,6 +1300,24 @@ wheels = [
 ]
 
 [[package]]
+name = "gensim"
+version = "4.4.0"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "numpy" },
+    { name = "scipy" },
+    { name = "smart-open" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/1a/80/fe9d2e1ace968041814dbcfce4e8499a643a36c41267fa4b6c4f54cce420/gensim-4.4.0.tar.gz", hash = "sha256:a3f5b626da5518e79a479140361c663089fe7998df8ba52d56e1ded71ac5bdf5", size = 23260095, upload-time = "2025-10-18T02:06:45.962Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/80/6c/4e522973e07ca491d33cc7829996b9e8c8663a16b3f87f580cbdc2732d97/gensim-4.4.0-cp313-cp313-macosx_10_13_x86_64.whl", hash = "sha256:b8961b7a2bb5190b46bc6cd26c29d5bfea22f99123ed5f506ebd0aaf65996758", size = 24460186, upload-time = "2025-10-18T01:59:01.904Z" },
+    { url = "https://files.pythonhosted.org/packages/cc/6a/593107ee98331128ed20e5d074865587558a0766659be787a40550ab66df/gensim-4.4.0-cp313-cp313-macosx_11_0_arm64.whl", hash = "sha256:59d0d29099a76dd97d4563e002f3488a43e51f99d46387025da38007ebfeeff9", size = 24448880, upload-time = "2025-10-18T01:59:46.796Z" },
+    { url = "https://files.pythonhosted.org/packages/d9/ef/1675e1a3a04f7d0293a21082f57f4a6a8bf0a9e387da58b71db648b663de/gensim-4.4.0-cp313-cp313-manylinux_2_24_aarch64.manylinux_2_28_aarch64.whl", hash = "sha256:3bec3e6a1ecaa6439b21a3e42ceb0ca67ffabc114b646f89b1aab5fe69a39ffc", size = 27736031, upload-time = "2025-10-18T02:00:36.791Z" },
+    { url = "https://files.pythonhosted.org/packages/b3/b9/ee43ef9c391857232603a9ee281e9c5953f7922d70c98c2296a037d1c0b7/gensim-4.4.0-cp313-cp313-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl", hash = "sha256:9033b18920b7774e68eafacdbd87252ffa29382ec465ddb88bd036e00fc86365", size = 27826360, upload-time = "2025-10-18T02:01:26.166Z" },
+    { url = "https://files.pythonhosted.org/packages/82/f3/4f8f4d478ce69af812c6002b513c5ad3242976923d172dbe5814903be22f/gensim-4.4.0-cp313-cp313-win_amd64.whl", hash = "sha256:6ecb7aed37fb92d24e15a6adbabe693074003263db0fd9ce97c9f4234a9edc1b", size = 24396932, upload-time = "2025-10-18T02:02:11.568Z" },
+]
+
+[[package]]
 name = "gguf"
 version = "0.19.0"
 source = { registry = "https://pypi.org/simple" }
@@ -4600,6 +4618,11 @@ roboguard = [
 scenegraph = [
     { name = "google-genai" },
 ]
+shawshank = [
+    { name = "gensim" },
+    { name = "numpy" },
+    { name = "opencv-python-headless" },
+]
 
 [package.dev-dependencies]
 dev = [
@@ -4618,7 +4641,7 @@ experiments = [
     { name = "matplotlib" },
     { name = "numpy" },
     { name = "open-clip-torch" },
-    { name = "opencv-python" },
+    { name = "opencv-python-headless" },
     { name = "pip" },
     { name = "python-dotenv" },
     { name = "scipy" },
@@ -4632,12 +4655,15 @@ experiments = [
 requires-dist = [
     { name = "anthropic", marker = "extra == 'anthropic'", specifier = ">=0.96.0" },
     { name = "datasets", specifier = ">=5.1.0" },
+    { name = "gensim", marker = "extra == 'shawshank'", specifier = ">=4.3" },
     { name = "google-genai", marker = "extra == 'gemini'", specifier = ">=1.73.1" },
     { name = "google-genai", marker = "extra == 'scenegraph'", specifier = ">=1.73.1" },
     { name = "ipython", marker = "extra == 'roboguard'" },
     { name = "networkx", marker = "extra == 'roboguard'" },
     { name = "numpy", marker = "extra == 'roboguard'" },
+    { name = "numpy", marker = "extra == 'shawshank'", specifier = ">=1.26" },
     { name = "openai", specifier = ">=2.32.0" },
+    { name = "opencv-python-headless", marker = "extra == 'shawshank'", specifier = ">=4.13.0.92" },
     { name = "pandas", specifier = ">=2.0" },
     { name = "pillow", specifier = ">=12.2.0" },
     { name = "scipy", marker = "extra == 'roboguard'" },
@@ -4646,7 +4672,7 @@ requires-dist = [
     { name = "vllm", marker = "extra == 'imagegen'", specifier = "==0.30.0" },
     { name = "vllm-omni", marker = "extra == 'imagegen'", specifier = "==0.30.0" },
 ]
-provides-extras = ["anthropic", "gemini", "roboguard", "scenegraph", "imagegen"]
+provides-extras = ["anthropic", "gemini", "roboguard", "scenegraph", "imagegen", "shawshank"]
 
 [package.metadata.requires-dev]
 dev = [{ name = "pytest", specifier = ">=8" }]
@@ -4663,7 +4689,7 @@ experiments = [
     { name = "matplotlib", specifier = ">=3.10.8" },
     { name = "numpy", specifier = ">=1.26" },
     { name = "open-clip-torch", specifier = ">=3.3.0" },
-    { name = "opencv-python", specifier = ">=4.13.0.92" },
+    { name = "opencv-python-headless", specifier = ">=4.13.0.92" },
     { name = "pip" },
     { name = "python-dotenv", specifier = ">=1.2.2" },
     { name = "scipy", specifier = ">=1.17.1" },
@@ -4997,6 +5023,18 @@ source = { registry = "https://pypi.org/simple" }
 sdist = { url = "https://files.pythonhosted.org/packages/94/e7/b2c673351809dca68a0e064b6af791aa332cf192da575fd474ed7d6f16a2/six-1.17.0.tar.gz", hash = "sha256:ff70335d468e7eb6ec65b95b99d3a2836546063f63acc5171de367e834932a81", size = 34031, upload-time = "2024-12-04T17:35:28.174Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/b7/ce/149a00dd41f10bc29e5921b496af8b574d8413afcd5e30dfa0ed46c2cc5e/six-1.17.0-py2.py3-none-any.whl", hash = "sha256:4721f391ed90541fddacab5acf947aa0d3dc7d27b2e1e8eda2be8970586c3274", size = 11050, upload-time = "2024-12-04T17:35:26.475Z" },
+]
+
+[[package]]
+name = "smart-open"
+version = "8.0.4"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "wrapt" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/68/e3/1fb5c310b1f55d99ba51cb81b8f1a0e4b5f89be44de69405aeeb12814778/smart_open-8.0.4.tar.gz", hash = "sha256:8cff8321f0b0ae4bd9cb0cd0c507c135ad6aa980171248fca520b645fd6ff717", size = 62316, upload-time = "2026-10-17T19:34:45.106Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/4e/6d/3a95e71d597ee03b3ddcf0ff154f2841b84d8724df2bb35a350493793ae9/smart_open-8.0.4-py3-none-any.whl", hash = "sha256:8a3a67679942fa40d1a93ed3aea37619b4b4ec5458f1d5a9228dfc301db11b4c", size = 73881, upload-time = "2026-10-17T19:34:43.624Z" },
 ]
 
 [[package]]
@@ -5901,6 +5939,26 @@ source = { registry = "https://pypi.org/simple" }
 sdist = { url = "https://files.pythonhosted.org/packages/b3/8f/705086c9d734d3b663af0e9bb3d4de6578d08f46b1b101c2442fd9aecaa2/win32_setctime-1.2.0.tar.gz", hash = "sha256:ae1fdf948f5640aae05c511ade119313fb6a30d7eabe25fef9764dca5873c4c0", size = 4867, upload-time = "2024-12-07T15:28:28.314Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/e1/07/c6fe3ad3e685340704d314d765b7912993bcb8dc198f0e7a89382d37974b/win32_setctime-1.2.0-py3-none-any.whl", hash = "sha256:95d644c4e708aba81dc3704a116d8cbc974d70b3bdb8be1d150e36be6e9d1390", size = 4083, upload-time = "2024-12-07T15:28:26.465Z" },
+]
+
+[[package]]
+name = "wrapt"
+version = "2.5.1"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/04/22/89e2f3bdae5cb34e0cab0cd86d7172dbf418de4b46c9b17b9c7a560dfa44/wrapt-2.5.1.tar.gz", hash = "sha256:f595bb0185aab3e9dc31950c95d914f56ea8278810c3b928f3426e12ed6d27bc", size = 184455, upload-time = "2026-10-14T00:39:39.24Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/e4/6d/cfe55762435f36107815d56a2cfbebe7e3129b593c47a670c6eb1d7917d3/wrapt-2.5.1-cp313-cp313-macosx_10_13_x86_64.whl", hash = "sha256:f98eaf784cd12bc69c77af398084174531007cd81849c962163ccfc6e791f3ea", size = 106068, upload-time = "2026-10-14T00:37:36.087Z" },
+    { url = "https://files.pythonhosted.org/packages/01/b9/41642877fe741db56d240833c8822188b663c4c5d52beb087964774035d4/wrapt-2.5.1-cp313-cp313-macosx_11_0_arm64.whl", hash = "sha256:ab6db7d2a18d366cc57c2228253cf26443190aba0a6dd0939b3c1e8ac6e29e2c", size = 106190, upload-time = "2026-10-14T00:37:37.768Z" },
+    { url = "https://files.pythonhosted.org/packages/37/62/20edad100b93552ec5c172e509a9db898a73d5043ae701fcb6e9986f9d33/wrapt-2.5.1-cp313-cp313-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl", hash = "sha256:f1630201b0e2a96bb26304b7adfbd91a4ef486abb5a4c48377444a0bed749f37", size = 248519, upload-time = "2026-10-14T00:37:39.321Z" },
+    { url = "https://files.pythonhosted.org/packages/3d/e9/8d81185bc9a40cfb43d91fc70a1e80ecde752c95dc98f5452cae82037976/wrapt-2.5.1-cp313-cp313-manylinux2014_aarch64.manylinux_2_17_aarch64.manylinux_2_28_aarch64.whl", hash = "sha256:d800c7689154622b0ba2922ceca44a3cf2ef61c3b9a4c4eeb1d8b3050d7ededa", size = 248488, upload-time = "2026-10-14T00:37:40.96Z" },
+    { url = "https://files.pythonhosted.org/packages/8a/88/8431df4fd81f0dfa83e8ede463eed311d083c5a279a56891dc0396b07b0e/wrapt-2.5.1-cp313-cp313-manylinux_2_31_riscv64.manylinux_2_39_riscv64.whl", hash = "sha256:5b53000b424dc2133eaaf22838a2352d3497f5d7c2e7d9a2acfe675ab7225bb1", size = 227392, upload-time = "2026-10-14T00:37:42.599Z" },
+    { url = "https://files.pythonhosted.org/packages/db/8a/ee6f8542eeccad6874faf0b7b2e129952c527a482f1d28940e2111fec2d6/wrapt-2.5.1-cp313-cp313-musllinux_1_2_aarch64.whl", hash = "sha256:76f230a9b07e3cb66646d265398f579abb6128b1bb4cb97c74b1ae5d09e96f31", size = 244972, upload-time = "2026-10-14T00:37:44.209Z" },
+    { url = "https://files.pythonhosted.org/packages/4d/1f/32c59e7fd522409f3863dfecdab5315ee9ba37f96020b6f0adee9d223310/wrapt-2.5.1-cp313-cp313-musllinux_1_2_riscv64.whl", hash = "sha256:fd3f878a4aac3c262447ddf43c5f4c18fc67dfc3ba69c4fb1c7a4c4af96abe7e", size = 225316, upload-time = "2026-10-14T00:37:45.948Z" },
+    { url = "https://files.pythonhosted.org/packages/ae/d6/1b9abc1244592034c5db744571e17d663f0f1b0ce6c8ba279c60f6f9c3a8/wrapt-2.5.1-cp313-cp313-musllinux_1_2_x86_64.whl", hash = "sha256:0c9480bdee340a1602cae5a777146ab4be3e384fdcb569fffdf8721032314645", size = 237145, upload-time = "2026-10-14T00:37:47.535Z" },
+    { url = "https://files.pythonhosted.org/packages/f0/ce/8f3b5482f768c1d60fd2557d049c766543fef5ec707037cb410a57eb65ee/wrapt-2.5.1-cp313-cp313-win32.whl", hash = "sha256:dc401274fcc7b15b3b2c12df2ff34024a11925243a7d3daee91c6d7d14f9addf", size = 100462, upload-time = "2026-10-14T00:37:49.21Z" },
+    { url = "https://files.pythonhosted.org/packages/7b/dc/6a5735874ea79816f85c1ec9d92139d7073c20d1881c15ff2108c211354b/wrapt-2.5.1-cp313-cp313-win_amd64.whl", hash = "sha256:09b1893ee4063706574c1813abf479b8b51926633fbdb6f96aab8dc7b0976668", size = 105870, upload-time = "2026-10-14T00:37:50.745Z" },
+    { url = "https://files.pythonhosted.org/packages/08/83/a4e8b5a5a32f8dfc5dad8344f1e2b908f7d8d84b11c3c336bf7f79a5144a/wrapt-2.5.1-cp313-cp313-win_arm64.whl", hash = "sha256:f280c115ea64eff3dcbd68a668ce3f63476a4ba386bbabb318017e286196ea2c", size = 102903, upload-time = "2026-10-14T00:37:52.323Z" },
+    { url = "https://files.pythonhosted.org/packages/bc/0c/7da7513ddcc8f1d831ec4bfbedc9f7f174ecb91042bc16916fc1e0d06b22/wrapt-2.5.1-py3-none-any.whl", hash = "sha256:c6e6c226b1ca5402d7ae5fb34a0d21f1b49124fe4200e5884d1e19e53c47ac1d", size = 81849, upload-time = "2026-10-14T00:39:37.441Z" },
 ]
 
 [[package]]
