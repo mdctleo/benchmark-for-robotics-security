@@ -16,12 +16,14 @@ RoboPAIR runs the upstream search vendored under ``robobench/_vendor``.
 from .badrobot import BadRobotCD, BadRobotCJ, BadRobotSM
 from .base import Attack, AttackResult
 from .robopair import RoboPAIR
+from .shawshank import ShawshankAttack
 
 ATTACKS: dict[str, type] = {
     BadRobotCJ.name: BadRobotCJ,
     BadRobotSM.name: BadRobotSM,
     BadRobotCD.name: BadRobotCD,
     RoboPAIR.name: RoboPAIR,
+    ShawshankAttack.name: ShawshankAttack,
 }
 
 __all__ = [
@@ -32,4 +34,5 @@ __all__ = [
     "BadRobotCJ",
     "BadRobotSM",
     "RoboPAIR",
+    "ShawshankAttack",
 ]

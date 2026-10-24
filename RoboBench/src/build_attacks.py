@@ -47,6 +47,11 @@ def build_tree(attack, base: str, scenes: Scenes, index, output_dir: Path,
     if limit is not None:
         table = table.head(limit)
 
+    # Shawshank draws its few-shot examples from the base's own malicious
+    # instructions, the nearest faithful reconstruction of the pool upstream
+    # withheld. Other attacks absorb this through ``**extra`` and ignore it.
+    case_pool = table["malicious"].dropna().unique().tolist()
+
     instructions: dict[Path, dict] = {}  # instruction file -> its entries
 
     def instruction_file(source: str) -> Path:
@@ -66,7 +71,7 @@ def build_tree(attack, base: str, scenes: Scenes, index, output_dir: Path,
             continue
 
         raw = scenes.image_bytes(row.id)[0]["bytes"]
-        result = attack.attack(text=row.malicious, images=[raw])
+        result = attack.attack(text=row.malicious, images=[raw], case_pool=case_pool)
 
         frame_path.parent.mkdir(parents=True, exist_ok=True)
         frame_path.write_bytes(result.images[0] if result.images else raw)

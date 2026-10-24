@@ -49,7 +49,7 @@ from robobench.scenes import Scenes, load_scenes
 
 datasets.disable_progress_bars()
 
-ATTACKS = ["badrobot_cd", "badrobot_cj", "badrobot_sm", "robopair"]
+ATTACKS = ["badrobot_cd", "badrobot_cj", "badrobot_sm", "robopair", "shawshank"]
 
 DEFAULT_DEFENSES = ["no_defense", "google_prompt"]
 

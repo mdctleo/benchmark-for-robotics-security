@@ -23,9 +23,6 @@ Output:
 
 The index keeps the rows of every other artifact and replaces this one's.
 
-Frames of bases listed in ``REENCODE_JPEG`` (data no model has been run
-against yet) are re-encoded to JPEG; every other frame is copied byte for byte.
-
 Usage:
     uv run python src/build_artifacts.py data/external_datasets/DROID
     uv run python src/build_artifacts.py data/RJB-Instructions
@@ -34,16 +31,12 @@ Usage:
 """
 
 import argparse
-import io
 import json
-import math
 import shutil
 from pathlib import Path
 
 import datasets
-import numpy as np
 from datasets import Dataset, Features, Image, Value
-from PIL import Image as PILImage
 
 datasets.disable_progress_bars()
 
@@ -61,15 +54,6 @@ ROOT = Path(__file__).resolve().parent.parent
 OUT_DIR = ROOT / "artifacts"
 PACKAGE_INDEX = ROOT / "src/robobench/index.json"
 
-# Bases whose frames are re-encoded to JPEG when written. Only data that no
-# model has been queried on yet may go here.
-REENCODE_JPEG = {"RJB-Instructions"}
-# JPEG settings for re-encoded frames. Every frame must stay at or above
-# PSNR_FLOOR_DB against its original; the build aborts otherwise.
-JPEG_QUALITY = 97
-JPEG_SUBSAMPLING = 0  # 4:4:4, full-resolution colour
-PSNR_FLOOR_DB = 40.0
-
 FEATURES = Features({
     "id": Value("string"),
     "dataset": Value("string"),
@@ -79,22 +63,6 @@ FEATURES = Features({
     "malicious": Value("string"),
     "target": Value("string"),
 })
-
-
-def psnr(original: np.ndarray, encoded: np.ndarray) -> float:
-    mse = float(np.mean((original.astype(np.float64) - encoded.astype(np.float64)) ** 2))
-    if mse == 0:
-        return math.inf
-    return 10.0 * math.log10(255.0 ** 2 / mse)
-
-
-def reencode_jpeg(raw: bytes) -> tuple[bytes, float]:
-    image = PILImage.open(io.BytesIO(raw)).convert("RGB")
-    buffer = io.BytesIO()
-    image.save(buffer, "JPEG", quality=JPEG_QUALITY, subsampling=JPEG_SUBSAMPLING)
-    encoded = buffer.getvalue()
-    decoded = PILImage.open(io.BytesIO(encoded)).convert("RGB")
-    return encoded, psnr(np.asarray(image), np.asarray(decoded))
 
 
 def find_sources(directory: Path, base: str) -> list[tuple[str, Path, bool]]:
@@ -116,7 +84,6 @@ def load_frames(directory: Path, name: str, limit) -> list[dict]:
     """One record per frame of the artifact: key, source, texts, bytes."""
     _, base = split_artifact(name)
     frames = []
-    psnrs = []
     empty = []
     for source, instr_path, categorized in find_sources(directory, base):
         data = json.loads(instr_path.read_text(encoding="utf-8"))
@@ -126,10 +93,6 @@ def load_frames(directory: Path, name: str, limit) -> list[dict]:
         for filename, pair in items:
             raw = (ROOT / filename).read_bytes()
             frame_name = Path(filename).name
-            if base in REENCODE_JPEG:
-                raw, quality = reencode_jpeg(raw)
-                psnrs.append((quality, frame_key(source, filename)))
-                frame_name = Path(frame_name).with_suffix(".jpg").name
             malicious = pair[0]
             if malicious is None or not str(malicious).strip():
                 malicious = None
@@ -150,13 +113,6 @@ def load_frames(directory: Path, name: str, limit) -> list[dict]:
         # so an attack artifact has one row per frame of its base.
         print(f"  WARNING {name}: {len(empty)} empty malicious texts kept as null: "
               + ", ".join(empty))
-    if psnrs:
-        worst = min(psnrs)
-        mean = sum(q for q, _ in psnrs) / len(psnrs)
-        print(f"  {name}: re-encoded {len(psnrs)} frames to JPEG q{JPEG_QUALITY}; "
-              f"PSNR mean {mean:.2f} dB, min {worst[0]:.2f} dB ({worst[1]})")
-        if worst[0] < PSNR_FLOOR_DB:
-            raise SystemExit(f"{name}: PSNR below {PSNR_FLOOR_DB} dB for {worst[1]}")
     return frames
 
 

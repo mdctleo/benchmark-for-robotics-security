@@ -33,7 +33,8 @@ class FakeOpenAI:
 
 
 def test_registry_names_match_classes():
-    assert set(ATTACKS) == {"badrobot_cj", "badrobot_sm", "badrobot_cd", "robopair"}
+    assert set(ATTACKS) == {"badrobot_cj", "badrobot_sm", "badrobot_cd", "robopair",
+                            "shawshank"}
     for name, cls in ATTACKS.items():
         assert cls.name == name
         assert cls.target is None
