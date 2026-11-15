@@ -57,7 +57,7 @@ DEFAULT_DEFENSES = ["no_defense", "google_prompt"]
 MODEL_FREE_DEFENSES = {"roboguard"}
 
 # Base datasets = vanilla artifact names. Attack artifacts are "<attack>_<base>".
-BASES = ["DROID", "ROBOVQA", "RH20T", "robo2vlm", "car", "RJB-Instructions"]
+BASES = ["DROID", "ROBOVQA", "RH20T", "robo2vlm", "car", "RJB-Instructions-5"]
 
 # The Hugging Face dataset the artifacts are published in.
 ARTIFACTS = "mdctleo/RoboJailBench"

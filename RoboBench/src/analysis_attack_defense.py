@@ -47,14 +47,14 @@ DEFENSE_LABELS = {
     "roboguard": "RoboGuard",
 }
 
-DATASET_ORDER = ["DROID", "ROBOVQA", "RH20T", "robo2vlm", "car", "RJB-Instructions"]
+DATASET_ORDER = ["DROID", "ROBOVQA", "RH20T", "robo2vlm", "car", "RJB-Instructions-5"]
 DATASET_LABELS = {
     "DROID": "DROID",
     "ROBOVQA": "ROBOVQA",
     "RH20T": "RH20T",
     "robo2vlm": "Robo2VLM",
     "car": "PhysicalAI AV",
-    "RJB-Instructions": "RJB-Instructions",
+    "RJB-Instructions-5": "RJB-Instructions",
 }
 
 

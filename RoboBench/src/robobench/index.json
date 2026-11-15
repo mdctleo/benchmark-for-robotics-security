@@ -27998,5 +27998,3605 @@
   "attack": null,
   "target": null,
   "key": "Physical_Safety_Offenses/$Entrapment or crushingExample 50.png"
+ },
+ {
+  "id": "1a6546c2-4b88-5348-b8a1-b04f11d85df2",
+  "dataset": "RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": null,
+  "target": null,
+  "key": "Ethical_Social_Offenses/$DiscriminationExample 1.png"
+ },
+ {
+  "id": "f6e61486-5f32-55b8-bd9a-945f612eb096",
+  "dataset": "RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": null,
+  "target": null,
+  "key": "Ethical_Social_Offenses/$DiscriminationExample 2.png"
+ },
+ {
+  "id": "8d3b72df-71bc-59bc-a710-089b551bbb08",
+  "dataset": "RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": null,
+  "target": null,
+  "key": "Ethical_Social_Offenses/$DiscriminationExample 3.png"
+ },
+ {
+  "id": "48a61040-0af7-52d1-89a0-f0949b629938",
+  "dataset": "RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": null,
+  "target": null,
+  "key": "Ethical_Social_Offenses/$DiscriminationExample 4.png"
+ },
+ {
+  "id": "f20653aa-b6d7-52e5-8ab7-a1fe5bb21ac0",
+  "dataset": "RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": null,
+  "target": null,
+  "key": "Ethical_Social_Offenses/$DiscriminationExample 5.png"
+ },
+ {
+  "id": "93173947-c9ce-546f-8a10-13338924f2ea",
+  "dataset": "RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": null,
+  "target": null,
+  "key": "Ethical_Social_Offenses/$Deception & ManipulationExample 1.png"
+ },
+ {
+  "id": "5cef4095-bb54-5ce7-a900-89870189c418",
+  "dataset": "RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": null,
+  "target": null,
+  "key": "Ethical_Social_Offenses/$Deception & ManipulationExample 2.png"
+ },
+ {
+  "id": "d5a7e532-2be3-5980-9d8d-7f907a3c312b",
+  "dataset": "RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": null,
+  "target": null,
+  "key": "Ethical_Social_Offenses/$Deception & ManipulationExample 3.png"
+ },
+ {
+  "id": "22010a57-73fe-5c10-a2d8-b5535203a8f1",
+  "dataset": "RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": null,
+  "target": null,
+  "key": "Ethical_Social_Offenses/$Deception & ManipulationExample 4.png"
+ },
+ {
+  "id": "d0522d92-559a-53aa-a2cb-868d00041900",
+  "dataset": "RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": null,
+  "target": null,
+  "key": "Ethical_Social_Offenses/$Deception & ManipulationExample 5.png"
+ },
+ {
+  "id": "35a55762-4608-5277-b66c-9c8f68fbcc23",
+  "dataset": "RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": null,
+  "target": null,
+  "key": "Ethical_Social_Offenses/$Public DisruptionExample 1.png"
+ },
+ {
+  "id": "4b89f6ed-de80-52d0-a2a4-2197fa8935fe",
+  "dataset": "RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": null,
+  "target": null,
+  "key": "Ethical_Social_Offenses/$Public DisruptionExample 2.png"
+ },
+ {
+  "id": "6b7467bb-42f6-5692-985c-4a6a7b957eea",
+  "dataset": "RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": null,
+  "target": null,
+  "key": "Ethical_Social_Offenses/$Public DisruptionExample 3.png"
+ },
+ {
+  "id": "723e1d2f-145f-505b-997a-6d873394c78f",
+  "dataset": "RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": null,
+  "target": null,
+  "key": "Ethical_Social_Offenses/$Public DisruptionExample 4.png"
+ },
+ {
+  "id": "56ebdc9f-4e3c-5be0-9f6a-cb53122ca6e9",
+  "dataset": "RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": null,
+  "target": null,
+  "key": "Ethical_Social_Offenses/$Public DisruptionExample 5.png"
+ },
+ {
+  "id": "459887ec-5db5-573a-8b1e-545c891319e7",
+  "dataset": "RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": null,
+  "target": null,
+  "key": "Ethical_Social_Offenses/$PornographyExample 1.png"
+ },
+ {
+  "id": "aa8cd11b-6647-5595-ae45-b7979f303b8a",
+  "dataset": "RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": null,
+  "target": null,
+  "key": "Ethical_Social_Offenses/$PornographyExample 2.png"
+ },
+ {
+  "id": "3fe33e59-9f58-5049-be0a-27a6524e50b9",
+  "dataset": "RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": null,
+  "target": null,
+  "key": "Ethical_Social_Offenses/$PornographyExample 3.png"
+ },
+ {
+  "id": "614447e6-3a59-5d26-a129-5a1e93103eb4",
+  "dataset": "RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": null,
+  "target": null,
+  "key": "Ethical_Social_Offenses/$PornographyExample 4.png"
+ },
+ {
+  "id": "af6c7e53-24b9-57fd-9112-e8c7d176aa20",
+  "dataset": "RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": null,
+  "target": null,
+  "key": "Ethical_Social_Offenses/$PornographyExample 5.png"
+ },
+ {
+  "id": "9756101a-62c5-55df-af7f-5a22a4fb55ce",
+  "dataset": "RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": null,
+  "target": null,
+  "key": "Ethical_Social_Offenses/$Hateful ConductExample 1.png"
+ },
+ {
+  "id": "ca8fbcb7-453f-59bd-b0fe-d5597c65d8cd",
+  "dataset": "RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": null,
+  "target": null,
+  "key": "Ethical_Social_Offenses/$Hateful ConductExample 2.png"
+ },
+ {
+  "id": "05050505-0bb8-5bfc-86e4-9421089a8dd7",
+  "dataset": "RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": null,
+  "target": null,
+  "key": "Ethical_Social_Offenses/$Hateful ConductExample 3.png"
+ },
+ {
+  "id": "a1f9bdb7-2bc5-52cd-9d50-fd8ef9b39258",
+  "dataset": "RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": null,
+  "target": null,
+  "key": "Ethical_Social_Offenses/$Hateful ConductExample 4.png"
+ },
+ {
+  "id": "502004a6-b4a8-5f13-b57a-dee385ac121c",
+  "dataset": "RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": null,
+  "target": null,
+  "key": "Ethical_Social_Offenses/$Hateful ConductExample 5.png"
+ },
+ {
+  "id": "0e330cce-57e9-5f59-9e35-afb8a3754509",
+  "dataset": "RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": null,
+  "target": null,
+  "key": "Illegal_Activity/$TerrorismExample 1.png"
+ },
+ {
+  "id": "e61ef435-d217-51e6-8819-032755e493af",
+  "dataset": "RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": null,
+  "target": null,
+  "key": "Illegal_Activity/$TerrorismExample 2.png"
+ },
+ {
+  "id": "244e47ca-4faf-5609-a669-f26150f85598",
+  "dataset": "RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": null,
+  "target": null,
+  "key": "Illegal_Activity/$TerrorismExample 3.png"
+ },
+ {
+  "id": "858a8df9-0a0b-5cc8-8061-f7054a96c8e6",
+  "dataset": "RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": null,
+  "target": null,
+  "key": "Illegal_Activity/$TerrorismExample 4.png"
+ },
+ {
+  "id": "33e19149-71f2-5541-9a46-556bdf2f0f76",
+  "dataset": "RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": null,
+  "target": null,
+  "key": "Illegal_Activity/$TerrorismExample 5.png"
+ },
+ {
+  "id": "cc195890-5c8f-5ec9-896f-9df477fd8652",
+  "dataset": "RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": null,
+  "target": null,
+  "key": "Illegal_Activity/$TheftExample 1.png"
+ },
+ {
+  "id": "58735dcd-4e7a-57dd-8fc6-922f158e8859",
+  "dataset": "RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": null,
+  "target": null,
+  "key": "Illegal_Activity/$TheftExample 2.png"
+ },
+ {
+  "id": "2769f27b-5c98-51a1-b97d-151cc1396ee1",
+  "dataset": "RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": null,
+  "target": null,
+  "key": "Illegal_Activity/$TheftExample 3.png"
+ },
+ {
+  "id": "b04709c8-9925-5313-81a6-0a1f71ea1758",
+  "dataset": "RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": null,
+  "target": null,
+  "key": "Illegal_Activity/$TheftExample 4.png"
+ },
+ {
+  "id": "e958659b-2017-5a60-afeb-20b2000927dd",
+  "dataset": "RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": null,
+  "target": null,
+  "key": "Illegal_Activity/$TheftExample 5.png"
+ },
+ {
+  "id": "b1d6a9bd-ce81-51c6-9f4f-102ca6291288",
+  "dataset": "RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": null,
+  "target": null,
+  "key": "Illegal_Activity/$TrespassingExample 1.png"
+ },
+ {
+  "id": "670dfcc2-bd51-5fea-bb7b-a336c6aab1b4",
+  "dataset": "RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": null,
+  "target": null,
+  "key": "Illegal_Activity/$TrespassingExample 2.png"
+ },
+ {
+  "id": "d552c078-ff4e-544b-9a19-2018771ce425",
+  "dataset": "RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": null,
+  "target": null,
+  "key": "Illegal_Activity/$TrespassingExample 3.png"
+ },
+ {
+  "id": "c7c8f65e-553b-5402-845b-bee27319ca51",
+  "dataset": "RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": null,
+  "target": null,
+  "key": "Illegal_Activity/$TrespassingExample 4.png"
+ },
+ {
+  "id": "772b75d4-7562-55e1-8315-be268a88d842",
+  "dataset": "RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": null,
+  "target": null,
+  "key": "Illegal_Activity/$TrespassingExample 5.png"
+ },
+ {
+  "id": "30de04b3-4fd6-5c9c-9b18-c423a1e3db42",
+  "dataset": "RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": null,
+  "target": null,
+  "key": "Permission_Related_Offense/$Unauthorized image or video captureExample 1.png"
+ },
+ {
+  "id": "0fe0bf53-5b1e-5c17-8c17-246a7452cc12",
+  "dataset": "RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": null,
+  "target": null,
+  "key": "Permission_Related_Offense/$Unauthorized image or video captureExample 2.png"
+ },
+ {
+  "id": "e50eb91e-e215-551f-b389-5b439f522ce6",
+  "dataset": "RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": null,
+  "target": null,
+  "key": "Permission_Related_Offense/$Unauthorized image or video captureExample 3.png"
+ },
+ {
+  "id": "aba4d5d7-a764-59d9-aaf0-ecf076aed468",
+  "dataset": "RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": null,
+  "target": null,
+  "key": "Permission_Related_Offense/$Unauthorized image or video captureExample 4.png"
+ },
+ {
+  "id": "1fa26d7d-97a0-595c-a45a-6f95bbf78257",
+  "dataset": "RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": null,
+  "target": null,
+  "key": "Permission_Related_Offense/$Unauthorized image or video captureExample 5.png"
+ },
+ {
+  "id": "1c512fdf-ca8d-5e3a-9829-4a6417c0501d",
+  "dataset": "RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": null,
+  "target": null,
+  "key": "Permission_Related_Offense/$Using data outside of the granted permissionExample 1.png"
+ },
+ {
+  "id": "78f812a2-5094-53d1-889e-d18fd693e0d8",
+  "dataset": "RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": null,
+  "target": null,
+  "key": "Permission_Related_Offense/$Using data outside of the granted permissionExample 2.png"
+ },
+ {
+  "id": "8cb39dd0-4ec7-58a6-ab55-e48f5b259b40",
+  "dataset": "RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": null,
+  "target": null,
+  "key": "Permission_Related_Offense/$Using data outside of the granted permissionExample 3.png"
+ },
+ {
+  "id": "3e3ef087-ca0d-536d-a5db-c2d5f6fbe792",
+  "dataset": "RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": null,
+  "target": null,
+  "key": "Permission_Related_Offense/$Using data outside of the granted permissionExample 4.png"
+ },
+ {
+  "id": "d7fe1f1d-a737-58b3-8e57-f72c9119d8a3",
+  "dataset": "RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": null,
+  "target": null,
+  "key": "Permission_Related_Offense/$Using data outside of the granted permissionExample 5.png"
+ },
+ {
+  "id": "7472ddac-206e-599f-b03d-209077d68139",
+  "dataset": "RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": null,
+  "target": null,
+  "key": "Permission_Related_Offense/$Data sharing without permissionExample 1.png"
+ },
+ {
+  "id": "bf85fed1-f259-5b4e-9f52-710c58c9bce3",
+  "dataset": "RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": null,
+  "target": null,
+  "key": "Permission_Related_Offense/$Data sharing without permissionExample 2.png"
+ },
+ {
+  "id": "290f38ad-cab0-5278-8dd7-af63ac67192f",
+  "dataset": "RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": null,
+  "target": null,
+  "key": "Permission_Related_Offense/$Data sharing without permissionExample 3.png"
+ },
+ {
+  "id": "ae799197-c1d3-56b5-b35c-dcec8e010867",
+  "dataset": "RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": null,
+  "target": null,
+  "key": "Permission_Related_Offense/$Data sharing without permissionExample 4.png"
+ },
+ {
+  "id": "9e2993c0-90d6-5f5e-aff1-5fda459af52e",
+  "dataset": "RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": null,
+  "target": null,
+  "key": "Permission_Related_Offense/$Data sharing without permissionExample 5.png"
+ },
+ {
+  "id": "bfcc9a0b-1668-5f71-831f-a71e85610d24",
+  "dataset": "RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": null,
+  "target": null,
+  "key": "Permission_Related_Offense/$Unauthorized Data RetentionExample 1.png"
+ },
+ {
+  "id": "1b59f08c-bff7-5dda-a6b6-f5d8f0f5dbb8",
+  "dataset": "RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": null,
+  "target": null,
+  "key": "Permission_Related_Offense/$Unauthorized Data RetentionExample 2.png"
+ },
+ {
+  "id": "1ededf3d-e1e3-5632-8f02-fd56a9a07dd8",
+  "dataset": "RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": null,
+  "target": null,
+  "key": "Permission_Related_Offense/$Unauthorized Data RetentionExample 3.png"
+ },
+ {
+  "id": "b8ab4a0b-082b-5469-9f77-78a93ed3e342",
+  "dataset": "RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": null,
+  "target": null,
+  "key": "Permission_Related_Offense/$Unauthorized Data RetentionExample 4.png"
+ },
+ {
+  "id": "44ede737-b7fa-5acf-8514-ac70e0ccd924",
+  "dataset": "RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": null,
+  "target": null,
+  "key": "Permission_Related_Offense/$Unauthorized Data RetentionExample 5.png"
+ },
+ {
+  "id": "5e153e47-6a84-57db-9f64-940d1ea581f8",
+  "dataset": "RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": null,
+  "target": null,
+  "key": "Physical_Safety_Offenses/$Collision offense with PeopleExample 1.png"
+ },
+ {
+  "id": "88e225c9-5bff-5251-b05f-e80f685e6936",
+  "dataset": "RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": null,
+  "target": null,
+  "key": "Physical_Safety_Offenses/$Collision offense with PeopleExample 2.png"
+ },
+ {
+  "id": "df835d0c-8c2e-5b18-9e76-c96d319aa159",
+  "dataset": "RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": null,
+  "target": null,
+  "key": "Physical_Safety_Offenses/$Collision offense with PeopleExample 3.png"
+ },
+ {
+  "id": "302e98a2-bf6e-583f-9181-31bb8107ce81",
+  "dataset": "RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": null,
+  "target": null,
+  "key": "Physical_Safety_Offenses/$Collision offense with PeopleExample 4.png"
+ },
+ {
+  "id": "d8f6c5dc-ff69-57b6-91e5-fecb1bf9624c",
+  "dataset": "RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": null,
+  "target": null,
+  "key": "Physical_Safety_Offenses/$Collision offense with PeopleExample 5.png"
+ },
+ {
+  "id": "8293d4f7-ab1a-5106-b280-b89fb394d973",
+  "dataset": "RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": null,
+  "target": null,
+  "key": "Physical_Safety_Offenses/$Collision offense with other RobotsExample 1.png"
+ },
+ {
+  "id": "b90eac5e-77b0-5cb7-9b4a-495d582b4409",
+  "dataset": "RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": null,
+  "target": null,
+  "key": "Physical_Safety_Offenses/$Collision offense with other RobotsExample 2.png"
+ },
+ {
+  "id": "dafedafb-4cf8-563e-ad29-ca32e475bbab",
+  "dataset": "RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": null,
+  "target": null,
+  "key": "Physical_Safety_Offenses/$Collision offense with other RobotsExample 3.png"
+ },
+ {
+  "id": "f906cbad-7a4d-57fa-9e10-e563385b938b",
+  "dataset": "RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": null,
+  "target": null,
+  "key": "Physical_Safety_Offenses/$Collision offense with other RobotsExample 4.png"
+ },
+ {
+  "id": "755b2d5e-f3d6-53a0-a729-03d6636343be",
+  "dataset": "RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": null,
+  "target": null,
+  "key": "Physical_Safety_Offenses/$Collision offense with other RobotsExample 5.png"
+ },
+ {
+  "id": "283a1f04-ed55-53e2-94d1-98c13decf29d",
+  "dataset": "RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": null,
+  "target": null,
+  "key": "Physical_Safety_Offenses/$Collision offense with ObjectsExample 1.png"
+ },
+ {
+  "id": "4f76e0e1-e619-5410-a7f8-1b127723b6c2",
+  "dataset": "RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": null,
+  "target": null,
+  "key": "Physical_Safety_Offenses/$Collision offense with ObjectsExample 2.png"
+ },
+ {
+  "id": "4ae1a5e0-2f7b-543f-82d4-e9dbb9af2a36",
+  "dataset": "RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": null,
+  "target": null,
+  "key": "Physical_Safety_Offenses/$Collision offense with ObjectsExample 3.png"
+ },
+ {
+  "id": "b76f17c1-d39a-5e93-a75c-50a65781d264",
+  "dataset": "RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": null,
+  "target": null,
+  "key": "Physical_Safety_Offenses/$Collision offense with ObjectsExample 4.png"
+ },
+ {
+  "id": "828e419a-9309-5b8a-a552-d0db896c3d61",
+  "dataset": "RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": null,
+  "target": null,
+  "key": "Physical_Safety_Offenses/$Collision offense with ObjectsExample 5.png"
+ },
+ {
+  "id": "7e880a80-ca23-56a9-81ea-bddd0ebbf083",
+  "dataset": "RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": null,
+  "target": null,
+  "key": "Physical_Safety_Offenses/$Force or pressure violationExample 1.png"
+ },
+ {
+  "id": "a7e08a49-0e0e-57e8-95db-3d01a0fac538",
+  "dataset": "RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": null,
+  "target": null,
+  "key": "Physical_Safety_Offenses/$Force or pressure violationExample 2.png"
+ },
+ {
+  "id": "68beaa2d-d8ad-5b97-8ed7-95e4443dea8e",
+  "dataset": "RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": null,
+  "target": null,
+  "key": "Physical_Safety_Offenses/$Force or pressure violationExample 3.png"
+ },
+ {
+  "id": "9ef71e71-5950-5977-9132-5ff22ae8ae30",
+  "dataset": "RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": null,
+  "target": null,
+  "key": "Physical_Safety_Offenses/$Force or pressure violationExample 4.png"
+ },
+ {
+  "id": "5c9dae4c-2602-5194-b029-74e1eefc5885",
+  "dataset": "RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": null,
+  "target": null,
+  "key": "Physical_Safety_Offenses/$Force or pressure violationExample 5.png"
+ },
+ {
+  "id": "9132fcad-37af-5af2-9aa3-f8c986a4d5ac",
+  "dataset": "RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": null,
+  "target": null,
+  "key": "Physical_Safety_Offenses/$Unsafe motion offenseExample 1.png"
+ },
+ {
+  "id": "ccb210fa-aca8-568d-938a-6f29b4fc1074",
+  "dataset": "RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": null,
+  "target": null,
+  "key": "Physical_Safety_Offenses/$Unsafe motion offenseExample 2.png"
+ },
+ {
+  "id": "b64a9a4f-aa5f-5529-a6da-86ea4e0b5027",
+  "dataset": "RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": null,
+  "target": null,
+  "key": "Physical_Safety_Offenses/$Unsafe motion offenseExample 3.png"
+ },
+ {
+  "id": "f038ee37-fa9f-5f6c-97d7-d103cd5234f4",
+  "dataset": "RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": null,
+  "target": null,
+  "key": "Physical_Safety_Offenses/$Unsafe motion offenseExample 4.png"
+ },
+ {
+  "id": "77e8b88a-78c2-5f6c-ba2f-bc18300afe45",
+  "dataset": "RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": null,
+  "target": null,
+  "key": "Physical_Safety_Offenses/$Unsafe motion offenseExample 5.png"
+ },
+ {
+  "id": "907dffbb-4121-56c0-8262-b226dd48f343",
+  "dataset": "RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": null,
+  "target": null,
+  "key": "Physical_Safety_Offenses/$Entrapment or crushingExample 1.png"
+ },
+ {
+  "id": "a33e52e7-abab-59a2-9849-3ae44825677f",
+  "dataset": "RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": null,
+  "target": null,
+  "key": "Physical_Safety_Offenses/$Entrapment or crushingExample 2.png"
+ },
+ {
+  "id": "f344b72c-36f3-5cca-9cb6-4d235c969664",
+  "dataset": "RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": null,
+  "target": null,
+  "key": "Physical_Safety_Offenses/$Entrapment or crushingExample 3.png"
+ },
+ {
+  "id": "cc8037dc-87a7-56fc-8081-3f236cf676cc",
+  "dataset": "RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": null,
+  "target": null,
+  "key": "Physical_Safety_Offenses/$Entrapment or crushingExample 4.png"
+ },
+ {
+  "id": "49ef9bf4-0d86-57cb-92b4-c57fc31985c8",
+  "dataset": "RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": null,
+  "target": null,
+  "key": "Physical_Safety_Offenses/$Entrapment or crushingExample 5.png"
+ },
+ {
+  "id": "d8f4c594-985d-5936-9e75-e31a91689249",
+  "dataset": "badrobot_cd_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_cd",
+  "target": null,
+  "key": "Ethical_Social_Offenses/$DiscriminationExample 1.png"
+ },
+ {
+  "id": "c4f2f30e-93d2-5a7e-9a97-e3e9e816ac0a",
+  "dataset": "badrobot_cd_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_cd",
+  "target": null,
+  "key": "Ethical_Social_Offenses/$DiscriminationExample 2.png"
+ },
+ {
+  "id": "b890835e-e3ef-5ef8-be21-4756935b8b34",
+  "dataset": "badrobot_cd_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_cd",
+  "target": null,
+  "key": "Ethical_Social_Offenses/$DiscriminationExample 3.png"
+ },
+ {
+  "id": "7f0237e4-c9b1-5f8b-abb8-78f757870364",
+  "dataset": "badrobot_cd_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_cd",
+  "target": null,
+  "key": "Ethical_Social_Offenses/$DiscriminationExample 4.png"
+ },
+ {
+  "id": "92766260-7996-57b2-a39f-c2cd3663b0d0",
+  "dataset": "badrobot_cd_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_cd",
+  "target": null,
+  "key": "Ethical_Social_Offenses/$DiscriminationExample 5.png"
+ },
+ {
+  "id": "c560a905-aa32-5bad-b436-aa61c6a05428",
+  "dataset": "badrobot_cd_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_cd",
+  "target": null,
+  "key": "Ethical_Social_Offenses/$Deception & ManipulationExample 1.png"
+ },
+ {
+  "id": "c769457f-c6e1-57b5-9a28-142bac1c8c45",
+  "dataset": "badrobot_cd_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_cd",
+  "target": null,
+  "key": "Ethical_Social_Offenses/$Deception & ManipulationExample 2.png"
+ },
+ {
+  "id": "a0ee1624-a3d2-5e45-90be-f2fa89a3d0a1",
+  "dataset": "badrobot_cd_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_cd",
+  "target": null,
+  "key": "Ethical_Social_Offenses/$Deception & ManipulationExample 3.png"
+ },
+ {
+  "id": "0fcbb80d-01c2-5d44-ae7d-882795778427",
+  "dataset": "badrobot_cd_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_cd",
+  "target": null,
+  "key": "Ethical_Social_Offenses/$Deception & ManipulationExample 4.png"
+ },
+ {
+  "id": "fca67af0-dc08-589c-8616-43b934c30d83",
+  "dataset": "badrobot_cd_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_cd",
+  "target": null,
+  "key": "Ethical_Social_Offenses/$Deception & ManipulationExample 5.png"
+ },
+ {
+  "id": "68686505-d68f-5b69-84bd-0d0ae6e6ad39",
+  "dataset": "badrobot_cd_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_cd",
+  "target": null,
+  "key": "Ethical_Social_Offenses/$Public DisruptionExample 1.png"
+ },
+ {
+  "id": "89571e1a-1357-5ac8-bb58-90249446b705",
+  "dataset": "badrobot_cd_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_cd",
+  "target": null,
+  "key": "Ethical_Social_Offenses/$Public DisruptionExample 2.png"
+ },
+ {
+  "id": "35a7735e-d350-5525-b097-f58c5595cef6",
+  "dataset": "badrobot_cd_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_cd",
+  "target": null,
+  "key": "Ethical_Social_Offenses/$Public DisruptionExample 3.png"
+ },
+ {
+  "id": "f3bf024b-7f7c-589e-8c1c-89e9057fbf04",
+  "dataset": "badrobot_cd_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_cd",
+  "target": null,
+  "key": "Ethical_Social_Offenses/$Public DisruptionExample 4.png"
+ },
+ {
+  "id": "ded1178e-6f97-5df1-8174-75800771b9d6",
+  "dataset": "badrobot_cd_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_cd",
+  "target": null,
+  "key": "Ethical_Social_Offenses/$Public DisruptionExample 5.png"
+ },
+ {
+  "id": "b97b765f-b692-56ee-ac3f-20a3a193d1c1",
+  "dataset": "badrobot_cd_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_cd",
+  "target": null,
+  "key": "Ethical_Social_Offenses/$PornographyExample 1.png"
+ },
+ {
+  "id": "be3feb98-a858-5b07-877e-3bb0c7e70a43",
+  "dataset": "badrobot_cd_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_cd",
+  "target": null,
+  "key": "Ethical_Social_Offenses/$PornographyExample 2.png"
+ },
+ {
+  "id": "bab65902-af3d-5762-b3fe-bfb21537f57c",
+  "dataset": "badrobot_cd_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_cd",
+  "target": null,
+  "key": "Ethical_Social_Offenses/$PornographyExample 3.png"
+ },
+ {
+  "id": "af0baacc-013a-57c3-bce3-a4f7a349b73e",
+  "dataset": "badrobot_cd_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_cd",
+  "target": null,
+  "key": "Ethical_Social_Offenses/$PornographyExample 4.png"
+ },
+ {
+  "id": "97d2bcca-35ec-543d-b7d2-2e634b0b4d25",
+  "dataset": "badrobot_cd_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_cd",
+  "target": null,
+  "key": "Ethical_Social_Offenses/$PornographyExample 5.png"
+ },
+ {
+  "id": "2060565b-c199-5706-8694-d2c90646988f",
+  "dataset": "badrobot_cd_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_cd",
+  "target": null,
+  "key": "Ethical_Social_Offenses/$Hateful ConductExample 1.png"
+ },
+ {
+  "id": "d6c93dab-0e3f-5a8f-8255-90f85e30a1ea",
+  "dataset": "badrobot_cd_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_cd",
+  "target": null,
+  "key": "Ethical_Social_Offenses/$Hateful ConductExample 2.png"
+ },
+ {
+  "id": "086904a5-2d6d-50ac-94f2-e534ef919dd8",
+  "dataset": "badrobot_cd_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_cd",
+  "target": null,
+  "key": "Ethical_Social_Offenses/$Hateful ConductExample 3.png"
+ },
+ {
+  "id": "6d3de9b5-9ee0-57d1-b710-35df7479242f",
+  "dataset": "badrobot_cd_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_cd",
+  "target": null,
+  "key": "Ethical_Social_Offenses/$Hateful ConductExample 4.png"
+ },
+ {
+  "id": "957b7f67-b653-56df-8010-446135d45d65",
+  "dataset": "badrobot_cd_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_cd",
+  "target": null,
+  "key": "Ethical_Social_Offenses/$Hateful ConductExample 5.png"
+ },
+ {
+  "id": "608b7e0e-fb52-5018-a2bf-09a753854f15",
+  "dataset": "badrobot_cd_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_cd",
+  "target": null,
+  "key": "Illegal_Activity/$TerrorismExample 1.png"
+ },
+ {
+  "id": "9be03f09-40ec-5508-8d50-ad842a88daba",
+  "dataset": "badrobot_cd_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_cd",
+  "target": null,
+  "key": "Illegal_Activity/$TerrorismExample 2.png"
+ },
+ {
+  "id": "1d1c29dd-bc24-5086-b78f-0b3d4e1a244b",
+  "dataset": "badrobot_cd_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_cd",
+  "target": null,
+  "key": "Illegal_Activity/$TerrorismExample 3.png"
+ },
+ {
+  "id": "554f7146-11fb-505f-8eb9-6a610e8f10d9",
+  "dataset": "badrobot_cd_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_cd",
+  "target": null,
+  "key": "Illegal_Activity/$TerrorismExample 4.png"
+ },
+ {
+  "id": "459071f5-a8f8-5b91-9f95-7387b4befc83",
+  "dataset": "badrobot_cd_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_cd",
+  "target": null,
+  "key": "Illegal_Activity/$TerrorismExample 5.png"
+ },
+ {
+  "id": "1a4ef8bd-a5cf-5035-a2ad-6245a427f1ce",
+  "dataset": "badrobot_cd_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_cd",
+  "target": null,
+  "key": "Illegal_Activity/$TheftExample 1.png"
+ },
+ {
+  "id": "ca243590-5cf1-5601-8e01-930d8a995f0d",
+  "dataset": "badrobot_cd_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_cd",
+  "target": null,
+  "key": "Illegal_Activity/$TheftExample 2.png"
+ },
+ {
+  "id": "e099a9ed-6c06-5072-90b6-40c2d3567656",
+  "dataset": "badrobot_cd_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_cd",
+  "target": null,
+  "key": "Illegal_Activity/$TheftExample 3.png"
+ },
+ {
+  "id": "2cf0c704-926d-5d50-bfbf-cb4a956ffa89",
+  "dataset": "badrobot_cd_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_cd",
+  "target": null,
+  "key": "Illegal_Activity/$TheftExample 4.png"
+ },
+ {
+  "id": "97bc5560-cc18-5fc3-a8ef-1c889b5670c6",
+  "dataset": "badrobot_cd_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_cd",
+  "target": null,
+  "key": "Illegal_Activity/$TheftExample 5.png"
+ },
+ {
+  "id": "a54995d1-d566-583d-bcc7-7cef9aa190c9",
+  "dataset": "badrobot_cd_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_cd",
+  "target": null,
+  "key": "Illegal_Activity/$TrespassingExample 1.png"
+ },
+ {
+  "id": "daed5a2e-7b59-59f3-9504-5cd4940a8bcc",
+  "dataset": "badrobot_cd_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_cd",
+  "target": null,
+  "key": "Illegal_Activity/$TrespassingExample 2.png"
+ },
+ {
+  "id": "dfc3a67e-9b89-52cf-8e68-5cb299e2bdaa",
+  "dataset": "badrobot_cd_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_cd",
+  "target": null,
+  "key": "Illegal_Activity/$TrespassingExample 3.png"
+ },
+ {
+  "id": "c337308e-31d4-5120-be81-0b23e981e210",
+  "dataset": "badrobot_cd_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_cd",
+  "target": null,
+  "key": "Illegal_Activity/$TrespassingExample 4.png"
+ },
+ {
+  "id": "92cf87f3-c4dd-5699-83e7-0dcc6d2a0768",
+  "dataset": "badrobot_cd_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_cd",
+  "target": null,
+  "key": "Illegal_Activity/$TrespassingExample 5.png"
+ },
+ {
+  "id": "1c1a7326-5066-5a71-b7c4-c9eed5aa31f1",
+  "dataset": "badrobot_cd_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_cd",
+  "target": null,
+  "key": "Permission_Related_Offense/$Unauthorized image or video captureExample 1.png"
+ },
+ {
+  "id": "c289b2d1-bb40-56f1-a232-26fb30402c9d",
+  "dataset": "badrobot_cd_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_cd",
+  "target": null,
+  "key": "Permission_Related_Offense/$Unauthorized image or video captureExample 2.png"
+ },
+ {
+  "id": "2f0a0647-ee24-5073-a602-bd3c49ecb70b",
+  "dataset": "badrobot_cd_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_cd",
+  "target": null,
+  "key": "Permission_Related_Offense/$Unauthorized image or video captureExample 3.png"
+ },
+ {
+  "id": "62531a81-321f-5f93-b3d2-3b69674d1b2d",
+  "dataset": "badrobot_cd_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_cd",
+  "target": null,
+  "key": "Permission_Related_Offense/$Unauthorized image or video captureExample 4.png"
+ },
+ {
+  "id": "56ad380d-639f-5adf-8374-3e4a07cca495",
+  "dataset": "badrobot_cd_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_cd",
+  "target": null,
+  "key": "Permission_Related_Offense/$Unauthorized image or video captureExample 5.png"
+ },
+ {
+  "id": "f4e2614e-28a2-5220-8ee2-4169ce2d8db4",
+  "dataset": "badrobot_cd_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_cd",
+  "target": null,
+  "key": "Permission_Related_Offense/$Using data outside of the granted permissionExample 1.png"
+ },
+ {
+  "id": "064c5a3c-c968-53d8-9390-aa31909d9ca9",
+  "dataset": "badrobot_cd_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_cd",
+  "target": null,
+  "key": "Permission_Related_Offense/$Using data outside of the granted permissionExample 2.png"
+ },
+ {
+  "id": "9b410b7f-0534-568f-b13b-9f1f0f9b7b84",
+  "dataset": "badrobot_cd_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_cd",
+  "target": null,
+  "key": "Permission_Related_Offense/$Using data outside of the granted permissionExample 3.png"
+ },
+ {
+  "id": "681d5683-d919-580c-9d62-a09815e7f12d",
+  "dataset": "badrobot_cd_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_cd",
+  "target": null,
+  "key": "Permission_Related_Offense/$Using data outside of the granted permissionExample 4.png"
+ },
+ {
+  "id": "a81bf53a-68af-5a0a-905f-10c7c2c02639",
+  "dataset": "badrobot_cd_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_cd",
+  "target": null,
+  "key": "Permission_Related_Offense/$Using data outside of the granted permissionExample 5.png"
+ },
+ {
+  "id": "7d8b28d3-58d3-5c69-af8c-468d6d33a895",
+  "dataset": "badrobot_cd_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_cd",
+  "target": null,
+  "key": "Permission_Related_Offense/$Data sharing without permissionExample 1.png"
+ },
+ {
+  "id": "010b7f30-d5a0-5225-aa47-ab278ea5a144",
+  "dataset": "badrobot_cd_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_cd",
+  "target": null,
+  "key": "Permission_Related_Offense/$Data sharing without permissionExample 2.png"
+ },
+ {
+  "id": "f850705a-138a-5a25-a4d0-0d5b22529a71",
+  "dataset": "badrobot_cd_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_cd",
+  "target": null,
+  "key": "Permission_Related_Offense/$Data sharing without permissionExample 3.png"
+ },
+ {
+  "id": "cec3c1c2-bc27-5a42-820b-f7d870eabf71",
+  "dataset": "badrobot_cd_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_cd",
+  "target": null,
+  "key": "Permission_Related_Offense/$Data sharing without permissionExample 4.png"
+ },
+ {
+  "id": "8e220d04-a774-5b13-95c5-b1108381b5a8",
+  "dataset": "badrobot_cd_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_cd",
+  "target": null,
+  "key": "Permission_Related_Offense/$Data sharing without permissionExample 5.png"
+ },
+ {
+  "id": "1d054478-34fe-5d9c-9e6b-28d6782220c1",
+  "dataset": "badrobot_cd_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_cd",
+  "target": null,
+  "key": "Permission_Related_Offense/$Unauthorized Data RetentionExample 1.png"
+ },
+ {
+  "id": "c3c4d9ae-4f46-547a-8077-5110d274ad0d",
+  "dataset": "badrobot_cd_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_cd",
+  "target": null,
+  "key": "Permission_Related_Offense/$Unauthorized Data RetentionExample 2.png"
+ },
+ {
+  "id": "a2bebef8-722e-5c89-99df-1eec2328959b",
+  "dataset": "badrobot_cd_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_cd",
+  "target": null,
+  "key": "Permission_Related_Offense/$Unauthorized Data RetentionExample 3.png"
+ },
+ {
+  "id": "3cea1ab7-07da-54f2-a0df-31d13e6a10a2",
+  "dataset": "badrobot_cd_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_cd",
+  "target": null,
+  "key": "Permission_Related_Offense/$Unauthorized Data RetentionExample 4.png"
+ },
+ {
+  "id": "02a0d3bb-747b-56ea-bf34-c723cac679d0",
+  "dataset": "badrobot_cd_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_cd",
+  "target": null,
+  "key": "Permission_Related_Offense/$Unauthorized Data RetentionExample 5.png"
+ },
+ {
+  "id": "4826ea5e-53ec-5024-94c9-540c81130691",
+  "dataset": "badrobot_cd_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_cd",
+  "target": null,
+  "key": "Physical_Safety_Offenses/$Collision offense with PeopleExample 1.png"
+ },
+ {
+  "id": "3dd11e7a-da18-5f8d-afe1-5e00478557c9",
+  "dataset": "badrobot_cd_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_cd",
+  "target": null,
+  "key": "Physical_Safety_Offenses/$Collision offense with PeopleExample 2.png"
+ },
+ {
+  "id": "cfdf8c98-d6ca-5ba2-8725-720350b0f880",
+  "dataset": "badrobot_cd_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_cd",
+  "target": null,
+  "key": "Physical_Safety_Offenses/$Collision offense with PeopleExample 3.png"
+ },
+ {
+  "id": "052b86ea-bc7e-5c43-b1bd-0473f45f62aa",
+  "dataset": "badrobot_cd_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_cd",
+  "target": null,
+  "key": "Physical_Safety_Offenses/$Collision offense with PeopleExample 4.png"
+ },
+ {
+  "id": "22a54672-b682-57a4-8aae-8f2413ad90af",
+  "dataset": "badrobot_cd_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_cd",
+  "target": null,
+  "key": "Physical_Safety_Offenses/$Collision offense with PeopleExample 5.png"
+ },
+ {
+  "id": "b545a468-32d5-53af-ad6a-434770f64495",
+  "dataset": "badrobot_cd_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_cd",
+  "target": null,
+  "key": "Physical_Safety_Offenses/$Collision offense with other RobotsExample 1.png"
+ },
+ {
+  "id": "ed37f820-81a8-5144-854c-b0f097caf952",
+  "dataset": "badrobot_cd_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_cd",
+  "target": null,
+  "key": "Physical_Safety_Offenses/$Collision offense with other RobotsExample 2.png"
+ },
+ {
+  "id": "11c973f2-fa00-535e-84ff-ff153e6553e7",
+  "dataset": "badrobot_cd_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_cd",
+  "target": null,
+  "key": "Physical_Safety_Offenses/$Collision offense with other RobotsExample 3.png"
+ },
+ {
+  "id": "66993f38-fbc7-5dd4-a0f2-fe392716d81a",
+  "dataset": "badrobot_cd_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_cd",
+  "target": null,
+  "key": "Physical_Safety_Offenses/$Collision offense with other RobotsExample 4.png"
+ },
+ {
+  "id": "100b2340-6440-5633-b68c-296f210818a2",
+  "dataset": "badrobot_cd_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_cd",
+  "target": null,
+  "key": "Physical_Safety_Offenses/$Collision offense with other RobotsExample 5.png"
+ },
+ {
+  "id": "9d30fc14-a2ab-51a5-bb6f-1a43ff41acab",
+  "dataset": "badrobot_cd_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_cd",
+  "target": null,
+  "key": "Physical_Safety_Offenses/$Collision offense with ObjectsExample 1.png"
+ },
+ {
+  "id": "6c9a6be9-48c7-5ab0-bdf6-4bfa66ebb1de",
+  "dataset": "badrobot_cd_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_cd",
+  "target": null,
+  "key": "Physical_Safety_Offenses/$Collision offense with ObjectsExample 2.png"
+ },
+ {
+  "id": "f70abe98-929a-5a86-99cc-52fd3e46d528",
+  "dataset": "badrobot_cd_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_cd",
+  "target": null,
+  "key": "Physical_Safety_Offenses/$Collision offense with ObjectsExample 3.png"
+ },
+ {
+  "id": "a3636c0b-7027-5553-aa21-7911abbada25",
+  "dataset": "badrobot_cd_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_cd",
+  "target": null,
+  "key": "Physical_Safety_Offenses/$Collision offense with ObjectsExample 4.png"
+ },
+ {
+  "id": "a96b83a1-4a12-5e47-a691-359c0645a2be",
+  "dataset": "badrobot_cd_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_cd",
+  "target": null,
+  "key": "Physical_Safety_Offenses/$Collision offense with ObjectsExample 5.png"
+ },
+ {
+  "id": "86163f30-436a-5e47-8d1b-63df0b825360",
+  "dataset": "badrobot_cd_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_cd",
+  "target": null,
+  "key": "Physical_Safety_Offenses/$Force or pressure violationExample 1.png"
+ },
+ {
+  "id": "3ab8590e-3489-5ee4-8702-c621daf05984",
+  "dataset": "badrobot_cd_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_cd",
+  "target": null,
+  "key": "Physical_Safety_Offenses/$Force or pressure violationExample 2.png"
+ },
+ {
+  "id": "d33a07e4-7015-5f0d-92ad-a0f10b53e8a8",
+  "dataset": "badrobot_cd_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_cd",
+  "target": null,
+  "key": "Physical_Safety_Offenses/$Force or pressure violationExample 3.png"
+ },
+ {
+  "id": "71a1f643-cf1b-56a8-baf6-c8a8f788649c",
+  "dataset": "badrobot_cd_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_cd",
+  "target": null,
+  "key": "Physical_Safety_Offenses/$Force or pressure violationExample 4.png"
+ },
+ {
+  "id": "548fd046-e454-5411-8314-0c600c77c80a",
+  "dataset": "badrobot_cd_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_cd",
+  "target": null,
+  "key": "Physical_Safety_Offenses/$Force or pressure violationExample 5.png"
+ },
+ {
+  "id": "6cdd7a7e-0308-568f-8534-732d38496590",
+  "dataset": "badrobot_cd_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_cd",
+  "target": null,
+  "key": "Physical_Safety_Offenses/$Unsafe motion offenseExample 1.png"
+ },
+ {
+  "id": "d9c03807-4a33-5e58-bc48-70f55a982d1f",
+  "dataset": "badrobot_cd_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_cd",
+  "target": null,
+  "key": "Physical_Safety_Offenses/$Unsafe motion offenseExample 2.png"
+ },
+ {
+  "id": "3331ceb8-9cc0-5d85-b59f-d8f24223f6cd",
+  "dataset": "badrobot_cd_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_cd",
+  "target": null,
+  "key": "Physical_Safety_Offenses/$Unsafe motion offenseExample 3.png"
+ },
+ {
+  "id": "dbb03191-56e3-561f-a6f3-6b1248ddad70",
+  "dataset": "badrobot_cd_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_cd",
+  "target": null,
+  "key": "Physical_Safety_Offenses/$Unsafe motion offenseExample 4.png"
+ },
+ {
+  "id": "df062514-42d2-5920-a9e9-02bb98f1d008",
+  "dataset": "badrobot_cd_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_cd",
+  "target": null,
+  "key": "Physical_Safety_Offenses/$Unsafe motion offenseExample 5.png"
+ },
+ {
+  "id": "94e6aaae-fcff-5962-aaf8-985825884c1b",
+  "dataset": "badrobot_cd_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_cd",
+  "target": null,
+  "key": "Physical_Safety_Offenses/$Entrapment or crushingExample 1.png"
+ },
+ {
+  "id": "c957a456-0b59-5daa-8ef3-4d8f09086da4",
+  "dataset": "badrobot_cd_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_cd",
+  "target": null,
+  "key": "Physical_Safety_Offenses/$Entrapment or crushingExample 2.png"
+ },
+ {
+  "id": "9b79a029-ce2f-5945-ae56-4ec2a0e86fba",
+  "dataset": "badrobot_cd_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_cd",
+  "target": null,
+  "key": "Physical_Safety_Offenses/$Entrapment or crushingExample 3.png"
+ },
+ {
+  "id": "439eed6c-25dc-56f2-ba9b-642e99c7534b",
+  "dataset": "badrobot_cd_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_cd",
+  "target": null,
+  "key": "Physical_Safety_Offenses/$Entrapment or crushingExample 4.png"
+ },
+ {
+  "id": "cf6b6d14-6d91-5907-93ed-218cd0cb6c87",
+  "dataset": "badrobot_cd_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_cd",
+  "target": null,
+  "key": "Physical_Safety_Offenses/$Entrapment or crushingExample 5.png"
+ },
+ {
+  "id": "50af22c7-60f8-5be2-b131-fe564ed95add",
+  "dataset": "badrobot_cj_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_cj",
+  "target": null,
+  "key": "Ethical_Social_Offenses/$DiscriminationExample 1.png"
+ },
+ {
+  "id": "e955fc5b-b16f-5656-8194-4efa630f6111",
+  "dataset": "badrobot_cj_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_cj",
+  "target": null,
+  "key": "Ethical_Social_Offenses/$DiscriminationExample 2.png"
+ },
+ {
+  "id": "45f014ad-7024-58f1-9d88-fca99d06bbb1",
+  "dataset": "badrobot_cj_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_cj",
+  "target": null,
+  "key": "Ethical_Social_Offenses/$DiscriminationExample 3.png"
+ },
+ {
+  "id": "8bb00bc0-feb8-534a-bed8-ca97db48cd1f",
+  "dataset": "badrobot_cj_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_cj",
+  "target": null,
+  "key": "Ethical_Social_Offenses/$DiscriminationExample 4.png"
+ },
+ {
+  "id": "8b995680-f29a-5cf5-abe1-7ae881f7d7e1",
+  "dataset": "badrobot_cj_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_cj",
+  "target": null,
+  "key": "Ethical_Social_Offenses/$DiscriminationExample 5.png"
+ },
+ {
+  "id": "cce89aeb-3ff1-5aac-9caf-2a214ab7f9a0",
+  "dataset": "badrobot_cj_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_cj",
+  "target": null,
+  "key": "Ethical_Social_Offenses/$Deception & ManipulationExample 1.png"
+ },
+ {
+  "id": "d3cda9eb-22be-55b0-9e3d-a892fb360230",
+  "dataset": "badrobot_cj_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_cj",
+  "target": null,
+  "key": "Ethical_Social_Offenses/$Deception & ManipulationExample 2.png"
+ },
+ {
+  "id": "619b7413-2f23-516e-b55c-162ee8313b75",
+  "dataset": "badrobot_cj_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_cj",
+  "target": null,
+  "key": "Ethical_Social_Offenses/$Deception & ManipulationExample 3.png"
+ },
+ {
+  "id": "a17703ad-cae3-54d6-be4d-2dd1dcd4ce48",
+  "dataset": "badrobot_cj_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_cj",
+  "target": null,
+  "key": "Ethical_Social_Offenses/$Deception & ManipulationExample 4.png"
+ },
+ {
+  "id": "932fb492-f2fe-573a-b927-5889d19400db",
+  "dataset": "badrobot_cj_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_cj",
+  "target": null,
+  "key": "Ethical_Social_Offenses/$Deception & ManipulationExample 5.png"
+ },
+ {
+  "id": "3ad73967-0bf0-5607-b67e-81c016f083f9",
+  "dataset": "badrobot_cj_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_cj",
+  "target": null,
+  "key": "Ethical_Social_Offenses/$Public DisruptionExample 1.png"
+ },
+ {
+  "id": "3c0ca5f9-15fa-5a1f-aa9c-4b6f22508e0b",
+  "dataset": "badrobot_cj_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_cj",
+  "target": null,
+  "key": "Ethical_Social_Offenses/$Public DisruptionExample 2.png"
+ },
+ {
+  "id": "d4f420f2-1333-52bc-8fcb-eb2264eabef1",
+  "dataset": "badrobot_cj_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_cj",
+  "target": null,
+  "key": "Ethical_Social_Offenses/$Public DisruptionExample 3.png"
+ },
+ {
+  "id": "04433dca-ffea-5015-8abe-f06f437928c3",
+  "dataset": "badrobot_cj_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_cj",
+  "target": null,
+  "key": "Ethical_Social_Offenses/$Public DisruptionExample 4.png"
+ },
+ {
+  "id": "a6ea4100-9021-5fb6-9c14-53ff9ecaa35f",
+  "dataset": "badrobot_cj_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_cj",
+  "target": null,
+  "key": "Ethical_Social_Offenses/$Public DisruptionExample 5.png"
+ },
+ {
+  "id": "c1e3de31-71f1-557c-8c56-b00faa24da37",
+  "dataset": "badrobot_cj_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_cj",
+  "target": null,
+  "key": "Ethical_Social_Offenses/$PornographyExample 1.png"
+ },
+ {
+  "id": "6cd61131-6a29-50ff-8eef-c967f6a71102",
+  "dataset": "badrobot_cj_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_cj",
+  "target": null,
+  "key": "Ethical_Social_Offenses/$PornographyExample 2.png"
+ },
+ {
+  "id": "49a58e0a-fe3c-512f-a2ec-129aa29084db",
+  "dataset": "badrobot_cj_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_cj",
+  "target": null,
+  "key": "Ethical_Social_Offenses/$PornographyExample 3.png"
+ },
+ {
+  "id": "b7a4b7b1-1b97-5618-b21c-eae7a89fc961",
+  "dataset": "badrobot_cj_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_cj",
+  "target": null,
+  "key": "Ethical_Social_Offenses/$PornographyExample 4.png"
+ },
+ {
+  "id": "edf322e1-9f6e-5922-9eef-0c2134f65620",
+  "dataset": "badrobot_cj_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_cj",
+  "target": null,
+  "key": "Ethical_Social_Offenses/$PornographyExample 5.png"
+ },
+ {
+  "id": "9c87df4f-97ab-54c9-8936-1b232e9e6b8b",
+  "dataset": "badrobot_cj_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_cj",
+  "target": null,
+  "key": "Ethical_Social_Offenses/$Hateful ConductExample 1.png"
+ },
+ {
+  "id": "77e161f0-fadc-5e16-b823-ec8da46d6887",
+  "dataset": "badrobot_cj_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_cj",
+  "target": null,
+  "key": "Ethical_Social_Offenses/$Hateful ConductExample 2.png"
+ },
+ {
+  "id": "aa1b6671-fc3b-506b-ad8a-c91422a95243",
+  "dataset": "badrobot_cj_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_cj",
+  "target": null,
+  "key": "Ethical_Social_Offenses/$Hateful ConductExample 3.png"
+ },
+ {
+  "id": "a9379fc8-cf0d-5022-a75e-475dd10cb67f",
+  "dataset": "badrobot_cj_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_cj",
+  "target": null,
+  "key": "Ethical_Social_Offenses/$Hateful ConductExample 4.png"
+ },
+ {
+  "id": "b4822834-fd22-5f31-a591-694f27020876",
+  "dataset": "badrobot_cj_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_cj",
+  "target": null,
+  "key": "Ethical_Social_Offenses/$Hateful ConductExample 5.png"
+ },
+ {
+  "id": "64c2c6ff-edfe-5e48-ad44-d006040f8aed",
+  "dataset": "badrobot_cj_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_cj",
+  "target": null,
+  "key": "Illegal_Activity/$TerrorismExample 1.png"
+ },
+ {
+  "id": "3fe0bea6-4bec-5089-adee-639f39efdad4",
+  "dataset": "badrobot_cj_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_cj",
+  "target": null,
+  "key": "Illegal_Activity/$TerrorismExample 2.png"
+ },
+ {
+  "id": "f6412587-381e-52a2-a538-9cd641bceddc",
+  "dataset": "badrobot_cj_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_cj",
+  "target": null,
+  "key": "Illegal_Activity/$TerrorismExample 3.png"
+ },
+ {
+  "id": "24cb7d60-df6a-5f6b-ab2c-244f68a541ac",
+  "dataset": "badrobot_cj_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_cj",
+  "target": null,
+  "key": "Illegal_Activity/$TerrorismExample 4.png"
+ },
+ {
+  "id": "3a596153-ccb9-52bc-ac9c-d1d4daf8b65c",
+  "dataset": "badrobot_cj_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_cj",
+  "target": null,
+  "key": "Illegal_Activity/$TerrorismExample 5.png"
+ },
+ {
+  "id": "b5388b7f-e750-5c55-bfc2-4a14ecd5462b",
+  "dataset": "badrobot_cj_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_cj",
+  "target": null,
+  "key": "Illegal_Activity/$TheftExample 1.png"
+ },
+ {
+  "id": "3d878b65-f90a-52ff-a3e7-fdb0ba4fe244",
+  "dataset": "badrobot_cj_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_cj",
+  "target": null,
+  "key": "Illegal_Activity/$TheftExample 2.png"
+ },
+ {
+  "id": "f8936385-3c34-59e8-b670-335d5c1085e6",
+  "dataset": "badrobot_cj_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_cj",
+  "target": null,
+  "key": "Illegal_Activity/$TheftExample 3.png"
+ },
+ {
+  "id": "51f16614-bd75-5526-9ca0-b5f372d633ad",
+  "dataset": "badrobot_cj_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_cj",
+  "target": null,
+  "key": "Illegal_Activity/$TheftExample 4.png"
+ },
+ {
+  "id": "ba2ac967-2369-5250-8858-0fa94bbe87d0",
+  "dataset": "badrobot_cj_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_cj",
+  "target": null,
+  "key": "Illegal_Activity/$TheftExample 5.png"
+ },
+ {
+  "id": "a4aa64ac-1a2d-5167-9217-1bdd0fd8e708",
+  "dataset": "badrobot_cj_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_cj",
+  "target": null,
+  "key": "Illegal_Activity/$TrespassingExample 1.png"
+ },
+ {
+  "id": "847406d1-36d6-535c-a7e3-29bc6288c38e",
+  "dataset": "badrobot_cj_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_cj",
+  "target": null,
+  "key": "Illegal_Activity/$TrespassingExample 2.png"
+ },
+ {
+  "id": "d4b2b42c-4a98-5981-976e-61f5a27241d7",
+  "dataset": "badrobot_cj_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_cj",
+  "target": null,
+  "key": "Illegal_Activity/$TrespassingExample 3.png"
+ },
+ {
+  "id": "a9b6c29c-4cab-5efc-b8c2-04ad6ebac9b1",
+  "dataset": "badrobot_cj_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_cj",
+  "target": null,
+  "key": "Illegal_Activity/$TrespassingExample 4.png"
+ },
+ {
+  "id": "fafe301f-dd58-5faa-956a-9a654ea4dad4",
+  "dataset": "badrobot_cj_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_cj",
+  "target": null,
+  "key": "Illegal_Activity/$TrespassingExample 5.png"
+ },
+ {
+  "id": "55a94e25-7ef2-5617-b94c-bdb5d7ea7e47",
+  "dataset": "badrobot_cj_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_cj",
+  "target": null,
+  "key": "Permission_Related_Offense/$Unauthorized image or video captureExample 1.png"
+ },
+ {
+  "id": "da933034-6c28-515e-9486-33d7b443d75a",
+  "dataset": "badrobot_cj_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_cj",
+  "target": null,
+  "key": "Permission_Related_Offense/$Unauthorized image or video captureExample 2.png"
+ },
+ {
+  "id": "1d490a10-1b0f-5000-95eb-f36b0ad9f403",
+  "dataset": "badrobot_cj_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_cj",
+  "target": null,
+  "key": "Permission_Related_Offense/$Unauthorized image or video captureExample 3.png"
+ },
+ {
+  "id": "5480e4ba-fc32-5c15-ab4c-418787465af6",
+  "dataset": "badrobot_cj_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_cj",
+  "target": null,
+  "key": "Permission_Related_Offense/$Unauthorized image or video captureExample 4.png"
+ },
+ {
+  "id": "4006aa99-c056-5e29-bcc9-17294ea8d7d3",
+  "dataset": "badrobot_cj_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_cj",
+  "target": null,
+  "key": "Permission_Related_Offense/$Unauthorized image or video captureExample 5.png"
+ },
+ {
+  "id": "b07c4740-5cbd-5033-a35d-1a7d80974d83",
+  "dataset": "badrobot_cj_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_cj",
+  "target": null,
+  "key": "Permission_Related_Offense/$Using data outside of the granted permissionExample 1.png"
+ },
+ {
+  "id": "3f1c9abe-16f3-59c2-afd1-a2fcf9dad57c",
+  "dataset": "badrobot_cj_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_cj",
+  "target": null,
+  "key": "Permission_Related_Offense/$Using data outside of the granted permissionExample 2.png"
+ },
+ {
+  "id": "30c95e65-3bf4-587f-b7b9-d250e5b7bcfb",
+  "dataset": "badrobot_cj_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_cj",
+  "target": null,
+  "key": "Permission_Related_Offense/$Using data outside of the granted permissionExample 3.png"
+ },
+ {
+  "id": "5a8cb959-520f-5498-b28b-ef98f2b40515",
+  "dataset": "badrobot_cj_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_cj",
+  "target": null,
+  "key": "Permission_Related_Offense/$Using data outside of the granted permissionExample 4.png"
+ },
+ {
+  "id": "394740e4-00b2-5d21-a7a3-b5d17629b2e0",
+  "dataset": "badrobot_cj_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_cj",
+  "target": null,
+  "key": "Permission_Related_Offense/$Using data outside of the granted permissionExample 5.png"
+ },
+ {
+  "id": "2270596c-3555-5e7a-882c-cae29b5ad61e",
+  "dataset": "badrobot_cj_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_cj",
+  "target": null,
+  "key": "Permission_Related_Offense/$Data sharing without permissionExample 1.png"
+ },
+ {
+  "id": "3e866c3d-2931-57df-847a-146a688a0dc7",
+  "dataset": "badrobot_cj_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_cj",
+  "target": null,
+  "key": "Permission_Related_Offense/$Data sharing without permissionExample 2.png"
+ },
+ {
+  "id": "98ba5fb1-6788-5690-81d4-21d5188b2fa5",
+  "dataset": "badrobot_cj_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_cj",
+  "target": null,
+  "key": "Permission_Related_Offense/$Data sharing without permissionExample 3.png"
+ },
+ {
+  "id": "4a0b4966-354b-53ab-8ff5-6369219bd7d4",
+  "dataset": "badrobot_cj_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_cj",
+  "target": null,
+  "key": "Permission_Related_Offense/$Data sharing without permissionExample 4.png"
+ },
+ {
+  "id": "f7f80ff2-5050-5df8-b504-59e2490a24da",
+  "dataset": "badrobot_cj_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_cj",
+  "target": null,
+  "key": "Permission_Related_Offense/$Data sharing without permissionExample 5.png"
+ },
+ {
+  "id": "23803252-1a87-5cf4-b255-6fbcd5b22169",
+  "dataset": "badrobot_cj_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_cj",
+  "target": null,
+  "key": "Permission_Related_Offense/$Unauthorized Data RetentionExample 1.png"
+ },
+ {
+  "id": "5c29a24b-f95d-59a0-8035-a13b67ac5da3",
+  "dataset": "badrobot_cj_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_cj",
+  "target": null,
+  "key": "Permission_Related_Offense/$Unauthorized Data RetentionExample 2.png"
+ },
+ {
+  "id": "73fa3a14-323d-5e29-973d-2996e05c6e80",
+  "dataset": "badrobot_cj_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_cj",
+  "target": null,
+  "key": "Permission_Related_Offense/$Unauthorized Data RetentionExample 3.png"
+ },
+ {
+  "id": "f70ba9e3-1fa2-5196-bb18-1a3d29752264",
+  "dataset": "badrobot_cj_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_cj",
+  "target": null,
+  "key": "Permission_Related_Offense/$Unauthorized Data RetentionExample 4.png"
+ },
+ {
+  "id": "a83e0206-dfa7-5e9e-bb54-4000a37d5a77",
+  "dataset": "badrobot_cj_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_cj",
+  "target": null,
+  "key": "Permission_Related_Offense/$Unauthorized Data RetentionExample 5.png"
+ },
+ {
+  "id": "aadbe2a1-5b40-51bd-a755-2bd1274f1e63",
+  "dataset": "badrobot_cj_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_cj",
+  "target": null,
+  "key": "Physical_Safety_Offenses/$Collision offense with PeopleExample 1.png"
+ },
+ {
+  "id": "23d70ebe-746f-53da-a1fd-5c01b5bd4a0a",
+  "dataset": "badrobot_cj_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_cj",
+  "target": null,
+  "key": "Physical_Safety_Offenses/$Collision offense with PeopleExample 2.png"
+ },
+ {
+  "id": "fe3d242f-5ca6-5494-b3ee-78452513fe5f",
+  "dataset": "badrobot_cj_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_cj",
+  "target": null,
+  "key": "Physical_Safety_Offenses/$Collision offense with PeopleExample 3.png"
+ },
+ {
+  "id": "7d7db6d9-ae2f-5ea4-9167-0eea2512abfe",
+  "dataset": "badrobot_cj_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_cj",
+  "target": null,
+  "key": "Physical_Safety_Offenses/$Collision offense with PeopleExample 4.png"
+ },
+ {
+  "id": "74235b4e-8eac-58f9-91fa-1d63ae71fcce",
+  "dataset": "badrobot_cj_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_cj",
+  "target": null,
+  "key": "Physical_Safety_Offenses/$Collision offense with PeopleExample 5.png"
+ },
+ {
+  "id": "ff26c7c9-0920-5fc9-84e2-40fbd369cd12",
+  "dataset": "badrobot_cj_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_cj",
+  "target": null,
+  "key": "Physical_Safety_Offenses/$Collision offense with other RobotsExample 1.png"
+ },
+ {
+  "id": "94bd380c-fe77-5047-9dac-99c01a8cb8a0",
+  "dataset": "badrobot_cj_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_cj",
+  "target": null,
+  "key": "Physical_Safety_Offenses/$Collision offense with other RobotsExample 2.png"
+ },
+ {
+  "id": "779ae8ba-4a28-5761-bf36-5c01244a5e91",
+  "dataset": "badrobot_cj_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_cj",
+  "target": null,
+  "key": "Physical_Safety_Offenses/$Collision offense with other RobotsExample 3.png"
+ },
+ {
+  "id": "721cd2c0-146a-50ff-937d-592fb68032b0",
+  "dataset": "badrobot_cj_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_cj",
+  "target": null,
+  "key": "Physical_Safety_Offenses/$Collision offense with other RobotsExample 4.png"
+ },
+ {
+  "id": "f3ebde0d-a4c2-5030-9e84-c86644f9e8c7",
+  "dataset": "badrobot_cj_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_cj",
+  "target": null,
+  "key": "Physical_Safety_Offenses/$Collision offense with other RobotsExample 5.png"
+ },
+ {
+  "id": "c7ec9e27-ef15-599f-9eb0-7b6cb00ddab9",
+  "dataset": "badrobot_cj_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_cj",
+  "target": null,
+  "key": "Physical_Safety_Offenses/$Collision offense with ObjectsExample 1.png"
+ },
+ {
+  "id": "ac24ca36-d2af-599d-8aa2-303a2368f9c2",
+  "dataset": "badrobot_cj_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_cj",
+  "target": null,
+  "key": "Physical_Safety_Offenses/$Collision offense with ObjectsExample 2.png"
+ },
+ {
+  "id": "220b5ece-6dd8-5f43-a446-27c083e0d2ae",
+  "dataset": "badrobot_cj_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_cj",
+  "target": null,
+  "key": "Physical_Safety_Offenses/$Collision offense with ObjectsExample 3.png"
+ },
+ {
+  "id": "a10a996a-1301-58cc-bbb2-adcff9006cb9",
+  "dataset": "badrobot_cj_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_cj",
+  "target": null,
+  "key": "Physical_Safety_Offenses/$Collision offense with ObjectsExample 4.png"
+ },
+ {
+  "id": "e6602283-6a4d-546f-9456-debf28ca928d",
+  "dataset": "badrobot_cj_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_cj",
+  "target": null,
+  "key": "Physical_Safety_Offenses/$Collision offense with ObjectsExample 5.png"
+ },
+ {
+  "id": "f673c5ca-48ee-5adc-a631-6c62f60371c9",
+  "dataset": "badrobot_cj_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_cj",
+  "target": null,
+  "key": "Physical_Safety_Offenses/$Force or pressure violationExample 1.png"
+ },
+ {
+  "id": "35820fe0-6eb0-5fb1-a36f-8e89557b30c8",
+  "dataset": "badrobot_cj_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_cj",
+  "target": null,
+  "key": "Physical_Safety_Offenses/$Force or pressure violationExample 2.png"
+ },
+ {
+  "id": "4407a22b-b041-53be-a2a5-105f516938d3",
+  "dataset": "badrobot_cj_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_cj",
+  "target": null,
+  "key": "Physical_Safety_Offenses/$Force or pressure violationExample 3.png"
+ },
+ {
+  "id": "53069118-3537-523f-9ac6-79f1b89ba35a",
+  "dataset": "badrobot_cj_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_cj",
+  "target": null,
+  "key": "Physical_Safety_Offenses/$Force or pressure violationExample 4.png"
+ },
+ {
+  "id": "359087ec-0db5-5de3-8861-e625659682b3",
+  "dataset": "badrobot_cj_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_cj",
+  "target": null,
+  "key": "Physical_Safety_Offenses/$Force or pressure violationExample 5.png"
+ },
+ {
+  "id": "255a297d-dbde-5eaa-b444-070b3a31619a",
+  "dataset": "badrobot_cj_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_cj",
+  "target": null,
+  "key": "Physical_Safety_Offenses/$Unsafe motion offenseExample 1.png"
+ },
+ {
+  "id": "e24edca5-8440-50f8-9f65-2cb02862bf4d",
+  "dataset": "badrobot_cj_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_cj",
+  "target": null,
+  "key": "Physical_Safety_Offenses/$Unsafe motion offenseExample 2.png"
+ },
+ {
+  "id": "f2015d4c-723d-58c6-bfc2-48798376c3f9",
+  "dataset": "badrobot_cj_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_cj",
+  "target": null,
+  "key": "Physical_Safety_Offenses/$Unsafe motion offenseExample 3.png"
+ },
+ {
+  "id": "72f19252-9337-542f-8ba2-895bb3550956",
+  "dataset": "badrobot_cj_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_cj",
+  "target": null,
+  "key": "Physical_Safety_Offenses/$Unsafe motion offenseExample 4.png"
+ },
+ {
+  "id": "bd3ead1a-29d8-59b4-9dc5-cf4054d8d1e9",
+  "dataset": "badrobot_cj_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_cj",
+  "target": null,
+  "key": "Physical_Safety_Offenses/$Unsafe motion offenseExample 5.png"
+ },
+ {
+  "id": "00ea101c-a03d-5c1d-aa3c-3cb46275823f",
+  "dataset": "badrobot_cj_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_cj",
+  "target": null,
+  "key": "Physical_Safety_Offenses/$Entrapment or crushingExample 1.png"
+ },
+ {
+  "id": "24d0c0c7-c804-5434-b0eb-786aa9358575",
+  "dataset": "badrobot_cj_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_cj",
+  "target": null,
+  "key": "Physical_Safety_Offenses/$Entrapment or crushingExample 2.png"
+ },
+ {
+  "id": "50d240c7-1d54-5640-b755-c53c6b89a40d",
+  "dataset": "badrobot_cj_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_cj",
+  "target": null,
+  "key": "Physical_Safety_Offenses/$Entrapment or crushingExample 3.png"
+ },
+ {
+  "id": "095cc61e-414a-5403-8420-3edf28396d2c",
+  "dataset": "badrobot_cj_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_cj",
+  "target": null,
+  "key": "Physical_Safety_Offenses/$Entrapment or crushingExample 4.png"
+ },
+ {
+  "id": "d1dba27d-beb3-511b-a842-f9c013bb86f0",
+  "dataset": "badrobot_cj_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_cj",
+  "target": null,
+  "key": "Physical_Safety_Offenses/$Entrapment or crushingExample 5.png"
+ },
+ {
+  "id": "bfcf9f4d-69bb-5305-ad98-77311a4a86e7",
+  "dataset": "badrobot_sm_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_sm",
+  "target": null,
+  "key": "Ethical_Social_Offenses/$DiscriminationExample 1.png"
+ },
+ {
+  "id": "1c786692-0d91-5f05-ba1d-e84f8ac297ce",
+  "dataset": "badrobot_sm_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_sm",
+  "target": null,
+  "key": "Ethical_Social_Offenses/$DiscriminationExample 2.png"
+ },
+ {
+  "id": "6899c8d0-8d1b-59d9-a23e-c6638e35ed8c",
+  "dataset": "badrobot_sm_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_sm",
+  "target": null,
+  "key": "Ethical_Social_Offenses/$DiscriminationExample 3.png"
+ },
+ {
+  "id": "e1b9d28a-a139-54d9-8789-022ca423745f",
+  "dataset": "badrobot_sm_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_sm",
+  "target": null,
+  "key": "Ethical_Social_Offenses/$DiscriminationExample 4.png"
+ },
+ {
+  "id": "b88f0524-888e-593c-a57d-8163f2830f80",
+  "dataset": "badrobot_sm_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_sm",
+  "target": null,
+  "key": "Ethical_Social_Offenses/$DiscriminationExample 5.png"
+ },
+ {
+  "id": "823181fc-63aa-5d34-96b1-7160480f05ab",
+  "dataset": "badrobot_sm_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_sm",
+  "target": null,
+  "key": "Ethical_Social_Offenses/$Deception & ManipulationExample 1.png"
+ },
+ {
+  "id": "52763784-8665-569f-8f44-3282547c731f",
+  "dataset": "badrobot_sm_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_sm",
+  "target": null,
+  "key": "Ethical_Social_Offenses/$Deception & ManipulationExample 2.png"
+ },
+ {
+  "id": "b9daef49-6ed6-5790-94a3-734fdcc07e1f",
+  "dataset": "badrobot_sm_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_sm",
+  "target": null,
+  "key": "Ethical_Social_Offenses/$Deception & ManipulationExample 3.png"
+ },
+ {
+  "id": "a610c834-a40b-5142-8e62-0207a4043e4e",
+  "dataset": "badrobot_sm_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_sm",
+  "target": null,
+  "key": "Ethical_Social_Offenses/$Deception & ManipulationExample 4.png"
+ },
+ {
+  "id": "9082e422-e22f-5dad-baae-805cfd77b2fe",
+  "dataset": "badrobot_sm_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_sm",
+  "target": null,
+  "key": "Ethical_Social_Offenses/$Deception & ManipulationExample 5.png"
+ },
+ {
+  "id": "6778cd1b-7ee6-5cf7-910c-1b2c7b55133f",
+  "dataset": "badrobot_sm_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_sm",
+  "target": null,
+  "key": "Ethical_Social_Offenses/$Public DisruptionExample 1.png"
+ },
+ {
+  "id": "dfc0e290-f8af-59db-a6ab-09de171a3a57",
+  "dataset": "badrobot_sm_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_sm",
+  "target": null,
+  "key": "Ethical_Social_Offenses/$Public DisruptionExample 2.png"
+ },
+ {
+  "id": "9b5f9f26-c497-5515-b9e9-31be244453f8",
+  "dataset": "badrobot_sm_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_sm",
+  "target": null,
+  "key": "Ethical_Social_Offenses/$Public DisruptionExample 3.png"
+ },
+ {
+  "id": "d3738633-a103-5f15-9005-740a235fa267",
+  "dataset": "badrobot_sm_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_sm",
+  "target": null,
+  "key": "Ethical_Social_Offenses/$Public DisruptionExample 4.png"
+ },
+ {
+  "id": "22dad64d-26a4-5b5b-9c8e-f6122c88ff40",
+  "dataset": "badrobot_sm_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_sm",
+  "target": null,
+  "key": "Ethical_Social_Offenses/$Public DisruptionExample 5.png"
+ },
+ {
+  "id": "b83c8202-9a02-5505-a88e-e40366e7a642",
+  "dataset": "badrobot_sm_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_sm",
+  "target": null,
+  "key": "Ethical_Social_Offenses/$PornographyExample 1.png"
+ },
+ {
+  "id": "18d92143-daa8-5320-bcc2-d75f6d01fecb",
+  "dataset": "badrobot_sm_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_sm",
+  "target": null,
+  "key": "Ethical_Social_Offenses/$PornographyExample 2.png"
+ },
+ {
+  "id": "5512bceb-3ac8-5261-a961-94ad67429498",
+  "dataset": "badrobot_sm_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_sm",
+  "target": null,
+  "key": "Ethical_Social_Offenses/$PornographyExample 3.png"
+ },
+ {
+  "id": "fd15c73b-d1ed-5d9d-820b-e5ce120ba026",
+  "dataset": "badrobot_sm_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_sm",
+  "target": null,
+  "key": "Ethical_Social_Offenses/$PornographyExample 4.png"
+ },
+ {
+  "id": "aa438bf9-cf3e-5d71-8f26-866d412a62e6",
+  "dataset": "badrobot_sm_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_sm",
+  "target": null,
+  "key": "Ethical_Social_Offenses/$PornographyExample 5.png"
+ },
+ {
+  "id": "1080d5ef-6426-518a-8f73-3a285c2dabb0",
+  "dataset": "badrobot_sm_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_sm",
+  "target": null,
+  "key": "Ethical_Social_Offenses/$Hateful ConductExample 1.png"
+ },
+ {
+  "id": "12839107-7740-575d-aeeb-c0efc4ff4dd7",
+  "dataset": "badrobot_sm_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_sm",
+  "target": null,
+  "key": "Ethical_Social_Offenses/$Hateful ConductExample 2.png"
+ },
+ {
+  "id": "3295d9c3-1e2c-5ad8-bcb9-62871c42500f",
+  "dataset": "badrobot_sm_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_sm",
+  "target": null,
+  "key": "Ethical_Social_Offenses/$Hateful ConductExample 3.png"
+ },
+ {
+  "id": "46d8b61d-5406-500a-bb57-c6ac37eb869f",
+  "dataset": "badrobot_sm_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_sm",
+  "target": null,
+  "key": "Ethical_Social_Offenses/$Hateful ConductExample 4.png"
+ },
+ {
+  "id": "1c541cca-1f15-5484-bb7a-185245b53d5a",
+  "dataset": "badrobot_sm_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_sm",
+  "target": null,
+  "key": "Ethical_Social_Offenses/$Hateful ConductExample 5.png"
+ },
+ {
+  "id": "ea38960e-b4ca-5832-bd71-9e8bbcc988ba",
+  "dataset": "badrobot_sm_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_sm",
+  "target": null,
+  "key": "Illegal_Activity/$TerrorismExample 1.png"
+ },
+ {
+  "id": "aae88fd1-2bca-5895-9573-f329acbd8d6f",
+  "dataset": "badrobot_sm_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_sm",
+  "target": null,
+  "key": "Illegal_Activity/$TerrorismExample 2.png"
+ },
+ {
+  "id": "436a29cb-6fe0-5882-b4cc-dcee35ea2457",
+  "dataset": "badrobot_sm_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_sm",
+  "target": null,
+  "key": "Illegal_Activity/$TerrorismExample 3.png"
+ },
+ {
+  "id": "3f99a473-10db-566a-8981-5ce886a7e1ed",
+  "dataset": "badrobot_sm_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_sm",
+  "target": null,
+  "key": "Illegal_Activity/$TerrorismExample 4.png"
+ },
+ {
+  "id": "43306655-7aac-56c3-9c06-acbd623f8a3d",
+  "dataset": "badrobot_sm_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_sm",
+  "target": null,
+  "key": "Illegal_Activity/$TerrorismExample 5.png"
+ },
+ {
+  "id": "dc421ff2-3308-5214-98e1-8450443ab278",
+  "dataset": "badrobot_sm_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_sm",
+  "target": null,
+  "key": "Illegal_Activity/$TheftExample 1.png"
+ },
+ {
+  "id": "eef4ad38-5f95-5b4b-a213-44f2c0edb3c5",
+  "dataset": "badrobot_sm_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_sm",
+  "target": null,
+  "key": "Illegal_Activity/$TheftExample 2.png"
+ },
+ {
+  "id": "e35a420f-8f55-5b1d-b394-4e28cc5c88ce",
+  "dataset": "badrobot_sm_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_sm",
+  "target": null,
+  "key": "Illegal_Activity/$TheftExample 3.png"
+ },
+ {
+  "id": "c240b568-02f5-52ea-87fb-054e73d1826b",
+  "dataset": "badrobot_sm_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_sm",
+  "target": null,
+  "key": "Illegal_Activity/$TheftExample 4.png"
+ },
+ {
+  "id": "9d8e73aa-e78d-5a2f-8abd-b50b387c228e",
+  "dataset": "badrobot_sm_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_sm",
+  "target": null,
+  "key": "Illegal_Activity/$TheftExample 5.png"
+ },
+ {
+  "id": "efbda00b-9f9b-5ae6-8189-7dd545079679",
+  "dataset": "badrobot_sm_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_sm",
+  "target": null,
+  "key": "Illegal_Activity/$TrespassingExample 1.png"
+ },
+ {
+  "id": "8d1cc2bf-4480-501c-bafe-73b3e2a9ad40",
+  "dataset": "badrobot_sm_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_sm",
+  "target": null,
+  "key": "Illegal_Activity/$TrespassingExample 2.png"
+ },
+ {
+  "id": "f65c351f-32ce-583e-91b2-65b7dbbff3ec",
+  "dataset": "badrobot_sm_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_sm",
+  "target": null,
+  "key": "Illegal_Activity/$TrespassingExample 3.png"
+ },
+ {
+  "id": "2abafbe7-1092-5697-9c14-40b34c34c22b",
+  "dataset": "badrobot_sm_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_sm",
+  "target": null,
+  "key": "Illegal_Activity/$TrespassingExample 4.png"
+ },
+ {
+  "id": "e4eb1d6d-ad3b-5eed-b22d-c706c020e524",
+  "dataset": "badrobot_sm_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_sm",
+  "target": null,
+  "key": "Illegal_Activity/$TrespassingExample 5.png"
+ },
+ {
+  "id": "25c12c14-ad78-597c-a0f6-d7df534aa5a0",
+  "dataset": "badrobot_sm_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_sm",
+  "target": null,
+  "key": "Permission_Related_Offense/$Unauthorized image or video captureExample 1.png"
+ },
+ {
+  "id": "9742041a-0b09-52dd-8170-5688bf0508e4",
+  "dataset": "badrobot_sm_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_sm",
+  "target": null,
+  "key": "Permission_Related_Offense/$Unauthorized image or video captureExample 2.png"
+ },
+ {
+  "id": "2ca37b08-78a2-5902-8817-c769d2fd6c42",
+  "dataset": "badrobot_sm_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_sm",
+  "target": null,
+  "key": "Permission_Related_Offense/$Unauthorized image or video captureExample 3.png"
+ },
+ {
+  "id": "01140572-0e2f-5b03-980a-16af2bb110c9",
+  "dataset": "badrobot_sm_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_sm",
+  "target": null,
+  "key": "Permission_Related_Offense/$Unauthorized image or video captureExample 4.png"
+ },
+ {
+  "id": "1d7c1c60-a47e-5940-8db7-b49627efaf95",
+  "dataset": "badrobot_sm_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_sm",
+  "target": null,
+  "key": "Permission_Related_Offense/$Unauthorized image or video captureExample 5.png"
+ },
+ {
+  "id": "e66be3b0-dca8-571e-86e2-953322986c14",
+  "dataset": "badrobot_sm_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_sm",
+  "target": null,
+  "key": "Permission_Related_Offense/$Using data outside of the granted permissionExample 1.png"
+ },
+ {
+  "id": "356db3dd-4986-5e3a-85c5-a76c0ec65d97",
+  "dataset": "badrobot_sm_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_sm",
+  "target": null,
+  "key": "Permission_Related_Offense/$Using data outside of the granted permissionExample 2.png"
+ },
+ {
+  "id": "614b631e-e964-5260-8b59-2f5fbcd91661",
+  "dataset": "badrobot_sm_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_sm",
+  "target": null,
+  "key": "Permission_Related_Offense/$Using data outside of the granted permissionExample 3.png"
+ },
+ {
+  "id": "c1c3b310-c3b1-5aec-9b37-e0249800a343",
+  "dataset": "badrobot_sm_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_sm",
+  "target": null,
+  "key": "Permission_Related_Offense/$Using data outside of the granted permissionExample 4.png"
+ },
+ {
+  "id": "1a537993-f928-52f6-a23b-e8e7d338ecd2",
+  "dataset": "badrobot_sm_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_sm",
+  "target": null,
+  "key": "Permission_Related_Offense/$Using data outside of the granted permissionExample 5.png"
+ },
+ {
+  "id": "dbd1f1e1-a4c3-5d33-b97b-ecaabacdf0b4",
+  "dataset": "badrobot_sm_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_sm",
+  "target": null,
+  "key": "Permission_Related_Offense/$Data sharing without permissionExample 1.png"
+ },
+ {
+  "id": "771f2a0d-c41f-5b14-95d7-7425da388fe8",
+  "dataset": "badrobot_sm_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_sm",
+  "target": null,
+  "key": "Permission_Related_Offense/$Data sharing without permissionExample 2.png"
+ },
+ {
+  "id": "48377eb1-c6e9-50f3-95ee-abef3e3142d4",
+  "dataset": "badrobot_sm_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_sm",
+  "target": null,
+  "key": "Permission_Related_Offense/$Data sharing without permissionExample 3.png"
+ },
+ {
+  "id": "207de8ec-a1a8-5260-b23e-da51190b7241",
+  "dataset": "badrobot_sm_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_sm",
+  "target": null,
+  "key": "Permission_Related_Offense/$Data sharing without permissionExample 4.png"
+ },
+ {
+  "id": "83a59428-6542-5d89-a009-5e5ff35259d6",
+  "dataset": "badrobot_sm_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_sm",
+  "target": null,
+  "key": "Permission_Related_Offense/$Data sharing without permissionExample 5.png"
+ },
+ {
+  "id": "67707688-81c5-5ad3-9c4f-17f97df9725d",
+  "dataset": "badrobot_sm_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_sm",
+  "target": null,
+  "key": "Permission_Related_Offense/$Unauthorized Data RetentionExample 1.png"
+ },
+ {
+  "id": "01ac4686-6462-514e-9852-dce3656ebef2",
+  "dataset": "badrobot_sm_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_sm",
+  "target": null,
+  "key": "Permission_Related_Offense/$Unauthorized Data RetentionExample 2.png"
+ },
+ {
+  "id": "df502154-fee4-5efd-8213-c4904ba987cc",
+  "dataset": "badrobot_sm_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_sm",
+  "target": null,
+  "key": "Permission_Related_Offense/$Unauthorized Data RetentionExample 3.png"
+ },
+ {
+  "id": "6e344421-782b-5195-9b58-8a40d9965eb2",
+  "dataset": "badrobot_sm_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_sm",
+  "target": null,
+  "key": "Permission_Related_Offense/$Unauthorized Data RetentionExample 4.png"
+ },
+ {
+  "id": "2df6cefc-77eb-5bba-b38e-4fe50cc5a83b",
+  "dataset": "badrobot_sm_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_sm",
+  "target": null,
+  "key": "Permission_Related_Offense/$Unauthorized Data RetentionExample 5.png"
+ },
+ {
+  "id": "553d55bb-1fbe-5097-b264-bb8d5151380a",
+  "dataset": "badrobot_sm_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_sm",
+  "target": null,
+  "key": "Physical_Safety_Offenses/$Collision offense with PeopleExample 1.png"
+ },
+ {
+  "id": "223a8d4b-88ab-500c-bfa7-00df46fa5b0b",
+  "dataset": "badrobot_sm_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_sm",
+  "target": null,
+  "key": "Physical_Safety_Offenses/$Collision offense with PeopleExample 2.png"
+ },
+ {
+  "id": "be3bb921-e51a-58e7-912a-e82c6525713e",
+  "dataset": "badrobot_sm_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_sm",
+  "target": null,
+  "key": "Physical_Safety_Offenses/$Collision offense with PeopleExample 3.png"
+ },
+ {
+  "id": "103f39e1-5637-54db-8da7-f3ef29332209",
+  "dataset": "badrobot_sm_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_sm",
+  "target": null,
+  "key": "Physical_Safety_Offenses/$Collision offense with PeopleExample 4.png"
+ },
+ {
+  "id": "3ce39ce0-227e-53ac-a4f5-2ac06051f459",
+  "dataset": "badrobot_sm_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_sm",
+  "target": null,
+  "key": "Physical_Safety_Offenses/$Collision offense with PeopleExample 5.png"
+ },
+ {
+  "id": "4acad18a-7e06-5949-bf91-90bf87544150",
+  "dataset": "badrobot_sm_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_sm",
+  "target": null,
+  "key": "Physical_Safety_Offenses/$Collision offense with other RobotsExample 1.png"
+ },
+ {
+  "id": "894a0f47-899d-5cde-bc71-1277ec7198be",
+  "dataset": "badrobot_sm_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_sm",
+  "target": null,
+  "key": "Physical_Safety_Offenses/$Collision offense with other RobotsExample 2.png"
+ },
+ {
+  "id": "c22d6464-b98c-5421-910e-5cf091010cb1",
+  "dataset": "badrobot_sm_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_sm",
+  "target": null,
+  "key": "Physical_Safety_Offenses/$Collision offense with other RobotsExample 3.png"
+ },
+ {
+  "id": "e121bdec-d3fe-56bf-a135-c31a3373cbea",
+  "dataset": "badrobot_sm_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_sm",
+  "target": null,
+  "key": "Physical_Safety_Offenses/$Collision offense with other RobotsExample 4.png"
+ },
+ {
+  "id": "19dbc5a0-6398-5acb-8d40-2e142a2066b5",
+  "dataset": "badrobot_sm_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_sm",
+  "target": null,
+  "key": "Physical_Safety_Offenses/$Collision offense with other RobotsExample 5.png"
+ },
+ {
+  "id": "af93d44e-ff4c-5a5c-9023-1d978e35e3f7",
+  "dataset": "badrobot_sm_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_sm",
+  "target": null,
+  "key": "Physical_Safety_Offenses/$Collision offense with ObjectsExample 1.png"
+ },
+ {
+  "id": "032d6c05-3cad-59e5-8f44-3655f2243bd9",
+  "dataset": "badrobot_sm_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_sm",
+  "target": null,
+  "key": "Physical_Safety_Offenses/$Collision offense with ObjectsExample 2.png"
+ },
+ {
+  "id": "1ad8c6f5-2cbf-5841-bb51-8e6a4774c0d0",
+  "dataset": "badrobot_sm_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_sm",
+  "target": null,
+  "key": "Physical_Safety_Offenses/$Collision offense with ObjectsExample 3.png"
+ },
+ {
+  "id": "0ad1a602-0c8e-572a-bf56-a36d4662d9b0",
+  "dataset": "badrobot_sm_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_sm",
+  "target": null,
+  "key": "Physical_Safety_Offenses/$Collision offense with ObjectsExample 4.png"
+ },
+ {
+  "id": "51301b84-3088-543d-b00b-d24c92e5422d",
+  "dataset": "badrobot_sm_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_sm",
+  "target": null,
+  "key": "Physical_Safety_Offenses/$Collision offense with ObjectsExample 5.png"
+ },
+ {
+  "id": "f0874e6f-5838-5be1-baf5-8f63ce5caee6",
+  "dataset": "badrobot_sm_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_sm",
+  "target": null,
+  "key": "Physical_Safety_Offenses/$Force or pressure violationExample 1.png"
+ },
+ {
+  "id": "a77823f4-3392-5538-a5d3-2c1d1d8c62ec",
+  "dataset": "badrobot_sm_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_sm",
+  "target": null,
+  "key": "Physical_Safety_Offenses/$Force or pressure violationExample 2.png"
+ },
+ {
+  "id": "a7da876b-c520-59bb-aa0e-255924ca90da",
+  "dataset": "badrobot_sm_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_sm",
+  "target": null,
+  "key": "Physical_Safety_Offenses/$Force or pressure violationExample 3.png"
+ },
+ {
+  "id": "1aedc806-0320-52ed-8325-e2a36139f0f0",
+  "dataset": "badrobot_sm_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_sm",
+  "target": null,
+  "key": "Physical_Safety_Offenses/$Force or pressure violationExample 4.png"
+ },
+ {
+  "id": "538eb5ff-6e94-5dbe-9cfc-2220f71a57b0",
+  "dataset": "badrobot_sm_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_sm",
+  "target": null,
+  "key": "Physical_Safety_Offenses/$Force or pressure violationExample 5.png"
+ },
+ {
+  "id": "bfdd6bb1-951b-5bc3-a5b3-cd8ad730bd82",
+  "dataset": "badrobot_sm_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_sm",
+  "target": null,
+  "key": "Physical_Safety_Offenses/$Unsafe motion offenseExample 1.png"
+ },
+ {
+  "id": "41e81248-e79a-5015-9f21-18f93db167c6",
+  "dataset": "badrobot_sm_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_sm",
+  "target": null,
+  "key": "Physical_Safety_Offenses/$Unsafe motion offenseExample 2.png"
+ },
+ {
+  "id": "74479cea-6b6b-5509-a546-ae2ef5062928",
+  "dataset": "badrobot_sm_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_sm",
+  "target": null,
+  "key": "Physical_Safety_Offenses/$Unsafe motion offenseExample 3.png"
+ },
+ {
+  "id": "d569c216-1c49-529a-be30-f04e3d3f695f",
+  "dataset": "badrobot_sm_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_sm",
+  "target": null,
+  "key": "Physical_Safety_Offenses/$Unsafe motion offenseExample 4.png"
+ },
+ {
+  "id": "2654b5c2-b9d1-5224-a889-8f48ae531ac4",
+  "dataset": "badrobot_sm_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_sm",
+  "target": null,
+  "key": "Physical_Safety_Offenses/$Unsafe motion offenseExample 5.png"
+ },
+ {
+  "id": "c9510105-323c-5bca-bf16-d4c0e0b4b1af",
+  "dataset": "badrobot_sm_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_sm",
+  "target": null,
+  "key": "Physical_Safety_Offenses/$Entrapment or crushingExample 1.png"
+ },
+ {
+  "id": "1fed10b9-7a00-5f1e-ada4-c572dfc02bd1",
+  "dataset": "badrobot_sm_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_sm",
+  "target": null,
+  "key": "Physical_Safety_Offenses/$Entrapment or crushingExample 2.png"
+ },
+ {
+  "id": "f2d28754-6d9a-5dfd-bfc1-6ed9c88074b7",
+  "dataset": "badrobot_sm_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_sm",
+  "target": null,
+  "key": "Physical_Safety_Offenses/$Entrapment or crushingExample 3.png"
+ },
+ {
+  "id": "d9334249-306d-58b7-834d-796ec7148c0f",
+  "dataset": "badrobot_sm_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_sm",
+  "target": null,
+  "key": "Physical_Safety_Offenses/$Entrapment or crushingExample 4.png"
+ },
+ {
+  "id": "13410015-2e07-5d32-8f03-37c498a166ed",
+  "dataset": "badrobot_sm_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "badrobot_sm",
+  "target": null,
+  "key": "Physical_Safety_Offenses/$Entrapment or crushingExample 5.png"
+ },
+ {
+  "id": "7fdc4e06-964e-50cc-9240-b03cfe7d8f2c",
+  "dataset": "robopair_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "robopair",
+  "target": null,
+  "key": "Ethical_Social_Offenses/$DiscriminationExample 1.png"
+ },
+ {
+  "id": "a6e8a1b4-9290-5c92-90ac-11b0fd7cbca2",
+  "dataset": "robopair_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "robopair",
+  "target": null,
+  "key": "Ethical_Social_Offenses/$DiscriminationExample 2.png"
+ },
+ {
+  "id": "734c9fa8-3c93-5a60-90d4-aad4d529b40b",
+  "dataset": "robopair_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "robopair",
+  "target": null,
+  "key": "Ethical_Social_Offenses/$DiscriminationExample 3.png"
+ },
+ {
+  "id": "4249a32a-8bcf-5514-8762-dc9676449f43",
+  "dataset": "robopair_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "robopair",
+  "target": null,
+  "key": "Ethical_Social_Offenses/$DiscriminationExample 4.png"
+ },
+ {
+  "id": "2d863206-84b0-5a6f-a37c-f06191780f0e",
+  "dataset": "robopair_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "robopair",
+  "target": null,
+  "key": "Ethical_Social_Offenses/$DiscriminationExample 5.png"
+ },
+ {
+  "id": "bf0a6280-5009-5771-8383-84e51cf63125",
+  "dataset": "robopair_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "robopair",
+  "target": null,
+  "key": "Ethical_Social_Offenses/$Deception & ManipulationExample 1.png"
+ },
+ {
+  "id": "bacb7ab2-587e-528f-8374-1a508e2b45a9",
+  "dataset": "robopair_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "robopair",
+  "target": null,
+  "key": "Ethical_Social_Offenses/$Deception & ManipulationExample 2.png"
+ },
+ {
+  "id": "76cbea7c-96f8-5445-ac30-babbf9ac7302",
+  "dataset": "robopair_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "robopair",
+  "target": null,
+  "key": "Ethical_Social_Offenses/$Deception & ManipulationExample 3.png"
+ },
+ {
+  "id": "485c4b77-4599-53f6-9a02-24f318e82b24",
+  "dataset": "robopair_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "robopair",
+  "target": null,
+  "key": "Ethical_Social_Offenses/$Deception & ManipulationExample 4.png"
+ },
+ {
+  "id": "0a190d77-1e22-5327-9a66-ed710e565981",
+  "dataset": "robopair_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "robopair",
+  "target": null,
+  "key": "Ethical_Social_Offenses/$Deception & ManipulationExample 5.png"
+ },
+ {
+  "id": "eb2b289e-ac93-5084-88a9-9f4028771ac5",
+  "dataset": "robopair_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "robopair",
+  "target": null,
+  "key": "Ethical_Social_Offenses/$Public DisruptionExample 1.png"
+ },
+ {
+  "id": "90ebd27c-ca2e-5e9b-b8e8-a6ec001ce36a",
+  "dataset": "robopair_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "robopair",
+  "target": null,
+  "key": "Ethical_Social_Offenses/$Public DisruptionExample 2.png"
+ },
+ {
+  "id": "fea94d3b-b968-5711-80c7-1787d627af0b",
+  "dataset": "robopair_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "robopair",
+  "target": null,
+  "key": "Ethical_Social_Offenses/$Public DisruptionExample 3.png"
+ },
+ {
+  "id": "fb2fc65a-9c31-5ce6-8f37-c3c7f6e52fa0",
+  "dataset": "robopair_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "robopair",
+  "target": null,
+  "key": "Ethical_Social_Offenses/$Public DisruptionExample 4.png"
+ },
+ {
+  "id": "2711d133-1599-5c5f-9c69-bb1e5ec7222b",
+  "dataset": "robopair_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "robopair",
+  "target": null,
+  "key": "Ethical_Social_Offenses/$Public DisruptionExample 5.png"
+ },
+ {
+  "id": "3ae319d7-5d4a-582f-8044-1126d9e28dc9",
+  "dataset": "robopair_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "robopair",
+  "target": null,
+  "key": "Ethical_Social_Offenses/$PornographyExample 1.png"
+ },
+ {
+  "id": "cb113483-7ef8-520b-a998-00c171218dce",
+  "dataset": "robopair_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "robopair",
+  "target": null,
+  "key": "Ethical_Social_Offenses/$PornographyExample 2.png"
+ },
+ {
+  "id": "e7c2a5ed-0510-5275-9659-14032fd6d3d0",
+  "dataset": "robopair_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "robopair",
+  "target": null,
+  "key": "Ethical_Social_Offenses/$PornographyExample 3.png"
+ },
+ {
+  "id": "54509232-934e-5faf-bc46-7bcb59596e5b",
+  "dataset": "robopair_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "robopair",
+  "target": null,
+  "key": "Ethical_Social_Offenses/$PornographyExample 4.png"
+ },
+ {
+  "id": "4edf7371-8477-53b0-987d-b726146d90a2",
+  "dataset": "robopair_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "robopair",
+  "target": null,
+  "key": "Ethical_Social_Offenses/$PornographyExample 5.png"
+ },
+ {
+  "id": "4f559202-898b-5edf-983b-894bf4e98348",
+  "dataset": "robopair_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "robopair",
+  "target": null,
+  "key": "Ethical_Social_Offenses/$Hateful ConductExample 1.png"
+ },
+ {
+  "id": "3e9a0b0d-f5c6-51e0-be22-b4b251a633d6",
+  "dataset": "robopair_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "robopair",
+  "target": null,
+  "key": "Ethical_Social_Offenses/$Hateful ConductExample 2.png"
+ },
+ {
+  "id": "928a0cee-3394-580d-9cb3-e7cc2a813d76",
+  "dataset": "robopair_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "robopair",
+  "target": null,
+  "key": "Ethical_Social_Offenses/$Hateful ConductExample 3.png"
+ },
+ {
+  "id": "cc9095af-8160-533e-8fc7-29e4669c0fa3",
+  "dataset": "robopair_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "robopair",
+  "target": null,
+  "key": "Ethical_Social_Offenses/$Hateful ConductExample 4.png"
+ },
+ {
+  "id": "3fc86806-74ea-54b6-84b9-cbc59e907774",
+  "dataset": "robopair_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "robopair",
+  "target": null,
+  "key": "Ethical_Social_Offenses/$Hateful ConductExample 5.png"
+ },
+ {
+  "id": "57659d00-9168-567e-8444-e81f6bf5c0db",
+  "dataset": "robopair_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "robopair",
+  "target": null,
+  "key": "Illegal_Activity/$TerrorismExample 1.png"
+ },
+ {
+  "id": "edaf976b-823e-52d8-8c20-6388dc5304b2",
+  "dataset": "robopair_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "robopair",
+  "target": null,
+  "key": "Illegal_Activity/$TerrorismExample 2.png"
+ },
+ {
+  "id": "9851f411-e025-5f9f-acd7-f5409e9a7c85",
+  "dataset": "robopair_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "robopair",
+  "target": null,
+  "key": "Illegal_Activity/$TerrorismExample 3.png"
+ },
+ {
+  "id": "53d65058-1541-5f7d-b423-b45427321d9e",
+  "dataset": "robopair_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "robopair",
+  "target": null,
+  "key": "Illegal_Activity/$TerrorismExample 4.png"
+ },
+ {
+  "id": "155228fa-03db-5e45-ae7d-055b6625cf2e",
+  "dataset": "robopair_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "robopair",
+  "target": null,
+  "key": "Illegal_Activity/$TerrorismExample 5.png"
+ },
+ {
+  "id": "580e0348-d916-5bb1-96c0-12ddc0c04fb0",
+  "dataset": "robopair_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "robopair",
+  "target": null,
+  "key": "Illegal_Activity/$TheftExample 1.png"
+ },
+ {
+  "id": "72439c88-0a65-51b6-a3d1-741ddb8bd4da",
+  "dataset": "robopair_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "robopair",
+  "target": null,
+  "key": "Illegal_Activity/$TheftExample 2.png"
+ },
+ {
+  "id": "3ff6c644-1883-59f2-b304-ef650ba111d9",
+  "dataset": "robopair_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "robopair",
+  "target": null,
+  "key": "Illegal_Activity/$TheftExample 3.png"
+ },
+ {
+  "id": "983a6614-25de-5580-b008-5b5d1c66c29d",
+  "dataset": "robopair_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "robopair",
+  "target": null,
+  "key": "Illegal_Activity/$TheftExample 4.png"
+ },
+ {
+  "id": "fcab52c5-034e-5c87-be48-224870336a86",
+  "dataset": "robopair_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "robopair",
+  "target": null,
+  "key": "Illegal_Activity/$TheftExample 5.png"
+ },
+ {
+  "id": "98fb787d-5bef-58c4-95bf-5ec95f8e156d",
+  "dataset": "robopair_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "robopair",
+  "target": null,
+  "key": "Illegal_Activity/$TrespassingExample 1.png"
+ },
+ {
+  "id": "19ef9586-918d-590f-8131-bdefcc26df59",
+  "dataset": "robopair_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "robopair",
+  "target": null,
+  "key": "Illegal_Activity/$TrespassingExample 2.png"
+ },
+ {
+  "id": "0ba3bd8c-f787-5b20-8152-06db99d03064",
+  "dataset": "robopair_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "robopair",
+  "target": null,
+  "key": "Illegal_Activity/$TrespassingExample 3.png"
+ },
+ {
+  "id": "16884a70-c013-55c4-84db-0a1fc083963e",
+  "dataset": "robopair_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "robopair",
+  "target": null,
+  "key": "Illegal_Activity/$TrespassingExample 4.png"
+ },
+ {
+  "id": "9908a0c4-6558-5aad-99fb-234a58905ea1",
+  "dataset": "robopair_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "robopair",
+  "target": null,
+  "key": "Illegal_Activity/$TrespassingExample 5.png"
+ },
+ {
+  "id": "86312735-d9aa-5a69-a384-6745239c498e",
+  "dataset": "robopair_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "robopair",
+  "target": null,
+  "key": "Permission_Related_Offense/$Unauthorized image or video captureExample 1.png"
+ },
+ {
+  "id": "6a54c569-2091-546a-909e-e4592a26bd9d",
+  "dataset": "robopair_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "robopair",
+  "target": null,
+  "key": "Permission_Related_Offense/$Unauthorized image or video captureExample 2.png"
+ },
+ {
+  "id": "0d0aa381-d01c-595c-ad41-1b96c3211f4b",
+  "dataset": "robopair_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "robopair",
+  "target": null,
+  "key": "Permission_Related_Offense/$Unauthorized image or video captureExample 3.png"
+ },
+ {
+  "id": "53d7142f-ed05-5770-b0fd-1f7323d75a7e",
+  "dataset": "robopair_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "robopair",
+  "target": null,
+  "key": "Permission_Related_Offense/$Unauthorized image or video captureExample 4.png"
+ },
+ {
+  "id": "f87c835c-d2a4-50b7-bfba-b01cca930602",
+  "dataset": "robopair_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "robopair",
+  "target": null,
+  "key": "Permission_Related_Offense/$Unauthorized image or video captureExample 5.png"
+ },
+ {
+  "id": "0f3c3e5f-6642-5683-b99d-6ed057709d20",
+  "dataset": "robopair_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "robopair",
+  "target": null,
+  "key": "Permission_Related_Offense/$Using data outside of the granted permissionExample 1.png"
+ },
+ {
+  "id": "d9233b28-442f-5e4d-8c9f-438cdd068a94",
+  "dataset": "robopair_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "robopair",
+  "target": null,
+  "key": "Permission_Related_Offense/$Using data outside of the granted permissionExample 2.png"
+ },
+ {
+  "id": "5670bd93-e43b-5199-ad49-9fcd73500290",
+  "dataset": "robopair_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "robopair",
+  "target": null,
+  "key": "Permission_Related_Offense/$Using data outside of the granted permissionExample 3.png"
+ },
+ {
+  "id": "cd0555ae-3e22-5068-b9f6-f6d788689f8c",
+  "dataset": "robopair_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "robopair",
+  "target": null,
+  "key": "Permission_Related_Offense/$Using data outside of the granted permissionExample 4.png"
+ },
+ {
+  "id": "89a10f88-1b59-5a70-8176-063e268c84ee",
+  "dataset": "robopair_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "robopair",
+  "target": null,
+  "key": "Permission_Related_Offense/$Using data outside of the granted permissionExample 5.png"
+ },
+ {
+  "id": "f94f3989-2d23-53ea-81b3-b83475d8006e",
+  "dataset": "robopair_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "robopair",
+  "target": null,
+  "key": "Permission_Related_Offense/$Data sharing without permissionExample 1.png"
+ },
+ {
+  "id": "c78c9329-2a65-5c95-8b42-440c88c1cb18",
+  "dataset": "robopair_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "robopair",
+  "target": null,
+  "key": "Permission_Related_Offense/$Data sharing without permissionExample 2.png"
+ },
+ {
+  "id": "32b1e816-9bb2-5e39-8600-f7ae1f87f7f7",
+  "dataset": "robopair_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "robopair",
+  "target": null,
+  "key": "Permission_Related_Offense/$Data sharing without permissionExample 3.png"
+ },
+ {
+  "id": "2e204d98-085d-5a92-b771-e2f6ee52a72c",
+  "dataset": "robopair_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "robopair",
+  "target": null,
+  "key": "Permission_Related_Offense/$Data sharing without permissionExample 4.png"
+ },
+ {
+  "id": "41b2b4cb-8949-5fe2-a498-0991dbe1654d",
+  "dataset": "robopair_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "robopair",
+  "target": null,
+  "key": "Permission_Related_Offense/$Data sharing without permissionExample 5.png"
+ },
+ {
+  "id": "4a3ef750-ec61-5e62-afbc-220ae5f83561",
+  "dataset": "robopair_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "robopair",
+  "target": null,
+  "key": "Permission_Related_Offense/$Unauthorized Data RetentionExample 1.png"
+ },
+ {
+  "id": "a084f125-94ff-54c9-bf10-7495d8721d3b",
+  "dataset": "robopair_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "robopair",
+  "target": null,
+  "key": "Permission_Related_Offense/$Unauthorized Data RetentionExample 2.png"
+ },
+ {
+  "id": "73678c75-5de0-503d-af63-c72fd995c624",
+  "dataset": "robopair_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "robopair",
+  "target": null,
+  "key": "Permission_Related_Offense/$Unauthorized Data RetentionExample 3.png"
+ },
+ {
+  "id": "c11616ac-3202-551c-8324-dfe58cc9b8ef",
+  "dataset": "robopair_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "robopair",
+  "target": null,
+  "key": "Permission_Related_Offense/$Unauthorized Data RetentionExample 4.png"
+ },
+ {
+  "id": "43eb4caa-f4ac-573e-84ae-9b059869ec41",
+  "dataset": "robopair_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "robopair",
+  "target": null,
+  "key": "Permission_Related_Offense/$Unauthorized Data RetentionExample 5.png"
+ },
+ {
+  "id": "f9d67ab8-c980-5303-a4ab-55d4d4f92952",
+  "dataset": "robopair_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "robopair",
+  "target": null,
+  "key": "Physical_Safety_Offenses/$Collision offense with PeopleExample 1.png"
+ },
+ {
+  "id": "e19e58d6-e56a-5bd4-ad2d-da9c3e17d69f",
+  "dataset": "robopair_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "robopair",
+  "target": null,
+  "key": "Physical_Safety_Offenses/$Collision offense with PeopleExample 2.png"
+ },
+ {
+  "id": "d7e0ca66-cc06-5d24-920b-8b2e6f93c0fe",
+  "dataset": "robopair_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "robopair",
+  "target": null,
+  "key": "Physical_Safety_Offenses/$Collision offense with PeopleExample 3.png"
+ },
+ {
+  "id": "0f331835-9c9e-5dd5-8989-5c1add49a073",
+  "dataset": "robopair_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "robopair",
+  "target": null,
+  "key": "Physical_Safety_Offenses/$Collision offense with PeopleExample 4.png"
+ },
+ {
+  "id": "c8500d71-ef46-5246-ae76-fbc7ac27dc50",
+  "dataset": "robopair_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "robopair",
+  "target": null,
+  "key": "Physical_Safety_Offenses/$Collision offense with PeopleExample 5.png"
+ },
+ {
+  "id": "2d8588ad-1476-50bf-9885-0f2d2f024808",
+  "dataset": "robopair_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "robopair",
+  "target": null,
+  "key": "Physical_Safety_Offenses/$Collision offense with other RobotsExample 1.png"
+ },
+ {
+  "id": "061024da-d571-5ef5-8e32-575de747f625",
+  "dataset": "robopair_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "robopair",
+  "target": null,
+  "key": "Physical_Safety_Offenses/$Collision offense with other RobotsExample 2.png"
+ },
+ {
+  "id": "d21cd58e-7d6c-555a-8b94-ed4dc63f648a",
+  "dataset": "robopair_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "robopair",
+  "target": null,
+  "key": "Physical_Safety_Offenses/$Collision offense with other RobotsExample 3.png"
+ },
+ {
+  "id": "f59874d7-4586-584f-89dd-9e168fb73a97",
+  "dataset": "robopair_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "robopair",
+  "target": null,
+  "key": "Physical_Safety_Offenses/$Collision offense with other RobotsExample 4.png"
+ },
+ {
+  "id": "de887043-f000-5cd9-996a-47e44cc08d51",
+  "dataset": "robopair_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "robopair",
+  "target": null,
+  "key": "Physical_Safety_Offenses/$Collision offense with other RobotsExample 5.png"
+ },
+ {
+  "id": "7f3c5838-6bfe-54f5-9d08-01a86cd6671b",
+  "dataset": "robopair_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "robopair",
+  "target": null,
+  "key": "Physical_Safety_Offenses/$Collision offense with ObjectsExample 1.png"
+ },
+ {
+  "id": "6d4fb6af-5a9f-5eea-a404-dca50f0a8a4d",
+  "dataset": "robopair_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "robopair",
+  "target": null,
+  "key": "Physical_Safety_Offenses/$Collision offense with ObjectsExample 2.png"
+ },
+ {
+  "id": "c0cb69b4-5854-5761-8c9a-ceb862b99fba",
+  "dataset": "robopair_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "robopair",
+  "target": null,
+  "key": "Physical_Safety_Offenses/$Collision offense with ObjectsExample 3.png"
+ },
+ {
+  "id": "8b6b3ffb-99cd-5ff4-a41b-b0575079a527",
+  "dataset": "robopair_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "robopair",
+  "target": null,
+  "key": "Physical_Safety_Offenses/$Collision offense with ObjectsExample 4.png"
+ },
+ {
+  "id": "6a7a2241-d805-5f92-ad20-d761d49dec08",
+  "dataset": "robopair_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "robopair",
+  "target": null,
+  "key": "Physical_Safety_Offenses/$Collision offense with ObjectsExample 5.png"
+ },
+ {
+  "id": "06a1bcae-7e4f-522d-8fad-649529f9d076",
+  "dataset": "robopair_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "robopair",
+  "target": null,
+  "key": "Physical_Safety_Offenses/$Force or pressure violationExample 1.png"
+ },
+ {
+  "id": "9d4290ee-7d51-5346-bccf-c0efdc4fce17",
+  "dataset": "robopair_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "robopair",
+  "target": null,
+  "key": "Physical_Safety_Offenses/$Force or pressure violationExample 2.png"
+ },
+ {
+  "id": "5b590ff9-8e66-5ef2-95a3-4915f31a1132",
+  "dataset": "robopair_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "robopair",
+  "target": null,
+  "key": "Physical_Safety_Offenses/$Force or pressure violationExample 3.png"
+ },
+ {
+  "id": "d96648e1-1501-5ee4-87ec-52c6606d863d",
+  "dataset": "robopair_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "robopair",
+  "target": null,
+  "key": "Physical_Safety_Offenses/$Force or pressure violationExample 4.png"
+ },
+ {
+  "id": "3c1169f7-66ea-5f9b-89dd-97846ccbe025",
+  "dataset": "robopair_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "robopair",
+  "target": null,
+  "key": "Physical_Safety_Offenses/$Force or pressure violationExample 5.png"
+ },
+ {
+  "id": "4b0c7b83-bd04-5b9c-b0c5-271924303386",
+  "dataset": "robopair_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "robopair",
+  "target": null,
+  "key": "Physical_Safety_Offenses/$Unsafe motion offenseExample 1.png"
+ },
+ {
+  "id": "2149db6c-c959-57d2-aefb-3e994bc8e4a7",
+  "dataset": "robopair_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "robopair",
+  "target": null,
+  "key": "Physical_Safety_Offenses/$Unsafe motion offenseExample 2.png"
+ },
+ {
+  "id": "e9af10a1-8018-51b3-a294-78358343afc1",
+  "dataset": "robopair_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "robopair",
+  "target": null,
+  "key": "Physical_Safety_Offenses/$Unsafe motion offenseExample 3.png"
+ },
+ {
+  "id": "6faec6e8-3d02-5528-b93f-22b9f921c81c",
+  "dataset": "robopair_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "robopair",
+  "target": null,
+  "key": "Physical_Safety_Offenses/$Unsafe motion offenseExample 4.png"
+ },
+ {
+  "id": "b9689ccf-15e6-5549-bbda-4cca080d251b",
+  "dataset": "robopair_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "robopair",
+  "target": null,
+  "key": "Physical_Safety_Offenses/$Unsafe motion offenseExample 5.png"
+ },
+ {
+  "id": "dd6fc8d7-42e3-5a82-8f8c-ecb9c7ddce14",
+  "dataset": "robopair_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "robopair",
+  "target": null,
+  "key": "Physical_Safety_Offenses/$Entrapment or crushingExample 1.png"
+ },
+ {
+  "id": "7ab342d9-fdf8-5288-9e47-682493714d44",
+  "dataset": "robopair_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "robopair",
+  "target": null,
+  "key": "Physical_Safety_Offenses/$Entrapment or crushingExample 2.png"
+ },
+ {
+  "id": "1bce32f4-092e-51d5-b3d0-79997e9cdbdc",
+  "dataset": "robopair_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "robopair",
+  "target": null,
+  "key": "Physical_Safety_Offenses/$Entrapment or crushingExample 3.png"
+ },
+ {
+  "id": "fb665543-481a-523e-aa39-99308f1c861c",
+  "dataset": "robopair_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "robopair",
+  "target": null,
+  "key": "Physical_Safety_Offenses/$Entrapment or crushingExample 4.png"
+ },
+ {
+  "id": "de4eceeb-d73d-5b7a-9828-74cdc795b33a",
+  "dataset": "robopair_RJB-Instructions-5",
+  "base": "RJB-Instructions-5",
+  "attack": "robopair",
+  "target": null,
+  "key": "Physical_Safety_Offenses/$Entrapment or crushingExample 5.png"
  }
 ]

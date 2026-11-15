@@ -7,10 +7,6 @@ rows by ``source`` + ``filename`` and by their path
 without the defense level). The id is a pure function of those, so this adds an
 ``id`` column with no API calls and no change to any response or label.
 
-Pickles whose frames come from the earlier ``data/main_dataset_5`` build are
-skipped and listed: their keys match the current RJB-Instructions frames but
-the images and instructions differ.
-
 The plain-baseline pickles ``workdir/plain/<dataset>_model_responses.pkl``
 hold one answer column per model and both instruction types in one file.
 They are split into the layout ``main.py`` writes,
@@ -34,7 +30,6 @@ ROOT = Path(__file__).resolve().parent.parent
 WORKDIR = ROOT / "workdir/attack_defense"
 PLAIN_DIR = ROOT / "workdir/plain"
 PLAIN_COLUMNS = ["dataset_path", "filename", "type", "content"]
-EARLIER_BUILD_MARKER = "main_dataset_5/"
 
 
 def artifact_for(path: Path) -> str:
@@ -87,14 +82,9 @@ def main():
         print(f"split {path.relative_to(ROOT)} into {models} model cells")
 
     paths = sorted(WORKDIR.rglob("*.pkl"))
-    done = refused = 0
+    done = 0
     for path in paths:
         frame = pd.read_pickle(path)
-        if frame["filename"].astype(str).str.contains(EARLIER_BUILD_MARKER, regex=False).any():
-            print(f"skipped (earlier data): {path.relative_to(ROOT)}")
-            refused += 1
-            continue
-
         artifact = artifact_for(path)
         ids = [
             row_id(artifact, frame_key(source, filename))
@@ -113,7 +103,7 @@ def main():
         frame.to_pickle(path)
         done += 1
 
-    print(f"back-filled {done} pickles, refused {refused}")
+    print(f"back-filled {done} pickles")
 
 
 if __name__ == "__main__":
